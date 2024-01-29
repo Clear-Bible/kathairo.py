@@ -1,7 +1,7 @@
 import csv
 from machine.utils import string_utils
 from machine.corpora import UsxFileTextCorpus
-from machine.corpora import ParatextTextCorpus, UsfmFileTextCorpus
+from machine.corpora import ParatextTextCorpus, UsfmFileTextCorpus, UsxFileTextCorpus
 from machine.tokenization import LatinWordTokenizer, WhitespaceTokenizer
 from machine.scripture import (
     ENGLISH_VERSIFICATION,
@@ -17,11 +17,15 @@ from machine.scripture import (
     get_bbbcccvvv,
 )
 
-versification = Versification.load("./resources/versification/eng.vrs", fallback_name="web")
-#versification = Versification(ENGLISH_VERSIFICATION)
+#targetVersification = Versification.load("./resources/versification/eng.vrs", fallback_name="web")
+targetVersification = Versification(name = "targetVersification", base_versification=ENGLISH_VERSIFICATION)
+
+#sourceVersification = Versification.load("./resources/versification/org.vrs", fallback_name="web")
+sourceVersification = Versification(name = "sourceVersification", base_versification=ORIGINAL_VERSIFICATION)
 
 #point to a folder full of .SFM files (cannot be .usfm)
-corpus = UsfmFileTextCorpus("./resources/arb-vd_usfm", versification=versification)
+corpus = UsfmFileTextCorpus("./resources/arb-vd_usfm", versification = targetVersification)
+#corpus = UsxFileTextCorpus("./resources/douay_rheims", versification = targetVersification)
 
 tokenizer = LatinWordTokenizer()
 with open('output.tsv', 'w', newline='', encoding='utf-8') as out_file:
@@ -32,14 +36,16 @@ with open('output.tsv', 'w', newline='', encoding='utf-8') as out_file:
         
         #print(f"{row.ref}: {row.text}")
 
-        vref = VerseRef.from_bbbcccvvv(row.ref.bbbcccvvv, ENGLISH_VERSIFICATION) #dependent on .vrs being used
-        vref.change_versification(ORIGINAL_VERSIFICATION)
+        vref = VerseRef.from_bbbcccvvv(row.ref.bbbcccvvv, targetVersification) #dependent on which .vrs is being used
+        vref.change_versification(sourceVersification)
         
         wordIndex = 1
         for token in row.segment:
             wordIndexStr = str(wordIndex).zfill(3)
             tsv_writer.writerow([f" {vref.bbbcccvvvs}{wordIndexStr}", f"{row.ref.bbbcccvvvs}", token ])
             wordIndex += 1
+
+
 
 #What punctuation data can we get from machine?
     #a tokenized verse is just returned as an array so there's no accompanying data to signify that a token is punctuation. 

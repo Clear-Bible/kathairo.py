@@ -196,6 +196,39 @@ sentencepiece = ["sentencepiece (>=0.1.95,<0.2.0)"]
 thot = ["sil-thot (>=3.4.3,<4.0.0)"]
 
 [[package]]
+name = "sil-thot"
+version = "3.4.3"
+description = "A toolkit for statistical word alignment and machine translation"
+optional = false
+python-versions = ">=3.7, <4.0"
+files = [
+    {file = "sil-thot-3.4.3.tar.gz", hash = "sha256:ec0d5da92c8a1a1dd6bad41f6b5f1b829e2bb8df22dad8e92e853f4a1128e4e0"},
+    {file = "sil_thot-3.4.3-cp310-cp310-macosx_10_13_x86_64.whl", hash = "sha256:3379880ecec93c645adb48a73351f542b28308e37b2302cd596cb8ec225cc514"},
+    {file = "sil_thot-3.4.3-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:4dcec9aad7a9537bf38fcab033919586baabb42a4c2f290c403bc1f97ac1f32f"},
+    {file = "sil_thot-3.4.3-cp310-cp310-win32.whl", hash = "sha256:c72f5022f79c41f999d1444eeefed2a11f2b21b52c00995f3dbd82bd1696faec"},
+    {file = "sil_thot-3.4.3-cp310-cp310-win_amd64.whl", hash = "sha256:b91d7f5676407b59a74e2dad51ee7099242c1c935acf4d24d2c3717c3c7c3281"},
+    {file = "sil_thot-3.4.3-cp311-cp311-macosx_10_13_x86_64.whl", hash = "sha256:a8019ba03263be4fd756e065dffbcc78f92b40fd55b715296af1c18c808770f4"},
+    {file = "sil_thot-3.4.3-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:1bbbcc38fbdcef637fb2854cbd92d15793599b2ed9db078fe65d3796c34dac97"},
+    {file = "sil_thot-3.4.3-cp311-cp311-win32.whl", hash = "sha256:b57440fa18f692557c95acfb6259732075f85c1199463fabe3d284e1b49d415b"},
+    {file = "sil_thot-3.4.3-cp311-cp311-win_amd64.whl", hash = "sha256:eed580100c099c2e62ae5456d8e5f75f8ae82fccd660575867303e25468afd9e"},
+    {file = "sil_thot-3.4.3-cp37-cp37m-macosx_10_13_x86_64.whl", hash = "sha256:8caaebb5a0555fa82ae80c66f533a744bf7c3bd8634a623d3717206a184b0d49"},
+    {file = "sil_thot-3.4.3-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:1ab12814c55eda663f20ba84942834212405acae2c969e9a7574d7d3bcc865e4"},
+    {file = "sil_thot-3.4.3-cp37-cp37m-win32.whl", hash = "sha256:72f1b178144e3772b50d183b4a2bdaaec26dd0dc20652140197f50f472693832"},
+    {file = "sil_thot-3.4.3-cp37-cp37m-win_amd64.whl", hash = "sha256:58fb109d446f5f5e9260c39c527a8d08833aee71d065a45c738b40cf80e5292d"},
+    {file = "sil_thot-3.4.3-cp38-cp38-macosx_10_13_x86_64.whl", hash = "sha256:a57ba8f5748d15efc990f90a47402bcacf729853491afaacfc3c4c4ba92741f6"},
+    {file = "sil_thot-3.4.3-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:38ce4358c695a90c0bdc5ae4fb83fc59d7cea61d3da99bf269b66c26fe941f03"},
+    {file = "sil_thot-3.4.3-cp38-cp38-win32.whl", hash = "sha256:00933c0a66298454b1c0ccf593f3acef6c3a25a115ac9ec6fe8a0d9b40ac2c2b"},
+    {file = "sil_thot-3.4.3-cp38-cp38-win_amd64.whl", hash = "sha256:50a975f147489818100f1dc5a9b372a3d10918deedc1637e2fe0e4252e7ac0f6"},
+    {file = "sil_thot-3.4.3-cp39-cp39-macosx_10_13_x86_64.whl", hash = "sha256:e4fc087486463dcb3c91a139dc1cddd0437599e007054fddf47f4799ee547520"},
+    {file = "sil_thot-3.4.3-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:88b6ce46cda6f1347a27aed502419f0c34e8a1a5ee7c467b97a23eea817c0f1d"},
+    {file = "sil_thot-3.4.3-cp39-cp39-win32.whl", hash = "sha256:7eae48706c5a4e616ff98269168a0e97000e905899dbfa7a4dfeffa10b703179"},
+    {file = "sil_thot-3.4.3-cp39-cp39-win_amd64.whl", hash = "sha256:e27ce9891316b64adcf2b88ef3a828ed231dcf5ff0d2d30131d7e1ff2fcad642"},
+]
+
+[package.extras]
+test = ["numpy", "pytest"]
+
+[[package]]
 name = "sortedcontainers"
 version = "2.4.0"
 description = "Sorted Containers -- Sorted List, Sorted Dict, Sorted Set"
@@ -209,4 +242,4 @@ files = [
 [metadata]
 lock-version = "2.0"
 python-versions = ">=3.8,<3.12"
-content-hash = "0c86738cb54c1860fd93c7074a8e38299a45701d80df915504bef626b4414a4f"
+content-hash = "a5fa573a7e66f8f615d3ddd93acfca222a36ad50d12c1394b09b41e844d6ddaa"
