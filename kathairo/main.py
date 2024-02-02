@@ -1,4 +1,6 @@
 import csv
+from Tokenization import MaximalMatchingTokenizer
+from Tokenization import ChineseBibleWordTokenizer
 from machine.utils import string_utils
 from machine.corpora import UsxFileTextCorpus
 from machine.corpora import ParatextTextCorpus, UsfmFileTextCorpus, UsxFileTextCorpus
@@ -17,32 +19,42 @@ from machine.scripture import (
     get_bbbcccvvv,
 )
 
+targetVersification = Versification.load("./resources/occb_simplified_usx/release/versification.vrs", fallback_name="web")
 #targetVersification = Versification.load("./resources/versification/eng.vrs", fallback_name="web")
-targetVersification = Versification(name = "targetVersification", base_versification=ENGLISH_VERSIFICATION)
+#targetVersification = Versification(name = "targetVersification", base_versification=ENGLISH_VERSIFICATION)
 
 #sourceVersification = Versification.load("./resources/versification/org.vrs", fallback_name="web")
 sourceVersification = Versification(name = "sourceVersification", base_versification=ORIGINAL_VERSIFICATION)
 
 #point to a folder full of .SFM files (cannot be .usfm)
-corpus = UsfmFileTextCorpus("./resources/arb-vd_usfm", versification = targetVersification)
+corpus = UsxFileTextCorpus("./resources/occb_simplified_usx/release/USX_1", versification = targetVersification)
+#corpus = UsfmFileTextCorpus("./resources/bsb_usfm", versification = targetVersification)
 #corpus = UsxFileTextCorpus("./resources/douay_rheims", versification = targetVersification)
 
-tokenizer = LatinWordTokenizer()
+#tokenizer = LatinWordTokenizer()
+tokenizer = ChineseBibleWordTokenizer.ChineseBibleWordTokenizer()
 with open('output.tsv', 'w', newline='', encoding='utf-8') as out_file:
     tsv_writer = csv.writer(out_file, delimiter='\t')
-    tsv_writer.writerow(["id", "target_verse", "token"])
+
+    #tsv_writer.writerow(["id", "target_verse", "token"]) #OLD WAY
+    tsv_writer.writerow(["id", "source_verse", "token"]) #NEXT GEN
 
     for row in corpus.tokenize(tokenizer).lowercase().nfc_normalize():    
         
         #print(f"{row.ref}: {row.text}")
 
-        vref = VerseRef.from_bbbcccvvv(row.ref.bbbcccvvv, targetVersification) #dependent on which .vrs is being used
-        vref.change_versification(sourceVersification)
+        targetVref = VerseRef.from_bbbcccvvv(row.ref.bbbcccvvv, targetVersification) #dependent on which .vrs is being used
+        targetVref.change_versification(sourceVersification)
         
+        sourceVref = targetVref
+
         wordIndex = 1
         for token in row.segment:
             wordIndexStr = str(wordIndex).zfill(3)
-            tsv_writer.writerow([f" {vref.bbbcccvvvs}{wordIndexStr}", f"{row.ref.bbbcccvvvs}", token ])
+
+            #tsv_writer.writerow([f" {sourceVref.bbbcccvvvs}{wordIndexStr}", f"{row.ref.bbbcccvvvs}", token ]) #OLD WAY
+            tsv_writer.writerow([f"{row.ref.bbbcccvvvs}{wordIndexStr}", f" {sourceVref.bbbcccvvvs}", token ]) #NEXT GEN
+            
             wordIndex += 1
 
 
