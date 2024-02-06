@@ -19,20 +19,26 @@ from machine.scripture import (
     get_bbbcccvvv,
 )
 
-targetVersification = Versification.load("./resources/occb_simplified_usx/release/versification.vrs", fallback_name="web")
+#targetVersification = Versification.load("./resources/occb_simplified_usx/release/versification.vrs", fallback_name="web")
+#targetVersification = Versification.load("./resources/onav_usx/release/versification.vrs", fallback_name="web")
+#targetVersification = Versification.load("./resources/bsb_usx/release/versification.vrs", fallback_name="web")
 #targetVersification = Versification.load("./resources/versification/eng.vrs", fallback_name="web")
-#targetVersification = Versification(name = "targetVersification", base_versification=ENGLISH_VERSIFICATION)
+targetVersification = Versification(name = "targetVersification", base_versification=ENGLISH_VERSIFICATION)
+#targetVersification = Versification(name = "targetVersification", base_versification=RUSSIAN_PROTESTANT_VERSIFICATION)
 
-#sourceVersification = Versification.load("./resources/versification/org.vrs", fallback_name="web")
 sourceVersification = Versification(name = "sourceVersification", base_versification=ORIGINAL_VERSIFICATION)
 
 #point to a folder full of .SFM files (cannot be .usfm)
-corpus = UsxFileTextCorpus("./resources/occb_simplified_usx/release/USX_1", versification = targetVersification)
+#corpus = UsxFileTextCorpus("./resources/occb_simplified_usx/release/USX_1", versification = targetVersification)
+#corpus = UsxFileTextCorpus("./resources/onav_usx/release/USX_1", versification = targetVersification)
+#corpus = UsxFileTextCorpus("./resources/bsb_usx/release/USX_1", versification = targetVersification)
 #corpus = UsfmFileTextCorpus("./resources/bsb_usfm", versification = targetVersification)
+corpus = UsfmFileTextCorpus("./resources/engylt_usfm", versification = targetVersification)
 #corpus = UsxFileTextCorpus("./resources/douay_rheims", versification = targetVersification)
 
-#tokenizer = LatinWordTokenizer()
-tokenizer = ChineseBibleWordTokenizer.ChineseBibleWordTokenizer()
+tokenizer = LatinWordTokenizer()
+#tokenizer = ChineseBibleWordTokenizer.ChineseBibleWordTokenizer()
+
 with open('output.tsv', 'w', newline='', encoding='utf-8') as out_file:
     tsv_writer = csv.writer(out_file, delimiter='\t')
 
@@ -56,6 +62,23 @@ with open('output.tsv', 'w', newline='', encoding='utf-8') as out_file:
             tsv_writer.writerow([f"{row.ref.bbbcccvvvs}{wordIndexStr}", f" {sourceVref.bbbcccvvvs}", token ]) #NEXT GEN
             
             wordIndex += 1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
