@@ -21,9 +21,9 @@ from machine.scripture import (
 
 #targetVersification = Versification.load("./resources/occb_simplified_usx/release/versification.vrs", fallback_name="web")
 #targetVersification = Versification.load("./resources/onav_usx/release/versification.vrs", fallback_name="web")
-#targetVersification = Versification.load("./resources/bsb_usx/release/versification.vrs", fallback_name="web")
+targetVersification = Versification.load("./resources/bsb_usx/release/versification.vrs", fallback_name="web")
 #targetVersification = Versification.load("./resources/versification/eng.vrs", fallback_name="web")
-targetVersification = Versification(name = "targetVersification", base_versification=ENGLISH_VERSIFICATION)
+#targetVersification = Versification(name = "targetVersification", base_versification=ENGLISH_VERSIFICATION)
 #targetVersification = Versification(name = "targetVersification", base_versification=RUSSIAN_PROTESTANT_VERSIFICATION)
 
 sourceVersification = Versification(name = "sourceVersification", base_versification=ORIGINAL_VERSIFICATION)
@@ -32,8 +32,8 @@ sourceVersification = Versification(name = "sourceVersification", base_versifica
 #corpus = UsxFileTextCorpus("./resources/occb_simplified_usx/release/USX_1", versification = targetVersification)
 #corpus = UsxFileTextCorpus("./resources/onav_usx/release/USX_1", versification = targetVersification)
 #corpus = UsxFileTextCorpus("./resources/bsb_usx/release/USX_1", versification = targetVersification)
-#corpus = UsfmFileTextCorpus("./resources/bsb_usfm", versification = targetVersification)
-corpus = UsfmFileTextCorpus("./resources/engylt_usfm", versification = targetVersification)
+corpus = UsfmFileTextCorpus("./resources/bsb_usfm", versification = targetVersification)
+#corpus = UsfmFileTextCorpus("./resources/engylt_usfm", versification = targetVersification)
 #corpus = UsxFileTextCorpus("./resources/douay_rheims", versification = targetVersification)
 
 tokenizer = LatinWordTokenizer()
@@ -45,7 +45,7 @@ with open('output.tsv', 'w', newline='', encoding='utf-8') as out_file:
     #tsv_writer.writerow(["id", "target_verse", "token"]) #OLD WAY
     tsv_writer.writerow(["id", "source_verse", "token"]) #NEXT GEN
 
-    for row in corpus.tokenize(tokenizer).lowercase().nfc_normalize():    
+    for row in corpus.tokenize(tokenizer).nfc_normalize():    
         
         #print(f"{row.ref}: {row.text}")
 
