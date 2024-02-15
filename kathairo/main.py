@@ -29,8 +29,8 @@ corpusGroup.add_argument("-uf", "--targetUsfmCorpusPath", type=str)
 corpusGroup.add_argument("-ux", "--targetUsxCorpusPath", type=str)
 
 tokenizerGroup = argumentParser.add_mutually_exclusive_group(required=True)
-corpusGroup.add_argument("-zh", "--chineseTokenizer", action='store_true')
-corpusGroup.add_argument("-lt", "--latinTokenizer", action='store_true')
+tokenizerGroup.add_argument("-zh", "--chineseTokenizer", action='store_true')
+tokenizerGroup.add_argument("-lt", "--latinTokenizer", action='store_true')
 
 argumentParser.add_argument("-of", "--oldTsvFormat", action='store_true') #optional
 
@@ -58,9 +58,6 @@ if(args.chineseTokenizer is not None):
 if(args.latinTokenizer is not None):
     tokenizer = LatinWordTokenizer()
     
-
-
-
 #BSB
 #targetVersification = Versification.load("./resources/bsb_usx/release/versification.vrs", fallback_name="web")
 #sourceVersification = Versification(name = "sourceVersification", base_versification=ORIGINAL_VERSIFICATION)
