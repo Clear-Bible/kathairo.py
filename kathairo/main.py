@@ -18,31 +18,87 @@ from machine.scripture import (
     Versification,
     get_bbbcccvvv,
 )
+import argparse
 
+argumentParser = argparse.ArgumentParser()
+argumentParser.add_argument("-sv", "--sourceVersificationPath", type=str) #optional
+argumentParser.add_argument("-tv", "--targetVersificationPath", type=str, required=True)
 
-#targetVersification = Versification.load("./resources/bsb_usx/release/versification.vrs", fallback_name="web")
-targetVersification = Versification.load("./resources/occb_simplified_usx/release/versification.vrs", fallback_name="web")
-#targetVersification = Versification.load("./resources/onav_usx/release/versification.vrs", fallback_name="web")
-#targetVersification = Versification(name = "targetVersification", base_versification=ENGLISH_VERSIFICATION)
+corpusGroup = argumentParser.add_mutually_exclusive_group(required=True)
+corpusGroup.add_argument("-uf", "--targetUsfmCorpusPath", type=str)
+corpusGroup.add_argument("-ux", "--targetUsxCorpusPath", type=str)
+
+tokenizerGroup = argumentParser.add_mutually_exclusive_group(required=True)
+corpusGroup.add_argument("-zh", "--chineseTokenizer", action='store_true')
+corpusGroup.add_argument("-lt", "--latinTokenizer", action='store_true')
+
+argumentParser.add_argument("-of", "--oldTsvFormat", action='store_true') #optional
+
+args = argumentParser.parse_args()
+
+print(args.sourceVersificationPath)
+print(args.targetVersificationPath)
+print(args.targetUsfmCorpusPath)
+print(args.targetUsxCorpusPath)
+print(args.chineseTokenizer)
+print(args.latinTokenizer)
+print(args.oldTsvFormat)
 
 sourceVersification = Versification(name = "sourceVersification", base_versification=ORIGINAL_VERSIFICATION)
 
-#point to a folder full of .SFM files (cannot be .usfm)
-#corpus = UsxFileTextCorpus("./resources/bsb_usx/release/USX_1", versification = targetVersification)
-#corpus = UsfmFileTextCorpus("./resources/bsb_usfm", versification = targetVersification)
-corpus = UsxFileTextCorpus("./resources/occb_simplified_usx/release/USX_1", versification = targetVersification)
-#corpus = UsxFileTextCorpus("./resources/onav_usx/release/USX_1", versification = targetVersification)
-#corpus = UsfmFileTextCorpus("./resources/arb-vd_usfm", versification = targetVersification)
-#corpus = UsfmFileTextCorpus("./resources/engylt_usfm", versification = targetVersification)
+targetVersification = Versification.load(args.targetVersificationPath, fallback_name="web")
 
+if(args.targetUsfmCorpusPath is not None):
+    corpus = UsfmFileTextCorpus(args.targetUsfmCorpusPath, versification = targetVersification)
+if(args.targetUsxCorpusPath is not None):
+    corpus = UsxFileTextCorpus(args.targetUsxCorpusPath, versification = targetVersification)
+
+if(args.chineseTokenizer is not None):
+    tokenizer = ChineseBibleWordTokenizer.ChineseBibleWordTokenizer()
+if(args.latinTokenizer is not None):
+    tokenizer = LatinWordTokenizer()
+    
+
+
+
+#BSB
+#targetVersification = Versification.load("./resources/bsb_usx/release/versification.vrs", fallback_name="web")
+#sourceVersification = Versification(name = "sourceVersification", base_versification=ORIGINAL_VERSIFICATION)
+#corpus = UsfmFileTextCorpus("./resources/bsb_usfm", versification = targetVersification)
+#corpus = UsxFileTextCorpus("./resources/bsb_usx/release/USX_1", versification = targetVersification)
 #tokenizer = LatinWordTokenizer()
-tokenizer = ChineseBibleWordTokenizer.ChineseBibleWordTokenizer()
+
+#OCCB-Simplified
+#targetVersification = Versification.load("./resources/occb_simplified_usx/release/versification.vrs", fallback_name="web")
+#sourceVersification = Versification(name = "sourceVersification", base_versification=ORIGINAL_VERSIFICATION)
+#corpus = UsxFileTextCorpus("./resources/occb_simplified_usx/release/USX_1", versification = targetVersification)
+#tokenizer = ChineseBibleWordTokenizer.ChineseBibleWordTokenizer()
+
+#ONAV
+#targetVersification = Versification.load("./resources/onav_usx/release/versification.vrs", fallback_name="web")
+#sourceVersification = Versification(name = "sourceVersification", base_versification=ORIGINAL_VERSIFICATION)
+#corpus = UsxFileTextCorpus("./resources/onav_usx/release/USX_1", versification = targetVersification)
+#tokenizer = LatinWordTokenizer()
+
+#VanDyck
+#targetVersification = Versification(name = "targetVersification", base_versification=ENGLISH_VERSIFICATION)
+#sourceVersification = Versification(name = "sourceVersification", base_versification=ORIGINAL_VERSIFICATION)
+#corpus = UsfmFileTextCorpus("./resources/arb-vd_usfm", versification = targetVersification)
+#tokenizer = LatinWordTokenizer()
+
+#YLT
+#targetVersification = Versification(name = "targetVersification", base_versification=ENGLISH_VERSIFICATION)
+#sourceVersification = Versification(name = "sourceVersification", base_versification=ORIGINAL_VERSIFICATION)
+#corpus = UsfmFileTextCorpus("./resources/engylt_usfm", versification = targetVersification)
+#tokenizer = LatinWordTokenizer()
 
 with open('output.tsv', 'w', newline='', encoding='utf-8') as out_file:
     tsv_writer = csv.writer(out_file, delimiter='\t')
 
-    #tsv_writer.writerow(["id", "target_verse", "token"]) #OLD WAY
-    tsv_writer.writerow(["id", "source_verse", "token"]) #NEXT GEN
+    if(args.oldTsvFormat):
+        tsv_writer.writerow(["id", "target_verse", "token"]) #OLD WAY
+    else:
+        tsv_writer.writerow(["id", "source_verse", "token"]) #NEXT GEN
 
     for row in corpus.tokenize(tokenizer).nfc_normalize():    
         
@@ -57,8 +113,10 @@ with open('output.tsv', 'w', newline='', encoding='utf-8') as out_file:
         for token in row.segment:
             wordIndexStr = str(wordIndex).zfill(3)
 
-            #tsv_writer.writerow([f"{sourceVref.bbbcccvvvs}{wordIndexStr}", f"{row.ref.bbbcccvvvs}", token ]) #OLD WAY
-            tsv_writer.writerow([f"{row.ref.bbbcccvvvs}{wordIndexStr}", f"{sourceVref.bbbcccvvvs}", token ]) #NEXT GEN
+            if(args.oldTsvFormat):
+                tsv_writer.writerow([f"{sourceVref.bbbcccvvvs}{wordIndexStr}", f"{row.ref.bbbcccvvvs}", token ]) #OLD WAY
+            else:
+                tsv_writer.writerow([f"{row.ref.bbbcccvvvs}{wordIndexStr}", f"{sourceVref.bbbcccvvvs}", token ]) #NEXT GEN
             
             wordIndex += 1
 
