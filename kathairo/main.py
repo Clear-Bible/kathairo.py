@@ -41,12 +41,12 @@ argumentParser.add_argument("-of", "--oldTsvFormat", action='store_true') #optio
 
 args = argumentParser.parse_args()
 
-print(args.targetVersificationPath)
-print(args.targetUsfmCorpusPath)
-print(args.targetUsxCorpusPath)
-print(args.chineseTokenizer)
-print(args.latinTokenizer)
-print(args.oldTsvFormat)
+#print(args.targetVersificationPath)
+#print(args.targetUsfmCorpusPath)
+#print(args.targetUsxCorpusPath)
+#print(args.chineseTokenizer)
+#print(args.latinTokenizer)
+#print(args.oldTsvFormat)
 
 projectName = args.projectName
 

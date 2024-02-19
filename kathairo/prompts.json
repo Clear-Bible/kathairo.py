@@ -24,5 +24,44 @@
     "targetUsxCorpusPath": "./resources/occb_simplified_usx/release/USX_1",
     "chineseTokenizer": true,
     "oldTsvFormat": true
+  },
+  {
+    "projectName": "ONAV",
+    "targetVersificationPath": "./resources/onav_usx/release/versification.vrs",
+    "targetUsxCorpusPath": "./resources/onav_usx/release/USX_1",
+    "latinTokenizer": true
+  },
+  {
+    "projectName": "ONAV",
+    "targetVersificationPath": "./resources/onav_usx/release/versification.vrs",
+    "targetUsxCorpusPath": "./resources/onav_usx/release/USX_1",
+    "latinTokenizer": true,
+    "oldTsvFormat": true
+  },
+  {
+    "projectName": "VanDyck",
+    "targetVersificationPath": "./resources/versification/eng.vrs",
+    "targetUsfmCorpusPath": "./resources/arb-vd_usfm",
+    "latinTokenizer": true
+  },
+  {
+    "projectName": "VanDyck",
+    "targetVersificationPath": "./resources/versification/eng.vrs",
+    "targetUsfmCorpusPath": "./resources/arb-vd_usfm",
+    "latinTokenizer": true,
+    "oldTsvFormat": true
+  },
+  {
+    "projectName": "YLT",
+    "targetVersificationPath": "./resources/versification/eng.vrs",
+    "targetUsfmCorpusPath": "./resources/engylt_usfm",
+    "latinTokenizer": true
+  },
+  {
+    "projectName": "YLT",
+    "targetVersificationPath": "./resources/versification/eng.vrs",
+    "targetUsfmCorpusPath": "./resources/engylt_usfm",
+    "latinTokenizer": true,
+    "oldTsvFormat": true
   }
 ]
