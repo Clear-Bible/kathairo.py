@@ -1,0 +1,28 @@
+[
+  {
+    "projectName": "BSB",
+    "targetVersificationPath": "./resources/bsb_usx/release/versification.vrs",
+    "targetUsfmCorpusPath": "./resources/bsb_usfm",
+    "latinTokenizer": true
+  },
+  {
+    "projectName": "BSB",
+    "targetVersificationPath": "./resources/bsb_usx/release/versification.vrs",
+    "targetUsfmCorpusPath": "./resources/bsb_usfm",
+    "latinTokenizer": true,
+    "oldTsvFormat": true
+  },
+  {
+    "projectName": "OCCB-simplified",
+    "targetVersificationPath": "./resources/occb_simplified_usx/release/versification.vrs",
+    "targetUsxCorpusPath": "./resources/occb_simplified_usx/release/USX_1",
+    "chineseTokenizer": true
+  },
+  {
+    "projectName": "OCCB-simplified",
+    "targetVersificationPath": "./resources/occb_simplified_usx/release/versification.vrs",
+    "targetUsxCorpusPath": "./resources/occb_simplified_usx/release/USX_1",
+    "chineseTokenizer": true,
+    "oldTsvFormat": true
+  }
+]

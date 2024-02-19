@@ -21,7 +21,12 @@ from machine.scripture import (
 import argparse
 
 argumentParser = argparse.ArgumentParser()
-argumentParser.add_argument("-sv", "--sourceVersificationPath", type=str) #optional
+
+#add a parameter for source versification
+
+argumentParser.add_argument("-n", "--projectName", type=str, required=True)
+
+#add bunch of parameters for the default versification schemes included in machine and make target versification a mutually exclusive argument group
 argumentParser.add_argument("-tv", "--targetVersificationPath", type=str, required=True)
 
 corpusGroup = argumentParser.add_mutually_exclusive_group(required=True)
@@ -36,13 +41,14 @@ argumentParser.add_argument("-of", "--oldTsvFormat", action='store_true') #optio
 
 args = argumentParser.parse_args()
 
-print(args.sourceVersificationPath)
 print(args.targetVersificationPath)
 print(args.targetUsfmCorpusPath)
 print(args.targetUsxCorpusPath)
 print(args.chineseTokenizer)
 print(args.latinTokenizer)
 print(args.oldTsvFormat)
+
+projectName = args.projectName
 
 sourceVersification = Versification(name = "sourceVersification", base_versification=ORIGINAL_VERSIFICATION)
 
@@ -53,9 +59,9 @@ if(args.targetUsfmCorpusPath is not None):
 if(args.targetUsxCorpusPath is not None):
     corpus = UsxFileTextCorpus(args.targetUsxCorpusPath, versification = targetVersification)
 
-if(args.chineseTokenizer is not None):
+if(args.chineseTokenizer == True):
     tokenizer = ChineseBibleWordTokenizer.ChineseBibleWordTokenizer()
-if(args.latinTokenizer is not None):
+if(args.latinTokenizer == True):
     tokenizer = LatinWordTokenizer()
     
 #BSB
@@ -89,7 +95,15 @@ if(args.latinTokenizer is not None):
 #corpus = UsfmFileTextCorpus("./resources/engylt_usfm", versification = targetVersification)
 #tokenizer = LatinWordTokenizer()
 
-with open('output.tsv', 'w', newline='', encoding='utf-8') as out_file:
+#def CorpusToTsv(targetVersification, sourceVersification, corpus, tokenizer):
+
+tsvFormatString = "new"
+if(args.oldTsvFormat):
+    tsvFormatString = "old"
+    
+outputFileName = "TSVs/target_"+projectName+"_"+tsvFormatString+".tsv"
+
+with open(outputFileName, 'w', newline='', encoding='utf-8') as out_file:
     tsv_writer = csv.writer(out_file, delimiter='\t')
 
     if(args.oldTsvFormat):
