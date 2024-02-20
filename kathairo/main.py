@@ -107,9 +107,9 @@ with open(outputFileName, 'w', newline='', encoding='utf-8') as out_file:
     tsv_writer = csv.writer(out_file, delimiter='\t')
 
     if(args.oldTsvFormat):
-        tsv_writer.writerow(["id", "target_verse", "token"]) #OLD WAY
+        tsv_writer.writerow(["id", "target_verse", "text"]) #OLD WAY
     else:
-        tsv_writer.writerow(["id", "source_verse", "token"]) #NEXT GEN
+        tsv_writer.writerow(["id", "source_verse", "text"]) #NEXT GEN
 
     for row in corpus.tokenize(tokenizer).nfc_normalize():    
         
