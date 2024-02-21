@@ -125,9 +125,9 @@ with open(outputFileName, 'w', newline='', encoding='utf-8') as out_file:
             wordIndexStr = str(wordIndex).zfill(3)
 
             if(args.oldTsvFormat):
-                tsv_writer.writerow([f"{sourceVref.bbbcccvvvs}{wordIndexStr}", f"{row.ref.bbbcccvvvs}", token ]) #OLD WAY
+                tsv_writer.writerow([f"{sourceVref.bbbcccvvvs}{wordIndexStr}"[1:], f"{row.ref.bbbcccvvvs}"[1:], token ]) #OLD WAY
             else:
-                tsv_writer.writerow([f"{row.ref.bbbcccvvvs}{wordIndexStr}", f"{sourceVref.bbbcccvvvs}", token ]) #NEXT GEN
+                tsv_writer.writerow([f"{row.ref.bbbcccvvvs}{wordIndexStr}"[1:], f"{sourceVref.bbbcccvvvs}"[1:], token ]) #NEXT GEN
             
             wordIndex += 1
 
