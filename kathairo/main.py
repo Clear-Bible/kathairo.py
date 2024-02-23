@@ -19,6 +19,8 @@ from machine.scripture import (
     get_bbbcccvvv,
 )
 import argparse
+from biblelib.word import fromubs
+import re
 
 argumentParser = argparse.ArgumentParser()
 
@@ -124,10 +126,13 @@ with open(outputFileName, 'w', newline='', encoding='utf-8') as out_file:
         for token in row.segment:
             wordIndexStr = str(wordIndex).zfill(3)
 
+            sourceBcv = fromubs(f"{re.sub(r'[^0-9]', '', sourceVref.bbbcccvvvs)}00000").to_bcvid
+            rowBcv= fromubs(f"{re.sub(r'[^0-9]', '', row.ref.bbbcccvvvs)}00000").to_bcvid
+            
             if(args.oldTsvFormat):
-                tsv_writer.writerow([f"{sourceVref.bbbcccvvvs}{wordIndexStr}"[1:], f"{row.ref.bbbcccvvvs}"[1:], token ]) #OLD WAY
+                tsv_writer.writerow([f"{sourceBcv}{wordIndexStr}", f"{rowBcv}", token ]) #OLD WAY
             else:
-                tsv_writer.writerow([f"{row.ref.bbbcccvvvs}{wordIndexStr}"[1:], f"{sourceVref.bbbcccvvvs}"[1:], token ]) #NEXT GEN
+                tsv_writer.writerow([f"{rowBcv}{wordIndexStr}", f"{sourceBcv}", token ]) #NEXT GEN
             
             wordIndex += 1
 

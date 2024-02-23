@@ -9,6 +9,7 @@ readme = "README.md"
 python = ">=3.8,<3.12"
 sil-machine = "^1.0.2"
 sil-thot = "^3.4.3"
+biblelib = "^0.3.1"
 
 
 [build-system]
