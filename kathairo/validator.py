@@ -1,19 +1,16 @@
-import csv
-from biblelib.word import fromubs
-from machine.tokenization import LatinWordTokenizer, WhitespaceTokenizer
-import lxml
-import tree_sitter
-import usfm_grammar
-from usfm_grammar import USFMParser, Filter
+from usfm_grammar import USFMParser
 
-# input_usfm_str = open("sample.usfm","r", encoding='utf8').read()
-input_usfm_str = '''
-\\id GEN
-\\c 1
-\\p
-\\v 1 test verse
-'''
+#use the parser to check our USFM and USX for Errors
+#Then be able to check them all at once in a row
+#then tie that in to the other stuff such that we have
+#Pre-Test
+    #validate the raw USFM and USX files
+    #report
+#TSV Generation
+    #For each file that doesn't have issues, make a TSV
+#Run post generation tests on the quality of the TSVs
 
+input_usfm_str = open("./resources/bsb_usfm/50EPHBSB.SFM","r", encoding='utf8').read()
 my_parser = USFMParser(input_usfm_str)
 
 errors = my_parser.errors
