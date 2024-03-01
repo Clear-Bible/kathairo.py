@@ -5,7 +5,7 @@ from pathlib import Path
 
 def main():
     directory = Path(sys.argv[1])
-    input_files = directory.glob("*.tsv")
+    input_files = directory.glob("*reconstitution*.tsv")
     for input_file in input_files:
         rows = [r for r in csv.DictReader(input_file.open(), delimiter="\t")]
         verses = []
