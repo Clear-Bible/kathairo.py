@@ -1,0 +1,33 @@
+xml:id	ref	class	text	transliteration	after	strongnumberx	stronglemma	sensenumber	greek	greekstrong	gloss	english	mandarin	stem	morph	lang	lemma	pos	person	gender	number	state	type	lexdomain	contextualdomain	coredomain	sdbh	extends	frame	subjref	participantref
+o010010010011	GEN 1:1!1	prep	בְּ	bə		0871a	בְּ		ἐν	1722		in			R	H	בְּ	preposition													
+o010010010012	GEN 1:1!1	noun	רֵאשִׁ֖ית	rēʾšiyṯ	 	7225	רֵאשִׁית	1	ἀρξῇ	746		beginning	起初		Ncfsa	H	רֵאשִׁית	noun		feminine	singular	absolute	common	002003003004		168	006653001001000				
+o010010010021	GEN 1:1!2	verb	בָּרָ֣א	bārāʾ	 	1254	בָּרָא	1	ἐποίησεν	4160	he.created	created	创造	qal	Vqp3ms	H	בָּרָא	verb	third	masculine	singular		qatal	002002002005		028 055	001156001002000		A0:010010010031; A1:010010010052;010010010072;		
+o010010010031	GEN 1:1!3	noun	אֱלֹהִ֑ים	ʾĕlōhiym	 	0430	אֱלֹהִים	1	θεὸς	2316	God	God	神/上帝		Ncmpa	H	אֱלֹהִים	noun		masculine	plural	absolute	common	001001001		055	000397001003000				
+o010010010041	GEN 1:1!4	om	אֵ֥ת	ʾēṯ	 	0853	אֵת				(et)				To	H	אֵת	particle					direct object marker	001004001017		027 007	000792003001000				
+o010010010051	GEN 1:1!5	art	הַ	ha		1886a	הַ		τὸν	3588		the			Td	H	הַ	particle					definite article								
+o010010010052	GEN 1:1!5	noun	שָּׁמַ֖יִם	ššāmayim	 	8064	שָׁמַיִם	1	οὐρανὸν	3772		heavens	诸天		Ncmpa	H	שָׁמַיִם	noun		masculine	plural	absolute	common	001005002001		185	007459001001000				
+o010010010061	GEN 1:1!6	cj	וְ	wə		2050b	וְ		καὶ	2532		and	和		C	H	וְ	conjunction													
+o010010010062	GEN 1:1!6	om	אֵ֥ת	ʾēṯ	 	0853	אֵת								To	H	אֵת	particle					direct object marker	001004001017		027 007	000792003001000				
+o010010010071	GEN 1:1!7	art	הָ	hā		1886a	הַ		τὴν	3588		the			Td	H	הַ	particle					definite article								
+o010010010072	GEN 1:1!7	noun	אָֽרֶץ	ʾāreṣ:	׃	0776	אֶ֫רֶץ	2	γῆν	1093		earth	大地		Ncbsa	H	אֶ֫רֶץ	noun		both	singular	absolute	common	001005002002001		185 097 007	000715001001000				
+o010010050011	GEN 1:5!1	cj	וַ	wa		2050b	וְ		καὶ	2532		and			C	H	וְ	conjunction													
+o010010050012	GEN 1:5!1	verb	יִּקְרָ֨א	yyiqrāʾ	 	7121	קָרָא	1	ἐκάλεσεν	2564		called	称~为	qal	Vqw3ms	H	קָרָא	verb	third	masculine	singular		wayyiqtol	002004002010		113	006556001008000		A0:010010050021; A1:010010050041;		
+o010010050021	GEN 1:5!2	noun	אֱלֹהִ֤ים	ʾĕlōhiym	׀	0430	אֱלֹהִים	1	θεὸς	2316	God	God	神		Ncmpa	H	אֱלֹהִים	noun		masculine	plural	absolute	common	001001001		055	000397001003000				
+o010010050031	GEN 1:5!3	prep	לָ	lā		3807a	לְ		τὸ	3588		to	对		Rd	H	לְ	preposition													
+o010010050031ה	GEN 1:5!3	art		–		1886a	הַ					the			Td	H	הַ	particle					definite article								
+o010010050032	GEN 1:5!3	noun	אוֹר֙	ʾôr	 	0216	אוֹר	1	φῶς	5457		light	光		Ncbsa	H	אוֹר	noun		both	singular	absolute	common	002001001049		100	000207001001000				
+o010010050041	GEN 1:5!4	noun	י֔וֹם	yôm	 	3117	יוֹם	1	ἡμέραν	2250	day	day	白天		Ncmsa	H	יוֹם	noun		masculine	singular	absolute	common	002002002010		180	002854001002000				
+o010010050051	GEN 1:5!5	cj	וְ	wə		2050b	וְ		καὶ	2532		and	又		C	H	וְ	conjunction													
+o010010050052	GEN 1:5!5	prep	לַ	la		3807a	לְ		τὸ	3588		to	对		Rd	H	לְ	preposition													
+o010010050052ה	GEN 1:5!5	art		–		1886a	הַ					the			Td	H	הַ	particle					definite article								
+o010010050053	GEN 1:5!5	noun	חֹ֖שֶׁךְ	ḥōšeḵ	 	2822	חֹ֫שֶׁךְ	1	σκότος	4655		darkness	暗		Ncmsa	H	חֹ֫שֶׁךְ	noun		masculine	singular	absolute	common	002001001018		100	002598001001000				
+o010010050061	GEN 1:5!6	verb	קָ֣רָא	qārāʾ	 	7121	קָרָא	1	ἐκάλεσεν	2564	he.called	called	称~为	qal	Vqp3ms	H	קָרָא	verb	third	masculine	singular		qatal	002004002010		113	006556001008000		A0:010010050021; A1:010010050071;	010010050021	
+o010010050071	GEN 1:5!7	noun	לָ֑יְלָה	lāyəlâ	 	3915	לַ֫יְלָה	1	νύκτα	3571	night	night	黑夜		Ncmsa	H	לַ֫יְלָה	noun		masculine	singular	absolute	common	002002002010		180 100	003580001001000				
+o010010050081	GEN 1:5!8	cj	וַֽ	wa		2050b	וְ		καὶ	2532		and	于是		C	H	וְ	conjunction													
+o010010050082	GEN 1:5!8	verb	יְהִי	yəhî-	־	1961	הָיָה		ἐγένετο	1096		there was	有	qal	Vqw3ms	H	הָיָה	verb	third	masculine	singular		wayyiqtol						A0:010010050091;		
+o010010050091	GEN 1:5!9	noun	עֶ֥רֶב	ʿereḇ	 	6153	עֶ֫רֶב	1	ἑσπέρα	2073	evening	evening	晚上		Ncmsa	H	עֶ֫רֶב	noun		masculine	singular	absolute	common	002002002010		180 100	005646001001000				
+o010010050101	GEN 1:5!10	cj	וַֽ	wa		2050b	וְ		καὶ	2532		and			C	H	וְ	conjunction													
+o010010050102	GEN 1:5!10	verb	יְהִי	yəhî-	־	1961	הָיָה		ἐγένετο	1096		there was	有	qal	Vqw3ms	H	הָיָה	verb	third	masculine	singular		wayyiqtol						A0:010010050111;		
+o010010050111	GEN 1:5!11	noun	בֹ֖קֶר	ḇōqer	 	1242	בֹּ֫קֶר	1	πρωί	4404	morning	morning	早晨		Ncmsa	H	בֹּ֫קֶר	noun		masculine	singular	absolute	common	002002002010		180 100	001149001001000				
+o010010050121	GEN 1:5!12	noun	י֥וֹם	yôm	 	3117	יוֹם	1	ἡμέρα	2250	day	day	日		Ncmsa	H	יוֹם	noun		masculine	singular	absolute	common	002002002010		180	002854001002000				
+o010010050131	GEN 1:5!13	num	אֶחָֽד	ʾeḥāḏ:	׃פ	0259	אֶחָד		μία	3391	one	first	第一		Acmsa	H	אֶחָד	adjective		masculine	singular	absolute	cardinal number	002001001042 002001003009		138	000244001001000				
