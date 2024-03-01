@@ -163,3 +163,18 @@ And `.txt` files showing "v-line" like reconstitution:
 I also demonstrated a small iteration of this concept dealing with the subsumed definite articles.  In [source_SBLGNT_reconstitution_sample.txt](source_SBLGNT_reconstitution_sample.txt), they are included in the TSV, but marked as `eligible=n`.
 
 I prepared an [additional TSV]([text](source_WLCM_reconstitution_sample_wo_definite_articles.tsv)) and [reconstitution sample]([text](source_WLCM_reconstitution_sample_wo_definite_articles.txt)) that just exclude them from the TSVs altogether.
+
+## Consistent length identifiers
+
+Lastly, if we are doing a derivative dataset away from the XML IDs in the macula data, I am suggesting that token identifiers always have a consistent length:
+
+```
+BBCCCVVVWWWPP
+010010010011
+410010030011
+410010030011
+```
+
+This would allow the WLCM identifiers to match other identifiers, and if we had sub-word tokenization in a target token dataset (e.g., an Arabic New Testament with sub-word tokenization), we could support it.
+
+Otherwise, the "status quo" would be that we drop it unless the token dataset needs it (which right now, would only be for the WLCM).
