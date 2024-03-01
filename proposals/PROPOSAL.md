@@ -134,3 +134,32 @@ Given the example from above, the following tokens would not be eligible:
 I consider this an "optional" part of my proposal, the [sample TSVs](#sample-tsvs) listed at the end of the document implement it.
 
 If we solely adopted `space_after`, I think that would make the TSV more useful for applications consuming these TSVs (Clear-Aligner, ATLAS, our other Python libs, etc)
+
+## Shipping a source token dataset more similar to target tokens
+
+I think we could adapt our "source tokens" to be more consistent with the target tokens.  We would eventually want the "legacy" alignment data to be made consistent to.
+
+I want to respect the integrity of the existing `macula-greek` and `macula-hebrew` data design, but allow us to work more consistently with "target tokens".
+
+I think we can continue to maintain WLCM and SBLGNT identifiers as-is; if we were to "retokenize" the SBLGNT with punctuation, for example, that could introduce some backward incompatible changes.  I experimented with a bit with the USFM version of the SBLGNT and the existing `kathairo.py` pipeline, but did not take it forward to samples like I did with the BSB.
+
+But I do think we could provide a derivative dataset for the `macula-greek` and `macula-hebrew` TSVs that:
+
+- Uses the same "length" identifiers as the target tokens
+- Concatenates the `after` column values into a `text` column
+- Indicates where `space_after` is `n`
+
+Here are some <a name="sample-tsvs">sample TSVs</a>:
+
+- [source_WLCM_reconstitution_sample.tsv](source_WLCM_reconstitution_sample.tsv)
+- [source_SBLGNT_reconstitution_sample.tsv](source_SBLGNT_reconstitution_sample.tsv)
+
+And `.txt` files showing "v-line" like reconstitution:
+
+- [source_WLCM_reconstitution_sample.txt](source_WLCM_reconstitution_sample.txt)
+- [source_SBLGNT_reconstitution_sample.txt](source_SBLGNT_reconstitution_sample.txt)
+
+
+I also demonstrated a small iteration of this concept dealing with the subsumed definite articles.  In [source_SBLGNT_reconstitution_sample.txt](source_SBLGNT_reconstitution_sample.txt), they are included in the TSV, but marked as `eligible=n`.
+
+I prepared an [additional TSV]([text](source_WLCM_reconstitution_sample_wo_definite_articles.tsv)) and [reconstitution sample]([text](source_WLCM_reconstitution_sample_wo_definite_articles.txt)) that just exclude them from the TSVs altogether.
