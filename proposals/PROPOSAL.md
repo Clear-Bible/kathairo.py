@@ -175,9 +175,9 @@ And `.txt` files showing "v-line" like reconstitution:
 - [source_SBLGNT_reconstitution_sample.txt](source_SBLGNT_reconstitution_sample.txt)
 
 
-I also demonstrated a small iteration of this concept dealing with the subsumed definite articles.  In [source_SBLGNT_reconstitution_sample.txt](source_SBLGNT_reconstitution_sample.txt), they are included in the TSV, but marked as `eligible=n`.
+I also demonstrated a small iteration of this concept dealing with the subsumed definite articles.  In [source_WLCM_reconstitution_sample.tsv](source_WLCM_reconstitution_sample.tsv), they are included in the TSV, but marked as `eligible=n`.
 
-I prepared an [additional TSV]([text](source_WLCM_reconstitution_sample_wo_definite_articles.tsv)) and [reconstitution sample]([text](source_WLCM_reconstitution_sample_wo_definite_articles.txt)) that just exclude them from the TSVs altogether.
+I prepared an [additional TSV](source_WLCM_reconstitution_sample_wo_definite_articles.tsv)) and [reconstitution sample](source_WLCM_reconstitution_sample_wo_definite_articles.txt)) that just exclude them from the TSVs altogether.
 
 If concatenating the punctuation from the `after` column (helpful for reconstitution) would be problematic for alignment, we could have a column with it (e.g., `value|text`) and a column without (e.g. `word_value|word_text`).
 
