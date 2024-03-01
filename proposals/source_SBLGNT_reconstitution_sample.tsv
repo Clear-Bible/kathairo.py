@@ -1,40 +1,40 @@
-id	text	space_after	eligible	xml:id	ref	role	class	type	english	mandarin	gloss	macula_text	after	lemma	normalized	strong	morph	person	number	gender	case	tense	voice	mood	degree	domain	ln	frame	subjref	referent
-41001001001	Ἀρχὴ			n41001001001	MRK 1:1!1		noun	common	beginning	开始	[The] beginning	Ἀρχὴ	 	ἀρχή	ἀρχή	746	N-NSF		singular	feminine	nominative					068001	68.1			
-41001001002	τοῦ			n41001001002	MRK 1:1!2		det		the		of the	τοῦ	 	ὁ	τοῦ	3588	T-GSN		singular	neuter	genitive					092004	92.24			
-41001001003	εὐαγγελίου			n41001001003	MRK 1:1!3		noun	common	gospel	福音	gospel	εὐαγγελίου	 	εὐαγγέλιον	εὐαγγελίου	2098	N-GSN		singular	neuter	genitive					033015	33.217			
-41001001004	Ἰησοῦ			n41001001004	MRK 1:1!4		noun	proper	Jesus	耶稣	of Jesus	Ἰησοῦ	 	Ἰησοῦς	ἰησοῦ	2424	N-GSM		singular	masculine	genitive					093001	93.169a			
-41001001005	χριστοῦ.			n41001001005	MRK 1:1!5		noun	proper	Christ	基督	Christ	χριστοῦ	.	Χριστός	χριστοῦ	5547	N-GSM		singular	masculine	genitive					093001	93.387			
-41001002001	Καθὼς			n41001002001	MRK 1:2!1		conj		as	正如	As	Καθὼς	 	καθώς	καθώς	2531	ADV									064	64.14			
-41001002002	γέγραπται			n41001002002	MRK 1:2!2	v	verb		written	记	it has been written	γέγραπται	 	γράφω	γέγραπται	1125	V-RPI-3S	third	singular			perfect	passive	indicative		033005	33.54	A1:n41001002009;n41001002017;n41001003001	n41001002009 n41001002017 n41001003001	
-41001002003	ἐν			n41001002003	MRK 1:2!3		prep		in	上	in	ἐν	 	ἐν	ἐν	1722	PREP									090001	90.6			
-41001002004	τῷ			n41001002004	MRK 1:2!4		det				-	τῷ	 	ὁ	τῷ	3588	T-DSM		singular	masculine	dative					092004	92.24			
-41001002005	Ἠσαΐᾳ			n41001002005	MRK 1:2!5		noun	proper	Isaiah	以赛亚	Isaiah	Ἠσαΐᾳ	 	Ἠσαΐας	ἠσαΐᾳ	2268	N-DSM		singular	masculine	dative					093001	93.147			
-41001002006	τῷ			n41001002006	MRK 1:2!6		det		the		the	τῷ	 	ὁ	τῷ	3588	T-DSM		singular	masculine	dative					092004	92.24			
-41001002007	προφήτῃ·			n41001002007	MRK 1:2!7		noun	common	prophet	先知	prophet	προφήτῃ	·	προφήτης	προφήτῃ	4396	N-DSM		singular	masculine	dative					053009	53.79			
-41001002008	Ἰδοὺ			n41001002008	MRK 1:2!8	aux	ptcl		behold	看	Behold	Ἰδοὺ	 	ἰδού	ἰδού	2400	V-2AMM-2S	second	singular			aorist	middle	imperative		091003	91.13			
-41001002009	ἀποστέλλω			n41001002009	MRK 1:2!9	v	verb		send	差遣	I send	ἀποστέλλω	 	ἀποστέλλω	ἀποστέλλω	649	V-PAI-1S	first	singular			present	active	indicative		015004	15.66	A0:n00000000000 A1:n41001002011		
-41001002010	τὸν			n41001002010	MRK 1:2!10		det		the		the	τὸν	 	ὁ	τόν	3588	T-ASM		singular	masculine	accusative					092004	92.24			
-41001002011	ἄγγελόν			n41001002011	MRK 1:2!11		noun	common	messenger	使者	messenger	ἄγγελόν	 	ἄγγελος	ἄγγελον	32	N-ASM		singular	masculine	accusative					033015	33.195			
-41001002012	μου			n41001002012	MRK 1:2!12		pron	personal	my	我的	of Me	μου	 	ἐγώ	μου	3450	P-1GS		singular		genitive					092001	92.1			
-41001002013	πρὸ			n41001002013	MRK 1:2!13		prep		before	在~之前	before	πρὸ	 	πρό	πρό	4253	PREP									083006	83.33			
-41001002014	προσώπου			n41001002014	MRK 1:2!14		noun	common	face	前面	face	προσώπου	 	πρόσωπον	προσώπου	4383	N-GSN		singular	neuter	genitive					083006	83.33			
+token_id	text	space_after	eligible	xml:id	ref	role	class	type	english	mandarin	gloss	macula_text	after	lemma	normalized	strong	morph	person	number	gender	case	tense	voice	mood	degree	domain	ln	frame	subjref	referent
+41001001001	Ἀρχὴ			n41001001001	MRK 1:1!1		noun	common	beginning	开始	[The] beginning	Ἀρχὴ	 	ἀρχή	ἀρχή	746	N-NSF		singular	feminine	nominative					068001	68.1
+41001001002	τοῦ			n41001001002	MRK 1:1!2		det		the		of the	τοῦ	 	ὁ	τοῦ	3588	T-GSN		singular	neuter	genitive					092004	92.24
+41001001003	εὐαγγελίου			n41001001003	MRK 1:1!3		noun	common	gospel	福音	gospel	εὐαγγελίου	 	εὐαγγέλιον	εὐαγγελίου	2098	N-GSN		singular	neuter	genitive					033015	33.217
+41001001004	Ἰησοῦ			n41001001004	MRK 1:1!4		noun	proper	Jesus	耶稣	of Jesus	Ἰησοῦ	 	Ἰησοῦς	ἰησοῦ	2424	N-GSM		singular	masculine	genitive					093001	93.169a
+41001001005	χριστοῦ.			n41001001005	MRK 1:1!5		noun	proper	Christ	基督	Christ	χριστοῦ	.	Χριστός	χριστοῦ	5547	N-GSM		singular	masculine	genitive					093001	93.387
+41001002001	Καθὼς			n41001002001	MRK 1:2!1		conj		as	正如	As	Καθὼς	 	καθώς	καθώς	2531	ADV									064	64.14
+41001002002	γέγραπται			n41001002002	MRK 1:2!2	v	verb		written	记	it has been written	γέγραπται	 	γράφω	γέγραπται	1125	V-RPI-3S	third	singular			perfect	passive	indicative		033005	33.54	A1:n41001002009;n41001002017;n41001003001	n41001002009 n41001002017 n41001003001
+41001002003	ἐν			n41001002003	MRK 1:2!3		prep		in	上	in	ἐν	 	ἐν	ἐν	1722	PREP									090001	90.6
+41001002004	τῷ			n41001002004	MRK 1:2!4		det				-	τῷ	 	ὁ	τῷ	3588	T-DSM		singular	masculine	dative					092004	92.24
+41001002005	Ἠσαΐᾳ			n41001002005	MRK 1:2!5		noun	proper	Isaiah	以赛亚	Isaiah	Ἠσαΐᾳ	 	Ἠσαΐας	ἠσαΐᾳ	2268	N-DSM		singular	masculine	dative					093001	93.147
+41001002006	τῷ			n41001002006	MRK 1:2!6		det		the		the	τῷ	 	ὁ	τῷ	3588	T-DSM		singular	masculine	dative					092004	92.24
+41001002007	προφήτῃ·			n41001002007	MRK 1:2!7		noun	common	prophet	先知	prophet	προφήτῃ	·	προφήτης	προφήτῃ	4396	N-DSM		singular	masculine	dative					053009	53.79
+41001002008	Ἰδοὺ			n41001002008	MRK 1:2!8	aux	ptcl		behold	看	Behold	Ἰδοὺ	 	ἰδού	ἰδού	2400	V-2AMM-2S	second	singular			aorist	middle	imperative		091003	91.13
+41001002009	ἀποστέλλω			n41001002009	MRK 1:2!9	v	verb		send	差遣	I send	ἀποστέλλω	 	ἀποστέλλω	ἀποστέλλω	649	V-PAI-1S	first	singular			present	active	indicative		015004	15.66	A0:n00000000000 A1:n41001002011
+41001002010	τὸν			n41001002010	MRK 1:2!10		det		the		the	τὸν	 	ὁ	τόν	3588	T-ASM		singular	masculine	accusative					092004	92.24
+41001002011	ἄγγελόν			n41001002011	MRK 1:2!11		noun	common	messenger	使者	messenger	ἄγγελόν	 	ἄγγελος	ἄγγελον	32	N-ASM		singular	masculine	accusative					033015	33.195
+41001002012	μου			n41001002012	MRK 1:2!12		pron	personal	my	我的	of Me	μου	 	ἐγώ	μου	3450	P-1GS		singular		genitive					092001	92.1
+41001002013	πρὸ			n41001002013	MRK 1:2!13		prep		before	在~之前	before	πρὸ	 	πρό	πρό	4253	PREP									083006	83.33
+41001002014	προσώπου			n41001002014	MRK 1:2!14		noun	common	face	前面	face	προσώπου	 	πρόσωπον	προσώπου	4383	N-GSN		singular	neuter	genitive					083006	83.33
 41001002015	σου,			n41001002015	MRK 1:2!15		pron	personal	you	你	of You	σου	,	σύ	σου	4675	P-2GS		singular		genitive					092003	92.6			n41001001004
 41001002016	ὃς			n41001002016	MRK 1:2!16	s	pron	relative	who	他	who	ὃς	 	ὅς	ὅς	3739	R-NSM		singular	masculine	nominative					092006	92.27			n41001002011
-41001002017	κατασκευάσει			n41001002017	MRK 1:2!17	v	verb		prepare	预备	will prepare	κατασκευάσει	 	κατασκευάζω	κατασκευάσει	2680	V-FAI-3S	third	singular			future	active	indicative		077	77.6	A0:n41001002016 A1:n41001002019		
-41001002018	τὴν			n41001002018	MRK 1:2!18		det		the		the	τὴν	 	ὁ	τήν	3588	T-ASF		singular	feminine	accusative					092004	92.24			
-41001002019	ὁδόν			n41001002019	MRK 1:2!19		noun	common	way	道路	way	ὁδόν	 	ὁδός	ὁδόν	3598	N-ASF		singular	feminine	accusative					001016	1.99			
+41001002017	κατασκευάσει			n41001002017	MRK 1:2!17	v	verb		prepare	预备	will prepare	κατασκευάσει	 	κατασκευάζω	κατασκευάσει	2680	V-FAI-3S	third	singular			future	active	indicative		077	77.6	A0:n41001002016 A1:n41001002019
+41001002018	τὴν			n41001002018	MRK 1:2!18		det		the		the	τὴν	 	ὁ	τήν	3588	T-ASF		singular	feminine	accusative					092004	92.24
+41001002019	ὁδόν			n41001002019	MRK 1:2!19		noun	common	way	道路	way	ὁδόν	 	ὁδός	ὁδόν	3598	N-ASF		singular	feminine	accusative					001016	1.99
 41001002020	σου·			n41001002020	MRK 1:2!20		pron	personal	your	你	of You	σου	·	σύ	σου	4675	P-2GS		singular		genitive					092003	92.6			n41001001004
-41001003001	φωνὴ			n41001003001	MRK 1:3!1		noun	common	voice	声音	[The] voice	φωνὴ	 	φωνή	φωνή	5456	N-NSF		singular	feminine	nominative					033006	33.103			
-41001003002	βοῶντος			n41001003002	MRK 1:3!2	v	verb		crying	呼喊	of one crying	βοῶντος	 	βοάω	βοῶντος	994	V-PAP-GSM		singular	masculine	genitive	present	active	participle		033006	33.81	A0:n00000000000		
-41001003003	ἐν			n41001003003	MRK 1:3!3		prep		in	在	in	ἐν	 	ἐν	ἐν	1722	PREP									083003	83.13			
-41001003004	τῇ			n41001003004	MRK 1:3!4		det		the		the	τῇ	 	ὁ	τῇ	3588	T-DSF		singular	feminine	dative					092004	92.24			
-41001003005	ἐρήμῳ·			n41001003005	MRK 1:3!5		adj		wilderness	旷野	wilderness	ἐρήμῳ	·	ἔρημος	ἐρήμῳ	2048	A-DSF		singular	feminine	dative					001013	1.86			
-41001003006	Ἑτοιμάσατε			n41001003006	MRK 1:3!6	v	verb		prepare	预备	Prepare	Ἑτοιμάσατε	 	ἑτοιμάζω	ἑτοιμάσατε	2090	V-AAM-2P	second	plural			aorist	active	imperative		077	77.3	A0:n00000000000 A1:n41001003008		
-41001003007	τὴν			n41001003007	MRK 1:3!7		det		the		the	τὴν	 	ὁ	τήν	3588	T-ASF		singular	feminine	accusative					092004	92.24			
-41001003008	ὁδὸν			n41001003008	MRK 1:3!8		noun	common	way	道	way	ὁδὸν	 	ὁδός	ὁδόν	3598	N-ASF		singular	feminine	accusative					001016	1.99			
-41001003009	κυρίου,			n41001003009	MRK 1:3!9		noun	common	Lord	主	of [the] Lord	κυρίου	,	κύριος	κυρίου	2962	N-GSM		singular	masculine	genitive					012001	12.9{N:001}			
-41001003010	εὐθείας			n41001003010	MRK 1:3!10	o2	adj		straight	直	straight	εὐθείας	 	εὐθύς	εὐθείας	2117	A-APF		plural	feminine	accusative					079017	79.88			
-41001003011	ποιεῖτε			n41001003011	MRK 1:3!11	v	verb		make	修	make	ποιεῖτε	 	ποιέω	ποιεῖτε	4160	V-PAM-2P	second	plural			present	active	imperative		013001	13.9	A0:n00000000000 A1:n41001003013		
-41001003012	τὰς			n41001003012	MRK 1:3!12		det		the		the	τὰς	 	ὁ	τάς	3588	T-APF		plural	feminine	accusative					092004	92.24			
-41001003013	τρίβους			n41001003013	MRK 1:3!13		noun	common	paths	路	paths	τρίβους	 	τρίβος	τρίβους	5147	N-APF		plural	feminine	accusative					001016	1.100			
+41001003001	φωνὴ			n41001003001	MRK 1:3!1		noun	common	voice	声音	[The] voice	φωνὴ	 	φωνή	φωνή	5456	N-NSF		singular	feminine	nominative					033006	33.103
+41001003002	βοῶντος			n41001003002	MRK 1:3!2	v	verb		crying	呼喊	of one crying	βοῶντος	 	βοάω	βοῶντος	994	V-PAP-GSM		singular	masculine	genitive	present	active	participle		033006	33.81	A0:n00000000000
+41001003003	ἐν			n41001003003	MRK 1:3!3		prep		in	在	in	ἐν	 	ἐν	ἐν	1722	PREP									083003	83.13
+41001003004	τῇ			n41001003004	MRK 1:3!4		det		the		the	τῇ	 	ὁ	τῇ	3588	T-DSF		singular	feminine	dative					092004	92.24
+41001003005	ἐρήμῳ·			n41001003005	MRK 1:3!5		adj		wilderness	旷野	wilderness	ἐρήμῳ	·	ἔρημος	ἐρήμῳ	2048	A-DSF		singular	feminine	dative					001013	1.86
+41001003006	Ἑτοιμάσατε			n41001003006	MRK 1:3!6	v	verb		prepare	预备	Prepare	Ἑτοιμάσατε	 	ἑτοιμάζω	ἑτοιμάσατε	2090	V-AAM-2P	second	plural			aorist	active	imperative		077	77.3	A0:n00000000000 A1:n41001003008
+41001003007	τὴν			n41001003007	MRK 1:3!7		det		the		the	τὴν	 	ὁ	τήν	3588	T-ASF		singular	feminine	accusative					092004	92.24
+41001003008	ὁδὸν			n41001003008	MRK 1:3!8		noun	common	way	道	way	ὁδὸν	 	ὁδός	ὁδόν	3598	N-ASF		singular	feminine	accusative					001016	1.99
+41001003009	κυρίου,			n41001003009	MRK 1:3!9		noun	common	Lord	主	of [the] Lord	κυρίου	,	κύριος	κυρίου	2962	N-GSM		singular	masculine	genitive					012001	12.9{N:001}
+41001003010	εὐθείας			n41001003010	MRK 1:3!10	o2	adj		straight	直	straight	εὐθείας	 	εὐθύς	εὐθείας	2117	A-APF		plural	feminine	accusative					079017	79.88
+41001003011	ποιεῖτε			n41001003011	MRK 1:3!11	v	verb		make	修	make	ποιεῖτε	 	ποιέω	ποιεῖτε	4160	V-PAM-2P	second	plural			present	active	imperative		013001	13.9	A0:n00000000000 A1:n41001003013
+41001003012	τὰς			n41001003012	MRK 1:3!12		det		the		the	τὰς	 	ὁ	τάς	3588	T-APF		plural	feminine	accusative					092004	92.24
+41001003013	τρίβους			n41001003013	MRK 1:3!13		noun	common	paths	路	paths	τρίβους	 	τρίβος	τρίβους	5147	N-APF		plural	feminine	accusative					001016	1.100
 41001003014	αὐτοῦ,			n41001003014	MRK 1:3!14		pron	personal	his	他	of Him	αὐτοῦ	,	αὐτός	αὐτοῦ	846	P-GSM		singular	masculine	genitive					092004	92.11			n41001003009
