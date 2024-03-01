@@ -1,6 +1,21 @@
 # Standardizing tokenization
 
-## What's the "problem", anyway?
+## The proposal
+
+At a a high level:
+
+- Target token TSVs should indicate whitespace using a `space_after` column, which would make it easier to reconstitute surface text from token TSVs.
+- Target token TSV should indicate if tokens are eligible for alignment or not.
+- We should publish a source token dataset that is more similar to the target tokens.  We can do this without changing the underyling identifiers or data in `macula-greek` and `macula-hebrew`.
+- We should standardize on `BBCCCVVVWWWPP` for token identifiers
+
+## The details
+
+The sections below try and flesh out the proposal; I'm fairly flexible on what we call a column or how we encode things.
+
+For example, I have only indicated where `space_after=n`, but would be fine with having `space_after=y`.  I suggest a column `text` that concatenates the `text` and `after` from the Macula datasets, but that could also be `word_text` if we wanted to keep the `after` stuff out of `text`, etc.
+
+###  What's the "problem", anyway?
 
 We're using "word tokens" (`explicit_references` in ACAI terms) as the driver for a lot of our datasets and annotations.
 
@@ -63,9 +78,9 @@ Concatenating the tokens is used to reconstitute the original text.  And for "ne
 
 (For `macula-greek` and `macula-hebrew`, we are currently using a TEI edition of WLCM and SBLGNT that includes a limited amount of formatting).
 
-It would be great if at least the "target" TSV files containing the tokens had a consistent way for us to handle reconstitution, so let's start there.
+It would be great if at least the "target" TSV files containing the tokens had a consistent way for us to handle reconstitution, so let's start there.#
 
-## Target tokens: encoding whitespace
+### Target tokens: encoding whitespace
 
 If the GrapeCity data and the data being ran through `kathairo.py` are including punctuation as tokens, it would be pretty trivial to add an additional column to the TSVs that help indicate where whitespace should *not* be introduced.
 
@@ -113,7 +128,7 @@ This would make it very trivial to reconstitute the text as:
 
 This is an approach that @jacobwegner and @jtauber used working with data for on the Scaife Viewer project for the Perseus Digital Library, and was inspired by how [spaCy tokens track whitespace](https://spacy.io/api/token#:~:text=str-,whitespace_,-Trailing%20space%20character) and how the [spacy_conll library represents whitespace](https://github.com/BramVanroy/spacy_conll/blob/f2d41da649f1f440c4ec35a3b046d345b5516fd3/spacy_conll/formatter.py#L197) in the [CoNLL-U Format](https://universaldependencies.org/format.html) used by the [Universal Dependencies](https://universaldependencies.org/) framework.
 
-## Target tokens: excluding tokens for alignment
+### Target tokens: excluding tokens for alignment
 
 I recognize that part of the legacy data including `isPunc` was to maintain portions of the surface text, but to exclude tokens with `isPunc=True` from alignment.  I think the TSVs we generate in `kathairo.py` could add an `eligible` column that serves a similar purpose.
 
@@ -135,7 +150,7 @@ I consider this an "optional" part of my proposal, the [sample TSVs](#sample-tsv
 
 If we solely adopted `space_after`, I think that would make the TSV more useful for applications consuming these TSVs (Clear-Aligner, ATLAS, our other Python libs, etc)
 
-## Shipping a source token dataset more similar to target tokens
+### Shipping a source token dataset more similar to target tokens
 
 I think we could adapt our "source tokens" to be more consistent with the target tokens.  We would eventually want the "legacy" alignment data to be made consistent to.
 
@@ -164,7 +179,9 @@ I also demonstrated a small iteration of this concept dealing with the subsumed 
 
 I prepared an [additional TSV]([text](source_WLCM_reconstitution_sample_wo_definite_articles.tsv)) and [reconstitution sample]([text](source_WLCM_reconstitution_sample_wo_definite_articles.txt)) that just exclude them from the TSVs altogether.
 
-## Consistent length identifiers
+If concatenating the punctuation from the `after` column (helpful for reconstitution) would be problematic for alignment, we could have a column with it (e.g., `value|text`) and a column without (e.g. `word_value|word_text`).
+
+### Consistent length identifiers
 
 Lastly, if we are doing a derivative dataset away from the XML IDs in the macula data, I am suggesting that token identifiers always have a consistent length:
 
