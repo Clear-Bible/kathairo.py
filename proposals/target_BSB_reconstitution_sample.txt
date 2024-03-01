@@ -1,0 +1,5 @@
+01001001 In the beginning God created the heavens and the earth.
+01001005 God called the light “day,” and the darkness He called “night.” And there was evening, and there was morning—the first day.
+41001001 This is the beginning of the gospel of Jesus Christ, the Son of God.
+41001002 As it is written in Isaiah the prophet: “Behold, I will send My messenger ahead of You, who will prepare Your way.”
+41001003 “A voice of one calling in the wilderness, ‘Prepare the way for the Lord, make straight paths for Him.’”
