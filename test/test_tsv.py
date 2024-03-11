@@ -43,7 +43,7 @@ def test_id_book_value(tsv_file, vrs_file):
     targetVersification = Versification.load(vrs_file, fallback_name="web")
     for book in targetVersification.book_list:
         current_book_number+=1
-        if(not(len(book) == 1 and book[0] == 1)):
+        if(len(book) > 1 or book[0] > 1):
             present_book_id_list.append(current_book_number)
     
     data_frame = pd.read_csv(tsv_file, sep='\t',dtype=str)
@@ -84,9 +84,64 @@ def test_id_verse_value(tsv_file, vrs_file):
                 
     data_frame = pd.read_csv(tsv_file, sep='\t',dtype=str)
     for id in data_frame['id']:
-        verse_id = int(str(id)[-3:])
+        verse_id = int(str(id)[5:8])
         assert (verse_id > 0 and verse_id <= max_verse_number)
 
 
-#does each chapter have the number of verses listed in the versification
+#Does each chapter possess the number of verses listed in the versification (requires versification file)
+@pytest.mark.parametrize("tsv_file", __tsv_files__)
+@pytest.mark.parametrize("vrs_file", __vrs_files__)
+def test_id_verse_value(tsv_file, vrs_file):
+    
+    targetVersification = Versification.load(vrs_file, fallback_name="web")
+    
+    book_list = []
+    chapter_list = []
+    current_verse_count = 1
+    previous_id = "01001001001"
+    
+    data_frame = pd.read_csv(tsv_file, sep='\t',dtype=str)
+    for id in data_frame['id']:
+        
+        previous_book_id = int(str(previous_id)[:2])
+        previous_chapter_id = int(str(previous_id)[2:5])
+        previous_verse_id = int(str(previous_id)[5:8])
+        
+        current_book_id = int(str(id)[:2])
+        current_chapter_id = int(str(id)[2:5])
+        current_verse_id = int(str(id)[5:8])
+        
+        if(current_verse_id > previous_verse_id):#verse changes
+            #increment verse count
+            current_verse_count += 1
+        
+        if(current_verse_id < previous_verse_id):#verse changes
+            #add chapter to chapter_list
+            chapter_list.append(current_verse_count)
+            current_verse_count = 1
+        #if(current_chapter_id > previous_chapter_id):#chapter changes
+        #    #add chapter to chapter_list
+        #    chapter_list.append(current_verse_count)
+        #    current_verse_count = 1
+        
+        if(current_book_id > previous_book_id):#book changes
+            #add book to book_list
+            book_list.append(chapter_list)
+            chapter_list = []
+            
+        previous_id = id    
+    
+    print(len(book_list))
+    print(chapter_list)
+    
+    current_verse_count += 1
+    chapter_list.append(current_verse_count)
+    book_list.append(chapter_list)  
+    
+    print(book_list[-1])
+    print(len(book_list))
+    
+    print(book_list)
+    
+    assert (book_list == targetVersification.book_list)
 #is each chapter in the mapping present in the tsv
