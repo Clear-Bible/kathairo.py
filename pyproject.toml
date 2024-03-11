@@ -11,6 +11,8 @@ sil-machine = "^1.0.2"
 sil-thot = "^3.4.3"
 biblelib = "^0.3.1"
 usfm-grammar = "^3.0.0b4"
+pytest = "^8.0.2"
+pandas = "^2.2.1"
 
 
 [build-system]
