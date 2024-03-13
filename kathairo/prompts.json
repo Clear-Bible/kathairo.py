@@ -1,5 +1,11 @@
 [
   {
+    "projectName": "BSB_USX",
+    "targetVersificationPath": "./resources/bsb_usx/release/versification.vrs",
+    "targetUsfmCorpusPath": "./resources/bsb_usx/release/USX_1",
+    "latinTokenizer": true
+  },
+  {
     "projectName": "BSB",
     "targetVersificationPath": "./resources/bsb_usx/release/versification.vrs",
     "targetUsfmCorpusPath": "./resources/bsb_usfm",

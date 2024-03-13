@@ -87,6 +87,21 @@ def test_id_verse_value(tsv_file, vrs_file):
         verse_id = int(str(id)[5:8])
         assert (verse_id > 0 and verse_id <= max_verse_number)
 
+#Is each verse in the mapping present in the TSV (requires versification file)
+@pytest.mark.parametrize("tsv_file", __tsv_files__)
+@pytest.mark.parametrize("vrs_file", __vrs_files__)
+def test_mapped_verses_are_present(tsv_file, vrs_file):
+    
+    targetVersification = Versification.load(vrs_file, fallback_name="web")
+    mapping_targets = targetVersification.mappings._versification_to_standard.keys()
+    
+    tsv_ids = []
+    data_frame = pd.read_csv(tsv_file, sep='\t',dtype=str)
+    for id in data_frame['id'].values:
+        tsv_ids.append(str(id)[:8])
+    
+    for target in mapping_targets:
+        assert str(target.bbbcccvvvs)[1:] in tsv_ids#data_frame['id'].values
 
 #Does each chapter possess the number of verses listed in the versification (requires versification file)
 @pytest.mark.parametrize("tsv_file", __tsv_files__)
@@ -119,10 +134,6 @@ def test_id_verse_value(tsv_file, vrs_file):
             #add chapter to chapter_list
             chapter_list.append(current_verse_count)
             current_verse_count = 1
-        #if(current_chapter_id > previous_chapter_id):#chapter changes
-        #    #add chapter to chapter_list
-        #    chapter_list.append(current_verse_count)
-        #    current_verse_count = 1
         
         if(current_book_id > previous_book_id):#book changes
             #add book to book_list
@@ -131,17 +142,17 @@ def test_id_verse_value(tsv_file, vrs_file):
             
         previous_id = id    
     
-    print(len(book_list))
-    print(chapter_list)
-    
     current_verse_count += 1
     chapter_list.append(current_verse_count)
     book_list.append(chapter_list)  
     
-    print(book_list[-1])
-    print(len(book_list))
+    #for book in book_list:
+    #    print(book)
+        
+    #print("")
     
-    print(book_list)
+    #for book in targetVersification.book_list:
+    #    print(book)
     
-    assert (book_list == targetVersification.book_list)
-#is each chapter in the mapping present in the tsv
+    for index in range(len(targetVersification.book_list)):
+        assert (book_list[index] == targetVersification.book_list[index])

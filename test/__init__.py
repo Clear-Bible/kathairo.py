@@ -3,7 +3,7 @@ import csv
 
 __macula_greek_tsv_rows__ = []
 
-tsv_path = "../TSVs/target_BSB_new.tsv"
+tsv_path = "../TSVs/target_BSB_USX_new.tsv"
 __tsv_files__ = [tsv_path]
 
 vrs_path = "../resources/bsb_usx/release/versification.vrs"
