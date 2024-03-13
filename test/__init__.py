@@ -2,7 +2,7 @@
 
 #TODO have common method of creating TSV file name
 #tsv_path = "../TSVs/target_BSB_USX_new.tsv"
-__tsv_vrs_files__ = []#tsv_path
+__tsv_vrs_name_files__ = []#tsv_path
 
 #vrs_path = "../resources/bsb_usx/release/versification.vrs"
 #__vrs_files__ = []#vrs_path
@@ -29,8 +29,8 @@ with open(json_file) as json_data:
 
         outputFileLocation = "TSVs/target_"+projectName+"_"+tsvFormatString+".tsv"
         
-        prompt_tsv_vrs = [outputFileLocation, targetVersificationPath]
-        __tsv_vrs_files__.append(prompt_tsv_vrs)
+        prompt_tsv_vrs = [outputFileLocation, targetVersificationPath, projectName]
+        __tsv_vrs_name_files__.append(prompt_tsv_vrs)
 
 
 #with open(tsv_path, encoding='utf-8') as file:
