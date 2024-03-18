@@ -22,6 +22,39 @@ import argparse
 from biblelib.word import fromubs
 import re
 
+#BSB
+#targetVersification = Versification.load("./resources/bsb_usx/release/versification.vrs", fallback_name="web")
+#sourceVersification = Versification(name = "sourceVersification", base_versification=ORIGINAL_VERSIFICATION)
+#corpus = UsfmFileTextCorpus("./resources/bsb_usfm", versification = targetVersification)
+#corpus = UsxFileTextCorpus("./resources/bsb_usx/release/USX_1", versification = targetVersification)
+#tokenizer = LatinWordTokenizer()
+
+#OCCB-Simplified
+#targetVersification = Versification.load("./resources/occb_simplified_usx/release/versification.vrs", fallback_name="web")
+#sourceVersification = Versification(name = "sourceVersification", base_versification=ORIGINAL_VERSIFICATION)
+#corpus = UsxFileTextCorpus("./resources/occb_simplified_usx/release/USX_1", versification = targetVersification)
+#tokenizer = ChineseBibleWordTokenizer.ChineseBibleWordTokenizer()
+
+#ONAV
+#targetVersification = Versification.load("./resources/onav_usx/release/versification.vrs", fallback_name="web")
+#sourceVersification = Versification(name = "sourceVersification", base_versification=ORIGINAL_VERSIFICATION)
+#corpus = UsxFileTextCorpus("./resources/onav_usx/release/USX_1", versification = targetVersification)
+#tokenizer = LatinWordTokenizer()
+
+#VanDyck
+#targetVersification = Versification(name = "targetVersification", base_versification=ENGLISH_VERSIFICATION)
+#sourceVersification = Versification(name = "sourceVersification", base_versification=ORIGINAL_VERSIFICATION)
+#corpus = UsfmFileTextCorpus("./resources/arb-vd_usfm", versification = targetVersification)
+#tokenizer = LatinWordTokenizer()
+
+#YLT
+#targetVersification = Versification(name = "targetVersification", base_versification=ENGLISH_VERSIFICATION)
+#sourceVersification = Versification(name = "sourceVersification", base_versification=ORIGINAL_VERSIFICATION)
+#corpus = UsfmFileTextCorpus("./resources/engylt_usfm", versification = targetVersification)
+#tokenizer = LatinWordTokenizer()
+
+
+#'''
 argumentParser = argparse.ArgumentParser()
 
 #add a parameter for source versification
@@ -66,43 +99,13 @@ if(args.chineseTokenizer == True):
 if(args.latinTokenizer == True):
     tokenizer = LatinWordTokenizer()
     
-#BSB
-#targetVersification = Versification.load("./resources/bsb_usx/release/versification.vrs", fallback_name="web")
-#sourceVersification = Versification(name = "sourceVersification", base_versification=ORIGINAL_VERSIFICATION)
-#corpus = UsfmFileTextCorpus("./resources/bsb_usfm", versification = targetVersification)
-#corpus = UsxFileTextCorpus("./resources/bsb_usx/release/USX_1", versification = targetVersification)
-#tokenizer = LatinWordTokenizer()
-
-#OCCB-Simplified
-#targetVersification = Versification.load("./resources/occb_simplified_usx/release/versification.vrs", fallback_name="web")
-#sourceVersification = Versification(name = "sourceVersification", base_versification=ORIGINAL_VERSIFICATION)
-#corpus = UsxFileTextCorpus("./resources/occb_simplified_usx/release/USX_1", versification = targetVersification)
-#tokenizer = ChineseBibleWordTokenizer.ChineseBibleWordTokenizer()
-
-#ONAV
-#targetVersification = Versification.load("./resources/onav_usx/release/versification.vrs", fallback_name="web")
-#sourceVersification = Versification(name = "sourceVersification", base_versification=ORIGINAL_VERSIFICATION)
-#corpus = UsxFileTextCorpus("./resources/onav_usx/release/USX_1", versification = targetVersification)
-#tokenizer = LatinWordTokenizer()
-
-#VanDyck
-#targetVersification = Versification(name = "targetVersification", base_versification=ENGLISH_VERSIFICATION)
-#sourceVersification = Versification(name = "sourceVersification", base_versification=ORIGINAL_VERSIFICATION)
-#corpus = UsfmFileTextCorpus("./resources/arb-vd_usfm", versification = targetVersification)
-#tokenizer = LatinWordTokenizer()
-
-#YLT
-#targetVersification = Versification(name = "targetVersification", base_versification=ENGLISH_VERSIFICATION)
-#sourceVersification = Versification(name = "sourceVersification", base_versification=ORIGINAL_VERSIFICATION)
-#corpus = UsfmFileTextCorpus("./resources/engylt_usfm", versification = targetVersification)
-#tokenizer = LatinWordTokenizer()
-
+#'''
 #def CorpusToTsv(targetVersification, sourceVersification, corpus, tokenizer):
 
 tsvFormatString = "new"
 if(args.oldTsvFormat):
     tsvFormatString = "old"
-    
+
 outputFileName = "TSVs/target_"+projectName+"_"+tsvFormatString+".tsv"
 
 with open(outputFileName, 'w', newline='', encoding='utf-8') as out_file:
@@ -113,7 +116,15 @@ with open(outputFileName, 'w', newline='', encoding='utf-8') as out_file:
     else:
         tsv_writer.writerow(["id", "source_verse", "text"]) #NEXT GEN
 
-    for row in corpus.tokenize(tokenizer).nfc_normalize():    
+    for row in corpus:#.tokenize(tokenizer).nfc_normalize():    
+        
+        #if(row.ref.bbbcccvvvs[:6] == "003006"):
+        #    vaeresTwo= True
+            
+        if(row.is_in_range and row.text == ''):
+            tokenized_row = tokenizer.tokenize((row.text + " <RANGE>"))
+        else:
+            tokenized_row = tokenizer.tokenize(row.text)
         
         #print(f"{row.ref}: {row.text}")
 
@@ -123,7 +134,7 @@ with open(outputFileName, 'w', newline='', encoding='utf-8') as out_file:
         sourceVref = targetVref
 
         wordIndex = 1
-        for token in row.segment:
+        for token in tokenized_row:
             wordIndexStr = str(wordIndex).zfill(3)
 
             sourceBcv = fromubs(f"{re.sub(r'[^0-9]', '', sourceVref.bbbcccvvvs)}00000").to_bcvid
@@ -135,49 +146,3 @@ with open(outputFileName, 'w', newline='', encoding='utf-8') as out_file:
                 tsv_writer.writerow([f"{rowBcv}{wordIndexStr}", f"{sourceBcv}", token ]) #NEXT GEN
             
             wordIndex += 1
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#What punctuation data can we get from machine?
-    #a tokenized verse is just returned as an array so there's no accompanying data to signify that a token is punctuation. 
-    #there is a is_punctuation method we could use though
-#Is there USFM validation?
-    #I don't seen any tools for it, and when I fed it USFM with faulty and duplicate verses it just ignored the errors
-#What kind of versification data can we get to enrich the current alignment data structures?
-    #VerseRef.change_versification, which translates a verse ref into it's equivalent in another versification scheme
-    #various tools of comparing verses from different versification (equality, >, <)
-            
-
-#rename Project
-#publish to GitHub
-#scripture burrito alignment format
-
-"""
-
-for text in corpus.texts:
-    print(text.id)
-    print("======")
-    for row in text.take(3):
-        verse_ref = row.ref
-        chapter_verse = f"{verse_ref.chapter}:{verse_ref.verse}"
-        print(f"{chapter_verse}: {row.text}")
-    print()
-
-"""
