@@ -28,5 +28,11 @@
     "targetVersificationPath": "./resources/versification/eng.vrs",
     "targetUsfmCorpusPath": "./resources/engylt_usfm",
     "latinTokenizer": true
+  },
+  {
+    "projectName": "RSB",
+    "targetVersificationPath": "./resources/versification/rsc.vrs",
+    "targetUsfmCorpusPath": "./resources/ru_rsb",
+    "latinTokenizer": true
   }
 ]

@@ -95,10 +95,17 @@ def corpus_to_tsv(targetVersification:Versification, sourceVersification:Versifi
 #tokenizer = LatinWordTokenizer()
 
 #ONEN
-targetVersification = Versification.load("./resources/onen_usx/release/versification.vrs", fallback_name="web")
+#targetVersification = Versification.load("./resources/onen_usx/release/versification.vrs", fallback_name="web")
+#sourceVersification = Versification(name = "sourceVersification", base_versification=ORIGINAL_VERSIFICATION)
+#corpus = UsfmFileTextCorpus("./resources/onen_usfm", versification = targetVersification, file_pattern="*.usfm")
+#tokenizer = LatinWordTokenizer()
+#project_name = "ONEN"
+
+#RSB
+targetVersification = Versification(name = "targetVersification", base_versification=RUSSIAN_PROTESTANT_VERSIFICATION)
 sourceVersification = Versification(name = "sourceVersification", base_versification=ORIGINAL_VERSIFICATION)
-corpus = UsfmFileTextCorpus("./resources/onen_usfm", versification = targetVersification, file_pattern="*.usfm")
+corpus = UsfmFileTextCorpus("./resources/ru_rsb", versification = targetVersification)
 tokenizer = LatinWordTokenizer()
-project_name = "ONEN"
+project_name = "RSB"
 
 corpus_to_tsv(targetVersification, sourceVersification, corpus, tokenizer, project_name)
