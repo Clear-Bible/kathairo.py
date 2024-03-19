@@ -32,15 +32,12 @@ def corpus_to_tsv(targetVersification:Versification, sourceVersification:Versifi
         else:
             tsv_writer.writerow(["id", "source_verse", "text"]) #NEXT GEN
 
-        for row in corpus:#.tokenize(tokenizer).nfc_normalize():    
-            
-            #if(row.ref.bbbcccvvvs[:6] == "003006"):
-            #    vaeresTwo= True
+        for row in corpus.tokenize(tokenizer).nfc_normalize():#.tokenize(tokenizer).nfc_normalize()    
                 
-            if(row.is_in_range and row.text == ''):
-                tokenized_row = tokenizer.tokenize((row.text + " <RANGE>"))
-            else:
-                tokenized_row = tokenizer.tokenize(row.text)
+            #if(row.is_in_range and row.text == ''):
+            #    tokenized_row = tokenizer.tokenize((row.text + " <RANGE>"))
+            #else:
+            #    tokenized_row = tokenizer.tokenize(row.text)
             
             #print(f"{row.ref}: {row.text}")
 
@@ -50,7 +47,7 @@ def corpus_to_tsv(targetVersification:Versification, sourceVersification:Versifi
             sourceVref = targetVref
 
             wordIndex = 1
-            for token in tokenized_row:
+            for token in row.segment:#row.segment, tokenized_row:
                 wordIndexStr = str(wordIndex).zfill(3)
 
                 sourceBcv = fromubs(f"{re.sub(r'[^0-9]', '', sourceVref.bbbcccvvvs)}00000").to_bcvid
@@ -71,10 +68,11 @@ def corpus_to_tsv(targetVersification:Versification, sourceVersification:Versifi
 #tokenizer = LatinWordTokenizer()
 
 #OCCB-Simplified
-#targetVersification = Versification.load("./resources/occb_simplified_usx/release/versification.vrs", fallback_name="web")
-#sourceVersification = Versification(name = "sourceVersification", base_versification=ORIGINAL_VERSIFICATION)
-#corpus = UsxFileTextCorpus("./resources/occb_simplified_usx/release/USX_1", versification = targetVersification)
-#tokenizer = ChineseBibleWordTokenizer.ChineseBibleWordTokenizer()
+targetVersification = Versification.load("./resources/occb_simplified_usx/release/versification.vrs", fallback_name="web")
+sourceVersification = Versification(name = "sourceVersification", base_versification=ORIGINAL_VERSIFICATION)
+corpus = UsxFileTextCorpus("./resources/occb_simplified_usx/release/USX_1", versification = targetVersification)
+tokenizer = ChineseBibleWordTokenizer.ChineseBibleWordTokenizer()
+project_name = "OCCB-simplified"
 
 #ONAV
 #targetVersification = Versification.load("./resources/onav_usx/release/versification.vrs", fallback_name="web")
@@ -102,10 +100,10 @@ def corpus_to_tsv(targetVersification:Versification, sourceVersification:Versifi
 #project_name = "ONEN"
 
 #RSB
-targetVersification = Versification(name = "targetVersification", base_versification=RUSSIAN_PROTESTANT_VERSIFICATION)
-sourceVersification = Versification(name = "sourceVersification", base_versification=ORIGINAL_VERSIFICATION)
-corpus = UsfmFileTextCorpus("./resources/ru_rsb", versification = targetVersification)
-tokenizer = LatinWordTokenizer()
-project_name = "RSB"
+#targetVersification = Versification(name = "targetVersification", base_versification=RUSSIAN_PROTESTANT_VERSIFICATION)
+#sourceVersification = Versification(name = "sourceVersification", base_versification=ORIGINAL_VERSIFICATION)
+#corpus = UsfmFileTextCorpus("./resources/ru_rsb", versification = targetVersification)
+#tokenizer = LatinWordTokenizer()
+#project_name = "RSB"
 
 corpus_to_tsv(targetVersification, sourceVersification, corpus, tokenizer, project_name)
