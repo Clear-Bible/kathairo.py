@@ -15,7 +15,39 @@ from machine.scripture import (
 from biblelib.word import fromubs
 import re
 
-def corpus_to_tsv(targetVersification:Versification, sourceVersification:Versification, corpus:ScriptureTextCorpus, tokenizer:WhitespaceTokenizer, 
+def corpus_to_verse_level_tsv(targetVersification:Versification, sourceVersification:Versification, corpus:ScriptureTextCorpus, tokenizer:WhitespaceTokenizer, 
+                              project_name:str, use_old_tsv_format:bool = False):
+
+    tsvFormatString = "new"
+    if(use_old_tsv_format):
+        tsvFormatString = "old"
+        
+    outputFileName = "VerseText/target_"+project_name+"_"+tsvFormatString+".tsv"
+
+    with open(outputFileName, 'w', newline='', encoding='utf-8') as out_file:
+        tsv_writer = csv.writer(out_file, delimiter='\t')
+
+        if(use_old_tsv_format):
+            tsv_writer.writerow(["id", "target_verse", "text"]) #OLD WAY
+        else:
+            tsv_writer.writerow(["id", "source_verse", "text"]) #NEXT GEN
+
+        for row in corpus.tokenize(tokenizer).nfc_normalize():#.tokenize(tokenizer).nfc_normalize()    
+
+            targetVref = VerseRef.from_bbbcccvvv(row.ref.bbbcccvvv, targetVersification) #dependent on which .vrs is being used
+            targetVref.change_versification(sourceVersification)
+            
+            sourceVref = targetVref
+
+            sourceBcv = fromubs(f"{re.sub(r'[^0-9]', '', sourceVref.bbbcccvvvs)}00000").to_bcvid
+            rowBcv= fromubs(f"{re.sub(r'[^0-9]', '', row.ref.bbbcccvvvs)}00000").to_bcvid
+            
+            if(use_old_tsv_format):
+                tsv_writer.writerow([f"{sourceBcv}", f"{rowBcv}", row.text ]) #OLD WAY
+            else:
+                tsv_writer.writerow([f"{rowBcv}", f"{sourceBcv}", row.text ]) #NEXT GEN
+
+def corpus_to_word_level_tsv(targetVersification:Versification, sourceVersification:Versification, corpus:ScriptureTextCorpus, tokenizer:WhitespaceTokenizer, 
                   project_name:str, use_old_tsv_format:bool = False):
 
     tsvFormatString = "new"
@@ -91,6 +123,7 @@ project_name = "OCCB-simplified"
 #sourceVersification = Versification(name = "sourceVersification", base_versification=ORIGINAL_VERSIFICATION)
 #corpus = UsfmFileTextCorpus("./resources/engylt_usfm", versification = targetVersification)
 #tokenizer = LatinWordTokenizer()
+#project_name = "YLT"
 
 #ONEN
 #targetVersification = Versification.load("./resources/onen_usx/release/versification.vrs", fallback_name="web")
@@ -106,4 +139,5 @@ project_name = "OCCB-simplified"
 #tokenizer = LatinWordTokenizer()
 #project_name = "RSB"
 
-corpus_to_tsv(targetVersification, sourceVersification, corpus, tokenizer, project_name)
+#corpus_to_word_level_tsv(targetVersification, sourceVersification, corpus, tokenizer, project_name)
+#corpus_to_verse_level_tsv(targetVersification, sourceVersification, corpus, tokenizer, project_name)

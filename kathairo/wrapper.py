@@ -12,7 +12,7 @@ with open(json_file) as json_data:
             'poetry',
             'run',
             'python',
-            'kathairo\main.py'
+            'kathairo\\build_tsv_args_parser.py'
                             ]
         
         for key in jsonKeys:
