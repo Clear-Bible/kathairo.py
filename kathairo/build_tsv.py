@@ -92,52 +92,53 @@ def corpus_to_word_level_tsv(targetVersification:Versification, sourceVersificat
                 
                 wordIndex += 1
 
-#BSB
-#targetVersification = Versification.load("./resources/bsb_usx/release/versification.vrs", fallback_name="web")
-#sourceVersification = Versification(name = "sourceVersification", base_versification=ORIGINAL_VERSIFICATION)
-#corpus = UsfmFileTextCorpus("./resources/bsb_usfm", versification = targetVersification)
-#corpus = UsxFileTextCorpus("./resources/bsb_usx/release/USX_1", versification = targetVersification)
-#tokenizer = LatinWordTokenizer()
+if(__name__ == "__main__"):
+    #BSB
+    #targetVersification = Versification.load("./resources/bsb_usx/release/versification.vrs", fallback_name="web")
+    #sourceVersification = Versification(name = "sourceVersification", base_versification=ORIGINAL_VERSIFICATION)
+    #corpus = UsfmFileTextCorpus("./resources/bsb_usfm", versification = targetVersification)
+    #corpus = UsxFileTextCorpus("./resources/bsb_usx/release/USX_1", versification = targetVersification)
+    #tokenizer = LatinWordTokenizer()
 
-#OCCB-Simplified
-targetVersification = Versification.load("./resources/occb_simplified_usx/release/versification.vrs", fallback_name="web")
-sourceVersification = Versification(name = "sourceVersification", base_versification=ORIGINAL_VERSIFICATION)
-corpus = UsxFileTextCorpus("./resources/occb_simplified_usx/release/USX_1", versification = targetVersification)
-tokenizer = ChineseBibleWordTokenizer.ChineseBibleWordTokenizer()
-project_name = "OCCB-simplified"
+    #OCCB-Simplified
+    #targetVersification = Versification.load("./resources/occb_simplified_usx/release/versification.vrs", fallback_name="web")
+    #sourceVersification = Versification(name = "sourceVersification", base_versification=ORIGINAL_VERSIFICATION)
+    #corpus = UsxFileTextCorpus("./resources/occb_simplified_usx/release/USX_1", versification = targetVersification)
+    #tokenizer = ChineseBibleWordTokenizer.ChineseBibleWordTokenizer()
+    #project_name = "OCCB-simplified"
 
-#ONAV
-#targetVersification = Versification.load("./resources/onav_usx/release/versification.vrs", fallback_name="web")
-#sourceVersification = Versification(name = "sourceVersification", base_versification=ORIGINAL_VERSIFICATION)
-#corpus = UsxFileTextCorpus("./resources/onav_usx/release/USX_1", versification = targetVersification)
-#tokenizer = LatinWordTokenizer()
+    #ONAV
+    #targetVersification = Versification.load("./resources/onav_usx/release/versification.vrs", fallback_name="web")
+    #sourceVersification = Versification(name = "sourceVersification", base_versification=ORIGINAL_VERSIFICATION)
+    #corpus = UsxFileTextCorpus("./resources/onav_usx/release/USX_1", versification = targetVersification)
+    #tokenizer = LatinWordTokenizer()
 
-#VanDyck
-#targetVersification = Versification(name = "targetVersification", base_versification=ENGLISH_VERSIFICATION)
-#sourceVersification = Versification(name = "sourceVersification", base_versification=ORIGINAL_VERSIFICATION)
-#corpus = UsfmFileTextCorpus("./resources/arb-vd_usfm", versification = targetVersification)
-#tokenizer = LatinWordTokenizer()
+    #VanDyck
+    #targetVersification = Versification(name = "targetVersification", base_versification=ENGLISH_VERSIFICATION)
+    #sourceVersification = Versification(name = "sourceVersification", base_versification=ORIGINAL_VERSIFICATION)
+    #corpus = UsfmFileTextCorpus("./resources/arb-vd_usfm", versification = targetVersification)
+    #tokenizer = LatinWordTokenizer()
 
-#YLT
-#targetVersification = Versification(name = "targetVersification", base_versification=ENGLISH_VERSIFICATION)
-#sourceVersification = Versification(name = "sourceVersification", base_versification=ORIGINAL_VERSIFICATION)
-#corpus = UsfmFileTextCorpus("./resources/engylt_usfm", versification = targetVersification)
-#tokenizer = LatinWordTokenizer()
-#project_name = "YLT"
+    #YLT
+    targetVersification = Versification(name = "targetVersification", base_versification=ENGLISH_VERSIFICATION)
+    sourceVersification = Versification(name = "sourceVersification", base_versification=ORIGINAL_VERSIFICATION)
+    corpus = UsfmFileTextCorpus("./resources/engylt_usfm", versification = targetVersification)
+    tokenizer = LatinWordTokenizer(treat_apostrophe_as_single_quote=True)
+    project_name = "YLT"
 
-#ONEN
-#targetVersification = Versification.load("./resources/onen_usx/release/versification.vrs", fallback_name="web")
-#sourceVersification = Versification(name = "sourceVersification", base_versification=ORIGINAL_VERSIFICATION)
-#corpus = UsfmFileTextCorpus("./resources/onen_usfm", versification = targetVersification, file_pattern="*.usfm")
-#tokenizer = LatinWordTokenizer()
-#project_name = "ONEN"
+    #ONEN
+    #targetVersification = Versification.load("./resources/onen_usx/release/versification.vrs", fallback_name="web")
+    #sourceVersification = Versification(name = "sourceVersification", base_versification=ORIGINAL_VERSIFICATION)
+    #corpus = UsfmFileTextCorpus("./resources/onen_usfm", versification = targetVersification, file_pattern="*.usfm")
+    #tokenizer = LatinWordTokenizer()
+    #project_name = "ONEN"
 
-#RSB
-#targetVersification = Versification(name = "targetVersification", base_versification=RUSSIAN_PROTESTANT_VERSIFICATION)
-#sourceVersification = Versification(name = "sourceVersification", base_versification=ORIGINAL_VERSIFICATION)
-#corpus = UsfmFileTextCorpus("./resources/ru_rsb", versification = targetVersification)
-#tokenizer = LatinWordTokenizer()
-#project_name = "RSB"
-
-#corpus_to_word_level_tsv(targetVersification, sourceVersification, corpus, tokenizer, project_name)
-#corpus_to_verse_level_tsv(targetVersification, sourceVersification, corpus, tokenizer, project_name)
+    #RSB
+    #targetVersification = Versification(name = "targetVersification", base_versification=RUSSIAN_PROTESTANT_VERSIFICATION)
+    #sourceVersification = Versification(name = "sourceVersification", base_versification=ORIGINAL_VERSIFICATION)
+    #corpus = UsfmFileTextCorpus("./resources/ru_rsb", versification = targetVersification)
+    #tokenizer = LatinWordTokenizer()
+    #project_name = "RSB"
+    
+    corpus_to_word_level_tsv(targetVersification, sourceVersification, corpus, tokenizer, project_name)
+    #corpus_to_verse_level_tsv(targetVersification, sourceVersification, corpus, tokenizer, project_name)
