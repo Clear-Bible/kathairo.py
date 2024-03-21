@@ -10,7 +10,7 @@ __tsv_vrs_name_files__ = []#tsv_path
 #TODO combine with wrapper.py and abstract it to reduce duplication
 import json
 
-json_file = "kathairo/prompts.json"
+json_file = "kathairo/Prompts/prompts.json"
 
 #get json dictionary and keys
 with open(json_file) as json_data:

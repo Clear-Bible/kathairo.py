@@ -1,7 +1,7 @@
 import subprocess
 import json
 
-json_file = "kathairo\prompts.json"
+json_file = "kathairo\Prompts\prompts.json"
 
 with open(json_file) as json_data:
     jsonData = json.load(json_data)
