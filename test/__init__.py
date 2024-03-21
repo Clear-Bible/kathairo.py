@@ -37,3 +37,6 @@ with open(json_file) as json_data:
 #    reader = csv.DictReader(file, delimiter="\t")
 #    for row in reader:
 #        __macula_greek_tsv_rows__.append(row)
+     
+#for project in __tsv_vrs_name_files__:
+#    test_chapter_size(project)

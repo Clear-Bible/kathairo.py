@@ -55,7 +55,7 @@ if(args.latinTokenizer == True):
 
 #build_tsv.corpus_to_verse_level_tsv
 #build_tsv.corpus_to_word_level_tsv
-build_tsv.corpus_to_verse_level_tsv(targetVersification = targetVersification, 
+build_tsv.corpus_to_word_level_tsv(targetVersification = targetVersification, 
                                     sourceVersification = sourceVersification, 
                                     corpus = corpus, 
                                     tokenizer = tokenizer, 

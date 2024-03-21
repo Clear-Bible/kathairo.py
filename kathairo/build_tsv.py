@@ -64,12 +64,12 @@ def corpus_to_word_level_tsv(targetVersification:Versification, sourceVersificat
         else:
             tsv_writer.writerow(["id", "source_verse", "text"]) #NEXT GEN
 
-        for row in corpus.tokenize(tokenizer).nfc_normalize():#.tokenize(tokenizer).nfc_normalize()    
-                
+        for row in corpus.tokenize(tokenizer).nfc_normalize():#.tokenize(tokenizer).nfc_normalize() #Include for Double Tokenization    
+
             #if(row.is_in_range and row.text == ''):
             #    tokenized_row = tokenizer.tokenize((row.text + " <RANGE>"))
             #else:
-            #    tokenized_row = tokenizer.tokenize(row.text)
+            #    tokenized_row = tokenizer.tokenize(row.text) # Include for Double Tokenization
             
             #print(f"{row.ref}: {row.text}")
 
@@ -94,11 +94,11 @@ def corpus_to_word_level_tsv(targetVersification:Versification, sourceVersificat
 
 if(__name__ == "__main__"):
     #BSB
-    #targetVersification = Versification.load("./resources/bsb_usx/release/versification.vrs", fallback_name="web")
-    #sourceVersification = Versification(name = "sourceVersification", base_versification=ORIGINAL_VERSIFICATION)
-    #corpus = UsfmFileTextCorpus("./resources/bsb_usfm", versification = targetVersification)
-    #corpus = UsxFileTextCorpus("./resources/bsb_usx/release/USX_1", versification = targetVersification)
-    #tokenizer = LatinWordTokenizer()
+    targetVersification = Versification.load("./resources/bsb_usx/release/versification.vrs", fallback_name="web")
+    sourceVersification = Versification(name = "sourceVersification", base_versification=ORIGINAL_VERSIFICATION)
+    corpus = UsfmFileTextCorpus("./resources/bsb_usfm", versification = targetVersification)
+    tokenizer = LatinWordTokenizer()
+    project_name = "BSB"
 
     #OCCB-Simplified
     #targetVersification = Versification.load("./resources/occb_simplified_usx/release/versification.vrs", fallback_name="web")
@@ -120,11 +120,11 @@ if(__name__ == "__main__"):
     #tokenizer = LatinWordTokenizer()
 
     #YLT
-    targetVersification = Versification(name = "targetVersification", base_versification=ENGLISH_VERSIFICATION)
-    sourceVersification = Versification(name = "sourceVersification", base_versification=ORIGINAL_VERSIFICATION)
-    corpus = UsfmFileTextCorpus("./resources/engylt_usfm", versification = targetVersification)
-    tokenizer = LatinWordTokenizer(treat_apostrophe_as_single_quote=True)
-    project_name = "YLT"
+    #targetVersification = Versification(name = "targetVersification", base_versification=ENGLISH_VERSIFICATION)
+    #sourceVersification = Versification(name = "sourceVersification", base_versification=ORIGINAL_VERSIFICATION)
+    #corpus = UsfmFileTextCorpus("./resources/engylt_usfm", versification = targetVersification)
+    #tokenizer = LatinWordTokenizer(treat_apostrophe_as_single_quote=True)
+    #project_name = "YLT"
 
     #ONEN
     #targetVersification = Versification.load("./resources/onen_usx/release/versification.vrs", fallback_name="web")
