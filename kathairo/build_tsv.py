@@ -64,7 +64,7 @@ def corpus_to_word_level_tsv(targetVersification:Versification, sourceVersificat
         else:
             tsv_writer.writerow(["id", "source_verse", "text"]) #NEXT GEN
 
-        for row in corpus.tokenize(tokenizer).nfc_normalize():#.tokenize(tokenizer).nfc_normalize() #Include for Double Tokenization    
+        for row in corpus.tokenize(tokenizer):#.tokenize(tokenizer).nfc_normalize() #Include for Double Tokenization    
 
             #if(row.is_in_range and row.text == ''):
             #    tokenized_row = tokenizer.tokenize((row.text + " <RANGE>"))
