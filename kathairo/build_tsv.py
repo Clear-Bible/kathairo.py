@@ -97,6 +97,7 @@ if(__name__ == "__main__"):
     targetVersification = Versification.load("./resources/bsb_usx/release/versification.vrs", fallback_name="web")
     sourceVersification = Versification(name = "sourceVersification", base_versification=ORIGINAL_VERSIFICATION)
     corpus = UsfmFileTextCorpus("./resources/bsb_usfm", versification = targetVersification)
+    #corpus = UsxFileTextCorpus("./resources/bsb_usx/release/USX_1", versification = targetVersification)
     tokenizer = LatinWordTokenizer()
     project_name = "BSB"
 
