@@ -9,4 +9,7 @@ Either:
 - Uncomment/Add appropriate project details to `build_tsv.py`
 
 # Run Unit Tests
-On the commandline, in `\kathairo.py`, run `py.test.exe`.  Alternatively, run `py.test.exe -s` if you want to see the output of the optional tests.
+On the command-line, in `\kathairo.py`, run `py.test.exe`.  Alternatively, run `py.test.exe -s` if you want to see the output of the optional tests.
+
+# WIP
+- USFM/USX validation
