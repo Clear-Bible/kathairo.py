@@ -18,60 +18,58 @@ import re
 def corpus_to_verse_level_tsv(targetVersification:Versification, sourceVersification:Versification, corpus:ScriptureTextCorpus, tokenizer:WhitespaceTokenizer, 
                               project_name:str, use_old_tsv_format:bool = False):
 
-    tsvFormatString = "new"
-    if(use_old_tsv_format):
-        tsvFormatString = "old"
-        
-    outputFileName = "VerseText/target_"+project_name+"_"+tsvFormatString+".tsv"
-
-    with open(outputFileName, 'w', newline='', encoding='utf-8') as out_file:
-        tsv_writer = csv.writer(out_file, delimiter='\t')
-
-        if(use_old_tsv_format):
-            tsv_writer.writerow(["id", "target_verse", "text"]) #OLD WAY
-        else:
-            tsv_writer.writerow(["id", "source_verse", "text"]) #NEXT GEN
-
-        for row in corpus.tokenize(tokenizer).nfc_normalize():#.tokenize(tokenizer).nfc_normalize()    
-
-            targetVref = VerseRef.from_bbbcccvvv(row.ref.bbbcccvvv, targetVersification) #dependent on which .vrs is being used
-            targetVref.change_versification(sourceVersification)
-            
-            sourceVref = targetVref
-
-            sourceBcv = fromubs(f"{re.sub(r'[^0-9]', '', sourceVref.bbbcccvvvs)}00000").to_bcvid
-            rowBcv= fromubs(f"{re.sub(r'[^0-9]', '', row.ref.bbbcccvvvs)}00000").to_bcvid
-            
-            if(use_old_tsv_format):
-                tsv_writer.writerow([f"{sourceBcv}", f"{rowBcv}", row.text ]) #OLD WAY
-            else:
-                tsv_writer.writerow([f"{rowBcv}", f"{sourceBcv}", row.text ]) #NEXT GEN
+    corpus_to_tsv(targetVersification=targetVersification, 
+                  sourceVersification=sourceVersification, 
+                  corpus=corpus, 
+                  tokenizer=tokenizer, 
+                  project_name=project_name, 
+                  use_old_tsv_format=use_old_tsv_format, 
+                  is_verse_level= True)
 
 def corpus_to_word_level_tsv(targetVersification:Versification, sourceVersification:Versification, corpus:ScriptureTextCorpus, tokenizer:WhitespaceTokenizer, 
                   project_name:str, use_old_tsv_format:bool = False):
 
+    corpus_to_tsv(targetVersification=targetVersification, 
+                  sourceVersification=sourceVersification, 
+                  corpus=corpus, 
+                  tokenizer=tokenizer, 
+                  project_name=project_name, 
+                  use_old_tsv_format=use_old_tsv_format, 
+                  is_verse_level= False)
+
+def corpus_to_tsv(targetVersification:Versification, sourceVersification:Versification, corpus:ScriptureTextCorpus, tokenizer:WhitespaceTokenizer, 
+                  project_name:str, use_old_tsv_format:bool = False, is_verse_level:bool = False):
+
+    tsv_folder_name = "TSVs"
+    if(is_verse_level):
+        tsv_folder_name = "VerseText"
+
     tsvFormatString = "new"
     if(use_old_tsv_format):
         tsvFormatString = "old"
 
-    outputFileName = "TSVs/target_"+project_name+"_"+tsvFormatString+".tsv"
-
+    outputFileName = tsv_folder_name+"/target_"+project_name+"_"+tsvFormatString+".tsv"
+    
     with open(outputFileName, 'w', newline='', encoding='utf-8') as out_file:
         tsv_writer = csv.writer(out_file, delimiter='\t')
-
+        
         if(use_old_tsv_format):
             tsv_writer.writerow(["id", "target_verse", "text"]) #OLD WAY
         else:
             tsv_writer.writerow(["id", "source_verse", "text"]) #NEXT GEN
+       
+        #if(is_verse_level):#for verse-level tokenization distinction
+        #    tokenized_corpus = corpus
+        #else:
+        #    tokenized_corpus = corpus.tokenize(tokenizer)
 
-        for row in corpus.tokenize(tokenizer):#.tokenize(tokenizer).nfc_normalize() #Include for Double Tokenization    
+        for row in corpus.tokenize(tokenizer):#.tokenize(tokenizer),tokenized_corpus #Include for Double Tokenization    
 
             #if(row.is_in_range and row.text == ''):
-            #    tokenized_row = tokenizer.tokenize((row.text + " <RANGE>"))
+            #   tokenized_row = tokenizer.tokenize((row.text + " <RANGE>"))
             #else:
             #    tokenized_row = tokenizer.tokenize(row.text) # Include for Double Tokenization
             
-            #print(f"{row.ref}: {row.text}")
 
             targetVref = VerseRef.from_bbbcccvvv(row.ref.bbbcccvvv, targetVersification) #dependent on which .vrs is being used
             targetVref.change_versification(sourceVersification)
@@ -84,13 +82,25 @@ def corpus_to_word_level_tsv(targetVersification:Versification, sourceVersificat
 
                 sourceBcv = fromubs(f"{re.sub(r'[^0-9]', '', sourceVref.bbbcccvvvs)}00000").to_bcvid
                 rowBcv= fromubs(f"{re.sub(r'[^0-9]', '', row.ref.bbbcccvvvs)}00000").to_bcvid
+
                 
-                if(use_old_tsv_format):
-                    tsv_writer.writerow([f"{sourceBcv}{wordIndexStr}", f"{rowBcv}", token ]) #OLD WAY
-                else:
-                    tsv_writer.writerow([f"{rowBcv}{wordIndexStr}", f"{sourceBcv}", token ]) #NEXT GEN
-                
-                wordIndex += 1
+                wordIndex = 1
+                for token in row.segment:#row.segment, tokenized_row:
+                    
+                    if(is_verse_level):
+                        wordIndexStr = ""
+                    else:
+                        wordIndexStr = str(wordIndex).zfill(3)
+
+                    sourceBcv = fromubs(f"{re.sub(r'[^0-9]', '', sourceVref.bbbcccvvvs)}00000").to_bcvid
+                    rowBcv= fromubs(f"{re.sub(r'[^0-9]', '', row.ref.bbbcccvvvs)}00000").to_bcvid
+                    
+                    if(use_old_tsv_format):
+                        tsv_writer.writerow([f"{sourceBcv}{wordIndexStr}", f"{rowBcv}", token ]) #OLD WAY
+                    else:
+                        tsv_writer.writerow([f"{rowBcv}{wordIndexStr}", f"{sourceBcv}", token ]) #NEXT GEN
+                    
+                    wordIndex += 1
 
 if(__name__ == "__main__"):
     #BSB
