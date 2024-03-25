@@ -21,7 +21,7 @@ with open(json_file) as json_data:
                 commandToRunList.append(jsonObject[key])
 
         try:
-            subprocess.run(commandToRunList, check=True)
+            subprocess.Popen(commandToRunList)
         except subprocess.CalledProcessError as e:
             print(f"An error occurred while running wrapper.py: {e}")
         except FileNotFoundError:
