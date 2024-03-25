@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="1e394f5f-16c0-4631-8719-9793b08c3c34" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/resources/syno_ulb_ru/01-GEN.SFM" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/syno_ulb_ru/02-EXO.SFM" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/syno_ulb_ru/03-LEV.SFM" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/syno_ulb_ru/04-NUM.SFM" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/syno_ulb_ru/05-DEU.SFM" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/syno_ulb_ru/06-JOS.SFM" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/syno_ulb_ru/07-JDG.SFM" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/syno_ulb_ru/08-RUT.SFM" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/syno_ulb_ru/09-1SA.SFM" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/syno_ulb_ru/10-2SA.SFM" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/syno_ulb_ru/11-1KI.SFM" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/syno_ulb_ru/12-2KI.SFM" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/syno_ulb_ru/13-1CH.SFM" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/syno_ulb_ru/14-2CH.SFM" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/syno_ulb_ru/15-EZR.SFM" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/syno_ulb_ru/16-NEH.SFM" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/syno_ulb_ru/17-EST.SFM" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/syno_ulb_ru/18-JOB.SFM" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/syno_ulb_ru/19-PSA.SFM" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/syno_ulb_ru/20-PRO.SFM" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/syno_ulb_ru/21-ECC.SFM" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/syno_ulb_ru/22-SNG.SFM" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/syno_ulb_ru/23-ISA.SFM" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/syno_ulb_ru/24-JER.SFM" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/syno_ulb_ru/25-LAM.SFM" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/syno_ulb_ru/26-EZK.SFM" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/syno_ulb_ru/27-DAN.SFM" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/syno_ulb_ru/28-HOS.SFM" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/syno_ulb_ru/29-JOL.SFM" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/syno_ulb_ru/30-AMO.SFM" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/syno_ulb_ru/31-OBA.SFM" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/syno_ulb_ru/32-JON.SFM" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/syno_ulb_ru/33-MIC.SFM" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/syno_ulb_ru/34-NAM.SFM" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/syno_ulb_ru/35-HAB.SFM" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/syno_ulb_ru/36-ZEP.SFM" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/syno_ulb_ru/37-HAG.SFM" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/syno_ulb_ru/38-ZEC.SFM" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/syno_ulb_ru/39-MAL.SFM" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/syno_ulb_ru/41-MAT.SFM" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/syno_ulb_ru/42-MRK.SFM" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/syno_ulb_ru/43-LUK.SFM" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/syno_ulb_ru/44-JHN.SFM" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/syno_ulb_ru/45-ACT.SFM" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/syno_ulb_ru/46-ROM.SFM" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/syno_ulb_ru/47-1CO.SFM" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/syno_ulb_ru/48-2CO.SFM" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/syno_ulb_ru/49-GAL.SFM" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/syno_ulb_ru/50-EPH.SFM" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/syno_ulb_ru/51-PHP.SFM" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/syno_ulb_ru/52-COL.SFM" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/syno_ulb_ru/53-1TH.SFM" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/syno_ulb_ru/54-2TH.SFM" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/syno_ulb_ru/55-1TI.SFM" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/syno_ulb_ru/56-2TI.SFM" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/syno_ulb_ru/57-TIT.SFM" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/syno_ulb_ru/58-PHM.SFM" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/syno_ulb_ru/59-HEB.SFM" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/syno_ulb_ru/60-JAS.SFM" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/syno_ulb_ru/61-1PE.SFM" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/syno_ulb_ru/62-2PE.SFM" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/syno_ulb_ru/63-1JN.SFM" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/syno_ulb_ru/64-2JN.SFM" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/syno_ulb_ru/65-3JN.SFM" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/syno_ulb_ru/66-JUD.SFM" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/syno_ulb_ru/67-REV.SFM" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/syno_ulb_ru/LICENSE.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/syno_ulb_ru/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TSVs/target_RSB_new.tsv" beforeDir="false" afterPath="$PROJECT_DIR$/TSVs/target_RSB_new.tsv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kathairo/Prompts/prompts.json" beforeDir="false" afterPath="$PROJECT_DIR$/kathairo/Prompts/prompts.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/ru_rsb/57-TIT.SFM" beforeDir="false" afterPath="$PROJECT_DIR$/resources/ru_rsb/57-TIT.SFM" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/ru_rsb/58-PHM.SFM" beforeDir="false" afterPath="$PROJECT_DIR$/resources/ru_rsb/58-PHM.SFM" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/ru_rsb/64-2JN.SFM" beforeDir="false" afterPath="$PROJECT_DIR$/resources/ru_rsb/64-2JN.SFM" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="2eC1J5sg1iwIRyZsxIXnuiFCdCU" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Python.build_tsv.executor": "Run",
+    "Python.build_tsv_wrapper.executor": "Run",
+    "Python.usfmValidator.executor": "Run",
+    "Python.usfm_file_text_corpus.executor": "Debug",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/git/Clear/kathairo.py"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-09665e90c3a7-d3b881c8e49f-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-233.15026.15" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1e394f5f-16c0-4631-8719-9793b08c3c34" name="Changes" comment="" />
+      <created>1711393670870</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1711393670870</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/kathairo/build_tsv_wrapper.py</url>
+          <line>22</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/kathairo/build_tsv.py</url>
+          <line>56</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/kathairo/build_tsv.py</url>
+          <line>144</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$USER_HOME$/AppData/Local/pypoetry/Cache/virtualenvs/kathairo-s8juOrtn-py3.10/Lib/site-packages/machine/corpora/usfm_file_text_corpus.py</url>
+          <line>26</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$USER_HOME$/AppData/Local/pypoetry/Cache/virtualenvs/kathairo-s8juOrtn-py3.10/Lib/site-packages/machine/corpora/usfm_file_text_corpus.py</url>
+          <line>24</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+      </breakpoints>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
