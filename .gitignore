@@ -3,3 +3,5 @@
 .idea/copilot/chatSessions/blobs/version
 .idea/copilot/chatSessions/xd.lck
 .idea/inspectionProfiles/profiles_settings.xml
+*.pyc
+.idea/
