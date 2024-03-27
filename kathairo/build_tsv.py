@@ -94,11 +94,11 @@ def corpus_to_word_level_tsv(targetVersification:Versification, sourceVersificat
 
 if(__name__ == "__main__"):
     #BSB
-    targetVersification = Versification.load("./resources/bsb_usx/release/versification.vrs", fallback_name="web")
-    sourceVersification = Versification(name = "sourceVersification", base_versification=ORIGINAL_VERSIFICATION)
-    corpus = UsfmFileTextCorpus("./resources/bsb_usfm", versification = targetVersification)
-    tokenizer = LatinWordTokenizer()
-    project_name = "BSB"
+    #targetVersification = Versification.load("./resources/bsb_usx/release/versification.vrs", fallback_name="web")
+    #sourceVersification = Versification(name = "sourceVersification", base_versification=ORIGINAL_VERSIFICATION)
+    #corpus = UsfmFileTextCorpus("./resources/bsb_usfm", versification = targetVersification)
+    #tokenizer = LatinWordTokenizer()
+    #project_name = "BSB"
 
     #OCCB-Simplified
     #targetVersification = Versification.load("./resources/occb_simplified_usx/release/versification.vrs", fallback_name="web")
@@ -140,5 +140,12 @@ if(__name__ == "__main__"):
     #tokenizer = LatinWordTokenizer()
     #project_name = "RSB"
     
+    #RSB-SYNO
+    targetVersification = Versification.load("./resources/versification/rso.vrs", fallback_name="web")
+    sourceVersification = Versification(name = "sourceVersification", base_versification=ORIGINAL_VERSIFICATION)
+    corpus = UsfmFileTextCorpus("./resources/syno_ulb_ru", versification = targetVersification)
+    tokenizer = LatinWordTokenizer()
+    project_name="RSB-SYNO"
+
     corpus_to_word_level_tsv(targetVersification, sourceVersification, corpus, tokenizer, project_name)
     #corpus_to_verse_level_tsv(targetVersification, sourceVersification, corpus, tokenizer, project_name)
