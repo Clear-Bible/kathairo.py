@@ -21,11 +21,11 @@ def test_mapped_verses_are_present(tsv_vrs_name_files):
     for target in mapping_targets:
         if (str(target.bbbcccvvvs)[1:] not in tsv_ids):
             if(
-                (target.bbbcccvvvs)[-3:] != "000" #exclude superscriptions
-               and 
+                #(target.bbbcccvvvs)[-3:] != "000" #exclude superscriptions
+               #and 
                int((target.bbbcccvvvs)[:3]) < 67 #exclude apocrypha
             ):
-                print("Missing Verse - "+tsv_vrs_name_files[2] + " " + (target.bbbcccvvvs))
+                print("Missing Mapped Verse - "+tsv_vrs_name_files[2] + " " + (target.bbbcccvvvs))
 
 
 #Does each chapter possess the number of verses listed in the versification (requires versification file)
