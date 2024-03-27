@@ -40,5 +40,11 @@
     "targetVersificationPath": "./resources/versification/rsc.vrs",
     "targetUsfmCorpusPath": "./resources/ru_rsb",
     "latinTokenizer": true
+  },
+  {
+    "projectName": "RSB-SYNO",
+    "targetVersificationPath": "./resources/versification/rso.vrs",
+    "targetUsfmCorpusPath": "./resources/syno_ulb_ru",
+    "latinTokenizer": true
   }
 ]

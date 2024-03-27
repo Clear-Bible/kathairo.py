@@ -142,5 +142,12 @@ if(__name__ == "__main__"):
     #tokenizer = LatinWordTokenizer()
     #project_name = "RSB"
     
+    #RSB-SYNO
+    targetVersification = Versification.load("./resources/versification/rso.vrs", fallback_name="web")
+    sourceVersification = Versification(name = "sourceVersification", base_versification=ORIGINAL_VERSIFICATION)
+    corpus = UsfmFileTextCorpus("./resources/syno_ulb_ru", versification = targetVersification)
+    tokenizer = LatinWordTokenizer()
+    project_name="RSB-SYNO"
+
     corpus_to_word_level_tsv(targetVersification, sourceVersification, corpus, tokenizer, project_name)
     #corpus_to_verse_level_tsv(targetVersification, sourceVersification, corpus, tokenizer, project_name)
