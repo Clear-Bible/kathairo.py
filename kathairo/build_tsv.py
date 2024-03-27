@@ -61,9 +61,9 @@ def corpus_to_word_level_tsv(targetVersification:Versification, sourceVersificat
         tsv_writer = csv.writer(out_file, delimiter='\t')
 
         if(use_old_tsv_format):
-            tsv_writer.writerow(["id", "target_verse", "text"]) #OLD WAY
+            tsv_writer.writerow(["id", "target_verse", "text", "skip_space_after"]) #OLD WAY
         else:
-            tsv_writer.writerow(["id", "source_verse", "text"]) #NEXT GEN
+            tsv_writer.writerow(["id", "source_verse", "text", "skip_space_after"]) #NEXT GEN
 
         for row in corpus.tokenize(tokenizer):#.tokenize(tokenizer).nfc_normalize() #Include for Double Tokenization    
 
@@ -80,16 +80,36 @@ def corpus_to_word_level_tsv(targetVersification:Versification, sourceVersificat
             sourceVref = targetVref
 
             wordIndex = 1
-            for token in row.segment:#row.segment, tokenized_row:
+            
+            for index in range(len(row.segment)):
+            #for token in row.segment:#row.segment, tokenized_row:
+            
+                skip_space_after = ""
+                
+                token = row.segment[index]
+                
+                next_token = None
+                max_segment_index = len(row.segment) - 1
+                if(index + 1 <= max_segment_index):
+                    next_token = row.segment[index + 1]
+                else:
+                    next_token = ' ' #assume a space between verses
+                    
+                if(token==' '):
+                    continue
+                else:
+                    if(not next_token==' '):
+                        skip_space_after = "y"
+                        
                 wordIndexStr = str(wordIndex).zfill(3)
 
                 sourceBcv = fromubs(f"{re.sub(r'[^0-9]', '', sourceVref.bbbcccvvvs)}00000").to_bcvid
                 rowBcv= fromubs(f"{re.sub(r'[^0-9]', '', row.ref.bbbcccvvvs)}00000").to_bcvid
                 
                 if(use_old_tsv_format):
-                    tsv_writer.writerow([f"{sourceBcv}{wordIndexStr}", f"{rowBcv}", token ]) #OLD WAY
+                    tsv_writer.writerow([f"{sourceBcv}{wordIndexStr}", f"{rowBcv}", token, skip_space_after ]) #OLD WAY
                 else:
-                    tsv_writer.writerow([f"{rowBcv}{wordIndexStr}", f"{sourceBcv}", token ]) #NEXT GEN
+                    tsv_writer.writerow([f"{rowBcv}{wordIndexStr}", f"{sourceBcv}", token, skip_space_after ]) #NEXT GEN
                 
                 wordIndex += 1
 
@@ -143,11 +163,11 @@ if(__name__ == "__main__"):
     #project_name = "RSB"
     
     #RSB-SYNO
-    targetVersification = Versification.load("./resources/versification/rso.vrs", fallback_name="web")
-    sourceVersification = Versification(name = "sourceVersification", base_versification=ORIGINAL_VERSIFICATION)
-    corpus = UsfmFileTextCorpus("./resources/syno_ulb_ru", versification = targetVersification)
-    tokenizer = LatinWordTokenizer()
-    project_name="RSB-SYNO"
+    #targetVersification = Versification.load("./resources/versification/rso.vrs", fallback_name="web")
+    #sourceVersification = Versification(name = "sourceVersification", base_versification=ORIGINAL_VERSIFICATION)
+    #corpus = UsfmFileTextCorpus("./resources/syno_ulb_ru", versification = targetVersification)
+    #tokenizer = LatinWordTokenizer()
+    #project_name="RSB-SYNO"
 
     corpus_to_word_level_tsv(targetVersification, sourceVersification, corpus, tokenizer, project_name)
     #corpus_to_verse_level_tsv(targetVersification, sourceVersification, corpus, tokenizer, project_name)

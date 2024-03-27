@@ -1,4 +1,5 @@
 from Tokenization import ChineseBibleWordTokenizer
+from Tokenization.latin_whitespace_included_tokenizer import LatinWhitespaceIncludedWordTokenizer
 from machine.corpora import UsxFileTextCorpus
 from machine.corpora import UsfmFileTextCorpus, UsxFileTextCorpus
 from machine.tokenization import LatinWordTokenizer, WhitespaceTokenizer
@@ -25,6 +26,7 @@ corpusGroup.add_argument("-ux", "--targetUsxCorpusPath", type=str)
 tokenizerGroup = argumentParser.add_mutually_exclusive_group(required=True)
 tokenizerGroup.add_argument("-zh", "--chineseTokenizer", action='store_true')
 tokenizerGroup.add_argument("-lt", "--latinTokenizer", action='store_true')
+tokenizerGroup.add_argument("-lw", "--latinWhiteSpaceIncludedTokenizer", action='store_true')
 
 argumentParser.add_argument("-of", "--oldTsvFormat", action='store_true') #optional
 
@@ -52,6 +54,8 @@ if(args.chineseTokenizer == True):
     tokenizer = ChineseBibleWordTokenizer.ChineseBibleWordTokenizer()
 if(args.latinTokenizer == True):
     tokenizer = LatinWordTokenizer()
+if(args.latinWhiteSpaceIncludedTokenizer == True):
+    tokenizer = LatinWhitespaceIncludedWordTokenizer()
 
 #build_tsv.corpus_to_verse_level_tsv
 #build_tsv.corpus_to_word_level_tsv

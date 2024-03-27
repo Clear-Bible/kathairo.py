@@ -1,3 +1,4 @@
+from .whitespace_included_tokenizer import WhitespaceIncludedTokenizer
 from machine.tokenization import WhitespaceTokenizer
 from machine.annotations.range import Range
 from typing import List
@@ -51,7 +52,7 @@ ambiguities.
 # 
 # </summary>
 
-class MaximalMatchingTokenizer(WhitespaceTokenizer):
+class MaximalMatchingTokenizer(WhitespaceIncludedTokenizer):
       
     MAX_GRAM_DEFAULT:int = 10
 
