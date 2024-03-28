@@ -53,9 +53,9 @@ if(args.targetUsxCorpusPath is not None):
 if(args.chineseTokenizer == True):
     tokenizer = ChineseBibleWordTokenizer.ChineseBibleWordTokenizer()
 if(args.latinTokenizer == True):
-    tokenizer = LatinWordTokenizer()
+    tokenizer = LatinWordTokenizer(treat_apostrophe_as_single_quote=True)
 if(args.latinWhiteSpaceIncludedTokenizer == True):
-    tokenizer = LatinWhitespaceIncludedWordTokenizer()
+    tokenizer = LatinWhitespaceIncludedWordTokenizer(treat_apostrophe_as_single_quote=True)
 
 #build_tsv.corpus_to_verse_level_tsv
 #build_tsv.corpus_to_word_level_tsv

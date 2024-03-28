@@ -52,7 +52,7 @@ ambiguities.
 # 
 # </summary>
 
-class MaximalMatchingTokenizer(WhitespaceIncludedTokenizer):
+class MaximalMatchingTokenizer(WhitespaceTokenizer):
       
     MAX_GRAM_DEFAULT:int = 10
 

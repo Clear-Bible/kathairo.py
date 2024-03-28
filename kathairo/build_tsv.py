@@ -33,7 +33,7 @@ def corpus_to_verse_level_tsv(targetVersification:Versification, sourceVersifica
         else:
             tsv_writer.writerow(["id", "source_verse", "text"]) #NEXT GEN
 
-        for row in corpus.tokenize(tokenizer).nfc_normalize():#.tokenize(tokenizer).nfc_normalize()    
+        for row in corpus:#.tokenize(tokenizer).nfc_normalize()    
 
             targetVref = VerseRef.from_bbbcccvvv(row.ref.bbbcccvvv, targetVersification) #dependent on which .vrs is being used
             targetVref.change_versification(sourceVersification)

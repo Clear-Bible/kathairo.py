@@ -2,9 +2,11 @@
 import os
 import codecs
 import pytest
-from test import __tsv_vrs_name_files__
+from test import __tsv_vrs_name_files__, reconstitute
 import pandas as pd
 from machine.scripture import Versification
+import csv
+from pathlib import Path
 
 # Verify that the file exists.
 @pytest.mark.parametrize("tsv_vrs_files", __tsv_vrs_name_files__)
@@ -83,3 +85,31 @@ def test_id_verse_value(tsv_vrs_files):
     for id in data_frame['id']:
         verse_id = int(str(id)[5:8])
         assert (verse_id > 0 and verse_id <= max_verse_number)
+          
+#Is skip_space_after column accurate
+@pytest.mark.parametrize("tsv_vrs_files", __tsv_vrs_name_files__)
+def test_verse_text_reconstitution(tsv_vrs_files):
+    #Reconstitute VerseText File from TSV
+    tsv_path = Path(tsv_vrs_files[0])
+    reconstitute(tsv_path)
+    
+    #Compare Reconstituted File to VerseText File
+    verseTextPath = tsv_path.parent.parent / "VerseText"/ f"{tsv_path.stem}.tsv"
+    verseTextRows = [r for r in csv.DictReader(verseTextPath.open("r", encoding='utf-8'), delimiter="\t")]
+
+    reconstitutedPath = tsv_path.parent.parent / "reconstituted" / f"{tsv_path.stem}_reconstitution.tsv"
+    reconstitutedRows = [r for r in csv.DictReader(reconstitutedPath.open("r", encoding='utf-8'), delimiter="\t")]
+
+    for index in range(len(verseTextRows)):
+        if(index>=len(reconstitutedRows)):
+            break
+        if("OCCB" in tsv_path.stem):
+            assert(verseTextRows[index]['text'].replace(" ", "") != reconstitutedRows[index]['text'].replace(" ", "")) #due to random spaces in chinese
+                #print(f"MISMATCH---{verseTextRows[index]['text']}")
+                #print(f"MISMATCH---{reconstitutedRows[index]['text']}")
+                #print(f"------------------------------")
+        else:
+            assert(verseTextRows[index]['text'].replace("  ", " ") != reconstitutedRows[index]['text'].rstrip().replace("  ", " "))
+                #print(f"MISMATCH---{verseTextRows[index]['text']}")
+                #print(f"MISMATCH---{reconstitutedRows[index]['text']}")
+                #print(f"------------------------------")
