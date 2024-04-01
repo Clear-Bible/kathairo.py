@@ -104,12 +104,12 @@ def test_verse_text_reconstitution(tsv_vrs_files):
         if(index>=len(reconstitutedRows)):
             break
         if("OCCB" in tsv_path.stem):
-            assert(verseTextRows[index]['text'].replace(" ", "") != reconstitutedRows[index]['text'].replace(" ", "")) #due to random spaces in chinese
+            assert(verseTextRows[index]['text'].replace(" ", "") == reconstitutedRows[index]['text'].replace(" ", "")) #due to random spaces in chinese
                 #print(f"MISMATCH---{verseTextRows[index]['text']}")
                 #print(f"MISMATCH---{reconstitutedRows[index]['text']}")
                 #print(f"------------------------------")
         else:
-            assert(verseTextRows[index]['text'].replace("  ", " ") != reconstitutedRows[index]['text'].rstrip().replace("  ", " "))
+            assert(verseTextRows[index]['text'].replace("  ", " ") == reconstitutedRows[index]['text'].rstrip().replace("  ", " "))
                 #print(f"MISMATCH---{verseTextRows[index]['text']}")
                 #print(f"MISMATCH---{reconstitutedRows[index]['text']}")
                 #print(f"------------------------------")

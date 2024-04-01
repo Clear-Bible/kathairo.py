@@ -87,5 +87,5 @@ with open(json_file) as json_data:
 #for files in __tsv_vrs_name_files__:
 #    reconstitute(Path(files[0]))
 
-for files in __tsv_vrs_name_files__:
-    test_verse_text_reconstitution(files)
+#for files in __tsv_vrs_name_files__:
+#    test_verse_text_reconstitution(files)
