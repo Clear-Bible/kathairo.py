@@ -30,6 +30,8 @@ tokenizerGroup.add_argument("-lw", "--latinWhiteSpaceIncludedTokenizer", action=
 
 argumentParser.add_argument("-of", "--oldTsvFormat", action='store_true') #optional
 
+argumentParser.add_argument("-xb", "--excludeBracketedText", action='store_true') #optional
+
 args = argumentParser.parse_args()
 
 #print(args.targetVersificationPath)
@@ -64,4 +66,5 @@ build_tsv.corpus_to_word_level_tsv(targetVersification = targetVersification,
                                     corpus = corpus, 
                                     tokenizer = tokenizer, 
                                     project_name = projectName, 
-                                    use_old_tsv_format = args.oldTsvFormat)    
+                                    use_old_tsv_format = args.oldTsvFormat,
+                                    excludeBracketedText = args.excludeBracketedText)    

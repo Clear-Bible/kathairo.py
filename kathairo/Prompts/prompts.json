@@ -39,12 +39,14 @@
     "projectName": "RSB",
     "targetVersificationPath": "./resources/versification/rsc.vrs",
     "targetUsfmCorpusPath": "./resources/ru_rsb",
-    "latinWhiteSpaceIncludedTokenizer": true
+    "latinWhiteSpaceIncludedTokenizer": true,
+    "excludeBracketedText": true
   },
   {
     "projectName": "RSB-SYNO",
     "targetVersificationPath": "./resources/versification/rso.vrs",
     "targetUsfmCorpusPath": "./resources/syno_ulb_ru",
-    "latinWhiteSpaceIncludedTokenizer": true
+    "latinWhiteSpaceIncludedTokenizer": true,
+    "excludeBracketedText": true
   }
 ]

@@ -22,7 +22,7 @@ def is_unicode_punctuation(char):
     return category.startswith("P")
 
 def corpus_to_verse_level_tsv(targetVersification:Versification, sourceVersification:Versification, corpus:ScriptureTextCorpus, tokenizer:WhitespaceTokenizer, 
-                              project_name:str, use_old_tsv_format:bool = False):
+                              project_name:str, use_old_tsv_format:bool = False, excludeBracketedText:bool = False):
 
     tsvFormatString = "new"
     if(use_old_tsv_format):
@@ -54,7 +54,7 @@ def corpus_to_verse_level_tsv(targetVersification:Versification, sourceVersifica
                 tsv_writer.writerow([f"{rowBcv}", f"{sourceBcv}", row.text ]) #NEXT GEN
 
 def corpus_to_word_level_tsv(targetVersification:Versification, sourceVersification:Versification, corpus:ScriptureTextCorpus, tokenizer:WhitespaceTokenizer, 
-                  project_name:str, use_old_tsv_format:bool = False):
+                  project_name:str, use_old_tsv_format:bool = False, excludeBracketedText:bool = False):
 
     tsvFormatString = "new"
     if(use_old_tsv_format):
@@ -70,6 +70,7 @@ def corpus_to_word_level_tsv(targetVersification:Versification, sourceVersificat
         else:
             tsv_writer.writerow(["id", "source_verse", "text", "skip_space_after", "exclude"]) #NEXT GEN
 
+        in_brackets = False
         for row in corpus.tokenize(tokenizer):#.tokenize(tokenizer).nfc_normalize() #Include for Double Tokenization    
 
             #if(row.is_in_range and row.text == ''):
@@ -90,7 +91,11 @@ def corpus_to_word_level_tsv(targetVersification:Versification, sourceVersificat
             #for token in row.segment:#row.segment, tokenized_row:
             
                 skip_space_after = ""
-                exclude = ""
+                
+                if(not in_brackets):
+                    exclude = ""
+                else:
+                    exclude = "y"
                     
                 token = row.segment[index]
                 
@@ -110,10 +115,17 @@ def corpus_to_word_level_tsv(targetVersification:Versification, sourceVersificat
                 if(is_unicode_punctuation(token[0])):
                     exclude = "y"
                     
+                if(token[0] == '[' and excludeBracketedText):
+                    in_brackets = True
+                    exclude = "y"
+                
                 wordIndexStr = str(wordIndex).zfill(3)
 
                 sourceBcv = fromubs(f"{re.sub(r'[^0-9]', '', sourceVref.bbbcccvvvs)}00000").to_bcvid
                 rowBcv= fromubs(f"{re.sub(r'[^0-9]', '', row.ref.bbbcccvvvs)}00000").to_bcvid
+                
+                #if(f"{rowBcv}{wordIndexStr}" == "43005003017"):
+                #    something = True
                 
                 if(use_old_tsv_format):
                     tsv_writer.writerow([f"{sourceBcv}{wordIndexStr}", f"{rowBcv}", token, skip_space_after, exclude ]) #OLD WAY
@@ -121,6 +133,9 @@ def corpus_to_word_level_tsv(targetVersification:Versification, sourceVersificat
                     tsv_writer.writerow([f"{rowBcv}{wordIndexStr}", f"{sourceBcv}", token, skip_space_after, exclude ]) #NEXT GEN
                 
                 wordIndex += 1
+                
+                if(token[0] ==']'):
+                    in_brackets = False
 
 if(__name__ == "__main__"):
     #BSB
@@ -139,11 +154,11 @@ if(__name__ == "__main__"):
     #project_name = "OCCB-simplified"
 
     #ONAV
-    targetVersification = Versification.load("./resources/onav_usx/release/versification.vrs", fallback_name="web")
-    sourceVersification = Versification(name = "sourceVersification", base_versification=ORIGINAL_VERSIFICATION)
-    corpus = UsxFileTextCorpus("./resources/onav_usx/release/USX_1", versification = targetVersification)
-    tokenizer = LatinWhitespaceIncludedWordTokenizer()
-    project_name = "ONAV"
+    #targetVersification = Versification.load("./resources/onav_usx/release/versification.vrs", fallback_name="web")
+    #sourceVersification = Versification(name = "sourceVersification", base_versification=ORIGINAL_VERSIFICATION)
+    #corpus = UsxFileTextCorpus("./resources/onav_usx/release/USX_1", versification = targetVersification)
+    #tokenizer = LatinWhitespaceIncludedWordTokenizer()
+    #project_name = "ONAV"
 
     #VanDyck
     #targetVersification = Versification(name = "targetVersification", base_versification=ENGLISH_VERSIFICATION)
@@ -159,11 +174,12 @@ if(__name__ == "__main__"):
     #project_name = "YLT"
 
     #ONEN
-    #targetVersification = Versification.load("./resources/onen_usx/release/versification.vrs", fallback_name="web")
-    #sourceVersification = Versification(name = "sourceVersification", base_versification=ORIGINAL_VERSIFICATION)
-    #corpus = UsfmFileTextCorpus("./resources/onen_usfm", versification = targetVersification, file_pattern="*.usfm")
-    #tokenizer = LatinWordTokenizer()
-    #project_name = "ONEN"
+    targetVersification = Versification.load("./resources/onen_usx/release/versification.vrs", fallback_name="web")
+    sourceVersification = Versification(name = "sourceVersification", base_versification=ORIGINAL_VERSIFICATION)
+    corpus = UsfmFileTextCorpus("./resources/onen_usfm", versification = targetVersification)
+    tokenizer = LatinWhitespaceIncludedWordTokenizer()
+    project_name = "ONEN"
+    excludeBracketedText = True
 
     #RSB
     #targetVersification = Versification(name = "targetVersification", base_versification=RUSSIAN_PROTESTANT_VERSIFICATION)
@@ -179,5 +195,5 @@ if(__name__ == "__main__"):
     #tokenizer = LatinWordTokenizer()
     #project_name="RSB-SYNO"
 
-    corpus_to_word_level_tsv(targetVersification, sourceVersification, corpus, tokenizer, project_name)
+    corpus_to_word_level_tsv(targetVersification, sourceVersification, corpus, tokenizer, project_name, excludeBracketedText=excludeBracketedText)
     #corpus_to_verse_level_tsv(targetVersification, sourceVersification, corpus, tokenizer, project_name)
