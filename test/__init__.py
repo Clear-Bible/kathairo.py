@@ -40,7 +40,7 @@ def reconstitute(tsv_file_path:Path):
             tsv_writer = csv.writer(out_file, delimiter='\t')
 
             tsv_writer.writerows(verses) #OLD WAY
-            
+
 #__macula_greek_tsv_rows__ = []
 
 #TODO have common method of creating TSV file name
@@ -89,3 +89,6 @@ with open(json_file) as json_data:
 
 #for files in __tsv_vrs_name_files__:
 #    test_verse_text_reconstitution(files)
+
+#for files in __tsv_vrs_name_files__:
+#    test_exclude_punctuation(files)

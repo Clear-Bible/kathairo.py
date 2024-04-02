@@ -7,6 +7,7 @@ import pandas as pd
 from machine.scripture import Versification
 import csv
 from pathlib import Path
+from helpers.strings import is_unicode_punctuation
 
 # Verify that the file exists.
 @pytest.mark.parametrize("tsv_vrs_files", __tsv_vrs_name_files__)
@@ -113,3 +114,24 @@ def test_verse_text_reconstitution(tsv_vrs_files):
                 #print(f"MISMATCH---{verseTextRows[index]['text']}")
                 #print(f"MISMATCH---{reconstitutedRows[index]['text']}")
                 #print(f"------------------------------")
+
+#Is punctuation excluded 
+@pytest.mark.parametrize("tsv_vrs_files", __tsv_vrs_name_files__)
+def test_exclude_punctuation(tsv_vrs_files):    
+    data_frame = pd.read_csv(tsv_vrs_files[0], sep='\t',dtype=str)
+    for row in data_frame.itertuples():
+        token = row.text
+        exclude = row.exclude
+        
+        if(exclude == 'y'):
+            exclude_bool = True
+        else:
+            exclude_bool = False
+        
+        #TODO look at more than first char
+        if (isinstance(token, str) and len(token)>0):
+            token_is_punct = is_unicode_punctuation(token[0])
+        else:
+            token_is_punct = False
+        
+        assert(~(token_is_punct ^ exclude_bool))

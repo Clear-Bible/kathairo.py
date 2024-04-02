@@ -15,11 +15,7 @@ from machine.scripture import (
 )
 from biblelib.word import fromubs
 import re
-import unicodedata
-
-def is_unicode_punctuation(char):
-    category = unicodedata.category(char)
-    return category.startswith("P")
+from helpers.strings import is_unicode_punctuation
 
 def corpus_to_verse_level_tsv(targetVersification:Versification, sourceVersification:Versification, corpus:ScriptureTextCorpus, tokenizer:WhitespaceTokenizer, 
                               project_name:str, use_old_tsv_format:bool = False, excludeBracketedText:bool = False):
