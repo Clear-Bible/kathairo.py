@@ -1,5 +1,6 @@
 import csv
 from pathlib import Path
+import pandas as pd
 
 def reconstitute(tsv_file_path:Path):
     #directory = Path(sys.argv[1])
@@ -40,6 +41,34 @@ def reconstitute(tsv_file_path:Path):
             tsv_writer = csv.writer(out_file, delimiter='\t')
 
             tsv_writer.writerows(verses) #OLD WAY
+
+def test_exclude_bracketed_text(tsv_vrs_files):    
+    
+    if ("RSB" in tsv_vrs_files[0]):
+        
+        in_brackets = False
+        
+        data_frame = pd.read_csv(tsv_vrs_files[0], sep='\t',dtype=str)
+        for row in data_frame.itertuples():
+            
+            token = row.text
+            exclude = row.exclude
+            
+            if(exclude == 'y'):
+                exclude_bool = True
+            else:
+                exclude_bool = False
+            
+            if(token == '['):
+                in_brackets = True
+            
+            if(in_brackets):   
+                if(not exclude_bool):
+                    holdup=True       
+                assert(in_brackets == exclude_bool)
+            
+            if(token ==']'):
+                in_brackets = False
 
 #__macula_greek_tsv_rows__ = []
 
@@ -92,3 +121,6 @@ with open(json_file) as json_data:
 
 #for files in __tsv_vrs_name_files__:
 #    test_exclude_punctuation(files)
+
+#for files in __tsv_vrs_name_files__:
+#    test_exclude_bracketed_text(files)

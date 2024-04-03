@@ -10,10 +10,13 @@ from machine.utils.string_utils import is_control, is_punctuation, is_symbol
 from .whitespace_included_tokenizer import WhitespaceIncludedTokenizer
 
 INNER_WORD_PUNCT_REGEX = re.compile(
-    r"[&\-.:=,?@\xAD\xB7\u2010\u2011\u2019\u2027]|['_]+",
+    r"[&\-.:=?@\xAD\xB7\u2010\u2011\u2019\u2027]|['_]+",
 )
 URL_REGEX = re.compile(r"(?:[\w-]+://?|www[.])[^\s()<>]+(?:[\w\d]+|(?:[^\p{P}\s]|/))", re.IGNORECASE)
 
+NUMBER_COMMA_REGEX = re.compile(
+    r"[(?<=\d),(?=\d)]"
+)
 
 class LatinWhitespaceIncludedWordTokenizer(WhitespaceIncludedTokenizer):
     def __init__(self, abbreviations: Iterable[str] = [], treat_apostrophe_as_single_quote: bool = False) -> None:
@@ -86,6 +89,15 @@ class LatinWhitespaceIncludedWordTokenizer(WhitespaceIncludedTokenizer):
                 if match is not None:
                     ctxt.inner_word_punct = ctxt.index
                     ctxt.index += len(match.group())
+                    return token_ranges
+                
+                substring = data[ctxt.index-1:ctxt.index+2]
+                is_number_comma_match = NUMBER_COMMA_REGEX.match(substring)
+
+                if is_number_comma_match is not None:# and not match_is_number_comma:
+                    ctxt.inner_word_punct = ctxt.index
+                    group = is_number_comma_match.group()
+                    ctxt.index += len(group)
                     return token_ranges
 
                 token_ranges = (Range.create(ctxt.word_start, ctxt.index), Range.create(ctxt.index, end_index))

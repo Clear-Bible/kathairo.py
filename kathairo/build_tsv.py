@@ -135,12 +135,12 @@ def corpus_to_word_level_tsv(targetVersification:Versification, sourceVersificat
 
 if(__name__ == "__main__"):
     #BSB
-    #targetVersification = Versification.load("./resources/bsb_usx/release/versification.vrs", fallback_name="web")
-    #sourceVersification = Versification(name = "sourceVersification", base_versification=ORIGINAL_VERSIFICATION)
-    #corpus = UsfmFileTextCorpus("./resources/bsb_usfm", versification = targetVersification)
-    #tokenizer = LatinWordTokenizer()
-    #tokenizer = LatinWhitespaceIncludedWordTokenizer()
-    #project_name = "BSB"
+    targetVersification = Versification.load("./resources/bsb_usx/release/versification.vrs", fallback_name="web")
+    sourceVersification = Versification(name = "sourceVersification", base_versification=ORIGINAL_VERSIFICATION)
+    corpus = UsfmFileTextCorpus("./resources/bsb_usfm", versification = targetVersification)
+    tokenizer = LatinWhitespaceIncludedWordTokenizer()
+    project_name = "BSB"
+    excludeBracketedText = False
 
     #OCCB-Simplified
     #targetVersification = Versification.load("./resources/occb_simplified_usx/release/versification.vrs", fallback_name="web")
@@ -170,19 +170,19 @@ if(__name__ == "__main__"):
     #project_name = "YLT"
 
     #ONEN
-    targetVersification = Versification.load("./resources/onen_usx/release/versification.vrs", fallback_name="web")
-    sourceVersification = Versification(name = "sourceVersification", base_versification=ORIGINAL_VERSIFICATION)
-    corpus = UsfmFileTextCorpus("./resources/onen_usfm", versification = targetVersification)
-    tokenizer = LatinWhitespaceIncludedWordTokenizer()
-    project_name = "ONEN"
-    excludeBracketedText = True
+    #targetVersification = Versification.load("./resources/onen_usx/release/versification.vrs", fallback_name="web")
+    #sourceVersification = Versification(name = "sourceVersification", base_versification=ORIGINAL_VERSIFICATION)
+    #corpus = UsfmFileTextCorpus("./resources/onen_usfm", versification = targetVersification)
+    #tokenizer = LatinWhitespaceIncludedWordTokenizer()
+    #project_name = "ONEN"
 
     #RSB
     #targetVersification = Versification(name = "targetVersification", base_versification=RUSSIAN_PROTESTANT_VERSIFICATION)
     #sourceVersification = Versification(name = "sourceVersification", base_versification=ORIGINAL_VERSIFICATION)
     #corpus = UsfmFileTextCorpus("./resources/ru_rsb", versification = targetVersification)
-    #tokenizer = LatinWordTokenizer()
+    #tokenizer = LatinWhitespaceIncludedWordTokenizer()
     #project_name = "RSB"
+    #excludeBracketedText = True
     
     #RSB-SYNO
     #targetVersification = Versification.load("./resources/versification/rso.vrs", fallback_name="web")

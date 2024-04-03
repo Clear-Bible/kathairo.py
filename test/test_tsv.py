@@ -134,4 +134,35 @@ def test_exclude_punctuation(tsv_vrs_files):
         else:
             token_is_punct = False
         
-        assert(~(token_is_punct ^ exclude_bool))
+        if(token_is_punct):
+            assert(token_is_punct == exclude_bool)
+        
+#Is bracketed text excluded 
+@pytest.mark.parametrize("tsv_vrs_files", __tsv_vrs_name_files__)
+def test_exclude_bracketed_text(tsv_vrs_files):    
+    
+    if ("RSB" in tsv_vrs_files[0]):
+        
+        in_brackets = False
+        
+        data_frame = pd.read_csv(tsv_vrs_files[0], sep='\t',dtype=str)
+        for row in data_frame.itertuples():
+            
+            token = row.text
+            exclude = row.exclude
+            
+            if(exclude == 'y'):
+                exclude_bool = True
+            else:
+                exclude_bool = False
+            
+            if(token == '['):
+                in_brackets = True
+            
+            if(in_brackets):   
+                if(not exclude_bool):
+                    holdup=True       
+                assert(in_brackets == exclude_bool)
+            
+            if(token ==']'):
+                in_brackets = False
