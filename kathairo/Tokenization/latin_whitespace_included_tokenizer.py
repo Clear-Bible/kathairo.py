@@ -10,12 +10,16 @@ from machine.utils.string_utils import is_control, is_punctuation, is_symbol
 from .whitespace_included_tokenizer import WhitespaceIncludedTokenizer
 
 INNER_WORD_PUNCT_REGEX = re.compile(
-    r"[&\-.:=?@\xAD\xB7\u2010\u2011\u2019\u2027]|['_]+",
+    r"[&\-:=?@\xAD\xB7\u2010\u2011\u2019\u2027]|['_]+",
 )
 URL_REGEX = re.compile(r"(?:[\w-]+://?|www[.])[^\s()<>]+(?:[\w\d]+|(?:[^\p{P}\s]|/))", re.IGNORECASE)
 
 NUMBER_COMMA_REGEX = re.compile(
     r"[(?<=\d),(?=\d)]"
+)
+
+NUMBER_PERIOD_REGEX = re.compile(
+    r"[(?<=\d).(?=\d)]"
 )
 
 class LatinWhitespaceIncludedWordTokenizer(WhitespaceIncludedTokenizer):
@@ -94,9 +98,17 @@ class LatinWhitespaceIncludedWordTokenizer(WhitespaceIncludedTokenizer):
                 substring = data[ctxt.index-1:ctxt.index+2]
                 is_number_comma_match = NUMBER_COMMA_REGEX.match(substring)
 
-                if is_number_comma_match is not None:# and not match_is_number_comma:
+                if is_number_comma_match is not None:
                     ctxt.inner_word_punct = ctxt.index
                     group = is_number_comma_match.group()
+                    ctxt.index += len(group)
+                    return token_ranges
+
+                is_number_period_match = NUMBER_PERIOD_REGEX.match(substring)
+
+                if is_number_period_match is not None:# and not match_is_number_comma:
+                    ctxt.inner_word_punct = ctxt.index
+                    group = is_number_period_match.group()
                     ctxt.index += len(group)
                     return token_ranges
 
