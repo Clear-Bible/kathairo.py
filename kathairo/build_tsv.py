@@ -107,11 +107,14 @@ def corpus_to_word_level_tsv(targetVersification:Versification, sourceVersificat
                 else:
                     if(not next_token==' '):
                         skip_space_after = "y"
-        
-                if(is_unicode_punctuation(token[0])):
-                    exclude = "y"
-                    
-                if(token[0] == '[' and excludeBracketedText):
+
+                exclude = "y"
+                for char in token:
+                    if(not in_brackets and not is_unicode_punctuation(char)):
+                        exclude = ""
+                        break
+                
+                if(token == '[' and excludeBracketedText): #we are trusting that all brackets get their own row
                     in_brackets = True
                     exclude = "y"
                 
@@ -130,24 +133,25 @@ def corpus_to_word_level_tsv(targetVersification:Versification, sourceVersificat
                 
                 wordIndex += 1
                 
-                if(token[0] ==']'):
+                if(token ==']'): #we are trusting that all brackets get their own row
                     in_brackets = False
 
 if(__name__ == "__main__"):
     #BSB
-    targetVersification = Versification.load("./resources/bsb_usx/release/versification.vrs", fallback_name="web")
-    sourceVersification = Versification(name = "sourceVersification", base_versification=ORIGINAL_VERSIFICATION)
-    corpus = UsfmFileTextCorpus("./resources/bsb_usfm", versification = targetVersification)
-    tokenizer = LatinWhitespaceIncludedWordTokenizer()
-    project_name = "BSB"
-    excludeBracketedText = False
+    #targetVersification = Versification.load("./resources/bsb_usx/release/versification.vrs", fallback_name="web")
+    #sourceVersification = Versification(name = "sourceVersification", base_versification=ORIGINAL_VERSIFICATION)
+    #corpus = UsfmFileTextCorpus("./resources/bsb_usfm", versification = targetVersification)
+    #tokenizer = LatinWhitespaceIncludedWordTokenizer()
+    #project_name = "BSB"
+    #excludeBracketedText = False
 
     #OCCB-Simplified
-    #targetVersification = Versification.load("./resources/occb_simplified_usx/release/versification.vrs", fallback_name="web")
-    #sourceVersification = Versification(name = "sourceVersification", base_versification=ORIGINAL_VERSIFICATION)
-    #corpus = UsxFileTextCorpus("./resources/occb_simplified_usx/release/USX_1", versification = targetVersification)
-    #tokenizer = ChineseBibleWordTokenizer.ChineseBibleWordTokenizer()
-    #project_name = "OCCB-simplified"
+    targetVersification = Versification.load("./resources/occb_simplified_usx/release/versification.vrs", fallback_name="web")
+    sourceVersification = Versification(name = "sourceVersification", base_versification=ORIGINAL_VERSIFICATION)
+    corpus = UsxFileTextCorpus("./resources/occb_simplified_usx/release/USX_1", versification = targetVersification)
+    tokenizer = ChineseBibleWordTokenizer.ChineseBibleWordTokenizer()
+    project_name = "OCCB-simplified"
+    excludeBracketedText = False
 
     #ONAV
     #targetVersification = Versification.load("./resources/onav_usx/release/versification.vrs", fallback_name="web")
