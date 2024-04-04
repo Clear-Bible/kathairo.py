@@ -10,7 +10,7 @@ from machine.utils.string_utils import is_control, is_punctuation, is_symbol
 from .whitespace_included_tokenizer import WhitespaceIncludedTokenizer
 
 INNER_WORD_PUNCT_REGEX = re.compile(
-    r"[&\-:=?@\xAD\xB7\u2010\u2011\u2019\u2027]|['_]+",
+    r"[&\-:=?@\xAD\xB7\u2010\u2011\u2027]|['_]+",
 )
 URL_REGEX = re.compile(r"(?:[\w-]+://?|www[.])[^\s()<>]+(?:[\w\d]+|(?:[^\p{P}\s]|/))", re.IGNORECASE)
 
@@ -20,6 +20,10 @@ NUMBER_COMMA_REGEX = re.compile(
 
 NUMBER_PERIOD_REGEX = re.compile(
     r"[(?<=\d).(?=\d)]"
+)
+
+RIGHT_SINGLE_QUOTE_AS_APOSTROPHE_REGEX = re.compile(
+    r"(?<=[A-Za-z])’(?=[A-Za-z])"
 )
 
 class LatinWhitespaceIncludedWordTokenizer(WhitespaceIncludedTokenizer):
@@ -92,7 +96,8 @@ class LatinWhitespaceIncludedWordTokenizer(WhitespaceIncludedTokenizer):
                 match = INNER_WORD_PUNCT_REGEX.match(data, ctxt.index)
                 if match is not None:
                     ctxt.inner_word_punct = ctxt.index
-                    ctxt.index += len(match.group())
+                    group = match.group()
+                    ctxt.index += len(group)
                     return token_ranges
                 
                 substring = data[ctxt.index-1:ctxt.index+2]
@@ -109,6 +114,14 @@ class LatinWhitespaceIncludedWordTokenizer(WhitespaceIncludedTokenizer):
                 if is_number_period_match is not None:# and not match_is_number_comma:
                     ctxt.inner_word_punct = ctxt.index
                     group = is_number_period_match.group()
+                    ctxt.index += len(group)+1
+                    return token_ranges
+                
+                is_right_single_quote_apostrophe = RIGHT_SINGLE_QUOTE_AS_APOSTROPHE_REGEX.search(substring)
+
+                if is_right_single_quote_apostrophe is not None:# and not match_is_number_comma:
+                    ctxt.inner_word_punct = ctxt.index
+                    group = is_right_single_quote_apostrophe.group()
                     ctxt.index += len(group)
                     return token_ranges
 
