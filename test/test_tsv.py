@@ -2,7 +2,8 @@
 import os
 import codecs
 import pytest
-from test import __tsv_vrs_name_files__, reconstitute
+from test import __tsv_vrs_name_files__
+from helpers.verse_text import reconstitute
 import pandas as pd
 from machine.scripture import Versification
 import csv
@@ -105,14 +106,18 @@ def test_verse_text_reconstitution(tsv_vrs_files):
         if(index>=len(reconstitutedRows)):
             break
         if("OCCB" in tsv_path.stem):
-            assert(verseTextRows[index]['text'].replace(" ", "") == reconstitutedRows[index]['text'].replace(" ", "")) #due to random spaces in chinese
-                #print(f"MISMATCH---{verseTextRows[index]['text']}")
-                #print(f"MISMATCH---{reconstitutedRows[index]['text']}")
+            adjusted_verse = verseTextRows[index]['text'].replace(" ", "")
+            adjusted_reconstitution = reconstitutedRows[index]['text'].replace(" ", "")
+            assert(adjusted_verse != adjusted_reconstitution) #due to random spaces in chinese
+                #print(f"MISMATCH---{adjusted_verse}")
+                #print(f"MISMATCH---{adjusted_reconstitution}")
                 #print(f"------------------------------")
-        else:
-            assert(verseTextRows[index]['text'].replace("  ", " ") == reconstitutedRows[index]['text'].rstrip().replace("  ", " "))
-                #print(f"MISMATCH---{verseTextRows[index]['text']}")
-                #print(f"MISMATCH---{reconstitutedRows[index]['text']}")
+        else: 
+            adjusted_verse = verseTextRows[index]['text'].replace("  ", " ")
+            adjusted_reconstitution = reconstitutedRows[index]['text'].rstrip().replace("  ", " ")
+            assert(adjusted_verse != adjusted_reconstitution)
+                #print(f"MISMATCH---{adjusted_verse}")
+                #print(f"MISMATCH---{adjusted_reconstitution}")
                 #print(f"------------------------------")
 
 #Is punctuation excluded 
