@@ -5,6 +5,7 @@ import pytest
 from test import __tsv_vrs_name_files__
 import pandas as pd
 from machine.scripture import Versification
+from helpers.strings import is_unicode_punctuation
 
 #Is each verse in the mapping present in the TSV (requires versification file)
 @pytest.mark.parametrize("tsv_vrs_name_files", __tsv_vrs_name_files__)
@@ -101,3 +102,39 @@ def test_chapter_size(tsv_vrs_name_files):
         except:
             if(bookIndex + 1 <= 66):#Exclude apocrypha
                 print("Missing Book - "+tsv_vrs_name_files[2] + " Book Id: " + str(bookIndex + 1))
+
+@pytest.mark.parametrize("tsv_vrs_name_files", __tsv_vrs_name_files__)
+def test_chinese_tokens_have_no_punctuation(tsv_vrs_name_files):
+    if ("OCCB" in tsv_vrs_name_files[0]):
+        
+        data_frame = pd.read_csv(tsv_vrs_name_files[0], sep='\t',dtype=str)
+        for row in data_frame.itertuples():
+            token = row.text
+            for char in token:
+                if(is_unicode_punctuation(char) and len(token)>1):
+                    id = row.id
+                    #if(token == "照圣所的律例洁净自己，"):
+                    #    stop = True
+                    print(id, token)#, row.verse_text)
+                    break                
+
+@pytest.mark.parametrize("tsv_vrs_name_files", __tsv_vrs_name_files__)
+def test_tokens_have_no_punctuation(tsv_vrs_name_files):
+    print(tsv_vrs_name_files[0])
+    #if ("OCCB" not in tsv_vrs_name_files[0]):
+    data_frame = pd.read_csv(tsv_vrs_name_files[0], sep='\t',dtype=str)
+    for row in data_frame.itertuples():
+        token = row.text
+        #for char in token:
+        if(len(str(token))>1 and 
+            (
+                is_unicode_punctuation(str(token)[0])
+                or
+                is_unicode_punctuation(str(token)[len(str(token))-1])
+                )
+            
+            ):
+            id = row.id
+            #if(token == "照圣所的律例洁净自己，"):
+            #    stop = True
+            print(id, token)#, row.verse_text)
