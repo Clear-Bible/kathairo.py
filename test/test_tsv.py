@@ -152,17 +152,19 @@ def test_exclude_bracketed_text(tsv_vrs_files):
             exclude = row.exclude
             
             if(exclude == 'y'):
-                exclude_bool = True
+                    exclude_bool = True
             else:
                 exclude_bool = False
             
-            if(token == '['):
-                in_brackets = True
-            
-            if(in_brackets):   
-                if(not exclude_bool):
-                    holdup=True       
-                assert(in_brackets == exclude_bool)
-            
-            if(token ==']'):
-                in_brackets = False
+            for char in token:
+                
+                if(char == '['):
+                    in_brackets = True
+                
+                if(in_brackets):   
+                    if(not exclude_bool):
+                        holdup=True       
+                    assert(in_brackets == exclude_bool)
+                
+                if(char ==']'):
+                    in_brackets = False

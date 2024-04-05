@@ -86,13 +86,6 @@ def corpus_to_word_level_tsv(targetVersification:Versification, sourceVersificat
             for index in range(len(row.segment)):
             #for token in row.segment:#row.segment, tokenized_row:
             
-                skip_space_after = ""
-                
-                if(not in_brackets):
-                    exclude = ""
-                else:
-                    exclude = "y"
-                    
                 token = row.segment[index]
                 
                 next_token = None
@@ -102,12 +95,19 @@ def corpus_to_word_level_tsv(targetVersification:Versification, sourceVersificat
                 else:
                     next_token = ' ' #assume a space between verses
                     
+                skip_space_after = ""
+                    
                 if(token==' '):
                     continue
                 else:
                     if(not next_token==' '):
                         skip_space_after = "y"
 
+                if(not in_brackets):
+                    exclude = ""
+                else:
+                    exclude = "y"
+                    
                 exclude = "y"
                 for char in token:
                     if(not in_brackets and not is_unicode_punctuation(char)):
@@ -117,6 +117,9 @@ def corpus_to_word_level_tsv(targetVersification:Versification, sourceVersificat
                 if(token == '[' and excludeBracketedText): #we are trusting that all brackets get their own row
                     in_brackets = True
                     exclude = "y"
+                
+                if(token ==']'): #we are trusting that all brackets get their own row
+                    in_brackets = False
                 
                 wordIndexStr = str(wordIndex).zfill(3)
 
@@ -133,8 +136,6 @@ def corpus_to_word_level_tsv(targetVersification:Versification, sourceVersificat
                 
                 wordIndex += 1
                 
-                if(token ==']'): #we are trusting that all brackets get their own row
-                    in_brackets = False
 
 if(__name__ == "__main__"):
     #BSB
