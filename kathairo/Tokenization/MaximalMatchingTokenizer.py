@@ -1,4 +1,3 @@
-from .whitespace_included_tokenizer import WhitespaceIncludedTokenizer
 from machine.tokenization import WhitespaceTokenizer
 from machine.annotations.range import Range
 from typing import List

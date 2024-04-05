@@ -126,9 +126,6 @@ def corpus_to_word_level_tsv(targetVersification:Versification, sourceVersificat
                 sourceBcv = fromubs(f"{re.sub(r'[^0-9]', '', sourceVref.bbbcccvvvs)}00000").to_bcvid
                 rowBcv= fromubs(f"{re.sub(r'[^0-9]', '', row.ref.bbbcccvvvs)}00000").to_bcvid
                 
-                #if(f"{rowBcv}{wordIndexStr}" == "43005003017"):
-                #    something = True
-                
                 if(use_old_tsv_format):
                     tsv_writer.writerow([f"{sourceBcv}{wordIndexStr}", f"{rowBcv}", token, skip_space_after, exclude ]) #OLD WAY
                 else:
