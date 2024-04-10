@@ -2,7 +2,7 @@
   {
     "projectName": "fra-LSG",
     "targetVersificationPath": "./resources/versification/eng.vrs",
-    "targetUsxCorpusPath": "./resources/fra-LSG",
+    "targetUsfmCorpusPath": "./resources/fra-LSG_usfm",
     "latinWhiteSpaceIncludedTokenizer": true
   }
 ]
