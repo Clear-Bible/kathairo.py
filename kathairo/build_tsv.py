@@ -132,6 +132,7 @@ def corpus_to_word_level_tsv(targetVersification:Versification, sourceVersificat
                     tsv_writer.writerow([f"{rowBcv}{wordIndexStr}", f"{sourceBcv}", token, skip_space_after, exclude ]) #NEXT GEN
                 
                 wordIndex += 1
+    print("DONE!")
                 
 
 if(__name__ == "__main__"):
