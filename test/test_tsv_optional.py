@@ -26,7 +26,7 @@ def test_mapped_verses_are_present(tsv_vrs_name_files):
                and 
                int((target.bbbcccvvvs)[:3]) < 67 #exclude apocrypha
             ):
-                print("Missing Verse - "+tsv_vrs_name_files[2] + " " + (target.bbbcccvvvs))
+                print("Mapping - Missing Verse - "+tsv_vrs_name_files[2] + " " + (target.bbbcccvvvs))
 
 
 #Does each chapter possess the number of verses listed in the versification (requires versification file)
@@ -93,15 +93,15 @@ def test_chapter_size(tsv_vrs_name_files):
                         holdup=True
                     
                     if (book_list[bookIndex][chapterIndex] > targetVersification.book_list[bookIndex][chapterIndex]): 
-                        print("Extra Verse - "+tsv_vrs_name_files[2] + " Book Id: " + str(bookIndex + 1)+":"+str(chapterIndex + 1))
+                        print("Chapter Size - Extra Verse - "+tsv_vrs_name_files[2] + " Book: " + str(bookIndex + 1)+" Chapter:"+str(chapterIndex + 1))
                     elif(book_list[bookIndex][chapterIndex] < targetVersification.book_list[bookIndex][chapterIndex]):
-                        print("Missing Verse - "+tsv_vrs_name_files[2] + " Book Id: " + str(bookIndex + 1)+":"+str(chapterIndex + 1))
+                        print("Chapter Size - Missing Verse - "+tsv_vrs_name_files[2] + " Book: " + str(bookIndex + 1)+" Chapter:"+str(chapterIndex + 1))
                 except:
-                    print("Missing Chapter - "+tsv_vrs_name_files[2] + " Book Id: " + str(bookIndex + 1)+":"+str(chapterIndex + 1))
+                    print("Chapter Size - Missing Chapter - "+tsv_vrs_name_files[2] + " Book: " + str(bookIndex + 1)+" Chapter:"+str(chapterIndex + 1))
             
         except:
             if(bookIndex + 1 <= 66):#Exclude apocrypha
-                print("Missing Book - "+tsv_vrs_name_files[2] + " Book Id: " + str(bookIndex + 1))
+                print("Chapter Size - Missing Book - "+tsv_vrs_name_files[2] + " Book: " + str(bookIndex + 1))
 
 @pytest.mark.parametrize("tsv_vrs_name_files", __tsv_vrs_name_files__)
 def test_chinese_tokens_have_no_punctuation(tsv_vrs_name_files):

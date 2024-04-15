@@ -129,12 +129,12 @@ def test_source_chapter_size(tsv_vrs_name_files):
                         holdup=True
                     
                     if (book_list[bookIndex][chapterIndex] > originalVersification.book_list[bookIndex][chapterIndex]): 
-                        print("ORG - Extra Verse - "+tsv_vrs_name_files[2] + " Book Id: " + str(bookIndex + 1)+":"+str(chapterIndex + 1))
+                        print("source_verse - Extra Verse - "+tsv_vrs_name_files[2] + " Book: " + str(bookIndex + 1)+" Chapter:"+str(chapterIndex + 1))
                     elif(book_list[bookIndex][chapterIndex] < originalVersification.book_list[bookIndex][chapterIndex]):
-                        print("ORG - Missing Verse - "+tsv_vrs_name_files[2] + " Book Id: " + str(bookIndex + 1)+":"+str(chapterIndex + 1))
+                        print("source_verse - Missing Verse - "+tsv_vrs_name_files[2] + " Book: " + str(bookIndex + 1)+" Chapter:"+str(chapterIndex + 1))
                 except:
-                    print("ORG - Missing Chapter - "+tsv_vrs_name_files[2] + " Book Id: " + str(bookIndex + 1)+":"+str(chapterIndex + 1))
+                    print("source_verse - Missing Chapter - "+tsv_vrs_name_files[2] + " Book: " + str(bookIndex + 1)+" Chapter:"+str(chapterIndex + 1))
             
         except:
             if(bookIndex + 1 <= 66):#Exclude apocrypha
-                print("ORG - Missing Book - "+tsv_vrs_name_files[2] + " Book Id: " + str(bookIndex + 1))
+                print("source_verse - Missing Book - "+tsv_vrs_name_files[2] + " Book: " + str(bookIndex + 1))

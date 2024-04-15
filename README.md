@@ -18,7 +18,7 @@ Either:
 - Uncomment/Add appropriate project details to `build_tsv.py`
 
 # Run Unit Tests
-On the command-line, in `\kathairo.py`, run `py.test.exe`.  Use `py.test.exe -n <NUM>` to run tests in parallel.  Alternatively, run `py.test.exe -s` if you want to see the output of the optional tests.
+On the command-line, in `\kathairo.py`, run `pytest`.  Use `py.test.exe -n <NUM>` to run tests in parallel.  Alternatively, run `pytest -s` if you want to see the output of the optional tests.  To run a certain test, such as the test_source_chapter_size test, run `pytest test/test_tsv_optional.py::test_source_chapter_size`.
 
 # WIP
 - USFM/USX validation

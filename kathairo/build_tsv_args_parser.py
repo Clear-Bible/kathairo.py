@@ -59,9 +59,15 @@ if(args.latinTokenizer == True):
 if(args.latinWhiteSpaceIncludedTokenizer == True):
     tokenizer = LatinWhitespaceIncludedWordTokenizer(treat_apostrophe_as_single_quote=True)
 
-#build_tsv.corpus_to_verse_level_tsv
-#build_tsv.corpus_to_word_level_tsv
 build_tsv.corpus_to_word_level_tsv(targetVersification = targetVersification, 
+                                    sourceVersification = sourceVersification, 
+                                    corpus = corpus, 
+                                    tokenizer = tokenizer, 
+                                    project_name = projectName, 
+                                    use_old_tsv_format = args.oldTsvFormat,
+                                    excludeBracketedText = args.excludeBracketedText)  
+
+build_tsv.corpus_to_verse_level_tsv(targetVersification = targetVersification, 
                                     sourceVersification = sourceVersification, 
                                     corpus = corpus, 
                                     tokenizer = tokenizer, 

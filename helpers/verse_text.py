@@ -34,7 +34,7 @@ def reconstitute(tsv_file_path:Path):
         parts.append(text)
         verses.append(parts)#.strip()
 
-        output_file = input_file.parent.parent / "reconstituted" / f"{input_file.stem}_reconstitution.tsv"
+        output_file = input_file.parent.parent / "test" /"reconstituted" / f"{input_file.stem}_reconstitution.tsv"
         
         with open(output_file, 'w', newline='', encoding='utf-8') as out_file:
             tsv_writer = csv.writer(out_file, delimiter='\t')
