@@ -2,6 +2,7 @@ import csv
 from pathlib import Path
 import pandas as pd
 from helpers.strings import is_unicode_punctuation
+from machine.scripture import Versification
 
 #__macula_greek_tsv_rows__ = []
 
@@ -60,3 +61,6 @@ with open(json_file) as json_data:
 
 #for files in __tsv_vrs_name_files__:
 #    test_chinese_tokens_have_no_punctuation(files)
+
+#for files in __tsv_vrs_name_files__:
+#    test_source_chapter_size(files)

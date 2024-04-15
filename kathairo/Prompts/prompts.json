@@ -48,5 +48,11 @@
     "targetUsfmCorpusPath": "./resources/syno_ulb_ru",
     "latinWhiteSpaceIncludedTokenizer": true,
     "excludeBracketedText": true
+  },
+  {
+    "projectName": "fra-LSG",
+    "targetVersificationPath": "./resources/versification/lsg.vrs",
+    "targetUsfmCorpusPath": "./resources/fra-LSG_usfm",
+    "latinWhiteSpaceIncludedTokenizer": true
   }
 ]
