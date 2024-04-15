@@ -39,56 +39,5 @@
     "targetUsfmCorpusPath": "./resources/engylt_usfm",
     "latinTokenizer": true,
     "oldTsvFormat": true
-  },
-
-  {
-    "projectName": "BSB",
-    "targetVersificationPath": "./resources/bsb_usx/release/versification.vrs",
-    "targetUsfmCorpusPath": "./resources/bsb_usfm",
-    "latinWhiteSpaceIncludedTokenizer": true
-  },
-  {
-    "projectName": "OCCB-simplified",
-    "targetVersificationPath": "./resources/occb_simplified_usx/release/versification.vrs",
-    "targetUsxCorpusPath": "./resources/occb_simplified_usx/release/USX_1",
-    "chineseTokenizer": true
-  },
-  {
-    "projectName": "ONAV",
-    "targetVersificationPath": "./resources/onav_usx/release/versification.vrs",
-    "targetUsxCorpusPath": "./resources/onav_usx/release/USX_1",
-    "latinWhiteSpaceIncludedTokenizer": true
-  },
-  {
-    "projectName": "VanDyck",
-    "targetVersificationPath": "./resources/versification/eng.vrs",
-    "targetUsfmCorpusPath": "./resources/arb-vd_usfm",
-    "latinWhiteSpaceIncludedTokenizer": true
-  },
-  {
-    "projectName": "YLT",
-    "targetVersificationPath": "./resources/versification/eng.vrs",
-    "targetUsfmCorpusPath": "./resources/engylt_usfm",
-    "latinWhiteSpaceIncludedTokenizer": true
-  },
-  {
-    "projectName": "ONEN",
-    "targetVersificationPath": "./resources/onen_usx/release/versification.vrs",
-    "targetUsfmCorpusPath": "./resources/onen_usfm",
-    "latinWhiteSpaceIncludedTokenizer": true
-  },
-  {
-    "projectName": "RSB",
-    "targetVersificationPath": "./resources/versification/rsc.vrs",
-    "targetUsfmCorpusPath": "./resources/ru_rsb",
-    "latinWhiteSpaceIncludedTokenizer": true,
-    "excludeBracketedText": true
-  },
-  {
-    "projectName": "RSB-SYNO",
-    "targetVersificationPath": "./resources/versification/rso.vrs",
-    "targetUsfmCorpusPath": "./resources/syno_ulb_ru",
-    "latinWhiteSpaceIncludedTokenizer": true,
-    "excludeBracketedText": true
   }
 ]
