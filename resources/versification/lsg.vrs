@@ -1,8 +1,9 @@
 # Versification  "LSG"
 # Version=1.0
 #
-# Created by modifying eng.vrs from custom.vrs that came with LSG
-# modifications by Reinier de Blois 13/March/2012
+# Created by Robertson Brinker by modifying eng.vrs from custom.vrs that came with LSG
+
+# modifications to eng.vrs by Reinier de Blois 13/March/2012
 # modified mappings Psalms by adding verse #0 to the mappings
 # many of the subscripts that are part of verses 1,2 in the original text end up as verse #0 in English translations
 
@@ -149,16 +150,15 @@ EXO 22:1 = EXO 21:37
 EXO 22:2-31 = EXO 22:1-30
 NUM 16:36-50 = NUM 17:1-15
 NUM 17:1-13 = NUM 17:16-28
+# NUM 26:1a = NUM 25:19b  # no support for splits yet
+# NUM 26:1b = NUM 26:1  # no support for splits yet
 DEU 12:32 = DEU 13:1
 DEU 13:1-18 = DEU 13:2-19
 DEU 22:30 = DEU 23:1
 DEU 23:1-25 = DEU 23:2-26
 DEU 29:1 = DEU 28:69
 DEU 29:2-29 = DEU 29:1-28
-#
-# removed see PTSIL-113
-#
-1SA 20:42 = 1SA 21:1
+1SA 20:43 = 1SA 21:1
 1SA 21:1-15 = 1SA 21:2-16
 2SA 18:33 = 2SA 19:1
 2SA 19:1-43 = 2SA 19:2-44
@@ -168,6 +168,7 @@ DEU 29:2-29 = DEU 29:1-28
 2KI 12:1-21 = 2KI 12:2-22
 1CH 6:1-15 = 1CH 5:27-41
 1CH 6:16-81 = 1CH 6:1-66
+# 1CH 12:4b = 1CH 12:4  # no support for splits yet
 1CH 12:4-40 = 1CH 12:5-41
 2CH 2:1 = 2CH 1:18
 2CH 2:2-18 = 2CH 2:1-17
@@ -176,7 +177,15 @@ NEH 4:7-23 = NEH 4:1-17
 NEH 7:69-73 = NEH 7:68-72
 NEH 9:38 = NEH 10:1
 NEH 10:1-39 = NEH 10:2-40
-JOB 41:1-8 = JOB 40:25-32
+# JOB 34:36b = JOB 34:37 # no support for splits yet
+JOB 39:1-3 = JOB 38:39-41
+JOB 39:4-33 = JOB 39:1-30
+JOB 39:34-38 = JOB 40:1-5
+JOB 40:1-27 = JOB 40:6-32
+JOB 40:28 = JOB 41:1
+JOB 41:1-25 = JOB 41:2-26
+ECC 12:1-2 = ECC 11:9-10
+ECC 12:3-16 = ECC 12:1-14
 JER 9:1 = JER 8:23
 JER 9:2-26 = JER 9:1-25
 DAN 4:1-3 = DAN 3:31-33
@@ -187,11 +196,11 @@ HOS 13:16 = HOS 14:1
 HOS 14:1-9 = HOS 14:2-10
 JOL 2:28-32 = JOL 3:1-5
 JOL 3:1-21 = JOL 4:1-21
-MIC 5:1 = MIC 4:14
-NAM 2:1-13 = NAM 2:2-14
 ZEC 1:18-21 = ZEC 2:1-4
 ZEC 2:1-13 = ZEC 2:5-17
 MAL 4:1-6 = MAL 3:19-24
+# MRK 9:51 = MRK 9:50b # no support for splits yet
+# MRK 10:53 = MRK 10:52b # no support for splits yet
 # 40 + 41 -> 40 (per Peter Kirk)
 #
 #---------------------------------
