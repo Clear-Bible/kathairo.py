@@ -108,7 +108,7 @@ def test_tokens_contain_no_punctuation(tsv_vrs_name_files):
     #if ("OCCB" in tsv_vrs_name_files[0]):
     data_frame = pd.read_csv(tsv_vrs_name_files[0], sep='\t',dtype=str)
     for row in data_frame.itertuples():
-        token = row.text
+        token = str(row.text)
         for char in token:
             if(is_unicode_punctuation(char) and len(token)>1):
                 id = row.id
