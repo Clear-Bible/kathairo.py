@@ -104,22 +104,19 @@ def test_chapter_size(tsv_vrs_name_files):
                 print("Chapter Size - Missing Book - "+tsv_vrs_name_files[2] + " Book: " + str(bookIndex + 1))
 
 @pytest.mark.parametrize("tsv_vrs_name_files", __tsv_vrs_name_files__)
-def test_chinese_tokens_have_no_punctuation(tsv_vrs_name_files):
-    if ("OCCB" in tsv_vrs_name_files[0]):
-        
-        data_frame = pd.read_csv(tsv_vrs_name_files[0], sep='\t',dtype=str)
-        for row in data_frame.itertuples():
-            token = row.text
-            for char in token:
-                if(is_unicode_punctuation(char) and len(token)>1):
-                    id = row.id
-                    #if(token == "照圣所的律例洁净自己，"):
-                    #    stop = True
-                    print(id, token)#, row.verse_text)
-                    break                
+def test_tokens_contain_no_punctuation(tsv_vrs_name_files):
+    #if ("OCCB" in tsv_vrs_name_files[0]):
+    data_frame = pd.read_csv(tsv_vrs_name_files[0], sep='\t',dtype=str)
+    for row in data_frame.itertuples():
+        token = str(row.text)
+        for char in token:
+            if(is_unicode_punctuation(char) and len(token)>1):
+                id = row.id
+                print(id, token)#, row.verse_text)
+                break                
 
 @pytest.mark.parametrize("tsv_vrs_name_files", __tsv_vrs_name_files__)
-def test_tokens_have_no_punctuation(tsv_vrs_name_files):
+def test_tokens_start_and_end_with_no_punctuation(tsv_vrs_name_files):
     print(tsv_vrs_name_files[0])
     #if ("OCCB" not in tsv_vrs_name_files[0]):
     data_frame = pd.read_csv(tsv_vrs_name_files[0], sep='\t',dtype=str)
@@ -135,6 +132,4 @@ def test_tokens_have_no_punctuation(tsv_vrs_name_files):
             
             ):
             id = row.id
-            #if(token == "照圣所的律例洁净自己，"):
-            #    stop = True
             print(id, token)#, row.verse_text)
