@@ -1,7 +1,7 @@
 import subprocess
 import json
 
-json_file = "kathairo\Prompts\prompts.json"
+json_file = "kathairo/Prompts/prompts.json"
 
 with open(json_file) as json_data:
     jsonData = json.load(json_data)
@@ -12,7 +12,7 @@ with open(json_file) as json_data:
             'poetry',
             'run',
             'python',
-            'kathairo\\build_tsv_args_parser.py'
+            'kathairo/build_tsv_args_parser.py'
                             ]
         
         for key in jsonKeys:
@@ -21,7 +21,7 @@ with open(json_file) as json_data:
                 commandToRunList.append(jsonObject[key])
 
         try:
-            subprocess.run(commandToRunList, check=True)
+            subprocess.Popen(commandToRunList)
         except subprocess.CalledProcessError as e:
             print(f"An error occurred while running wrapper.py: {e}")
         except FileNotFoundError:

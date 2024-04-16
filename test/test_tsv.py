@@ -3,8 +3,12 @@ import os
 import codecs
 import pytest
 from test import __tsv_vrs_name_files__
+from helpers.verse_text import reconstitute
 import pandas as pd
 from machine.scripture import Versification
+import csv
+from pathlib import Path
+from helpers.strings import is_unicode_punctuation
 
 # Verify that the file exists.
 @pytest.mark.parametrize("tsv_vrs_files", __tsv_vrs_name_files__)
@@ -83,3 +87,89 @@ def test_id_verse_value(tsv_vrs_files):
     for id in data_frame['id']:
         verse_id = int(str(id)[5:8])
         assert (verse_id > 0 and verse_id <= max_verse_number)
+          
+#Is skip_space_after column accurate
+@pytest.mark.parametrize("tsv_vrs_files", __tsv_vrs_name_files__)
+def test_verse_text_reconstitution(tsv_vrs_files):
+    #Reconstitute VerseText File from TSV
+    tsv_path = Path(tsv_vrs_files[0])
+    reconstitute(tsv_path)
+    
+    #Compare Reconstituted File to VerseText File
+    verseTextPath = tsv_path.parent.parent / "VerseText"/ f"{tsv_path.stem}.tsv"
+    verseTextRows = [r for r in csv.DictReader(verseTextPath.open("r", encoding='utf-8'), delimiter="\t")]
+
+    reconstitutedPath = tsv_path.parent.parent / "test" /"reconstituted" / f"{tsv_path.stem}_reconstitution.tsv"
+    reconstitutedRows = [r for r in csv.DictReader(reconstitutedPath.open("r", encoding='utf-8'), delimiter="\t")]
+
+    for index in range(len(verseTextRows)):
+        if(index>=len(reconstitutedRows)):
+            break
+        if("OCCB" in tsv_path.stem):
+            adjusted_verse = verseTextRows[index]['text'].strip()
+            adjusted_reconstitution = reconstitutedRows[index]['text'].strip()
+            assert(adjusted_verse == adjusted_reconstitution) #due to random spaces in chinese
+                #print(f"MISMATCH---{adjusted_verse}")
+                #print(f"MISMATCH---{adjusted_reconstitution}")
+                #print(f"------------------------------")
+        else: 
+            adjusted_verse = verseTextRows[index]['text'].replace("  ", " ")
+            adjusted_reconstitution = reconstitutedRows[index]['text'].rstrip().replace("  ", " ")
+            assert(adjusted_verse == adjusted_reconstitution)
+                #print(f"MISMATCH---{adjusted_verse}")
+                #print(f"MISMATCH---{adjusted_reconstitution}")
+                #print(f"------------------------------")
+
+#Is punctuation excluded 
+@pytest.mark.parametrize("tsv_vrs_files", __tsv_vrs_name_files__)
+def test_exclude_punctuation(tsv_vrs_files):    
+    data_frame = pd.read_csv(tsv_vrs_files[0], sep='\t',dtype=str)
+    for row in data_frame.itertuples():
+        token = row.text
+        exclude = row.exclude
+        
+        if(exclude == 'y'):
+            exclude_bool = True
+        else:
+            exclude_bool = False
+        
+        #TODO look at more than first char
+        if (isinstance(token, str) and len(token)>0):
+            token_is_punct = is_unicode_punctuation(token[0])
+        else:
+            token_is_punct = False
+        
+        if(token_is_punct):
+            assert(token_is_punct == exclude_bool)
+        
+#Is bracketed text excluded 
+@pytest.mark.parametrize("tsv_vrs_files", __tsv_vrs_name_files__)
+def test_exclude_bracketed_text(tsv_vrs_files):    
+    
+    if ("RSB" in tsv_vrs_files[0]):
+        
+        in_brackets = False
+        
+        data_frame = pd.read_csv(tsv_vrs_files[0], sep='\t',dtype=str)
+        for row in data_frame.itertuples():
+            
+            token = row.text
+            exclude = row.exclude
+            
+            if(exclude == 'y'):
+                    exclude_bool = True
+            else:
+                exclude_bool = False
+            
+            for char in token:
+                
+                if(char == '['):
+                    in_brackets = True
+                
+                if(in_brackets):   
+                    if(not exclude_bool):
+                        holdup=True       
+                    assert(in_brackets == exclude_bool)
+                
+                if(char ==']'):
+                    in_brackets = False

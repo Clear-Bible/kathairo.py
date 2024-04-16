@@ -1,3 +1,9 @@
+import csv
+from pathlib import Path
+import pandas as pd
+from helpers.strings import is_unicode_punctuation
+from machine.scripture import Versification
+
 #__macula_greek_tsv_rows__ = []
 
 #TODO have common method of creating TSV file name
@@ -40,3 +46,21 @@ with open(json_file) as json_data:
      
 #for project in __tsv_vrs_name_files__:
 #    test_chapter_size(project)
+
+#for files in __tsv_vrs_name_files__:
+#    reconstitute(Path(files[0]))
+
+#for files in __tsv_vrs_name_files__:
+#    test_verse_text_reconstitution(files)
+
+#for files in __tsv_vrs_name_files__:
+#    test_exclude_punctuation(files)
+
+#for files in __tsv_vrs_name_files__:
+#    test_exclude_bracketed_text(files)
+
+#for files in __tsv_vrs_name_files__:
+#    test_chinese_tokens_have_no_punctuation(files)
+
+#for files in __tsv_vrs_name_files__:
+#    test_source_chapter_size(files)
