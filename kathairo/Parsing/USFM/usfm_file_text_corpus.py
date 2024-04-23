@@ -4,10 +4,8 @@ from typing import List, Optional
 from machine.scripture.verse_ref import Versification, VersificationType
 from machine.utils.typeshed import StrPath
 from machine.corpora.scripture_text_corpus import ScriptureTextCorpus
-#from machine.corpora.usfm_file_text import UsfmFileText
 from .usfm_file_text import UsfmFileText
 from machine.corpora.usfm_stylesheet import UsfmStylesheet
-#from machine.corpora.usfm_file_text_corpus import UsfmFileTextCorpus
 from machine.corpora.usfm_parser_handler import UsfmParserHandler
 
 class UsfmFileTextCorpus(ScriptureTextCorpus):

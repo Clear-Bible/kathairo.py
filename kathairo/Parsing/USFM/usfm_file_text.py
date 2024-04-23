@@ -6,7 +6,6 @@ from machine.utils.typeshed import StrPath
 from machine.corpora.file_stream_container import FileStreamContainer
 from machine.corpora.stream_container import StreamContainer
 from machine.corpora.usfm_stylesheet import UsfmStylesheet
-#from machine.corpora.usfm_text_base import UsfmTextBase
 from .usfm_text_base import UsfmTextBase
 from machine.corpora.usfm_parser_handler import UsfmParserHandler
 
