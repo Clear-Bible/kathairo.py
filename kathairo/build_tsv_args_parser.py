@@ -10,6 +10,7 @@ from machine.scripture import (
 )
 import argparse
 import build_tsv
+from Parsing.USFM.usfm_handlers import ModifiedTextRowCollector
 
 argumentParser = argparse.ArgumentParser()
 
@@ -49,7 +50,7 @@ sourceVersification = Versification(name = "sourceVersification", base_versifica
 targetVersification = Versification.load(args.targetVersificationPath, fallback_name="web")
 
 if(args.targetUsfmCorpusPath is not None):
-    corpus = UsfmFileTextCorpus(args.targetUsfmCorpusPath, versification = targetVersification)
+    corpus = UsfmFileTextCorpus(args.targetUsfmCorpusPath, handler = ModifiedTextRowCollector, versification = targetVersification)
 if(args.targetUsxCorpusPath is not None):
     corpus = UsxFileTextCorpus(args.targetUsxCorpusPath, versification = targetVersification)
 

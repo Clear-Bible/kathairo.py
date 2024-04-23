@@ -17,6 +17,7 @@ from machine.scripture import (
 from biblelib.word import fromubs
 import re
 from helpers.strings import is_unicode_punctuation
+from Parsing.USFM.usfm_handlers import ModifiedTextRowCollector
 
 def corpus_to_verse_level_tsv(targetVersification:Versification, sourceVersification:Versification, corpus:ScriptureTextCorpus, tokenizer:WhitespaceTokenizer, 
                               project_name:str, use_old_tsv_format:bool = False, excludeBracketedText:bool = False):
@@ -139,7 +140,7 @@ if(__name__ == "__main__"):
     #BSB
     targetVersification = Versification.load("./resources/bsb_usx/release/versification.vrs", fallback_name="web")
     sourceVersification = Versification(name = "sourceVersification", base_versification=ORIGINAL_VERSIFICATION)
-    corpus = UsfmFileTextCorpus("./resources/bsb_usfm", versification = targetVersification)
+    corpus = UsfmFileTextCorpus("./resources/bsb_usfm", handler=ModifiedTextRowCollector, versification = targetVersification)
     tokenizer = LatinWhitespaceIncludedWordTokenizer()
     project_name = "BSB"
     excludeBracketedText = False

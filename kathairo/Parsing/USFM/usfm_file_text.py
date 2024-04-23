@@ -8,6 +8,7 @@ from machine.corpora.stream_container import StreamContainer
 from machine.corpora.usfm_stylesheet import UsfmStylesheet
 #from machine.corpora.usfm_text_base import UsfmTextBase
 from .usfm_text_base import UsfmTextBase
+from machine.corpora.usfm_parser_handler import UsfmParserHandler
 
 
 class UsfmFileText(UsfmTextBase):
@@ -16,10 +17,11 @@ class UsfmFileText(UsfmTextBase):
         stylesheet: UsfmStylesheet,
         encoding: str,
         filename: StrPath,
+        handler: UsfmParserHandler,
         versification: Optional[Versification] = None,
         include_markers: bool = False,
     ) -> None:
-        super().__init__(_get_id(filename, encoding), stylesheet, encoding, versification, include_markers)
+        super().__init__(_get_id(filename, encoding), stylesheet, encoding, handler, versification, include_markers)
 
         self._filename = Path(filename)
 
