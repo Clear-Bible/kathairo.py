@@ -8,8 +8,8 @@ from machine.corpora.corpora_utils import gen, merge_verse_ranges
 from machine.corpora.scripture_text import ScriptureText
 from machine.corpora.stream_container import StreamContainer
 from machine.corpora.text_row import TextRow
-#from machine.corpora.usfm_parser import parse_usfm
-from .usfm_parser import parse_usfm
+from machine.corpora.usfm_parser import parse_usfm
+#from .usfm_parser import parse_usfm
 from machine.corpora.usfm_parser_handler import UsfmParserHandler
 from machine.corpora.usfm_parser_state import UsfmParserState
 from machine.corpora.usfm_stylesheet import UsfmStylesheet
@@ -137,6 +137,10 @@ class _TextRowCollector(UsfmParserHandler):
             self._output_marker(state)
 
     def text(self, state: UsfmParserState, text: str) -> None:
+        if(state.prev_token is not None and state.prev_token.marker == "d" and state.verse_ref.book == "PSA"):
+            if self is not None:
+                self.verse(state, 0, "v", 0, 0)
+        
         if self._verse_ref is None or not state.is_verse_para:
             return
 
