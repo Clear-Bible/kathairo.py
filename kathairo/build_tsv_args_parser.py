@@ -1,7 +1,6 @@
 from Tokenization import ChineseBibleWordTokenizer
 from Tokenization.latin_whitespace_included_tokenizer import LatinWhitespaceIncludedWordTokenizer
-from machine.corpora import UsxFileTextCorpus
-from machine.corpora import UsxFileTextCorpus#, UsfmFileTextCorpus
+from Parsing.USX.usx_file_text_corpus import UsxFileTextCorpus
 from Parsing.USFM.usfm_file_text_corpus import UsfmFileTextCorpus
 from machine.tokenization import LatinWordTokenizer, WhitespaceTokenizer
 from machine.scripture import (

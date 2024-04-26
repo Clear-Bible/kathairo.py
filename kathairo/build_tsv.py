@@ -2,7 +2,8 @@ import csv
 from Tokenization import MaximalMatchingTokenizer, ChineseBibleWordTokenizer
 from Tokenization.latin_whitespace_included_tokenizer import LatinWhitespaceIncludedWordTokenizer
 from machine.tokenization import LatinWordTokenizer, WhitespaceTokenizer
-from machine.corpora import UsxFileTextCorpus, ScriptureTextCorpus #UsfmFileTextCorpus
+from machine.corpora import ScriptureTextCorpus
+from Parsing.USX.usx_file_text_corpus import UsxFileTextCorpus
 from Parsing.USFM.usfm_file_text_corpus import UsfmFileTextCorpus
 from machine.scripture import (
     ENGLISH_VERSIFICATION,
