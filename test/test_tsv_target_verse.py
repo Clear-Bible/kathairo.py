@@ -1,11 +1,8 @@
 #Based on https://github.com/Clear-Bible/macula-greek/blob/main/test/test_tsv.py
-import os
-import codecs
 import pytest
 from test import __tsv_vrs_name_files__
 import pandas as pd
 from machine.scripture import Versification
-from helpers.strings import is_unicode_punctuation
 
 #Is each verse in the mapping present in the TSV (requires versification file)
 @pytest.mark.parametrize("tsv_vrs_name_files", __tsv_vrs_name_files__)
@@ -58,6 +55,8 @@ def test_chapter_size(tsv_vrs_name_files):
             #add chapter to chapter_list
             chapter_list.append(current_verse_count)
             current_verse_count = 1
+            if(current_verse_id == 0):
+                current_verse_count = 0
         
         if(current_book_id > previous_book_id):#book changes
             #add book to book_list
@@ -101,34 +100,3 @@ def test_chapter_size(tsv_vrs_name_files):
         except:
             if(bookIndex + 1 <= 66):#Exclude apocrypha
                 print("Chapter Size - Missing Book - "+tsv_vrs_name_files[2] + " Book: " + str(bookIndex + 1))
-
-@pytest.mark.parametrize("tsv_vrs_name_files", __tsv_vrs_name_files__)
-def test_tokens_contain_no_punctuation(tsv_vrs_name_files):
-    #if ("OCCB" in tsv_vrs_name_files[0]):
-    data_frame = pd.read_csv(tsv_vrs_name_files[0], sep='\t',dtype=str)
-    for row in data_frame.itertuples():
-        token = str(row.text)
-        for char in token:
-            if(is_unicode_punctuation(char) and len(token)>1):
-                id = row.id
-                print(id, token)#, row.verse_text)
-                break                
-
-@pytest.mark.parametrize("tsv_vrs_name_files", __tsv_vrs_name_files__)
-def test_tokens_start_and_end_with_no_punctuation(tsv_vrs_name_files):
-    print(tsv_vrs_name_files[0])
-    #if ("OCCB" not in tsv_vrs_name_files[0]):
-    data_frame = pd.read_csv(tsv_vrs_name_files[0], sep='\t',dtype=str)
-    for row in data_frame.itertuples():
-        token = row.text
-        #for char in token:
-        if(len(str(token))>1 and 
-            (
-                is_unicode_punctuation(str(token)[0])
-                or
-                is_unicode_punctuation(str(token)[len(str(token))-1])
-                )
-            
-            ):
-            id = row.id
-            print(id, token)#, row.verse_text)
