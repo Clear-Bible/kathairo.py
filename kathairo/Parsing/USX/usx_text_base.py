@@ -5,13 +5,13 @@ from machine.scripture.verse_ref import Versification
 from machine.corpora.scripture_text import ScriptureText
 from machine.corpora.stream_container import StreamContainer
 from machine.corpora.text_row import TextRow
-from .usx_verse_parser import UsxVerseParser
+from .usx_verse_parser import ModifiedUsxVerseParser
 
 
 class UsxTextBase(ScriptureText):
     def __init__(self, id: str, versification: Optional[Versification]) -> None:
         super().__init__(id, versification)
-        self._parser = UsxVerseParser()
+        self._parser = ModifiedUsxVerseParser()
 
     @abstractmethod
     def _create_stream_container(self) -> StreamContainer:

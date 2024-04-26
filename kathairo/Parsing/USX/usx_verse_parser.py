@@ -1,33 +1,20 @@
 from __future__ import annotations
 
 import xml.etree.ElementTree as etree
-from dataclasses import dataclass, field
-from typing import BinaryIO, Iterable, List, Optional
+from typing import Iterable
 
 from machine.scripture.verse_ref import are_overlapping_verse_ranges
-from machine.utils.string_utils import has_sentence_ending, is_integer
 from machine.corpora.corpora_utils import merge_verse_ranges
-from machine.corpora.usx_token import UsxToken
 from machine.corpora.usx_verse import UsxVerse
+from machine.corpora.usx_verse_parser import UsxVerseParser
+from machine.corpora.usx_verse_parser import _ParseContext
+from machine.corpora.usx_verse_parser import _is_numbered_style
 
 
-class UsxVerseParser:
+class ModifiedUsxVerseParser(UsxVerseParser):
     def __init__(self, merge_segments: bool = False) -> None:
         self._merge_segments = merge_segments
-
-    def parse(self, stream: BinaryIO) -> Iterable[UsxVerse]:
-        ctxt = _ParseContext()
-        tree = etree.parse(stream)
-        root_elem = tree.find(".//book/..")
-        if root_elem is None:
-            raise RuntimeError("USX does not contain a book element.")
-        assert root_elem is not None
-        for verse in self._parse_element(root_elem, ctxt):
-            yield verse
-
-        if ctxt.chapter is not None and ctxt.verse is not None:
-            yield ctxt.create_verse()
-
+    
     def _parse_element(self, elem: etree.Element, ctxt: _ParseContext) -> Iterable[UsxVerse]:
         if elem.text is not None and ctxt.chapter is not None and ctxt.verse is not None:
             ctxt.add_token(elem.text)
@@ -95,11 +82,6 @@ class UsxVerseParser:
 
 _NONVERSE_PARA_STYLES = {"ms", "mr", "s", "sr", "r", "sp", "rem", "restore", "cl"} ### "d"
 
-
-def _is_numbered_style(style_prefix: str, style: str) -> bool:
-    return style.startswith(style_prefix) and is_integer(style[len(style_prefix) :])
-
-
 def _is_verse_para(para_elem: etree.Element) -> bool:
     style = para_elem.get("style", "")
     if style in _NONVERSE_PARA_STYLES:
@@ -112,23 +94,3 @@ def _is_verse_para(para_elem: etree.Element) -> bool:
         return False
 
     return True
-
-
-@dataclass
-class _ParseContext:
-    chapter: Optional[str] = None
-    verse: Optional[str] = None
-    is_sentence_start: bool = True
-    para_element: Optional[etree.Element] = None
-    _verse_tokens: List[UsxToken] = field(default_factory=list)
-
-    def add_token(self, text: str, elem: Optional[etree.Element] = None) -> None:
-        assert self.para_element is not None
-        self._verse_tokens.append(UsxToken(self.para_element, text, elem))
-
-    def create_verse(self) -> UsxVerse:
-        assert self.chapter is not None and self.verse is not None
-        verse = UsxVerse(self.chapter, self.verse, self.is_sentence_start, self._verse_tokens)
-        self.is_sentence_start = has_sentence_ending(verse.text)
-        self._verse_tokens.clear()
-        return verse
