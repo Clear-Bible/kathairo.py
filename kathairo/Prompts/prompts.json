@@ -54,5 +54,11 @@
     "targetVersificationPath": "./resources/versification/lsg.vrs",
     "targetUsfmCorpusPath": "./resources/fra-LSG_usfm",
     "latinWhiteSpaceIncludedTokenizer": true
+  },
+  {
+    "projectName": "IRV",
+    "targetVersificationPath": "./resources/IRV/versification.vrs",
+    "targetUsfmCorpusPath": "./resources/IRV",
+    "latinWhiteSpaceIncludedTokenizer": true
   }
 ]
