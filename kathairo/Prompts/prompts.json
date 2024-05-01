@@ -1,8 +1,8 @@
 [
   {
-    "projectName": "OCCB-simplified",
-    "targetVersificationPath": "./resources/occb_simplified_usx/release/versification.vrs",
-    "targetUsxCorpusPath": "./resources/occb_simplified_usx/release/USX_1",
-    "chineseTokenizer": true
+    "projectName": "ONAV",
+    "targetVersificationPath": "./resources/onav_usx/release/versification.vrs",
+    "targetUsxCorpusPath": "./resources/onav_usx/release/USX_1",
+    "latinWhiteSpaceIncludedTokenizer": true
   }
 ]
