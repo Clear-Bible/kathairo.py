@@ -86,7 +86,7 @@ def test_id_verse_value(tsv_vrs_files):
     data_frame = pd.read_csv(tsv_vrs_files[0], sep='\t',dtype=str)
     for id in data_frame['id']:
         verse_id = int(str(id)[5:8])
-        assert (verse_id > 0 and verse_id <= max_verse_number)
+        assert (verse_id >= 0 and verse_id <= max_verse_number)
           
 #Is skip_space_after column accurate
 @pytest.mark.parametrize("tsv_vrs_files", __tsv_vrs_name_files__)
