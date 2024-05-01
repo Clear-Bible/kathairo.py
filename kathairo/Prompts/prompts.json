@@ -1,8 +1,8 @@
 [
   {
-    "projectName": "ONAV",
-    "targetVersificationPath": "./resources/onav_usx/release/versification.vrs",
-    "targetUsxCorpusPath": "./resources/onav_usx/release/USX_1",
+    "projectName": "VanDyck",
+    "targetVersificationPath": "./resources/arb-vd_usfm/versification.vrs",
+    "targetUsfmCorpusPath": "./resources/arb-vd_usfm",
     "latinWhiteSpaceIncludedTokenizer": true
   }
 ]

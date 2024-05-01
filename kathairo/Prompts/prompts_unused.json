@@ -54,9 +54,9 @@
     "chineseTokenizer": true
   },
   {
-    "projectName": "VanDyck",
-    "targetVersificationPath": "./resources/versification/eng.vrs",
-    "targetUsfmCorpusPath": "./resources/arb-vd_usfm",
+    "projectName": "ONAV",
+    "targetVersificationPath": "./resources/onav_usx/release/versification.vrs",
+    "targetUsxCorpusPath": "./resources/onav_usx/release/USX_1",
     "latinWhiteSpaceIncludedTokenizer": true
   },
   {
