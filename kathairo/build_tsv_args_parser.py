@@ -1,7 +1,7 @@
 from Tokenization import ChineseBibleWordTokenizer
 from Tokenization.latin_whitespace_included_tokenizer import LatinWhitespaceIncludedWordTokenizer
-from machine.corpora import UsxFileTextCorpus
-from machine.corpora import UsfmFileTextCorpus, UsxFileTextCorpus
+from Parsing.USX.usx_file_text_corpus import UsxFileTextCorpus
+from Parsing.USFM.usfm_file_text_corpus import UsfmFileTextCorpus
 from machine.tokenization import LatinWordTokenizer, WhitespaceTokenizer
 from machine.scripture import (
     ORIGINAL_VERSIFICATION,
@@ -9,6 +9,7 @@ from machine.scripture import (
 )
 import argparse
 import build_tsv
+from Parsing.USFM.usfm_handlers import ModifiedTextRowCollector
 
 argumentParser = argparse.ArgumentParser()
 
@@ -48,7 +49,7 @@ sourceVersification = Versification(name = "sourceVersification", base_versifica
 targetVersification = Versification.load(args.targetVersificationPath, fallback_name="web")
 
 if(args.targetUsfmCorpusPath is not None):
-    corpus = UsfmFileTextCorpus(args.targetUsfmCorpusPath, versification = targetVersification)
+    corpus = UsfmFileTextCorpus(args.targetUsfmCorpusPath, handler = ModifiedTextRowCollector, versification = targetVersification)
 if(args.targetUsxCorpusPath is not None):
     corpus = UsxFileTextCorpus(args.targetUsxCorpusPath, versification = targetVersification)
 

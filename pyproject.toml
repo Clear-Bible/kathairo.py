@@ -12,8 +12,8 @@ biblelib = "^0.3.1"
 usfm-grammar = "^3.0.0b4"
 pytest = "^8.0.2"
 pandas = "^2.2.1"
-sil-machine = "^1.0.2"
 pytest-xdist = "^3.5.0"
+sil-machine = "^1.0.2"
 
 
 [build-system]
