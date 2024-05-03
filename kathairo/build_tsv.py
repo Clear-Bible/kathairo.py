@@ -19,15 +19,12 @@ from biblelib.word import fromubs
 import re
 from helpers.strings import is_unicode_punctuation
 from Parsing.USFM.usfm_handlers import ModifiedTextRowCollector
+from helpers.paths import get_target_file_location
 
 def corpus_to_verse_level_tsv(targetVersification:Versification, sourceVersification:Versification, corpus:ScriptureTextCorpus, tokenizer:WhitespaceTokenizer, 
                               project_name:str, use_old_tsv_format:bool = False, excludeBracketedText:bool = False):
 
-    tsvFormatString = "new"
-    if(use_old_tsv_format):
-        tsvFormatString = "old"
-        
-    outputFileName = "VerseText/target_"+project_name+"_"+tsvFormatString+".tsv"
+    outputFileName = get_target_file_location(use_old_tsv_format, "VerseText", project_name)
 
     with open(outputFileName, 'w', newline='', encoding='utf-8') as out_file:
         tsv_writer = csv.writer(out_file, delimiter='\t')
@@ -55,11 +52,7 @@ def corpus_to_verse_level_tsv(targetVersification:Versification, sourceVersifica
 def corpus_to_word_level_tsv(targetVersification:Versification, sourceVersification:Versification, corpus:ScriptureTextCorpus, tokenizer:WhitespaceTokenizer, 
                   project_name:str, use_old_tsv_format:bool = False, excludeBracketedText:bool = False):
 
-    tsvFormatString = "new"
-    if(use_old_tsv_format):
-        tsvFormatString = "old"
-
-    outputFileName = "TSVs/target_"+project_name+"_"+tsvFormatString+".tsv"
+    outputFileName = get_target_file_location(use_old_tsv_format, "TSVs", project_name)
 
     with open(outputFileName, 'w', newline='', encoding='utf-8') as out_file:
         tsv_writer = csv.writer(out_file, delimiter='\t')

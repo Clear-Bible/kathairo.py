@@ -3,6 +3,7 @@ from pathlib import Path
 import pandas as pd
 from helpers.strings import is_unicode_punctuation
 from machine.scripture import Versification
+from helpers.paths import get_target_file_location
 
 #__macula_greek_tsv_rows__ = []
 
@@ -29,11 +30,7 @@ with open(json_file) as json_data:
         projectName = jsonObject["projectName"]
         oldTsvFormat = jsonObject.get("oldTsvFormat", False)
         
-        tsvFormatString = "new"
-        if(oldTsvFormat):
-            tsvFormatString = "old"
-
-        outputFileLocation = "TSVs/target_"+projectName+"_"+tsvFormatString+".tsv"
+        outputFileLocation = get_target_file_location(oldTsvFormat, "TSVs", projectName)
         
         prompt_tsv_vrs = [outputFileLocation, targetVersificationPath, projectName]
         __tsv_vrs_name_files__.append(prompt_tsv_vrs)
