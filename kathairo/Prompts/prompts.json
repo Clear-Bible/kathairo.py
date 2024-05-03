@@ -47,5 +47,11 @@
     "targetVersificationPath": "./resources/IRV/versification.vrs",
     "targetUsfmCorpusPath": "./resources/IRV",
     "latinWhiteSpaceIncludedTokenizer": true
+  },
+  {
+    "projectName": "HCV",
+    "targetVersificationPath": "./resources/hiHCV19SFM/versification.vrs",
+    "targetUsfmCorpusPath": "./resources/hiHCV19SFM",
+    "latinWhiteSpaceIncludedTokenizer": true
   }
 ]
