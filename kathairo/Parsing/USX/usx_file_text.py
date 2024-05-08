@@ -6,7 +6,7 @@ from machine.utils.typeshed import StrPath
 from machine.corpora.corpora_utils import get_usx_id
 from machine.corpora.file_stream_container import FileStreamContainer
 from machine.corpora.stream_container import StreamContainer
-from .usx_text_base import UsxTextBase
+from .usx_text_base import UsxTextBase #use modified UsxTextBase
 
 
 class UsxFileText(UsxTextBase):

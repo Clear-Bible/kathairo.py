@@ -11,7 +11,7 @@ from .usx_verse_parser import ModifiedUsxVerseParser
 class UsxTextBase(ScriptureText):
     def __init__(self, id: str, versification: Optional[Versification]) -> None:
         super().__init__(id, versification)
-        self._parser = ModifiedUsxVerseParser()
+        self._parser = ModifiedUsxVerseParser() #use modified parser
 
     @abstractmethod
     def _create_stream_container(self) -> StreamContainer:

@@ -14,6 +14,7 @@ INNER_WORD_PUNCT_REGEX = re.compile(
 )
 URL_REGEX = re.compile(r"(?:[\w-]+://?|www[.])[^\s()<>]+(?:[\w\d]+|(?:[^\p{P}\s]|/))", re.IGNORECASE)
 
+#kathairo manually handles periods, commas, and right single quotes as opposed to having them be part of INNER_WORD_PUNCT_REGEX
 NUMBER_COMMA_REGEX = re.compile(
     r"[(?<=\d),(?=\d)]"
 )
@@ -26,7 +27,7 @@ RIGHT_SINGLE_QUOTE_AS_APOSTROPHE_REGEX = re.compile(
     r"(?<=[A-Za-z])’(?=[A-Za-z])"
 )
 
-class LatinWhitespaceIncludedWordTokenizer(WhitespaceIncludedTokenizer):
+class LatinWhitespaceIncludedWordTokenizer(WhitespaceIncludedTokenizer): #uses WhitepspaceIncludedTokenizer
     def __init__(self, abbreviations: Iterable[str] = [], treat_apostrophe_as_single_quote: bool = False) -> None:
         self._abbreviations = {a.lower() for a in abbreviations}
         self.treat_apostrophe_as_single_quote = treat_apostrophe_as_single_quote
@@ -100,6 +101,7 @@ class LatinWhitespaceIncludedWordTokenizer(WhitespaceIncludedTokenizer):
                     ctxt.index += len(group)
                     return token_ranges
                 
+                #start of changes: kathairo manually handles periods, commas, and right single quotes as opposed to having them be part of INNER_WORD_PUNCT_REGEX
                 substring = data[ctxt.index-1:ctxt.index+2]
                 is_number_comma_match = NUMBER_COMMA_REGEX.match(substring)
 
@@ -124,6 +126,7 @@ class LatinWhitespaceIncludedWordTokenizer(WhitespaceIncludedTokenizer):
                     group = is_right_single_quote_apostrophe.group()
                     ctxt.index += len(group)
                     return token_ranges
+                #end of changes
 
                 token_ranges = (Range.create(ctxt.word_start, ctxt.index), Range.create(ctxt.index, end_index))
                 ctxt.word_start = -1

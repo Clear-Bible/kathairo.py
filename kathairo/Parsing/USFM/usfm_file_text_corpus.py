@@ -24,5 +24,5 @@ class UsfmFileTextCorpus(ScriptureTextCorpus):
         stylesheet = UsfmStylesheet(stylesheet_filename)
         texts: List[UsfmFileText] = []
         for sfm_filename in Path(project_dir).glob(file_pattern):
-            texts.append(UsfmFileText(stylesheet, encoding, sfm_filename, handler, versification, include_markers))
+            texts.append(UsfmFileText(stylesheet, encoding, sfm_filename, handler, versification, include_markers)) #passes in handler
         super().__init__(versification, texts)

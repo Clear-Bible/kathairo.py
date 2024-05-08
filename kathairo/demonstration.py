@@ -44,6 +44,12 @@ from machine.corpora import UsfmParser
 
 from machine.corpora import UsfmParserHandler
 
+tokenizer = LatinWordTokenizer()
+tokenized_row = tokenizer.tokenize("दाऊद ने मीकल से कहा, “ यहोवा, जिस ने तेरे पिता और उसके समस्त घराने के बदले मुझ को चुनकर अपनी प्रजा इस्राएल का प्रधान होने को ठहरा दिया है, उसके सम्मुख मैं ऐसा नाचा-- और मैं यहोवा के सम्मुख इसी प्रकार नाचा करूँगा ।")
+for token in tokenized_row:
+  print(token)
+stop = True
+
 class VerseTextUppercaser(UsfmParserHandler):
   def text(self, state, text):
     if state.is_verse_text:

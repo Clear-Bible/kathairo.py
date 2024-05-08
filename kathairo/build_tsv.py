@@ -5,6 +5,7 @@ from machine.tokenization import LatinWordTokenizer, WhitespaceTokenizer
 from machine.corpora import ScriptureTextCorpus
 from Parsing.USX.usx_file_text_corpus import UsxFileTextCorpus
 from Parsing.USFM.usfm_file_text_corpus import UsfmFileTextCorpus
+#from machine.corpora import UsfmFileTextCorpus, UsxFileTextCorpus, ScriptureTextCorpus
 from machine.scripture import (
     ENGLISH_VERSIFICATION,
     ORIGINAL_VERSIFICATION,
@@ -140,12 +141,12 @@ if(__name__ == "__main__"):
     #excludeBracketedText = False
 
     #OCCB-Simplified
-    targetVersification = Versification.load("./resources/occb_simplified_usx/release/versification.vrs", fallback_name="web")
-    sourceVersification = Versification(name = "sourceVersification", base_versification=ORIGINAL_VERSIFICATION)
-    corpus = UsxFileTextCorpus("./resources/occb_simplified_usx/release/USX_1", versification = targetVersification)
-    tokenizer = ChineseBibleWordTokenizer.ChineseBibleWordTokenizer()
-    project_name = "OCCB-simplified"
-    excludeBracketedText = False
+    #targetVersification = Versification.load("./resources/occb_simplified_usx/release/versification.vrs", fallback_name="web")
+    #sourceVersification = Versification(name = "sourceVersification", base_versification=ORIGINAL_VERSIFICATION)
+    #corpus = UsxFileTextCorpus("./resources/occb_simplified_usx/release/USX_1", versification = targetVersification)
+    #tokenizer = ChineseBibleWordTokenizer.ChineseBibleWordTokenizer()
+    #project_name = "OCCB-simplified"
+    #excludeBracketedText = False
 
     #ONAV
     #targetVersification = Versification.load("./resources/onav_usx/release/versification.vrs", fallback_name="web")
@@ -188,6 +189,14 @@ if(__name__ == "__main__"):
     #corpus = UsfmFileTextCorpus("./resources/syno_ulb_ru", versification = targetVersification)
     #tokenizer = LatinWordTokenizer()
     #project_name="RSB-SYNO"
+    
+    #IRV
+    targetVersification = Versification.load("./resources/IRV/versification.vrs", fallback_name="web")
+    sourceVersification = Versification(name = "sourceVersification", base_versification=ORIGINAL_VERSIFICATION)
+    corpus = UsfmFileTextCorpus("./resources/IRV", versification = targetVersification)
+    tokenizer = LatinWordTokenizer()
+    project_name="IRV"
+    excludeBracketedText = False
 
     corpus_to_word_level_tsv(targetVersification, sourceVersification, corpus, tokenizer, project_name, excludeBracketedText=excludeBracketedText)
     #corpus_to_verse_level_tsv(targetVersification, sourceVersification, corpus, tokenizer, project_name)

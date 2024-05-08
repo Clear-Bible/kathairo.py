@@ -24,13 +24,13 @@ class ModifiedUsfmTextBase(UsfmTextBase):
 
         self._stylesheet = stylesheet
         self._encoding = encoding
-        self.handler = handler
+        self.handler = handler #passes in handler
         self._include_markers = include_markers
 
     def _get_rows(self) -> Generator[TextRow, None, None]:
         usfm = self._read_usfm()
         row_collector = _TextRowCollector(self)
-        if(self.handler is not None):
+        if(self.handler is not None): #uses handler if not None
             row_collector = self.handler(self)
         parse_usfm(usfm, row_collector, self._stylesheet, self.versification, preserve_whitespace=self._include_markers)
         return gen(row_collector.rows)
