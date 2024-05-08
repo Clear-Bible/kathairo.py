@@ -20,7 +20,7 @@ class UsfmFileText(ModifiedUsfmTextBase):
         versification: Optional[Versification] = None,
         include_markers: bool = False,
     ) -> None:
-        super().__init__(_get_id(filename, encoding), stylesheet, encoding, handler, versification, include_markers)
+        super().__init__(_get_id(filename, encoding), stylesheet, encoding, handler, versification, include_markers) #passes in handler
 
         self._filename = Path(filename)
 

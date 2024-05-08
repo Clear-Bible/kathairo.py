@@ -5,7 +5,7 @@ from machine.scripture.verse_ref import Versification
 from machine.utils.typeshed import StrPath
 from machine.corpora.corpora_utils import get_usx_versification
 from machine.corpora.scripture_text_corpus import ScriptureTextCorpus
-from .usx_file_text import UsxFileText
+from .usx_file_text import UsxFileText #use Modified UsxFileText
 
 
 class UsxFileTextCorpus(ScriptureTextCorpus):

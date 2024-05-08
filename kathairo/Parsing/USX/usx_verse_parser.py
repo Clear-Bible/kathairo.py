@@ -30,7 +30,7 @@ class ModifiedUsxVerseParser(UsxVerseParser):
                     ctxt.is_sentence_start = True
                     continue
                 
-                ###
+                # include superscriptions in text (TODO, limit to just the Psalms)
                 if e.get("style", "") == "d":
                     verse = "0"
                     ctxt.verse = verse
@@ -80,7 +80,7 @@ class ModifiedUsxVerseParser(UsxVerseParser):
                 ctxt.add_token(e.tail)
 
 
-_NONVERSE_PARA_STYLES = {"ms", "mr", "s", "sr", "r", "sp", "rem", "restore", "cl"} ### "d"
+_NONVERSE_PARA_STYLES = {"ms", "mr", "s", "sr", "r", "sp", "rem", "restore", "cl"} # removed "d" to include superscriptions
 
 def _is_verse_para(para_elem: etree.Element) -> bool:
     style = para_elem.get("style", "")
