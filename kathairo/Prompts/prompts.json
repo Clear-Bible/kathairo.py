@@ -49,7 +49,7 @@
     "latinWhiteSpaceIncludedTokenizer": true
   },
   {
-    "projectName": "HCV",
+    "projectName": "OHCV",
     "targetVersificationPath": "./resources/hiHCV19SFM/versification.vrs",
     "targetUsfmCorpusPath": "./resources/hiHCV19SFM",
     "latinWhiteSpaceIncludedTokenizer": true
