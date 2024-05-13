@@ -10,7 +10,7 @@ from machine.utils.string_utils import is_control, is_punctuation, is_symbol
 from .whitespace_included_tokenizer import WhitespaceIncludedTokenizer
 
 INNER_WORD_PUNCT_REGEX = re.compile(
-    r"[&\-:=?@\xAD\xB7\u2010\u2011\u2027]|['_]+",
+    r"[&\-:=?@\xAD\xB7\u2010\u2011\u2027]+|['_]+",
 )
 URL_REGEX = re.compile(r"(?:[\w-]+://?|www[.])[^\s()<>]+(?:[\w\d]+|(?:[^\p{P}\s]|/))", re.IGNORECASE)
 
@@ -27,7 +27,7 @@ RIGHT_SINGLE_QUOTE_AS_APOSTROPHE_REGEX = re.compile(
     r"(?<=[A-Za-z])’(?=[A-Za-z])"
 )
 
-class LatinWhitespaceIncludedWordTokenizer(WhitespaceIncludedTokenizer): #uses WhitepspaceIncludedTokenizer
+class LatinWhitespaceIncludedWordTokenizer(WhitespaceIncludedTokenizer): #uses WhitespaceIncludedTokenizer
     def __init__(self, abbreviations: Iterable[str] = [], treat_apostrophe_as_single_quote: bool = False) -> None:
         self._abbreviations = {a.lower() for a in abbreviations}
         self.treat_apostrophe_as_single_quote = treat_apostrophe_as_single_quote

@@ -193,8 +193,8 @@ if(__name__ == "__main__"):
     #IRV
     targetVersification = Versification.load("./resources/IRV/versification.vrs", fallback_name="web")
     sourceVersification = Versification(name = "sourceVersification", base_versification=ORIGINAL_VERSIFICATION)
-    corpus = UsfmFileTextCorpus("./resources/IRV", versification = targetVersification)
-    tokenizer = LatinWordTokenizer()
+    corpus = UsfmFileTextCorpus("./resources/IRV", handler=ModifiedTextRowCollector, versification = targetVersification)
+    tokenizer = LatinWhitespaceIncludedWordTokenizer()
     project_name="IRV"
     excludeBracketedText = False
 
