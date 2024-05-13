@@ -42,6 +42,7 @@ def test_consecutive_punctuation(tsv_vrs_name_files):
     
     previous_id = "none"
     previous_character = "none"
+    previous_row = data_frame.iloc[0]
     
     for row in data_frame.itertuples():
         token = str(row.text)
@@ -53,5 +54,6 @@ def test_consecutive_punctuation(tsv_vrs_name_files):
                previous_skip_space_after == "y"):
                 print(previous_id, previous_character, row.id, character)
             previous_character = character
-        previous_id = row.id
-        previous_skip_space_after = row.skip_space_after
+            previous_id = row.id
+            previous_skip_space_after = row.skip_space_after
+        previous_row = row
