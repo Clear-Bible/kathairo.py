@@ -23,13 +23,14 @@ NUMBER_PERIOD_REGEX = re.compile(
 )
 
 RIGHT_SINGLE_QUOTE_AS_APOSTROPHE_REGEX = re.compile(
-    r"(?<=[A-Za-z])’(?=[A-Za-z])"
+    r"(?<=\p{L})’(?=\p{L})"
 )
 
 class LatinWhitespaceIncludedWordTokenizer(WhitespaceIncludedTokenizer):
-    def __init__(self, abbreviations: Iterable[str] = [], treat_apostrophe_as_single_quote: bool = False) -> None:
+    def __init__(self, abbreviations: Iterable[str] = [], treat_apostrophe_as_single_quote: bool = False, split_on_right_single_quote = False) -> None:
         self._abbreviations = {a.lower() for a in abbreviations}
         self.treat_apostrophe_as_single_quote = treat_apostrophe_as_single_quote
+        self.split_on_right_single_quote = split_on_right_single_quote
 
     def tokenize_as_ranges(self, data: str, data_range: Optional[Range[int]] = None) -> Iterable[Range[int]]:
         if data_range is None:
@@ -119,7 +120,7 @@ class LatinWhitespaceIncludedWordTokenizer(WhitespaceIncludedTokenizer):
                 
                 is_right_single_quote_apostrophe = RIGHT_SINGLE_QUOTE_AS_APOSTROPHE_REGEX.search(substring)
 
-                if is_right_single_quote_apostrophe is not None:# and not match_is_number_comma:
+                if is_right_single_quote_apostrophe is not None and not self.split_on_right_single_quote:# and not match_is_number_comma:
                     ctxt.inner_word_punct = ctxt.index
                     group = is_right_single_quote_apostrophe.group()
                     ctxt.index += len(group)

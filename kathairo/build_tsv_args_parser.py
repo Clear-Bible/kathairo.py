@@ -32,6 +32,8 @@ argumentParser.add_argument("-of", "--oldTsvFormat", action='store_true') #optio
 
 argumentParser.add_argument("-xb", "--excludeBracketedText", action='store_true') #optional
 
+argumentParser.add_argument("-sq", "--splitOnRightSingleQuote", action='store_true') #optional
+
 args = argumentParser.parse_args()
 
 #print(args.targetVersificationPath)
@@ -57,7 +59,9 @@ if(args.chineseTokenizer == True):
 if(args.latinTokenizer == True):
     tokenizer = LatinWordTokenizer(treat_apostrophe_as_single_quote=True)
 if(args.latinWhiteSpaceIncludedTokenizer == True):
-    tokenizer = LatinWhitespaceIncludedWordTokenizer(treat_apostrophe_as_single_quote=True)
+    split_on_right_single_quote = args.splitOnRightSingleQuote
+    tokenizer = LatinWhitespaceIncludedWordTokenizer(treat_apostrophe_as_single_quote=True, 
+                                                     split_on_right_single_quote=split_on_right_single_quote)
 
 build_tsv.corpus_to_word_level_tsv(targetVersification = targetVersification, 
                                     sourceVersification = sourceVersification, 
