@@ -19,14 +19,8 @@
   },
   {
     "projectName": "VanDyck",
-    "targetVersificationPath": "./resources/versification/eng.vrs",
+    "targetVersificationPath": "./resources/arb-vd_usfm/versification.vrs",
     "targetUsfmCorpusPath": "./resources/arb-vd_usfm",
-    "latinWhiteSpaceIncludedTokenizer": true
-  },
-  {
-    "projectName": "YLT",
-    "targetVersificationPath": "./resources/versification/eng.vrs",
-    "targetUsfmCorpusPath": "./resources/engylt_usfm",
     "latinWhiteSpaceIncludedTokenizer": true
   },
   {
@@ -43,17 +37,22 @@
     "excludeBracketedText": true
   },
   {
-    "projectName": "RSB-SYNO",
-    "targetVersificationPath": "./resources/versification/rso.vrs",
-    "targetUsfmCorpusPath": "./resources/syno_ulb_ru",
-    "latinWhiteSpaceIncludedTokenizer": true,
-    "excludeBracketedText": true
-  },
-  {
     "projectName": "fra-LSG",
     "targetVersificationPath": "./resources/versification/lsg.vrs",
     "targetUsfmCorpusPath": "./resources/fra-LSG_usfm",
     "latinWhiteSpaceIncludedTokenizer": true,
     "splitOnRightSingleQuote": true
+  },
+  {
+    "projectName": "IRV",
+    "targetVersificationPath": "./resources/IRV/versification.vrs",
+    "targetUsfmCorpusPath": "./resources/IRV",
+    "latinWhiteSpaceIncludedTokenizer": true
+  },
+  {
+    "projectName": "OHCV",
+    "targetVersificationPath": "./resources/hiHCV19SFM/versification.vrs",
+    "targetUsfmCorpusPath": "./resources/hiHCV19SFM",
+    "latinWhiteSpaceIncludedTokenizer": true
   }
 ]

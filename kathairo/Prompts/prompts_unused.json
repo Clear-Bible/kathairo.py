@@ -39,5 +39,19 @@
     "targetUsfmCorpusPath": "./resources/engylt_usfm",
     "latinTokenizer": true,
     "oldTsvFormat": true
+  },
+
+  {
+    "projectName": "YLT",
+    "targetVersificationPath": "./resources/versification/eng.vrs",
+    "targetUsfmCorpusPath": "./resources/engylt_usfm",
+    "latinWhiteSpaceIncludedTokenizer": true
+  },
+  {
+    "projectName": "RSB-SYNO",
+    "targetVersificationPath": "./resources/versification/rso.vrs",
+    "targetUsfmCorpusPath": "./resources/syno_ulb_ru",
+    "latinWhiteSpaceIncludedTokenizer": true,
+    "excludeBracketedText": true
   }
 ]

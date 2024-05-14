@@ -2,7 +2,10 @@ import csv
 from Tokenization import MaximalMatchingTokenizer, ChineseBibleWordTokenizer
 from Tokenization.latin_whitespace_included_tokenizer import LatinWhitespaceIncludedWordTokenizer
 from machine.tokenization import LatinWordTokenizer, WhitespaceTokenizer
-from machine.corpora import UsfmFileTextCorpus, UsxFileTextCorpus, ScriptureTextCorpus
+from machine.corpora import ScriptureTextCorpus
+from Parsing.USX.usx_file_text_corpus import UsxFileTextCorpus
+from Parsing.USFM.usfm_file_text_corpus import UsfmFileTextCorpus
+#from machine.corpora import UsfmFileTextCorpus, UsxFileTextCorpus, ScriptureTextCorpus
 from machine.scripture import (
     ENGLISH_VERSIFICATION,
     ORIGINAL_VERSIFICATION,
@@ -16,15 +19,13 @@ from machine.scripture import (
 from biblelib.word import fromubs
 import re
 from helpers.strings import is_unicode_punctuation
+from Parsing.USFM.usfm_handlers import ModifiedTextRowCollector
+from helpers.paths import get_target_file_location
 
 def corpus_to_verse_level_tsv(targetVersification:Versification, sourceVersification:Versification, corpus:ScriptureTextCorpus, tokenizer:WhitespaceTokenizer, 
                               project_name:str, use_old_tsv_format:bool = False, excludeBracketedText:bool = False):
 
-    tsvFormatString = "new"
-    if(use_old_tsv_format):
-        tsvFormatString = "old"
-        
-    outputFileName = "VerseText/target_"+project_name+"_"+tsvFormatString+".tsv"
+    outputFileName = get_target_file_location(use_old_tsv_format, "VerseText", project_name)
 
     with open(outputFileName, 'w', newline='', encoding='utf-8') as out_file:
         tsv_writer = csv.writer(out_file, delimiter='\t')
@@ -52,11 +53,7 @@ def corpus_to_verse_level_tsv(targetVersification:Versification, sourceVersifica
 def corpus_to_word_level_tsv(targetVersification:Versification, sourceVersification:Versification, corpus:ScriptureTextCorpus, tokenizer:WhitespaceTokenizer, 
                   project_name:str, use_old_tsv_format:bool = False, excludeBracketedText:bool = False):
 
-    tsvFormatString = "new"
-    if(use_old_tsv_format):
-        tsvFormatString = "old"
-
-    outputFileName = "TSVs/target_"+project_name+"_"+tsvFormatString+".tsv"
+    outputFileName = get_target_file_location(use_old_tsv_format, "TSVs", project_name)
 
     with open(outputFileName, 'w', newline='', encoding='utf-8') as out_file:
         tsv_writer = csv.writer(out_file, delimiter='\t')
@@ -138,18 +135,18 @@ if(__name__ == "__main__"):
     #BSB
     #targetVersification = Versification.load("./resources/bsb_usx/release/versification.vrs", fallback_name="web")
     #sourceVersification = Versification(name = "sourceVersification", base_versification=ORIGINAL_VERSIFICATION)
-    #corpus = UsfmFileTextCorpus("./resources/bsb_usfm", versification = targetVersification)
+    #corpus = UsfmFileTextCorpus("./resources/bsb_usfm", handler=ModifiedTextRowCollector, versification = targetVersification)
     #tokenizer = LatinWhitespaceIncludedWordTokenizer()
     #project_name = "BSB"
     #excludeBracketedText = False
 
     #OCCB-Simplified
-    targetVersification = Versification.load("./resources/occb_simplified_usx/release/versification.vrs", fallback_name="web")
-    sourceVersification = Versification(name = "sourceVersification", base_versification=ORIGINAL_VERSIFICATION)
-    corpus = UsxFileTextCorpus("./resources/occb_simplified_usx/release/USX_1", versification = targetVersification)
-    tokenizer = ChineseBibleWordTokenizer.ChineseBibleWordTokenizer()
-    project_name = "OCCB-simplified"
-    excludeBracketedText = False
+    #targetVersification = Versification.load("./resources/occb_simplified_usx/release/versification.vrs", fallback_name="web")
+    #sourceVersification = Versification(name = "sourceVersification", base_versification=ORIGINAL_VERSIFICATION)
+    #corpus = UsxFileTextCorpus("./resources/occb_simplified_usx/release/USX_1", versification = targetVersification)
+    #tokenizer = ChineseBibleWordTokenizer.ChineseBibleWordTokenizer()
+    #project_name = "OCCB-simplified"
+    #excludeBracketedText = False
 
     #ONAV
     #targetVersification = Versification.load("./resources/onav_usx/release/versification.vrs", fallback_name="web")
@@ -192,6 +189,14 @@ if(__name__ == "__main__"):
     #corpus = UsfmFileTextCorpus("./resources/syno_ulb_ru", versification = targetVersification)
     #tokenizer = LatinWordTokenizer()
     #project_name="RSB-SYNO"
+    
+    #IRV
+    targetVersification = Versification.load("./resources/IRV/versification.vrs", fallback_name="web")
+    sourceVersification = Versification(name = "sourceVersification", base_versification=ORIGINAL_VERSIFICATION)
+    corpus = UsfmFileTextCorpus("./resources/IRV", versification = targetVersification)
+    tokenizer = LatinWordTokenizer()
+    project_name="IRV"
+    excludeBracketedText = False
 
     corpus_to_word_level_tsv(targetVersification, sourceVersification, corpus, tokenizer, project_name, excludeBracketedText=excludeBracketedText)
     #corpus_to_verse_level_tsv(targetVersification, sourceVersification, corpus, tokenizer, project_name)
