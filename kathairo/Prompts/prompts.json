@@ -26,7 +26,7 @@
     "targetUsfmCorpusPath": "./resources/fra/fra-LSG_usfm",
     "latinWhiteSpaceIncludedTokenizer": true,
     "language": "fra"
-  }
+  },
   {
     "projectName": "IRV",
     "targetVersificationPath": "./resources/hin/IRV/versification.vrs",
