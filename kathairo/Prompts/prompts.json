@@ -40,7 +40,7 @@
     "targetUsfmCorpusPath": "./resources/hin/hiHCV19SFM",
     "latinWhiteSpaceIncludedTokenizer": true,
     "language": "hin"
-  }
+  },
   {
     "projectName": "OCCB-simplified",
     "targetVersificationPath": "./resources/man/occb_simplified_usx/release/versification.vrs",
