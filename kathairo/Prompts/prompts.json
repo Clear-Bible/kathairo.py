@@ -1,57 +1,57 @@
 [
   {
     "projectName": "AVD",
-    "targetVersificationPath": "./resources/arb-vd_usfm/versification.vrs",
-    "targetUsfmCorpusPath": "./resources/arb-vd_usfm",
+    "targetVersificationPath": "./resources/arb/arb-vd_usfm/versification.vrs",
+    "targetUsfmCorpusPath": "./resources/arb/arb-vd_usfm",
     "latinWhiteSpaceIncludedTokenizer": true
   },
   {
     "projectName": "ONAV",
-    "targetVersificationPath": "./resources/onav_usx/release/versification.vrs",
-    "targetUsxCorpusPath": "./resources/onav_usx/release/USX_1",
+    "targetVersificationPath": "./resources/arb/onav_usx/release/versification.vrs",
+    "targetUsxCorpusPath": "./resources/arb/onav_usx/release/USX_1",
     "latinWhiteSpaceIncludedTokenizer": true
   },
   {
     "projectName": "BSB",
-    "targetVersificationPath": "./resources/bsb_usx/release/versification.vrs",
-    "targetUsfmCorpusPath": "./resources/bsb_usfm",
+    "targetVersificationPath": "./resources/eng/bsb_usx/release/versification.vrs",
+    "targetUsfmCorpusPath": "./resources/eng/bsb_usfm",
     "latinWhiteSpaceIncludedTokenizer": true
   },
   {
     "projectName": "LSG",
     "targetVersificationPath": "./resources/versification/lsg.vrs",
-    "targetUsfmCorpusPath": "./resources/fra-LSG_usfm",
+    "targetUsfmCorpusPath": "./resources/fra/fra-LSG_usfm",
     "latinWhiteSpaceIncludedTokenizer": true
   }
   {
     "projectName": "IRV",
-    "targetVersificationPath": "./resources/IRV/versification.vrs",
-    "targetUsfmCorpusPath": "./resources/IRV",
+    "targetVersificationPath": "./resources/hin/IRV/versification.vrs",
+    "targetUsfmCorpusPath": "./resources/hin/IRV",
     "latinWhiteSpaceIncludedTokenizer": true
   },
   {
     "projectName": "OHCV",
-    "targetVersificationPath": "./resources/hiHCV19SFM/versification.vrs",
-    "targetUsfmCorpusPath": "./resources/hiHCV19SFM",
+    "targetVersificationPath": "./resources/hin/hiHCV19SFM/versification.vrs",
+    "targetUsfmCorpusPath": "./resources/hin/hiHCV19SFM",
     "latinWhiteSpaceIncludedTokenizer": true
   }
   {
     "projectName": "OCCB-simplified",
-    "targetVersificationPath": "./resources/occb_simplified_usx/release/versification.vrs",
-    "targetUsxCorpusPath": "./resources/occb_simplified_usx/release/USX_1",
+    "targetVersificationPath": "./resources/man/occb_simplified_usx/release/versification.vrs",
+    "targetUsxCorpusPath": "./resources/man/occb_simplified_usx/release/USX_1",
     "chineseTokenizer": true
   },
   {
     "projectName": "RSB",
     "targetVersificationPath": "./resources/versification/rsc.vrs",
-    "targetUsfmCorpusPath": "./resources/ru_rsb",
+    "targetUsfmCorpusPath": "./resources/rus/ru_rsb",
     "latinWhiteSpaceIncludedTokenizer": true,
     "excludeBracketedText": true
   },
   {
     "projectName": "ONEN",
-    "targetVersificationPath": "./resources/onen_usx/release/versification.vrs",
-    "targetUsfmCorpusPath": "./resources/onen_usfm",
+    "targetVersificationPath": "./resources/swh/onen_usx/release/versification.vrs",
+    "targetUsfmCorpusPath": "./resources/swh/onen_usfm",
     "latinWhiteSpaceIncludedTokenizer": true
   }
 ]
