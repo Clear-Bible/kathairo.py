@@ -58,7 +58,7 @@
   },
   {
     "projectName": "ONEN",
-    "targetVersificationPath": "./resources/swh/onen_usx/release/versification.vrs",
+    "targetVersificationPath": "./resources/swh/onen_usfm/versification.vrs",
     "targetUsfmCorpusPath": "./resources/swh/onen_usfm",
     "latinWhiteSpaceIncludedTokenizer": true,
     "language": "swh"
