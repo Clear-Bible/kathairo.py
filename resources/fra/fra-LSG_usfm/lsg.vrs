@@ -1,7 +1,8 @@
 # Versification  "LSG"
 # Version=1.0
 #
-# Created by Robertson Brinker by modifying eng.vrs from custom.vrs that came with LSG
+# lsg.vrs created by Robertson Brinker, April 2024, by modifying eng.vrs from https://github.com/ubsicap/versification_json/blob/master/examples/eng.vrs 
+# modification were in part from custom.vrs which came with the LSG (from where?)
 
 # modifications to eng.vrs by Reinier de Blois 13/March/2012
 # modified mappings Psalms by adding verse #0 to the mappings

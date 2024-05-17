@@ -22,7 +22,7 @@
   },
   {
     "projectName": "LSG",
-    "targetVersificationPath": "./resources/versification/lsg.vrs",
+    "targetVersificationPath": "./resources/fra/fra-LSG_usfm/lsg.vrs",
     "targetUsfmCorpusPath": "./resources/fra/fra-LSG_usfm",
     "latinWhiteSpaceIncludedTokenizer": true,
     "language": "fra"
