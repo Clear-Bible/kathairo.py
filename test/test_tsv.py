@@ -96,10 +96,10 @@ def test_verse_text_reconstitution(tsv_vrs_files):
     reconstitute(tsv_path)
     
     #Compare Reconstituted File to VerseText File
-    verseTextPath = tsv_path.parent.parent / "VerseText"/ f"{tsv_path.stem}.tsv"
+    verseTextPath = tsv_path.parent.parent.parent / "VerseText"/ tsv_vrs_files[3] /f"{tsv_path.stem}.tsv"
     verseTextRows = [r for r in csv.DictReader(verseTextPath.open("r", encoding='utf-8'), delimiter="\t")]
 
-    reconstitutedPath = tsv_path.parent.parent / "test" /"reconstituted" / f"{tsv_path.stem}_reconstitution.tsv"
+    reconstitutedPath = tsv_path.parent.parent.parent / "test" /"reconstituted" / f"{tsv_path.stem}_reconstitution.tsv"
     reconstitutedRows = [r for r in csv.DictReader(reconstitutedPath.open("r", encoding='utf-8'), delimiter="\t")]
 
     for index in range(len(verseTextRows)):
