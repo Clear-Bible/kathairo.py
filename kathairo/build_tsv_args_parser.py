@@ -20,6 +20,8 @@ argumentParser.add_argument("-n", "--projectName", type=str, required=True)
 #add bunch of parameters for the default versification schemes included in machine and make target versification a mutually exclusive argument group
 argumentParser.add_argument("-tv", "--targetVersificationPath", type=str, required=True)
 
+argumentParser.add_argument("-lg", "--language", type=str, required=True)
+
 corpusGroup = argumentParser.add_mutually_exclusive_group(required=True)
 corpusGroup.add_argument("-uf", "--targetUsfmCorpusPath", type=str)
 corpusGroup.add_argument("-ux", "--targetUsxCorpusPath", type=str)
@@ -66,7 +68,8 @@ build_tsv.corpus_to_word_level_tsv(targetVersification = targetVersification,
                                     tokenizer = tokenizer, 
                                     project_name = projectName, 
                                     use_old_tsv_format = args.oldTsvFormat,
-                                    excludeBracketedText = args.excludeBracketedText)  
+                                    excludeBracketedText = args.excludeBracketedText,
+                                    language = args.language)  
 
 build_tsv.corpus_to_verse_level_tsv(targetVersification = targetVersification, 
                                     sourceVersification = sourceVersification, 
@@ -74,4 +77,5 @@ build_tsv.corpus_to_verse_level_tsv(targetVersification = targetVersification,
                                     tokenizer = tokenizer, 
                                     project_name = projectName, 
                                     use_old_tsv_format = args.oldTsvFormat,
-                                    excludeBracketedText = args.excludeBracketedText)    
+                                    excludeBracketedText = args.excludeBracketedText,
+                                    language = args.language)    
