@@ -20,10 +20,11 @@ argumentParser.add_argument("-n", "--projectName", type=str, required=True)
 #add bunch of parameters for the default versification schemes included in machine and make target versification a mutually exclusive argument group
 argumentParser.add_argument("-tv", "--targetVersificationPath", type=str, required=True)
 
+argumentParser.add_argument("-lg", "--language", type=str, required=True)
+
 corpusGroup = argumentParser.add_mutually_exclusive_group(required=True)
 corpusGroup.add_argument("-uf", "--targetUsfmCorpusPath", type=str)
 corpusGroup.add_argument("-ux", "--targetUsxCorpusPath", type=str)
-corpusGroup.add_argument("-lg", "--language", type=str)
 
 tokenizerGroup = argumentParser.add_mutually_exclusive_group(required=True)
 tokenizerGroup.add_argument("-zh", "--chineseTokenizer", action='store_true')
