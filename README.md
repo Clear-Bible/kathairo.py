@@ -1,6 +1,6 @@
 # Getting Started
 1. Clone this Repository
-2. Install Python 3.11 (not 3.12).  When you install Python make sure to add it to your PATH variable to make it easier to run fomr the commandline
+2. Install Python 3.11 (not 3.12).  When you install Python make sure to add it to your PATH variable to make it easier to run from the commandline
 3. Open the commandline
 4. Navigate into the kathairo.py repo
 5. Run `pip install poetry` to install the Python dependency management system kathario uses
