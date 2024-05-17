@@ -25,5 +25,83 @@ Alternatively, run `pytest -s` if you want to see the output of the optional tes
 
 To run a certain test, such as the test_source_chapter_size test, run `pytest test/test_tsv_optional.py::test_source_chapter_size`.
 
-# WIP
-- USFM/USX validation
+# Provenance
+AVD - USFM
+    https://ebible.org/details.php?id=arb-vd
+
+ONAV - USX
+    https://app.thedigitalbiblelibrary.org/entry/download_listing?id=b17e246951402e50&license=26904&revision=
+
+BSB - USFM
+    https://berean.bible/downloads.htm
+
+BSB - USX
+    https://app.thedigitalbiblelibrary.org/entry/download_listing?id=bba9f40183526463&license=24374&revision=
+
+YLT - USFM
+    https://ebible.org/details.php?id=engylt
+
+LSG - USFM
+    from Jonathan/Reinier
+
+LSG - USX
+    https://github.com/Clear-Bible/internal-Alignments/tree/main/data/USX/fra-LSG
+
+HCV - USFM
+    https://open.bible/bibles/hindi-biblica-text-bible/
+
+HCV (revision) - USFM
+    from Pieter
+
+HCV (revision) - USX
+    from Pieter
+
+OCCB-simplified - USX
+    https://app.thedigitalbiblelibrary.org/entry/download_listing?id=7ea794434e9ea7ee&license=42445&revision=
+
+RSB - USFM
+    from Sean / Dima at TextTree
+
+RUSSYN - USFM
+    https://ebible.org/details.php?id=russyn
+
+SYNO - USFM
+    https://door43.org/u/STR/ru_rsb/bfb6f3be9e/
+
+ONEN - USFM
+    https://open.bible/bibles/swahili-biblica-text-bible/
+
+ONEN - USX
+    https://open.bible/bibles/swahili-biblica-text-bible/
+
+ONEN2024 - USFM
+    from Pieter
+
+ONEN2024 - USX
+    from Pieter
+
+ENG
+[versification_json/examples/eng.vrs at master · ubsicap/versification_json (github.com)](https://github.com/ubsicap/versification_json/blob/master/examples/eng.vrs)
+
+LSG
+based on 
+[versification_json/examples/eng.vrs at master · ubsicap/versification_json (github.com)](https://github.com/ubsicap/versification_json/blob/master/examples/eng.vrs)
+and
+(LSG's custom.vrs from Jonathan)
+
+LXX
+[versification_json/examples/lxx.vrs at master · ubsicap/versification_json (github.com)](https://github.com/ubsicap/versification_json/blob/master/examples/lxx.vrs)
+
+ORG
+[versification_json/examples/org.vrs at master · ubsicap/versification_json (github.com)](https://github.com/ubsicap/versification_json/blob/master/examples/org.vrs)
+
+RSC
+[versification_json/examples/rsc.vrs at master · ubsicap/versification_json (github.com)](https://github.com/ubsicap/versification_json/blob/master/examples/rsc.vrs)
+
+RSO
+[versification_json/examples/rso.vrs at master · ubsicap/versification_json (github.com)](https://github.com/ubsicap/versification_json/blob/master/examples/rso.vrs)
+
+VERSIFICATION
+
+VUL
+[versification_json/examples/vul.vrs at master · ubsicap/versification_json (github.com)](https://github.com/ubsicap/versification_json/blob/master/examples/vul.vrs)

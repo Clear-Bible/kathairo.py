@@ -15,14 +15,14 @@
   },
   {
     "projectName": "BSB",
-    "targetVersificationPath": "./resources/eng/bsb_usx/release/versification.vrs",
+    "targetVersificationPath": "./resources/eng/bsb_usfm/versification.vrs",
     "targetUsfmCorpusPath": "./resources/eng/bsb_usfm",
     "latinWhiteSpaceIncludedTokenizer": true,
     "language": "eng"
   },
   {
     "projectName": "LSG",
-    "targetVersificationPath": "./resources/versification/lsg.vrs",
+    "targetVersificationPath": "./resources/fra/fra-LSG_usfm/versification.vrs",
     "targetUsfmCorpusPath": "./resources/fra/fra-LSG_usfm",
     "latinWhiteSpaceIncludedTokenizer": true,
     "language": "fra"
@@ -58,7 +58,7 @@
   },
   {
     "projectName": "ONEN",
-    "targetVersificationPath": "./resources/swh/onen_usx/release/versification.vrs",
+    "targetVersificationPath": "./resources/swh/onen_usfm/versification.vrs",
     "targetUsfmCorpusPath": "./resources/swh/onen_usfm",
     "latinWhiteSpaceIncludedTokenizer": true,
     "language": "swh"
