@@ -50,10 +50,10 @@ LSG - USX
 HCV - USFM
     https://open.bible/bibles/hindi-biblica-text-bible/
 
-HCV (revision) - USFM
+HCV (revision, not included) - USFM
     from Pieter
 
-HCV (revision) - USX
+HCV (revision, not included) - USX
     from Pieter
 
 OCCB-simplified - USX
@@ -74,10 +74,10 @@ ONEN - USFM
 ONEN - USX
     https://open.bible/bibles/swahili-biblica-text-bible/
 
-ONEN2024 - USFM
+ONEN2024 (not included) - USFM
     from Pieter
 
-ONEN2024 - USX
+ONEN2024 (not included) - USX
     from Pieter
 
 ENG
