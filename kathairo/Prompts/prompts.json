@@ -21,6 +21,13 @@
     "language": "eng"
   },
   {
+    "projectName": "UST",
+    "targetVersificationPath": "./resources/versification/eng.vrs",
+    "targetUsfmCorpusPath": "./resources/eng/ust_usfm",
+    "latinWhiteSpaceIncludedTokenizer": true,
+    "language": "eng"
+  },
+  {
     "projectName": "LSG",
     "targetVersificationPath": "./resources/fra/fra-LSG_usfm/versification.vrs",
     "targetUsfmCorpusPath": "./resources/fra/fra-LSG_usfm",
