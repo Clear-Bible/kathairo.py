@@ -1,9 +1,66 @@
 [
   {
+    "projectName": "AVD",
+    "targetVersificationPath": "./resources/arb/arb-vd_usfm/versification.vrs",
+    "targetUsfmCorpusPath": "./resources/arb/arb-vd_usfm",
+    "latinWhiteSpaceIncludedTokenizer": true,
+    "language": "arb"
+  },
+  {
+    "projectName": "ONAV",
+    "targetVersificationPath": "./resources/arb/onav_usx/release/versification.vrs",
+    "targetUsxCorpusPath": "./resources/arb/onav_usx/release/USX_1",
+    "latinWhiteSpaceIncludedTokenizer": true,
+    "language": "arb"
+  },
+  {
+    "projectName": "BSB",
+    "targetVersificationPath": "./resources/eng/bsb_usfm/versification.vrs",
+    "targetUsfmCorpusPath": "./resources/eng/bsb_usfm",
+    "latinWhiteSpaceIncludedTokenizer": true,
+    "language": "eng"
+  },
+  {
+    "projectName": "LSG",
+    "targetVersificationPath": "./resources/fra/fra-LSG_usfm/versification.vrs",
+    "targetUsfmCorpusPath": "./resources/fra/fra-LSG_usfm",
+    "latinWhiteSpaceIncludedTokenizer": true,
+    "language": "fra"
+  },
+  {
+    "projectName": "IRV",
+    "targetVersificationPath": "./resources/hin/IRV/versification.vrs",
+    "targetUsfmCorpusPath": "./resources/hin/IRV",
+    "latinWhiteSpaceIncludedTokenizer": true,
+    "language": "hin"
+  },
+  {
     "projectName": "OHCV",
     "targetVersificationPath": "./resources/hin/hiHCV19SFM/versification.vrs",
     "targetUsfmCorpusPath": "./resources/hin/hiHCV19SFM",
     "latinWhiteSpaceIncludedTokenizer": true,
     "language": "hin"
+  },
+  {
+    "projectName": "OCCB-simplified",
+    "targetVersificationPath": "./resources/man/occb_simplified_usx/release/versification.vrs",
+    "targetUsxCorpusPath": "./resources/man/occb_simplified_usx/release/USX_1",
+    "chineseTokenizer": true,
+    "language": "man"
+  },
+  {
+    "projectName": "RSB",
+    "targetVersificationPath": "./resources/versification/rsc.vrs",
+    "targetUsfmCorpusPath": "./resources/rus/ru_rsb",
+    "latinWhiteSpaceIncludedTokenizer": true,
+    "excludeBracketedText": true,
+    "language": "rus"
+  },
+  {
+    "projectName": "ONEN",
+    "targetVersificationPath": "./resources/swh/onen_usfm/versification.vrs",
+    "targetUsfmCorpusPath": "./resources/swh/onen_usfm",
+    "latinWhiteSpaceIncludedTokenizer": true,
+    "language": "swh"
   }
 ]
