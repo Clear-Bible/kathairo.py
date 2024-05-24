@@ -29,7 +29,7 @@ RIGHT_SINGLE_QUOTE_AS_APOSTROPHE_REGEX = re.compile(
 )
 
 CONTRACTION_WORD_REGEX = re.compile(
-    r"\b\w+(?:[\'\-\.\w\’]+)?\b"
+    r"\b\w+(?:[\'\w\’]+)?\b"
 )
 
 class LatinWhitespaceIncludedWordTokenizer(WhitespaceIncludedTokenizer): #uses WhitepspaceIncludedTokenizer
@@ -133,10 +133,11 @@ class LatinWhitespaceIncludedWordTokenizer(WhitespaceIncludedTokenizer): #uses W
                     group = self.is_right_single_quote_apostrophe.group()
                     ctxt.inner_word_punct = ctxt.index
                     ctxt.index += len(group)
-                    contraction_token = CONTRACTION_WORD_REGEX.match(data, ctxt.word_start).group().replace("’","'")
-                    if(self.language == "fra" and contraction_token not in FR_BASE_EXCEPTIONS):
-                        token_ranges = (Range.create(ctxt.word_start, ctxt.index),None)
-                        ctxt.word_start = -1
+                    if(self.language == "fra"):
+                        contraction_token = CONTRACTION_WORD_REGEX.match(data, ctxt.word_start).group().replace("’","'")
+                        if(contraction_token not in FR_BASE_EXCEPTIONS):
+                            token_ranges = (Range.create(ctxt.word_start, ctxt.index),None)
+                            ctxt.word_start = -1
                     return token_ranges
 
                 if self.is_right_single_quote_apostrophe is not None and not self.split_on_right_single_quote:# and not match_is_number_comma:
