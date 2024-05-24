@@ -10,7 +10,7 @@ from machine.utils.string_utils import is_control, is_punctuation, is_symbol
 from .whitespace_included_tokenizer import WhitespaceIncludedTokenizer
 
 INNER_WORD_PUNCT_REGEX = re.compile(
-    r"[&\-:=?@\xAD\xB7\u2010\u2011\u2027]|['_]+",
+    r"[&\-:=?@\xAD\xB7\u2010\u2011\u2027]+|['_]+",
 )
 URL_REGEX = re.compile(r"(?:[\w-]+://?|www[.])[^\s()<>]+(?:[\w\d]+|(?:[^\p{P}\s]|/))", re.IGNORECASE)
 
