@@ -64,7 +64,8 @@ if(args.latinTokenizer == True):
 if(args.latinWhiteSpaceIncludedTokenizer == True):
     split_on_right_single_quote = args.splitOnRightSingleQuote
     tokenizer = LatinWhitespaceIncludedWordTokenizer(treat_apostrophe_as_single_quote=True, 
-                                                     split_on_right_single_quote=split_on_right_single_quote)
+                                                     split_on_right_single_quote=split_on_right_single_quote,
+                                                     abbreviations=["aujourd’hui","quelqu’un"])
 
 build_tsv.corpus_to_word_level_tsv(targetVersification = targetVersification, 
                                     sourceVersification = sourceVersification, 

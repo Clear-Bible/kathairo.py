@@ -32,6 +32,7 @@ class LatinWhitespaceIncludedWordTokenizer(WhitespaceIncludedTokenizer): #uses W
         self._abbreviations = {a.lower() for a in abbreviations}
         self.treat_apostrophe_as_single_quote = treat_apostrophe_as_single_quote
         self.split_on_right_single_quote = split_on_right_single_quote
+        self.is_right_single_quote_apostrophe = False
 
     def tokenize_as_ranges(self, data: str, data_range: Optional[Range[int]] = None) -> Iterable[Range[int]]:
         if data_range is None:
@@ -61,6 +62,7 @@ class LatinWhitespaceIncludedWordTokenizer(WhitespaceIncludedTokenizer): #uses W
                     inner_punct_str = data[ctxt.inner_word_punct : char_range.end]
                     if (
                         inner_punct_str == "." and self._is_abbreviation(data, ctxt.word_start, ctxt.inner_word_punct)
+                    #) or (self.is_right_single_quote_apostrophe and self._is_abbreviation(data, ctxt.word_start, ctxt.inner_word_punct)
                     ) or (inner_punct_str == "'" and not self.treat_apostrophe_as_single_quote):
                         yield Range.create(ctxt.word_start, char_range.end)
                     else:
@@ -76,6 +78,9 @@ class LatinWhitespaceIncludedWordTokenizer(WhitespaceIncludedTokenizer): #uses W
         c = data[ctxt.index]
         end_index = ctxt.index + 1
 
+        tokenA = ""
+        tokenB = ""
+
         if is_punctuation(c) or is_symbol(c) or is_control(c):
             while end_index != data_range.end and data[end_index] == c:
                 end_index += 1
@@ -83,12 +88,16 @@ class LatinWhitespaceIncludedWordTokenizer(WhitespaceIncludedTokenizer): #uses W
                 if c == "'" and not self.treat_apostrophe_as_single_quote:
                     ctxt.word_start = ctxt.index
                 else:
+                    tokenA = data[ctxt.index: end_index]
                     token_ranges = (Range.create(ctxt.index, end_index), None)
             elif ctxt.inner_word_punct != -1:
                 inner_punct_str = data[ctxt.inner_word_punct : ctxt.index]
                 if inner_punct_str == "'" and not self.treat_apostrophe_as_single_quote:
+                    tokenA = data[ctxt.word_start: ctxt.index]
                     token_ranges = (Range.create(ctxt.word_start, ctxt.index), None)
                 else:
+                    tokenA = data[ctxt.word_start: ctxt.inner_word_punct]
+                    tokenB = data[ctxt.inner_word_punct: ctxt.index]
                     token_ranges = (
                         Range.create(ctxt.word_start, ctxt.inner_word_punct),
                         Range.create(ctxt.inner_word_punct, ctxt.index),
@@ -117,18 +126,28 @@ class LatinWhitespaceIncludedWordTokenizer(WhitespaceIncludedTokenizer): #uses W
                 if is_number_period_match is not None:# and not match_is_number_comma:
                     ctxt.inner_word_punct = ctxt.index
                     group = is_number_period_match.group()
-                    ctxt.index += len(group)+1
+                    ctxt.index += len(group)+1 #what's this plus one here for?
                     return token_ranges
                 
-                is_right_single_quote_apostrophe = RIGHT_SINGLE_QUOTE_AS_APOSTROPHE_REGEX.search(substring)
+                self.is_right_single_quote_apostrophe = RIGHT_SINGLE_QUOTE_AS_APOSTROPHE_REGEX.search(substring)
 
-                if is_right_single_quote_apostrophe is not None and not self.split_on_right_single_quote:# and not match_is_number_comma:
+                if self.is_right_single_quote_apostrophe is not None:
+                    group = self.is_right_single_quote_apostrophe.group()
                     ctxt.inner_word_punct = ctxt.index
-                    group = is_right_single_quote_apostrophe.group()
+                    ctxt.index += len(group)
+                    token_ranges = (Range.create(ctxt.word_start, ctxt.index),None)
+                    ctxt.word_start = -1
+                    return token_ranges
+
+                if self.is_right_single_quote_apostrophe is not None and not self.split_on_right_single_quote:# and not match_is_number_comma:
+                    ctxt.inner_word_punct = ctxt.index
+                    group = self.is_right_single_quote_apostrophe.group()
                     ctxt.index += len(group)
                     return token_ranges
                 #end of changes
 
+                tokenA = data[ctxt.word_start:ctxt.index]
+                tokenB = data[ctxt.index:end_index]
                 token_ranges = (Range.create(ctxt.word_start, ctxt.index), Range.create(ctxt.index, end_index))
                 ctxt.word_start = -1
         elif ctxt.word_start == -1:
