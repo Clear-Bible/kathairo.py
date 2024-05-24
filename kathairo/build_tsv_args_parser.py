@@ -60,7 +60,8 @@ if(args.chineseTokenizer == True):
 if(args.latinTokenizer == True):
     tokenizer = LatinWordTokenizer(treat_apostrophe_as_single_quote=True)
 if(args.latinWhiteSpaceIncludedTokenizer == True):
-    tokenizer = LatinWhitespaceIncludedWordTokenizer(treat_apostrophe_as_single_quote=True)
+    tokenizer = LatinWhitespaceIncludedWordTokenizer(treat_apostrophe_as_single_quote=True,
+                                                     language = args.language)
 
 build_tsv.corpus_to_word_level_tsv(targetVersification = targetVersification, 
                                     sourceVersification = sourceVersification, 

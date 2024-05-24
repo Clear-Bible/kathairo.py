@@ -194,12 +194,21 @@ if(__name__ == "__main__"):
     #project_name="RSB-SYNO"
     
     #IRV
-    targetVersification = Versification.load("./resources/IRV/versification.vrs", fallback_name="web")
+    #targetVersification = Versification.load("./resources/IRV/versification.vrs", fallback_name="web")
+    #sourceVersification = Versification(name = "sourceVersification", base_versification=ORIGINAL_VERSIFICATION)
+    #corpus = UsfmFileTextCorpus("./resources/IRV", versification = targetVersification)
+    #tokenizer = LatinWordTokenizer()
+    #project_name="IRV"
+    #excludeBracketedText = False
+    
+    #LSG
     sourceVersification = Versification(name = "sourceVersification", base_versification=ORIGINAL_VERSIFICATION)
-    corpus = UsfmFileTextCorpus("./resources/IRV", handler=ModifiedTextRowCollector, versification = targetVersification)
-    tokenizer = LatinWhitespaceIncludedWordTokenizer()
-    project_name="IRV"
+    project_name="LSG"
+    targetVersification = Versification.load("./resources/fra/fra-LSG_usfm/versification.vrs", fallback_name="web")
+    corpus = UsfmFileTextCorpus("./resources/fra/fra-LSG_usfm", versification = targetVersification, handler=ModifiedTextRowCollector)
+    language = "fra"
+    tokenizer = LatinWhitespaceIncludedWordTokenizer(language=language)
     excludeBracketedText = False
 
-    corpus_to_word_level_tsv(targetVersification, sourceVersification, corpus, tokenizer, project_name, excludeBracketedText=excludeBracketedText)
+    corpus_to_word_level_tsv(targetVersification, sourceVersification, corpus, tokenizer, project_name, excludeBracketedText=excludeBracketedText, language=language)
     #corpus_to_verse_level_tsv(targetVersification, sourceVersification, corpus, tokenizer, project_name)
