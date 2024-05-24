@@ -8,7 +8,7 @@ import regex as re
 from machine.annotations.range import Range
 from machine.utils.string_utils import is_control, is_punctuation, is_symbol
 from .whitespace_included_tokenizer import WhitespaceIncludedTokenizer
-import spacy.lang.fr.tokenizer_exceptions as french_tokenizer_exceptions_list
+from spacy.lang.fr.tokenizer_exceptions import FR_BASE_EXCEPTIONS
 
 INNER_WORD_PUNCT_REGEX = re.compile(
     r"[&\-:=?@\xAD\xB7\u2010\u2011\u2027]+|['_]+",
@@ -26,6 +26,10 @@ NUMBER_PERIOD_REGEX = re.compile(
 
 RIGHT_SINGLE_QUOTE_AS_APOSTROPHE_REGEX = re.compile(
     r"(?<=\p{L})’(?=\p{L})"
+)
+
+CONTRACTION_WORD_REGEX = re.compile(
+    r"\b\w+(?:[\'\-\.\w\’]+)?\b"
 )
 
 class LatinWhitespaceIncludedWordTokenizer(WhitespaceIncludedTokenizer): #uses WhitepspaceIncludedTokenizer
@@ -129,7 +133,8 @@ class LatinWhitespaceIncludedWordTokenizer(WhitespaceIncludedTokenizer): #uses W
                     group = self.is_right_single_quote_apostrophe.group()
                     ctxt.inner_word_punct = ctxt.index
                     ctxt.index += len(group)
-                    if(self.language == "fra"):
+                    contraction_token = CONTRACTION_WORD_REGEX.match(data, ctxt.word_start).group().replace("’","'")
+                    if(self.language == "fra" and contraction_token not in FR_BASE_EXCEPTIONS):
                         token_ranges = (Range.create(ctxt.word_start, ctxt.index),None)
                         ctxt.word_start = -1
                     return token_ranges
