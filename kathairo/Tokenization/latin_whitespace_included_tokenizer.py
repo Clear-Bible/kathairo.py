@@ -8,6 +8,7 @@ import regex as re
 from machine.annotations.range import Range
 from machine.utils.string_utils import is_control, is_punctuation, is_symbol
 from .whitespace_included_tokenizer import WhitespaceIncludedTokenizer
+import spacy.lang.fr.tokenizer_exceptions as french_tokenizer_exceptions_list
 
 INNER_WORD_PUNCT_REGEX = re.compile(
     r"[&\-:=?@\xAD\xB7\u2010\u2011\u2027]+|['_]+",
@@ -28,10 +29,10 @@ RIGHT_SINGLE_QUOTE_AS_APOSTROPHE_REGEX = re.compile(
 )
 
 class LatinWhitespaceIncludedWordTokenizer(WhitespaceIncludedTokenizer): #uses WhitepspaceIncludedTokenizer
-    def __init__(self, abbreviations: Iterable[str] = [], treat_apostrophe_as_single_quote: bool = False, split_on_right_single_quote = False) -> None:
+    def __init__(self, abbreviations: Iterable[str] = [], treat_apostrophe_as_single_quote: bool = False, language:str = None) -> None:
         self._abbreviations = {a.lower() for a in abbreviations}
         self.treat_apostrophe_as_single_quote = treat_apostrophe_as_single_quote
-        self.split_on_right_single_quote = split_on_right_single_quote
+        self.language = language
         self.is_right_single_quote_apostrophe = False
 
     def tokenize_as_ranges(self, data: str, data_range: Optional[Range[int]] = None) -> Iterable[Range[int]]:
@@ -78,9 +79,6 @@ class LatinWhitespaceIncludedWordTokenizer(WhitespaceIncludedTokenizer): #uses W
         c = data[ctxt.index]
         end_index = ctxt.index + 1
 
-        tokenA = ""
-        tokenB = ""
-
         if is_punctuation(c) or is_symbol(c) or is_control(c):
             while end_index != data_range.end and data[end_index] == c:
                 end_index += 1
@@ -88,16 +86,12 @@ class LatinWhitespaceIncludedWordTokenizer(WhitespaceIncludedTokenizer): #uses W
                 if c == "'" and not self.treat_apostrophe_as_single_quote:
                     ctxt.word_start = ctxt.index
                 else:
-                    tokenA = data[ctxt.index: end_index]
                     token_ranges = (Range.create(ctxt.index, end_index), None)
             elif ctxt.inner_word_punct != -1:
                 inner_punct_str = data[ctxt.inner_word_punct : ctxt.index]
                 if inner_punct_str == "'" and not self.treat_apostrophe_as_single_quote:
-                    tokenA = data[ctxt.word_start: ctxt.index]
                     token_ranges = (Range.create(ctxt.word_start, ctxt.index), None)
                 else:
-                    tokenA = data[ctxt.word_start: ctxt.inner_word_punct]
-                    tokenB = data[ctxt.inner_word_punct: ctxt.index]
                     token_ranges = (
                         Range.create(ctxt.word_start, ctxt.inner_word_punct),
                         Range.create(ctxt.inner_word_punct, ctxt.index),
@@ -135,8 +129,9 @@ class LatinWhitespaceIncludedWordTokenizer(WhitespaceIncludedTokenizer): #uses W
                     group = self.is_right_single_quote_apostrophe.group()
                     ctxt.inner_word_punct = ctxt.index
                     ctxt.index += len(group)
-                    token_ranges = (Range.create(ctxt.word_start, ctxt.index),None)
-                    ctxt.word_start = -1
+                    if(self.language == "fra"):
+                        token_ranges = (Range.create(ctxt.word_start, ctxt.index),None)
+                        ctxt.word_start = -1
                     return token_ranges
 
                 if self.is_right_single_quote_apostrophe is not None and not self.split_on_right_single_quote:# and not match_is_number_comma:
@@ -146,8 +141,6 @@ class LatinWhitespaceIncludedWordTokenizer(WhitespaceIncludedTokenizer): #uses W
                     return token_ranges
                 #end of changes
 
-                tokenA = data[ctxt.word_start:ctxt.index]
-                tokenB = data[ctxt.index:end_index]
                 token_ranges = (Range.create(ctxt.word_start, ctxt.index), Range.create(ctxt.index, end_index))
                 ctxt.word_start = -1
         elif ctxt.word_start == -1:
