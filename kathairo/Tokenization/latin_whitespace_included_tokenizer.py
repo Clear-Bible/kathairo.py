@@ -67,7 +67,6 @@ class LatinWhitespaceIncludedWordTokenizer(WhitespaceIncludedTokenizer): #uses W
                     inner_punct_str = data[ctxt.inner_word_punct : char_range.end]
                     if (
                         inner_punct_str == "." and self._is_abbreviation(data, ctxt.word_start, ctxt.inner_word_punct)
-                    #) or (self.is_right_single_quote_apostrophe and self._is_abbreviation(data, ctxt.word_start, ctxt.inner_word_punct)
                     ) or (inner_punct_str == "'" and not self.treat_apostrophe_as_single_quote):
                         yield Range.create(ctxt.word_start, char_range.end)
                     else:
@@ -124,7 +123,7 @@ class LatinWhitespaceIncludedWordTokenizer(WhitespaceIncludedTokenizer): #uses W
                 if is_number_period_match is not None:# and not match_is_number_comma:
                     ctxt.inner_word_punct = ctxt.index
                     group = is_number_period_match.group()
-                    ctxt.index += len(group)+1 #what's this plus one here for?
+                    ctxt.index += len(group)
                     return token_ranges
                 
                 self.is_right_single_quote_apostrophe = RIGHT_SINGLE_QUOTE_AS_APOSTROPHE_REGEX.search(substring)
@@ -138,12 +137,6 @@ class LatinWhitespaceIncludedWordTokenizer(WhitespaceIncludedTokenizer): #uses W
                         if(contraction_token not in FR_BASE_EXCEPTIONS):
                             token_ranges = (Range.create(ctxt.word_start, ctxt.index),None)
                             ctxt.word_start = -1
-                    return token_ranges
-
-                if self.is_right_single_quote_apostrophe is not None and not self.split_on_right_single_quote:# and not match_is_number_comma:
-                    ctxt.inner_word_punct = ctxt.index
-                    group = self.is_right_single_quote_apostrophe.group()
-                    ctxt.index += len(group)
                     return token_ranges
                 #end of changes
 

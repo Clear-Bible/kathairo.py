@@ -207,7 +207,7 @@ if(__name__ == "__main__"):
     targetVersification = Versification.load("./resources/fra/fra-LSG_usfm/versification.vrs", fallback_name="web")
     corpus = UsfmFileTextCorpus("./resources/fra/fra-LSG_usfm", versification = targetVersification, handler=ModifiedTextRowCollector)
     language = "fra"
-    tokenizer = LatinWhitespaceIncludedWordTokenizer(language=language)#abbreviations=["aujourd’hui","quelqu’un"]
+    tokenizer = LatinWhitespaceIncludedWordTokenizer(language=language)
     excludeBracketedText = False
 
     corpus_to_word_level_tsv(targetVersification, sourceVersification, corpus, tokenizer, project_name, excludeBracketedText=excludeBracketedText, language=language)
