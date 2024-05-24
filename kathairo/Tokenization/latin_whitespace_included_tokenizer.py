@@ -37,7 +37,6 @@ class LatinWhitespaceIncludedWordTokenizer(WhitespaceIncludedTokenizer): #uses W
         self._abbreviations = {a.lower() for a in abbreviations}
         self.treat_apostrophe_as_single_quote = treat_apostrophe_as_single_quote
         self.language = language
-        self.is_right_single_quote_apostrophe = False
 
     def tokenize_as_ranges(self, data: str, data_range: Optional[Range[int]] = None) -> Iterable[Range[int]]:
         if data_range is None:
@@ -126,10 +125,10 @@ class LatinWhitespaceIncludedWordTokenizer(WhitespaceIncludedTokenizer): #uses W
                     ctxt.index += len(group)
                     return token_ranges
                 
-                self.is_right_single_quote_apostrophe = RIGHT_SINGLE_QUOTE_AS_APOSTROPHE_REGEX.search(substring)
+                is_right_single_quote_apostrophe = RIGHT_SINGLE_QUOTE_AS_APOSTROPHE_REGEX.search(substring)
 
-                if self.is_right_single_quote_apostrophe is not None:
-                    group = self.is_right_single_quote_apostrophe.group()
+                if is_right_single_quote_apostrophe is not None:
+                    group = is_right_single_quote_apostrophe.group()
                     ctxt.inner_word_punct = ctxt.index
                     ctxt.index += len(group)
                     if(self.language == "fra"):
