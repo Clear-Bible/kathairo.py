@@ -13,6 +13,8 @@ from machine.corpora import UsfmParser
 from machine.corpora import UsfmParserHandler
 import os
 import csv
+import pyarabic.araby as araby
+import pyarabic.number as number
 
 targetVersification = Versification.load("./resources/arb/onav_usx/release/versification.vrs", fallback_name="web")
 corpus = UsxFileTextCorpus("./resources/arb/onav_usx/release/USX_1", versification = targetVersification)
@@ -22,6 +24,8 @@ with open("arabic-tokenization", 'w', newline='', encoding='utf-8') as out_file:
   tsv_writer = csv.writer(out_file, delimiter='\t')
 
   for row in corpus:
+      #tokenized_row = araby.tokenize(row.text)
       tokenized_row = tokenizer.tokenize(row.text)
       for token in tokenized_row:
-        tsv_writer.writerow([token])
+        if(token != " "):
+          tsv_writer.writerow([token])

@@ -939,6 +939,19 @@ cymem = ">=2.0.2,<2.1.0"
 murmurhash = ">=0.28.0,<1.1.0"
 
 [[package]]
+name = "pyarabic"
+version = "0.6.15"
+description = "Arabic text tools for Python"
+optional = false
+python-versions = "*"
+files = [
+    {file = "PyArabic-0.6.15-py3-none-any.whl", hash = "sha256:b9a530277876008f5fbe53249c6953b4513dbbf2ea8f4339694e87c8a75d7edf"},
+]
+
+[package.dependencies]
+six = ">=1.14.0"
+
+[[package]]
 name = "pydantic"
 version = "2.7.1"
 description = "Data validation using Python type hints"
@@ -1903,4 +1916,4 @@ files = [
 [metadata]
 lock-version = "2.0"
 python-versions = ">=3.10,<3.12"
-content-hash = "b59e3b3ea1848939d7b6de0cbdcd8a993d32aeb29d07edc10aee6c80530b5136"
+content-hash = "486d385cb165c6ead1bb6c3c03e3eb316f41612c3c62ca1b7e6fdf88be9b7bfa"
