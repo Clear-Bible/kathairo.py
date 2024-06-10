@@ -87,9 +87,6 @@ def test_mapped_verses_are_present(tsv_vrs_name_files):
         tsv_source_verses = []
         data_frame = pd.read_csv(tsv_vrs_name_files[0], sep='\t',dtype=str)
         
-        #for source_verse in data_frame['source_verse'].values:
-        #    tsv_source_verses.append(str(source_verse)[:8])#TODO use bible-lib
-        
         for row in data_frame.itertuples():
             source_verse = int(row.source_verse)      
             if(isinstance(row.source_verse_range_end, str)):
