@@ -32,7 +32,8 @@ def corpus_to_verse_level_tsv(targetVersification:Versification, sourceVersifica
     with open(outputFileName, 'w', newline='', encoding='utf-8') as out_file:
         tsv_writer = csv.writer(out_file, delimiter='\t')
 
-        tsv_writer.writerow(["id", "source_verse", "text"]) #NEXT GEN
+        tsv_writer.writerow(["id", "source_verse", "text","id_range_end", "source_verse_range_end"])
+        verse_range_list = []
 
         for row in corpus:#.tokenize(tokenizer).nfc_normalize()    
 
@@ -44,7 +45,16 @@ def corpus_to_verse_level_tsv(targetVersification:Versification, sourceVersifica
             sourceBcv = fromubs(f"{re.sub(r'[^0-9]', '', sourceVref.bbbcccvvvs)}00000").to_bcvid
             rowBcv= fromubs(f"{re.sub(r'[^0-9]', '', row.ref.bbbcccvvvs)}00000").to_bcvid
             
-            tsv_writer.writerow([f"{rowBcv}", f"{sourceBcv}", row.text ]) #NEXT GEN
+            if(row.text != "" and row.is_in_range):
+                verse_range_list.append([f"{rowBcv}", f"{sourceBcv}", row.text])
+            else:
+                for verse_range_row in verse_range_list:
+                    verse_range_row.append(f"{rowBcv}")
+                    verse_range_row.append(f"{sourceBcv}")
+                    tsv_writer.writerow(verse_range_row)
+                verse_range_list.clear()
+                if(row.text != ""):
+                    tsv_writer.writerow([f"{rowBcv}", f"{sourceBcv}", row.text])
 
 def corpus_to_word_level_tsv(targetVersification:Versification, sourceVersification:Versification, corpus:ScriptureTextCorpus, tokenizer:WhitespaceTokenizer, 
                   project_name:str, language:str, excludeBracketedText:bool = False):
