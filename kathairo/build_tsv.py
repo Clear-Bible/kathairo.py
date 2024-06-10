@@ -128,7 +128,7 @@ def corpus_to_word_level_tsv(targetVersification:Versification, sourceVersificat
                 sourceBcv = fromubs(f"{re.sub(r'[^0-9]', '', sourceVref.bbbcccvvvs)}00000").to_bcvid
                 rowBcv= fromubs(f"{re.sub(r'[^0-9]', '', row.ref.bbbcccvvvs)}00000").to_bcvid
                 
-                if(row.is_in_range):
+                if(row.text != "" and row.is_in_range):
                     verse_range_list.append([f"{rowBcv}{wordIndexStr}", f"{sourceBcv}", token, skip_space_after, exclude])
                 else:
                     for verse_range_row in verse_range_list:
@@ -136,7 +136,8 @@ def corpus_to_word_level_tsv(targetVersification:Versification, sourceVersificat
                         verse_range_row.append(f"{sourceBcv}")
                         tsv_writer.writerow(verse_range_row)
                     verse_range_list.clear()
-                    tsv_writer.writerow([f"{rowBcv}{wordIndexStr}", f"{sourceBcv}", token, skip_space_after, exclude ])
+                    if(row.text != ""):
+                        tsv_writer.writerow([f"{rowBcv}{wordIndexStr}", f"{sourceBcv}", token, skip_space_after, exclude ])
                 
                 wordIndex += 1
                 
