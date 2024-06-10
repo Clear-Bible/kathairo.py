@@ -54,7 +54,7 @@ def corpus_to_verse_level_tsv(targetVersification:Versification, sourceVersifica
                     tsv_writer.writerow(verse_range_row)
                 verse_range_list.clear()
                 if(row.text != ""):
-                    tsv_writer.writerow([f"{rowBcv}", f"{sourceBcv}", row.text])
+                    tsv_writer.writerow([f"{rowBcv}", f"{sourceBcv}", row.text, "", ""])
 
 def corpus_to_word_level_tsv(targetVersification:Versification, sourceVersification:Versification, corpus:ScriptureTextCorpus, tokenizer:WhitespaceTokenizer, 
                   project_name:str, language:str, excludeBracketedText:bool = False):
@@ -137,7 +137,7 @@ def corpus_to_word_level_tsv(targetVersification:Versification, sourceVersificat
                         tsv_writer.writerow(verse_range_row)
                     verse_range_list.clear()
                     if(row.text != ""):
-                        tsv_writer.writerow([f"{rowBcv}{wordIndexStr}", f"{sourceBcv}", token, skip_space_after, exclude ])
+                        tsv_writer.writerow([f"{rowBcv}{wordIndexStr}", f"{sourceBcv}", token, skip_space_after, exclude, "", ""])
                 
                 wordIndex += 1
                 

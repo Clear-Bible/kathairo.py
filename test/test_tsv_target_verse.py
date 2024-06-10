@@ -22,6 +22,13 @@ def test_mapped_verses_are_present(tsv_vrs_name_files):
         data_frame = pd.read_csv(tsv_vrs_name_files[0], sep='\t',dtype=str)
         for id in data_frame['id'].values:
             tsv_ids.append(str(id)[:8])#TODO use bible-lib
+        #for row in data_frame:
+        #    id = row['id'][:8]
+        #    id_range_end = row['id_range_end'][:8]
+        #    
+        #    while(id != id_range_end):
+        #        tsv_ids.append(str(id))#TODO use bible-lib
+        #        id+=1
         
         for target in mapping_targets:
             if (str(target.bbbcccvvvs)[1:] not in tsv_ids):
@@ -32,7 +39,7 @@ def test_mapped_verses_are_present(tsv_vrs_name_files):
                 ):
                     print("Mapping - Missing Verse - "+tsv_vrs_name_files[2] + " " + (target.bbbcccvvvs))
                     
-                    tsv_writer.writerow(["source_verse", "mapping", "missing_verse", tsv_vrs_name_files[2], target.bbbcccvvvs]) #OLD WAY
+                    tsv_writer.writerow(["target_verse", "mapping", "missing_verse", tsv_vrs_name_files[2], target.bbbcccvvvs]) #OLD WAY
 
 #Does each chapter possess the number of verses listed in the versification (requires versification file)
 @pytest.mark.parametrize("tsv_vrs_name_files", __tsv_vrs_name_files__)

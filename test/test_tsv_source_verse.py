@@ -4,6 +4,7 @@ import pandas as pd
 from machine.scripture import Versification
 import os
 import csv
+import math
 
 #Do the IDs only contain numbers?
 @pytest.mark.parametrize("tsv_vrs_files", __tsv_vrs_name_files__)
@@ -87,6 +88,17 @@ def test_mapped_verses_are_present(tsv_vrs_name_files):
         data_frame = pd.read_csv(tsv_vrs_name_files[0], sep='\t',dtype=str)
         for source_verse in data_frame['source_verse'].values:
             tsv_source_verses.append(str(source_verse)[:8])#TODO use bible-lib
+        #for row in data_frame.itertuples():
+        #    source_verse = int(row.source_verse)
+        #    
+        #    if(row.source_verse_range_end is str):
+        #        source_verse_range_end = row.source_verse_range_end
+        #    else:
+        #        source_verse_range_end = source_verse -1 
+        #    
+        #    while(source_verse != source_verse_range_end):
+        #        tsv_source_verses.append(str(source_verse))#TODO use bible-lib
+        #        source_verse += 1
         
         for source in mapping_sources:
             if (str(source.bbbcccvvvs)[1:] not in tsv_source_verses):
@@ -164,15 +176,15 @@ def test_source_chapter_size(tsv_vrs_name_files):
                         
                         if (book_list[bookIndex][chapterIndex] > originalVersification.book_list[bookIndex][chapterIndex]): 
                             print("source_verse - Extra Verse - "+tsv_vrs_name_files[2] + " Book: " + str(bookIndex + 1)+" Chapter:"+str(chapterIndex + 1))
-                            tsv_writer.writerow(["target_verse", "size", "extra_verse", tsv_vrs_name_files[2], str(bookIndex + 1).zfill(3)+str(chapterIndex + 1).zfill(3)])
+                            tsv_writer.writerow(["source_verse", "size", "extra_verse", tsv_vrs_name_files[2], str(bookIndex + 1).zfill(3)+str(chapterIndex + 1).zfill(3)])
                         elif(book_list[bookIndex][chapterIndex] < originalVersification.book_list[bookIndex][chapterIndex]):
                             print("source_verse - Missing Verse - "+tsv_vrs_name_files[2] + " Book: " + str(bookIndex + 1)+" Chapter:"+str(chapterIndex + 1))
-                            tsv_writer.writerow(["target_verse", "size", "missing_verse", tsv_vrs_name_files[2], str(bookIndex + 1).zfill(3)+str(chapterIndex + 1).zfill(3)])
+                            tsv_writer.writerow(["source_verse", "size", "missing_verse", tsv_vrs_name_files[2], str(bookIndex + 1).zfill(3)+str(chapterIndex + 1).zfill(3)])
                     except:
                         print("source_verse - Missing Chapter - "+tsv_vrs_name_files[2] + " Book: " + str(bookIndex + 1)+" Chapter:"+str(chapterIndex + 1))
-                        tsv_writer.writerow(["target_verse", "size", "missing_chapter", tsv_vrs_name_files[2], str(bookIndex + 1).zfill(3)+str(chapterIndex + 1).zfill(3)])
+                        tsv_writer.writerow(["source_verse", "size", "missing_chapter", tsv_vrs_name_files[2], str(bookIndex + 1).zfill(3)+str(chapterIndex + 1).zfill(3)])
                 
             except:
                 if(bookIndex + 1 <= 66):#Exclude apocrypha
                     print("source_verse - Missing Book - "+tsv_vrs_name_files[2] + " Book: " + str(bookIndex + 1))
-                    tsv_writer.writerow(["target_verse", "size", "missing_book", tsv_vrs_name_files[2], str(bookIndex + 1).zfill(3)])
+                    tsv_writer.writerow(["source_verse", "size", "missing_book", tsv_vrs_name_files[2], str(bookIndex + 1).zfill(3)])
