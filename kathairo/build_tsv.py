@@ -42,19 +42,20 @@ def corpus_to_verse_level_tsv(targetVersification:Versification, sourceVersifica
             
             sourceVref = targetVref
 
-            sourceBcv = fromubs(f"{re.sub(r'[^0-9]', '', sourceVref.bbbcccvvvs)}00000").to_bcvid
-            rowBcv= fromubs(f"{re.sub(r'[^0-9]', '', row.ref.bbbcccvvvs)}00000").to_bcvid
-            
-            if(row.text != "" and row.is_in_range):
-                verse_range_list.append([f"{rowBcv}", f"{sourceBcv}", row.text])
-            else:
+            if(not row.is_in_range or row.is_range_start):
                 for verse_range_row in verse_range_list:
                     verse_range_row.append(f"{rowBcv}")
                     verse_range_row.append(f"{sourceBcv}")
                     tsv_writer.writerow(verse_range_row)
                 verse_range_list.clear()
-                if(row.text != ""):
-                    tsv_writer.writerow([f"{rowBcv}", f"{sourceBcv}", row.text, "", ""])
+
+            sourceBcv = fromubs(f"{re.sub(r'[^0-9]', '', sourceVref.bbbcccvvvs)}00000").to_bcvid
+            rowBcv= fromubs(f"{re.sub(r'[^0-9]', '', row.ref.bbbcccvvvs)}00000").to_bcvid
+            
+            if(row.text != "" and row.is_in_range):
+                verse_range_list.append([f"{rowBcv}", f"{sourceBcv}", row.text])
+            elif(row.text != ""):
+                tsv_writer.writerow([f"{rowBcv}", f"{sourceBcv}", row.text, "", ""])
 
 def corpus_to_word_level_tsv(targetVersification:Versification, sourceVersification:Versification, corpus:ScriptureTextCorpus, tokenizer:WhitespaceTokenizer, 
                   project_name:str, language:str, excludeBracketedText:bool = False):
@@ -84,6 +85,16 @@ def corpus_to_word_level_tsv(targetVersification:Versification, sourceVersificat
             sourceVref = targetVref
 
             wordIndex = 1
+            
+            if(not row.is_in_range or row.is_range_start):
+                for verse_range_row in verse_range_list:
+                    verse_range_row.append(f"{rowBcv}")
+                    verse_range_row.append(f"{sourceBcv}")
+                    tsv_writer.writerow(verse_range_row)
+                verse_range_list.clear()
+            
+            sourceBcv = fromubs(f"{re.sub(r'[^0-9]', '', sourceVref.bbbcccvvvs)}00000").to_bcvid
+            rowBcv= fromubs(f"{re.sub(r'[^0-9]', '', row.ref.bbbcccvvvs)}00000").to_bcvid
             
             for index in range(len(row.segment)):
             #for token in row.segment:#row.segment, tokenized_row:
@@ -122,21 +133,12 @@ def corpus_to_word_level_tsv(targetVersification:Versification, sourceVersificat
                 
                 if(token ==']'): #we are trusting that all brackets get their own row
                     in_brackets = False
-                
-                wordIndexStr = str(wordIndex).zfill(3)
 
-                sourceBcv = fromubs(f"{re.sub(r'[^0-9]', '', sourceVref.bbbcccvvvs)}00000").to_bcvid
-                rowBcv= fromubs(f"{re.sub(r'[^0-9]', '', row.ref.bbbcccvvvs)}00000").to_bcvid
+                wordIndexStr = str(wordIndex).zfill(3)
                 
                 if(row.text != "" and row.is_in_range):
                     verse_range_list.append([f"{rowBcv}{wordIndexStr}", f"{sourceBcv}", token, skip_space_after, exclude])
-                else:
-                    for verse_range_row in verse_range_list:
-                        verse_range_row.append(f"{rowBcv}{wordIndexStr}")
-                        verse_range_row.append(f"{sourceBcv}")
-                        tsv_writer.writerow(verse_range_row)
-                    verse_range_list.clear()
-                    if(row.text != ""):
+                elif(row.text != ""):
                         tsv_writer.writerow([f"{rowBcv}{wordIndexStr}", f"{sourceBcv}", token, skip_space_after, exclude, "", ""])
                 
                 wordIndex += 1
@@ -219,5 +221,5 @@ if(__name__ == "__main__"):
     #tokenizer = LatinWhitespaceIncludedWordTokenizer(language=language)
     #excludeBracketedText = False
 
-    corpus_to_word_level_tsv(targetVersification, sourceVersification, corpus, tokenizer, project_name, excludeBracketedText=excludeBracketedText, language=language)
-    #corpus_to_verse_level_tsv(targetVersification, sourceVersification, corpus, tokenizer, project_name)
+    #corpus_to_word_level_tsv(targetVersification, sourceVersification, corpus, tokenizer, project_name, excludeBracketedText=excludeBracketedText, language=language)
+    corpus_to_verse_level_tsv(targetVersification, sourceVersification, corpus, tokenizer, project_name, language=language)

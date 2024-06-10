@@ -20,15 +20,17 @@ def test_mapped_verses_are_present(tsv_vrs_name_files):
         
         tsv_ids = []
         data_frame = pd.read_csv(tsv_vrs_name_files[0], sep='\t',dtype=str)
-        for id in data_frame['id'].values:
-            tsv_ids.append(str(id)[:8])#TODO use bible-lib
-        #for row in data_frame:
-        #    id = row['id'][:8]
-        #    id_range_end = row['id_range_end'][:8]
-        #    
-        #    while(id != id_range_end):
-        #        tsv_ids.append(str(id))#TODO use bible-lib
-        #        id+=1
+                
+        for row in data_frame.itertuples():
+            id = int(row.id[:8])      
+            if(isinstance(row.id_range_end, str)):
+                id_range_end = int(row.id_range_end[:8])
+            else:
+                id_range_end = id + 1 
+            
+            while(id != id_range_end):
+                tsv_ids.append(str(id).zfill(8))#TODO use bible-lib
+                id += 1
         
         for target in mapping_targets:
             if (str(target.bbbcccvvvs)[1:] not in tsv_ids):
@@ -58,7 +60,14 @@ def test_chapter_size(tsv_vrs_name_files):
         previous_id = "01001001001"
         
         data_frame = pd.read_csv(tsv_vrs_name_files[0], sep='\t',dtype=str)
-        for id in data_frame['id']:
+        
+        for row in data_frame.itertuples():
+            id = row.id   
+               
+            if(isinstance(row.id_range_end, str)):
+                id_range_end = row.id_range_end
+            else:
+                id_range_end = id
             
             previous_book_id = int(str(previous_id)[:2])
             previous_chapter_id = int(str(previous_id)[2:5])
@@ -68,9 +77,15 @@ def test_chapter_size(tsv_vrs_name_files):
             current_chapter_id = int(str(id)[2:5])
             current_verse_id = int(str(id)[5:8])
             
+            current_book_id_range_end = int(str(id_range_end)[:2])
+            current_chapter_id_range_end = int(str(id_range_end)[2:5])
+            current_verse_id_range_end = int(str(id_range_end)[5:8])
+            
+            range_size = current_verse_id_range_end - current_verse_id
+            
             if(current_verse_id > previous_verse_id):#verse changes
                 #increment verse count
-                current_verse_count += 1
+                current_verse_count += 1 + range_size
             
             if(current_verse_id < previous_verse_id or previous_chapter_id < current_chapter_id):#chapter changes
                 #add chapter to chapter_list
@@ -113,15 +128,15 @@ def test_chapter_size(tsv_vrs_name_files):
                         
                         if (book_list[bookIndex][chapterIndex] > targetVersification.book_list[bookIndex][chapterIndex]): 
                             print("Chapter Size - Extra Verse - "+tsv_vrs_name_files[2] + " Book: " + str(bookIndex + 1)+" Chapter:"+str(chapterIndex + 1))
-                            tsv_writer.writerow(["target_verse", "size", "extra_verse", tsv_vrs_name_files[2], str(bookIndex + 1).zfill(3)+str(chapterIndex + 1).zfill(3)]) #OLD WAY
+                            tsv_writer.writerow(["target_verse", "size", "extra_verse", tsv_vrs_name_files[2], str(bookIndex + 1).zfill(2)+str(chapterIndex + 1).zfill(3)]) #OLD WAY
                         elif(book_list[bookIndex][chapterIndex] < targetVersification.book_list[bookIndex][chapterIndex]):
                             print("Chapter Size - Missing Verse - "+tsv_vrs_name_files[2] + " Book: " + str(bookIndex + 1)+" Chapter:"+str(chapterIndex + 1))
-                            tsv_writer.writerow(["target_verse", "size", "missing_verse", tsv_vrs_name_files[2], str(bookIndex + 1).zfill(3)+str(chapterIndex + 1).zfill(3)])
+                            tsv_writer.writerow(["target_verse", "size", "missing_verse", tsv_vrs_name_files[2], str(bookIndex + 1).zfill(2)+str(chapterIndex + 1).zfill(3)])
                     except:
                         print("Chapter Size - Missing Chapter - "+tsv_vrs_name_files[2] + " Book: " + str(bookIndex + 1)+" Chapter:"+str(chapterIndex + 1))
-                        tsv_writer.writerow(["target_verse", "size", "missing_chapter", tsv_vrs_name_files[2], str(bookIndex + 1).zfill(3)+str(chapterIndex + 1).zfill(3)])
+                        tsv_writer.writerow(["target_verse", "size", "missing_chapter", tsv_vrs_name_files[2], str(bookIndex + 1).zfill(2)+str(chapterIndex + 1).zfill(3)])
                 
             except:
                 if(bookIndex + 1 <= 66):#Exclude apocrypha
                     print("Chapter Size - Missing Book - "+tsv_vrs_name_files[2] + " Book: " + str(bookIndex + 1))
-                    tsv_writer.writerow(["target_verse", "size", "missing_book", tsv_vrs_name_files[2], str(bookIndex + 1).zfill(3)])
+                    tsv_writer.writerow(["target_verse", "size", "missing_book", tsv_vrs_name_files[2], str(bookIndex + 1).zfill(2)])

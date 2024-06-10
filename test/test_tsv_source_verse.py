@@ -86,20 +86,21 @@ def test_mapped_verses_are_present(tsv_vrs_name_files):
         
         tsv_source_verses = []
         data_frame = pd.read_csv(tsv_vrs_name_files[0], sep='\t',dtype=str)
-        for source_verse in data_frame['source_verse'].values:
-            tsv_source_verses.append(str(source_verse)[:8])#TODO use bible-lib
-        #for row in data_frame.itertuples():
-        #    source_verse = int(row.source_verse)
-        #    
-        #    if(row.source_verse_range_end is str):
-        #        source_verse_range_end = row.source_verse_range_end
-        #    else:
-        #        source_verse_range_end = source_verse -1 
-        #    
-        #    while(source_verse != source_verse_range_end):
-        #        tsv_source_verses.append(str(source_verse))#TODO use bible-lib
-        #        source_verse += 1
         
+        #for source_verse in data_frame['source_verse'].values:
+        #    tsv_source_verses.append(str(source_verse)[:8])#TODO use bible-lib
+        
+        for row in data_frame.itertuples():
+            source_verse = int(row.source_verse)      
+            if(isinstance(row.source_verse_range_end, str)):
+                source_verse_range_end = int(row.source_verse_range_end)
+            else:
+                source_verse_range_end = source_verse + 1 
+            
+            while(source_verse != source_verse_range_end):
+                tsv_source_verses.append(str(source_verse).zfill(8))#TODO use bible-lib
+                source_verse += 1
+    
         for source in mapping_sources:
             if (str(source.bbbcccvvvs)[1:] not in tsv_source_verses):
                 if(
@@ -128,7 +129,14 @@ def test_source_chapter_size(tsv_vrs_name_files):
         previous_id = "01001001001"
         
         data_frame = pd.read_csv(tsv_vrs_name_files[0], sep='\t',dtype=str)
-        for id in data_frame['source_verse']:
+        
+        for row in data_frame.itertuples():
+            id = row.source_verse
+               
+            if(isinstance(row.source_verse_range_end, str)):
+                source_verse_range_end = row.source_verse_range_end
+            else:
+                source_verse_range_end = id
             
             previous_book_id = int(str(previous_id)[:2])
             previous_chapter_id = int(str(previous_id)[2:5])
@@ -138,12 +146,15 @@ def test_source_chapter_size(tsv_vrs_name_files):
             current_chapter_id = int(str(id)[2:5])
             current_verse_id = int(str(id)[5:8])
             
-            if(current_book_id == 2 and current_chapter_id == 8 ):
-                Holdup = True
-
+            current_book_source_verse_range_end = int(str(source_verse_range_end)[:2])
+            current_chapter_source_verse_range_end = int(str(source_verse_range_end)[2:5])
+            current_verse_source_verse_range_end = int(str(source_verse_range_end)[5:8])
+            
+            range_size = current_verse_source_verse_range_end - current_verse_id
+            
             if(current_verse_id > previous_verse_id):#verse changes
                 #increment verse count
-                current_verse_count += 1
+                current_verse_count += 1 + range_size
             
             if(current_verse_id < previous_verse_id or previous_chapter_id < current_chapter_id):#chapter changes
                 #add chapter to chapter_list
@@ -176,15 +187,15 @@ def test_source_chapter_size(tsv_vrs_name_files):
                         
                         if (book_list[bookIndex][chapterIndex] > originalVersification.book_list[bookIndex][chapterIndex]): 
                             print("source_verse - Extra Verse - "+tsv_vrs_name_files[2] + " Book: " + str(bookIndex + 1)+" Chapter:"+str(chapterIndex + 1))
-                            tsv_writer.writerow(["source_verse", "size", "extra_verse", tsv_vrs_name_files[2], str(bookIndex + 1).zfill(3)+str(chapterIndex + 1).zfill(3)])
+                            tsv_writer.writerow(["source_verse", "size", "extra_verse", tsv_vrs_name_files[2], str(bookIndex + 1).zfill(2)+str(chapterIndex + 1).zfill(3)])
                         elif(book_list[bookIndex][chapterIndex] < originalVersification.book_list[bookIndex][chapterIndex]):
                             print("source_verse - Missing Verse - "+tsv_vrs_name_files[2] + " Book: " + str(bookIndex + 1)+" Chapter:"+str(chapterIndex + 1))
-                            tsv_writer.writerow(["source_verse", "size", "missing_verse", tsv_vrs_name_files[2], str(bookIndex + 1).zfill(3)+str(chapterIndex + 1).zfill(3)])
+                            tsv_writer.writerow(["source_verse", "size", "missing_verse", tsv_vrs_name_files[2], str(bookIndex + 1).zfill(2)+str(chapterIndex + 1).zfill(3)])
                     except:
                         print("source_verse - Missing Chapter - "+tsv_vrs_name_files[2] + " Book: " + str(bookIndex + 1)+" Chapter:"+str(chapterIndex + 1))
-                        tsv_writer.writerow(["source_verse", "size", "missing_chapter", tsv_vrs_name_files[2], str(bookIndex + 1).zfill(3)+str(chapterIndex + 1).zfill(3)])
+                        tsv_writer.writerow(["source_verse", "size", "missing_chapter", tsv_vrs_name_files[2], str(bookIndex + 1).zfill(2)+str(chapterIndex + 1).zfill(3)])
                 
             except:
                 if(bookIndex + 1 <= 66):#Exclude apocrypha
                     print("source_verse - Missing Book - "+tsv_vrs_name_files[2] + " Book: " + str(bookIndex + 1))
-                    tsv_writer.writerow(["source_verse", "size", "missing_book", tsv_vrs_name_files[2], str(bookIndex + 1).zfill(3)])
+                    tsv_writer.writerow(["source_verse", "size", "missing_book", tsv_vrs_name_files[2], str(bookIndex + 1).zfill(2)])
