@@ -55,9 +55,10 @@ def corpus_to_word_level_tsv(targetVersification:Versification, sourceVersificat
     with open(outputFileName, 'w', newline='', encoding='utf-8') as out_file:
         tsv_writer = csv.writer(out_file, delimiter='\t')
 
-        tsv_writer.writerow(["id", "source_verse", "text", "skip_space_after", "exclude"]) #NEXT GEN
+        tsv_writer.writerow(["id", "source_verse", "text", "skip_space_after", "exclude", "id_range_end", "source_verse_range_end"])
 
         in_brackets = False
+        verse_range_list = []
         for row in corpus.tokenize(tokenizer):#.tokenize(tokenizer).nfc_normalize() #Include for Double Tokenization    
 
             #if(row.is_in_range and row.text == ''):
@@ -117,7 +118,15 @@ def corpus_to_word_level_tsv(targetVersification:Versification, sourceVersificat
                 sourceBcv = fromubs(f"{re.sub(r'[^0-9]', '', sourceVref.bbbcccvvvs)}00000").to_bcvid
                 rowBcv= fromubs(f"{re.sub(r'[^0-9]', '', row.ref.bbbcccvvvs)}00000").to_bcvid
                 
-                tsv_writer.writerow([f"{rowBcv}{wordIndexStr}", f"{sourceBcv}", token, skip_space_after, exclude ]) #NEXT GEN
+                if(row.is_in_range):
+                    verse_range_list.append([f"{rowBcv}{wordIndexStr}", f"{sourceBcv}", token, skip_space_after, exclude])
+                else:
+                    for verse_range_row in verse_range_list:
+                        verse_range_row.append(f"{rowBcv}{wordIndexStr}")
+                        verse_range_row.append(f"{sourceBcv}")
+                        tsv_writer.writerow(verse_range_row)
+                    verse_range_list.clear()
+                    tsv_writer.writerow([f"{rowBcv}{wordIndexStr}", f"{sourceBcv}", token, skip_space_after, exclude ])
                 
                 wordIndex += 1
                 
@@ -132,12 +141,13 @@ if(__name__ == "__main__"):
     #excludeBracketedText = False
 
     #OCCB-Simplified
-    #targetVersification = Versification.load("./resources/occb_simplified_usx/release/versification.vrs", fallback_name="web")
-    #sourceVersification = Versification(name = "sourceVersification", base_versification=ORIGINAL_VERSIFICATION)
-    #corpus = UsxFileTextCorpus("./resources/occb_simplified_usx/release/USX_1", versification = targetVersification)
-    #tokenizer = ChineseBibleWordTokenizer.ChineseBibleWordTokenizer()
-    #project_name = "OCCB-simplified"
-    #excludeBracketedText = False
+    targetVersification = Versification.load("./resources/man/occb_simplified_usx/release/versification.vrs", fallback_name="web")
+    sourceVersification = Versification(name = "sourceVersification", base_versification=ORIGINAL_VERSIFICATION)
+    corpus = UsxFileTextCorpus("./resources/man/occb_simplified_usx/release/USX_1", versification = targetVersification)
+    tokenizer = ChineseBibleWordTokenizer.ChineseBibleWordTokenizer()
+    project_name = "OCCB-simplified"
+    excludeBracketedText = False
+    language="man"
 
     #ONAV
     #targetVersification = Versification.load("./resources/onav_usx/release/versification.vrs", fallback_name="web")
@@ -190,13 +200,13 @@ if(__name__ == "__main__"):
     #excludeBracketedText = False
     
     #LSG
-    sourceVersification = Versification(name = "sourceVersification", base_versification=ORIGINAL_VERSIFICATION)
-    project_name="LSG"
-    targetVersification = Versification.load("./resources/fra/fra-LSG_usfm/versification.vrs", fallback_name="web")
-    corpus = UsfmFileTextCorpus("./resources/fra/fra-LSG_usfm", versification = targetVersification, handler=ModifiedTextRowCollector)
-    language = "fra"
-    tokenizer = LatinWhitespaceIncludedWordTokenizer(language=language)
-    excludeBracketedText = False
+    #sourceVersification = Versification(name = "sourceVersification", base_versification=ORIGINAL_VERSIFICATION)
+    #project_name="LSG"
+    #targetVersification = Versification.load("./resources/fra/fra-LSG_usfm/versification.vrs", fallback_name="web")
+    #corpus = UsfmFileTextCorpus("./resources/fra/fra-LSG_usfm", versification = targetVersification, handler=ModifiedTextRowCollector)
+    #language = "fra"
+    #tokenizer = LatinWhitespaceIncludedWordTokenizer(language=language)
+    #excludeBracketedText = False
 
     corpus_to_word_level_tsv(targetVersification, sourceVersification, corpus, tokenizer, project_name, excludeBracketedText=excludeBracketedText, language=language)
     #corpus_to_verse_level_tsv(targetVersification, sourceVersification, corpus, tokenizer, project_name)
