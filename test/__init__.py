@@ -31,8 +31,9 @@ with open(json_file) as json_data:
         language = jsonObject["language"]
         
         outputFileLocation = get_target_file_location("TSVs", projectName, language)
+        versification_issues_file = get_target_file_location("TSVs", projectName+"_vrs_issues", language)
         
-        prompt_tsv_vrs = [outputFileLocation, targetVersificationPath, projectName, language]
+        prompt_tsv_vrs = [outputFileLocation, targetVersificationPath, projectName, language, versification_issues_file]
         __tsv_vrs_name_files__.append(prompt_tsv_vrs)
 
 
