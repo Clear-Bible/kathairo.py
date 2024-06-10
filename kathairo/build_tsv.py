@@ -24,18 +24,15 @@ from helpers.paths import get_target_file_location
 import os
 
 def corpus_to_verse_level_tsv(targetVersification:Versification, sourceVersification:Versification, corpus:ScriptureTextCorpus, tokenizer:WhitespaceTokenizer, 
-                              project_name:str, language:str, use_old_tsv_format:bool = False, excludeBracketedText:bool = False):
+                              project_name:str, language:str, excludeBracketedText:bool = False):
 
-    outputFileName = get_target_file_location(use_old_tsv_format, "VerseText", project_name, language)
+    outputFileName = get_target_file_location("VerseText", project_name, language)
 
     os.makedirs(os.path.dirname(outputFileName), exist_ok=True)
     with open(outputFileName, 'w', newline='', encoding='utf-8') as out_file:
         tsv_writer = csv.writer(out_file, delimiter='\t')
 
-        if(use_old_tsv_format):
-            tsv_writer.writerow(["id", "target_verse", "text"]) #OLD WAY
-        else:
-            tsv_writer.writerow(["id", "source_verse", "text"]) #NEXT GEN
+        tsv_writer.writerow(["id", "source_verse", "text"]) #NEXT GEN
 
         for row in corpus:#.tokenize(tokenizer).nfc_normalize()    
 
@@ -47,24 +44,18 @@ def corpus_to_verse_level_tsv(targetVersification:Versification, sourceVersifica
             sourceBcv = fromubs(f"{re.sub(r'[^0-9]', '', sourceVref.bbbcccvvvs)}00000").to_bcvid
             rowBcv= fromubs(f"{re.sub(r'[^0-9]', '', row.ref.bbbcccvvvs)}00000").to_bcvid
             
-            if(use_old_tsv_format):
-                tsv_writer.writerow([f"{sourceBcv}", f"{rowBcv}", row.text ]) #OLD WAY
-            else:
-                tsv_writer.writerow([f"{rowBcv}", f"{sourceBcv}", row.text ]) #NEXT GEN
+            tsv_writer.writerow([f"{rowBcv}", f"{sourceBcv}", row.text ]) #NEXT GEN
 
 def corpus_to_word_level_tsv(targetVersification:Versification, sourceVersification:Versification, corpus:ScriptureTextCorpus, tokenizer:WhitespaceTokenizer, 
-                  project_name:str, language:str, use_old_tsv_format:bool = False, excludeBracketedText:bool = False):
+                  project_name:str, language:str, excludeBracketedText:bool = False):
 
-    outputFileName = get_target_file_location(use_old_tsv_format, "TSVs", project_name, language)
+    outputFileName = get_target_file_location("TSVs", project_name, language)
 
     os.makedirs(os.path.dirname(outputFileName), exist_ok=True)
     with open(outputFileName, 'w', newline='', encoding='utf-8') as out_file:
         tsv_writer = csv.writer(out_file, delimiter='\t')
 
-        if(use_old_tsv_format):
-            tsv_writer.writerow(["id", "target_verse", "text", "skip_space_after", "exclude"]) #OLD WAY
-        else:
-            tsv_writer.writerow(["id", "source_verse", "text", "skip_space_after", "exclude"]) #NEXT GEN
+        tsv_writer.writerow(["id", "source_verse", "text", "skip_space_after", "exclude"]) #NEXT GEN
 
         in_brackets = False
         for row in corpus.tokenize(tokenizer):#.tokenize(tokenizer).nfc_normalize() #Include for Double Tokenization    
@@ -126,10 +117,7 @@ def corpus_to_word_level_tsv(targetVersification:Versification, sourceVersificat
                 sourceBcv = fromubs(f"{re.sub(r'[^0-9]', '', sourceVref.bbbcccvvvs)}00000").to_bcvid
                 rowBcv= fromubs(f"{re.sub(r'[^0-9]', '', row.ref.bbbcccvvvs)}00000").to_bcvid
                 
-                if(use_old_tsv_format):
-                    tsv_writer.writerow([f"{sourceBcv}{wordIndexStr}", f"{rowBcv}", token, skip_space_after, exclude ]) #OLD WAY
-                else:
-                    tsv_writer.writerow([f"{rowBcv}{wordIndexStr}", f"{sourceBcv}", token, skip_space_after, exclude ]) #NEXT GEN
+                tsv_writer.writerow([f"{rowBcv}{wordIndexStr}", f"{sourceBcv}", token, skip_space_after, exclude ]) #NEXT GEN
                 
                 wordIndex += 1
                 

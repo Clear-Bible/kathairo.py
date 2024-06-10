@@ -28,10 +28,9 @@ with open(json_file) as json_data:
         #TODO combine with args_parser in main and abstract out args parsing to args_manager
         targetVersificationPath = jsonObject["targetVersificationPath"]
         projectName = jsonObject["projectName"]
-        oldTsvFormat = jsonObject.get("oldTsvFormat", False)
         language = jsonObject["language"]
         
-        outputFileLocation = get_target_file_location(oldTsvFormat, "TSVs", projectName, language)
+        outputFileLocation = get_target_file_location("TSVs", projectName, language)
         
         prompt_tsv_vrs = [outputFileLocation, targetVersificationPath, projectName, language]
         __tsv_vrs_name_files__.append(prompt_tsv_vrs)
