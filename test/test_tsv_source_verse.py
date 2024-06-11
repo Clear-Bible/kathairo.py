@@ -90,7 +90,7 @@ def test_mapped_verses_are_present(tsv_vrs_name_files):
         for row in data_frame.itertuples():
             source_verse = int(row.source_verse)      
             if(isinstance(row.source_verse_range_end, str)):
-                source_verse_range_end = int(row.source_verse_range_end)
+                source_verse_range_end = int(row.source_verse_range_end) + 1
             else:
                 source_verse_range_end = source_verse + 1 
             
