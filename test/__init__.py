@@ -4,6 +4,7 @@ import pandas as pd
 from helpers.strings import is_unicode_punctuation
 from machine.scripture import Versification
 from helpers.paths import get_target_file_location
+import os
 
 #__macula_greek_tsv_rows__ = []
 
@@ -28,11 +29,12 @@ with open(json_file) as json_data:
         #TODO combine with args_parser in main and abstract out args parsing to args_manager
         targetVersificationPath = jsonObject["targetVersificationPath"]
         projectName = jsonObject["projectName"]
-        oldTsvFormat = jsonObject.get("oldTsvFormat", False)
+        language = jsonObject["language"]
         
-        outputFileLocation = get_target_file_location(oldTsvFormat, "TSVs", projectName)
+        outputFileLocation = get_target_file_location("TSVs", projectName, language)
+        versification_issues_file = get_target_file_location("versification_issues", projectName+"_vrs_issues", language)
         
-        prompt_tsv_vrs = [outputFileLocation, targetVersificationPath, projectName]
+        prompt_tsv_vrs = [outputFileLocation, targetVersificationPath, projectName, language, versification_issues_file]
         __tsv_vrs_name_files__.append(prompt_tsv_vrs)
 
 
@@ -61,3 +63,6 @@ with open(json_file) as json_data:
 
 #for files in __tsv_vrs_name_files__:
 #    test_source_chapter_size(files)
+
+#for files in __tsv_vrs_name_files__:
+#    test_mapped_verses_are_present(files)

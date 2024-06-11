@@ -21,19 +21,19 @@ import re
 from helpers.strings import is_unicode_punctuation
 from Parsing.USFM.usfm_handlers import ModifiedTextRowCollector
 from helpers.paths import get_target_file_location
+import os
 
 def corpus_to_verse_level_tsv(targetVersification:Versification, sourceVersification:Versification, corpus:ScriptureTextCorpus, tokenizer:WhitespaceTokenizer, 
-                              project_name:str, use_old_tsv_format:bool = False, excludeBracketedText:bool = False):
+                              project_name:str, language:str, excludeBracketedText:bool = False):
 
-    outputFileName = get_target_file_location(use_old_tsv_format, "VerseText", project_name)
+    outputFileName = get_target_file_location("VerseText", project_name, language)
 
+    os.makedirs(os.path.dirname(outputFileName), exist_ok=True)
     with open(outputFileName, 'w', newline='', encoding='utf-8') as out_file:
         tsv_writer = csv.writer(out_file, delimiter='\t')
 
-        if(use_old_tsv_format):
-            tsv_writer.writerow(["id", "target_verse", "text"]) #OLD WAY
-        else:
-            tsv_writer.writerow(["id", "source_verse", "text"]) #NEXT GEN
+        tsv_writer.writerow(["id", "source_verse", "text","id_range_end", "source_verse_range_end"])
+        verse_range_list = []
 
         for row in corpus:#.tokenize(tokenizer).nfc_normalize()    
 
@@ -42,28 +42,34 @@ def corpus_to_verse_level_tsv(targetVersification:Versification, sourceVersifica
             
             sourceVref = targetVref
 
+            if(not row.is_in_range or row.is_range_start):
+                for verse_range_row in verse_range_list:
+                    verse_range_row.append(f"{rowBcv}")
+                    verse_range_row.append(f"{sourceBcv}")
+                    tsv_writer.writerow(verse_range_row)
+                verse_range_list.clear()
+
             sourceBcv = fromubs(f"{re.sub(r'[^0-9]', '', sourceVref.bbbcccvvvs)}00000").to_bcvid
             rowBcv= fromubs(f"{re.sub(r'[^0-9]', '', row.ref.bbbcccvvvs)}00000").to_bcvid
             
-            if(use_old_tsv_format):
-                tsv_writer.writerow([f"{sourceBcv}", f"{rowBcv}", row.text ]) #OLD WAY
-            else:
-                tsv_writer.writerow([f"{rowBcv}", f"{sourceBcv}", row.text ]) #NEXT GEN
+            if(row.text != "" and row.is_in_range):
+                verse_range_list.append([f"{rowBcv}", f"{sourceBcv}", row.text])
+            elif(row.text != ""):
+                tsv_writer.writerow([f"{rowBcv}", f"{sourceBcv}", row.text, "", ""])
 
 def corpus_to_word_level_tsv(targetVersification:Versification, sourceVersification:Versification, corpus:ScriptureTextCorpus, tokenizer:WhitespaceTokenizer, 
-                  project_name:str, use_old_tsv_format:bool = False, excludeBracketedText:bool = False):
+                  project_name:str, language:str, excludeBracketedText:bool = False):
 
-    outputFileName = get_target_file_location(use_old_tsv_format, "TSVs", project_name)
+    outputFileName = get_target_file_location("TSVs", project_name, language)
 
+    os.makedirs(os.path.dirname(outputFileName), exist_ok=True)
     with open(outputFileName, 'w', newline='', encoding='utf-8') as out_file:
         tsv_writer = csv.writer(out_file, delimiter='\t')
 
-        if(use_old_tsv_format):
-            tsv_writer.writerow(["id", "target_verse", "text", "skip_space_after", "exclude"]) #OLD WAY
-        else:
-            tsv_writer.writerow(["id", "source_verse", "text", "skip_space_after", "exclude"]) #NEXT GEN
+        tsv_writer.writerow(["id", "source_verse", "text", "skip_space_after", "exclude", "id_range_end", "source_verse_range_end"])
 
         in_brackets = False
+        verse_range_list = []
         for row in corpus.tokenize(tokenizer):#.tokenize(tokenizer).nfc_normalize() #Include for Double Tokenization    
 
             #if(row.is_in_range and row.text == ''):
@@ -79,6 +85,16 @@ def corpus_to_word_level_tsv(targetVersification:Versification, sourceVersificat
             sourceVref = targetVref
 
             wordIndex = 1
+            
+            if(not row.is_in_range or row.is_range_start):
+                for verse_range_row in verse_range_list:
+                    verse_range_row.append(f"{rowBcv}")
+                    verse_range_row.append(f"{sourceBcv}")
+                    tsv_writer.writerow(verse_range_row)
+                verse_range_list.clear()
+            
+            sourceBcv = fromubs(f"{re.sub(r'[^0-9]', '', sourceVref.bbbcccvvvs)}00000").to_bcvid
+            rowBcv= fromubs(f"{re.sub(r'[^0-9]', '', row.ref.bbbcccvvvs)}00000").to_bcvid
             
             for index in range(len(row.segment)):
             #for token in row.segment:#row.segment, tokenized_row:
@@ -117,16 +133,13 @@ def corpus_to_word_level_tsv(targetVersification:Versification, sourceVersificat
                 
                 if(token ==']'): #we are trusting that all brackets get their own row
                     in_brackets = False
-                
-                wordIndexStr = str(wordIndex).zfill(3)
 
-                sourceBcv = fromubs(f"{re.sub(r'[^0-9]', '', sourceVref.bbbcccvvvs)}00000").to_bcvid
-                rowBcv= fromubs(f"{re.sub(r'[^0-9]', '', row.ref.bbbcccvvvs)}00000").to_bcvid
+                wordIndexStr = str(wordIndex).zfill(3)
                 
-                if(use_old_tsv_format):
-                    tsv_writer.writerow([f"{sourceBcv}{wordIndexStr}", f"{rowBcv}", token, skip_space_after, exclude ]) #OLD WAY
-                else:
-                    tsv_writer.writerow([f"{rowBcv}{wordIndexStr}", f"{sourceBcv}", token, skip_space_after, exclude ]) #NEXT GEN
+                if(row.text != "" and row.is_in_range):
+                    verse_range_list.append([f"{rowBcv}{wordIndexStr}", f"{sourceBcv}", token, skip_space_after, exclude])
+                elif(row.text != ""):
+                        tsv_writer.writerow([f"{rowBcv}{wordIndexStr}", f"{sourceBcv}", token, skip_space_after, exclude, "", ""])
                 
                 wordIndex += 1
                 
@@ -141,12 +154,13 @@ if(__name__ == "__main__"):
     #excludeBracketedText = False
 
     #OCCB-Simplified
-    #targetVersification = Versification.load("./resources/occb_simplified_usx/release/versification.vrs", fallback_name="web")
-    #sourceVersification = Versification(name = "sourceVersification", base_versification=ORIGINAL_VERSIFICATION)
-    #corpus = UsxFileTextCorpus("./resources/occb_simplified_usx/release/USX_1", versification = targetVersification)
-    #tokenizer = ChineseBibleWordTokenizer.ChineseBibleWordTokenizer()
-    #project_name = "OCCB-simplified"
-    #excludeBracketedText = False
+    targetVersification = Versification.load("./resources/man/occb_simplified_usx/release/versification.vrs", fallback_name="web")
+    sourceVersification = Versification(name = "sourceVersification", base_versification=ORIGINAL_VERSIFICATION)
+    corpus = UsxFileTextCorpus("./resources/man/occb_simplified_usx/release/USX_1", versification = targetVersification)
+    tokenizer = ChineseBibleWordTokenizer.ChineseBibleWordTokenizer()
+    project_name = "OCCB-simplified"
+    excludeBracketedText = False
+    language="man"
 
     #ONAV
     #targetVersification = Versification.load("./resources/onav_usx/release/versification.vrs", fallback_name="web")
@@ -191,12 +205,21 @@ if(__name__ == "__main__"):
     #project_name="RSB-SYNO"
     
     #IRV
-    targetVersification = Versification.load("./resources/IRV/versification.vrs", fallback_name="web")
-    sourceVersification = Versification(name = "sourceVersification", base_versification=ORIGINAL_VERSIFICATION)
-    corpus = UsfmFileTextCorpus("./resources/IRV", versification = targetVersification)
-    tokenizer = LatinWordTokenizer()
-    project_name="IRV"
-    excludeBracketedText = False
+    #targetVersification = Versification.load("./resources/IRV/versification.vrs", fallback_name="web")
+    #sourceVersification = Versification(name = "sourceVersification", base_versification=ORIGINAL_VERSIFICATION)
+    #corpus = UsfmFileTextCorpus("./resources/IRV", versification = targetVersification)
+    #tokenizer = LatinWordTokenizer()
+    #project_name="IRV"
+    #excludeBracketedText = False
+    
+    #LSG
+    #sourceVersification = Versification(name = "sourceVersification", base_versification=ORIGINAL_VERSIFICATION)
+    #project_name="LSG"
+    #targetVersification = Versification.load("./resources/fra/fra-LSG_usfm/versification.vrs", fallback_name="web")
+    #corpus = UsfmFileTextCorpus("./resources/fra/fra-LSG_usfm", versification = targetVersification, handler=ModifiedTextRowCollector)
+    #language = "fra"
+    #tokenizer = LatinWhitespaceIncludedWordTokenizer(language=language)
+    #excludeBracketedText = False
 
-    corpus_to_word_level_tsv(targetVersification, sourceVersification, corpus, tokenizer, project_name, excludeBracketedText=excludeBracketedText)
-    #corpus_to_verse_level_tsv(targetVersification, sourceVersification, corpus, tokenizer, project_name)
+    #corpus_to_word_level_tsv(targetVersification, sourceVersification, corpus, tokenizer, project_name, excludeBracketedText=excludeBracketedText, language=language)
+    corpus_to_verse_level_tsv(targetVersification, sourceVersification, corpus, tokenizer, project_name, language=language)

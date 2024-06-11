@@ -20,6 +20,8 @@ argumentParser.add_argument("-n", "--projectName", type=str, required=True)
 #add bunch of parameters for the default versification schemes included in machine and make target versification a mutually exclusive argument group
 argumentParser.add_argument("-tv", "--targetVersificationPath", type=str, required=True)
 
+argumentParser.add_argument("-lg", "--language", type=str, required=True)
+
 corpusGroup = argumentParser.add_mutually_exclusive_group(required=True)
 corpusGroup.add_argument("-uf", "--targetUsfmCorpusPath", type=str)
 corpusGroup.add_argument("-ux", "--targetUsxCorpusPath", type=str)
@@ -28,8 +30,6 @@ tokenizerGroup = argumentParser.add_mutually_exclusive_group(required=True)
 tokenizerGroup.add_argument("-zh", "--chineseTokenizer", action='store_true')
 tokenizerGroup.add_argument("-lt", "--latinTokenizer", action='store_true')
 tokenizerGroup.add_argument("-lw", "--latinWhiteSpaceIncludedTokenizer", action='store_true')
-
-argumentParser.add_argument("-of", "--oldTsvFormat", action='store_true') #optional
 
 argumentParser.add_argument("-xb", "--excludeBracketedText", action='store_true') #optional
 
@@ -58,20 +58,21 @@ if(args.chineseTokenizer == True):
 if(args.latinTokenizer == True):
     tokenizer = LatinWordTokenizer(treat_apostrophe_as_single_quote=True)
 if(args.latinWhiteSpaceIncludedTokenizer == True):
-    tokenizer = LatinWhitespaceIncludedWordTokenizer(treat_apostrophe_as_single_quote=True)
+    tokenizer = LatinWhitespaceIncludedWordTokenizer(treat_apostrophe_as_single_quote=True,
+                                                     language = args.language)
 
 build_tsv.corpus_to_word_level_tsv(targetVersification = targetVersification, 
                                     sourceVersification = sourceVersification, 
                                     corpus = corpus, 
                                     tokenizer = tokenizer, 
                                     project_name = projectName, 
-                                    use_old_tsv_format = args.oldTsvFormat,
-                                    excludeBracketedText = args.excludeBracketedText)  
+                                    excludeBracketedText = args.excludeBracketedText,
+                                    language = args.language)  
 
 build_tsv.corpus_to_verse_level_tsv(targetVersification = targetVersification, 
                                     sourceVersification = sourceVersification, 
                                     corpus = corpus, 
                                     tokenizer = tokenizer, 
                                     project_name = projectName, 
-                                    use_old_tsv_format = args.oldTsvFormat,
-                                    excludeBracketedText = args.excludeBracketedText)    
+                                    excludeBracketedText = args.excludeBracketedText,
+                                    language = args.language)    

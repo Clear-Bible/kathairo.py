@@ -8,9 +8,10 @@ import regex as re
 from machine.annotations.range import Range
 from machine.utils.string_utils import is_control, is_punctuation, is_symbol
 from .whitespace_included_tokenizer import WhitespaceIncludedTokenizer
+from spacy.lang.fr.tokenizer_exceptions import FR_BASE_EXCEPTIONS
 
 INNER_WORD_PUNCT_REGEX = re.compile(
-    r"[&\-:=?@\xAD\xB7\u2010\u2011\u2027]|['_]+",
+    r"[&\-:=?@\xAD\xB7\u2010\u2011\u2027]+|['_]+",
 )
 URL_REGEX = re.compile(r"(?:[\w-]+://?|www[.])[^\s()<>]+(?:[\w\d]+|(?:[^\p{P}\s]|/))", re.IGNORECASE)
 
@@ -24,13 +25,18 @@ NUMBER_PERIOD_REGEX = re.compile(
 )
 
 RIGHT_SINGLE_QUOTE_AS_APOSTROPHE_REGEX = re.compile(
-    r"(?<=[A-Za-z])’(?=[A-Za-z])"
+    r"(?<=\p{L})’(?=\p{L})"
+)
+
+CONTRACTION_WORD_REGEX = re.compile(
+    r"\b\w+(?:[\'\w\’]+)?\b"
 )
 
 class LatinWhitespaceIncludedWordTokenizer(WhitespaceIncludedTokenizer): #uses WhitepspaceIncludedTokenizer
-    def __init__(self, abbreviations: Iterable[str] = [], treat_apostrophe_as_single_quote: bool = False) -> None:
+    def __init__(self, abbreviations: Iterable[str] = [], treat_apostrophe_as_single_quote: bool = False, language:str = None) -> None:
         self._abbreviations = {a.lower() for a in abbreviations}
         self.treat_apostrophe_as_single_quote = treat_apostrophe_as_single_quote
+        self.language = language
 
     def tokenize_as_ranges(self, data: str, data_range: Optional[Range[int]] = None) -> Iterable[Range[int]]:
         if data_range is None:
@@ -116,15 +122,20 @@ class LatinWhitespaceIncludedWordTokenizer(WhitespaceIncludedTokenizer): #uses W
                 if is_number_period_match is not None:# and not match_is_number_comma:
                     ctxt.inner_word_punct = ctxt.index
                     group = is_number_period_match.group()
-                    ctxt.index += len(group)+1
+                    ctxt.index += len(group)
                     return token_ranges
                 
                 is_right_single_quote_apostrophe = RIGHT_SINGLE_QUOTE_AS_APOSTROPHE_REGEX.search(substring)
 
-                if is_right_single_quote_apostrophe is not None:# and not match_is_number_comma:
-                    ctxt.inner_word_punct = ctxt.index
+                if is_right_single_quote_apostrophe is not None:
                     group = is_right_single_quote_apostrophe.group()
+                    ctxt.inner_word_punct = ctxt.index
                     ctxt.index += len(group)
+                    if(self.language == "fra"):
+                        contraction_token = CONTRACTION_WORD_REGEX.match(data, ctxt.word_start).group().replace("’","'")
+                        if(contraction_token not in FR_BASE_EXCEPTIONS):
+                            token_ranges = (Range.create(ctxt.word_start, ctxt.index),None)
+                            ctxt.word_start = -1
                     return token_ranges
                 #end of changes
 
