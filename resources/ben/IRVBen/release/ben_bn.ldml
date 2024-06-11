@@ -1,0 +1,101 @@
+﻿<ldml>
+  <identity>
+    
+    
+    
+  <version number="" /><generation date="0001-01-01T00:00:00Z" /><language type="bn" /></identity>
+  <characters>
+    
+    <special xmlns:sil="urn://www.sil.org/ldml/0.1">
+      
+      
+      
+      
+      
+      
+    <sil:exemplarCharacters type="diacritics">[]</sil:exemplarCharacters><sil:exemplarCharacters type="wordFormingPunctuation">[\-]</sil:exemplarCharacters><sil:exemplarCharacters type="footnotes">[a b c d e f g h i j k l m n o p q r s t u v w x y z]</sil:exemplarCharacters><sil:exemplarCharacters type="crossrefs">[†]</sil:exemplarCharacters><sil:exemplarCharacters type="verseSegments">[a b c d e f g h i j k l m n o p q r s t u v w x y z {aa} {bb} {cc} {dd} {ee} {ff} {gg} {hh} {ii} {jj} {kk} {ll} {mm} {nn} {oo} {pp} {qq} {rr} {ss} {tt} {uu} {vv} {ww} {xx} {yy} {zz}]</sil:exemplarCharacters><sil:exemplarCharacters type="wordBreaks">[]</sil:exemplarCharacters></special>
+    
+  <exemplarCharacters>[\u0981-\u0983\u0985-\u098B\u098F\u0990\u0993-\u09A8\u09AA-\u09B0\u09B2\u09B6-\u09B9\u09DF{\u0995\u09CD\u09B7}]</exemplarCharacters><exemplarCharacters type="punctuation">[!"(-*,-/\:-&lt;&gt;?\[\]`\{-\}\u0964\u200C\u200D\u2013\u2014\u2018\u2019\u201C\u201D]</exemplarCharacters></characters>
+  <delimiters>
+    
+    
+    
+    
+    <special xmlns:sil="urn://www.sil.org/ldml/0.1">
+      <sil:matched-pairs>
+        
+        
+        
+      <sil:matched-pair open="(" close=")" paraClose="false" /><sil:matched-pair open="[" close="]" paraClose="false" /><sil:matched-pair open="{" close="}" paraClose="false" /></sil:matched-pairs>
+      <sil:quotation-marks paraContinueType="all">
+        
+        
+        
+        
+        
+        
+      <sil:quotationContinue>“</sil:quotationContinue><sil:alternateQuotationContinue>‘</sil:alternateQuotationContinue><sil:quotation open="“" close="”" continue="“" level="3" /><sil:quotation open="" continue="“" level="1" type="narrative" /><sil:quotation open="" continue="‘" level="2" type="narrative" /><sil:quotation open="" continue="“" level="3" type="narrative" /></sil:quotation-marks>
+    </special>
+  <quotationStart>“</quotationStart><quotationEnd>”</quotationEnd><alternateQuotationStart>‘</alternateQuotationStart><alternateQuotationEnd>’</alternateQuotationEnd></delimiters>
+  <layout>
+    <orientation>
+      
+    <characterOrder>left-to-right</characterOrder></orientation>
+  </layout>
+  <collations>
+    <defaultCollation>standard</defaultCollation>
+    
+  <collation type="standard"><cr><![CDATA[&[before 1] [first regular] < অ < আ < ই < ঈ < উ < ঊ < ঋ < এ < ঐ < ও < ঔ < ক < খ < গ < ঘ < ঙ < চ < ছ < জ < ঝ < ঞ < ট < ঠ < ড < ঢ < ণ < ত < থ < দ < ধ < ন < প < ফ < ব < ভ < ম < য < র < ল < শ < ষ < স < হ < ক্ষ < য় < ং < ঃ < ঁ]]></cr><special xmlns:sil="urn://www.sil.org/ldml/0.1"><sil:simple><![CDATA[অ
+আ
+ই
+ঈ
+উ
+ঊ
+ঋ
+এ
+ঐ
+ও
+ঔ
+ক
+খ
+গ
+ঘ
+ঙ
+চ
+ছ
+জ
+ঝ
+ঞ
+ট
+ঠ
+ড
+ঢ
+ণ
+ত
+থ
+দ
+ধ
+ন
+প
+ফ
+ব
+ভ
+ম
+য
+র
+ল
+শ
+ষ
+স
+হ
+ক্ষ
+য়
+ং
+ঃ
+ঁ]]></sil:simple></special></collation></collations>
+  <special xmlns:sil="urn://www.sil.org/ldml/0.1">
+    <sil:external-resources>
+      
+    <sil:font name="Kalpurush" size="1.6" /></sil:external-resources>
+  </special>
+</ldml>
