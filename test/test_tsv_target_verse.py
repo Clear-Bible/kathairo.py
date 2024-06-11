@@ -24,7 +24,7 @@ def test_mapped_verses_are_present(tsv_vrs_name_files):
         for row in data_frame.itertuples():
             id = int(row.id[:8])      
             if(isinstance(row.id_range_end, str)):
-                id_range_end = int(row.id_range_end[:8])
+                id_range_end = int(row.id_range_end[:8]) + 1 
             else:
                 id_range_end = id + 1 
             

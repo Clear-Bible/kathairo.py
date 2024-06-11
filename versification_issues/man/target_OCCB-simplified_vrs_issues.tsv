@@ -1,10 +1,3 @@
-source_verse	mapping	missing_verse	OCCB-simplified	003005022
-source_verse	mapping	missing_verse	OCCB-simplified	005013014
-source_verse	mapping	missing_verse	OCCB-simplified	005013019
-source_verse	mapping	missing_verse	OCCB-simplified	019076010
-source_verse	mapping	missing_verse	OCCB-simplified	019080003
-source_verse	mapping	missing_verse	OCCB-simplified	019092004
-source_verse	mapping	missing_verse	OCCB-simplified	019102023
 source_verse	size	missing_verse	OCCB-simplified	01014
 source_verse	size	missing_verse	OCCB-simplified	04025
 source_verse	size	missing_verse	OCCB-simplified	06021
@@ -27,13 +20,6 @@ source_verse	size	missing_verse	OCCB-simplified	43004
 source_verse	size	missing_verse	OCCB-simplified	43007
 source_verse	size	extra_verse	OCCB-simplified	47013
 source_verse	size	missing_verse	OCCB-simplified	60003
-target_verse	mapping	missing_verse	OCCB-simplified	003006003
-target_verse	mapping	missing_verse	OCCB-simplified	005013013
-target_verse	mapping	missing_verse	OCCB-simplified	005013018
-target_verse	mapping	missing_verse	OCCB-simplified	019076009
-target_verse	mapping	missing_verse	OCCB-simplified	019080002
-target_verse	mapping	missing_verse	OCCB-simplified	019092003
-target_verse	mapping	missing_verse	OCCB-simplified	019102022
 target_verse	size	missing_verse	OCCB-simplified	01014
 target_verse	size	missing_verse	OCCB-simplified	06021
 target_verse	size	missing_verse	OCCB-simplified	07003
