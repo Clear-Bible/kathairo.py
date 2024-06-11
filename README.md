@@ -47,13 +47,7 @@ LSG - USFM
 LSG - USX
     https://github.com/Clear-Bible/internal-Alignments/tree/main/data/USX/fra-LSG
 
-HCV - USFM
-    https://open.bible/bibles/hindi-biblica-text-bible/
-
-HCV (revision, not included) - USFM
-    from Pieter
-
-HCV (revision, not included) - USX
+OHCV (revision) - USFM
     from Pieter
 
 OCCB-simplified - USX
