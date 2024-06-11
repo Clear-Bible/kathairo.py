@@ -53,6 +53,9 @@ OHCV (revision) - USFM
 OCCB-simplified - USX
     https://app.thedigitalbiblelibrary.org/entry/download_listing?id=7ea794434e9ea7ee&license=42445&revision=
 
+IRVHin - USFM
+    https://github.com/Clear-Bible/internal-Alignments/tree/main/data/IRV/clean_usfm
+
 RSB - USFM
     from Sean / Dima at TextTree
 
