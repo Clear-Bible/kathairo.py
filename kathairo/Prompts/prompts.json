@@ -28,7 +28,7 @@
     "language": "fra"
   },
   {
-    "projectName": "IRV",
+    "projectName": "IRVHin",
     "targetVersificationPath": "./resources/hin/IRV/versification.vrs",
     "targetUsfmCorpusPath": "./resources/hin/IRV",
     "latinWhiteSpaceIncludedTokenizer": true,
