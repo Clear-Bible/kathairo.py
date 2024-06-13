@@ -23,12 +23,15 @@ class ModifiedTextRowCollector(_TextRowCollector):
         return self._rows
 
     def text(self, state: UsfmParserState, text: str) -> None:
+        if(state.verse_ref.book == "PSA" and state.verse_ref.chapter == "142"):
+            stop = True
+        
         #includes superscription text
-        if(state.prev_token is not None and state.prev_token.marker == "d" and state.verse_ref.book == "PSA" and state.verse_ref.bbbcccvvvs != "019119000"):
+        if(state.prev_token is not None and (state.prev_token.marker == "s" or state.prev_token.marker == "d") and state.verse_ref.book == "PSA" and state.verse_ref.bbbcccvvvs != "019119000"):
             if self is not None:
                 self.verse(state, 0, "v", 0, 0)
         
-        if self._verse_ref is None or not state.is_verse_para:
+        if self._verse_ref is None or not state.is_verse_para:# and state.prev_token.marker != "s"):
             return
 
         if self._text._include_markers:
