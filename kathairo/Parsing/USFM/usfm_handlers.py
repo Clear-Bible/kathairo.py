@@ -27,11 +27,11 @@ class ModifiedTextRowCollector(_TextRowCollector):
             stop = True
         
         #includes superscription text
-        if(state.prev_token is not None and (state.prev_token.marker == "s" or state.prev_token.marker == "d") and state.verse_ref.book == "PSA" and state.verse_ref.bbbcccvvvs != "019119000"):
+        if(state.prev_token is not None and (state.prev_token.marker == "s" or state.prev_token.marker == "d") and state.verse_ref.book == "PSA" and (state.verse_ref.bbbcccvvvs != "019119000" and state.verse_ref.bbbcccvvvs != "019107000")):
             if self is not None:
                 self.verse(state, 0, "v", 0, 0)
         
-        if self._verse_ref is None or not state.is_verse_para:# and state.prev_token.marker != "s"):
+        if self._verse_ref is None or (not state.is_verse_para and state.prev_token.marker != "s"):
             return
 
         if self._text._include_markers:
@@ -43,7 +43,7 @@ class ModifiedTextRowCollector(_TextRowCollector):
                     self._next_para_tokens.clear()
                     self._next_para_text_started = True
                 self._verse_text += text
-        elif state.is_verse_text and len(text) > 0:
+        elif (state.is_verse_text or (state.prev_token.marker == "s" and state.verse_ref.book == "PSA")) and len(text) > 0:
             if (
                 state.prev_token is not None
                 and state.prev_token.type == UsfmTokenType.END
