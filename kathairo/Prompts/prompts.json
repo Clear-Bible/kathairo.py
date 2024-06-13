@@ -14,6 +14,14 @@
     "language": "arb"
   },
   {
+    "projectName": "IRVAsm",
+    "targetVersificationPath": "./resources/asm/IRVAsm/release/versification.vrs",
+    "targetUsfmCorpusPath": "./resources/asm/IRVAsm/release/USX_1",
+    "latinWhiteSpaceIncludedTokenizer": true,
+    "language": "asm",
+    "psalmSuperscriptionTag": "s"
+  },
+  {
     "projectName": "IRVBen",
     "targetVersificationPath": "./resources/ben/IRVBen/release/versification.vrs",
     "targetUsfmCorpusPath": "./resources/ben/IRVBen/release/USX_1",
