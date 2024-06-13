@@ -206,13 +206,13 @@ if(__name__ == "__main__"):
     #project_name="RSB-SYNO"
     
     #IRV
-    targetVersification = Versification.load("./resources/hin/IRVHin/versification.vrs", fallback_name="web")
-    sourceVersification = Versification(name = "sourceVersification", base_versification=ORIGINAL_VERSIFICATION)
-    corpus = UsfmFileTextCorpus("./resources/hin/IRVHin", versification = targetVersification, handler=ModifiedTextRowCollector)
-    language="hin"
-    tokenizer = LatinWhitespaceIncludedWordTokenizer(language=language)
-    project_name="IRVHin"
-    excludeBracketedText = False
+    #targetVersification = Versification.load("./resources/hin/IRVHin/versification.vrs", fallback_name="web")
+    #sourceVersification = Versification(name = "sourceVersification", base_versification=ORIGINAL_VERSIFICATION)
+    #language="hin"
+    #corpus = UsfmFileTextCorpus("./resources/hin/IRVHin", versification = targetVersification, handler=ModifiedTextRowCollector(), psalmSuperscriptionTag = "d")
+    #tokenizer = LatinWhitespaceIncludedWordTokenizer(language=language)
+    #project_name="IRVHin"
+    #excludeBracketedText = False
     
     #LSG
     #sourceVersification = Versification(name = "sourceVersification", base_versification=ORIGINAL_VERSIFICATION)
@@ -224,13 +224,13 @@ if(__name__ == "__main__"):
     #excludeBracketedText = False
     
     #IRVBen
-    #targetVersification = Versification.load("./resources/ben/IRVBen/release/versification.vrs", fallback_name="web")
-    #sourceVersification = Versification(name = "sourceVersification", base_versification=ORIGINAL_VERSIFICATION)
-    #corpus = UsfmFileTextCorpus("./resources/ben/IRVBen/release/USX_1", versification = targetVersification, handler=ModifiedTextRowCollector)
-    #language="ben"
-    #tokenizer = LatinWhitespaceIncludedWordTokenizer(language=language)
-    #project_name = "IRVBen"
-    #excludeBracketedText = False
+    targetVersification = Versification.load("./resources/ben/IRVBen/release/versification.vrs", fallback_name="web")
+    sourceVersification = Versification(name = "sourceVersification", base_versification=ORIGINAL_VERSIFICATION)
+    corpus = UsfmFileTextCorpus("./resources/ben/IRVBen/release/USX_1", versification = targetVersification, handler=ModifiedTextRowCollector, psalmSuperscriptionTag = "s")
+    language="ben"
+    tokenizer = LatinWhitespaceIncludedWordTokenizer(language=language)
+    project_name = "IRVBen"
+    excludeBracketedText = False
     
 
     corpus_to_word_level_tsv(targetVersification, sourceVersification, corpus, tokenizer, project_name, excludeBracketedText=excludeBracketedText, language=language)

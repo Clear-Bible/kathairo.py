@@ -17,6 +17,7 @@ class ModifiedUsfmTextBase(UsfmTextBase):
         stylesheet: UsfmStylesheet,
         encoding: str,
         handler: UsfmParserHandler,
+        psalmSuperscriptionTag: str,
         versification: Optional[Versification],
         include_markers: bool,
     ) -> None:
@@ -25,12 +26,13 @@ class ModifiedUsfmTextBase(UsfmTextBase):
         self._stylesheet = stylesheet
         self._encoding = encoding
         self.handler = handler #passes in handler
+        self.psalm_superscription_tag = psalmSuperscriptionTag
         self._include_markers = include_markers
 
     def _get_rows(self) -> Generator[TextRow, None, None]:
         usfm = self._read_usfm()
         row_collector = _TextRowCollector(self)
         if(self.handler is not None): #uses handler if not None
-            row_collector = self.handler(self)
+            row_collector = self.handler(self, psalm_superscription_tag = self.psalm_superscription_tag)
         parse_usfm(usfm, row_collector, self._stylesheet, self.versification, preserve_whitespace=self._include_markers)
         return gen(row_collector.rows)

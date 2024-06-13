@@ -33,6 +33,8 @@ tokenizerGroup.add_argument("-lw", "--latinWhiteSpaceIncludedTokenizer", action=
 
 argumentParser.add_argument("-xb", "--excludeBracketedText", action='store_true') #optional
 
+argumentParser.add_argument("-ps", "--psalmSuperscriptionTag", type=str) #optional
+
 args = argumentParser.parse_args()
 
 #print(args.targetVersificationPath)
@@ -48,8 +50,13 @@ sourceVersification = Versification(name = "sourceVersification", base_versifica
 
 targetVersification = Versification.load(args.targetVersificationPath, fallback_name="web")
 
+if(args.psalmSuperscriptionTag is None):
+    psalmSuperscriptionTag = "d"
+else:
+    psalmSuperscriptionTag = args.psalmSuperscriptionTag
+
 if(args.targetUsfmCorpusPath is not None):
-    corpus = UsfmFileTextCorpus(args.targetUsfmCorpusPath, handler = ModifiedTextRowCollector, versification = targetVersification)
+    corpus = UsfmFileTextCorpus(args.targetUsfmCorpusPath, handler = ModifiedTextRowCollector, versification = targetVersification, psalmSuperscriptionTag = psalmSuperscriptionTag)
 if(args.targetUsxCorpusPath is not None):
     corpus = UsxFileTextCorpus(args.targetUsxCorpusPath, versification = targetVersification)
 

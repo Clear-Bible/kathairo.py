@@ -9,7 +9,7 @@ from machine.corpora.usfm_text_base import UsfmTextBase
 from machine.corpora.usfm_text_base import _TextRowCollector
 
 class ModifiedTextRowCollector(_TextRowCollector):
-    def __init__(self, text: UsfmTextBase) -> None:
+    def __init__(self, text: UsfmTextBase, psalm_superscription_tag: str = "d") -> None:
         self._text = text
         self._rows: List[TextRow] = []
         self._verse_text = ""
@@ -17,6 +17,7 @@ class ModifiedTextRowCollector(_TextRowCollector):
         self._verse_ref: Optional[VerseRef] = None
         self._sentence_start: bool = False
         self._next_para_text_started = False
+        self._psalm_superscription_tag = psalm_superscription_tag
 
     @property
     def rows(self) -> Iterable[TextRow]:
@@ -24,12 +25,10 @@ class ModifiedTextRowCollector(_TextRowCollector):
 
     def text(self, state: UsfmParserState, text: str) -> None:
         
-        #TODO have the prompts pass in what tag is used for psalm superscriptions
-        
         is_psalm_superscription = False
         
         if(state.prev_token is not None):
-            is_psalm_superscription = ((state.prev_token.marker == "s" or state.prev_token.marker == "d") 
+            is_psalm_superscription = ((state.prev_token.marker == self._psalm_superscription_tag) 
                                     and state.verse_ref.book == "PSA" 
                                     and (state.verse_ref.bbbcccvvvs != "019119000" and state.verse_ref.bbbcccvvvs != "019107000"))
         
