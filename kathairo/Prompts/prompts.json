@@ -26,8 +26,7 @@
     "targetVersificationPath": "./resources/ben/IRVBen/release/versification.vrs",
     "targetUsfmCorpusPath": "./resources/ben/IRVBen/release/USX_1",
     "latinWhiteSpaceIncludedTokenizer": true,
-    "language": "ben",
-    "psalmSuperscriptionTag": "s"
+    "language": "ben"
   },
   {
     "projectName": "BSB",
