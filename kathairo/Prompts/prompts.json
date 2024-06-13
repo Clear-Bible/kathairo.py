@@ -14,6 +14,14 @@
     "language": "arb"
   },
   {
+    "projectName": "IRVBen",
+    "targetVersificationPath": "./resources/ben/IRVBen/release/versification.vrs",
+    "targetUsfmCorpusPath": "./resources/ben/IRVBen/release/USX_1",
+    "latinWhiteSpaceIncludedTokenizer": true,
+    "language": "ben",
+    "psalmSuperscriptionTag": "s"
+  },
+  {
     "projectName": "BSB",
     "targetVersificationPath": "./resources/eng/bsb_usfm/versification.vrs",
     "targetUsfmCorpusPath": "./resources/eng/bsb_usfm",
@@ -29,8 +37,8 @@
   },
   {
     "projectName": "IRVHin",
-    "targetVersificationPath": "./resources/hin/IRV/versification.vrs",
-    "targetUsfmCorpusPath": "./resources/hin/IRV",
+    "targetVersificationPath": "./resources/hin/IRVHin/versification.vrs",
+    "targetUsfmCorpusPath": "./resources/hin/IRVHin",
     "latinWhiteSpaceIncludedTokenizer": true,
     "language": "hin"
   },

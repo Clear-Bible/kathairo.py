@@ -146,21 +146,22 @@ def corpus_to_word_level_tsv(targetVersification:Versification, sourceVersificat
 
 if(__name__ == "__main__"):
     #BSB
-    #targetVersification = Versification.load("./resources/bsb_usx/release/versification.vrs", fallback_name="web")
+    #targetVersification = Versification.load("./resources/eng/bsb_usfm/versification.vrs", fallback_name="web")
     #sourceVersification = Versification(name = "sourceVersification", base_versification=ORIGINAL_VERSIFICATION)
-    #corpus = UsfmFileTextCorpus("./resources/bsb_usfm", handler=ModifiedTextRowCollector, versification = targetVersification)
-    #tokenizer = LatinWhitespaceIncludedWordTokenizer()
+    #corpus = UsfmFileTextCorpus("./resources/eng/bsb_usfm", handler=ModifiedTextRowCollector, versification = targetVersification)
+    #language = "eng"
+    #tokenizer = LatinWhitespaceIncludedWordTokenizer(language=language)
     #project_name = "BSB"
     #excludeBracketedText = False
 
     #OCCB-Simplified
-    targetVersification = Versification.load("./resources/man/occb_simplified_usx/release/versification.vrs", fallback_name="web")
-    sourceVersification = Versification(name = "sourceVersification", base_versification=ORIGINAL_VERSIFICATION)
-    corpus = UsxFileTextCorpus("./resources/man/occb_simplified_usx/release/USX_1", versification = targetVersification)
-    tokenizer = ChineseBibleWordTokenizer.ChineseBibleWordTokenizer()
-    project_name = "OCCB-simplified"
-    excludeBracketedText = False
-    language="man"
+    #targetVersification = Versification.load("./resources/man/occb_simplified_usx/release/versification.vrs", fallback_name="web")
+    #sourceVersification = Versification(name = "sourceVersification", base_versification=ORIGINAL_VERSIFICATION)
+    #corpus = UsxFileTextCorpus("./resources/man/occb_simplified_usx/release/USX_1", versification = targetVersification)
+    #tokenizer = ChineseBibleWordTokenizer.ChineseBibleWordTokenizer()
+    #project_name = "OCCB-simplified"
+    #excludeBracketedText = False
+    #language="man"
 
     #ONAV
     #targetVersification = Versification.load("./resources/onav_usx/release/versification.vrs", fallback_name="web")
@@ -205,11 +206,12 @@ if(__name__ == "__main__"):
     #project_name="RSB-SYNO"
     
     #IRV
-    #targetVersification = Versification.load("./resources/IRV/versification.vrs", fallback_name="web")
+    #targetVersification = Versification.load("./resources/hin/IRVHin/versification.vrs", fallback_name="web")
     #sourceVersification = Versification(name = "sourceVersification", base_versification=ORIGINAL_VERSIFICATION)
-    #corpus = UsfmFileTextCorpus("./resources/IRV", versification = targetVersification)
-    #tokenizer = LatinWordTokenizer()
-    #project_name="IRV"
+    #language="hin"
+    #corpus = UsfmFileTextCorpus("./resources/hin/IRVHin", versification = targetVersification, handler=ModifiedTextRowCollector(), psalmSuperscriptionTag = "d")
+    #tokenizer = LatinWhitespaceIncludedWordTokenizer(language=language)
+    #project_name="IRVHin"
     #excludeBracketedText = False
     
     #LSG
@@ -220,6 +222,16 @@ if(__name__ == "__main__"):
     #language = "fra"
     #tokenizer = LatinWhitespaceIncludedWordTokenizer(language=language)
     #excludeBracketedText = False
+    
+    #IRVBen
+    targetVersification = Versification.load("./resources/ben/IRVBen/release/versification.vrs", fallback_name="web")
+    sourceVersification = Versification(name = "sourceVersification", base_versification=ORIGINAL_VERSIFICATION)
+    corpus = UsfmFileTextCorpus("./resources/ben/IRVBen/release/USX_1", versification = targetVersification, handler=ModifiedTextRowCollector, psalmSuperscriptionTag = "s")
+    language="ben"
+    tokenizer = LatinWhitespaceIncludedWordTokenizer(language=language)
+    project_name = "IRVBen"
+    excludeBracketedText = False
+    
 
-    #corpus_to_word_level_tsv(targetVersification, sourceVersification, corpus, tokenizer, project_name, excludeBracketedText=excludeBracketedText, language=language)
-    corpus_to_verse_level_tsv(targetVersification, sourceVersification, corpus, tokenizer, project_name, language=language)
+    corpus_to_word_level_tsv(targetVersification, sourceVersification, corpus, tokenizer, project_name, excludeBracketedText=excludeBracketedText, language=language)
+    #corpus_to_verse_level_tsv(targetVersification, sourceVersification, corpus, tokenizer, project_name, language=language)

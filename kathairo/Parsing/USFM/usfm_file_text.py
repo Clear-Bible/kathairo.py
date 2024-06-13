@@ -17,10 +17,11 @@ class UsfmFileText(ModifiedUsfmTextBase):
         encoding: str,
         filename: StrPath,
         handler: UsfmParserHandler,
+        psalmSuperscriptionTag: str, 
         versification: Optional[Versification] = None,
         include_markers: bool = False,
     ) -> None:
-        super().__init__(_get_id(filename, encoding), stylesheet, encoding, handler, versification, include_markers) #passes in handler
+        super().__init__(_get_id(filename, encoding), stylesheet, encoding, handler, psalmSuperscriptionTag, versification, include_markers) #passes in handler
 
         self._filename = Path(filename)
 
