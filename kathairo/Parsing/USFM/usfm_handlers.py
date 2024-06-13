@@ -24,15 +24,19 @@ class ModifiedTextRowCollector(_TextRowCollector):
 
     def text(self, state: UsfmParserState, text: str) -> None:
         
-        is_psalm_superscription = ((state.prev_token.marker == "s" or state.prev_token.marker == "d") 
-                                   and state.verse_ref.book == "PSA" 
-                                   and (state.verse_ref.bbbcccvvvs != "019119000" and state.verse_ref.bbbcccvvvs != "019107000"))
+        #TODO have the prompts pass in what tag is used for psalm superscriptions
+        
+        is_psalm_superscription = False
+        
+        if(state.prev_token is not None):
+            is_psalm_superscription = ((state.prev_token.marker == "s" or state.prev_token.marker == "d") 
+                                    and state.verse_ref.book == "PSA" 
+                                    and (state.verse_ref.bbbcccvvvs != "019119000" and state.verse_ref.bbbcccvvvs != "019107000"))
         
         #includes superscription text
-        if(state.prev_token is not None and is_psalm_superscription):
-            if self is not None:
-                self.verse(state, 0, "v", 0, 0)
-        
+        if self is not None and is_psalm_superscription:
+            self.verse(state, 0, "v", 0, 0)
+    
         if self._verse_ref is None or (not state.is_verse_para and not is_psalm_superscription):
             return
 
