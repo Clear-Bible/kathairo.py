@@ -1,31 +1,32 @@
 # Getting Started
 1. Clone this Repository
-2. Install Python 3.11 (not 3.12).  When you install Python make sure to add it to your PATH variable to make it easier to run from the commandline
-3. Open the commandline
+2. Install Python 3.11 (not 3.12).  When you install Python 3.11 make sure to add it to your `PATH` variable to make it easier to run from the command-line
+3. Open the command-line
 4. Navigate into the kathairo.py repo
-5. Run `pip install poetry` to install the Python dependency management system kathario uses
-6. Run `poetry shell` to enter the Poetry commandline (no worries if this fails though)
+5. Run `pip install poetry` to install the Python dependency management system that kathario uses
+6. Run `poetry shell` to enter the Poetry command-line (no worries if this fails though, just continue in the regular shell)
 7. Run `poetry install` to install all of kathairo's dependencies 
 
-# To Build All TSVs
+# To Build All Target TSVs
 1. Add a project's details to `kathairo\Prompts\prompts.json`.
-2. In the `\kathairo.py` repo, run `python kathairo\build_tsv_wrapper.py` to construct TSVs for each file in `prompts.json`
+2. In the `\kathairo.py` directory, run `python kathairo\build_tsv_wrapper.py` to construct TSVs for all projects in `prompts.json`
 
-# To Build One TSV
+# To Build/Debug a Specific Target TSV
 Either:
 - Move all unwanted prompts into `kathairo\Prompts\prompts_unused.json`
 - Uncomment/Add appropriate project details to `build_tsv.py`
 
-# Run Unit Tests
+# Unit Tests
 On the command-line, in `\kathairo.py`, run `pytest`.  
 
 Use `pytest -n <NUM>` to run tests in parallel.  
 
 Alternatively, run `pytest -s` if you want to see the output of the optional tests.  
 
-To run a certain test, such as the test_source_chapter_size test, run `pytest test/test_tsv_optional.py::test_source_chapter_size`.
+For a specific test, run `pytest test/<FILE_NAME>::<TEST_NAME>`.  
+For example, to run the test_source_chapter_size test you'd enter `pytest test/test_tsv_optional.py::test_source_chapter_size`.
 
-# Provenance
+# Resources Provenance
 AVD - USFM
     https://ebible.org/details.php?id=arb-vd
 
@@ -52,6 +53,12 @@ OHCV (revision) - USFM
 
 OCCB-simplified - USX
     https://app.thedigitalbiblelibrary.org/entry/download_listing?id=7ea794434e9ea7ee&license=42445&revision=
+
+IRVAsm - USFM
+    https://open.bible/bibles/assamese-bridge-text-bible
+
+IRVBen - USFM
+    https://open.bible/bibles/bengali-bridge-text-bible/
 
 IRVHin - USFM
     https://github.com/Clear-Bible/internal-Alignments/tree/main/data/IRV/clean_usfm
