@@ -84,6 +84,9 @@ ONEN2024 (not included) - USFM
 ONEN2024 (not included) - USX
     from Pieter
 
+ZIMKSZ - USFM
+    https://ebible.org/details.php?id=zlmKSZI
+
 ENG
 [versification_json/examples/eng.vrs at master · ubsicap/versification_json (github.com)](https://github.com/ubsicap/versification_json/blob/master/examples/eng.vrs)
 
