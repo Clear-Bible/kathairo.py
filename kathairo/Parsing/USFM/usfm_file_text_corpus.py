@@ -18,12 +18,15 @@ class UsfmFileTextCorpus(ScriptureTextCorpus):
         encoding: str = "utf-8-sig",
         versification: Optional[Versification] = None,
         include_markers: bool = False,
-        file_pattern: str = "*.SFM",
+        file_pattern: str = "*.SFM,*.usfm",
     ) -> None:
         if versification is None:
             versification = Versification.get_builtin(VersificationType.ENGLISH)
         stylesheet = UsfmStylesheet(stylesheet_filename)
         texts: List[UsfmFileText] = []
-        for sfm_filename in Path(project_dir).glob(file_pattern):
-            texts.append(UsfmFileText(stylesheet, encoding, sfm_filename, handler, psalmSuperscriptionTag, versification, include_markers)) #passes in handler
+        patterns = file_pattern.split(",")
+        for file_pattern in patterns:
+            hits = Path(project_dir).glob(file_pattern)
+            for sfm_filename in hits:
+                texts.append(UsfmFileText(stylesheet, encoding, sfm_filename, handler, psalmSuperscriptionTag, versification, include_markers)) #passes in handler
         super().__init__(versification, texts)
