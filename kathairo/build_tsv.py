@@ -18,7 +18,7 @@ from machine.scripture import (
 )
 from biblelib.word import fromubs
 import re
-from helpers.strings import is_unicode_punctuation
+from helpers.strings import is_unicode_punctuation, contains_number
 from Parsing.USFM.usfm_handlers import ModifiedTextRowCollector
 from helpers.paths import get_target_file_location
 import os
@@ -73,6 +73,7 @@ def corpus_to_word_level_tsv(targetVersification:Versification, sourceVersificat
         
         in_parentheses = False
         is_cross_reference = False
+        has_number = False
         unprinted_parenthetical_tokens = []
         
         is_verse_range = False
@@ -98,6 +99,8 @@ def corpus_to_word_level_tsv(targetVersification:Versification, sourceVersificat
                     if(excludeCrossReferences and is_cross_reference):
                         unprinted_cross_reference_token[4] = 'y' #exclude if is_cross_reference
                     unprinted_row_list.append(unprinted_cross_reference_token)
+                has_number = False
+                is_cross_reference = False
                 unprinted_parenthetical_tokens.clear()
             
             if(not row.is_in_range or row.is_range_start):    
@@ -144,7 +147,9 @@ def corpus_to_word_level_tsv(targetVersification:Versification, sourceVersificat
                     
                 if(excludeCrossReferences and '(' in token): #add to unit test to look for that all things marked as cross references are indeed cross-references and no token has a colon and a parentheses
                     in_parentheses = True
-                if(excludeCrossReferences and in_parentheses and ':' in token):
+                if(excludeCrossReferences and in_parentheses and contains_number(token)):#add this change to the unit test
+                    has_number = True
+                if(excludeCrossReferences and in_parentheses and has_number and ':' in token):
                     is_cross_reference = True
                 
                 wordIndexStr = str(wordIndex).zfill(3)
