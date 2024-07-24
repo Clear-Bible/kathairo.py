@@ -177,19 +177,19 @@ def test_exclude_bracketed_text(tsv_vrs_files):
 @pytest.mark.parametrize("tsv_vrs_files", __tsv_vrs_name_files__)
 def test_cross_references_only_on_verse_ends(tsv_vrs_files):    
     print(tsv_vrs_files[0])
-    current_id = "00000000000"
+    current_bcv_id = "00000000"
     in_parentheses = False
     is_cross_reference = False
 
     data_frame = pd.read_csv(tsv_vrs_files[0], sep='\t', dtype=str)
     for row in data_frame.itertuples():
         
-        previous_id = current_id
-        current_id = row.id[0:8]
+        previous_bcv_id = current_bcv_id
+        current_bcv_id = row.id[0:8]
         token = str(row.text)
         
         if(is_cross_reference and not in_parentheses):
-            assert(previous_id != current_id)
+            assert(previous_bcv_id != current_bcv_id)
             is_cross_reference = False
         
         for char in token:
