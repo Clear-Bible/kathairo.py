@@ -199,3 +199,34 @@ def test_cross_references_only_on_verse_ends(tsv_vrs_files):
                 is_cross_reference = True
             elif(char ==')'):
                 in_parentheses = False
+                
+@pytest.mark.parametrize("tsv_vrs_files", __tsv_vrs_name_files__)
+def test_cross_references_are_excluded(tsv_vrs_files):    
+    print(tsv_vrs_files[0])
+    if ("IRVHin" in tsv_vrs_files[0]):
+        in_parentheses = False
+        is_cross_reference = False
+        unprinted_parenthetical_token_list = []
+        #use prompts to control if this test gets skipped
+
+        data_frame = pd.read_csv(tsv_vrs_files[0], sep='\t', dtype=str)
+        for row in data_frame.itertuples():
+
+            token = str(row.text)
+            
+            if(is_cross_reference and not in_parentheses):
+                for unprinted_parenthetical_token in unprinted_parenthetical_token_list:
+                    assert(unprinted_parenthetical_token[5] == "y")
+                is_cross_reference = False
+            
+            for char in token:
+                if(char == '('):
+                    in_parentheses = True
+                if(in_parentheses and char == ':'):
+                    is_cross_reference = True
+            
+            if(in_parentheses):    
+                unprinted_parenthetical_token_list.append(row)
+            
+            if(')' in token):
+                in_parentheses = False
