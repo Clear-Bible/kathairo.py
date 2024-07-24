@@ -177,27 +177,25 @@ def test_exclude_bracketed_text(tsv_vrs_files):
 @pytest.mark.parametrize("tsv_vrs_files", __tsv_vrs_name_files__)
 def test_cross_references_only_on_verse_ends(tsv_vrs_files):    
     print(tsv_vrs_files[0])
-    if ("IRVHin" in tsv_vrs_files[0]):
-        
-        current_id = "00000000000"
-        in_parentheses = False
-        is_cross_reference = False
+    current_id = "00000000000"
+    in_parentheses = False
+    is_cross_reference = False
 
-        data_frame = pd.read_csv(tsv_vrs_files[0], sep='\t', dtype=str)
-        for row in data_frame.itertuples():
-            
-            previous_id = current_id
-            current_id = row.id[0:8]
-            token = str(row.text)
-            
-            if(is_cross_reference and not in_parentheses):
-                assert(previous_id != current_id)
-                is_cross_reference = False
-            
-            for char in token:
-                if(char == '('):
-                    in_parentheses = True
-                if(in_parentheses and char == ':'):
-                    is_cross_reference = True
-                elif(char ==')'):
-                    in_parentheses = False
+    data_frame = pd.read_csv(tsv_vrs_files[0], sep='\t', dtype=str)
+    for row in data_frame.itertuples():
+        
+        previous_id = current_id
+        current_id = row.id[0:8]
+        token = str(row.text)
+        
+        if(is_cross_reference and not in_parentheses):
+            assert(previous_id != current_id)
+            is_cross_reference = False
+        
+        for char in token:
+            if(char == '('):
+                in_parentheses = True
+            if(in_parentheses and char == ':'):
+                is_cross_reference = True
+            elif(char ==')'):
+                in_parentheses = False
