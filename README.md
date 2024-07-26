@@ -84,6 +84,9 @@ ONEN2024 (not included) - USFM
 ONEN2024 (not included) - USX
     from Pieter
 
+JFA11 - USFM
+    https://github.com/Clear-Bible/internal-Alignments/tree/main/data/JFA11/usfm
+    
 ENG
 [versification_json/examples/eng.vrs at master · ubsicap/versification_json (github.com)](https://github.com/ubsicap/versification_json/blob/master/examples/eng.vrs)
 
