@@ -64,6 +64,13 @@
     "language": "man"
   },
   {
+    "projectName": "JFA11",
+    "targetVersificationPath": "./resources/por/JFA11/versification.vrs",
+    "targetUsfmCorpusPath": "./resources/por/JFA11/usfm",
+    "latinWhiteSpaceIncludedTokenizer": true,
+    "language": "por"
+  },
+  {
     "projectName": "RSB",
     "targetVersificationPath": "./resources/versification/rsc.vrs",
     "targetUsfmCorpusPath": "./resources/rus/ru_rsb",
