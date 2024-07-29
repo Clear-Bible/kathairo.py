@@ -63,14 +63,16 @@ IRVBen - USFM
 IRVHin - USFM
     https://github.com/Clear-Bible/internal-Alignments/tree/main/data/IRV/clean_usfm
 
-RSB - USFM
-    from Sean / Dima at TextTree
-
 RUSSYN - USFM
-    https://ebible.org/details.php?id=russyn
+    from Sean / Dima at TextTree
+    https://git.door43.org/Door43-Catalog/ru_rsb
+    
+Auxillary Russian Texts:
+    russyn_USFM
+        https://ebible.org/details.php?id=russyn
 
-SYNO - USFM
-    https://door43.org/u/STR/ru_rsb/bfb6f3be9e/
+    syno_uld_ru
+        https://door43.org/u/STR/ru_rsb/bfb6f3be9e/
 
 ONEN - USFM
     https://open.bible/bibles/swahili-biblica-text-bible/

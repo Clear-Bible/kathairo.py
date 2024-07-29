@@ -71,7 +71,7 @@
     "language": "por"
   },
   {
-    "projectName": "RSB",
+    "projectName": "RUSSYN",
     "targetVersificationPath": "./resources/versification/rsc.vrs",
     "targetUsfmCorpusPath": "./resources/rus/ru_rsb",
     "latinWhiteSpaceIncludedTokenizer": true,
