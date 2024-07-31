@@ -47,7 +47,8 @@
     "targetVersificationPath": "./resources/hin/IRVHin/versification.vrs",
     "targetUsxCorpusPath": "./resources/hin/IRVHin",
     "latinWhiteSpaceIncludedTokenizer": true,
-    "language": "hin"
+    "language": "hin",
+    "excludeCrossReferences": true
   },
   {
     "projectName": "OHCV",

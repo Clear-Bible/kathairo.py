@@ -32,6 +32,7 @@ tokenizerGroup.add_argument("-lt", "--latinTokenizer", action='store_true')
 tokenizerGroup.add_argument("-lw", "--latinWhiteSpaceIncludedTokenizer", action='store_true')
 
 argumentParser.add_argument("-xb", "--excludeBracketedText", action='store_true') #optional
+argumentParser.add_argument("-xx", "--excludeCrossReferences", action='store_true') #optional
 
 argumentParser.add_argument("-ps", "--psalmSuperscriptionTag", type=str) #optional
 
@@ -74,6 +75,7 @@ build_tsv.corpus_to_word_level_tsv(targetVersification = targetVersification,
                                     tokenizer = tokenizer, 
                                     project_name = projectName, 
                                     excludeBracketedText = args.excludeBracketedText,
+                                    excludeCrossReferences = args.excludeCrossReferences, 
                                     language = args.language)  
 
 build_tsv.corpus_to_verse_level_tsv(targetVersification = targetVersification, 
@@ -82,4 +84,5 @@ build_tsv.corpus_to_verse_level_tsv(targetVersification = targetVersification,
                                     tokenizer = tokenizer, 
                                     project_name = projectName, 
                                     excludeBracketedText = args.excludeBracketedText,
+                                    excludeCrossReferences = args.excludeCrossReferences, 
                                     language = args.language)    

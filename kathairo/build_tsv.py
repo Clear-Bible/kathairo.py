@@ -18,13 +18,13 @@ from machine.scripture import (
 )
 from biblelib.word import fromubs
 import re
-from helpers.strings import is_unicode_punctuation
+from helpers.strings import is_unicode_punctuation, contains_number
 from Parsing.USFM.usfm_handlers import ModifiedTextRowCollector
 from helpers.paths import get_target_file_location
 import os
 
 def corpus_to_verse_level_tsv(targetVersification:Versification, sourceVersification:Versification, corpus:ScriptureTextCorpus, tokenizer:WhitespaceTokenizer, 
-                              project_name:str, language:str, excludeBracketedText:bool = False):
+                              project_name:str, language:str, excludeBracketedText:bool = False, excludeCrossReferences:bool = False):
 
     outputFileName = get_target_file_location("VerseText", project_name, language)
 
@@ -58,7 +58,7 @@ def corpus_to_verse_level_tsv(targetVersification:Versification, sourceVersifica
                 tsv_writer.writerow([f"{rowBcv}", f"{sourceBcv}", row.text, "", ""])
 
 def corpus_to_word_level_tsv(targetVersification:Versification, sourceVersification:Versification, corpus:ScriptureTextCorpus, tokenizer:WhitespaceTokenizer, 
-                  project_name:str, language:str, excludeBracketedText:bool = False):
+                  project_name:str, language:str, excludeBracketedText:bool = False, excludeCrossReferences:bool = False):
 
     outputFileName = get_target_file_location("TSVs", project_name, language)
 
@@ -69,7 +69,15 @@ def corpus_to_word_level_tsv(targetVersification:Versification, sourceVersificat
         tsv_writer.writerow(["id", "source_verse", "text", "skip_space_after", "exclude", "id_range_end", "source_verse_range_end"])
 
         in_brackets = False
-        verse_range_list = []
+        unprinted_row_list = [] #rename to unprinted verse_ranges?
+        
+        in_parentheses = False
+        is_cross_reference = False
+        has_number = False
+        unprinted_parenthetical_tokens = []
+        
+        is_verse_range = False
+        
         for row in corpus.tokenize(tokenizer):#.tokenize(tokenizer).nfc_normalize() #Include for Double Tokenization    
 
             #if(row.is_in_range and row.text == ''):
@@ -86,12 +94,23 @@ def corpus_to_word_level_tsv(targetVersification:Versification, sourceVersificat
 
             wordIndex = 1
             
-            if(not row.is_in_range or row.is_range_start):
-                for verse_range_row in verse_range_list:
-                    verse_range_row.append(f"{rowBcv}")
-                    verse_range_row.append(f"{sourceBcv}")
-                    tsv_writer.writerow(verse_range_row)
-                verse_range_list.clear()
+            if(not in_parentheses):    
+                for unprinted_cross_reference_token in unprinted_parenthetical_tokens:
+                    if(excludeCrossReferences and is_cross_reference):
+                        unprinted_cross_reference_token[4] = 'y' #exclude if is_cross_reference
+                    unprinted_row_list.append(unprinted_cross_reference_token)
+                has_number = False
+                is_cross_reference = False
+                unprinted_parenthetical_tokens.clear()
+            
+            if(not row.is_in_range or row.is_range_start):    
+                for unprinted_row in unprinted_row_list:
+                    if(is_verse_range):
+                        unprinted_row.append(f"{rowBcv}")
+                        unprinted_row.append(f"{sourceBcv}")
+                    tsv_writer.writerow(unprinted_row)
+                is_verse_range = False
+                unprinted_row_list.clear()
             
             sourceBcv = fromubs(f"{re.sub(r'[^0-9]', '', sourceVref.bbbcccvvvs)}00000").to_bcvid
             rowBcv= fromubs(f"{re.sub(r'[^0-9]', '', row.ref.bbbcccvvvs)}00000").to_bcvid
@@ -107,39 +126,45 @@ def corpus_to_word_level_tsv(targetVersification:Versification, sourceVersificat
                     next_token = row.segment[index + 1]
                 else:
                     next_token = ' ' #assume a space between verses
-                    
                 skip_space_after = ""
-                    
                 if(token==' '):
                     continue
                 else:
                     if(not next_token==' '):
                         skip_space_after = "y"
 
-                if(not in_brackets):
-                    exclude = ""
-                else:
-                    exclude = "y"
-                    
                 exclude = "y"
                 for char in token:
                     if(not in_brackets and not is_unicode_punctuation(char)):
                         exclude = ""
                         break
-                
-                if(token == '[' and excludeBracketedText): #we are trusting that all brackets get their own row
+                    
+                if(excludeBracketedText and '[' in token):
                     in_brackets = True
                     exclude = "y"
-                
-                if(token ==']'): #we are trusting that all brackets get their own row
+                if(']' in token):
                     in_brackets = False
-
+                    
+                if(excludeCrossReferences and '(' in token): #add to unit test to look for that all things marked as cross references are indeed cross-references and no token has a colon and a parentheses
+                    in_parentheses = True
+                if(excludeCrossReferences and in_parentheses and contains_number(token)):#add this change to the unit test
+                    has_number = True
+                if(excludeCrossReferences and in_parentheses and has_number and ':' in token):
+                    is_cross_reference = True
+                
                 wordIndexStr = str(wordIndex).zfill(3)
                 
-                if(row.text != "" and row.is_in_range):
-                    verse_range_list.append([f"{rowBcv}{wordIndexStr}", f"{sourceBcv}", token, skip_space_after, exclude])
-                elif(row.text != ""):
+                if(row.text != ""):
+                    if(in_parentheses):
+                        unprinted_parenthetical_tokens.append(([f"{rowBcv}{wordIndexStr}", f"{sourceBcv}", token, skip_space_after, exclude]))
+                    elif(row.is_in_range):
+                        is_verse_range = True
+                        unprinted_row_list.append([f"{rowBcv}{wordIndexStr}", f"{sourceBcv}", token, skip_space_after, exclude])
+                    else:
                         tsv_writer.writerow([f"{rowBcv}{wordIndexStr}", f"{sourceBcv}", token, skip_space_after, exclude, "", ""])
+                
+                if(')' in token):
+                    in_parentheses = False
                 
                 wordIndex += 1
                 
@@ -232,6 +257,5 @@ if(__name__ == "__main__"):
     project_name = "IRVBen"
     excludeBracketedText = False
     
-
     corpus_to_word_level_tsv(targetVersification, sourceVersification, corpus, tokenizer, project_name, excludeBracketedText=excludeBracketedText, language=language)
     #corpus_to_verse_level_tsv(targetVersification, sourceVersification, corpus, tokenizer, project_name, language=language)
