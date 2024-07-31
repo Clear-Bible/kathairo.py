@@ -98,11 +98,14 @@ def corpus_to_word_level_tsv(targetVersification:Versification, sourceVersificat
                 for unprinted_cross_reference_token in unprinted_parenthetical_tokens:
                     if(excludeCrossReferences and is_cross_reference):
                         unprinted_cross_reference_token[4] = 'y' #exclude if is_cross_reference
-                    unprinted_row_list.append(unprinted_cross_reference_token)
+                    if(is_verse_range):
+                        unprinted_row_list.append(unprinted_cross_reference_token)
+                    else:
+                        tsv_writer.writerow(unprinted_cross_reference_token)
                 has_number = False
                 is_cross_reference = False
                 unprinted_parenthetical_tokens.clear()
-            
+
             if(not row.is_in_range or row.is_range_start):    
                 for unprinted_row in unprinted_row_list:
                     if(is_verse_range):
@@ -117,6 +120,18 @@ def corpus_to_word_level_tsv(targetVersification:Versification, sourceVersificat
             
             for index in range(len(row.segment)):
             #for token in row.segment:#row.segment, tokenized_row:
+            
+                if(not in_parentheses):    
+                    for unprinted_cross_reference_token in unprinted_parenthetical_tokens:
+                        if(excludeCrossReferences and is_cross_reference):
+                            unprinted_cross_reference_token[4] = 'y' #exclude if is_cross_reference
+                        if(is_verse_range):
+                            unprinted_row_list.append(unprinted_cross_reference_token)
+                        else:
+                            tsv_writer.writerow(unprinted_cross_reference_token)
+                    has_number = False
+                    is_cross_reference = False
+                    unprinted_parenthetical_tokens.clear()
             
                 token = row.segment[index]
                 
