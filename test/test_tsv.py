@@ -214,10 +214,12 @@ def test_cross_references_are_excluded(tsv_vrs_files):
 
             token = str(row.text)
             
-            if(is_cross_reference and not in_parentheses):
-                for unprinted_parenthetical_token in unprinted_parenthetical_token_list:
-                    assert(unprinted_parenthetical_token[5] == "y")
-                is_cross_reference = False
+            if(not in_parentheses):
+                if(is_cross_reference):
+                    for unprinted_parenthetical_token in unprinted_parenthetical_token_list:
+                        assert(unprinted_parenthetical_token[5] == "y")
+                    is_cross_reference = False
+                unprinted_parenthetical_token_list.clear()
             
             for char in token:
                 if(char == '('):
