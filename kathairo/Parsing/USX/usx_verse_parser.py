@@ -30,8 +30,11 @@ class ModifiedUsxVerseParser(UsxVerseParser):
                     ctxt.is_sentence_start = True
                     continue
                 
+                if(e.get("style", "") == "d" and (ctxt.verse != None and ctxt.verse != "0")):
+                    continue
+                
                 # include superscriptions in text (TODO, limit to just the Psalms)
-                if (e.get("style", "") == "d"):#or e.get("style", "") == "s"
+                if (e.get("style", "") == "d" and ctxt.chapter != '119'):#or e.get("style", "") == "s"
                     verse = "0"
                     ctxt.verse = verse
                 ###
