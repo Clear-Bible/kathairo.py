@@ -106,8 +106,8 @@ def corpus_to_word_level_tsv(targetVersification:Versification, sourceVersificat
             if(not row.is_in_range or row.is_range_start):    
                 for unprinted_row in unprinted_row_list:
                     if(is_verse_range):
-                        unprinted_row.append(f"{rowBcv}")
-                        unprinted_row.append(f"{sourceBcv}")
+                        unprinted_row[5] = (f"{rowBcv}")
+                        unprinted_row[6] = (f"{sourceBcv}")
                     tsv_writer.writerow(unprinted_row)
                 is_verse_range = False
                 unprinted_row_list.clear()
@@ -156,10 +156,10 @@ def corpus_to_word_level_tsv(targetVersification:Versification, sourceVersificat
                 
                 if(row.text != ""):
                     if(in_parentheses):
-                        unprinted_parenthetical_tokens.append(([f"{rowBcv}{wordIndexStr}", f"{sourceBcv}", token, skip_space_after, exclude]))
+                        unprinted_parenthetical_tokens.append(([f"{rowBcv}{wordIndexStr}", f"{sourceBcv}", token, skip_space_after, exclude, "", ""]))
                     elif(row.is_in_range):
                         is_verse_range = True
-                        unprinted_row_list.append([f"{rowBcv}{wordIndexStr}", f"{sourceBcv}", token, skip_space_after, exclude])
+                        unprinted_row_list.append([f"{rowBcv}{wordIndexStr}", f"{sourceBcv}", token, skip_space_after, exclude, "", ""])
                     else:
                         tsv_writer.writerow([f"{rowBcv}{wordIndexStr}", f"{sourceBcv}", token, skip_space_after, exclude, "", ""])
                 
