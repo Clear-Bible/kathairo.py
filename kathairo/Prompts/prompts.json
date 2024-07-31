@@ -45,7 +45,7 @@
   {
     "projectName": "IRVHin",
     "targetVersificationPath": "./resources/hin/IRVHin/versification.vrs",
-    "targetUsfmCorpusPath": "./resources/hin/IRVHin",
+    "targetUsxCorpusPath": "./resources/hin/IRVHin",
     "latinWhiteSpaceIncludedTokenizer": true,
     "language": "hin"
   },
