@@ -6,3 +6,8 @@ def is_unicode_punctuation(char):
 
 def contains_number(string):
     return any(char.isdigit() for char in string)
+
+zwsp = "​"
+zwj = "‍"
+zwnj = "‌"
+empty_string = ""

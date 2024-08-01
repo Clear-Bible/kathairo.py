@@ -22,9 +22,11 @@ from helpers.strings import is_unicode_punctuation, contains_number
 from Parsing.USFM.usfm_handlers import ModifiedTextRowCollector
 from helpers.paths import get_target_file_location
 import os
+import pandas as pd
+import helpers.strings as string
 
 def corpus_to_verse_level_tsv(targetVersification:Versification, sourceVersification:Versification, corpus:ScriptureTextCorpus, tokenizer:WhitespaceTokenizer, 
-                              project_name:str, language:str, excludeBracketedText:bool = False, excludeCrossReferences:bool = False):
+                              project_name:str, language:str, removeZwFromWordsPath:str, excludeBracketedText:bool = False, excludeCrossReferences:bool = False):
 
     outputFileName = get_target_file_location("VerseText", project_name, language)
 
@@ -58,7 +60,11 @@ def corpus_to_verse_level_tsv(targetVersification:Versification, sourceVersifica
                 tsv_writer.writerow([f"{rowBcv}", f"{sourceBcv}", row.text, "", ""])
 
 def corpus_to_word_level_tsv(targetVersification:Versification, sourceVersification:Versification, corpus:ScriptureTextCorpus, tokenizer:WhitespaceTokenizer, 
-                  project_name:str, language:str, excludeBracketedText:bool = False, excludeCrossReferences:bool = False):
+                  project_name:str, language:str, removeZwFromWordsPath:str, excludeBracketedText:bool = False, excludeCrossReferences:bool = False):
+
+    zw_removal_df=None
+    if(removeZwFromWordsPath != None):
+        zw_removal_df = pd.read_csv(removeZwFromWordsPath, sep='\t',dtype=str)
 
     outputFileName = get_target_file_location("TSVs", project_name, language)
 
@@ -134,6 +140,10 @@ def corpus_to_word_level_tsv(targetVersification:Versification, sourceVersificat
                     unprinted_parenthetical_tokens.clear()
             
                 token = row.segment[index]
+                
+                if(removeZwFromWordsPath != None and token != " "):
+                    if token in zw_removal_df["words"].values:    
+                        token = token.replace(string.zwsp, string.empty_string).replace(string.zwj, string.empty_string).replace(string.zwnj, string.empty_string)
                 
                 next_token = None
                 max_segment_index = len(row.segment) - 1
@@ -246,13 +256,15 @@ if(__name__ == "__main__"):
     #project_name="RSB-SYNO"
     
     #IRV
-    #targetVersification = Versification.load("./resources/hin/IRVHin/versification.vrs", fallback_name="web")
-    #sourceVersification = Versification(name = "sourceVersification", base_versification=ORIGINAL_VERSIFICATION)
-    #language="hin"
-    #corpus = UsfmFileTextCorpus("./resources/hin/IRVHin", versification = targetVersification, handler=ModifiedTextRowCollector(), psalmSuperscriptionTag = "d")
-    #tokenizer = LatinWhitespaceIncludedWordTokenizer(language=language)
-    #project_name="IRVHin"
-    #excludeBracketedText = False
+    targetVersification = Versification.load("./resources/hin/IRVHin/versification.vrs", fallback_name="web")
+    sourceVersification = Versification(name = "sourceVersification", base_versification=ORIGINAL_VERSIFICATION)
+    language="hin"
+    corpus = UsxFileTextCorpus("./resources/hin/IRVHin", versification = targetVersification)
+    tokenizer = LatinWhitespaceIncludedWordTokenizer(language=language)
+    project_name="IRVHin"
+    excludeBracketedText = False
+    removeZwFromWordsPath = "./resources/hin/zw-removal-words.tsv"
+    
     
     #LSG
     #sourceVersification = Versification(name = "sourceVersification", base_versification=ORIGINAL_VERSIFICATION)
@@ -264,13 +276,13 @@ if(__name__ == "__main__"):
     #excludeBracketedText = False
     
     #IRVBen
-    targetVersification = Versification.load("./resources/ben/IRVBen/release/versification.vrs", fallback_name="web")
-    sourceVersification = Versification(name = "sourceVersification", base_versification=ORIGINAL_VERSIFICATION)
-    corpus = UsfmFileTextCorpus("./resources/ben/IRVBen/release/USX_1", versification = targetVersification, handler=ModifiedTextRowCollector, psalmSuperscriptionTag = "s")
-    language="ben"
-    tokenizer = LatinWhitespaceIncludedWordTokenizer(language=language)
-    project_name = "IRVBen"
-    excludeBracketedText = False
+    #targetVersification = Versification.load("./resources/ben/IRVBen/release/versification.vrs", fallback_name="web")
+    #sourceVersification = Versification(name = "sourceVersification", base_versification=ORIGINAL_VERSIFICATION)
+    #corpus = UsfmFileTextCorpus("./resources/ben/IRVBen/release/USX_1", versification = targetVersification, handler=ModifiedTextRowCollector, psalmSuperscriptionTag = "s")
+    #language="ben"
+    #tokenizer = LatinWhitespaceIncludedWordTokenizer(language=language)
+    #project_name = "IRVBen"
+    #excludeBracketedText = False
     
-    corpus_to_word_level_tsv(targetVersification, sourceVersification, corpus, tokenizer, project_name, excludeBracketedText=excludeBracketedText, language=language)
+    corpus_to_word_level_tsv(targetVersification, sourceVersification, corpus, tokenizer, project_name, excludeBracketedText=excludeBracketedText, language=language, removeZwFromWordsPath=removeZwFromWordsPath)
     #corpus_to_verse_level_tsv(targetVersification, sourceVersification, corpus, tokenizer, project_name, language=language)
