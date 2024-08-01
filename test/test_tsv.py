@@ -173,3 +173,62 @@ def test_exclude_bracketed_text(tsv_vrs_files):
                 
                 if(char ==']'):
                     in_brackets = False
+
+@pytest.mark.parametrize("tsv_vrs_files", __tsv_vrs_name_files__)
+def test_cross_references_only_on_verse_ends(tsv_vrs_files):    
+    print(tsv_vrs_files[0])
+    current_bcv_id = "00000000"
+    in_parentheses = False
+    is_cross_reference = False
+
+    data_frame = pd.read_csv(tsv_vrs_files[0], sep='\t', dtype=str)
+    for row in data_frame.itertuples():
+        
+        previous_bcv_id = current_bcv_id
+        current_bcv_id = row.id[0:8]
+        token = str(row.text)
+        
+        if(is_cross_reference and not in_parentheses):
+            assert(previous_bcv_id != current_bcv_id)
+            is_cross_reference = False
+        
+        for char in token:
+            if(char == '('):
+                in_parentheses = True
+            if(in_parentheses and char == ':'):
+                is_cross_reference = True
+            elif(char ==')'):
+                in_parentheses = False
+                
+@pytest.mark.parametrize("tsv_vrs_files", __tsv_vrs_name_files__)
+def test_cross_references_are_excluded(tsv_vrs_files):    
+    print(tsv_vrs_files[0])
+    if ("IRVHin" in tsv_vrs_files[0]):
+        in_parentheses = False
+        is_cross_reference = False
+        unprinted_parenthetical_token_list = []
+        #use prompts to control if this test gets skipped
+
+        data_frame = pd.read_csv(tsv_vrs_files[0], sep='\t', dtype=str)
+        for row in data_frame.itertuples():
+
+            token = str(row.text)
+            
+            if(not in_parentheses):
+                if(is_cross_reference):
+                    for unprinted_parenthetical_token in unprinted_parenthetical_token_list:
+                        assert(unprinted_parenthetical_token[5] == "y")
+                    is_cross_reference = False
+                unprinted_parenthetical_token_list.clear()
+            
+            for char in token:
+                if(char == '('):
+                    in_parentheses = True
+                if(in_parentheses and char == ':'):
+                    is_cross_reference = True
+            
+            if(in_parentheses):    
+                unprinted_parenthetical_token_list.append(row)
+            
+            if(')' in token):
+                in_parentheses = False

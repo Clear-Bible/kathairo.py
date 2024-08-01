@@ -19,14 +19,16 @@
     "targetUsfmCorpusPath": "./resources/asm/IRVAsm/release/USX_1",
     "latinWhiteSpaceIncludedTokenizer": true,
     "language": "asm",
-    "psalmSuperscriptionTag": "s"
+    "psalmSuperscriptionTag": "s",
+    "removeZwFromWordsPath": "./resources/asm/zw-removal-words.tsv"
   },
   {
     "projectName": "IRVBen",
     "targetVersificationPath": "./resources/ben/IRVBen/release/versification.vrs",
     "targetUsfmCorpusPath": "./resources/ben/IRVBen/release/USX_1",
     "latinWhiteSpaceIncludedTokenizer": true,
-    "language": "ben"
+    "language": "ben",
+    "removeZwFromWordsPath": "./resources/ben/zw-removal-words.tsv"
   },
   {
     "projectName": "BSB",
@@ -45,16 +47,19 @@
   {
     "projectName": "IRVHin",
     "targetVersificationPath": "./resources/hin/IRVHin/versification.vrs",
-    "targetUsfmCorpusPath": "./resources/hin/IRVHin",
+    "targetUsxCorpusPath": "./resources/hin/IRVHin",
     "latinWhiteSpaceIncludedTokenizer": true,
-    "language": "hin"
+    "language": "hin",
+    "excludeCrossReferences": true,
+    "removeZwFromWordsPath": "./resources/hin/zw-removal-words.tsv"
   },
   {
     "projectName": "OHCV",
     "targetVersificationPath": "./resources/hin/hiHCV19SFM/versification.vrs",
     "targetUsfmCorpusPath": "./resources/hin/hiHCV19SFM",
     "latinWhiteSpaceIncludedTokenizer": true,
-    "language": "hin"
+    "language": "hin",
+    "removeZwFromWordsPath": "./resources/hin/zw-removal-words.tsv"
   },
   {
     "projectName": "OCCB-simplified",
