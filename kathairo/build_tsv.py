@@ -28,6 +28,8 @@ import helpers.strings as string
 def corpus_to_verse_level_tsv(targetVersification:Versification, sourceVersification:Versification, corpus:ScriptureTextCorpus, tokenizer:WhitespaceTokenizer, 
                               project_name:str, language:str, removeZwFromWordsPath:str, excludeBracketedText:bool = False, excludeCrossReferences:bool = False):
 
+    #How do we remove ZW characters from verse text?
+
     outputFileName = get_target_file_location("VerseText", project_name, language)
 
     os.makedirs(os.path.dirname(outputFileName), exist_ok=True)

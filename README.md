@@ -61,7 +61,7 @@ IRVBen - USFM
     https://open.bible/bibles/bengali-bridge-text-bible/
 
 IRVHin - USFM
-    https://github.com/Clear-Bible/internal-Alignments/tree/main/data/IRV/clean_usfm
+    https://app.thedigitalbiblelibrary.org/entry/download_listing?id=1e8ab327edbce67f&license=26429&revision=
 
 RUSSYN - USFM
     from Sean / Dima at TextTree
