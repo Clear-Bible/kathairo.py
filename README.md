@@ -17,9 +17,7 @@ Either:
 - Uncomment/Add appropriate project details to `build_tsv.py`
 
 # Unit Tests
-On the command-line, in `\kathairo.py`, run `pytest`.  
-
-Use `pytest -n <NUM>` to run tests in parallel.  
+On the command-line, in `\kathairo.py`, run `pytest -n auto --dist=loadscope`.  
 
 Alternatively, run `pytest -s` if you want to see the output of the optional tests.  
 
