@@ -17,9 +17,9 @@ Either:
 - Uncomment/Add appropriate project details to `build_tsv.py`
 
 # Unit Tests
-On the command-line, in `\kathairo.py`, run `pytest -n auto --dist=loadscope`.  
+On the command-line, in `\kathairo.py`, run `pytest -n auto`.  
 
-Alternatively, run `pytest -s` if you want to see the output of the optional tests.  
+Add `-s` to the end if you want to see the output of the optional tests.  
 
 For a specific test, run `pytest test/<FILE_NAME>::<TEST_NAME>`.  
 For example, to run the test_source_chapter_size test you'd enter `pytest test/test_tsv_optional.py::test_source_chapter_size`.

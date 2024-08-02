@@ -5,6 +5,7 @@ import pandas as pd
 from machine.scripture import Versification
 import os
 import csv
+from helpers.paths import get_target_file_location
 
 @pytest.mark.parametrize("tsv_vrs_name_files", __tsv_vrs_name_files__)
 class TestVersification:
@@ -12,7 +13,11 @@ class TestVersification:
     #Is each verse in the mapping present in the TSV (requires versification file)
     def test_source_mapped_verses_are_present(self, tsv_vrs_name_files):
         
-        output_file = tsv_vrs_name_files[4]
+        project_name = tsv_vrs_name_files[2]
+        language = tsv_vrs_name_files[3]
+        
+        output_file = get_target_file_location("versification_issues", project_name+"_source_mapping_issues", language)
+        
         os.makedirs(os.path.dirname(output_file), exist_ok=True)
         with open(output_file, 'w', newline='', encoding='utf-8') as out_file:
             tsv_writer = csv.writer(out_file, delimiter='\t')
@@ -47,9 +52,14 @@ class TestVersification:
 
     #Does each chapter possess the number of verses listed in the versification (requires versification file)
     def test_source_chapter_size(self, tsv_vrs_name_files):
-        output_file = tsv_vrs_name_files[4]
+        
+        project_name = tsv_vrs_name_files[2]
+        language = tsv_vrs_name_files[3]
+        
+        output_file = get_target_file_location("versification_issues", project_name+"_source_size_issues", language)
+        
         os.makedirs(os.path.dirname(output_file), exist_ok=True)
-        with open(output_file, 'a', newline='', encoding='utf-8') as out_file:
+        with open(output_file, 'w', newline='', encoding='utf-8') as out_file:
             tsv_writer = csv.writer(out_file, delimiter='\t')
         
             print(tsv_vrs_name_files[0])
@@ -135,9 +145,13 @@ class TestVersification:
     #Is each verse in the mapping present in the TSV (requires versification file)                    
     def test_target_mapped_verses_are_present(self, tsv_vrs_name_files):
         
-        output_file = tsv_vrs_name_files[4]
+        project_name = tsv_vrs_name_files[2]
+        language = tsv_vrs_name_files[3]
+        
+        output_file = get_target_file_location("versification_issues", project_name+"_target_mapping_issues", language)
+        
         os.makedirs(os.path.dirname(output_file), exist_ok=True)
-        with open(output_file, 'a', newline='', encoding='utf-8') as out_file:
+        with open(output_file, 'w', newline='', encoding='utf-8') as out_file:
             tsv_writer = csv.writer(out_file, delimiter='\t')
         
             targetVersification = Versification.load(tsv_vrs_name_files[1], fallback_name="web")
@@ -171,9 +185,13 @@ class TestVersification:
     #Does each chapter possess the number of verses listed in the versification (requires versification file)
     def test_target_chapter_size(self, tsv_vrs_name_files):
         
-        output_file = tsv_vrs_name_files[4]
+        project_name = tsv_vrs_name_files[2]
+        language = tsv_vrs_name_files[3]
+        
+        output_file = get_target_file_location("versification_issues", project_name+"_target_size_issues", language)
+        
         os.makedirs(os.path.dirname(output_file), exist_ok=True)
-        with open(output_file, 'a', newline='', encoding='utf-8') as out_file:
+        with open(output_file, 'w', newline='', encoding='utf-8') as out_file:
             tsv_writer = csv.writer(out_file, delimiter='\t')
         
             targetVersification = Versification.load(tsv_vrs_name_files[1], fallback_name="web")
