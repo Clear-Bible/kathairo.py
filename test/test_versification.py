@@ -1,7 +1,7 @@
 #Based on https://github.com/Clear-Bible/macula-greek/blob/main/test/test_tsv.py
 import pytest
 from test import __tsv_vrs_name_files__
-import pandas as pd
+import polars as pl
 from machine.scripture import Versification
 import os
 import csv
@@ -26,12 +26,12 @@ class TestVersification:
             mapping_sources = targetVersification.mappings._versification_to_standard.values()
             
             tsv_source_verses = []
-            data_frame = pd.read_csv(tsv_vrs_name_files[0], sep='\t',dtype=str)
+            data_frame = pl.read_csv(tsv_vrs_name_files[0], separator='\t', infer_schema_length=0)
             
-            for row in data_frame.itertuples():
-                source_verse = int(row.source_verse)      
-                if(isinstance(row.source_verse_range_end, str)):
-                    source_verse_range_end = int(row.source_verse_range_end) + 1
+            for row in data_frame.iter_rows(named=True, buffer_size=0):
+                source_verse = int(row["source_verse"])      
+                if(isinstance(row["source_verse_range_end"], str)):
+                    source_verse_range_end = int(row["source_verse_range_end"]) + 1
                 else:
                     source_verse_range_end = source_verse + 1 
                 
@@ -70,13 +70,13 @@ class TestVersification:
             current_verse_count = 1
             previous_id = "01001001001"
             
-            data_frame = pd.read_csv(tsv_vrs_name_files[0], sep='\t',dtype=str)
+            data_frame = pl.read_csv(tsv_vrs_name_files[0], separator='\t', infer_schema_length=0)
             
-            for row in data_frame.itertuples():
-                id = row.source_verse
+            for row in data_frame.iter_rows(named=True, buffer_size=0):
+                id = row["source_verse"] #shouldn't this be source_verse?
                 
-                if(isinstance(row.source_verse_range_end, str)):
-                    source_verse_range_end = row.source_verse_range_end
+                if(isinstance(row["source_verse_range_end"], str)):
+                    source_verse_range_end = row["source_verse_range_end"]
                 else:
                     source_verse_range_end = id
                 
@@ -158,12 +158,12 @@ class TestVersification:
             mapping_targets = targetVersification.mappings._versification_to_standard.keys()
             
             tsv_ids = []
-            data_frame = pd.read_csv(tsv_vrs_name_files[0], sep='\t',dtype=str)
+            data_frame = pl.read_csv(tsv_vrs_name_files[0], separator='\t', infer_schema_length=0)
                     
-            for row in data_frame.itertuples():
-                id = int(row.id[:8])      
-                if(isinstance(row.id_range_end, str)):
-                    id_range_end = int(row.id_range_end[:8]) + 1 
+            for row in data_frame.iter_rows(named=True, buffer_size=0):
+                id = int(row["id"][:8])      
+                if(isinstance(row["id_range_end"], str)):
+                    id_range_end = int(row["id_range_end"][:8]) + 1 
                 else:
                     id_range_end = id + 1 
                 
@@ -201,13 +201,13 @@ class TestVersification:
             current_verse_count = 1
             previous_id = "01001001001"
             
-            data_frame = pd.read_csv(tsv_vrs_name_files[0], sep='\t',dtype=str)
+            data_frame = pl.read_csv(tsv_vrs_name_files[0], separator='\t', infer_schema_length=0)
             
-            for row in data_frame.itertuples():
-                id = row.id   
+            for row in data_frame.iter_rows(named=True, buffer_size=0):
+                id = row["id"]   
                 
-                if(isinstance(row.id_range_end, str)):
-                    id_range_end = row.id_range_end
+                if(isinstance(row["id_range_end"], str)):
+                    id_range_end = row["id_range_end"]
                 else:
                     id_range_end = id
                 

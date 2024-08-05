@@ -15,6 +15,7 @@ pandas = "^2.2.1"
 pytest-xdist = "^3.5.0"
 spacy = "^3.7.4"
 sil-machine = "^1.0.2"
+polars = "^1.4.0"
 
 
 [build-system]
