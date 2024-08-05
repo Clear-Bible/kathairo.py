@@ -17,13 +17,11 @@ Either:
 - Uncomment/Add appropriate project details to `build_tsv.py`
 
 # Unit Tests
-On the command-line, in `\kathairo.py`, run `pytest`.  
+On the command-line, in `\kathairo.py`, run `pytest -n auto`.  
 
-Use `pytest -n <NUM>` to run tests in parallel.  
+Add `-s` to the end if you want to see the output of the optional tests.  
 
-Alternatively, run `pytest -s` if you want to see the output of the optional tests.  
-
-For a specific test, run `pytest test/<FILE_NAME>::<TEST_NAME>`.  
+For a specific test, run `pytest test/<FILE_NAME>::<TEST_NAME> -n auto`.  
 For example, to run the test_source_chapter_size test you'd enter `pytest test/test_tsv_optional.py::test_source_chapter_size`.
 
 # Resources Provenance
@@ -61,16 +59,18 @@ IRVBen - USFM
     https://open.bible/bibles/bengali-bridge-text-bible/
 
 IRVHin - USFM
-    https://github.com/Clear-Bible/internal-Alignments/tree/main/data/IRV/clean_usfm
-
-RSB - USFM
-    from Sean / Dima at TextTree
+    https://app.thedigitalbiblelibrary.org/entry/download_listing?id=1e8ab327edbce67f&license=26429&revision=
 
 RUSSYN - USFM
-    https://ebible.org/details.php?id=russyn
+    from Sean / Dima at TextTree
+    https://git.door43.org/Door43-Catalog/ru_rsb
+    
+Auxillary Russian Texts:
+    russyn_USFM
+        https://ebible.org/details.php?id=russyn
 
-SYNO - USFM
-    https://door43.org/u/STR/ru_rsb/bfb6f3be9e/
+    syno_uld_ru
+        https://door43.org/u/STR/ru_rsb/bfb6f3be9e/
 
 ONEN - USFM
     https://open.bible/bibles/swahili-biblica-text-bible/

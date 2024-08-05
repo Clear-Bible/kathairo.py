@@ -4,7 +4,7 @@ import codecs
 import pytest
 from test import __tsv_vrs_name_files__
 from helpers.verse_text import reconstitute
-import pandas as pd
+import polars as pl
 from machine.scripture import Versification
 import csv
 from pathlib import Path
@@ -25,14 +25,14 @@ def test_file_is_valid_utf8(tsv_vrs_files):
 #Do the IDs only contain numbers?
 @pytest.mark.parametrize("tsv_vrs_files", __tsv_vrs_name_files__)
 def test_id_numeric(tsv_vrs_files):
-    data_frame = pd.read_csv(tsv_vrs_files[0], sep='\t',dtype=str)
+    data_frame = pl.read_csv(tsv_vrs_files[0], separator='\t', infer_schema_length=0)
     for id in data_frame['id']:
         assert id.isnumeric()
 
 #Are the IDs valid length?
 @pytest.mark.parametrize("tsv_vrs_files", __tsv_vrs_name_files__)
 def test_id_length(tsv_vrs_files):
-    data_frame = pd.read_csv(tsv_vrs_files[0], sep='\t',dtype=str)
+    data_frame = pl.read_csv(tsv_vrs_files[0], separator='\t', infer_schema_length=0)
     for id in data_frame['id']:
         assert len(str(id)) == 11
 
@@ -49,7 +49,7 @@ def test_id_book_value(tsv_vrs_files):
         if(len(book) > 1 or book[0] > 1):
             present_book_id_list.append(current_book_number)
     
-    data_frame = pd.read_csv(tsv_vrs_files[0], sep='\t',dtype=str)
+    data_frame = pl.read_csv(tsv_vrs_files[0], separator='\t', infer_schema_length=0)
     for id in data_frame['id']:
         book_id = int(str(id)[:2])
         assert (book_id > 0 and book_id in present_book_id_list)
@@ -66,7 +66,7 @@ def test_id_chapter_value(tsv_vrs_files):
         if(book_size > max_chapter_number):
                 max_chapter_number = book_size
                 
-    data_frame = pd.read_csv(tsv_vrs_files[0], sep='\t',dtype=str)
+    data_frame = pl.read_csv(tsv_vrs_files[0], separator='\t', infer_schema_length=0)
     for id in data_frame['id']:
         chapter_id = int(str(id)[2:5])
         assert (chapter_id > 0 and chapter_id <= max_chapter_number)
@@ -83,7 +83,7 @@ def test_id_verse_value(tsv_vrs_files):
             if(chapter_size > max_verse_number):
                 max_verse_number = chapter_size
                 
-    data_frame = pd.read_csv(tsv_vrs_files[0], sep='\t',dtype=str)
+    data_frame = pl.read_csv(tsv_vrs_files[0], separator='\t', infer_schema_length=0)
     for id in data_frame['id']:
         verse_id = int(str(id)[5:8])
         assert (verse_id >= 0 and verse_id <= max_verse_number)
@@ -123,10 +123,10 @@ def test_verse_text_reconstitution(tsv_vrs_files):
 #Is punctuation excluded 
 @pytest.mark.parametrize("tsv_vrs_files", __tsv_vrs_name_files__)
 def test_exclude_punctuation(tsv_vrs_files):    
-    data_frame = pd.read_csv(tsv_vrs_files[0], sep='\t',dtype=str)
-    for row in data_frame.itertuples():
-        token = row.text
-        exclude = row.exclude
+    data_frame = pl.read_csv(tsv_vrs_files[0], separator='\t', infer_schema_length=0)
+    for row in data_frame.iter_rows(named=True):
+        token = row["text"]
+        exclude = row["exclude"]
         
         if(exclude == 'y'):
             exclude_bool = True
@@ -150,11 +150,11 @@ def test_exclude_bracketed_text(tsv_vrs_files):
         
         in_brackets = False
         
-        data_frame = pd.read_csv(tsv_vrs_files[0], sep='\t',dtype=str)
-        for row in data_frame.itertuples():
+        data_frame = pl.read_csv(tsv_vrs_files[0], separator='\t', infer_schema_length=0)
+        for row in data_frame.iter_rows(named=True):
             
-            token = row.text
-            exclude = row.exclude
+            token = row["text"]
+            exclude = row["exclude"]
             
             if(exclude == 'y'):
                     exclude_bool = True
@@ -173,3 +173,62 @@ def test_exclude_bracketed_text(tsv_vrs_files):
                 
                 if(char ==']'):
                     in_brackets = False
+
+@pytest.mark.parametrize("tsv_vrs_files", __tsv_vrs_name_files__)
+def test_cross_references_only_on_verse_ends(tsv_vrs_files):    
+    print(tsv_vrs_files[0])
+    current_bcv_id = "00000000"
+    in_parentheses = False
+    is_cross_reference = False
+
+    data_frame = pl.read_csv(tsv_vrs_files[0], separator='\t', infer_schema_length=0)
+    for row in data_frame.iter_rows(named=True):
+        
+        previous_bcv_id = current_bcv_id
+        current_bcv_id = row["id"][0:8]
+        token = str(row["text"])
+        
+        if(is_cross_reference and not in_parentheses):
+            assert(previous_bcv_id != current_bcv_id)
+            is_cross_reference = False
+        
+        for char in token:
+            if(char == '('):
+                in_parentheses = True
+            if(in_parentheses and char == ':'):
+                is_cross_reference = True
+            elif(char ==')'):
+                in_parentheses = False
+                
+@pytest.mark.parametrize("tsv_vrs_files", __tsv_vrs_name_files__)
+def test_cross_references_are_excluded(tsv_vrs_files):    
+    print(tsv_vrs_files[0])
+    if ("IRVHin" in tsv_vrs_files[0]):
+        in_parentheses = False
+        is_cross_reference = False
+        unprinted_parenthetical_token_list = []
+        #use prompts to control if this test gets skipped
+
+        data_frame = pl.read_csv(tsv_vrs_files[0], separator='\t', infer_schema_length=0)
+        for row in data_frame.iter_rows(named=True):
+
+            token = str(row["text"])
+            
+            if(not in_parentheses):
+                if(is_cross_reference):
+                    for unprinted_parenthetical_token in unprinted_parenthetical_token_list:
+                        assert(unprinted_parenthetical_token["exclude"] == "y")
+                    is_cross_reference = False
+                unprinted_parenthetical_token_list.clear()
+            
+            for char in token:
+                if(char == '('):
+                    in_parentheses = True
+                if(in_parentheses and char == ':'):
+                    is_cross_reference = True
+            
+            if(in_parentheses):    
+                unprinted_parenthetical_token_list.append(row)
+            
+            if(')' in token):
+                in_parentheses = False

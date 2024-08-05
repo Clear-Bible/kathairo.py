@@ -32,8 +32,11 @@ tokenizerGroup.add_argument("-lt", "--latinTokenizer", action='store_true')
 tokenizerGroup.add_argument("-lw", "--latinWhiteSpaceIncludedTokenizer", action='store_true')
 
 argumentParser.add_argument("-xb", "--excludeBracketedText", action='store_true') #optional
+argumentParser.add_argument("-xx", "--excludeCrossReferences", action='store_true') #optional
 
 argumentParser.add_argument("-ps", "--psalmSuperscriptionTag", type=str) #optional
+
+argumentParser.add_argument("-rz", "--removeZwFromWordsPath", type=str) #optional
 
 args = argumentParser.parse_args()
 
@@ -74,7 +77,9 @@ build_tsv.corpus_to_word_level_tsv(targetVersification = targetVersification,
                                     tokenizer = tokenizer, 
                                     project_name = projectName, 
                                     excludeBracketedText = args.excludeBracketedText,
-                                    language = args.language)  
+                                    excludeCrossReferences = args.excludeCrossReferences, 
+                                    language = args.language,
+                                    removeZwFromWordsPath = args.removeZwFromWordsPath)  
 
 build_tsv.corpus_to_verse_level_tsv(targetVersification = targetVersification, 
                                     sourceVersification = sourceVersification, 
@@ -82,4 +87,6 @@ build_tsv.corpus_to_verse_level_tsv(targetVersification = targetVersification,
                                     tokenizer = tokenizer, 
                                     project_name = projectName, 
                                     excludeBracketedText = args.excludeBracketedText,
-                                    language = args.language)    
+                                    excludeCrossReferences = args.excludeCrossReferences, 
+                                    language = args.language,
+                                    removeZwFromWordsPath = args.removeZwFromWordsPath)    
