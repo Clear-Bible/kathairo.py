@@ -9,7 +9,7 @@ from machine.corpora.usfm_text_base import UsfmTextBase
 from machine.corpora.usfm_text_base import _TextRowCollector
 
 class ModifiedTextRowCollector(_TextRowCollector):
-    def __init__(self, text: UsfmTextBase) -> None:
+    def __init__(self, text: UsfmTextBase, psalm_superscription_tag: str = "d") -> None:
         self._text = text
         self._rows: List[TextRow] = []
         self._verse_text = ""
@@ -17,18 +17,26 @@ class ModifiedTextRowCollector(_TextRowCollector):
         self._verse_ref: Optional[VerseRef] = None
         self._sentence_start: bool = False
         self._next_para_text_started = False
+        self._psalm_superscription_tag = psalm_superscription_tag
 
     @property
     def rows(self) -> Iterable[TextRow]:
         return self._rows
 
     def text(self, state: UsfmParserState, text: str) -> None:
-        #includes superscription text
-        if(state.prev_token is not None and state.prev_token.marker == "d" and state.verse_ref.book == "PSA" and state.verse_ref.bbbcccvvvs != "019119000"):
-            if self is not None:
-                self.verse(state, 0, "v", 0, 0)
         
-        if self._verse_ref is None or not state.is_verse_para:
+        is_psalm_superscription = False
+        
+        if(state.prev_token is not None):
+            is_psalm_superscription = ((state.prev_token.marker == self._psalm_superscription_tag) 
+                                    and state.verse_ref.book == "PSA" 
+                                    and (state.verse_ref.bbbcccvvvs != "019119000" and state.verse_ref.bbbcccvvvs != "019107000"))
+        
+        #includes superscription text
+        if self is not None and is_psalm_superscription:
+            self.verse(state, 0, "v", 0, 0)
+    
+        if self._verse_ref is None or (not state.is_verse_para and not is_psalm_superscription):
             return
 
         if self._text._include_markers:
@@ -40,7 +48,7 @@ class ModifiedTextRowCollector(_TextRowCollector):
                     self._next_para_tokens.clear()
                     self._next_para_text_started = True
                 self._verse_text += text
-        elif state.is_verse_text and len(text) > 0:
+        elif (state.is_verse_text or is_psalm_superscription) and len(text) > 0:
             if (
                 state.prev_token is not None
                 and state.prev_token.type == UsfmTokenType.END

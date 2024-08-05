@@ -31,9 +31,12 @@ tokenizerGroup.add_argument("-zh", "--chineseTokenizer", action='store_true')
 tokenizerGroup.add_argument("-lt", "--latinTokenizer", action='store_true')
 tokenizerGroup.add_argument("-lw", "--latinWhiteSpaceIncludedTokenizer", action='store_true')
 
-argumentParser.add_argument("-of", "--oldTsvFormat", action='store_true') #optional
-
 argumentParser.add_argument("-xb", "--excludeBracketedText", action='store_true') #optional
+argumentParser.add_argument("-xx", "--excludeCrossReferences", action='store_true') #optional
+
+argumentParser.add_argument("-ps", "--psalmSuperscriptionTag", type=str) #optional
+
+argumentParser.add_argument("-rz", "--removeZwFromWordsPath", type=str) #optional
 
 args = argumentParser.parse_args()
 
@@ -50,8 +53,13 @@ sourceVersification = Versification(name = "sourceVersification", base_versifica
 
 targetVersification = Versification.load(args.targetVersificationPath, fallback_name="web")
 
+if(args.psalmSuperscriptionTag is None):
+    psalmSuperscriptionTag = "d"
+else:
+    psalmSuperscriptionTag = args.psalmSuperscriptionTag
+
 if(args.targetUsfmCorpusPath is not None):
-    corpus = UsfmFileTextCorpus(args.targetUsfmCorpusPath, handler = ModifiedTextRowCollector, versification = targetVersification)
+    corpus = UsfmFileTextCorpus(args.targetUsfmCorpusPath, handler = ModifiedTextRowCollector, versification = targetVersification, psalmSuperscriptionTag = psalmSuperscriptionTag)
 if(args.targetUsxCorpusPath is not None):
     corpus = UsxFileTextCorpus(args.targetUsxCorpusPath, versification = targetVersification)
 
@@ -68,15 +76,17 @@ build_tsv.corpus_to_word_level_tsv(targetVersification = targetVersification,
                                     corpus = corpus, 
                                     tokenizer = tokenizer, 
                                     project_name = projectName, 
-                                    use_old_tsv_format = args.oldTsvFormat,
                                     excludeBracketedText = args.excludeBracketedText,
-                                    language = args.language)  
+                                    excludeCrossReferences = args.excludeCrossReferences, 
+                                    language = args.language,
+                                    removeZwFromWordsPath = args.removeZwFromWordsPath)  
 
 build_tsv.corpus_to_verse_level_tsv(targetVersification = targetVersification, 
                                     sourceVersification = sourceVersification, 
                                     corpus = corpus, 
                                     tokenizer = tokenizer, 
                                     project_name = projectName, 
-                                    use_old_tsv_format = args.oldTsvFormat,
                                     excludeBracketedText = args.excludeBracketedText,
-                                    language = args.language)    
+                                    excludeCrossReferences = args.excludeCrossReferences, 
+                                    language = args.language,
+                                    removeZwFromWordsPath = args.removeZwFromWordsPath)    
