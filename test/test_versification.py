@@ -28,7 +28,7 @@ class TestVersification:
             tsv_source_verses = []
             data_frame = pl.read_csv(tsv_vrs_name_files[0], separator='\t', infer_schema_length=0)
             
-            for row in data_frame.iter_rows(named=True, buffer_size=0):
+            for row in data_frame.iter_rows(named=True):
                 source_verse = int(row["source_verse"])      
                 if(isinstance(row["source_verse_range_end"], str)):
                     source_verse_range_end = int(row["source_verse_range_end"]) + 1
@@ -72,7 +72,7 @@ class TestVersification:
             
             data_frame = pl.read_csv(tsv_vrs_name_files[0], separator='\t', infer_schema_length=0)
             
-            for row in data_frame.iter_rows(named=True, buffer_size=0):
+            for row in data_frame.iter_rows(named=True):
                 id = row["source_verse"] #shouldn't this be source_verse?
                 
                 if(isinstance(row["source_verse_range_end"], str)):
@@ -160,7 +160,7 @@ class TestVersification:
             tsv_ids = []
             data_frame = pl.read_csv(tsv_vrs_name_files[0], separator='\t', infer_schema_length=0)
                     
-            for row in data_frame.iter_rows(named=True, buffer_size=0):
+            for row in data_frame.iter_rows(named=True):
                 id = int(row["id"][:8])      
                 if(isinstance(row["id_range_end"], str)):
                     id_range_end = int(row["id_range_end"][:8]) + 1 
@@ -203,7 +203,7 @@ class TestVersification:
             
             data_frame = pl.read_csv(tsv_vrs_name_files[0], separator='\t', infer_schema_length=0)
             
-            for row in data_frame.iter_rows(named=True, buffer_size=0):
+            for row in data_frame.iter_rows(named=True):
                 id = row["id"]   
                 
                 if(isinstance(row["id_range_end"], str)):
