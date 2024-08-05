@@ -70,7 +70,7 @@
   },
   {
     "projectName": "JFA11",
-    "targetVersificationPath": "./resources/por/JFA11/versification.vrs",
+    "targetVersificationPath": "./resources/por/JFA11/JFA11.vrs",
     "targetUsfmCorpusPath": "./resources/por/JFA11/usfm",
     "latinWhiteSpaceIncludedTokenizer": true,
     "language": "por"
