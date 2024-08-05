@@ -1,6 +1,5 @@
 import csv
 from pathlib import Path
-import pandas as pd
 from helpers.strings import is_unicode_punctuation
 from machine.scripture import Versification
 from helpers.paths import get_target_file_location
