@@ -67,13 +67,13 @@ class TestVersification:
             
             book_list = []
             chapter_list = []
-            current_verse_count = 1
-            previous_source_verse = "01001001001"
+            current_verse_count = 0
+            previous_source_verse = "01001000000"
             
             data_frame = pl.read_csv(tsv_vrs_name_files[0], separator='\t', infer_schema_length=0)
             
             for row in data_frame.iter_rows(named=True):
-                source_verse = row["source_verse"] #shouldn't this be source_verse?
+                source_verse = row["source_verse"]
                 
                 if(isinstance(row["source_verse_range_end"], str)):
                     source_verse_range_end = row["source_verse_range_end"]
@@ -94,7 +94,22 @@ class TestVersification:
                 
                 range_size = current_verse_source_verse_range_end - current_verse_source_verse
                 
-                if(current_verse_source_verse > previous_verse_source_verse):#verse changes !=
+                '''
+                if(current_chapter_source_verse_range_end > current_chapter_source_verse): #cross-chapter verse range
+                    
+                    #increment current_verse_count
+                    #assume that the cross-chapter source_verse range is a single verse
+                    current_verse_count += 1
+                    
+                    #add chapter to chapter_list
+                    chapter_list.append(current_verse_count)
+                    current_verse_count = 0
+                    
+                    #increment current_verse_count for next chapter
+                    current_verse_count += current_verse_source_verse_range_end
+                '''
+                
+                if(current_verse_source_verse > previous_verse_source_verse):#verse changes != #elif
                     #increment verse count
                     current_verse_count += 1 + range_size
                 
@@ -102,7 +117,9 @@ class TestVersification:
                    previous_chapter_source_verse < current_chapter_source_verse):#chapter changes
                     #add chapter to chapter_list
                     chapter_list.append(current_verse_count)
-                    current_verse_count = 1
+                    current_verse_count = 0
+                    #increment verse count
+                    current_verse_count += 1 + range_size
                 
                 if(current_book_source_verse > previous_book_source_verse):#book changes
                     #add book to book_list
@@ -110,7 +127,7 @@ class TestVersification:
                     book_list.append(chapter_list)
                     chapter_list = []
                     
-                previous_source_verse = source_verse    
+                previous_source_verse = source_verse #source_verse_range_end    
             
             chapter_list.append(current_verse_count)
             book_list.append(chapter_list)  
@@ -199,8 +216,8 @@ class TestVersification:
             
             book_list = []
             chapter_list = []
-            current_verse_count = 1
-            previous_id = "01001001001"
+            current_verse_count = 0
+            previous_id = "01001000000"
             
             data_frame = pl.read_csv(tsv_vrs_name_files[0], separator='\t', infer_schema_length=0)
             
@@ -234,9 +251,11 @@ class TestVersification:
                    previous_chapter_id < current_chapter_id):#chapter changes
                     #add chapter to chapter_list
                     chapter_list.append(current_verse_count)
-                    current_verse_count = 1
+                    current_verse_count = 0
                     if(current_verse_id == 0):
-                        current_verse_count = 0
+                        current_verse_count = -1
+                    #increment verse count
+                    current_verse_count += 1 + range_size
                 
                 if(current_book_id > previous_book_id):#book changes
                     #add book to book_list
