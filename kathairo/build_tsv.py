@@ -29,7 +29,9 @@ import helpers.versification
 def corpus_to_verse_level_tsv(targetVersification:Versification, sourceVersification:Versification, corpus:ScriptureTextCorpus, tokenizer:WhitespaceTokenizer, 
                             project_name:str, language:str, removeZwFromWordsPath:str, excludeBracketedText:bool = False, excludeCrossReferences:bool = False):
     #How do we remove ZW characters from verse text?
-    unused_versification_mapping = targetVersification.mappings._standard_to_versification
+    
+    unused_versification_mapping = helpers.versification.create_target_to_sources_dict(targetVersification)
+    
     outputFileName = get_target_file_location("VerseText", project_name, language)
 
     os.makedirs(os.path.dirname(outputFileName), exist_ok=True)
@@ -62,7 +64,9 @@ def corpus_to_verse_level_tsv(targetVersification:Versification, sourceVersifica
 
 def corpus_to_word_level_tsv(targetVersification:Versification, sourceVersification:Versification, corpus:ScriptureTextCorpus, tokenizer:WhitespaceTokenizer, 
                 project_name:str, language:str, removeZwFromWordsPath:str, excludeBracketedText:bool = False, excludeCrossReferences:bool = False):
-    unused_versification_mapping = targetVersification.mappings._standard_to_versification
+    
+    unused_versification_mapping = helpers.versification.create_target_to_sources_dict(targetVersification)
+    
     zw_removal_df=None
     if(removeZwFromWordsPath != None):
         zw_removal_df = pd.read_csv(removeZwFromWordsPath, sep='\t',dtype=str)

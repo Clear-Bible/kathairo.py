@@ -1,3 +1,5 @@
+import time
+start = time.time()
 from Tokenization import ChineseBibleWordTokenizer
 from Tokenization.latin_whitespace_included_tokenizer import LatinWhitespaceIncludedWordTokenizer
 from Parsing.USX.usx_file_text_corpus import UsxFileTextCorpus
@@ -93,3 +95,4 @@ else:
                                         excludeCrossReferences = args.excludeCrossReferences, 
                                         language = args.language,
                                         removeZwFromWordsPath = args.removeZwFromWordsPath)    
+print(time.time()-start)
