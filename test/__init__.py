@@ -4,6 +4,7 @@ from helpers.strings import is_unicode_punctuation
 from machine.scripture import Versification
 from helpers.paths import get_target_file_location
 import os
+import polars as pl
 
 #__macula_greek_tsv_rows__ = []
 
@@ -42,7 +43,7 @@ with open(json_file) as json_data:
 #        __macula_greek_tsv_rows__.append(row)
      
 #for project in __tsv_vrs_name_files__:
-#    test_chapter_size(project)
+#    test_source_chapter_size(project)
 
 #for files in __tsv_vrs_name_files__:
 #    reconstitute(Path(files[0]))

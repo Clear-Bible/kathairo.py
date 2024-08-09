@@ -1,3 +1,5 @@
+import time
+start = time.time()
 from Tokenization import ChineseBibleWordTokenizer
 from Tokenization.latin_whitespace_included_tokenizer import LatinWhitespaceIncludedWordTokenizer
 from Parsing.USX.usx_file_text_corpus import UsxFileTextCorpus
@@ -30,6 +32,8 @@ tokenizerGroup = argumentParser.add_mutually_exclusive_group(required=True)
 tokenizerGroup.add_argument("-zh", "--chineseTokenizer", action='store_true')
 tokenizerGroup.add_argument("-lt", "--latinTokenizer", action='store_true')
 tokenizerGroup.add_argument("-lw", "--latinWhiteSpaceIncludedTokenizer", action='store_true')
+
+argumentParser.add_argument("-wl", "--runBuildWordLevelTsv", action='store_true')
 
 argumentParser.add_argument("-xb", "--excludeBracketedText", action='store_true') #optional
 argumentParser.add_argument("-xx", "--excludeCrossReferences", action='store_true') #optional
@@ -71,22 +75,24 @@ if(args.latinWhiteSpaceIncludedTokenizer == True):
     tokenizer = LatinWhitespaceIncludedWordTokenizer(treat_apostrophe_as_single_quote=True,
                                                      language = args.language)
 
-build_tsv.corpus_to_word_level_tsv(targetVersification = targetVersification, 
-                                    sourceVersification = sourceVersification, 
-                                    corpus = corpus, 
-                                    tokenizer = tokenizer, 
-                                    project_name = projectName, 
-                                    excludeBracketedText = args.excludeBracketedText,
-                                    excludeCrossReferences = args.excludeCrossReferences, 
-                                    language = args.language,
-                                    removeZwFromWordsPath = args.removeZwFromWordsPath)  
-
-build_tsv.corpus_to_verse_level_tsv(targetVersification = targetVersification, 
-                                    sourceVersification = sourceVersification, 
-                                    corpus = corpus, 
-                                    tokenizer = tokenizer, 
-                                    project_name = projectName, 
-                                    excludeBracketedText = args.excludeBracketedText,
-                                    excludeCrossReferences = args.excludeCrossReferences, 
-                                    language = args.language,
-                                    removeZwFromWordsPath = args.removeZwFromWordsPath)    
+if(args.runBuildWordLevelTsv):
+    build_tsv.corpus_to_word_level_tsv(targetVersification = targetVersification, 
+                                        sourceVersification = sourceVersification, 
+                                        corpus = corpus, 
+                                        tokenizer = tokenizer, 
+                                        project_name = projectName, 
+                                        excludeBracketedText = args.excludeBracketedText,
+                                        excludeCrossReferences = args.excludeCrossReferences, 
+                                        language = args.language,
+                                        removeZwFromWordsPath = args.removeZwFromWordsPath)  
+else:
+    build_tsv.corpus_to_verse_level_tsv(targetVersification = targetVersification, 
+                                        sourceVersification = sourceVersification, 
+                                        corpus = corpus, 
+                                        tokenizer = tokenizer, 
+                                        project_name = projectName, 
+                                        excludeBracketedText = args.excludeBracketedText,
+                                        excludeCrossReferences = args.excludeCrossReferences, 
+                                        language = args.language,
+                                        removeZwFromWordsPath = args.removeZwFromWordsPath)    
+print(time.time()-start)

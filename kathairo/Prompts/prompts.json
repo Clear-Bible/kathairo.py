@@ -84,6 +84,13 @@
     "language": "rus"
   },
   {
+    "projectName": "RV09",
+    "targetVersificationPath": "./resources/spa/RV09/versification.vrs",
+    "targetUsxCorpusPath": "./resources/spa/RV09",
+    "latinWhiteSpaceIncludedTokenizer": true,
+    "language": "spa"
+  },
+  {
     "projectName": "ONEN",
     "targetVersificationPath": "./resources/swh/onen_usfm/versification.vrs",
     "targetUsfmCorpusPath": "./resources/swh/onen_usfm",

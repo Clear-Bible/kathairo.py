@@ -24,12 +24,14 @@ from helpers.paths import get_target_file_location
 import os
 import pandas as pd
 import helpers.strings as string
+import helpers.versification
 
 def corpus_to_verse_level_tsv(targetVersification:Versification, sourceVersification:Versification, corpus:ScriptureTextCorpus, tokenizer:WhitespaceTokenizer, 
-                              project_name:str, language:str, removeZwFromWordsPath:str, excludeBracketedText:bool = False, excludeCrossReferences:bool = False):
-
+                            project_name:str, language:str, removeZwFromWordsPath:str, excludeBracketedText:bool = False, excludeCrossReferences:bool = False):
     #How do we remove ZW characters from verse text?
-
+    
+    unused_versification_mapping = helpers.versification.create_target_to_sources_dict(targetVersification)
+    
     outputFileName = get_target_file_location("VerseText", project_name, language)
 
     os.makedirs(os.path.dirname(outputFileName), exist_ok=True)
@@ -41,15 +43,14 @@ def corpus_to_verse_level_tsv(targetVersification:Versification, sourceVersifica
 
         for row in corpus:#.tokenize(tokenizer).nfc_normalize()    
 
-            targetVref = VerseRef.from_bbbcccvvv(row.ref.bbbcccvvv, targetVersification) #dependent on which .vrs is being used
-            targetVref.change_versification(sourceVersification)
+            targetVref = VerseRef.from_bbbcccvvv(row.ref.bbbcccvvv, targetVersification) #dependent on which .vrs is being used    
             
-            sourceVref = targetVref
+            sourceVref, source_verse_range_end = helpers.versification.set_source_verse(targetVref, sourceVersification, unused_versification_mapping)
 
             if(not row.is_in_range or row.is_range_start):
                 for verse_range_row in verse_range_list:
-                    verse_range_row.append(f"{rowBcv}")
-                    verse_range_row.append(f"{sourceBcv}")
+                    verse_range_row[3] = (f"{rowBcv}")
+                    verse_range_row[4] = (f"{sourceBcv}")
                     tsv_writer.writerow(verse_range_row)
                 verse_range_list.clear()
 
@@ -57,13 +58,15 @@ def corpus_to_verse_level_tsv(targetVersification:Versification, sourceVersifica
             rowBcv= fromubs(f"{re.sub(r'[^0-9]', '', row.ref.bbbcccvvvs)}00000").to_bcvid
             
             if(row.text != "" and row.is_in_range):
-                verse_range_list.append([f"{rowBcv}", f"{sourceBcv}", row.text])
+                verse_range_list.append([f"{rowBcv}", f"{sourceBcv}", row.text, "", source_verse_range_end])
             elif(row.text != ""):
-                tsv_writer.writerow([f"{rowBcv}", f"{sourceBcv}", row.text, "", ""])
+                tsv_writer.writerow([f"{rowBcv}", f"{sourceBcv}", row.text, "", source_verse_range_end])
 
 def corpus_to_word_level_tsv(targetVersification:Versification, sourceVersification:Versification, corpus:ScriptureTextCorpus, tokenizer:WhitespaceTokenizer, 
-                  project_name:str, language:str, removeZwFromWordsPath:str, excludeBracketedText:bool = False, excludeCrossReferences:bool = False):
-
+                project_name:str, language:str, removeZwFromWordsPath:str, excludeBracketedText:bool = False, excludeCrossReferences:bool = False):
+    
+    unused_versification_mapping = helpers.versification.create_target_to_sources_dict(targetVersification)
+    
     zw_removal_df=None
     if(removeZwFromWordsPath != None):
         zw_removal_df = pd.read_csv(removeZwFromWordsPath, sep='\t',dtype=str)
@@ -95,11 +98,10 @@ def corpus_to_word_level_tsv(targetVersification:Versification, sourceVersificat
             
             #print(f"{row.ref}: {row.text}")
 
-            targetVref = VerseRef.from_bbbcccvvv(row.ref.bbbcccvvv, targetVersification) #dependent on which .vrs is being used
-            targetVref.change_versification(sourceVersification)
+            targetVref = VerseRef.from_bbbcccvvv(row.ref.bbbcccvvv, targetVersification) #dependent on which .vrs is being used    
             
-            sourceVref = targetVref
-
+            sourceVref, source_verse_range_end = helpers.versification.set_source_verse(targetVref, sourceVersification, unused_versification_mapping)
+                
             wordIndex = 1
             
             if(not in_parentheses):    
@@ -183,12 +185,12 @@ def corpus_to_word_level_tsv(targetVersification:Versification, sourceVersificat
                 
                 if(row.text != ""):
                     if(in_parentheses):
-                        unprinted_parenthetical_tokens.append(([f"{rowBcv}{wordIndexStr}", f"{sourceBcv}", token, skip_space_after, exclude, "", ""]))
+                        unprinted_parenthetical_tokens.append(([f"{rowBcv}{wordIndexStr}", f"{sourceBcv}", token, skip_space_after, exclude, "", source_verse_range_end]))
                     elif(row.is_in_range):
                         is_verse_range = True
-                        unprinted_row_list.append([f"{rowBcv}{wordIndexStr}", f"{sourceBcv}", token, skip_space_after, exclude, "", ""])
+                        unprinted_row_list.append([f"{rowBcv}{wordIndexStr}", f"{sourceBcv}", token, skip_space_after, exclude, "", source_verse_range_end])
                     else:
-                        tsv_writer.writerow([f"{rowBcv}{wordIndexStr}", f"{sourceBcv}", token, skip_space_after, exclude, "", ""])
+                        tsv_writer.writerow([f"{rowBcv}{wordIndexStr}", f"{sourceBcv}", token, skip_space_after, exclude, "", source_verse_range_end])
                 
                 if(')' in token):
                     in_parentheses = False
@@ -258,14 +260,14 @@ if(__name__ == "__main__"):
     #project_name="RSB-SYNO"
     
     #IRV
-    targetVersification = Versification.load("./resources/hin/IRVHin/versification.vrs", fallback_name="web")
-    sourceVersification = Versification(name = "sourceVersification", base_versification=ORIGINAL_VERSIFICATION)
-    language="hin"
-    corpus = UsxFileTextCorpus("./resources/hin/IRVHin", versification = targetVersification)
-    tokenizer = LatinWhitespaceIncludedWordTokenizer(language=language)
-    project_name="IRVHin"
-    excludeBracketedText = False
-    removeZwFromWordsPath = "./resources/hin/zw-removal-words.tsv"
+    #targetVersification = Versification.load("./resources/hin/IRVHin/versification.vrs", fallback_name="web")
+    #sourceVersification = Versification(name = "sourceVersification", base_versification=ORIGINAL_VERSIFICATION)
+    #language="hin"
+    #corpus = UsxFileTextCorpus("./resources/hin/IRVHin", versification = targetVersification)
+    #tokenizer = LatinWhitespaceIncludedWordTokenizer(language=language)
+    #project_name="IRVHin"
+    #excludeBracketedText = False
+    #removeZwFromWordsPath = "./resources/hin/zw-removal-words.tsv"
     
     
     #LSG
@@ -286,5 +288,15 @@ if(__name__ == "__main__"):
     #project_name = "IRVBen"
     #excludeBracketedText = False
     
-    corpus_to_word_level_tsv(targetVersification, sourceVersification, corpus, tokenizer, project_name, excludeBracketedText=excludeBracketedText, language=language, removeZwFromWordsPath=removeZwFromWordsPath)
-    #corpus_to_verse_level_tsv(targetVersification, sourceVersification, corpus, tokenizer, project_name, language=language)
+    #RV09
+    targetVersification = Versification.load("./resources/spa/RV09/versification.vrs", fallback_name="web")
+    sourceVersification = Versification(name = "sourceVersification", base_versification=ORIGINAL_VERSIFICATION)
+    language="spa"
+    corpus = UsfmFileTextCorpus("./resources/spa/RV09", versification = targetVersification, handler=ModifiedTextRowCollector, psalmSuperscriptionTag = "d")
+    tokenizer = LatinWhitespaceIncludedWordTokenizer(language=language)
+    project_name="RV09"
+    excludeBracketedText = False
+    removeZwFromWordsPath = None
+    
+    #corpus_to_word_level_tsv(targetVersification, sourceVersification, corpus, tokenizer, project_name, excludeBracketedText=excludeBracketedText, language=language, removeZwFromWordsPath=removeZwFromWordsPath)
+    corpus_to_verse_level_tsv(targetVersification, sourceVersification, corpus, tokenizer, project_name, language=language, removeZwFromWordsPath=None)
