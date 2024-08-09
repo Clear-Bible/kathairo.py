@@ -86,9 +86,8 @@
   {
     "projectName": "RV09",
     "targetVersificationPath": "./resources/spa/RV09/versification.vrs",
-    "targetUsfmCorpusPath": "./resources/spa/RV09",
+    "targetUsxCorpusPath": "./resources/spa/RV09",
     "latinWhiteSpaceIncludedTokenizer": true,
-    "excludeBracketedText": true,
     "language": "spa"
   },
   {
