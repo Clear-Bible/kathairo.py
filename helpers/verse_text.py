@@ -35,7 +35,7 @@ def reconstitute(tsv_file_path:Path, language:str):
         parts.append(text)
         verses.append(parts)#.strip()
 
-        output_file = input_file.parent.parent.parent / "test" /"reconstituted" / language / f"{input_file.stem}_reconstitution.tsv"
+        output_file = input_file.parent.parent.parent / "test" / "reconstituted" / language / f"{input_file.stem}_reconstitution.tsv"
         
         os.makedirs(os.path.dirname(output_file), exist_ok=True)
         with open(output_file, 'w', newline='', encoding='utf-8') as out_file:

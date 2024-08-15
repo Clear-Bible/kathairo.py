@@ -1,9 +1,10 @@
 import subprocess
 import json
+from pathlib import Path
 
-json_file = "kathairo/Prompts/prompts.json"
+json_file = Path("kathairo/Prompts/prompts.json")
 
-with open(json_file) as json_data:
+with json_file.open() as json_data:
     jsonData = json.load(json_data)
     for jsonObject in jsonData:
         jsonKeys = jsonObject.keys()
@@ -13,16 +14,16 @@ with open(json_file) as json_data:
             'run',
             'python',
             'kathairo/build_tsv_args_parser.py'
-                            ]
+        ]
         
         for key in jsonKeys:
-            commandToRunList.append("--"+key)
-            if(type(jsonObject[key]) != bool):
-                commandToRunList.append(jsonObject[key])
+            commandToRunList.append("--" + key)
+            if isinstance(jsonObject[key], bool) is False:
+                commandToRunList.append(str(jsonObject[key]))
 
         try:
             subprocess.Popen(commandToRunList)
-            commandToRunList.append("--"+"runBuildWordLevelTsv")
+            commandToRunList.append("--" + "runBuildWordLevelTsv")
             subprocess.Popen(commandToRunList)
         except subprocess.CalledProcessError as e:
             print(f"An error occurred while running wrapper.py: {e}")
