@@ -13,13 +13,13 @@ files = [
 
 [[package]]
 name = "biblelib"
-version = "0.3.11"
+version = "0.3.4"
 description = "Utilities for working with metadata for Bible books, references, pericopes, and other units."
 optional = false
 python-versions = "<4,>=3.8"
 files = [
-    {file = "biblelib-0.3.11-py3-none-any.whl", hash = "sha256:fbc4445c9fb0ea1ead3e3ba0d516df1d351c84a5d838e7266bad3ed51dcc7137"},
-    {file = "biblelib-0.3.11.tar.gz", hash = "sha256:14cb91162a862818ad70fd8c65d9c3f34e6eec535f28bc84afca6712d567fd15"},
+    {file = "biblelib-0.3.4-py3-none-any.whl", hash = "sha256:e589fb4bf49bdde030abcf9fa6dc14205af4912e50b4d43178ba9f4cda0fbf73"},
+    {file = "biblelib-0.3.4.tar.gz", hash = "sha256:b919cc55d9e0e09f9b2665835181e141e72dbda6dcffa4e350c3be45bdca5f69"},
 ]
 
 [package.dependencies]
@@ -1347,43 +1347,6 @@ sentencepiece = ["sentencepiece (>=0.1.95,<0.2.0)"]
 thot = ["sil-thot (>=3.4.3,<4.0.0)"]
 
 [[package]]
-name = "sil-thot"
-version = "3.4.4"
-description = "A toolkit for statistical word alignment and machine translation"
-optional = false
-python-versions = "<4.0,>=3.7"
-files = [
-    {file = "sil_thot-3.4.4-cp310-cp310-macosx_10_9_x86_64.whl", hash = "sha256:8a0a0667e5729a3cd5aeb8baeca75d2ec50c62bd8dc35733734f2f363153727c"},
-    {file = "sil_thot-3.4.4-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:798c7b7e1e724d7ae19d865aa637f74caa065106c30f2115e6bdc361a9641b8a"},
-    {file = "sil_thot-3.4.4-cp310-cp310-win32.whl", hash = "sha256:e081c538da56846061230caab482085f18af342f2e2233b8b1abbed75097514a"},
-    {file = "sil_thot-3.4.4-cp310-cp310-win_amd64.whl", hash = "sha256:49ebc593859af73c0be7b605be9fe1bcfd303fb8c18f32cc409e108bcb06cc81"},
-    {file = "sil_thot-3.4.4-cp311-cp311-macosx_10_9_x86_64.whl", hash = "sha256:17acaa557f72a00a55407abc8a9a8eb8236b016da060a4a51ca409eac841e049"},
-    {file = "sil_thot-3.4.4-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:f2cef518ea8c21c740058c1774fbe31380f6a1b4c373ff56c0479d5100a62b07"},
-    {file = "sil_thot-3.4.4-cp311-cp311-win32.whl", hash = "sha256:d52e0390de511af17290c85ff77a6fd6ef6517de43b7e968cdc146772166a7bb"},
-    {file = "sil_thot-3.4.4-cp311-cp311-win_amd64.whl", hash = "sha256:261768c39275e0d60ef14d74fb114f8d2c7222e70aafd346a46666b6c3e5111a"},
-    {file = "sil_thot-3.4.4-cp312-cp312-macosx_10_9_x86_64.whl", hash = "sha256:ff35386ecad34fa207c7736391364ee5edd6b3817b13abe205477d43e63bc8b5"},
-    {file = "sil_thot-3.4.4-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:7b189de4ec845ce94a3e81a6cc047f70e4c274bf5868e2b2b17e7d8fed139c4d"},
-    {file = "sil_thot-3.4.4-cp312-cp312-win32.whl", hash = "sha256:e21fd4f822d9521e5dc9b00352d4cbf05cc25354ceb8a56bbf204270f7c4a55d"},
-    {file = "sil_thot-3.4.4-cp312-cp312-win_amd64.whl", hash = "sha256:281fa2daac69b4eba762fd3bfcb0524c9bd30c2475be56766b1586eb8e07a45f"},
-    {file = "sil_thot-3.4.4-cp37-cp37m-macosx_10_9_x86_64.whl", hash = "sha256:4114214325ec6980cd432631e8b32dbe8d8e32c7a5a38a27390de81908d71bfd"},
-    {file = "sil_thot-3.4.4-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:9830fcaad8e2633c485eba48178ead20dab455da63751b0a7e5afdc298aaea0c"},
-    {file = "sil_thot-3.4.4-cp37-cp37m-win32.whl", hash = "sha256:b1a49387528e2ab00bad739f754f1242a1297d74cc1edf5c8634a3b8247f405f"},
-    {file = "sil_thot-3.4.4-cp37-cp37m-win_amd64.whl", hash = "sha256:1d27ce4d8015c920f0cccbccd089004dbdbc32fa79a33c2f4adcd7ae9c574188"},
-    {file = "sil_thot-3.4.4-cp38-cp38-macosx_10_9_x86_64.whl", hash = "sha256:c592ffc507dbb7e3a5a87a7adaf5089f3b1d24df5158407c40115f9f32814330"},
-    {file = "sil_thot-3.4.4-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:fd66a7cdfe5a1ce2e94b56f23d1fbfb5a10e93f2cdcd7de8212e6495c7a934be"},
-    {file = "sil_thot-3.4.4-cp38-cp38-win32.whl", hash = "sha256:d9aa73270aa4f7cc110e4d936a69d27f0662ec62043443a4edef1aa276f0a3cc"},
-    {file = "sil_thot-3.4.4-cp38-cp38-win_amd64.whl", hash = "sha256:e16bacecfbfe46d79e2cd5c4fc33263f618028ee3846289617e2f1ce4b12e14a"},
-    {file = "sil_thot-3.4.4-cp39-cp39-macosx_10_9_x86_64.whl", hash = "sha256:0439478b2c9d533a94396b726d47ae8833ffb4f682494c9dabb244bee0cb281d"},
-    {file = "sil_thot-3.4.4-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:4e5c18de7a806b510998c44c6fb7470dc31678be61ed8334d16bf24eea382c33"},
-    {file = "sil_thot-3.4.4-cp39-cp39-win32.whl", hash = "sha256:bc6b9c2cbe7e065c16d7ba1967df560815785d67a8b5b99b9386fbfce116bd96"},
-    {file = "sil_thot-3.4.4-cp39-cp39-win_amd64.whl", hash = "sha256:ffa6b4324cb1e1e9ad9609d6e31f8a8f989a219b561681a6ad56e673ded59e91"},
-    {file = "sil_thot-3.4.4.tar.gz", hash = "sha256:5fa312f58bac84e9c90ae5b2c902fc36b87e9872bed60f7d4bf6a8442a2985bf"},
-]
-
-[package.extras]
-test = ["numpy", "pytest"]
-
-[[package]]
 name = "six"
 version = "1.16.0"
 description = "Python 2 and 3 compatibility utilities"
@@ -1932,4 +1895,4 @@ files = [
 [metadata]
 lock-version = "2.0"
 python-versions = ">=3.10,<3.12"
-content-hash = "f4c87df7cfb4215744c648263b6789a797a3237cf32137b498a321831fb3219c"
+content-hash = "90c4c2fa841edf1630ccb89e3b73b59d95deb370f8c542430fdca94ef7fd9905"

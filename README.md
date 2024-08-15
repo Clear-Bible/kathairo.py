@@ -1,9 +1,9 @@
 # Getting Started
 1. Clone this Repository
-2. Install Python 3.11 (not 3.12).  When you install Python 3.11 make sure to add it to your `PATH` variable to make it easier to run from the command-line
+2. Install Python 3.11 (not 3.12).  When you install Python 3.11 make sure to add it to your `PATH` variable to make it easier to run from the command-line.  This might be done automatically upon installing Python 3.11.
 3. Open the command-line
 4. Navigate into the kathairo.py repo
-5. Run `pip install poetry` to install the Python dependency management system that kathario uses
+5. Run `pip install poetry` (use `pip3` on Mac) to install the Python dependency management system that kathario uses
 6. Run `poetry shell` to enter the Poetry command-line (no worries if this fails though, just continue in the regular shell)
 7. Run `poetry install` to install all of kathairo's dependencies 
 
