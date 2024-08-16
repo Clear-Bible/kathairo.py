@@ -289,14 +289,25 @@ if(__name__ == "__main__"):
     #excludeBracketedText = False
     
     #RV09
-    targetVersification = Versification.load("./resources/spa/RV09/versification.vrs", fallback_name="web")
-    sourceVersification = Versification(name = "sourceVersification", base_versification=ORIGINAL_VERSIFICATION)
-    language="spa"
-    corpus = UsfmFileTextCorpus("./resources/spa/RV09", versification = targetVersification, handler=ModifiedTextRowCollector, psalmSuperscriptionTag = "d")
+    # targetVersification = Versification.load("./resources/spa/RV09/versification.vrs", fallback_name="web")
+    # sourceVersification = Versification(name = "sourceVersification", base_versification=ORIGINAL_VERSIFICATION)
+    # language="spa"
+    # corpus = UsfmFileTextCorpus("./resources/spa/RV09", versification = targetVersification, handler=ModifiedTextRowCollector, psalmSuperscriptionTag = "d")
+    # tokenizer = LatinWhitespaceIncludedWordTokenizer(language=language)
+    # project_name="RV09"
+    # excludeBracketedText = False
+    # removeZwFromWordsPath = None
+
+    #TBI
+    targetVersification = Versification.load("./resources/ind/TBI/custom.vrs", fallback_name="web")
+    sourceVersification = Versification(name="sourceVersification", base_versification=ORIGINAL_VERSIFICATION)
+    language = "ind"
+    corpus = UsfmFileTextCorpus("./resources/ind/TBI", versification=targetVersification,
+                                handler=ModifiedTextRowCollector, psalmSuperscriptionTag="s")
     tokenizer = LatinWhitespaceIncludedWordTokenizer(language=language)
-    project_name="RV09"
+    project_name = "TBI"
     excludeBracketedText = False
     removeZwFromWordsPath = None
-    
+
     #corpus_to_word_level_tsv(targetVersification, sourceVersification, corpus, tokenizer, project_name, excludeBracketedText=excludeBracketedText, language=language, removeZwFromWordsPath=removeZwFromWordsPath)
     corpus_to_verse_level_tsv(targetVersification, sourceVersification, corpus, tokenizer, project_name, language=language, removeZwFromWordsPath=None)
