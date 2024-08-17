@@ -96,5 +96,12 @@
     "targetUsfmCorpusPath": "./resources/swh/onen_usfm",
     "latinWhiteSpaceIncludedTokenizer": true,
     "language": "swh"
+  },
+  {
+    "projectName": "TBI",
+    "targetVersificationPath": "./resources/ind/TBI/custom.vrs",
+    "targetUsfmCorpusPath": "./resources/ind/TBI",
+    "latinWhiteSpaceIncludedTokenizer": true,
+    "language": "ind"
   }
 ]

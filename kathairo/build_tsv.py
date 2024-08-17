@@ -298,6 +298,16 @@ if(__name__ == "__main__"):
     # excludeBracketedText = False
     # removeZwFromWordsPath = None
 
+    #TBI
+    # targetVersification = Versification.load("./resources/ind/TBI/custom.vrs", fallback_name="web")
+    # sourceVersification = Versification(name="sourceVersification", base_versification=ORIGINAL_VERSIFICATION)
+    # language = "ind"
+    # corpus = UsfmFileTextCorpus("./resources/ind/TBI", versification=targetVersification, handler=ModifiedTextRowCollector, psalmSuperscriptionTag="s")
+    # tokenizer = LatinWhitespaceIncludedWordTokenizer(language=language)
+    # project_name = "TBI"
+    # excludeBracketedText = False
+    # removeZwFromWordsPath = None
+
     # JFA11
     targetVersification = Versification.load("./resources/por/JFA11/JFA11.vrs", fallback_name="web")
     sourceVersification = Versification(name = "sourceVersification", base_versification=ORIGINAL_VERSIFICATION)
