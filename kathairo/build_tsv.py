@@ -289,14 +289,24 @@ if(__name__ == "__main__"):
     #excludeBracketedText = False
     
     #RV09
-    targetVersification = Versification.load("./resources/spa/RV09/versification.vrs", fallback_name="web")
+    # targetVersification = Versification.load("./resources/spa/RV09/versification.vrs", fallback_name="web")
+    # sourceVersification = Versification(name = "sourceVersification", base_versification=ORIGINAL_VERSIFICATION)
+    # language="spa"
+    # corpus = UsfmFileTextCorpus("./resources/spa/RV09", versification = targetVersification, handler=ModifiedTextRowCollector, psalmSuperscriptionTag = "d")
+    # tokenizer = LatinWhitespaceIncludedWordTokenizer(language=language)
+    # project_name="RV09"
+    # excludeBracketedText = False
+    # removeZwFromWordsPath = None
+
+    # JFA11
+    targetVersification = Versification.load("./resources/por/JFA11/JFA11.vrs", fallback_name="web")
     sourceVersification = Versification(name = "sourceVersification", base_versification=ORIGINAL_VERSIFICATION)
-    language="spa"
-    corpus = UsfmFileTextCorpus("./resources/spa/RV09", versification = targetVersification, handler=ModifiedTextRowCollector, psalmSuperscriptionTag = "d")
+    language="por"
+    corpus = UsfmFileTextCorpus("./resources/por/JFA11/usfm", versification = targetVersification, handler=ModifiedTextRowCollector, psalmSuperscriptionTag = "d")
     tokenizer = LatinWhitespaceIncludedWordTokenizer(language=language)
-    project_name="RV09"
+    project_name="JFA11"
     excludeBracketedText = False
     removeZwFromWordsPath = None
-    
-    #corpus_to_word_level_tsv(targetVersification, sourceVersification, corpus, tokenizer, project_name, excludeBracketedText=excludeBracketedText, language=language, removeZwFromWordsPath=removeZwFromWordsPath)
+
+    corpus_to_word_level_tsv(targetVersification, sourceVersification, corpus, tokenizer, project_name, excludeBracketedText=excludeBracketedText, language=language, removeZwFromWordsPath=removeZwFromWordsPath)
     corpus_to_verse_level_tsv(targetVersification, sourceVersification, corpus, tokenizer, project_name, language=language, removeZwFromWordsPath=None)
