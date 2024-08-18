@@ -309,12 +309,25 @@ if(__name__ == "__main__"):
     # removeZwFromWordsPath = None
 
     # JFA11
-    targetVersification = Versification.load("./resources/por/JFA11/JFA11.vrs", fallback_name="web")
-    sourceVersification = Versification(name = "sourceVersification", base_versification=ORIGINAL_VERSIFICATION)
-    language="por"
-    corpus = UsfmFileTextCorpus("./resources/por/JFA11/usfm", versification = targetVersification, handler=ModifiedTextRowCollector, psalmSuperscriptionTag = "d")
+    # targetVersification = Versification.load("./resources/por/JFA11/JFA11.vrs", fallback_name="web")
+    # sourceVersification = Versification(name = "sourceVersification", base_versification=ORIGINAL_VERSIFICATION)
+    # language="por"
+    # corpus = UsfmFileTextCorpus("./resources/por/JFA11/usfm", versification = targetVersification, handler=ModifiedTextRowCollector, psalmSuperscriptionTag = "d")
+    # tokenizer = LatinWhitespaceIncludedWordTokenizer(language=language)
+    # project_name="JFA11"
+    # excludeBracketedText = False
+    # removeZwFromWordsPath = None
+
+    # SRUV06
+    usfm_language = "swh"
+    usfm_abbrev = "SRUV06"
+    targetVersification = Versification.load(f"./resources/{usfm_language}/{usfm_abbrev}/SRUV06.vrs", fallback_name="web")
+    sourceVersification = Versification(name="sourceVersification", base_versification=ORIGINAL_VERSIFICATION)
+    language = usfm_language
+    # corpus = UsfmFileTextCorpus(f"./resources/{usfm_language}/{usfm_abbrev}", versification=targetVersification, handler=ModifiedTextRowCollector, psalmSuperscriptionTag="s")
+    corpus = UsxFileTextCorpus(f"./resources/{usfm_language}/{usfm_abbrev}", versification = targetVersification)
     tokenizer = LatinWhitespaceIncludedWordTokenizer(language=language)
-    project_name="JFA11"
+    project_name = usfm_abbrev
     excludeBracketedText = False
     removeZwFromWordsPath = None
 
