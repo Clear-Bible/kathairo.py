@@ -13,16 +13,34 @@
 
 # To Build/Debug a Specific Target TSV
 Either:
-- Move all unwanted prompts into `kathairo\Prompts\prompts_unused.json`
-- Uncomment/Add appropriate project details to `build_tsv.py`
+- Temporarily remove unwanted prompts from `prompts.json`
+- Add/Uncomment appropriate project details to `build_tsv.py`
 
-# Unit Tests
+# To Run Unit Tests
+All target TSVs specified in `prompts.json` will be tested when the unit tests are run.
+
 On the command-line, in `\kathairo.py`, run `pytest -n auto`.  
 
 Add `-s` to the end if you want to see the output of the optional tests.  
 
 For a specific test, run `pytest test/<FILE_NAME>::<TEST_NAME> -n auto`.  
 For example, to run the test_source_chapter_size test you'd enter `pytest test/test_tsv_optional.py::test_source_chapter_size`.
+
+# Versification Tests
+After running `pytest -n auto`, the `versification_issues` directory will be updated.  There are four ways versification is tested:
+1. Source Mappings - Looking at the `source_verse` column, are all the source-verses present which are listed in the mappings section of the target versification?
+2. Source Size - Looking at the `source_verse` column, are the number of verses in each chapter the same as the chapter sizes defined by `org.vrs`?
+3. Target Mappings - Looking at the `id` column, are all the target-verses present which are listed in the mappings section of the target versification?
+4. Target Size - Looking at the `id` column, are the number of verses in each chapter the same as the chapter sizes defined by the target versification?
+
+Modifying the target versification file, whether the chapter size or mappings section, is how to fix any of the above issues.
+
+# Before Committing to Main
+1. Undo any temporary changes made to `prompts.json` 
+2. Add new project details to `prompts.json`
+3. Run `build_tsv_wrapper.py`
+4. Run `pytest -n auto`
+5. Version any modified word-level/verse-level TSVs 
 
 # Resources Provenance
 AVD - USFM
