@@ -103,5 +103,12 @@
     "targetUsfmCorpusPath": "./resources/ind/TBI",
     "latinWhiteSpaceIncludedTokenizer": true,
     "language": "ind"
+  },
+  {
+    "projectName": "SRUV06",
+    "targetVersificationPath": "./resources/swh/SRUV06/SRUV06.vrs",
+    "targetUsxCorpusPath": "./resources/swh/SRUV06",
+    "latinWhiteSpaceIncludedTokenizer": true,
+    "language": "swh"
   }
 ]
