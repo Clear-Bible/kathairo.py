@@ -89,6 +89,9 @@ def corpus_to_word_level_tsv(targetVersification:Versification, sourceVersificat
         
         is_verse_range = False
         
+        targetVref = None
+        previous_verse_num = 0
+        
         for row in corpus.tokenize(tokenizer):#.tokenize(tokenizer).nfc_normalize() #Include for Double Tokenization    
 
             #if(row.is_in_range and row.text == ''):
@@ -98,11 +101,17 @@ def corpus_to_word_level_tsv(targetVersification:Versification, sourceVersificat
             
             #print(f"{row.ref}: {row.text}")
 
+            if(targetVref != None):
+                previous_verse_num = targetVref.verse_num
             targetVref = VerseRef.from_bbbcccvvv(row.ref.bbbcccvvv, targetVersification) #dependent on which .vrs is being used    
             
             sourceVref, source_verse_range_end = helpers.versification.set_source_verse(targetVref, sourceVersification, unused_versification_mapping)
-                
-            wordIndex = 1
+            
+            if(targetVref.bbbcccvvvs == "043008001"):
+                stop = True
+            
+            if(targetVref.verse_num != previous_verse_num):
+                wordIndex = 1
             
             if(not in_parentheses):    
                 for unprinted_cross_reference_token in unprinted_parenthetical_tokens:
@@ -209,13 +218,14 @@ if(__name__ == "__main__"):
     #excludeBracketedText = False
 
     #OCCB-Simplified
-    #targetVersification = Versification.load("./resources/man/occb_simplified_usx/release/versification.vrs", fallback_name="web")
-    #sourceVersification = Versification(name = "sourceVersification", base_versification=ORIGINAL_VERSIFICATION)
-    #corpus = UsxFileTextCorpus("./resources/man/occb_simplified_usx/release/USX_1", versification = targetVersification)
-    #tokenizer = ChineseBibleWordTokenizer.ChineseBibleWordTokenizer()
-    #project_name = "OCCB-simplified"
-    #excludeBracketedText = False
-    #language="man"
+    targetVersification = Versification.load("./resources/man/occb_simplified_usx/release/versification.vrs", fallback_name="web")
+    sourceVersification = Versification(name = "sourceVersification", base_versification=ORIGINAL_VERSIFICATION)
+    corpus = UsxFileTextCorpus("./resources/man/occb_simplified_usx/release/USX_1", versification = targetVersification)
+    tokenizer = ChineseBibleWordTokenizer.ChineseBibleWordTokenizer()
+    project_name = "OCCB-simplified"
+    excludeBracketedText = False
+    language="man"
+    removeZwFromWordsPath = None
 
     #ONAV
     #targetVersification = Versification.load("./resources/onav_usx/release/versification.vrs", fallback_name="web")
@@ -319,17 +329,17 @@ if(__name__ == "__main__"):
     # removeZwFromWordsPath = None
 
     # SRUV06
-    usfm_language = "swh"
-    usfm_abbrev = "SRUV06"
-    targetVersification = Versification.load(f"./resources/{usfm_language}/{usfm_abbrev}/SRUV06.vrs", fallback_name="web")
-    sourceVersification = Versification(name="sourceVersification", base_versification=ORIGINAL_VERSIFICATION)
-    language = usfm_language
-    # corpus = UsfmFileTextCorpus(f"./resources/{usfm_language}/{usfm_abbrev}", versification=targetVersification, handler=ModifiedTextRowCollector, psalmSuperscriptionTag="s")
-    corpus = UsxFileTextCorpus(f"./resources/{usfm_language}/{usfm_abbrev}", versification = targetVersification)
-    tokenizer = LatinWhitespaceIncludedWordTokenizer(language=language)
-    project_name = usfm_abbrev
-    excludeBracketedText = False
-    removeZwFromWordsPath = None
+    #usfm_language = "ind"
+    #usfm_abbrev = "TBI"
+    #targetVersification = Versification.load(f"./resources/{usfm_language}/{usfm_abbrev}/custom.vrs", fallback_name="web")
+    #sourceVersification = Versification(name="sourceVersification", base_versification=ORIGINAL_VERSIFICATION)
+    #language = usfm_language
+    #corpus = UsfmFileTextCorpus(f"./resources/{usfm_language}/{usfm_abbrev}", versification=targetVersification, handler=ModifiedTextRowCollector, psalmSuperscriptionTag="s")
+    # corpus = UsxFileTextCorpus(f"./resources/{usfm_language}/{usfm_abbrev}", versification = targetVersification)
+    #tokenizer = LatinWhitespaceIncludedWordTokenizer(language=language)
+    #project_name = usfm_abbrev
+    #excludeBracketedText = False
+    #removeZwFromWordsPath = None
 
     corpus_to_word_level_tsv(targetVersification, sourceVersification, corpus, tokenizer, project_name, excludeBracketedText=excludeBracketedText, language=language, removeZwFromWordsPath=removeZwFromWordsPath)
-    corpus_to_verse_level_tsv(targetVersification, sourceVersification, corpus, tokenizer, project_name, language=language, removeZwFromWordsPath=None)
+    # corpus_to_verse_level_tsv(targetVersification, sourceVersification, corpus, tokenizer, project_name, language=language, removeZwFromWordsPath=None)
