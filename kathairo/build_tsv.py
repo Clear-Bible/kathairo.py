@@ -89,7 +89,6 @@ def corpus_to_word_level_tsv(targetVersification:Versification, sourceVersificat
         
         is_verse_range = False
         
-        targetVref = None
         previous_verse_num = 0
         
         for row in corpus.tokenize(tokenizer):#.tokenize(tokenizer).nfc_normalize() #Include for Double Tokenization    
@@ -101,17 +100,14 @@ def corpus_to_word_level_tsv(targetVersification:Versification, sourceVersificat
             
             #print(f"{row.ref}: {row.text}")
 
-            if(targetVref != None):
-                previous_verse_num = targetVref.verse_num
+            current_verse_num = row.ref.verse_num
+            if(current_verse_num != previous_verse_num):
+                wordIndex = 1
+            previous_verse_num = current_verse_num
+            
             targetVref = VerseRef.from_bbbcccvvv(row.ref.bbbcccvvv, targetVersification) #dependent on which .vrs is being used    
             
             sourceVref, source_verse_range_end = helpers.versification.set_source_verse(targetVref, sourceVersification, unused_versification_mapping)
-            
-            if(targetVref.bbbcccvvvs == "043008001"):
-                stop = True
-            
-            if(targetVref.verse_num != previous_verse_num):
-                wordIndex = 1
             
             if(not in_parentheses):    
                 for unprinted_cross_reference_token in unprinted_parenthetical_tokens:
