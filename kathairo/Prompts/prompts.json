@@ -110,5 +110,12 @@
     "targetUsxCorpusPath": "./resources/swh/SRUV06",
     "latinWhiteSpaceIncludedTokenizer": true,
     "language": "swh"
+  },
+  {
+    "projectName": "ULT",
+    "targetVersificationPath": "./resources/versification/eng.vrs",
+    "targetUsfmCorpusPath": "./resources/eng/ULT",
+    "latinWhiteSpaceIncludedTokenizer": true,
+    "language": "eng"
   }
 ]
