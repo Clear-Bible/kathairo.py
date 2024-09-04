@@ -52,6 +52,9 @@ ONAV - USX
 BSB - USFM
     https://berean.bible/downloads.htm
 
+BSB Updated - USFM
+    https://bereanbible.com/updates
+
 BSB - USX
     https://app.thedigitalbiblelibrary.org/entry/download_listing?id=bba9f40183526463&license=24374&revision=
 
