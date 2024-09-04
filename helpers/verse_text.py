@@ -1,6 +1,9 @@
 import csv
 from pathlib import Path
 import os
+from machine.scripture import (
+    VerseRef
+)
 
 def reconstitute(tsv_file_path:Path, language:str):
     #directory = Path(sys.argv[1])
@@ -14,7 +17,9 @@ def reconstitute(tsv_file_path:Path, language:str):
         parts = []
         last_verse = None
         for row in rows:
-            this_verse = row["id"][0:8]
+            vref = VerseRef.from_bbbcccvvv(int(row['id'][0:8]))
+            this_verse = f"{vref.book}.{vref.chapter}.{vref.verse}"
+            #this_verse = row["id"][0:8]
             if last_verse is None:
                 last_verse = this_verse
                 parts.append(f"{this_verse}")
