@@ -207,7 +207,7 @@ if(__name__ == "__main__"):
     #BSB
     # targetVersification = Versification.load("./resources/eng/bsb_usfm/versification.vrs", fallback_name="web")
     # sourceVersification = Versification(name = "sourceVersification", base_versification=ORIGINAL_VERSIFICATION)
-    # corpus = UsfmFileTextCorpus("./resources/eng/bsb_usfm", handler=ModifiedTextRowCollector, versification = targetVersification, psalmSuperscriptionTag = "s")
+    # corpus = UsfmFileTextCorpus("./resources/eng/bsb_usfm", handler=ModifiedTextRowCollector, versification = targetVersification)
     # language = "eng"
     # tokenizer = LatinWhitespaceIncludedWordTokenizer(language=language)
     # project_name = "BSB"
@@ -217,7 +217,7 @@ if(__name__ == "__main__"):
     # Updated BSB, but will overwrite BSB stuff RWB 2024-09-04
     targetVersification = Versification.load("./resources/eng/bsb_update_usfm/versification.vrs", fallback_name="web")
     sourceVersification = Versification(name = "sourceVersification", base_versification=ORIGINAL_VERSIFICATION)
-    corpus = UsfmFileTextCorpus("./resources/eng/bsb_update_usfm", handler=ModifiedTextRowCollector, versification = targetVersification, psalmSuperscriptionTag = "s")
+    corpus = UsfmFileTextCorpus("./resources/eng/bsb_update_usfm", handler=ModifiedTextRowCollector, versification = targetVersification, psalmSuperscriptionTag = "d")
     language = "eng"
     tokenizer = LatinWhitespaceIncludedWordTokenizer(language=language)
     project_name = "BSB"
