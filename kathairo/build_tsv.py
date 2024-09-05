@@ -205,23 +205,34 @@ def corpus_to_word_level_tsv(targetVersification:Versification, sourceVersificat
 
 if(__name__ == "__main__"):
     #BSB
-    #targetVersification = Versification.load("./resources/eng/bsb_usfm/versification.vrs", fallback_name="web")
-    #sourceVersification = Versification(name = "sourceVersification", base_versification=ORIGINAL_VERSIFICATION)
-    #corpus = UsfmFileTextCorpus("./resources/eng/bsb_usfm", handler=ModifiedTextRowCollector, versification = targetVersification)
-    #language = "eng"
-    #tokenizer = LatinWhitespaceIncludedWordTokenizer(language=language)
-    #project_name = "BSB"
-    #excludeBracketedText = False
+    # targetVersification = Versification.load("./resources/eng/bsb_usfm/versification.vrs", fallback_name="web")
+    # sourceVersification = Versification(name = "sourceVersification", base_versification=ORIGINAL_VERSIFICATION)
+    # corpus = UsfmFileTextCorpus("./resources/eng/bsb_usfm", handler=ModifiedTextRowCollector, versification = targetVersification)
+    # language = "eng"
+    # tokenizer = LatinWhitespaceIncludedWordTokenizer(language=language)
+    # project_name = "BSB"
+    # excludeBracketedText = False
+    # removeZwFromWordsPath = None
+
+    # Updated BSB, but will overwrite BSB stuff RWB 2024-09-04
+    targetVersification = Versification.load("./resources/eng/bsb_update_usfm/versification.vrs", fallback_name="web")
+    sourceVersification = Versification(name = "sourceVersification", base_versification=ORIGINAL_VERSIFICATION)
+    corpus = UsfmFileTextCorpus("./resources/eng/bsb_update_usfm", handler=ModifiedTextRowCollector, versification = targetVersification, psalmSuperscriptionTag = "d")
+    language = "eng"
+    tokenizer = LatinWhitespaceIncludedWordTokenizer(language=language)
+    project_name = "BSB"
+    excludeBracketedText = False
+    removeZwFromWordsPath = None
 
     #OCCB-Simplified
-    targetVersification = Versification.load("./resources/man/occb_simplified_usx/release/versification.vrs", fallback_name="web")
-    sourceVersification = Versification(name = "sourceVersification", base_versification=ORIGINAL_VERSIFICATION)
-    corpus = UsxFileTextCorpus("./resources/man/occb_simplified_usx/release/USX_1", versification = targetVersification)
-    tokenizer = ChineseBibleWordTokenizer.ChineseBibleWordTokenizer()
-    project_name = "OCCB-simplified"
-    excludeBracketedText = False
-    language="man"
-    removeZwFromWordsPath = None
+    # targetVersification = Versification.load("./resources/man/occb_simplified_usx/release/versification.vrs", fallback_name="web")
+    # sourceVersification = Versification(name = "sourceVersification", base_versification=ORIGINAL_VERSIFICATION)
+    # corpus = UsxFileTextCorpus("./resources/man/occb_simplified_usx/release/USX_1", versification = targetVersification)
+    # tokenizer = ChineseBibleWordTokenizer.ChineseBibleWordTokenizer()
+    # project_name = "OCCB-simplified"
+    # excludeBracketedText = False
+    # language="man"
+    # removeZwFromWordsPath = None
 
     #ONAV
     #targetVersification = Versification.load("./resources/onav_usx/release/versification.vrs", fallback_name="web")
@@ -338,4 +349,4 @@ if(__name__ == "__main__"):
     #removeZwFromWordsPath = None
 
     corpus_to_word_level_tsv(targetVersification, sourceVersification, corpus, tokenizer, project_name, excludeBracketedText=excludeBracketedText, language=language, removeZwFromWordsPath=removeZwFromWordsPath)
-    # corpus_to_verse_level_tsv(targetVersification, sourceVersification, corpus, tokenizer, project_name, language=language, removeZwFromWordsPath=None)
+    corpus_to_verse_level_tsv(targetVersification, sourceVersification, corpus, tokenizer, project_name, language=language, removeZwFromWordsPath=None)

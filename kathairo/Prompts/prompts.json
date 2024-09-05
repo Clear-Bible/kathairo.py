@@ -32,8 +32,8 @@
   },
   {
     "projectName": "BSB",
-    "targetVersificationPath": "./resources/eng/bsb_usfm/versification.vrs",
-    "targetUsfmCorpusPath": "./resources/eng/bsb_usfm",
+    "targetVersificationPath": "./resources/eng/bsb_update_usfm/versification.vrs",
+    "targetUsfmCorpusPath": "./resources/eng/bsb_update_usfm",
     "latinWhiteSpaceIncludedTokenizer": true,
     "language": "eng"
   },
