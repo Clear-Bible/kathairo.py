@@ -348,5 +348,18 @@ if(__name__ == "__main__"):
     #excludeBracketedText = False
     #removeZwFromWordsPath = None
 
+    # SRUV06
+    usfm_language = "eng"
+    usfm_abbrev = "ULT"
+    targetVersification = Versification.load(f"./resources/versification/eng.vrs", fallback_name="web")
+    sourceVersification = Versification(name="sourceVersification", base_versification=ORIGINAL_VERSIFICATION)
+    language = usfm_language
+    corpus = UsfmFileTextCorpus(f"./resources/{usfm_language}/{usfm_abbrev}/", versification=targetVersification, handler=ModifiedTextRowCollector, psalmSuperscriptionTag="d")
+    # corpus = UsxFileTextCorpus(f"./resources/{usfm_language}/{usfm_abbrev}", versification = targetVersification)
+    tokenizer = LatinWhitespaceIncludedWordTokenizer(language=language)
+    project_name = usfm_abbrev
+    excludeBracketedText = False
+    removeZwFromWordsPath = None
+
     corpus_to_word_level_tsv(targetVersification, sourceVersification, corpus, tokenizer, project_name, excludeBracketedText=excludeBracketedText, language=language, removeZwFromWordsPath=removeZwFromWordsPath)
     corpus_to_verse_level_tsv(targetVersification, sourceVersification, corpus, tokenizer, project_name, language=language, removeZwFromWordsPath=None)
