@@ -117,5 +117,19 @@
     "targetUsfmCorpusPath": "./resources/eng/ULT",
     "latinWhiteSpaceIncludedTokenizer": true,
     "language": "eng"
+  },
+  {
+    "projectName": "GLT",
+    "targetVersificationPath": "./resources/hin/GLT/versification.vrs",
+    "targetUsfmCorpusPath": "./resources/hin/GLT",
+    "latinWhiteSpaceIncludedTokenizer": true,
+    "language": "hin"
+  },
+  {
+    "projectName": "GST",
+    "targetVersificationPath": "./resources/hin/GST/versification.vrs",
+    "targetUsfmCorpusPath": "./resources/hin/GST",
+    "latinWhiteSpaceIncludedTokenizer": true,
+    "language": "hin"
   }
 ]
