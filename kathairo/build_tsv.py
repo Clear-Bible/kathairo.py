@@ -215,14 +215,14 @@ if(__name__ == "__main__"):
     # removeZwFromWordsPath = None
 
     # Updated BSB, but will overwrite BSB stuff RWB 2024-09-04
-    targetVersification = Versification.load("./resources/eng/bsb_update_usfm/versification.vrs", fallback_name="web")
-    sourceVersification = Versification(name = "sourceVersification", base_versification=ORIGINAL_VERSIFICATION)
-    corpus = UsfmFileTextCorpus("./resources/eng/bsb_update_usfm", handler=ModifiedTextRowCollector, versification = targetVersification, psalmSuperscriptionTag = "d")
-    language = "eng"
-    tokenizer = LatinWhitespaceIncludedWordTokenizer(language=language)
-    project_name = "BSB"
-    excludeBracketedText = False
-    removeZwFromWordsPath = None
+    # targetVersification = Versification.load("./resources/eng/bsb_update_usfm/versification.vrs", fallback_name="web")
+    # sourceVersification = Versification(name = "sourceVersification", base_versification=ORIGINAL_VERSIFICATION)
+    # corpus = UsfmFileTextCorpus("./resources/eng/bsb_update_usfm", handler=ModifiedTextRowCollector, versification = targetVersification, psalmSuperscriptionTag = "d")
+    # language = "eng"
+    # tokenizer = LatinWhitespaceIncludedWordTokenizer(language=language)
+    # project_name = "BSB"
+    # excludeBracketedText = False
+    # removeZwFromWordsPath = None
 
     #OCCB-Simplified
     # targetVersification = Versification.load("./resources/man/occb_simplified_usx/release/versification.vrs", fallback_name="web")
@@ -348,9 +348,22 @@ if(__name__ == "__main__"):
     #excludeBracketedText = False
     #removeZwFromWordsPath = None
 
-    # SRUV06
+    # ULT
+    # usfm_language = "eng"
+    # usfm_abbrev = "ULT"
+    # targetVersification = Versification.load(f"./resources/versification/eng.vrs", fallback_name="web")
+    # sourceVersification = Versification(name="sourceVersification", base_versification=ORIGINAL_VERSIFICATION)
+    # language = usfm_language
+    # corpus = UsfmFileTextCorpus(f"./resources/{usfm_language}/{usfm_abbrev}/", versification=targetVersification, handler=ModifiedTextRowCollector, psalmSuperscriptionTag="d")
+    # # corpus = UsxFileTextCorpus(f"./resources/{usfm_language}/{usfm_abbrev}", versification = targetVersification)
+    # tokenizer = LatinWhitespaceIncludedWordTokenizer(language=language)
+    # project_name = usfm_abbrev
+    # excludeBracketedText = False
+    # removeZwFromWordsPath = None
+
+    # UST
     usfm_language = "eng"
-    usfm_abbrev = "ULT"
+    usfm_abbrev = "UST"
     targetVersification = Versification.load(f"./resources/versification/eng.vrs", fallback_name="web")
     sourceVersification = Versification(name="sourceVersification", base_versification=ORIGINAL_VERSIFICATION)
     language = usfm_language

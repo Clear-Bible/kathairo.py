@@ -117,5 +117,12 @@
     "targetUsfmCorpusPath": "./resources/eng/ULT",
     "latinWhiteSpaceIncludedTokenizer": true,
     "language": "eng"
+  },
+  {
+    "projectName": "UST",
+    "targetVersificationPath": "./resources/versification/eng.vrs",
+    "targetUsfmCorpusPath": "./resources/eng/UST",
+    "latinWhiteSpaceIncludedTokenizer": true,
+    "language": "eng"
   }
 ]
