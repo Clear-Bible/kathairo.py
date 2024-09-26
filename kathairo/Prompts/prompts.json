@@ -124,7 +124,8 @@
     "targetUsfmCorpusPath": "./resources/hin/GLT",
     "latinWhiteSpaceIncludedTokenizer": true,
     "language": "hin",
-    "removeZwFromWordsPath": "./resources/hin/zw-removal-words.tsv"
+    "removeZwFromWordsPath": "./resources/hin/zw-removal-words.tsv",
+    "treatApostropheAsSingleQuote": true
   },
   {
     "projectName": "GST",
@@ -132,6 +133,7 @@
     "targetUsfmCorpusPath": "./resources/hin/GST",
     "latinWhiteSpaceIncludedTokenizer": true,
     "language": "hin",
-    "removeZwFromWordsPath": "./resources/hin/zw-removal-words.tsv"
+    "removeZwFromWordsPath": "./resources/hin/zw-removal-words.tsv",
+    "treatApostropheAsSingleQuote": true
   }
 ]

@@ -125,6 +125,7 @@ def test_verse_text_reconstitution(tsv_vrs_files):
 def test_exclude_punctuation(tsv_vrs_files):    
     data_frame = pl.read_csv(tsv_vrs_files[0], separator='\t', infer_schema_length=0)
     for row in data_frame.iter_rows(named=True):
+        id = row["id"]
         token = row["text"]
         exclude = row["exclude"]
         
@@ -140,7 +141,7 @@ def test_exclude_punctuation(tsv_vrs_files):
             token_is_punct = False
         
         if(token_is_punct):
-            assert(token_is_punct == exclude_bool)
+            assert token_is_punct == exclude_bool, "Punctuation not excluded at {}".format(id)
         
 #Is bracketed text excluded 
 @pytest.mark.parametrize("tsv_vrs_files", __tsv_vrs_name_files__)
