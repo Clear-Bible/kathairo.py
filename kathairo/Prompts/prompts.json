@@ -117,5 +117,12 @@
     "targetUsfmCorpusPath": "./resources/eng/ULT",
     "latinWhiteSpaceIncludedTokenizer": true,
     "language": "eng"
+  },
+  {
+    "projectName": "OHCB",
+    "targetVersificationPath": "./resources/hau/OHCB/versification.vrs",
+    "targetUsfmCorpusPath": "./resources/hau/OHCB/USFM",
+    "latinWhiteSpaceIncludedTokenizer": true,
+    "language": "eng"
   }
 ]
