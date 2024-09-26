@@ -35,6 +35,7 @@ tokenizerGroup.add_argument("-lw", "--latinWhiteSpaceIncludedTokenizer", action=
 
 argumentParser.add_argument("-wl", "--runBuildWordLevelTsv", action='store_true')
 
+argumentParser.add_argument("-sq", "--treatApostropheAsSingleQuote", action='store_true') #optional
 argumentParser.add_argument("-xb", "--excludeBracketedText", action='store_true') #optional
 argumentParser.add_argument("-xx", "--excludeCrossReferences", action='store_true') #optional
 
@@ -70,10 +71,14 @@ if(args.targetUsxCorpusPath is not None):
 if(args.chineseTokenizer == True):
     tokenizer = ChineseBibleWordTokenizer.ChineseBibleWordTokenizer()
 if(args.latinTokenizer == True):
-    tokenizer = LatinWordTokenizer(treat_apostrophe_as_single_quote=True)
+    tokenizer = LatinWordTokenizer(
+        treat_apostrophe_as_single_quote=args.treatApostropheAsSingleQuote
+    )
 if(args.latinWhiteSpaceIncludedTokenizer == True):
-    tokenizer = LatinWhitespaceIncludedWordTokenizer(treat_apostrophe_as_single_quote=True,
-                                                     language = args.language)
+    tokenizer = LatinWhitespaceIncludedWordTokenizer(
+        treat_apostrophe_as_single_quote=args.treatApostropheAsSingleQuote,
+        language = args.language
+    )
 
 if(args.runBuildWordLevelTsv):
     build_tsv.corpus_to_word_level_tsv(targetVersification = targetVersification, 
