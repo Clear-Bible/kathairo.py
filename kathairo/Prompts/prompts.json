@@ -123,13 +123,15 @@
     "targetVersificationPath": "./resources/hin/GLT/versification.vrs",
     "targetUsfmCorpusPath": "./resources/hin/GLT",
     "latinWhiteSpaceIncludedTokenizer": true,
-    "language": "hin"
+    "language": "hin",
+    "removeZwFromWordsPath": "./resources/hin/zw-removal-words.tsv"
   },
   {
     "projectName": "GST",
     "targetVersificationPath": "./resources/hin/GST/versification.vrs",
     "targetUsfmCorpusPath": "./resources/hin/GST",
     "latinWhiteSpaceIncludedTokenizer": true,
-    "language": "hin"
+    "language": "hin",
+    "removeZwFromWordsPath": "./resources/hin/zw-removal-words.tsv"
   }
 ]
