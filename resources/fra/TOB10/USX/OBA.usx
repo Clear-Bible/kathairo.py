@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<usx version="2.6">
+  <book code="OBA" style="id">TOB31.SBF 16.02.2010 ES ©Société biblique française et Editions du Cerf</book>
+  <para style="h">ABDIAS</para>
+  <para style="toc1">Abdias</para>
+  <para style="toc2">ABDIAS</para>
+  <para style="toc3">Ab</para>
+  <para style="mt2">Abdias</para>
+  <para style="mt1">ABDIAS</para>
+  <para style="imt">INTRODUCTION</para>
+  <para style="ip">C'est le plus court des livres prophétiques. Mais il n'est pas dépourvu d'intérêt : ses oracles sont traversés du grand souffle des prophètes qui annoncent « le Jour du Seigneur ».</para>
+  <para style="ip">Sa <char style="it">structure</char> présente : une vision (v. 1-18), suivie d'un court commentaire en prose (v. 19-21) ajouté plus tard par des scribes. La vision elle-même comporte : l'annonce de la chute d'Edom (v. 2-8), la dénonciation de sa faute (v. 9-15), et l'annonce à Israël de cette chute à venir (v. 16-18).</para>
+  <para style="ip">Sa <char style="it">date</char> est liée à l'événement dont il parle : l'auteur dénonce l'attitude d'Edom, pays voisin qui a profité de la déportation des Israélites pour prendre la place de certains à Jérusalem. Il s'agit d'un oracle de réconfort à l'égard de la communauté juive rescapée et malmenée. Donc : à une date de peu postérieure à 587. De fait, Edom sera ruinée entre 530 et 312.</para>
+  <para style="mt1">Abdias</para>
+  <chapter number="1" style="c" />
+  <para style="s1">En-tête</para>
+  <para style="p">
+    <verse number="1" style="v" />Vision d'Abdias.</para>
+  <para style="q1">Ainsi parle le Seigneur <char style="nd">DIEU</char> au sujet d'Edom.</para>
+  <para style="q1">Un message ! Nous l'entendons, il vient du <char style="nd">SEIGNEUR</char>,</para>
+  <para style="q1">tandis qu'un héraut est envoyé parmi les nations :</para>
+  <para style="q1">« Debout ! A l'assaut de la ville<note caller="+" style="f"><char style="fr" closed="false">1.1 </char><char style="fq" closed="false">Vision </char><char style="ft" closed="false">Es 1.1 ; Jr 1.11,13 ; Am 7.1,4,7 ; 8.1 ; 9.1 ; Mi 1.1 ; Ha 2.2-3. – </char><char style="fq" closed="false">Edom </char><char style="ft" closed="false">Am 1.11+ et la note. – </char><char style="fq" closed="false">un message du Seigneur </char><char style="ft" closed="false">Jr 49.14-16. – </char><char style="fq" closed="false">la ville : </char><char style="ft" closed="false">il s'agit sans doute de Pétra, la capitale d'Edom ; elle représente ici le pays tout entier.</char></note> ! Au combat ! »</para>
+  <para style="s1">Discours du Seigneur</para>
+  <para style="q1">
+    <verse number="2" style="v" />Eh bien ! je vais te rapetisser au milieu des nations.</para>
+  <para style="q1">Méprisé, tu es très méprisé.</para>
+  <para style="q1">
+    <verse number="3" style="v" />C'est ton arrogance qui t'abuse,</para>
+  <para style="q1">toi qui demeures dans les creux du rocher<note caller="+" style="f"><char style="fr" closed="false">1.3 </char><char style="ft" closed="false">La région habitée par les Edomites est particulièrement rocheuse et difficile d'accès. – Le discours de l'orgueilleux Es 14.13-15.</char></note></para>
+  <para style="q1">et qui habites sur les hauteurs,</para>
+  <para style="q1">toi qui penses :</para>
+  <para style="q1">« Qui me précipitera à terre ? »</para>
+  <para style="q1">
+    <verse number="4" style="v" />Quand tu t'élancerais comme le vautour</para>
+  <para style="q1">et que tu placerais ton nid entre les étoiles,</para>
+  <para style="q1">de là je te précipiterais<note caller="+" style="f"><char style="fr" closed="false">1.4 </char><char style="fq" closed="false">précipité </char><char style="ft" closed="false">en bas Mt 11.23.</char></note> !</para>
+  <para style="q1">– Oracle du <char style="nd">SEIGNEUR</char>.</para>
+  <para style="q1">
+    <verse number="5" style="v" />Voyons : des voleurs viennent chez toi,</para>
+  <para style="q1">des pillards de nuit,</para>
+  <para style="q1">et tu resterais tranquille !</para>
+  <para style="q1">Ne dérobent-ils pas tout ce qu'ils peuvent ?</para>
+  <para style="q1">Des vendangeurs<note caller="+" style="f"><char style="fr" closed="false">1.5 </char><char style="ft" closed="false">v. 5-6 : </char><char style="fq" closed="false">voleurs, vendangeurs </char><char style="ft" closed="false">Jr 49.9-10.</char></note> viennent chez toi,</para>
+  <para style="q1">laissent-ils autre chose que des restes à grappiller ?</para>
+  <para style="q1">
+    <verse number="6" style="v" />Oh, comme Esaü est fouillé !</para>
+  <para style="q1">ses trésors cachés mis au jour !</para>
+  <para style="q1">
+    <verse number="7" style="v" />On te chasse de ton territoire ;</para>
+  <para style="q1">tous tes alliés te trompent.</para>
+  <para style="q1">Tes intimes s'emparent de toi ;</para>
+  <para style="q1">ceux qui partageaient ton pain te tirent dans les jambes<note caller="+" style="f"><char style="fr" closed="false">1.7 </char><char style="fq" closed="false">tes intimes </char><char style="ft" closed="false">Jr 38.22 ; Ps 41.10. – (ils) </char><char style="fq" closed="false">te tirent dans les jambes : </char><char style="ft" closed="false">tournure imagée que l'hébreu exprime ainsi </char><char style="fq" closed="false">ils te mettent des bâtons sous les pieds.</char></note> :</para>
+  <para style="q1">« Il n'y a plus d'intelligence en lui. »</para>
+  <para style="q1">
+    <verse number="8" style="v" />N'est-il pas vrai ? Ce jour même</para>
+  <para style="q1">– oracle du <char style="nd">SEIGNEUR</char> –,</para>
+  <para style="q1">d'Edom, je fais disparaître les sages<note caller="+" style="f"><char style="fr" closed="false">1.8 </char><char style="ft" closed="false">Les Edomites étaient réputés pour leurs </char><char style="fq" closed="false">sages </char><char style="ft" closed="false">Jr 49.7. – </char><char style="fq" closed="false">les sages disparus </char><char style="ft" closed="false">Es 19.11-12 ; 29.14 ; 1 Co 1.19.</char></note></para>
+  <para style="q1">et de la montagne d'Esaü, l'intelligence.</para>
+  <para style="q1">
+    <verse number="9" style="v" />Tes héros, Témân<note caller="+" style="f"><char style="fr" closed="false">1.9 </char><char style="ft" closed="false">Ville située dans la partie nord du territoire édomite. – </char><char style="fq" closed="false">tes héros s'effondrent </char><char style="ft" closed="false">Jr 49.22.</char></note>, s'effondrent</para>
+  <para style="q1">de sorte que, dans le carnage, tout homme est retranché de la montagne d'Esaü.</para>
+  <para style="s1">La faute d'Edom</para>
+  <para style="q1">
+    <verse number="10" style="v" />C'est à cause des violences exercées contre ton frère Jacob<note caller="+" style="f"><char style="fr" closed="false">1.10 </char><char style="ft" closed="false">Am 1.11 et la note ; Jl 4.19.</char></note></para>
+  <para style="q1">que te couvre la honte,</para>
+  <para style="q1">que tu es exterminé à jamais.</para>
+  <para style="q1">
+    <verse number="11" style="v" />Le jour où tu restais planté là en face,</para>
+  <para style="q1">le jour où des étrangers le vidaient de sa force,</para>
+  <para style="q1">où des barbares pénétraient dans ses portes</para>
+  <para style="q1">et jetaient le sort sur Jérusalem,</para>
+  <para style="q1">toi aussi, tu étais comme l'un d'eux<note caller="+" style="f"><char style="fr" closed="false">1.11 </char><char style="ft" closed="false">Les Edomites à Jérusalem Ez 25.12 ; 35.5,12 ; Ps 137.7 ; Lm 4.21-22.</char></note>.</para>
+  <para style="q1">
+    <verse number="12" style="v" />Ne te délecte pas du jour de ton frère,</para>
+  <para style="q1">du jour de son désastre.</para>
+  <para style="q1">Ne te réjouis pas<note caller="+" style="f"><char style="fr" closed="false">1.12 </char><char style="fq" closed="false">ne te réjouis pas </char><char style="ft" closed="false">Mi 7.8.</char></note> aux dépens des fils de Juda,</para>
+  <para style="q1">au jour de leur perdition.</para>
+  <para style="q1">Ne fais pas ta grande bouche</para>
+  <para style="q1">au jour de la détresse.</para>
+  <para style="q1">
+    <verse number="13" style="v" />Ne pénètre pas dans la ville de mon peuple,</para>
+  <para style="q1">au jour de sa ruine.</para>
+  <para style="q1">Ne te délecte pas, surtout pas toi, de son malheur,</para>
+  <para style="q1">au jour de sa ruine.</para>
+  <para style="q1">Ne porte pas la main sur ce qui fait sa force,</para>
+  <para style="q1">au jour de sa ruine.</para>
+  <para style="q1">
+    <verse number="14" style="v" />Ne reste pas planté dans la brèche</para>
+  <para style="q1">pour exterminer les survivants.</para>
+  <para style="q1">Ne livre pas ses rescapés</para>
+  <para style="q1">au jour de la détresse.</para>
+  <para style="q1">
+    <verse number="15" style="v" />Oui, proche est le jour du <char style="nd">SEIGNEUR</char><note caller="+" style="f"><char style="fr" closed="false">1.15 </char><char style="ft" closed="false">Jl 1.15+ ; voir Es 34.8.</char></note>,</para>
+  <para style="q1">jour menaçant toutes les nations.</para>
+  <para style="q1">Comme tu as fait, on te fait ;</para>
+  <para style="q1">tes actes te retombent sur la tête.</para>
+  <para style="s1">La revanche d'Israël</para>
+  <para style="q1">
+    <verse number="16" style="v" />Oui, comme vous avez bu sur ma montagne sainte,</para>
+  <para style="q1">de même toutes les nations boivent sans trêve.</para>
+  <para style="q1">Elles boivent, elles se gorgent…<note caller="+" style="f"><char style="fr" closed="false">1.16 </char><char style="fq" closed="false">boire </char><char style="ft" closed="false">(la coupe du châtiment) Jr 25.15+.</char></note></para>
+  <para style="q1">elles deviennent comme si elles n'étaient pas nées.</para>
+  <para style="q1">
+    <verse number="17" style="v" />Mais sur la montagne de Sion se réfugient des rescapés,</para>
+  <para style="q1">elle redevient sainte<note caller="+" style="f"><char style="fr" closed="false">1.17 </char><char style="fq" closed="false">des rescapés sur la montagne de Sion </char><char style="ft" closed="false">Jl 3.5. – </char><char style="fq" closed="false">Sion </char><char style="ft" closed="false">de nouveau </char><char style="fq" closed="false">sainte </char><char style="ft" closed="false">Jl 4.17.</char></note>.</para>
+  <para style="q1">Les gens de Jacob spolient ceux qui les ont spoliés.</para>
+  <para style="q1">
+    <verse number="18" style="v" />Les gens de Jacob deviennent un feu,</para>
+  <para style="q1">et ceux de Joseph une flamme.</para>
+  <para style="q1">Mais les gens d'Esaü deviennent du chaume.</para>
+  <para style="q1">Ceux-là les embrasent et les consument :</para>
+  <para style="q1">aucun survivant ne reste à Esaü.</para>
+  <para style="q1">Le <char style="nd">SEIGNEUR</char> a parlé !</para>
+  <para style="s1">Commentaires</para>
+  <para style="p">
+    <verse number="19" style="v" />Ils occupent le Néguev – la montagne d'Esaü – et le Bas-Pays – les Philistins. Ils occupent le territoire d'Ephraïm – le territoire de Samarie – et lui – Benjamin – occupe celui du Galaad<note caller="+" style="f"><char style="fr" closed="false">1.19 </char><char style="ft" closed="false">Le </char><char style="fq" closed="false">Néguev : </char><char style="ft" closed="false">région située au sud de la Palestine. – </char><char style="fq" closed="false">Galaad : </char><char style="ft" closed="false">voir Am 1.13 et la note.</char></note>.</para>
+  <para style="p">
+    <verse number="20" style="v" />Les exilés des fils d'Israël – cette armée-là – chassent les Cananéens jusqu'à Sarepta, et les exilés de Jérusalem qui habitent Séfarad<note caller="+" style="f"><char style="fr" closed="false">1.20 </char><char style="fq" closed="false">chassent les Cananéens : </char><char style="ft" closed="false">traduction conjecturale. D'autres traduisent </char><char style="fq" closed="false">posséderont le pays des Cananéens. – Sarepta : </char><char style="ft" closed="false">ville de la côte phénicienne 1 R 17.9. – </char><char style="fq" closed="false">Séfarad : </char><char style="ft" closed="false">ville traditionnellement localisée en Afrique du Nord.</char></note> occupent les villes du Néguev.</para>
+  <para style="q1">
+    <verse number="21" style="v" />Des libérateurs gravissent la montagne de Sion</para>
+  <para style="q1">pour gouverner la montagne d'Esaü.</para>
+  <para style="q1">Et le <char style="nd">SEIGNEUR</char> assume son Règne<note caller="+" style="f"><char style="fr" closed="false">1.21 </char><char style="fq" closed="false">Le règne du Seigneur </char><char style="ft" closed="false">Mi 4.6-7 ; Za 14.9 ; Ps 22.28-30 ; Ap 11.15+.</char></note> !</para>
+</usx>

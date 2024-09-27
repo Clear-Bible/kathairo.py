@@ -1,0 +1,1514 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<usx version="2.6">
+  <book code="REV" style="id">TOB67.SBF 21.04.2010 ES ©Société biblique française et Editions du Cerf</book>
+  <para style="h">APOCALYPSE</para>
+  <para style="toc1">L'Apocalypse</para>
+  <para style="toc2">APOCALYPSE</para>
+  <para style="toc3">Ap</para>
+  <para style="mt2">L'Apocalypse</para>
+  <para style="mt1">APOCALYPSE</para>
+  <para style="imt">INTRODUCTION</para>
+  <para style="is2">Le genre littéraire apocalyptique</para>
+  <para style="ip">Le mot « apocalypse » est la transcription d'un terme grec qui veut dire révélation. L'apocalyptique s'apparente donc à la tradition prophétique, dont elle représente une forme particulière qui semble s'être développée surtout à partir du II<char style="ord">e</char> siècle avant Jésus Christ.</para>
+  <para style="ip">Tandis que le genre littéraire prophétique se caractérise par l'oracle, parole dite de la part de Dieu ou sous l'impulsion divine, l'apocalyptique fait plutôt référence à des visions. L'inspiré transmet le message en décrivant et interprétant les réalités célestes qu'il lui a été donné de contempler. Il le fait au moyen d'images volontiers impressionnantes, paradoxales ou énigmatiques, empruntées habituellement à la symbolique des théophanies bibliques, aux représentations religieuses du monde hellénistique et à la liturgie. Le procédé suggère que les réalités entrevues, étant d'un ordre supérieur, ne peuvent être évoquées qu'approximativement et que c'est un privilège d'en recevoir la communication et d'en obtenir l'intelligence.</para>
+  <para style="ip">Dans l'ensemble, les visions apocalyptiques proposent une interprétation religieuse de l'histoire au moyen d'une représentation symbolique de ses derniers accomplissements : au-delà des vicissitudes du temps présent et malgré l'action des puissances mauvaises, se préparent mystérieusement le triomphe décisif de Dieu et la manifestation de son Règne. Cette révélation a une fonction mobilisatrice : elle veut soutenir l'espérance des persécutés, ranimer la vigilance des tièdes et solliciter la conversion des égarés. C'est d'ailleurs en relation avec cette intention mobilisatrice qu'il faut comprendre les procédés de pseudonymie et d'antidatation, habituels aux apocalypses. Les visions sont censées avoir été éprouvées par des personnages du passé, ce qui permet de présenter comme futurs des événements qui, en fait, ont déjà eu lieu au moment de la diffusion du message ; le lecteur est ainsi amené à discerner qu'on est arrivé à la phase ultime. La perspective de l'imminence du grand « Jour du Seigneur » confère au temps présent une gravité particulière et invite aux engagements immédiats.</para>
+  <para style="ip">Les représentations apocalyptiques de l'histoire véhiculent en effet un certain dualisme : à l'ère présente marquée par les succès apparents de l'impiété succédera une ère nouvelle où s'exercera en plénitude le triomphe de Dieu et de ses élus. Ce triomphe n'est pas aléatoire, car ce qui <char style="it">doit</char> arriver ne dépend pas du jeu des volontés humaines mais du décret divin.</para>
+  <para style="ip">Cette conception est à la fois pessimiste et optimiste : pessimiste en ce sens qu'elle souligne la caducité du monde présent et sa perversité ; optimiste en tant qu'elle proclame avec assurance le salut imminent des fidèles. On comprend qu'elle ait été particulièrement vivace en période de crise et dans les milieux frappés par la persécution.</para>
+  <para style="is2">Perspectives particulières de l'Apocalypse johannique</para>
+  <para style="ip">Tout en adoptant pour une part les procédés et structures du genre littéraire apocalyptique, l’<char style="bk">Apocalypse</char> johannique ne peut s'y ramener totalement. Une section de l'ouvrage, les lettres aux Eglises d'Asie (Ap 2–3), s'apparente plus à la manière du prophétisme traditionnel qu'à la forme apocalyptique. Surtout, c'est par son interprétation religieuse de l'histoire et par ses véritables centres d'intérêt que l’<char style="bk">Apocalypse</char> de Jean se distingue de la plupart des œuvres de genre littéraire apocalyptique.</para>
+  <para style="ip">L'eschatologie johannique a en effet assimilé certaines convictions essentielles de la théologie chrétienne primitive. L'ère nouvelle, annoncée et attendue par l'apocalyptique juive, a été inaugurée lors de la résurrection du Christ. Les derniers temps sont commencés et les bienfaits messianiques sont déjà communiqués. Mais cet avènement est encore de l'ordre du mystère : il est toujours objet de révélation et ne peut être perçu que par la foi. Cependant, il tend vers son accomplissement plénier et sa manifestation glorieuse. Momentanément, il y a donc coexistence du « temps présent » et de « l'ère nouvelle ».</para>
+  <para style="ip">Dans cette perspective, la rupture classique entre ces deux phases de l'histoire n'offre plus la même signification. Plutôt que d'évoquer la succession de deux périodes antagonistes, elle souligne la confrontation actuelle de deux ordres de réalités. Dès lors, les visions n'ont plus comme rôle premier de symboliser les étapes préparatoires à l'avènement final ; elles s'intéressent davantage aux divers aspects de la condition actuelle de l'Eglise, réalité déjà céleste mais affrontée encore aux puissances de ce monde. Ainsi la méditation théologique prend le pas sur la description apocalyptique du déroulement de l'histoire.</para>
+  <para style="ip">En faisant une telle place à la contemplation de la condition actuelle de l'Eglise et au rappel de ses fondements, l’<char style="bk">Apocalypse</char> johannique se rapproche des perspectives de la prédication prophétique qui tendait à provoquer le réveil spirituel par la commémoration des événements fondateurs de l'Alliance et la considération de la vocation d'Israël. Cette attention au mystère du « Royaume qui vient » plutôt qu'à la date de sa manifestation glorieuse explique sans doute pourquoi l’<char style="bk">Apocalypse</char> johannique n'exploite guère les procédés de pseudonymie et d'antidatation qui, dans l'apocalyptique courante, étaient principalement destinés à supputer l'imminence du « Jour du Seigneur ». Le thème de l'urgence est cependant maintenu, lié à cette conviction que les derniers temps sont proches puisque, dans un certain sens, ils sont déjà commencés.</para>
+  <para style="is2">Auteur et circonstances de composition</para>
+  <para style="ip">L'auteur de l’<char style="bk">Apocalypse</char> se donne le nom de Jean et le titre de prophète (Ap 1.1,4,9 ; 22.8-9). Bien qu'il ne se présente pas comme l'un des Douze, une tradition assez ferme, dont nous trouvons des traces dès le II<char style="ord">e</char> siècle, l'identifie avec l'apôtre Jean, auquel elle attribue également le quatrième évangile. Plusieurs témoignages des premiers siècles nous indiquent cependant que cette tradition n'était pas unanimement acceptée. Les exégètes contemporains restent partagés, plus ou moins sensibles aux parentés ou aux divergences qu'offrent entre eux le quatrième évangile et l’<char style="bk">Apocalypse</char>. La question de l'attribution littéraire est d'ailleurs étroitement associée aux hypothèses concernant l'unité de l'œuvre et l'histoire de sa composition. La tendance actuelle est plutôt de rattacher l’<char style="bk">Apocalypse</char> et l'évangile johannique à des cercles chrétiens d'Ephèse qui se seraient considérés comme les héritiers de l'enseignement de l'apôtre Jean.</para>
+  <para style="ip">Les destinataires sont les « sept Eglises d'Asie ». Il s'agit de sept communautés de la Province d'Asie, dont la métropole était Ephèse ; mais la symbolique du chiffre sept suggère que, à travers elles, l'auteur viserait l'ensemble des Eglises.</para>
+  <para style="ip">A propos des circonstances de composition, l'ouvrage nous apporte deux indications fermes : d'une part, l'Eglise a déjà fait l'expérience de la persécution et semble même envisager un conflit ouvert avec le pouvoir impérial ; d'autre part, l'avènement glorieux du Christ, tel qu'on l'espère, se fait attendre et le prolongement des délais suscite, chez les uns, les compromissions ou la tiédeur et, chez les autres, le découragement, la perplexité ou l'impatience. Tenant compte de ces données, on peut envisager la fin du règne de Domitien (vers 91-96). Selon plusieurs auteurs cependant, l'histoire littéraire de l’<char style="bk">Apocalypse</char> serait plus complexe : certaines pièces auraient été composées entre la persécution de Néron et la ruine de Jérusalem.</para>
+  <para style="is2">La structure de l'Apocalypse</para>
+  <para style="ip">Quoi qu'il en soit des hypothèses concernant l'histoire de sa composition, l'œuvre qui nous est parvenue révèle une certaine organisation. D'emblée on peut repérer un premier ensemble constitué par une vision inaugurale et les « lettres aux Eglises » (Ap 1.9–3.22). Dans le deuxième ensemble, qui constitue l'apocalypse proprement dite, la structure générale indique une progression vers l'accomplissement eschatologique : visions inaugurales du trône de Dieu et de l'investiture de l'agneau (Ap 4–5), préludes de la fin des temps (Ap 6–11), confrontations et épreuves finales (Ap 12–20), avènement et manifestation du monde nouveau et de la Jérusalem céleste (Ap 21.1–22.5). A l'intérieur de ce schéma global, des structures intermédiaires (par exemple les « septénaires ») et des visions intercalaires permettent au prophète de multiplier les références à l'Ancien Testament et d'étaler sa méditation sur le mystère de l'Eglise et du temps présent.</para>
+  <para style="ip">L'établissement d'un plan précis et totalement cohérent reste aléatoire, mais le problème fondamental est l'interprétation à donner à la succession même des visions. Faut-il y voir une représentation symbolique des phases successives de l'histoire ou un pur procédé littéraire destiné à fournir un cadre à l'évocation des divers aspects du mystère chrétien et du jugement du monde ? Le parallélisme des structures intermédiaires et la récurrence de certains thèmes fondamentaux justifient cette seconde hypothèse : à travers l'ensemble de l'ouvrage, ce sont les mêmes convictions et le même message qui s'affirment, mais repris sans cesse sous des images différentes et en vue d'applications et d'explicitations nouvelles.</para>
+  <para style="is2">Le message de l'Apocalypse</para>
+  <para style="ip">Comme tout message prophétique, l’<char style="bk">Apocalypse</char> proclame l'actualité du dessein de Dieu et, corrélativement, l'urgence de l'engagement. Cette proclamation, elle la fait en dévoilant le mystère du temps présent et de son accomplissement. Dans l'événement pascal, le Christ triomphant a inauguré le Royaume ; l'œuvre de Dieu est ainsi arrivée à son terme et nous n'attendons plus que sa manifestation.</para>
+  <para style="ip">L'Eglise est associée à la victoire et à la vie du Ressuscité ; elle est le peuple « royal et sacerdotal » qui célèbre éternellement la liturgie de la reconnaissance. En ce sens, elle appartient déjà au monde céleste et cependant elle est encore en exode sur une terre qui reste solidaire des puissances de péché. Elle est ainsi engagée dans le conflit fondamental, où elle doit témoigner de son appartenance et supporter l'épreuve. Par là, elle reproduit dans sa condition présente la carrière de son Sauveur, soutenue par l'espérance d'un triomphe et d'une communion dont elle a déjà reçu les prémices dans le mystère.</para>
+  <para style="ip">Ce message nous concerne. Loin de proposer un futur utopique dont l'attente permettrait de se désintéresser du présent ou de se résigner à ses rigueurs, il dévoile les enjeux d'un conflit actuel et permanent. L'antagonisme radical qu'il évoque n'est pas seulement inspiré par l'expérience occasionnelle des épreuves ou des tentations de la communauté croyante, mais par la conscience de la nécessité et de la gravité de l'option décisive à prendre aujourd'hui.</para>
+  <para style="ip">En situant l'existence présente dans la perspective de la Parousie, l’<char style="bk">Apocalypse</char> rappelle que le Seigneur Jésus est au terme de l'histoire comme il est à son principe et que, au-delà des apparences, les réalités terrestres sont relatives au dessein de Dieu. Mais par ses nombreuses références au symbolisme liturgique, elle convie la communauté des fidèles à vivre le culte comme une rencontre actuelle avec le Christ, comme un appel à se conformer à la Pâque du Seigneur, comme une proclamation et une attente de la manifestation de la Jérusalem céleste dont elle est l'anticipation et le signe.</para>
+  <para style="mt1">L'Apocalypse</para>
+  <chapter number="1" style="c" />
+  <para style="s1">Introduction</para>
+  <para style="q1">
+    <verse number="1" style="v" />Révélation<note caller="+" style="f"><char style="fr" closed="false">1.1 </char><char style="ft" closed="false">En grec </char><char style="fq" closed="false">apocalupsis, </char><char style="ft" closed="false">dont on a fait apocalypse.</char></note> de Jésus Christ :</para>
+  <para style="q1">Dieu la lui donna pour montrer à ses serviteurs ce qui doit arriver bientôt.</para>
+  <para style="q1">Il la fit connaître en envoyant son ange à Jean son serviteur,</para>
+  <para style="q1">
+    <verse number="2" style="v" />lequel a attesté comme Parole de Dieu et témoignage de Jésus Christ tout ce qu'il a vu<note caller="+" style="f"><char style="fr" closed="false">1.2 </char><char style="ft" closed="false">Voir v. 11,12, etc. ; Jean va rapporter une </char><char style="fq" closed="false">vision. – Parole de Dieu et témoignage de Jésus </char><char style="ft" closed="false">1.9 ; 6.9 ; 12.17 ; 19.10 ; 20.4.</char></note>.</para>
+  <para style="q1">
+    <verse number="3" style="v" />Heureux celui qui lit<note caller="+" style="f"><char style="fr" closed="false">1.3 </char><char style="ft" closed="false">Sous-entendu </char><char style="fq" closed="false">à haute voix </char><char style="ft" closed="false">(pendant le culte).</char></note>,</para>
+  <para style="q1">et ceux qui écoutent les paroles de la prophétie</para>
+  <para style="q1">et gardent ce qui s'y trouve écrit,</para>
+  <para style="q1">car le temps est proche.</para>
+  <para style="s1">Adresse</para>
+  <para style="q1">
+    <verse number="4" style="v" />Jean aux sept Eglises qui sont en Asie :</para>
+  <para style="q1">Grâce et paix vous soient données,</para>
+  <para style="q1">de la part de celui qui est, qui était et qui vient,</para>
+  <para style="q1">de la part des sept esprits<note caller="+" style="f"><char style="fr" closed="false">1.4 </char><char style="ft" closed="false">Les </char><char style="fq" closed="false">sept Eglises </char><char style="ft" closed="false">sont mentionnées au v. 11. – </char><char style="fq" closed="false">Asie : </char><char style="ft" closed="false">voir 2 Co 1.8 et la note. – </char><char style="fq" closed="false">Celui qui est, qui était et qui vient </char><char style="ft" closed="false">1.8 ; 4.8 ; 11.17 ; 16.5 ; voir Ex 3.14. – </char><char style="fq" closed="false">sept esprits </char><char style="ft" closed="false">Es 11.2 ; Ap 3.1 ; 4.5 ; 5.6.</char></note> qui sont devant son trône,</para>
+  <para style="q1">
+    <verse number="5" style="v" />et de la part de Jésus Christ, le témoin fidèle, le premier-né d'entre les morts et le prince des rois de la terre.</para>
+  <para style="q1">A celui qui nous aime,</para>
+  <para style="q1">qui nous a délivrés<note caller="+" style="f"><char style="fr" closed="false">1.5 </char><char style="fq" closed="false">témoin fidèle </char><char style="ft" closed="false">Ps 89.38 ; Es 55.4 ; Ap 2.13 ; 3.14 ; 19.11. – </char><char style="fq" closed="false">le premier-né </char><char style="ft" closed="false">Ps 89.28 ; Col 1.18. – </char><char style="fq" closed="false">délivrés </char><char style="ft" closed="false">autre texte : </char><char style="fq" closed="false">nous a lavés.</char></note> de nos péchés par son sang,</para>
+  <para style="q1">
+    <verse number="6" style="v" />qui a fait de nous un royaume, des prêtres<note caller="+" style="f"><char style="fr" closed="false">1.6 </char><char style="ft" closed="false">Ex 19.6 ; Es 61.6 ; 1 P 2.5,9 ; Ap 5.10 ; 20.6.</char></note> pour Dieu son Père,</para>
+  <para style="q1">à lui gloire et pouvoir pour les siècles des siècles. Amen.</para>
+  <para style="q1">
+    <verse number="7" style="v" />Voici, il vient au milieu des nuées,</para>
+  <para style="q1">et tout œil le verra,</para>
+  <para style="q1">et ceux mêmes qui l'ont percé<note caller="+" style="f"><char style="fr" closed="false">1.7 </char><char style="fq" closed="false">au milieu des nuées </char><char style="ft" closed="false">Dn 7.13 ; voir Ex 19.16 ; Es 6.4 ; <char style="bk">4 Esd</char> 13.3 ; Mt 24.30 ; Mc 13.26 ; Lc 21.27 ; Ac 1.9 ; Ap 14.14. – </char><char style="fq" closed="false">ceux qui l'ont percé </char><char style="ft" closed="false">Za 12.10 (Jn 19.37).</char></note> :</para>
+  <para style="q1">toutes les tribus de la terre seront en deuil à cause de lui.</para>
+  <para style="q1">Oui ! Amen !</para>
+  <para style="q1">
+    <verse number="8" style="v" />Je suis l'Alpha et l'Oméga, dit le Seigneur Dieu,</para>
+  <para style="q1">celui qui est, qui était et qui vient,</para>
+  <para style="q1">le Souverain<note caller="+" style="f"><char style="fr" closed="false">1.8 </char><char style="fq" closed="false">Alpha et Oméga : </char><char style="ft" closed="false">première et dernière lettres de l'alphabet grec. Comme en 21.6 et 22.13 l'expression correspond à </char><char style="fq" closed="false">le commencement et la fin. – le Souverain </char><char style="ft" closed="false">4.8 ; 11.17 ; 15.3 ; 16.7,14 ; 19.6,15 ; 21.22. Dans les milieux de culture grecque le mot </char><char style="fq" closed="false">pantokratôr </char><char style="ft" closed="false">(rendu ici par </char><char style="fq" closed="false">Souverain</char><char style="ft" closed="false">), comme d'ailleurs le titre le Seigneur (</char><char style="fq" closed="false">kurios</char><char style="ft" closed="false">), était aussi employé comme titre impérial.</char></note>.</para>
+  <para style="s1">Vision du Fils de l'homme</para>
+  <para style="q1">
+    <verse number="9" style="v" />Moi, Jean, votre frère et votre compagnon dans l'épreuve, la royauté et la persévérance en Jésus, je me trouvais dans l'île de Patmos<note caller="+" style="f"><char style="fr" closed="false">1.9 </char><char style="ft" closed="false">Petite île de la mer Egée, à une centaine de km d'Ephèse ; lieu d'exil des personnes jugées indésirables par les autorités romaines.</char></note> à cause de la Parole de Dieu et du témoignage de Jésus.</para>
+  <para style="q1">
+    <verse number="10" style="v" />Je fus saisi par l'Esprit au jour du Seigneur<note caller="+" style="f"><char style="fr" closed="false">1.10 </char><char style="ft" closed="false">Un dimanche ; Ac 20.7 ; 1 Co 11.26 ; 16.2.</char></note>, et j'entendis derrière moi une puissante voix,</para>
+  <para style="q1">telle une trompette,</para>
+  <para style="q1">
+    <verse number="11" style="v" />qui proclamait : Ce que tu vois, écris-le dans un livre, et envoie-le aux sept Eglises : à Ephèse, à Smyrne, à Pergame, à Thyatire, à Sardes, à Philadelphie et à Laodicée.</para>
+  <para style="q1">
+    <verse number="12" style="v" />Je me retournai pour regarder la voix qui me parlait ; et, m'étant retourné, je vis sept chandeliers<note caller="+" style="f"><char style="fr" closed="false">1.12 </char><char style="ft" closed="false">Ex 25.31-40 ; 27.20-21 ; Za 4.1-14.</char></note> d'or ;</para>
+  <para style="q1">
+    <verse number="13" style="v" />et, au milieu des chandeliers,</para>
+  <para style="q1">quelqu'un qui semblait un fils d'homme.</para>
+  <para style="q1">Il était vêtu d'une longue robe,</para>
+  <para style="q1">une ceinture d'or lui serrait la poitrine<note caller="+" style="f"><char style="fr" closed="false">1.13-15 </char><char style="fq" closed="false">comme un fils d'homme </char><char style="ft" closed="false">Dn 7.13 ; Ap 14.14. – </char><char style="fq" closed="false">ceinture d'or </char><char style="ft" closed="false">Dn 10.5. – </char><char style="fq" closed="false">cheveux blancs </char><char style="ft" closed="false">Dn 7.9. – </char><char style="fq" closed="false">ses yeux, ses pieds, sa voix </char><char style="ft" closed="false">Dn 10.6.</char></note> ;</para>
+  <para style="q1">
+    <verse number="14" style="v" />sa tête et ses cheveux étaient blancs comme laine blanche, comme neige,</para>
+  <para style="q1">et ses yeux étaient comme une flamme ardente ;</para>
+  <para style="q1">
+    <verse number="15" style="v" />ses pieds semblaient d'un bronze précieux, purifié au creuset,</para>
+  <para style="q1">et sa voix était comme la voix des océans ;</para>
+  <para style="q1">
+    <verse number="16" style="v" />dans sa main droite, il tenait sept étoiles,</para>
+  <para style="q1">et de sa bouche sortait un glaive acéré<note caller="+" style="f"><char style="fr" closed="false">1.16 </char><char style="fq" closed="false">sept étoiles </char><char style="ft" closed="false">1.20 ; 2.1 ; 3.1. – </char><char style="fq" closed="false">un glaive acéré </char><char style="ft" closed="false">Es 49.2 ; He 4.12 ; Ap 19.13-15.</char></note>, à deux tranchants.</para>
+  <para style="q1">Son visage resplendissait, tel le soleil dans tout son éclat.</para>
+  <para style="q1">
+    <verse number="17" style="v" />A sa vue, je tombai comme mort à ses pieds,</para>
+  <para style="q1">mais il posa sur moi sa droite et dit :</para>
+  <para style="q1">Ne crains pas,</para>
+  <para style="q1">Je suis le Premier et le Dernier<note caller="+" style="f"><char style="fr" closed="false">1.17 </char><char style="ft" closed="false">Es 44.6 ; 48.12 ; Ap 2.8 ; 22.13 ; voir 1.8.</char></note>,</para>
+  <para style="q1">
+    <verse number="18" style="v" />et le Vivant ;</para>
+  <para style="q1">je fus mort, et voici, je suis vivant pour les siècles des siècles,</para>
+  <para style="q1">et je tiens les clés de la mort et de l'Hadès<note caller="+" style="f"><char style="fr" closed="false">1.18 </char><char style="fq" closed="false">le Vivant </char><char style="ft" closed="false">He 7.25. – </char><char style="fq" closed="false">les clés : </char><char style="ft" closed="false">voir Es 22.22 ; Ap 3.7 et la note. – </char><char style="fq" closed="false">l'Hadès : </char><char style="ft" closed="false">nom que les grecs donnaient au royaume de la mort. Ailleurs le même mot est rendu par </char><char style="fq" closed="false">séjour des morts.</char></note>.</para>
+  <para style="q1">
+    <verse number="19" style="v" />Ecris donc ce que tu as vu, ce qui est et ce qui doit arriver ensuite.</para>
+  <para style="q1">
+    <verse number="20" style="v" />Quant au mystère des sept étoiles que tu as vues dans ma droite et aux sept chandeliers d'or, voici : les sept étoiles sont les anges des sept Eglises, et les sept chandeliers sont les sept Eglises.</para>
+  <chapter number="2" style="c" />
+  <para style="s1">Lettre à l'Eglise d'Ephèse</para>
+  <para style="q1">
+    <verse number="1" style="v" />A l'ange de l'Eglise qui est à Ephèse, écris :</para>
+  <para style="q1">Ainsi parle celui qui tient les sept étoiles<note caller="+" style="f"><char style="fr" closed="false">2.1 </char><char style="fq" closed="false">sept étoiles </char><char style="ft" closed="false">1.16.</char></note> dans sa droite,</para>
+  <para style="q1">qui marche au milieu des sept chandeliers d'or :</para>
+  <para style="q1">
+    <verse number="2" style="v" />Je sais tes œuvres<note caller="+" style="f"><char style="fr" closed="false">2.2 </char><char style="ft" closed="false">3.1,8,15.</char></note>, ton labeur et ta persévérance,</para>
+  <para style="q1">et que tu ne peux tolérer les méchants.</para>
+  <para style="q1">Tu as mis à l'épreuve ceux qui se disent apôtres et ne le sont pas,</para>
+  <para style="q1">et tu les as trouvés menteurs.</para>
+  <para style="q1">
+    <verse number="3" style="v" />Tu as de la persévérance :</para>
+  <para style="q1">tu as souffert à cause de mon nom et tu n'as pas perdu courage.</para>
+  <para style="q1">
+    <verse number="4" style="v" />Mais j'ai contre toi que ta ferveur première<note caller="+" style="f"><char style="fr" closed="false">2.4 </char><char style="ft" closed="false">Ou </char><char style="fq" closed="false">ton premier amour.</char></note>, tu l'as abandonnée.</para>
+  <para style="q1">
+    <verse number="5" style="v" />Souviens-toi donc d'où tu es tombé :</para>
+  <para style="q1">repens-toi<note caller="+" style="f"><char style="fr" closed="false">2.5 </char><char style="ft" closed="false">2.16,22 ; 3.3,19.</char></note> et accomplis les œuvres d'autrefois.</para>
+  <para style="q1">Sinon je viens à toi,</para>
+  <para style="q1">et, si tu ne te repens, j'ôterai ton chandelier de sa place.</para>
+  <para style="q1">
+    <verse number="6" style="v" />Mais tu as ceci en ta faveur :</para>
+  <para style="q1">comme moi-même, tu as en horreur les œuvres des Nicolaïtes<note caller="+" style="f"><char style="fr" closed="false">2.6 </char><char style="ft" closed="false">Les v. 2,14,20,24 font sans doute allusion aux doctrines et à la morale de la secte hérétique des </char><char style="fq" closed="false">Nicolaïtes</char><char style="ft" closed="false">, mentionnés encore au v. 15, mais dont nous ne savons rien par ailleurs.</char></note>.</para>
+  <para style="q1">
+    <verse number="7" style="v" />Celui qui a des oreilles, qu'il entende ce que l'Esprit dit aux Eglises.</para>
+  <para style="q1">Au vainqueur, je donnerai à manger de l'arbre de vie qui est dans le paradis<note caller="+" style="f"><char style="fr" closed="false">2.7 </char><char style="ft" closed="false">Le terme grec, emprunté au vieux perse, désigne un parc ; il renvoie ici au jardin d'Eden (Gn 2.8). – </char><char style="fq" closed="false">arbre de vie </char><char style="ft" closed="false">Gn 2.9 ; 3.22,24 ; <char style="bk">4 Esd</char> 2.12 ; Ap 22.2,14,19.</char></note> de Dieu.</para>
+  <para style="s1">Lettre à l'Eglise de Smyrne</para>
+  <para style="q1">
+    <verse number="8" style="v" />A l'ange de l'Eglise qui est à Smyrne, écris :</para>
+  <para style="q1">Ainsi parle le Premier et le Dernier, celui qui fut mort, mais qui est revenu à la vie :</para>
+  <para style="q1">
+    <verse number="9" style="v" />Je sais ton épreuve et ta pauvreté – mais tu es riche –,</para>
+  <para style="q1">et les calomnies de ceux qui se prétendent juifs ;</para>
+  <para style="q1">ils ne le sont pas : c'est une « synagogue de Satan<note caller="+" style="f"><char style="fr" closed="false">2.9 </char><char style="ft" closed="false">3.9 ; voir Rm 2.28-29 ; 2 Co 11.13-16 ; Ga 3.29.</char></note> ».</para>
+  <para style="q1">
+    <verse number="10" style="v" />Ne crains pas ce qu'il te faudra souffrir.</para>
+  <para style="q1">Voici, le diable va jeter des vôtres en prison pour vous tenter,</para>
+  <para style="q1">et vous aurez dix jours d'épreuve.</para>
+  <para style="q1">Sois fidèle jusqu'à la mort et je te donnerai la couronne de vie<note caller="+" style="f"><char style="fr" closed="false">2.10 </char><char style="fq" closed="false">dix jours : </char><char style="ft" closed="false">comme en Gn 24.55 ; Dn 1.12, etc. ; ce nombre indique seulement une durée relativement courte. – </char><char style="fq" closed="false">couronne </char><char style="ft" closed="false">3.11 ; 4.4,10 ; 6.2 ; 9.7 ; 12.1 ; 14.14 ; voir Ph 4.1 et la note.</char></note>.</para>
+  <para style="q1">
+    <verse number="11" style="v" />Celui qui a des oreilles, qu'il entende ce que l'Esprit dit aux Eglises.</para>
+  <para style="q1">Le vainqueur ne souffrira nullement de la seconde mort<note caller="+" style="f"><char style="fr" closed="false">2.11 </char><char style="ft" closed="false">20.6,14 ; 21.8.</char></note>.</para>
+  <para style="s1">Lettre à l'Eglise de Pergame</para>
+  <para style="q1">
+    <verse number="12" style="v" />A l'ange de l'Eglise qui est à Pergame, écris :</para>
+  <para style="q1">Ainsi parle celui qui a le glaive acéré à deux tranchants :</para>
+  <para style="q1">
+    <verse number="13" style="v" />Je sais où tu demeures : c'est là qu'est le trône de Satan.</para>
+  <para style="q1">Mais tu restes attaché à mon nom et tu n'as pas renié ma foi,</para>
+  <para style="q1">même aux jours d'Antipas, mon témoin fidèle, qui fut mis à mort chez vous, là où Satan demeure.</para>
+  <para style="q1">
+    <verse number="14" style="v" />Mais j'ai quelque reproche à te faire : il en est chez toi qui s'attachent à la doctrine de ce Balaam qui conseillait à Balaq de tendre un piège aux fils d'Israël pour les pousser à manger des viandes sacrifiées aux idoles et à se prostituer<note caller="+" style="f"><char style="fr" closed="false">2.14 </char><char style="ft" closed="false">Voir Nb 31.16 et 25.1-2. Pour </char><char style="fq" closed="false">Balaam : </char><char style="ft" closed="false">Nb 22–24. Voir aussi Ap 2.20 et la note.</char></note>.</para>
+  <para style="q1">
+    <verse number="15" style="v" />Chez toi aussi, il en est qui s'attachent de même à la doctrine des Nicolaïtes<note caller="+" style="f"><char style="fr" closed="false">2.15 </char><char style="ft" closed="false">Voir 2.6 et la note.</char></note>.</para>
+  <para style="q1">
+    <verse number="16" style="v" />Repens-toi donc.</para>
+  <para style="q1">Sinon je viens à toi bientôt<note caller="+" style="f"><char style="fr" closed="false">2.16 </char><char style="ft" closed="false">3.11 ; 22.7,12,20.</char></note>,</para>
+  <para style="q1">et je les combattrai avec le glaive de ma bouche.</para>
+  <para style="q1">
+    <verse number="17" style="v" />Celui qui a des oreilles, qu'il entende ce que l'Esprit dit aux Eglises.</para>
+  <para style="q1">Au vainqueur je donnerai de la manne cachée,</para>
+  <para style="q1">je lui donnerai une pierre blanche, et, gravé sur la pierre, un nom nouveau<note caller="+" style="f"><char style="fr" closed="false">2.17 </char><char style="fq" closed="false">manne : </char><char style="ft" closed="false">voir Ex 16.32-34 ; He 9.4. – </char><char style="fq" closed="false">un nom nouveau </char><char style="ft" closed="false">Es 62.2 ; 65.15 ; Ap 3.12 ; voir Ph 2.9.</char></note> que personne ne connaît sinon qui le reçoit.</para>
+  <para style="s1">Lettre à l'Eglise de Thyatire</para>
+  <para style="q1">
+    <verse number="18" style="v" />A l'ange de l'Eglise qui est à Thyatire, écris :</para>
+  <para style="q1">Ainsi parle le Fils de Dieu,</para>
+  <para style="q1">celui dont les yeux sont comme une flamme ardente et les pieds semblables à du bronze précieux<note caller="+" style="f"><char style="fr" closed="false">2.18 </char><char style="ft" closed="false">Dn 10.6 ; Ap 1.14,15.</char></note> :</para>
+  <para style="q1">
+    <verse number="19" style="v" />Je sais tes œuvres, ton amour, ta foi, ton service et ta persévérance ; tes dernières œuvres dépassent en nombre les premières.</para>
+  <para style="q1">
+    <verse number="20" style="v" />Mais j'ai contre toi que tu tolères Jézabel<note caller="+" style="f"><char style="fr" closed="false">2.20 </char><char style="fq" closed="false">Jézabel : </char><char style="ft" closed="false">nom probablement symbolique ici ; voir 1 R 16.31-34 ; 19.1-2, etc. Depuis Os 5.3 ; 6.10, l’</char><char style="fq" closed="false">idolâtrie </char><char style="ft" closed="false">du peuple de Dieu a souvent été qualifiée de </char><char style="fq" closed="false">prostitution.</char></note>,</para>
+  <para style="q1">cette femme qui se dit prophétesse et qui égare mes serviteurs, leur enseignant à se prostituer et à manger des viandes sacrifiées aux idoles.</para>
+  <para style="q1">
+    <verse number="21" style="v" />Je lui ai laissé du temps pour se repentir,</para>
+  <para style="q1">mais elle ne veut pas se repentir de sa prostitution.</para>
+  <para style="q1">
+    <verse number="22" style="v" />Voici, je la jette sur un lit d'amère détresse,</para>
+  <para style="q1">ainsi que ses compagnons d'adultère,</para>
+  <para style="q1">à moins qu'ils ne se repentent de ses œuvres.</para>
+  <para style="q1">
+    <verse number="23" style="v" />Ses enfants, je les frapperai de mort ;</para>
+  <para style="q1">et toutes les Eglises sauront que je suis celui qui scrute les reins et les cœurs,</para>
+  <para style="q1">et à chacun de vous je rendrai selon ses œuvres<note caller="+" style="f"><char style="fr" closed="false">2.23 </char><char style="fq" closed="false">Ses enfants : </char><char style="ft" closed="false">tournure sémitique, comme en Lc 7.35, pour désigner ici les </char><char style="fq" closed="false">adeptes </char><char style="ft" closed="false">de « Jézabel ». – Dieu </char><char style="fq" closed="false">scrute les reins et les cœurs </char><char style="ft" closed="false">Ps 7.10 ; Jr 11.20. – </char><char style="fq" closed="false">selon ses œuvres </char><char style="ft" closed="false">Ps 62.13 ; Pr 24.12 ; Jr 17.10 ; Rm 2.6 ; 2 Tm 4.14 ; Ap 18.6 ; 20.12-13.</char></note>.</para>
+  <para style="q1">
+    <verse number="24" style="v" />Mais je vous le déclare à vous qui, à Thyatire, restez sans partager cette doctrine et sans avoir sondé leurs prétendues « profondeurs » de Satan<note caller="+" style="f"><char style="fr" closed="false">2.24 </char><char style="ft" closed="false">Allusion à des enseignements secrets, réservés aux initiés de la secte.</char></note>,</para>
+  <para style="q1">je ne vous impose pas d'autre fardeau.</para>
+  <para style="q1">
+    <verse number="25" style="v" />Seulement, ce que vous possédez, tenez-le ferme jusqu'à ce que je vienne.</para>
+  <para style="q1">
+    <verse number="26" style="v" />Le vainqueur, celui qui garde jusqu'à la fin mes œuvres, je lui donnerai pouvoir sur les nations<note caller="+" style="f"><char style="fr" closed="false">2.26 </char><char style="ft" closed="false">v. 26-27 : Ps 2.8-9 ; Ap 12.5 ; 19.15.</char></note>,</para>
+  <para style="q1">
+    <verse number="27" style="v" />et il les mènera paître avec une verge de fer,</para>
+  <para style="q1">comme on brise les vases d'argile,</para>
+  <para style="q1">
+    <verse number="28" style="v" />de même que moi aussi j'en ai reçu pouvoir de mon Père,</para>
+  <para style="q1">et je lui donnerai l'étoile du matin<note caller="+" style="f"><char style="fr" closed="false">2.28 </char><char style="ft" closed="false">22.16 ; voir Nb 24.17 ; Mt 2.2.</char></note>.</para>
+  <para style="q1">
+    <verse number="29" style="v" />Celui qui a des oreilles, qu'il entende ce que l'Esprit dit aux Eglises.</para>
+  <chapter number="3" style="c" />
+  <para style="s1">Lettre à l'Eglise de Sardes</para>
+  <para style="q1">
+    <verse number="1" style="v" />A l'ange de l'Eglise qui est à Sardes, écris :</para>
+  <para style="q1">Ainsi parle celui qui a les sept esprits de Dieu et les sept étoiles :</para>
+  <para style="q1">Je sais tes œuvres : tu as renom de vivre, mais tu es mort !</para>
+  <para style="q1">
+    <verse number="2" style="v" />Sois vigilant ! Affermis le reste qui est près de mourir, car je n'ai pas trouvé tes œuvres parfaites aux yeux de mon Dieu.</para>
+  <para style="q1">
+    <verse number="3" style="v" />Souviens-toi donc de ce que tu as reçu et entendu.</para>
+  <para style="q1">Garde-le et repens-toi !</para>
+  <para style="q1">Si tu ne veilles pas, je viendrai comme un voleur<note caller="+" style="f"><char style="fr" closed="false">3.3 </char><char style="fq" closed="false">Souviens-toi… entendu </char><char style="ft" closed="false">ou </char><char style="fq" closed="false">Rappelle-toi comment tu as reçu et entendu (la Parole). – comme un voleur </char><char style="ft" closed="false">Mt 24.42-44 ; Lc 12.39-40 ; 1 Th 5.2 ; 2 P 3.10 ; Ap 16.15.</char></note>,</para>
+  <para style="q1">sans que tu saches à quelle heure je viendrai te surprendre.</para>
+  <para style="q1">
+    <verse number="4" style="v" />Cependant, à Sardes, tu as quelques personnes qui n'ont pas souillé leurs vêtements.</para>
+  <para style="q1">Elles m'accompagneront, vêtues de blanc<note caller="+" style="f"><char style="fr" closed="false">3.4 </char><char style="ft" closed="false">Dn 7.9 ; Mt 17.2 ; 28.3 ; Mc 16.5 ; Jn 20.12 ; Ap 3.18 ; 4.4 ; 6.11 ; 7.9,13-14 ; 19.14.</char></note>, car elles en sont dignes.</para>
+  <para style="q1">
+    <verse number="5" style="v" />Ainsi le vainqueur portera-t-il des vêtements blancs ;</para>
+  <para style="q1">je n'effacerai pas son nom du livre de vie,</para>
+  <para style="q1">et j'en répondrai devant mon Père<note caller="+" style="f"><char style="fr" closed="false">3.5 </char><char style="fq" closed="false">livre de vie </char><char style="ft" closed="false">Ex 32.32-33 ; Ps 69.29 ; Dn 12.1 ; Lc 10.20 ; Ph 4.3 ; Ap 13.8 ; 17.8 ; 20.12,15 ; 21.27. – Un </char><char style="fq" closed="false">répondant </char><char style="ft" closed="false">devant Dieu Mt 10.32 ; Lc 12.8.</char></note> et devant ses anges.</para>
+  <para style="q1">
+    <verse number="6" style="v" />Celui qui a des oreilles, qu'il entende ce que l'Esprit dit aux Eglises.</para>
+  <para style="s1">Lettre à l'Eglise de Philadelphie</para>
+  <para style="q1">
+    <verse number="7" style="v" />A l'ange de l'Eglise qui est à Philadelphie, écris :</para>
+  <para style="q1">Ainsi parle le Saint, le Véritable,</para>
+  <para style="q1">qui tient la clé de David<note caller="+" style="f"><char style="fr" closed="false">3.7 </char><char style="ft" closed="false">Voir Es 22.22 : celui qui détient </char><char style="fq" closed="false">la clé de </char><char style="ft" closed="false">(la maison de) </char><char style="fq" closed="false">David </char><char style="ft" closed="false">est investi d'une mission de confiance et des pleins pouvoirs pour la remplir. Par ailleurs le Christ est descendant du roi David (Ac 2.30).</char></note>,</para>
+  <para style="q1">qui ouvre et nul ne fermera,</para>
+  <para style="q1">qui ferme et nul ne peut ouvrir :</para>
+  <para style="q1">
+    <verse number="8" style="v" />Je sais tes œuvres.</para>
+  <para style="q1">Voici, j'ai placé devant toi une porte ouverte que nul ne peut fermer.</para>
+  <para style="q1">Tu n'as que peu de force, et pourtant tu as gardé ma parole et tu n'as pas renié mon nom.</para>
+  <para style="q1">
+    <verse number="9" style="v" />Voici, je te donne des gens de la synagogue de Satan, de ceux qui se disent juifs, mais ne le sont pas, car ils mentent.</para>
+  <para style="q1">Voici, je les ferai venir se prosterner à tes pieds,</para>
+  <para style="q1">et ils reconnaîtront que je t'ai aimé<note caller="+" style="f"><char style="fr" closed="false">3.9 </char><char style="fq" closed="false">se prosterner à tes pieds </char><char style="ft" closed="false">Es 45.14 ; 49.23 ; 60.14. – </char><char style="fq" closed="false">je t'ai aimé </char><char style="ft" closed="false">Es 43.4.</char></note>.</para>
+  <para style="q1">
+    <verse number="10" style="v" />Parce que tu as gardé ma parole avec persévérance<note caller="+" style="f"><char style="fr" closed="false">3.10 </char><char style="ft" closed="false">Lc 21.19 ; 2 Tm 2.12 ; He 10.36.</char></note>,</para>
+  <para style="q1">moi aussi je te garderai de l'heure de l'épreuve,</para>
+  <para style="q1">qui va venir sur l'humanité entière, et mettre à l'épreuve les habitants de la terre.</para>
+  <para style="q1">
+    <verse number="11" style="v" />Je viens bientôt.</para>
+  <para style="q1">Tiens ferme ce que tu as, pour que nul ne te prenne ta couronne<note caller="+" style="f"><char style="fr" closed="false">3.11 </char><char style="ft" closed="false">Voir 2.10 et la note.</char></note>.</para>
+  <para style="q1">
+    <verse number="12" style="v" />Le vainqueur, j'en ferai une colonne dans le temple de mon Dieu,</para>
+  <para style="q1">il n'en sortira jamais plus,</para>
+  <para style="q1">et j'inscrirai sur lui le nom de mon Dieu,</para>
+  <para style="q1">et le nom de la cité de mon Dieu, la Jérusalem nouvelle<note caller="+" style="f"><char style="fr" closed="false">3.12 </char><char style="fq" closed="false">le temple de Dieu </char><char style="ft" closed="false">7.15 ; 11.1. – </char><char style="fq" closed="false">marqués du nom de Dieu </char><char style="ft" closed="false">14.1 ; 22.4. – </char><char style="fq" closed="false">nouvelle Jérusalem </char><char style="ft" closed="false">21.2+.</char></note> qui descend du ciel d'auprès de mon Dieu,</para>
+  <para style="q1">et mon nom nouveau.</para>
+  <para style="q1">
+    <verse number="13" style="v" />Celui qui a des oreilles, qu'il entende ce que l'Esprit dit aux Eglises.</para>
+  <para style="s1">Lettre à l'Eglise de Laodicée</para>
+  <para style="q1">
+    <verse number="14" style="v" />A l'ange de l'Eglise qui est à Laodicée, écris :</para>
+  <para style="q1">Ainsi parle l'Amen, le Témoin fidèle et véritable,</para>
+  <para style="q1">le Principe de la création<note caller="+" style="f"><char style="fr" closed="false">3.14 </char><char style="ft" closed="false">Pr 8.22 ; <char style="bk">Sg</char> 9.1-2 ; Jn 1.3 ; Col 1.15-18 ; He 1.2.</char></note> de Dieu :</para>
+  <para style="q1">
+    <verse number="15" style="v" />Je sais tes œuvres : tu n'es ni froid ni bouillant.</para>
+  <para style="q1">Que n'es-tu froid ou bouillant !</para>
+  <para style="q1">
+    <verse number="16" style="v" />Mais parce que tu es tiède, et non froid ou bouillant, je vais te vomir de ma bouche.</para>
+  <para style="q1">
+    <verse number="17" style="v" />Parce que tu dis : je suis riche, je me suis enrichi, je n'ai besoin de rien,</para>
+  <para style="q1">et que tu ne sais pas que tu es misérable, pitoyable, pauvre, aveugle et nu,</para>
+  <para style="q1">
+    <verse number="18" style="v" />je te conseille d'acheter chez moi de l'or purifié au feu pour t'enrichir, et des vêtements blancs pour te couvrir et que ne paraisse pas la honte de ta nudité,</para>
+  <para style="q1">et un collyre pour oindre tes yeux et recouvrer la vue.</para>
+  <para style="q1">
+    <verse number="19" style="v" />Moi, tous ceux que j'aime, je les reprends et les corrige<note caller="+" style="f"><char style="fr" closed="false">3.19 </char><char style="ft" closed="false">Pr 3.12 ; 1 Co 11.32 ; He 12.6.</char></note>.</para>
+  <para style="q1">Sois donc fervent et repens-toi !</para>
+  <para style="q1">
+    <verse number="20" style="v" />Voici, je me tiens à la porte et je frappe.</para>
+  <para style="q1">Si quelqu'un entend ma voix et ouvre la porte,</para>
+  <para style="q1">j'entrerai chez lui et je prendrai la cène avec lui<note caller="+" style="f"><char style="fr" closed="false">3.20 </char><char style="ft" closed="false">Lc 22.29,30 ; Jn 14.23.</char></note> et lui avec moi.</para>
+  <para style="q1">
+    <verse number="21" style="v" />Le vainqueur, je lui donnerai de siéger avec moi sur mon trône<note caller="+" style="f"><char style="fr" closed="false">3.21 </char><char style="ft" closed="false">Mt 19.28 ; Lc 22.30 ; Ap 20.4.</char></note>, comme moi aussi j'ai remporté la victoire et suis allé siéger avec mon Père sur son trône.</para>
+  <para style="q1">
+    <verse number="22" style="v" />Celui qui a des oreilles, qu'il entende ce que l'Esprit dit aux Eglises.</para>
+  <chapter number="4" style="c" />
+  <para style="s1">Le trône de Dieu et le culte céleste</para>
+  <para style="q1">
+    <verse number="1" style="v" />Après cela je vis :</para>
+  <para style="q1">Une porte était ouverte dans le ciel<note caller="+" style="f"><char style="fr" closed="false">4.1 </char><char style="ft" closed="false">Ez 1.1 ; Mc 1.10 ; Jn 1.51 ; Ap 19.11.</char></note>,</para>
+  <para style="q1">et la première voix que j'avais entendue me parler, telle une trompette, dit :</para>
+  <para style="q1">Monte ici et je te montrerai ce qui doit arriver ensuite.</para>
+  <para style="q1">
+    <verse number="2" style="v" />Aussitôt je fus saisi par l'Esprit.</para>
+  <para style="q1">Et voici, un trône se dressait dans le ciel,</para>
+  <para style="q1">et, siégeant sur le trône<note caller="+" style="f"><char style="fr" closed="false">4.2 </char><char style="ft" closed="false">1 R 22.19 ; Ps 47.9 ; Es 6.1 ; Ez 1.26-27 ; 10.1 ; <char style="bk">Si</char> 1.8 ; Ap 4.9 ; 5.1,7,13 ; 6.16 ; 7.10 ; 19.4 ; 21.5.</char></note>, quelqu'un.</para>
+  <para style="q1">
+    <verse number="3" style="v" />Celui qui siégeait avait l'aspect d'une pierre de jaspe et de sardoine.</para>
+  <para style="q1">Une gloire nimbait le trône de reflets d'émeraude<note caller="+" style="f"><char style="fr" closed="false">4.3 </char><char style="ft" closed="false">Vision de la gloire divine Ez 1.26-28. – </char><char style="fq" closed="false">Une gloire : </char><char style="ft" closed="false">le même mot grec désigne aussi l’</char><char style="fq" closed="false">arc-en-ciel</char><char style="ft" closed="false">, ou encore une </char><char style="fq" closed="false">auréole</char><char style="ft" closed="false">. – </char><char style="fq" closed="false">émeraude : </char><char style="ft" closed="false">voir 21.11,20 et les notes.</char></note>.</para>
+  <para style="q1">
+    <verse number="4" style="v" />Autour du trône vingt-quatre trônes,</para>
+  <para style="q1">et sur ces trônes, vingt-quatre anciens siégeaient, vêtus de blanc,</para>
+  <para style="q1">et, sur leurs têtes, des couronnes d'or<note caller="+" style="f"><char style="fr" closed="false">4.4 </char><char style="fq" closed="false">les anciens </char><char style="ft" closed="false">d'Israël Ex 3.16 ; 24.1,9 ; Nb 11.16 ; 1 R 8.1. – </char><char style="fq" closed="false">vêtus de blanc </char><char style="ft" closed="false">3.4+. – </char><char style="fq" closed="false">couronne </char><char style="ft" closed="false">3.11.</char></note>.</para>
+  <para style="q1">
+    <verse number="5" style="v" />Du trône sortaient des éclairs, des voix et des tonnerres.</para>
+  <para style="q1">Sept lampes ardentes<note caller="+" style="f"><char style="fr" closed="false">4.5 </char><char style="fq" closed="false">des éclairs, des voix… </char><char style="ft" closed="false">Ex 19.16 ; Ez 1.13 ; Ap 8.5 ; 11.19 ; 16.18. – </char><char style="fq" closed="false">lampes ardentes </char><char style="ft" closed="false">Ez 1.13 ; Za 4.2. – </char><char style="fq" closed="false">sept esprits </char><char style="ft" closed="false">1.4+.</char></note> brûlaient devant le trône,</para>
+  <para style="q1">ce sont les sept esprits de Dieu.</para>
+  <para style="q1">
+    <verse number="6" style="v" />Devant le trône, comme une mer limpide, semblable à du cristal.</para>
+  <para style="q1">Au milieu du trône et l'entourant, quatre animaux<note caller="+" style="f"><char style="fr" closed="false">4.6 </char><char style="fq" closed="false">mer de cristal </char><char style="ft" closed="false">15.2 ; voir Ex 24.10 ; Ez 1.22. – </char><char style="fq" closed="false">quatre animaux </char><char style="ft" closed="false">Ez 1.5-21 ; 10.14 ; Ap 19.4.</char></note> couverts d'yeux par-devant et par-derrière.</para>
+  <para style="q1">
+    <verse number="7" style="v" />Le premier animal ressemblait à un lion,</para>
+  <para style="q1">le deuxième à un jeune taureau,</para>
+  <para style="q1">le troisième avait comme une face humaine,</para>
+  <para style="q1">et le quatrième semblait un aigle en plein vol.</para>
+  <para style="q1">
+    <verse number="8" style="v" />Les quatre animaux avaient chacun six ailes couvertes d'yeux tout autour et au-dedans.</para>
+  <para style="q1">Ils ne cessent jour et nuit de proclamer :</para>
+  <para style="q2">
+    <char style="it">Saint, saint, saint,</char></para>
+  <para style="q2">
+    <char style="it">le Seigneur, le Dieu souverain,</char></para>
+  <para style="q2">celui qui était, qui est et qui vient<note caller="+" style="f"><char style="fr" closed="false">4.8 </char><char style="fq" closed="false">six ailes </char><char style="ft" closed="false">Es 6.2. – </char><char style="fq" closed="false">des yeux tout autour </char><char style="ft" closed="false">Ez 1.18 ; 10.12. – </char><char style="fq" closed="false">Saint, saint, saint </char><char style="ft" closed="false">Es 6.3. – </char><char style="fq" closed="false">souverain </char><char style="ft" closed="false">1.8+. – </char><char style="fq" closed="false">Celui qui est, qui était et qui vient </char><char style="ft" closed="false">1.4+.</char></note> !</para>
+  <para style="q1">
+    <verse number="9" style="v" />Et chaque fois que les animaux rendaient gloire, honneur et action de grâce à celui qui siège sur le trône, au Vivant<note caller="+" style="f"><char style="fr" closed="false">4.9 </char><char style="fq" closed="false">le trône </char><char style="ft" closed="false">de Dieu 4.2+. – </char><char style="fq" closed="false">le Vivant </char><char style="ft" closed="false">Dn 4.31 ; 12.7.</char></note> pour les siècles des siècles,</para>
+  <para style="q1">
+    <verse number="10" style="v" />les vingt-quatre anciens se prosternaient devant celui qui siège sur le trône,</para>
+  <para style="q1">ils adoraient le Vivant pour les siècles des siècles</para>
+  <para style="q1">et jetaient leurs couronnes devant le trône en disant :</para>
+  <para style="q2">
+    <verse number="11" style="v" />Tu es digne, Seigneur notre Dieu,</para>
+  <para style="q2">de recevoir la gloire, l'honneur et la puissance,</para>
+  <para style="q2">car c'est toi qui créas toutes choses ;</para>
+  <para style="q2">tu as voulu qu'elles soient, et elles furent créées.</para>
+  <chapter number="5" style="c" />
+  <para style="s1">Le livre scellé et l'agneau</para>
+  <para style="q1">
+    <verse number="1" style="v" />Et je vis, dans la main droite de celui qui siège sur le trône,</para>
+  <para style="q1">un livre écrit au-dedans et au-dehors, scellé de sept sceaux<note caller="+" style="f"><char style="fr" closed="false">5.1 </char><char style="ft" closed="false">Les livres d'alors avaient la forme d'un rouleau ; celui-ci est écrit sur les deux faces ; Ez 2.9-10. Pour les </char><char style="fq" closed="false">sceaux </char><char style="ft" closed="false">voir Ap 7.2 et la note ; Es 29.11.</char></note>.</para>
+  <para style="q1">
+    <verse number="2" style="v" />Et je vis un ange puissant qui proclamait d'une voix forte :</para>
+  <para style="q1">Qui est digne d'ouvrir le livre et d'en rompre les sceaux ?</para>
+  <para style="q1">
+    <verse number="3" style="v" />Mais nul, dans le ciel, sur la terre ni sous la terre<note caller="+" style="f"><char style="fr" closed="false">5.3 </char><char style="ft" closed="false">Voir Ph 2.10 et la note.</char></note>,</para>
+  <para style="q1">n'avait pouvoir d'ouvrir le livre ni d'y jeter les yeux.</para>
+  <para style="q1">
+    <verse number="4" style="v" />Je me désolais de ce que nul ne fût trouvé digne d'ouvrir le livre ni d'y jeter les yeux.</para>
+  <para style="q1">
+    <verse number="5" style="v" />Mais l'un des anciens me dit :</para>
+  <para style="q1">Ne pleure pas !</para>
+  <para style="q1">Voici, il a remporté la victoire,</para>
+  <para style="q1">le lion de la tribu de Juda, le rejeton de David<note caller="+" style="f"><char style="fr" closed="false">5.5 </char><char style="fq" closed="false">le lion de Juda </char><char style="ft" closed="false">Gn 49.9 ; voir He 7.14. – </char><char style="fq" closed="false">rejeton de David </char><char style="ft" closed="false">Es 11.1,10 (Rm 15.12) ; Ap 3.7 et la note ; 22.16.</char></note> :</para>
+  <para style="q1">il ouvrira le livre et ses sept sceaux.</para>
+  <para style="q1">
+    <verse number="6" style="v" />Alors je vis :</para>
+  <para style="q1">au milieu du trône et des quatre animaux,</para>
+  <para style="q1">au milieu des anciens,</para>
+  <para style="q1">un agneau se dressait, qui semblait immolé.</para>
+  <para style="q1">Il avait sept cornes<note caller="+" style="f"><char style="fr" closed="false">5.6 </char><char style="fq" closed="false">l'agneau immolé </char><char style="ft" closed="false">Ex 12.3-6 ; Es 53.7 ; 1 P 1.19-20 ; Ap 5.12 ; 13.8 ; 14.1. – D'après Dt 33.17 ; Dn 7.7,24, etc., la </char><char style="fq" closed="false">corne </char><char style="ft" closed="false">était symbole de puissance (voir 17.12) et, d'après Za 4.10, les </char><char style="fq" closed="false">yeux </char><char style="ft" closed="false">symboles de l'omniscience. Le chiffre </char><char style="fq" closed="false">sept </char><char style="ft" closed="false">est souvent symbole de plénitude et de totalité (voir Rt 4.15).</char></note> et sept yeux qui sont les sept esprits de Dieu envoyés sur toute la terre.</para>
+  <para style="q1">
+    <verse number="7" style="v" />Il s'avança pour recevoir le livre de la main droite de celui qui siège sur le trône.</para>
+  <para style="q1">
+    <verse number="8" style="v" />Et, quand il eut reçu le livre,</para>
+  <para style="q1">les quatre animaux et les vingt-quatre anciens se prosternèrent devant l'agneau.</para>
+  <para style="q1">Chacun tenait une harpe et des coupes d'or pleines de parfum,</para>
+  <para style="q1">qui sont les prières des saints<note caller="+" style="f"><char style="fr" closed="false">5.8 </char><char style="ft" closed="false">Ps 141.2 ; Ap 8.3.</char></note>.</para>
+  <para style="q1">
+    <verse number="9" style="v" />Ils chantaient un cantique nouveau :</para>
+  <para style="q2">Tu es digne de recevoir le livre et d'en rompre les sceaux,</para>
+  <para style="q2">car tu as été immolé,</para>
+  <para style="q2">et tu as racheté<note caller="+" style="f"><char style="fr" closed="false">5.9 </char><char style="fq" closed="false">cantique nouveau </char><char style="ft" closed="false">Es 42.10 ; Ps 33.3 ; 40.4 ; 96.1 ; 98.1 ; 144.9 ; 149.1 ; Ap 14.3. – </char><char style="fq" closed="false">rachetés </char><char style="ft" closed="false">14.4.</char></note> pour Dieu, par ton sang,</para>
+  <para style="q2">des hommes de toute tribu, langue, peuple et nation.</para>
+  <para style="q2">
+    <verse number="10" style="v" />Tu en as fait, pour notre Dieu, un royaume et des prêtres,</para>
+  <para style="q2">et ils régneront sur la terre<note caller="+" style="f"><char style="fr" closed="false">5.10 </char><char style="fq" closed="false">un royaume et des prêtres </char><char style="ft" closed="false">1.6+. – </char><char style="fq" closed="false">ils régneront </char><char style="ft" closed="false">Rm 5.17 ; Ap 20.6 ; 22.5-6.</char></note>.</para>
+  <para style="q1">
+    <verse number="11" style="v" />Alors je vis :</para>
+  <para style="q1">Et j'entendis la voix d'anges nombreux autour du trône, des animaux et des anciens.</para>
+  <para style="q1">Leur nombre était myriades de myriades<note caller="+" style="f"><char style="fr" closed="false">5.11 </char><char style="fq" closed="false">myriades </char><char style="ft" closed="false">Dn 7.10 ; He 12.22.</char></note> et milliers de milliers.</para>
+  <para style="q1">
+    <verse number="12" style="v" />Ils proclamaient d'une voix forte :</para>
+  <para style="q2">Il est digne, l'agneau immolé,</para>
+  <para style="q2">de recevoir puissance, richesse, sagesse,</para>
+  <para style="q2">force, honneur, gloire et louange<note caller="+" style="f"><char style="fr" closed="false">5.12 </char><char style="ft" closed="false">Au Christ </char><char style="fq" closed="false">la puissance… </char><char style="ft" closed="false">Ph 2.9-11.</char></note>.</para>
+  <para style="q1">
+    <verse number="13" style="v" />Et toute créature au ciel, sur terre, sous terre et sur mer,</para>
+  <para style="q1">tous les êtres qui s'y trouvent,</para>
+  <para style="q1">je les entendis proclamer :</para>
+  <para style="q2">A celui qui siège sur le trône et à l'agneau,</para>
+  <para style="q2">louange, honneur, gloire et pouvoir pour les siècles des siècles.</para>
+  <para style="q1">
+    <verse number="14" style="v" />Et les quatre animaux disaient :</para>
+  <para style="q1">Amen !</para>
+  <para style="q1">Et les anciens se prosternèrent et adorèrent.</para>
+  <chapter number="6" style="c" />
+  <para style="s1">Ouverture des six premiers sceaux</para>
+  <para style="p">
+    <verse number="1" style="v" />Alors je vis :</para>
+  <para style="q1">Quand l'agneau ouvrit le premier des sept sceaux, j'entendis le premier des quatre animaux s'écrier d'une voix de tonnerre : Viens !</para>
+  <para style="q1">
+    <verse number="2" style="v" />Et je vis : c'était un cheval<note caller="+" style="f"><char style="fr" closed="false">6.2 </char><char style="ft" closed="false">v. 2-5 : les 4 cavaliers Za 1.8 ; 6.1-8 ; voir Ap 19.11.</char></note> blanc.</para>
+  <para style="q1">Celui qui le montait tenait un arc.</para>
+  <para style="q1">Une couronne lui fut donnée,</para>
+  <para style="q1">et il partit en vainqueur et pour vaincre.</para>
+  <para style="q1">
+    <verse number="3" style="v" />Quand il ouvrit le deuxième sceau, j'entendis le deuxième animal s'écrier : Viens !</para>
+  <para style="q1">
+    <verse number="4" style="v" />Alors surgit un autre cheval, rouge feu.</para>
+  <para style="q1">A celui qui le montait fut donné le pouvoir de ravir la paix de la terre pour qu'on s'entre-tue,</para>
+  <para style="q1">et il lui fut donné une grande épée<note caller="+" style="f"><char style="fr" closed="false">6.4 </char><char style="ft" closed="false">Voir <char style="bk">4 Esd</char> 15.5.</char></note>.</para>
+  <para style="q1">
+    <verse number="5" style="v" />Quand il ouvrit le troisième sceau, j'entendis le troisième animal s'écrier :</para>
+  <para style="q1">Viens !</para>
+  <para style="q1">Et je vis : c'était un cheval noir.</para>
+  <para style="q1">Celui qui le montait tenait une balance à la main.</para>
+  <para style="q1">
+    <verse number="6" style="v" />Et j'entendis comme une voix, au milieu des quatre animaux, qui disait :</para>
+  <para style="q1">Une mesure de blé pour un denier<note caller="+" style="f"><char style="fr" closed="false">6.6 </char><char style="ft" closed="false">Voir au glossaire POIDS ET MESURES.</char></note> et trois mesures d'orge pour un denier,</para>
+  <para style="q1">quant à l'huile et au vin, n'y touche pas.</para>
+  <para style="q1">
+    <verse number="7" style="v" />Quand il ouvrit le quatrième sceau, j'entendis le quatrième animal s'écrier : Viens !</para>
+  <para style="q1">
+    <verse number="8" style="v" />Et je vis :</para>
+  <para style="q1">c'était un cheval blême.</para>
+  <para style="q1">Celui qui le montait, on le nomme « la mort », et l'Hadès le suivait.</para>
+  <para style="q1">Pouvoir leur fut donné sur le quart de la terre,</para>
+  <para style="q1">pour tuer par l'épée, la famine, la mort et les fauves de la terre<note caller="+" style="f"><char style="fr" closed="false">6.8 </char><char style="ft" closed="false">Ez 14.21 ; Jr 14.12 ; 15.2-3 ; Ez 5.16-17 ; 7.15 ; 14.12-21.</char></note>.</para>
+  <para style="q1">
+    <verse number="9" style="v" />Quand il ouvrit le cinquième sceau, je vis sous l'autel les âmes de ceux qui avaient été immolés à cause de la parole de Dieu et du témoignage qu'ils avaient porté<note caller="+" style="f"><char style="fr" closed="false">6.9 </char><char style="ft" closed="false">Les martyrs 7.9-17 ; 16.7 ; 20.4.</char></note>.</para>
+  <para style="q1">
+    <verse number="10" style="v" />Ils criaient d'une voix forte :</para>
+  <para style="q2">Jusques à quand, Maître saint et véritable,</para>
+  <para style="q2">tarderas-tu à faire justice<note caller="+" style="f"><char style="fr" closed="false">6.10 </char><char style="ft" closed="false">Dt 32.43 ; 2 R 9.7 ; Za 1.12 ; Ps 79.10 ; Lc 18.7 ; Ap 11.18 ; 18.20 ; 19.2.</char></note></para>
+  <para style="q2">et à venger notre sang sur les habitants de la terre ?</para>
+  <para style="q1">
+    <verse number="11" style="v" />Alors il leur fut donné à chacun une robe blanche<note caller="+" style="f"><char style="fr" closed="false">6.11 </char><char style="fq" closed="false">une robe blanche </char><char style="ft" closed="false">3.4+.</char></note>,</para>
+  <para style="q1">et il leur fut dit de patienter encore un peu,</para>
+  <para style="q1">jusqu'à ce que fût au complet le nombre de leurs compagnons de service et de leurs frères,</para>
+  <para style="q1">qui doivent être mis à mort comme eux.</para>
+  <para style="q1">
+    <verse number="12" style="v" />Et je vis :</para>
+  <para style="q1">Quand il ouvrit le sixième sceau,</para>
+  <para style="q1">il se fit un violent tremblement de terre.</para>
+  <para style="q1">Le soleil devint noir comme une étoffe de crin,</para>
+  <para style="q1">et la lune entière comme du sang.</para>
+  <para style="q1">
+    <verse number="13" style="v" />Les étoiles du ciel tombèrent sur la terre,</para>
+  <para style="q1">comme fruits verts d'un figuier battu par la tempête.</para>
+  <para style="q1">
+    <verse number="14" style="v" />Le ciel se retira comme un livre qu'on roule<note caller="+" style="f"><char style="fr" closed="false">6.14 </char><char style="ft" closed="false">Voir la note sur 5.1. – v. 12-14 : signes cosmiques de la fin Es 13.10-13 ; 34.4 ; Ez 32.7-8 ; Am 8.9 ; Jl 2.10 ; 3.3-4 (Ac 2.17-20) ; Mt 24.29 par. ; Ap 8.12 ; 16.20 ; 20.11.</char></note>,</para>
+  <para style="q1">toutes les montagnes et les îles furent ébranlées.</para>
+  <para style="q1">
+    <verse number="15" style="v" />Les rois de la terre, les grands, les chefs d'armée,</para>
+  <para style="q1">les riches et les puissants,</para>
+  <para style="q1">tous, esclaves et hommes libres,</para>
+  <para style="q1">se cachèrent dans les cavernes et les rochers des montagnes.</para>
+  <para style="q1">
+    <verse number="16" style="v" />Ils disaient aux montagnes et aux rochers :</para>
+  <para style="q2">Tombez sur nous<note caller="+" style="f"><char style="fr" closed="false">6.16 </char><char style="ft" closed="false">Es 2.19-21 ; Os 10.8 ; Lc 23.30 ; voir Ap 9.6.</char></note> et cachez-nous</para>
+  <para style="q2">loin de la face de celui qui siège sur le trône,</para>
+  <para style="q2">et loin de la colère de l'agneau !</para>
+  <para style="q2">
+    <verse number="17" style="v" />Car il est venu le grand jour de leur colère<note caller="+" style="f"><char style="fr" closed="false">6.17 </char><char style="ft" closed="false">Ps 110.5 ; Jl 2.1,11 ; 3.4 ; So 2.2-3 ; Rm 2.5.</char></note>,</para>
+  <para style="q2">et qui peut subsister ?</para>
+  <chapter number="7" style="c" />
+  <para style="s1">L'Eglise comme Peuple de Dieu</para>
+  <para style="p">
+    <verse number="1" style="v" />Après cela, je vis quatre anges debout aux quatre coins de la terre.</para>
+  <para style="q1">Ils retenaient les quatre vents<note caller="+" style="f"><char style="fr" closed="false">7.1 </char><char style="fq" closed="false">les quatre coins de la terre </char><char style="ft" closed="false">Ez 7.2 ; Mt 24.31. – </char><char style="fq" closed="false">les quatre vents </char><char style="ft" closed="false">Jr 49.36 ; Ez 37.9 ; Za 6.5 ; Dn 7.2.</char></note> de la terre,</para>
+  <para style="q1">afin que nul vent ne souffle sur la terre, sur la mer ni sur aucun arbre.</para>
+  <para style="q1">
+    <verse number="2" style="v" />Et je vis un autre ange monter de l'orient.</para>
+  <para style="q1">Il tenait le sceau du Dieu vivant<note caller="+" style="f"><char style="fr" closed="false">7.2 </char><char style="ft" closed="false">Petit instrument gravé en creux servant à marquer les objets personnels ou les lettres qu'on envoyait ; Ez 9.4-6 ; Ap 3.12 ; 9.4 ; 22.4 ; voir 2 Co 1.22.</char></note>.</para>
+  <para style="q1">D'une voix forte il cria aux quatre anges qui avaient reçu pouvoir de nuire à la terre et à la mer :</para>
+  <para style="q1">
+    <verse number="3" style="v" />Gardez-vous de nuire à la terre, à la mer ou aux arbres,</para>
+  <para style="q1">avant que nous ayons marqué du sceau le front des serviteurs de notre Dieu.</para>
+  <para style="q1">
+    <verse number="4" style="v" />Et j'entendis le nombre de ceux qui étaient marqués du sceau :</para>
+  <para style="q1">Cent quarante-quatre mille<note caller="+" style="f"><char style="fr" closed="false">7.4 </char><char style="fq" closed="false">marqués du sceau </char><char style="ft" closed="false"><char style="bk">4 Esd</char> 6.5. – </char><char style="fq" closed="false">144 000 : </char><char style="ft" closed="false">14.1-3.</char></note> marqués du sceau,</para>
+  <para style="q1">de toutes les tribus des fils d'Israël.</para>
+  <para style="q1">
+    <verse number="5" style="v" />De la tribu de Juda<note caller="+" style="f"><char style="fr" closed="false">7.5 </char><char style="fq" closed="false">tribu de Juda </char><char style="ft" closed="false">5.5+.</char></note> douze mille marqués du sceau.</para>
+  <para style="q1">De la tribu de Ruben douze mille,</para>
+  <para style="q1">de la tribu de Gad douze mille,</para>
+  <para style="q1">
+    <verse number="6" style="v" />de la tribu d'Aser douze mille,</para>
+  <para style="q1">de la tribu de Nephtali douze mille,</para>
+  <para style="q1">de la tribu de Manassé douze mille,</para>
+  <para style="q1">
+    <verse number="7" style="v" />de la tribu de Siméon douze mille,</para>
+  <para style="q1">de la tribu de Lévi douze mille,</para>
+  <para style="q1">de la tribu d'Issakar douze mille,</para>
+  <para style="q1">
+    <verse number="8" style="v" />de la tribu de Zabulon douze mille,</para>
+  <para style="q1">de la tribu de Joseph douze mille,</para>
+  <para style="q1">de la tribu de Benjamin douze mille marqués du sceau.</para>
+  <para style="s1">L'Eglise comme multitude des élus</para>
+  <para style="q1">
+    <verse number="9" style="v" />Après cela je vis :</para>
+  <para style="q1">C'était une foule immense que nul ne pouvait dénombrer,</para>
+  <para style="q1">de toutes nations, tribus, peuples et langues.</para>
+  <para style="q1">Ils se tenaient debout devant le trône et devant l'agneau,</para>
+  <para style="q1">vêtus de robes blanches<note caller="+" style="f"><char style="fr" closed="false">7.9 </char><char style="fq" closed="false">vêtus de blanc </char><char style="ft" closed="false">3.4+.</char></note> et des palmes à la main.</para>
+  <para style="q1">
+    <verse number="10" style="v" />Ils proclamaient à haute voix :</para>
+  <para style="q2">Le salut est à notre Dieu</para>
+  <para style="q2">qui siège sur le trône et à l'agneau.</para>
+  <para style="q1">
+    <verse number="11" style="v" />Et tous les anges rassemblés autour du trône, des anciens<note caller="+" style="f"><char style="fr" closed="false">7.11 </char><char style="fq" closed="false">les </char><char style="ft" closed="false">(24) </char><char style="fq" closed="false">anciens </char><char style="ft" closed="false">4.4,10 ; 11.16 ; 19.4.</char></note> et des quatre animaux</para>
+  <para style="q1">tombèrent devant le trône, face contre terre,</para>
+  <para style="q1">et adorèrent Dieu.</para>
+  <para style="q1">
+    <verse number="12" style="v" />Ils disaient :</para>
+  <para style="q2">Amen ! Louange, gloire, sagesse,</para>
+  <para style="q2">action de grâce, honneur, puissance et force</para>
+  <para style="q2">à notre Dieu pour les siècles des siècles ! Amen !</para>
+  <para style="q1">
+    <verse number="13" style="v" />L'un des anciens prit alors la parole et me dit :</para>
+  <para style="q1">Ces gens vêtus de robes blanches, qui sont-ils et d'où sont-ils venus ?</para>
+  <para style="q1">
+    <verse number="14" style="v" />Je lui répondis : Mon Seigneur, tu le sais !</para>
+  <para style="q1">Il me dit : Ils viennent de la grande épreuve<note caller="+" style="f"><char style="fr" closed="false">7.14 </char><char style="ft" closed="false">Dn 12.1 ; Mt 24.21 ; Mc 13.19.</char></note>.</para>
+  <para style="q1">Ils ont lavé leurs robes et les ont blanchies dans le sang de l'agneau.</para>
+  <para style="q1">
+    <verse number="15" style="v" />C'est pourquoi ils se tiennent devant le trône de Dieu et lui rendent un culte jour et nuit dans son temple.</para>
+  <para style="q1">Et celui qui siège sur le trône les abritera sous sa tente<note caller="+" style="f"><char style="fr" closed="false">7.15 </char><char style="fq" closed="false">le trône de Dieu </char><char style="ft" closed="false">4.2+. – </char><char style="fq" closed="false">le temple de Dieu </char><char style="ft" closed="false">3.12 ; 11.1. – </char><char style="fq" closed="false">la tente de Dieu </char><char style="ft" closed="false">Ex 40 ; Es 4.5-6 ; Jn 1.14.</char></note>.</para>
+  <para style="q1">
+    <verse number="16" style="v" />Ils n'auront plus faim,</para>
+  <para style="q1">ils n'auront plus soif,</para>
+  <para style="q1">le soleil et ses feux ne les frapperont plus,</para>
+  <para style="q1">
+    <verse number="17" style="v" />car l'agneau qui se tient au milieu du trône sera leur berger,</para>
+  <para style="q1">il les conduira vers des sources d'eaux vives.</para>
+  <para style="q1">Et Dieu essuiera toute larme de leurs yeux<note caller="+" style="f"><char style="fr" closed="false">7.17 </char><char style="ft" closed="false">v. 16-17 : Es 49.10. – </char><char style="fq" closed="false">leur berger </char><char style="ft" closed="false">Ps 23.1 ; Ez 34.23 ; Jn 10.11,14. – </char><char style="fq" closed="false">sources d'eaux vives </char><char style="ft" closed="false">Ps 23.2 ; Es 49.10 ; Jr 2.13 ; Jn 4.14. – </char><char style="fq" closed="false">Dieu séchera toute larme </char><char style="ft" closed="false">Es 25.8 ; 65.19 ; Ap 21.4.</char></note>.</para>
+  <chapter number="8" style="c" />
+  <para style="s1">Ouverture du septième sceau</para>
+  <para style="q1">
+    <verse number="1" style="v" />Quand il ouvrit le septième sceau,</para>
+  <para style="q1">il se fit dans le ciel un silence<note caller="+" style="f"><char style="fr" closed="false">8.1 </char><char style="ft" closed="false">Ha 2.20 ; So 1.7 ; Za 2.17 ; <char style="bk">Sg</char> 18.14.</char></note> d'environ une demi-heure…</para>
+  <para style="q1">
+    <verse number="2" style="v" />Et je vis les sept anges qui se tiennent devant Dieu.</para>
+  <para style="q1">Il leur fut donné sept trompettes<note caller="+" style="f"><char style="fr" closed="false">8.2 </char><char style="fq" closed="false">trompettes </char><char style="ft" closed="false">Mt 24.31 ; 1 Co 15.20.</char></note>.</para>
+  <para style="q1">
+    <verse number="3" style="v" />Un autre ange vint se placer près de l'autel.</para>
+  <para style="q1">Il portait un encensoir d'or,</para>
+  <para style="q1">et il lui fut donné des parfums en grand nombre,</para>
+  <para style="q1">pour les offrir avec les prières de tous les saints</para>
+  <para style="q1">sur l'autel d'or qui est devant le trône<note caller="+" style="f"><char style="fr" closed="false">8.3 </char><char style="fq" closed="false">la prière </char><char style="ft" closed="false">comparée à </char><char style="fq" closed="false">l'encens </char><char style="ft" closed="false">Ps 141.2 ; Ap 5.8. – </char><char style="fq" closed="false">l'autel des parfums </char><char style="ft" closed="false">Ex 30.1-3 ; Ap 9.13.</char></note>.</para>
+  <para style="q1">
+    <verse number="4" style="v" />Et, de la main de l'ange,</para>
+  <para style="q1">la fumée des parfums monta devant Dieu,</para>
+  <para style="q1">avec les prières des saints.</para>
+  <para style="q1">
+    <verse number="5" style="v" />L'ange prit alors l'encensoir,</para>
+  <para style="q1">il le remplit du feu de l'autel et le jeta sur la terre : et ce furent des tonnerres, des voix, des éclairs et un tremblement de terre<note caller="+" style="f"><char style="fr" closed="false">8.5 </char><char style="ft" closed="false">4.5+.</char></note>.</para>
+  <para style="s1">Les six premières trompettes</para>
+  <para style="q1">
+    <verse number="6" style="v" />Les sept anges qui tenaient les sept trompettes<note caller="+" style="f"><char style="fr" closed="false">8.6 </char><char style="ft" closed="false">Voir 1 Th 4.16 : la </char><char style="fq" closed="false">trompette </char><char style="ft" closed="false">est souvent citée comme signal du jugement de Dieu.</char></note> se préparèrent à en sonner.</para>
+  <para style="q1">
+    <verse number="7" style="v" />Le premier fit sonner sa trompette : grêle et feu<note caller="+" style="f"><char style="fr" closed="false">8.7 </char><char style="ft" closed="false">Ex 9.23-24 ; Ez 38.22 ; <char style="bk">Sg</char> 16.22.</char></note> mêlés de sang tombèrent sur la terre ;</para>
+  <para style="q1">le tiers de la terre flamba,</para>
+  <para style="q1">le tiers des arbres flamba,</para>
+  <para style="q1">et toute végétation verdoyante flamba.</para>
+  <para style="q1">
+    <verse number="8" style="v" />Le deuxième ange fit sonner sa trompette :</para>
+  <para style="q1">on eût dit qu'une grande montagne embrasée était précipitée dans la mer.</para>
+  <para style="q1">Le tiers de la mer devint du sang<note caller="+" style="f"><char style="fr" closed="false">8.8 </char><char style="fq" closed="false">chute de la montagne embrasée </char><char style="ft" closed="false">Jr 51.25. – </char><char style="fq" closed="false">changée en sang </char><char style="ft" closed="false">Ex 7.17-21 ; Ap 16.3-4.</char></note>.</para>
+  <para style="q1">
+    <verse number="9" style="v" />Le tiers des créatures vivant dans la mer périt,</para>
+  <para style="q1">et le tiers des navires fut détruit.</para>
+  <para style="q1">
+    <verse number="10" style="v" />Le troisième ange fit sonner sa trompette :</para>
+  <para style="q1">et, du ciel, un astre immense tomba, brûlant comme une torche<note caller="+" style="f"><char style="fr" closed="false">8.10 </char><char style="ft" closed="false">Es 14.12 ; Ap 9.1.</char></note>.</para>
+  <para style="q1">Il tomba sur le tiers des fleuves et sur les sources des eaux.</para>
+  <para style="q1">
+    <verse number="11" style="v" />Son nom est : Absinthe<note caller="+" style="f"><char style="fr" closed="false">8.11 </char><char style="ft" closed="false">Plante contenant un principe amer et déjà connue en Israël comme vénéneuse ; Am 5.7 ; 6.12 ; Jr 9.14.</char></note>.</para>
+  <para style="q1">Le tiers des eaux devint de l'absinthe,</para>
+  <para style="q1">et beaucoup d'hommes moururent à cause des eaux qui étaient devenues amères.</para>
+  <para style="q1">
+    <verse number="12" style="v" />Le quatrième ange fit sonner sa trompette :</para>
+  <para style="q1">le tiers du soleil, le tiers de la lune et le tiers des étoiles furent frappés. Ils s'assombrirent du tiers : le jour perdit un tiers de sa clarté et la nuit de même<note caller="+" style="f"><char style="fr" closed="false">8.12 </char><char style="ft" closed="false">Ex 10.21-23 ; <char style="bk">Sg</char> 17 ; Ap 6.12-14+.</char></note>.</para>
+  <para style="q1">
+    <verse number="13" style="v" />Alors je vis :</para>
+  <para style="q1">Et j'entendis un aigle qui volait au zénith proclamer d'une voix forte : Malheur ! Malheur ! Malheur aux habitants de la terre, à cause des sonneries de trompettes des trois anges qui doivent encore sonner !</para>
+  <chapter number="9" style="c" />
+  <para style="q1">
+    <verse number="1" style="v" />Le cinquième ange fit sonner sa trompette :</para>
+  <para style="q1">je vis une étoile précipitée du ciel sur la terre.</para>
+  <para style="q1">Et il lui fut donné la clé du puits de l'abîme<note caller="+" style="f"><char style="fr" closed="false">9.1 </char><char style="ft" closed="false">11.7 ; 17.8 ; 20.1,3 ; Lc 8.31.</char></note>.</para>
+  <para style="q1">
+    <verse number="2" style="v" />Elle ouvrit le puits de l'abîme,</para>
+  <para style="q1">et il en monta une fumée, comme celle d'une grande fournaise<note caller="+" style="f"><char style="fr" closed="false">9.2 </char><char style="ft" closed="false">Gn 19.28 ; Ex 19.18.</char></note>.</para>
+  <para style="q1">Le soleil en fut obscurci, ainsi que l'air.</para>
+  <para style="q1">
+    <verse number="3" style="v" />Et, de cette fumée, des sauterelles<note caller="+" style="f"><char style="fr" closed="false">9.3 </char><char style="ft" closed="false">Insectes volant en colonies innombrables et dévorant toute la végétation des zones où ils s'arrêtent ; Ex 10.12-15 ; Jl 1–2 ; <char style="bk">Sg</char> 16.9.</char></note> se répandirent sur la terre.</para>
+  <para style="q1">Il leur fut donné un pouvoir pareil à celui des scorpions<note caller="+" style="f"><char style="fr" closed="false">9.3 </char><char style="ft" closed="false">Petit animal des régions chaudes muni d'un dard venimeux à l'extrémité de la queue.</char></note> de la terre.</para>
+  <para style="q1">
+    <verse number="4" style="v" />Il leur fut défendu de faire aucun tort à l'herbe de la terre, à rien de ce qui verdoie, ni à aucun arbre, mais seulement aux hommes qui ne portent pas sur le front le sceau de Dieu<note caller="+" style="f"><char style="fr" closed="false">9.4 </char><char style="fq" closed="false">le sceau de Dieu </char><char style="ft" closed="false">7.2+.</char></note>.</para>
+  <para style="q1">
+    <verse number="5" style="v" />Il leur fut permis non de les faire mourir, mais d'être leur tourment cinq mois durant.</para>
+  <para style="q1">Et le tourment qu'elles causent est comme celui de l'homme que blesse un scorpion.</para>
+  <para style="q1">
+    <verse number="6" style="v" />En ces jours-là, les hommes chercheront la mort<note caller="+" style="f"><char style="fr" closed="false">9.6 </char><char style="ft" closed="false">Jb 3.21 ; Ap 6.16+.</char></note> et ne la trouveront pas.</para>
+  <para style="q1">Ils souhaiteront mourir et la mort les fuira.</para>
+  <para style="q1">
+    <verse number="7" style="v" />Les sauterelles avaient l'aspect de chevaux équipés pour le combat,</para>
+  <para style="q1">sur leurs têtes on eût dit des couronnes d'or,</para>
+  <para style="q1">et leurs visages étaient comme des visages humains.</para>
+  <para style="q1">
+    <verse number="8" style="v" />Elles avaient des cheveux comme des cheveux de femme,</para>
+  <para style="q1">et leurs dents étaient comme des dents de lion.</para>
+  <para style="q1">
+    <verse number="9" style="v" />Elles semblaient être comme cuirassées de fer,</para>
+  <para style="q1">et le bruit de leurs ailes était comme le bruit de chars à plusieurs chevaux courant au combat.</para>
+  <para style="q1">
+    <verse number="10" style="v" />Elles ont des queues comme celles des scorpions, armées de dards,</para>
+  <para style="q1">et dans leurs queues réside leur pouvoir de nuire aux hommes cinq mois durant.</para>
+  <para style="q1">
+    <verse number="11" style="v" />Elles ont comme roi l'ange de l'abîme qui se nomme, en hébreu, Abaddôn et, en grec, porte le nom d'Apollyôn<note caller="+" style="f"><char style="fr" closed="false">9.11 </char><char style="fq" closed="false">Abaddôn : </char><char style="ft" closed="false">en hébreu </char><char style="fq" closed="false">perdition, destruction. – Apollyôn : </char><char style="ft" closed="false">en grec </char><char style="fq" closed="false">destructeur.</char></note>.</para>
+  <para style="q1">
+    <verse number="12" style="v" />Le premier « malheur » est passé : voici, deux « malheurs » viennent encore à la suite.</para>
+  <para style="q1">
+    <verse number="13" style="v" />Le sixième ange fit sonner sa trompette :</para>
+  <para style="q1">j'entendis une voix venant des cornes de l'autel d'or<note caller="+" style="f"><char style="fr" closed="false">9.13 </char><char style="fq" closed="false">l'autel d'or </char><char style="ft" closed="false">8.3+.</char></note> qui se trouve devant Dieu.</para>
+  <para style="q1">
+    <verse number="14" style="v" />Elle disait au sixième ange qui tenait la trompette :</para>
+  <para style="q1">Libère les quatre anges qui sont enchaînés sur le grand fleuve Euphrate<note caller="+" style="f"><char style="fr" closed="false">9.14 </char><char style="ft" closed="false">Grand fleuve de Mésopotamie qui marqua la frontière orientale de l'Empire romain. Il traverse l'Irak d'aujourd'hui.</char></note>.</para>
+  <para style="q1">
+    <verse number="15" style="v" />On libéra les quatre anges qui se tenaient prêts pour l'heure, le jour, le mois et l'année où ils devaient mettre à mort le tiers des hommes.</para>
+  <para style="q1">
+    <verse number="16" style="v" />Et le nombre des troupes de la cavalerie était : deux myriades de myriades.</para>
+  <para style="q1">J'en entendis le nombre.</para>
+  <para style="q1">
+    <verse number="17" style="v" />Tels m'apparurent, dans la vision, les chevaux et leurs cavaliers :</para>
+  <para style="q1">ils portaient des cuirasses de feu, d'hyacinthe et de soufre.</para>
+  <para style="q1">Les têtes des chevaux étaient comme des têtes de lion, et leurs bouches vomissaient le feu, la fumée et le soufre.</para>
+  <para style="q1">
+    <verse number="18" style="v" />Par ces trois fléaux, le feu, la fumée et le soufre, que vomissaient leurs bouches, le tiers des hommes périt.</para>
+  <para style="q1">
+    <verse number="19" style="v" />Car le pouvoir des chevaux réside dans leurs bouches ainsi que dans leurs queues.</para>
+  <para style="q1">En effet, leurs queues ressemblent à des serpents,</para>
+  <para style="q1">elles ont des têtes et par là peuvent nuire.</para>
+  <para style="q1">
+    <verse number="20" style="v" />Quant au restant des hommes, ceux qui n'étaient pas morts sous le coup des fléaux,</para>
+  <para style="q1">ils ne se repentirent pas des œuvres de leurs mains, ils continuèrent à adorer les démons, les idoles d'or ou d'argent<note caller="+" style="f"><char style="fr" closed="false">9.20 </char><char style="ft" closed="false">Culte rendu aux </char><char style="fq" closed="false">démons </char><char style="ft" closed="false">Dt 32.17 ; 1 Co 10.19-20. – </char><char style="fq" closed="false">les idoles d'or ou d'argent </char><char style="ft" closed="false">Ps 115.4-7 ; 135.15-17 ; Dn 5.4,23.</char></note>, de bronze, de pierre ou de bois, qui ne peuvent ni voir, ni entendre, ni marcher.</para>
+  <para style="q1">
+    <verse number="21" style="v" />Ils ne se repentirent pas<note caller="+" style="f"><char style="fr" closed="false">9.21 </char><char style="ft" closed="false">16.9,11,21.</char></note> de leurs meurtres ni de leurs sortilèges,</para>
+  <para style="q1">de leurs débauches ni de leurs vols.</para>
+  <chapter number="10" style="c" />
+  <para style="s1">L'ange et le petit livre</para>
+  <para style="q1">
+    <verse number="1" style="v" />Et je vis un autre ange puissant qui descendait du ciel.</para>
+  <para style="q1">Il était vêtu d'une nuée,</para>
+  <para style="q1">une gloire<note caller="+" style="f"><char style="fr" closed="false">10.1 </char><char style="ft" closed="false">Voir 4.3 et la note.</char></note> nimbait son front,</para>
+  <para style="q1">son visage était comme le soleil,</para>
+  <para style="q1">et ses pieds comme des colonnes de feu.</para>
+  <para style="q1">
+    <verse number="2" style="v" />Il tenait dans la main un petit livre ouvert<note caller="+" style="f"><char style="fr" closed="false">10.2 </char><char style="ft" closed="false">Ez 2.8–3.3.</char></note>.</para>
+  <para style="q1">Il posa le pied droit sur la mer, le pied gauche sur la terre,</para>
+  <para style="q1">
+    <verse number="3" style="v" />et cria d'une voix forte, comme rugit un lion<note caller="+" style="f"><char style="fr" closed="false">10.3 </char><char style="ft" closed="false">Os 11.10 ; Am 1.2 ; 3.8.</char></note>.</para>
+  <para style="q1">Quand il eut crié, les sept tonnerres firent retentir leurs voix.</para>
+  <para style="q1">
+    <verse number="4" style="v" />Et quand les sept tonnerres eurent retenti, comme j'allais écrire,</para>
+  <para style="q1">j'entendis une voix qui, du ciel, me disait :</para>
+  <para style="q1">Garde secret le message des sept tonnerres et ne l'écris pas<note caller="+" style="f"><char style="fr" closed="false">10.4 </char><char style="ft" closed="false">Dn 8.26 ; 12.4,9 ; voir Ap 22.10.</char></note>.</para>
+  <para style="q1">
+    <verse number="5" style="v" />Et l'ange que j'avais vu debout sur la mer et sur la terre</para>
+  <para style="q1">leva la main droite vers le ciel <verse number="6" style="v" />et jura,</para>
+  <para style="q1">par celui qui vit pour les siècles des siècles,</para>
+  <para style="q1">qui a créé le ciel et ce qui s'y trouve,</para>
+  <para style="q1">la terre et ce qui s'y trouve,</para>
+  <para style="q1">la mer et ce qui s'y trouve :</para>
+  <para style="q1">il n'y aura plus de délai<note caller="+" style="f"><char style="fr" closed="false">10.6 </char><char style="ft" closed="false">v. 5-6 : le serment de </char><char style="fq" closed="false">l'ange </char><char style="ft" closed="false">Dn 12.7. – </char><char style="fq" closed="false">qui a créé le ciel et la terre </char><char style="ft" closed="false">Gn 14.19,22 ; Ex 20.11 ; Ps 146.6 ; Ne 9.6 ; Ac 4.24 ; Ap 14.7.</char></note>.</para>
+  <para style="q1">
+    <verse number="7" style="v" />Mais aux jours où l'on entendra le septième ange, quand il commencera de sonner de sa trompette, alors sera l'accomplissement du mystère de Dieu, comme il en fit l'annonce à ses serviteurs les prophètes<note caller="+" style="f"><char style="fr" closed="false">10.7 </char><char style="fq" closed="false">le mystère de Dieu </char><char style="ft" closed="false">Rm 16.25 ; 1 Co 2.7 ; Ep 1.9 ; 3.3-5,9 ; 6.19 ; Col 1.26-27 ; 2.2 ; 4.3. – </char><char style="fq" closed="false">ses serviteurs les prophètes </char><char style="ft" closed="false">Am 3.7 ; Za 1.6 ; Dn 9.6,10 ; Ap 11.18.</char></note>.</para>
+  <para style="q1">
+    <verse number="8" style="v" />Et la voix que j'avais entendue venant du ciel me parla de nouveau et dit :</para>
+  <para style="q1">Va, prends le livre ouvert dans la main de l'ange qui se tient debout sur la mer et sur la terre.</para>
+  <para style="q1">
+    <verse number="9" style="v" />Je m'avançai vers l'ange et le priai de me donner le petit livre.</para>
+  <para style="q1">Il me dit : Prends et mange-le.</para>
+  <para style="q1">Il sera amer à tes entrailles,</para>
+  <para style="q1">mais dans ta bouche il aura la douceur du miel.</para>
+  <para style="q1">
+    <verse number="10" style="v" />Je pris le petit livre de la main de l'ange et le mangeai.</para>
+  <para style="q1">Dans ma bouche il avait la douceur du miel<note caller="+" style="f"><char style="fr" closed="false">10.10 </char><char style="fq" closed="false">la douceur du miel </char><char style="ft" closed="false">Ez 3.3.</char></note>,</para>
+  <para style="q1">mais quand je l'eus mangé, mes entrailles en devinrent amères.</para>
+  <para style="q1">
+    <verse number="11" style="v" />Et l'on me dit :</para>
+  <para style="q1">Il te faut à nouveau prophétiser sur des peuples, des nations, des langues<note caller="+" style="f"><char style="fr" closed="false">10.11 </char><char style="ft" closed="false">Jr 1.10 ; 25.30 ; voir Ap 5.9.</char></note> et des rois en grand nombre.</para>
+  <chapter number="11" style="c" />
+  <para style="s1">Les deux témoins</para>
+  <para style="q1">
+    <verse number="1" style="v" />Alors on me donna un roseau semblable à une règle d'arpenteur<note caller="+" style="f"><char style="fr" closed="false">11.1 </char><char style="ft" closed="false">Ez 40.3 ; Za 2.5-6 ; Ap 21.15.</char></note>,</para>
+  <para style="q1">et l'on me dit : Lève-toi et mesure le temple de Dieu et l'autel et ceux qui y adorent.</para>
+  <para style="q1">
+    <verse number="2" style="v" />Mais le parvis extérieur du temple, laisse-le de côté et ne le mesure pas, car il a été livré aux nations qui fouleront aux pieds la cité sainte pendant quarante-deux mois<note caller="+" style="f"><char style="fr" closed="false">11.2 </char><char style="fq" closed="false">la cité sainte foulée aux pieds </char><char style="ft" closed="false">Ps 79.1 ; Es 63.18 ; Lc 21.24. – </char><char style="fq" closed="false">quarante-deux mois</char><char style="ft" closed="false"> = 3 ans 1/2 = </char><char style="fq" closed="false">1 260 jours </char><char style="ft" closed="false">(v. 3) Dn 7.25 ; 12.7 ; Ap 12.6,14 ; 13.5.</char></note>.</para>
+  <para style="q1">
+    <verse number="3" style="v" />Et je donnerai à mes deux témoins de prophétiser,</para>
+  <para style="q1">vêtus de sacs<note caller="+" style="f"><char style="fr" closed="false">11.3 </char><char style="ft" closed="false">Voir Jr 6.26 ; Jon 3.8. Le </char><char style="fq" closed="false">sac : </char><char style="ft" closed="false">tenue de </char><char style="fq" closed="false">deuil </char><char style="ft" closed="false">et de repentance.</char></note>, mille deux cent soixante jours.</para>
+  <para style="q1">
+    <verse number="4" style="v" />Ce sont les deux oliviers<note caller="+" style="f"><char style="fr" closed="false">11.4 </char><char style="ft" closed="false">Za 4.3,11-14.</char></note> et les deux chandeliers qui se tiennent devant le Seigneur de la terre.</para>
+  <para style="q1">
+    <verse number="5" style="v" />Si quelqu'un veut leur nuire, un feu<note caller="+" style="f"><char style="fr" closed="false">11.5 </char><char style="ft" closed="false">2 S 22.9 ; 2 R 1.10,14 ; Ps 97.3 ; Jr 5.14.</char></note> sort de leur bouche et dévore leurs ennemis.</para>
+  <para style="q1">Oui, si quelqu'un voulait leur nuire, ainsi lui faudrait-il mourir.</para>
+  <para style="q1">
+    <verse number="6" style="v" />Ils ont pouvoir de fermer le ciel, et nulle pluie n'arrose les jours de leur prophétie.</para>
+  <para style="q1">Ils ont pouvoir de changer les eaux en sang<note caller="+" style="f"><char style="fr" closed="false">11.6 </char><char style="fq" closed="false">pouvoir de fermer le ciel </char><char style="ft" closed="false">1 R 17.1 ; Jc 5.17. – </char><char style="fq" closed="false">eaux changées en sang </char><char style="ft" closed="false">8.8+.</char></note></para>
+  <para style="q1">et de frapper la terre de maints fléaux, autant qu'ils le voudront.</para>
+  <para style="q1">
+    <verse number="7" style="v" />Mais quand ils auront fini de rendre témoignage,</para>
+  <para style="q1">la bête qui monte de l'abîme leur fera la guerre<note caller="+" style="f"><char style="fr" closed="false">11.7 </char><char style="fq" closed="false">la bête qui monte de l'abîme </char><char style="ft" closed="false">Dn 7.3 ; Ap 13.1 ; 17.8 </char><char style="fq" closed="false">fera la guerre aux saints </char><char style="ft" closed="false">Dn 7.7,21 ; Ap 12.17 ; 13.7.</char></note>, les vaincra et les fera périr.</para>
+  <para style="q1">
+    <verse number="8" style="v" />Leurs corps resteront sur la place de la grande cité qu'on nomme prophétiquement Sodome et Egypte<note caller="+" style="f"><char style="fr" closed="false">11.8 </char><char style="fq" closed="false">Sodome </char><char style="ft" closed="false">(dépravation) Gn 18–19 ; Dt 29.22 ; 32.32 ; Es 1.9-10 ; Jr 23.14 ; Ez 16.46. – </char><char style="fq" closed="false">Egypte </char><char style="ft" closed="false">(oppression et idolâtrie) Ex 13.14 ; Es 19.1-3 ; <char style="bk">Sg</char> 11.15-16 ; 12.23-27 ; 15.16.</char></note>, là même où leur Seigneur a été crucifié.</para>
+  <para style="q1">
+    <verse number="9" style="v" />Des peuples, des tribus, des langues et des nations, on viendra pour regarder leurs corps pendant trois jours et demi, et sans leur accorder de sépulture.</para>
+  <para style="q1">
+    <verse number="10" style="v" />Les habitants de la terre se réjouiront à leur sujet, ils seront dans la joie, ils échangeront des présents, car ces deux prophètes leur avaient causé bien des tourments.</para>
+  <para style="q1">
+    <verse number="11" style="v" />Mais après ces trois jours et demi, un souffle de vie, venu de Dieu, entra en eux et ils se dressèrent<note caller="+" style="f"><char style="fr" closed="false">11.11 </char><char style="ft" closed="false">Ez 37.5,10.</char></note>.</para>
+  <para style="q1">Alors une grande frayeur tomba sur ceux qui les regardaient.</para>
+  <para style="q1">
+    <verse number="12" style="v" />Ils entendirent une voix forte qui, du ciel, leur disait : Montez ici.</para>
+  <para style="q1">Et ils montèrent au ciel dans la nuée, sous les yeux de leurs ennemis<note caller="+" style="f"><char style="fr" closed="false">11.12 </char><char style="ft" closed="false">2 R 2.11.</char></note>.</para>
+  <para style="q1">
+    <verse number="13" style="v" />A l'heure même, il se fit un violent tremblement de terre,</para>
+  <para style="q1">le dixième de la cité s'écroula et sept mille personnes périrent dans cette catastrophe.</para>
+  <para style="q1">Les survivants, saisis d'effroi, rendirent gloire au Dieu du ciel.</para>
+  <para style="q1">
+    <verse number="14" style="v" />Le deuxième « malheur » est passé. Voici, le troisième « malheur » vient bientôt.</para>
+  <para style="s1">La septième trompette</para>
+  <para style="q1">
+    <verse number="15" style="v" />Le septième ange fit sonner sa trompette :</para>
+  <para style="q1">il y eut dans le ciel de grandes voix qui disaient :</para>
+  <para style="q2">Le royaume du monde est maintenant à notre Seigneur et à son Christ ;</para>
+  <para style="q2">il régnera pour les siècles des siècles<note caller="+" style="f"><char style="fr" closed="false">11.15 </char><char style="ft" closed="false">Ex 15.18 ; Ps 2.2 ; 10.16 ; 22.28-29 ; Dn 2.44 ; 7.14 ; Ab 21 ; Za 14.9 ; Ap 12.10 ; 19.6.</char></note>.</para>
+  <para style="q1">
+    <verse number="16" style="v" />Les vingt-quatre anciens<note caller="+" style="f"><char style="fr" closed="false">11.16 </char><char style="fq" closed="false">24 anciens </char><char style="ft" closed="false">7.11+.</char></note> qui, devant Dieu, siègent sur leurs trônes tombèrent face contre terre</para>
+  <para style="q1">et adorèrent Dieu <verse number="17" style="v" />en disant :</para>
+  <para style="q2">Nous te rendons grâce, Seigneur,</para>
+  <para style="q2">Dieu souverain,</para>
+  <para style="q2">qui es et qui étais<note caller="+" style="f"><char style="fr" closed="false">11.17 </char><char style="fq" closed="false">qui es, qui était </char><char style="ft" closed="false">1.4+. – </char><char style="fq" closed="false">souverain </char><char style="ft" closed="false">1.8+.</char></note>,</para>
+  <para style="q2">car tu as exercé ta grande puissance</para>
+  <para style="q2">et tu as établi ton Règne.</para>
+  <para style="q2">
+    <verse number="18" style="v" />Les nations se sont mises en colère,</para>
+  <para style="q2">mais c'est ta colère qui est venue.</para>
+  <para style="q2">C'est le temps du jugement pour les morts,</para>
+  <para style="q2">le temps de la récompense pour tes serviteurs les prophètes,</para>
+  <para style="q2">les saints et ceux qui craignent ton nom<note caller="+" style="f"><char style="fr" closed="false">11.18 </char><char style="fq" closed="false">colère des nations </char><char style="ft" closed="false">Ps 2.1 ; 46.7. – </char><char style="fq" closed="false">tes serviteurs les prophètes </char><char style="ft" closed="false">10.7+. – </char><char style="fq" closed="false">ceux qui craignent ton nom </char><char style="ft" closed="false">Ps 115.13.</char></note>, petits et grands,</para>
+  <para style="q2">le temps de la destruction pour ceux qui détruisent la terre.</para>
+  <para style="q1">
+    <verse number="19" style="v" />Et le temple de Dieu dans le ciel s'ouvrit,</para>
+  <para style="q1">et l'arche de l'alliance apparut dans son temple.</para>
+  <para style="q1">Alors il y eut des éclairs, des voix, des tonnerres, un tremblement de terre et une forte grêle<note caller="+" style="f"><char style="fr" closed="false">11.19 </char><char style="fq" closed="false">arche de l'alliance </char><char style="ft" closed="false">Ex 25.10 ; 1 R 8.1,6 ; 2 Ch 5.7 ; <char style="bk">2 M</char> 2.5 ; Ap 15.5. – </char><char style="fq" closed="false">des éclairs, des voix… </char><char style="ft" closed="false">4.5+.</char></note>.</para>
+  <chapter number="12" style="c" />
+  <para style="s1">La femme et le dragon</para>
+  <para style="q1">
+    <verse number="1" style="v" />Un grand signe apparut dans le ciel :</para>
+  <para style="q1">une femme, vêtue du soleil<note caller="+" style="f"><char style="fr" closed="false">12.1 </char><char style="ft" closed="false">Ps 104.2 ; Ct 6.10.</char></note>, la lune sous les pieds, et sur la tête une couronne de douze étoiles.</para>
+  <para style="q1">
+    <verse number="2" style="v" />Elle était enceinte et criait dans le travail et les douleurs de l'enfantement<note caller="+" style="f"><char style="fr" closed="false">12.2 </char><char style="ft" closed="false">Es 66.7-8 ; Mi 4.9-10.</char></note>.</para>
+  <para style="q1">
+    <verse number="3" style="v" />Alors un autre signe apparut dans le ciel :</para>
+  <para style="q1">C'était un grand dragon rouge feu.</para>
+  <para style="q1">Il avait sept têtes et dix cornes<note caller="+" style="f"><char style="fr" closed="false">12.3 </char><char style="fq" closed="false">dragon </char><char style="ft" closed="false">Dn 7.7. – </char><char style="fq" closed="false">cornes : </char><char style="ft" closed="false">voir 5.6 et la note.</char></note> et, sur ses têtes, sept diadèmes.</para>
+  <para style="q1">
+    <verse number="4" style="v" />Sa queue, qui balayait le tiers des étoiles du ciel, les précipita sur la terre<note caller="+" style="f"><char style="fr" closed="false">12.4 </char><char style="ft" closed="false">Dn 8.10.</char></note>.</para>
+  <para style="q1">Le dragon se posta devant la femme qui allait enfanter, afin de dévorer l'enfant dès sa naissance.</para>
+  <para style="q1">
+    <verse number="5" style="v" />Elle mit au monde un fils, un enfant mâle ;</para>
+  <para style="q1">c'est lui qui doit mener paître toutes les nations avec une verge de fer<note caller="+" style="f"><char style="fr" closed="false">12.5 </char><char style="fq" closed="false">Elle mit au monde un fils </char><char style="ft" closed="false">Es 7.14 ; 66.7. – </char><char style="fq" closed="false">une verge de fer </char><char style="ft" closed="false">Ps 2.9 (Ap 2.27 ; 19.15).</char></note>.</para>
+  <para style="q1">Et son enfant fut enlevé auprès de Dieu et de son trône.</para>
+  <para style="q1">
+    <verse number="6" style="v" />Alors la femme s'enfuit au désert, où Dieu lui a fait préparer une place,</para>
+  <para style="q1">pour qu'elle y soit nourrie mille deux cent soixante jours<note caller="+" style="f"><char style="fr" closed="false">12.6 </char><char style="fq" closed="false">1 260 jours </char><char style="ft" closed="false">11.2+.</char></note>.</para>
+  <para style="q1">
+    <verse number="7" style="v" />Il y eut alors un combat dans le ciel :</para>
+  <para style="q1">Michaël<note caller="+" style="f"><char style="fr" closed="false">12.7 </char><char style="ft" closed="false">Dn 10.13,21 ; 12.1 ; Jude 9.</char></note> et ses anges combattirent contre le dragon.</para>
+  <para style="q1">Et le dragon lui aussi combattait avec ses anges,</para>
+  <para style="q1">
+    <verse number="8" style="v" />mais il n'eut pas le dessus :</para>
+  <para style="q1">il ne se trouva plus de place pour eux dans le ciel.</para>
+  <para style="q1">
+    <verse number="9" style="v" />Il fut précipité, le grand dragon, l'antique serpent, celui qu'on nomme Diable et Satan, le séducteur du monde entier,</para>
+  <para style="q1">il fut précipité sur la terre<note caller="+" style="f"><char style="fr" closed="false">12.9 </char><char style="fq" closed="false">le serpent originel </char><char style="ft" closed="false">Gn 3.1-5,15 ; Ap 20.2. – </char><char style="fq" closed="false">Satan précipité sur terre </char><char style="ft" closed="false">8.10+ ; Lc 10.18 ; Jn 12.31.</char></note> et ses anges avec lui.</para>
+  <para style="q1">
+    <verse number="10" style="v" />Et j'entendis une voix forte qui, dans le ciel, disait :</para>
+  <para style="q2">Voici le temps du salut,</para>
+  <para style="q2">de la puissance et du Règne de notre Dieu,</para>
+  <para style="q2">et de l'autorité de son Christ ;</para>
+  <para style="q2">car il a été précipité, l'accusateur<note caller="+" style="f"><char style="fr" closed="false">12.10 </char><char style="ft" closed="false">C'est le sens étymologique du nom </char><char style="fq" closed="false">Satan</char><char style="ft" closed="false"> ; Jb 1.9-11 ; 2.4-5 ; Za 3.1-2.</char></note> de nos frères,</para>
+  <para style="q2">celui qui les accusait devant notre Dieu, jour et nuit.</para>
+  <para style="q2">
+    <verse number="11" style="v" />Mais eux, ils l'ont vaincu par le sang de l'agneau et par la parole dont ils ont rendu témoignage :</para>
+  <para style="q2">Ils n'ont pas aimé leur vie jusqu'à craindre la mort.</para>
+  <para style="q2">
+    <verse number="12" style="v" />C'est pourquoi soyez dans la joie,</para>
+  <para style="q2">vous les cieux<note caller="+" style="f"><char style="fr" closed="false">12.12 </char><char style="ft" closed="false">Es 44.23 ; 49.13 ; Jr 51.48 ; Ps 96.11 ; Ap 18.20.</char></note> et vous qui y avez votre demeure !</para>
+  <para style="q2">Malheur à vous, la terre et la mer,</para>
+  <para style="q2">car le diable est descendu vers vous,</para>
+  <para style="q2">emporté de fureur,</para>
+  <para style="q2">sachant que peu de temps lui reste.</para>
+  <para style="q1">
+    <verse number="13" style="v" />Quand le dragon se vit précipité sur la terre, il se lança à la poursuite de la femme qui avait mis au monde l'enfant mâle.</para>
+  <para style="q1">
+    <verse number="14" style="v" />Mais les deux ailes du grand aigle furent données à la femme</para>
+  <para style="q1">pour qu'elle s'envole au désert, au lieu qui lui est réservé pour y être nourrie, loin du serpent, un temps, des temps et la moitié d'un temps<note caller="+" style="f"><char style="fr" closed="false">12.14 </char><char style="fq" closed="false">des ailes d'aigle </char><char style="ft" closed="false">Ex 19.4 ; Dt 32.11 ; Es 40.31. – Trois </char><char style="fq" closed="false">temps </char><char style="ft" closed="false">(ou trois ans) et demi. Voir 11.2+ et la note.</char></note>.</para>
+  <para style="q1">
+    <verse number="15" style="v" />Alors le serpent vomit comme un fleuve d'eau derrière la femme pour la faire emporter par les flots.</para>
+  <para style="q1">
+    <verse number="16" style="v" />Mais la terre vint au secours de la femme :</para>
+  <para style="q1">la terre s'ouvrit et engloutit le fleuve vomi par le dragon.</para>
+  <para style="q1">
+    <verse number="17" style="v" />Dans sa fureur contre la femme, le dragon porta le combat contre le reste de sa descendance,</para>
+  <para style="q1">ceux qui observent les commandements de Dieu et gardent le témoignage de Jésus<note caller="+" style="f"><char style="fr" closed="false">12.17 </char><char style="fq" closed="false">contre sa descendance </char><char style="ft" closed="false">Gn 3.15 ; voir Dn 7.21 ; Ap 11.7. – </char><char style="fq" closed="false">le témoignage de Jésus </char><char style="ft" closed="false">1.2+.</char></note>.</para>
+  <para style="q1">
+    <verse number="18" style="v" />Puis il se posta sur le sable de la mer.</para>
+  <chapter number="13" style="c" />
+  <para style="s1">Les deux bêtes</para>
+  <para style="q1">
+    <verse number="1" style="v" />Alors, je vis monter de la mer une bête qui avait dix cornes et sept têtes, sur ses cornes dix diadèmes et sur ses têtes un nom blasphématoire<note caller="+" style="f"><char style="fr" closed="false">13.1 </char><char style="ft" closed="false">Voir 5.6 et la note ; 17.3,7-12. – </char><char style="fq" closed="false">la bête qui monte </char><char style="ft" closed="false">de l'abîme 11.7+.</char></note>.</para>
+  <para style="q1">
+    <verse number="2" style="v" />La bête que je vis ressemblait au léopard,</para>
+  <para style="q1">ses pattes étaient comme celles de l'ours,</para>
+  <para style="q1">et sa gueule comme la gueule du lion.</para>
+  <para style="q1">Et le dragon lui conféra sa puissance, son trône et un pouvoir immense<note caller="+" style="f"><char style="fr" closed="false">13.2 </char><char style="ft" closed="false">Dn 7.4-6.</char></note>.</para>
+  <para style="q1">
+    <verse number="3" style="v" />L'une de ses têtes était comme blessée à mort,</para>
+  <para style="q1">mais sa plaie mortelle fut guérie.</para>
+  <para style="q1">Emerveillée, la terre entière suivit la bête.</para>
+  <para style="q1">
+    <verse number="4" style="v" />Et l'on adora le dragon parce qu'il avait donné le pouvoir à la bête,</para>
+  <para style="q1">et l'on adora la bête en disant :</para>
+  <para style="q1">qui est comparable à la bête et qui peut la combattre ?</para>
+  <para style="q1">
+    <verse number="5" style="v" />Il lui fut donné une bouche pour proférer arrogances et blasphèmes,</para>
+  <para style="q1">et il lui fut donné pouvoir d'agir pendant quarante-deux mois<note caller="+" style="f"><char style="fr" closed="false">13.5 </char><char style="fq" closed="false">arrogance </char><char style="ft" closed="false">Dn 7.8,11,20,25 ; 11.27. – </char><char style="fq" closed="false">42 mois </char><char style="ft" closed="false">Ap 11.2+ et la note.</char></note>.</para>
+  <para style="q1">
+    <verse number="6" style="v" />Elle ouvrit sa bouche en blasphèmes contre Dieu,</para>
+  <para style="q1">pour blasphémer son nom, son tabernacle et ceux dont la demeure est dans le ciel.</para>
+  <para style="q1">
+    <verse number="7" style="v" />Il lui fut donné de faire la guerre aux saints<note caller="+" style="f"><char style="fr" closed="false">13.7 </char><char style="ft" closed="false">11.7+.</char></note> et de les vaincre,</para>
+  <para style="q1">et lui fut donné le pouvoir sur toute tribu, peuple, langue et nation.</para>
+  <para style="q1">
+    <verse number="8" style="v" />Ils l'adoreront, tous ceux qui habitent la terre,</para>
+  <para style="q1">tous ceux dont le nom n'est pas écrit, depuis la fondation du monde, dans le livre de vie de l'agneau immolé<note caller="+" style="f"><char style="fr" closed="false">13.8 </char><char style="fq" closed="false">Ils l'adoreront </char><char style="ft" closed="false">v. 12 ; 14.9-11 ; 16.2 ; 19.20 ; 20.4. – </char><char style="fq" closed="false">le livre de vie </char><char style="ft" closed="false">3.5+. – </char><char style="fq" closed="false">l'agneau immolé </char><char style="ft" closed="false">5.6+.</char></note>.</para>
+  <para style="q1">
+    <verse number="9" style="v" />Que celui qui a des oreilles entende :</para>
+  <para style="q2">
+    <verse number="10" style="v" />Qui est destiné à la captivité</para>
+  <para style="q2">ira en captivité.</para>
+  <para style="q2">Qui est destiné à périr par le glaive</para>
+  <para style="q2">périra par le glaive.</para>
+  <para style="q1">C'est l'heure de la persévérance et de la foi des saints<note caller="+" style="f"><char style="fr" closed="false">13.10 </char><char style="ft" closed="false">Autre texte : </char><char style="fq" closed="false">Si quelqu'un emmène en captivité, il ira lui-même en captivité ; si quelqu'un tue par le glaive, il sera lui-même tué par le glaive</char><char style="ft" closed="false"> ; Jr 15.2 ; 43.11. – </char><char style="fq" closed="false">persévérance </char><char style="ft" closed="false">14.12.</char></note>.</para>
+  <para style="q1">
+    <verse number="11" style="v" />Alors je vis monter de la terre une autre bête.</para>
+  <para style="q1">Elle avait deux cornes comme un agneau<note caller="+" style="f"><char style="fr" closed="false">13.11 </char><char style="ft" closed="false">Mt 7.15 ; Ap 16.13 ; 19.20 ; 20.10.</char></note>,</para>
+  <para style="q1">mais elle parlait comme un dragon.</para>
+  <para style="q1">
+    <verse number="12" style="v" />Tout le pouvoir de la première bête, elle l'exerce sous son regard. Elle fait adorer par la terre et ses habitants la première bête dont la plaie mortelle a été guérie.</para>
+  <para style="q1">
+    <verse number="13" style="v" />Elle accomplit de grands prodiges, jusqu'à faire descendre du ciel, aux yeux de tous, un feu sur la terre<note caller="+" style="f"><char style="fr" closed="false">13.13 </char><char style="ft" closed="false">v. 13-14 : </char><char style="fq" closed="false">prodiges séducteurs </char><char style="ft" closed="false">Dt 13.2-4 ; Mt 24.24 ; 2 Th 2.3,9. – </char><char style="fq" closed="false">feu descendant du ciel </char><char style="ft" closed="false">1 R 18.24-39.</char></note>.</para>
+  <para style="q1">
+    <verse number="14" style="v" />Elle séduit les habitants de la terre par les prodiges qu'il lui est donné d'accomplir sous le regard de la bête.</para>
+  <para style="q1">Elle les incite à dresser une image en l'honneur de la bête qui porte la blessure du glaive et qui a repris vie.</para>
+  <para style="q1">
+    <verse number="15" style="v" />Il lui fut donné d'animer l'image de la bête, de sorte qu'elle ait même la parole et fasse mettre à mort quiconque n'adorerait pas l'image de la bête<note caller="+" style="f"><char style="fr" closed="false">13.15 </char><char style="ft" closed="false">Dn 3.5-7,15.</char></note>.</para>
+  <para style="q1">
+    <verse number="16" style="v" />A tous, petits et grands, riches et pauvres, hommes libres et esclaves, elle impose une marque sur la main droite ou sur le front<note caller="+" style="f"><char style="fr" closed="false">13.16 </char><char style="ft" closed="false">14.9,11 ; 16.2 ; 19.20 ; 20.4.</char></note>.</para>
+  <para style="q1">
+    <verse number="17" style="v" />Et nul ne pourra acheter ou vendre, s'il ne porte la marque, le nom de la bête ou le chiffre de son nom<note caller="+" style="f"><char style="fr" closed="false">13.17 </char><char style="fq" closed="false">Le chiffre d'un nom </char><char style="ft" closed="false">était obtenu en additionnant les valeurs numériques attribuées aux lettres qui le constituent.</char></note>.</para>
+  <para style="q1">
+    <verse number="18" style="v" />C'est le moment d'avoir du discernement<note caller="+" style="f"><char style="fr" closed="false">13.18 </char><char style="ft" closed="false">17.9.</char></note>. Que celui qui a de l'intelligence interprète le chiffre de la bête,</para>
+  <para style="q1">car c'est un chiffre d'homme :</para>
+  <para style="q1">et son chiffre est six cent soixante-six.</para>
+  <chapter number="14" style="c" />
+  <para style="s1">L'agneau et les rachetés</para>
+  <para style="q1">
+    <verse number="1" style="v" />Et je vis :</para>
+  <para style="q1">L'agneau était debout sur la montagne de Sion,</para>
+  <para style="q1">et avec lui les cent quarante-quatre mille qui portent son nom<note caller="+" style="f"><char style="fr" closed="false">14.1 </char><char style="fq" closed="false">L'agneau </char><char style="ft" closed="false">5.6+. – </char><char style="fq" closed="false">la montagne de Sion </char><char style="ft" closed="false">Ps 2.6 ; Jl 3.5 ; Ab 17. – </char><char style="fq" closed="false">144 000 : </char><char style="ft" closed="false">7.4+. – </char><char style="fq" closed="false">qui portent son nom </char><char style="ft" closed="false">3.12+.</char></note> et le nom de son Père écrits sur leurs fronts.</para>
+  <para style="q1">
+    <verse number="2" style="v" />Et j'entendis une voix venant du ciel,</para>
+  <para style="q1">comme la voix des océans<note caller="+" style="f"><char style="fr" closed="false">14.2 </char><char style="fq" closed="false">la voix des océans </char><char style="ft" closed="false">1.15.</char></note>,</para>
+  <para style="q1">comme le grondement d'un fort coup de tonnerre,</para>
+  <para style="q1">et la voix que j'entendis était comme le chant de joueurs de harpe touchant leurs instruments.</para>
+  <para style="q1">
+    <verse number="3" style="v" />Ils chantaient un cantique nouveau, devant le trône, devant les quatre animaux et les anciens<note caller="+" style="f"><char style="fr" closed="false">14.3 </char><char style="fq" closed="false">cantique nouveau </char><char style="ft" closed="false">5.9+. – </char><char style="fq" closed="false">quatre animaux </char><char style="ft" closed="false">4.6+. – </char><char style="fq" closed="false">anciens </char><char style="ft" closed="false">4.4+ ; 7.11+.</char></note>.</para>
+  <para style="q1">Et nul ne pouvait apprendre ce cantique,</para>
+  <para style="q1">sinon les cent quarante-quatre mille, les rachetés de la terre.</para>
+  <para style="q1">
+    <verse number="4" style="v" />Ils ne se sont pas souillés avec des femmes, car ils sont vierges.</para>
+  <para style="q1">Ils suivent l'agneau partout où il va.</para>
+  <para style="q1">Ils ont été rachetés d'entre les hommes comme prémices<note caller="+" style="f"><char style="fr" closed="false">14.4 </char><char style="fq" closed="false">rachetés </char><char style="ft" closed="false">5.9. – </char><char style="fq" closed="false">prémices </char><char style="ft" closed="false">Jr 2.3 ; Rm 16.5 ; 1 Co 16.15.</char></note> pour Dieu et pour l'agneau,</para>
+  <para style="q1">
+    <verse number="5" style="v" />et dans leur bouche ne s'est point trouvé de mensonge<note caller="+" style="f"><char style="fr" closed="false">14.5 </char><char style="ft" closed="false">Voir Jr 10.14 ; Rm 1.25 où </char><char style="fq" closed="false">mensonge </char><char style="ft" closed="false">est en relation avec le culte des faux dieux ; Ps 32.2 ; Es 53.9 ; So 3.13.</char></note> : ils sont irréprochables.</para>
+  <para style="s1">L'annonce du jugement</para>
+  <para style="q1">
+    <verse number="6" style="v" />Et je vis un autre ange qui volait au zénith.</para>
+  <para style="q1">Il avait un Evangile éternel à proclamer à ceux qui résident sur la terre : à toute nation, tribu, langue et peuple.</para>
+  <para style="q1">
+    <verse number="7" style="v" />Il disait d'une voix forte :</para>
+  <para style="q1">Craignez Dieu et rendez-lui gloire, car elle est venue, l'heure de son jugement.</para>
+  <para style="q1">Adorez le créateur<note caller="+" style="f"><char style="fr" closed="false">14.7 </char><char style="fq" closed="false">le créateur </char><char style="ft" closed="false">10.5+.</char></note> du ciel et de la terre, de la mer et des sources d'eaux.</para>
+  <para style="q1">
+    <verse number="8" style="v" />Et un autre, un second ange, le suivit et dit :</para>
+  <para style="q1">Elle est tombée, elle est tombée, Babylone la grande,</para>
+  <para style="q1">elle qui a abreuvé toutes les nations du vin de sa fureur de prostitution<note caller="+" style="f"><char style="fr" closed="false">14.8 </char><char style="ft" closed="false">Ancienne capitale de l'Empire babylonien, la ville disparaît de l'histoire au II<char style="ord">e</char> siècle av. J.C. Comme en 1 P 5.13 l'appellation a donc ici valeur de symbole et pourrait désigner Rome ; Es 46.1-2 ; 47.1-15 ; Jr 50.29-32 ; 51.44-56 ; Za 5.5-11 ; Dn 4.27 ; Ap 16.19 ; 17.5 ; 18.10-21. – </char><char style="fq" closed="false">Elle est tombée </char><char style="ft" closed="false">Es 21.9 ; Jr 51.8 ; Ap 18.2. – </char><char style="fq" closed="false">le vin de sa prostitution </char><char style="ft" closed="false">Jr 51.7 ; Ap 17.2 ; 18.3.</char></note>.</para>
+  <para style="q1">
+    <verse number="9" style="v" />Et un autre, un troisième ange, les suivit et dit d'une voix forte :</para>
+  <para style="q1">Si quelqu'un adore la bête et son image,</para>
+  <para style="q1">s'il en reçoit la marque<note caller="+" style="f"><char style="fr" closed="false">14.9 </char><char style="ft" closed="false">13.16+.</char></note> sur le front ou sur la main,</para>
+  <para style="q1">
+    <verse number="10" style="v" />il boira lui aussi du vin de la fureur de Dieu,</para>
+  <para style="q1">versé sans mélange dans la coupe de sa colère,</para>
+  <para style="q1">et il connaîtra les tourments dans le feu et le soufre<note caller="+" style="f"><char style="fr" closed="false">14.10 </char><char style="fq" closed="false">la coupe de sa colère </char><char style="ft" closed="false">Ps 75.9 ; Es 51.17,22 ; Jr 25.15 ; Ap 15.7 ; 16.19. – </char><char style="fq" closed="false">soufre : </char><char style="ft" closed="false">minéral de couleur jaune, dont la combustion produit une fumée suffocante ; Gn 19.24 ; Ps 11.6 ; Ez 38.22 ; <char style="bk">3 M</char> 2.5 ; Ap 19.20 ; 20.10,15 ; 21.8.</char></note>,</para>
+  <para style="q1">devant les saints anges et devant l'agneau.</para>
+  <para style="q1">
+    <verse number="11" style="v" />La fumée de leur tourment s'élève aux siècles des siècles,</para>
+  <para style="q1">et ils n'ont de repos ni le jour ni la nuit, ceux qui adorent la bête<note caller="+" style="f"><char style="fr" closed="false">14.11 </char><char style="ft" closed="false">Es 34.10 (Ap 19.3). – </char><char style="fq" closed="false">ceux qui adorent la bête </char><char style="ft" closed="false">13.8+.</char></note> et son image,</para>
+  <para style="q1">et quiconque reçoit la marque de son nom.</para>
+  <para style="q1">
+    <verse number="12" style="v" />C'est l'heure de la persévérance des saints qui gardent les commandements<note caller="+" style="f"><char style="fr" closed="false">14.12 </char><char style="fq" closed="false">l'heure de la persévérance </char><char style="ft" closed="false">13.10. – </char><char style="fq" closed="false">ceux qui gardent les commandements </char><char style="ft" closed="false">12.17.</char></note> de Dieu et la foi en Jésus.</para>
+  <para style="q1">
+    <verse number="13" style="v" />Et j'entendis une voix qui, du ciel, disait : Ecris :</para>
+  <para style="q1">Heureux dès à présent ceux qui sont morts dans le Seigneur !</para>
+  <para style="q1">Oui, dit l'Esprit, qu'ils se reposent<note caller="+" style="f"><char style="fr" closed="false">14.13 </char><char style="ft" closed="false">Les mots </char><char style="fq" closed="false">dès à présent </char><char style="ft" closed="false">peuvent aussi être rattachés à </char><char style="fq" closed="false">ceux qui sont morts dans le Seigneur </char><char style="ft" closed="false">ou encore à </char><char style="fq" closed="false">ils se reposent</char><char style="ft" closed="false"> ; He 4.10.</char></note> de leurs labeurs, car leurs œuvres les suivent.</para>
+  <para style="s1">Moisson et vendange de la terre</para>
+  <para style="q1">
+    <verse number="14" style="v" />Et je vis :</para>
+  <para style="q1">C'était une nuée blanche, et sur la nuée siégeait comme un fils d'homme<note caller="+" style="f"><char style="fr" closed="false">14.14 </char><char style="ft" closed="false">1.13+.</char></note>.</para>
+  <para style="q1">Il avait sur la tête une couronne d'or et dans la main une faucille tranchante.</para>
+  <para style="q1">
+    <verse number="15" style="v" />Puis un autre ange sortit du temple et cria d'une voix forte à celui qui siégeait sur la nuée :</para>
+  <para style="q1">Lance ta faucille et moissonne.</para>
+  <para style="q1">L'heure est venue de moissonner, car la moisson<note caller="+" style="f"><char style="fr" closed="false">14.15 </char><char style="ft" closed="false">Jl 4.13 ; Mt 13.39-40.</char></note> de la terre est mûre.</para>
+  <para style="q1">
+    <verse number="16" style="v" />Alors celui qui siégeait sur la nuée jeta sa faucille sur la terre, et la terre fut moissonnée.</para>
+  <para style="q1">
+    <verse number="17" style="v" />Puis un autre ange sortit du temple céleste.</para>
+  <para style="q1">Il tenait, lui aussi, une faucille tranchante.</para>
+  <para style="q1">
+    <verse number="18" style="v" />Puis un autre ange sortit de l'autel. Il avait pouvoir sur le feu et cria d'une voix forte à celui qui tenait la faucille tranchante :</para>
+  <para style="q1">Lance ta faucille tranchante et vendange les grappes de la vigne de la terre, car ses raisins sont mûrs.</para>
+  <para style="q1">
+    <verse number="19" style="v" />Et l'ange jeta sa faucille sur la terre,</para>
+  <para style="q1">il vendangea la vigne de la terre</para>
+  <para style="q1">et jeta la vendange dans la grande cuve de la colère de Dieu<note caller="+" style="f"><char style="fr" closed="false">14.19 </char><char style="ft" closed="false">Es 63.1-6 ; Lm 1.15 ; Ap 19.15.</char></note>.</para>
+  <para style="q1">
+    <verse number="20" style="v" />On foula la cuve hors de la cité, et de la cuve sortit du sang qui monta jusqu'au mors des chevaux sur une étendue de mille six cents stades<note caller="+" style="f"><char style="fr" closed="false">14.20 </char><char style="ft" closed="false">Voir au glossaire POIDS ET MESURES.</char></note>.</para>
+  <chapter number="15" style="c" />
+  <para style="s1">Les sept anges et les derniers fléaux</para>
+  <para style="q1">
+    <verse number="1" style="v" />Et je vis dans le ciel un autre signe, grand et merveilleux :</para>
+  <para style="q1">Sept anges tenaient sept fléaux<note caller="+" style="f"><char style="fr" closed="false">15.1 </char><char style="fq" closed="false">Sept anges </char><char style="ft" closed="false">16.1 ; 17.1 ; 21.9. – </char><char style="fq" closed="false">sept fléaux </char><char style="ft" closed="false">Lv 16.21.</char></note>,</para>
+  <para style="q1">les derniers, car en eux s'accomplit la colère de Dieu.</para>
+  <para style="q1">
+    <verse number="2" style="v" />Et je vis comme une mer de cristal mêlée de feu.</para>
+  <para style="q1">Debout sur la mer de cristal,</para>
+  <para style="q1">les vainqueurs de la bête, de son image et du chiffre de son nom<note caller="+" style="f"><char style="fr" closed="false">15.2 </char><char style="fq" closed="false">mer de cristal </char><char style="ft" closed="false">4.6. – </char><char style="fq" closed="false">image et chiffre de la bête </char><char style="ft" closed="false">13.16+.</char></note> tenaient les harpes de Dieu.</para>
+  <para style="q1">
+    <verse number="3" style="v" />Ils chantaient le cantique de Moïse, le serviteur de Dieu, et le cantique de l'agneau :</para>
+  <para style="q2">Grandes et admirables sont tes œuvres,</para>
+  <para style="q2">Seigneur, Dieu souverain<note caller="+" style="f"><char style="fr" closed="false">15.3 </char><char style="fq" closed="false">le cantique de Moïse </char><char style="ft" closed="false">Ex 15.1-18. – </char><char style="fq" closed="false">Grandes et admirables </char><char style="ft" closed="false">Ex 15.11 ; Ps 111.2-4 ; 139.14. – </char><char style="fq" closed="false">souverain </char><char style="ft" closed="false">1.8+.</char></note>.</para>
+  <para style="q2">Justes et véritables sont tes voies,</para>
+  <para style="q2">Roi des nations.</para>
+  <para style="q2">
+    <verse number="4" style="v" />Qui ne craindrait, Seigneur,</para>
+  <para style="q2">et ne glorifierait ton nom ?</para>
+  <para style="q2">Car toi seul es saint.</para>
+  <para style="q2">Toutes les nations viendront<note caller="+" style="f"><char style="fr" closed="false">15.4 </char><char style="ft" closed="false">v. 3-4 : </char><char style="fq" closed="false">Roi des nations, qui ne craindrait </char><char style="ft" closed="false">Jr 10.7. – </char><char style="fq" closed="false">Toutes les nations viendront </char><char style="ft" closed="false">Ps 86.9 ; Ml 1.11.</char></note> et se prosterneront devant toi,</para>
+  <para style="q2">car tes jugements se sont manifestés.</para>
+  <para style="q1">
+    <verse number="5" style="v" />Ensuite je vis :</para>
+  <para style="q1">Le temple qui abritait le tabernacle du témoignage<note caller="+" style="f"><char style="fr" closed="false">15.5 </char><char style="fq" closed="false">tabernacle du témoignage </char><char style="ft" closed="false">Ex 38.21 (demeure de la charte) ; 40.34 ; voir Ap 11.19+.</char></note> s'ouvrit dans le ciel,</para>
+  <para style="q1">
+    <verse number="6" style="v" />et les sept anges qui tenaient les sept fléaux sortirent du temple ;</para>
+  <para style="q1">ils étaient vêtus d'un lin pur, resplendissant, la taille serrée de ceintures d'or.</para>
+  <para style="q1">
+    <verse number="7" style="v" />L'un des quatre animaux donna aux sept anges sept coupes d'or,</para>
+  <para style="q1">remplies de la colère<note caller="+" style="f"><char style="fr" closed="false">15.7 </char><char style="ft" closed="false">14.10+.</char></note> du Dieu qui vit aux siècles des siècles.</para>
+  <para style="q1">
+    <verse number="8" style="v" />Et le temple fut rempli de fumée<note caller="+" style="f"><char style="fr" closed="false">15.8 </char><char style="ft" closed="false">Ex 40.34-35 ; 1 R 8.10-11 ; Es 6.4.</char></note> à cause de la gloire de Dieu et de sa puissance.</para>
+  <para style="q1">Et personne ne pouvait entrer dans le temple jusqu'à l'accomplissement des sept fléaux des sept anges.</para>
+  <chapter number="16" style="c" />
+  <para style="s1">Les sept coupes</para>
+  <para style="q1">
+    <verse number="1" style="v" />Et j'entendis une grande voix qui, du temple<note caller="+" style="f"><char style="fr" closed="false">16.1 </char><char style="ft" closed="false">Es 66.6 ; Ap 16.17.</char></note>, disait aux sept anges :</para>
+  <para style="q1">Allez et répandez sur la terre les sept coupes de la colère de Dieu.</para>
+  <para style="q1">
+    <verse number="2" style="v" />Et le premier partit et répandit sa coupe sur la terre. Un ulcère malin et pernicieux frappa les hommes qui portaient la marque de la bête et qui adoraient son image<note caller="+" style="f"><char style="fr" closed="false">16.2 </char><char style="fq" closed="false">ulcère malin </char><char style="ft" closed="false">Ex 9.10 ; Dt 28.35. – </char><char style="fq" closed="false">marque de la bête </char><char style="ft" closed="false">13.16+. – </char><char style="fq" closed="false">image de la bête </char><char style="ft" closed="false">13.8+.</char></note>.</para>
+  <para style="q1">
+    <verse number="3" style="v" />Le deuxième répandit sa coupe sur la mer :</para>
+  <para style="q1">elle devint comme le sang d'un mort<note caller="+" style="f"><char style="fr" closed="false">16.3 </char><char style="ft" closed="false">v. 3-4 : </char><char style="fq" closed="false">eaux changées en sang </char><char style="ft" closed="false">8.8+.</char></note>,</para>
+  <para style="q1">et tout ce qui, dans la mer, avait souffle de vie mourut.</para>
+  <para style="q1">
+    <verse number="4" style="v" />Le troisième répandit sa coupe sur les fleuves et les sources des eaux : ils devinrent du sang.</para>
+  <para style="q1">
+    <verse number="5" style="v" />Et j'entendis l'ange des eaux qui disait :</para>
+  <para style="q2">Tu es juste, toi qui es et qui étais<note caller="+" style="f"><char style="fr" closed="false">16.5 </char><char style="fq" closed="false">Tu es juste </char><char style="ft" closed="false">Dt 32.4 ; Ps 119.137 ; 145.17 ; Ap 15.3. – Celui qui est… 1.4+.</char></note>, le Saint,</para>
+  <para style="q2">car tu as ainsi exercé ta justice.</para>
+  <para style="q2">
+    <verse number="6" style="v" />Puisqu'ils ont répandu le sang des saints et des prophètes,</para>
+  <para style="q2">c'est également du sang que tu leur as donné à boire<note caller="+" style="f"><char style="fr" closed="false">16.6 </char><char style="fq" closed="false">le sang des saints et des prophètes </char><char style="ft" closed="false">Mt 23.35-37 ; Ap 17.6 ; 18.24 ; 19.2. – </char><char style="fq" closed="false">enivrés de sang </char><char style="ft" closed="false">Es 49.26.</char></note>.</para>
+  <para style="q2">Ils le méritent !</para>
+  <para style="q1">
+    <verse number="7" style="v" />Et j'entendis l'autel qui disait :</para>
+  <para style="q2">Oui, Seigneur, Dieu souverain,</para>
+  <para style="q2">tes jugements sont pleins de vérité et de justice<note caller="+" style="f"><char style="fr" closed="false">16.7 </char><char style="ft" closed="false">Les martyrs sous </char><char style="fq" closed="false">l'autel </char><char style="ft" closed="false">6.9+. – </char><char style="fq" closed="false">jugements pleins de vérité </char><char style="ft" closed="false">Ps 19.10 ; 119.137 ; Ap 19.2.</char></note>.</para>
+  <para style="q1">
+    <verse number="8" style="v" />Le quatrième répandit sa coupe sur le soleil :</para>
+  <para style="q1">et il lui fut donné de brûler les hommes par son feu.</para>
+  <para style="q1">
+    <verse number="9" style="v" />Et les hommes furent brûlés par une intense chaleur ;</para>
+  <para style="q1">ils blasphémèrent le nom de Dieu qui a pouvoir sur ces fléaux,</para>
+  <para style="q1">mais ils ne se repentirent pas pour lui rendre gloire.</para>
+  <para style="q1">
+    <verse number="10" style="v" />Le cinquième répandit sa coupe sur le trône de la bête :</para>
+  <para style="q1">son royaume en fut plongé dans les ténèbres<note caller="+" style="f"><char style="fr" closed="false">16.10 </char><char style="ft" closed="false">Ex 10.21-22 ; Es 8.21-22.</char></note>.</para>
+  <para style="q1">Les hommes se mordaient la langue de douleur ;</para>
+  <para style="q1">
+    <verse number="11" style="v" />ils blasphémèrent le Dieu du ciel</para>
+  <para style="q1">à cause de leurs souffrances et de leurs ulcères,</para>
+  <para style="q1">mais ils ne se repentirent pas de leurs œuvres.</para>
+  <para style="q1">
+    <verse number="12" style="v" />Le sixième répandit sa coupe sur le grand fleuve Euphrate :</para>
+  <para style="q1">l'eau en fut asséchée<note caller="+" style="f"><char style="fr" closed="false">16.12 </char><char style="fq" closed="false">Euphrate : </char><char style="ft" closed="false">voir 9.14 et la note. – </char><char style="fq" closed="false">fleuve asséché </char><char style="ft" closed="false">Es 11.15 ; 44.27 ; Jr 50.38 ; 51.36.</char></note> pour préparer la voie aux rois qui viennent de l'orient.</para>
+  <para style="q1">
+    <verse number="13" style="v" />Alors, de la bouche du dragon, de la bouche de la bête et de la bouche du faux prophète, je vis sortir trois esprits impurs, tels des grenouilles.</para>
+  <para style="q1">
+    <verse number="14" style="v" />Ce sont, en effet, des esprits de démons.</para>
+  <para style="q1">Ils accomplissent des prodiges et s'en vont trouver les rois du monde entier,</para>
+  <para style="q1">afin de les rassembler pour le combat du grand jour du Dieu souverain.</para>
+  <para style="q2">
+    <verse number="15" style="v" />Voici, je viens comme un voleur<note caller="+" style="f"><char style="fr" closed="false">16.15 </char><char style="fq" closed="false">comme un voleur </char><char style="ft" closed="false">3.3+.</char></note>.</para>
+  <para style="q2">Heureux celui qui veille et garde ses vêtements,</para>
+  <para style="q2">pour ne pas aller nu et laisser voir sa honte.</para>
+  <para style="q1">
+    <verse number="16" style="v" />Ils les rassemblèrent au lieu qu'on appelle en hébreu Harmaguedôn<note caller="+" style="f"><char style="fr" closed="false">16.16 </char><char style="ft" closed="false">C'est-à-dire </char><char style="fq" closed="false">Montagne de Meguiddo</char><char style="ft" closed="false">. La ville cananéenne de Meguiddo, située au pied du mont Carmel, fut le théâtre de sanglantes batailles (Jg 5.19 ; 2 R 23.29).</char></note>.</para>
+  <para style="q1">
+    <verse number="17" style="v" />Le septième répandit sa coupe dans les airs,</para>
+  <para style="q1">et, du temple, sortit une voix forte venant du trône.</para>
+  <para style="q1">Elle dit : C'en est fait !</para>
+  <para style="q1">
+    <verse number="18" style="v" />Alors ce furent des éclairs, des voix et des tonnerres, et un tremblement de terre<note caller="+" style="f"><char style="fr" closed="false">16.18 </char><char style="ft" closed="false">4.5+.</char></note> si violent qu'il n'en fut jamais de pareil depuis que l'homme est sur la terre.</para>
+  <para style="q1">
+    <verse number="19" style="v" />La grande cité se brisa en trois parties et les cités des nations s'écroulèrent.</para>
+  <para style="q1">Alors Dieu se souvint de Babylone la grande,</para>
+  <para style="q1">pour lui donner la coupe où bouillonne le vin de sa colère<note caller="+" style="f"><char style="fr" closed="false">16.19 </char><char style="ft" closed="false">14.10+.</char></note>.</para>
+  <para style="q1">
+    <verse number="20" style="v" />Toutes les îles s'enfuirent et les montagnes disparurent<note caller="+" style="f"><char style="fr" closed="false">16.20 </char><char style="ft" closed="false">Signes cosmiques de la fin 6.12-14+.</char></note>.</para>
+  <para style="q1">
+    <verse number="21" style="v" />Des grêlons lourds comme des talents<note caller="+" style="f"><char style="fr" closed="false">16.21 </char><char style="fq" closed="false">grêlons </char><char style="ft" closed="false">Ex 9.24 ; Ap 11.19. – </char><char style="fq" closed="false">talent : </char><char style="ft" closed="false">voir au glossaire POIDS ET MESURES.</char></note> tombèrent du ciel sur les hommes,</para>
+  <para style="q1">et les hommes blasphémèrent Dieu à cause du fléau de la grêle,</para>
+  <para style="q1">car ce fléau était particulièrement redoutable.</para>
+  <chapter number="17" style="c" />
+  <para style="s1">Le jugement de la grande prostituée</para>
+  <para style="q1">
+    <verse number="1" style="v" />Et l'un des sept anges qui tenaient les sept coupes s'avança et me parla en ces termes :</para>
+  <para style="q1">Viens, je te montrerai le jugement de la grande prostituée qui réside au bord des océans<note caller="+" style="f"><char style="fr" closed="false">17.1 </char><char style="fq" closed="false">sept anges </char><char style="ft" closed="false">15.1+. – </char><char style="fq" closed="false">la prostituée </char><char style="ft" closed="false">Es 1.21 ; 23.16-18 ; Ez 16.15-63 ; Os 2 ; 5.3 ; Na 3.4. – </char><char style="fq" closed="false">assise au bord des eaux </char><char style="ft" closed="false">Jr 51.13 ; Ap 17.15.</char></note>.</para>
+  <para style="q1">
+    <verse number="2" style="v" />Avec elle les rois de la terre se sont prostitués,</para>
+  <para style="q1">et les habitants de la terre se sont enivrés du vin de sa prostitution<note caller="+" style="f"><char style="fr" closed="false">17.2 </char><char style="ft" closed="false">Comparer 2.20 et la note (2<char style="ord">e</char> partie). – </char><char style="fq" closed="false">vin de prostitution </char><char style="ft" closed="false">14.8+.</char></note>.</para>
+  <para style="q1">
+    <verse number="3" style="v" />Alors il me transporta en esprit au désert.</para>
+  <para style="q1">Et je vis une femme assise sur une bête<note caller="+" style="f"><char style="fr" closed="false">17.3 </char><char style="fq" closed="false">la bête </char><char style="ft" closed="false">13.2+.</char></note> écarlate, couverte de noms blasphématoires, et qui avait sept têtes et dix cornes.</para>
+  <para style="q1">
+    <verse number="4" style="v" />La femme, vêtue de pourpre et d'écarlate, étincelait d'or, de pierres précieuses et de perles<note caller="+" style="f"><char style="fr" closed="false">17.4 </char><char style="fq" closed="false">la pourpre </char><char style="ft" closed="false">et </char><char style="fq" closed="false">l'écarlate : </char><char style="ft" closed="false">deux teintures de luxe. Ces appellations étaient étendues aux vêtements de ces teintes. – Parure de la prostituée Ez 28.13 ; Ap 18.16.</char></note>.</para>
+  <para style="q1">Elle tenait dans sa main une coupe d'or pleine d'abominations : les souillures de sa prostitution.</para>
+  <para style="q1">
+    <verse number="5" style="v" />Sur son front un nom était écrit, mystérieux :</para>
+  <para style="q1">Babylone la grande, mère des prostituées et des abominations de la terre.</para>
+  <para style="q1">
+    <verse number="6" style="v" />Et je vis la femme ivre du sang des saints et du sang des témoins de Jésus<note caller="+" style="f"><char style="fr" closed="false">17.6 </char><char style="ft" closed="false">16.6+.</char></note>.</para>
+  <para style="q1">A sa vue je restai confondu.</para>
+  <para style="q1">
+    <verse number="7" style="v" />Alors l'ange me dit : Pourquoi cette stupeur ?</para>
+  <para style="q1">Je te dirai le mystère de la femme et de la bête aux sept têtes et aux dix cornes qui la porte.</para>
+  <para style="q1">
+    <verse number="8" style="v" />La bête que tu as vue était, mais elle n'est plus.</para>
+  <para style="q1">Elle va monter de l'abîme et s'en aller à la perdition.</para>
+  <para style="q1">Et les habitants de la terre,</para>
+  <para style="q1">dont le nom n'est pas écrit, depuis la fondation du monde, dans le livre de vie<note caller="+" style="f"><char style="fr" closed="false">17.8 </char><char style="fq" closed="false">la bête qui monte de l'abîme </char><char style="ft" closed="false">11.7+. – </char><char style="fq" closed="false">le livre de vie </char><char style="ft" closed="false">3.5+.</char></note>,</para>
+  <para style="q1">s'étonneront en voyant la bête,</para>
+  <para style="q1">car elle était, n'est plus, mais reviendra.</para>
+  <para style="q1">
+    <verse number="9" style="v" />C'est le moment d'avoir l'intelligence<note caller="+" style="f"><char style="fr" closed="false">17.9 </char><char style="fq" closed="false">avoir l'intelligence </char><char style="ft" closed="false">13.18.</char></note> que la sagesse éclaire :</para>
+  <para style="q1">les sept têtes sont les sept montagnes où réside la femme.</para>
+  <para style="q1">Ce sont aussi sept rois.</para>
+  <para style="q1">
+    <verse number="10" style="v" />Cinq d'entre eux sont tombés, le sixième règne, le septième n'est pas encore venu,</para>
+  <para style="q1">mais quand il viendra, il ne demeurera que peu de temps.</para>
+  <para style="q1">
+    <verse number="11" style="v" />La bête qui était, et qui n'est plus, est elle-même un huitième roi.</para>
+  <para style="q1">Elle est du nombre des sept et s'en va à la perdition.</para>
+  <para style="q1">
+    <verse number="12" style="v" />Les dix cornes que tu as vues sont dix rois<note caller="+" style="f"><char style="fr" closed="false">17.12 </char><char style="fq" closed="false">dix rois </char><char style="ft" closed="false">Dn 7.24.</char></note> qui n'ont pas encore reçu la royauté,</para>
+  <para style="q1">mais, pour une heure, ils partageront le pouvoir royal avec la bête.</para>
+  <para style="q1">
+    <verse number="13" style="v" />Ils n'ont qu'un seul dessein : mettre au service de la bête leur puissance et leur pouvoir.</para>
+  <para style="q1">
+    <verse number="14" style="v" />Ils combattront l'agneau et l'agneau les vaincra,</para>
+  <para style="q1">car il est Seigneur des seigneurs et Roi des rois<note caller="+" style="f"><char style="fr" closed="false">17.14 </char><char style="ft" closed="false">Dt 10.17 ; Dn 2.47 ; <char style="bk">3 M</char> 5.35 ; 1 Tm 6.15 ; Ap 19.16.</char></note>,</para>
+  <para style="q1">et avec lui les appelés, les élus et les fidèles vaincront aussi.</para>
+  <para style="q1">
+    <verse number="15" style="v" />Puis il me dit : Les eaux que tu as vues, là où réside la prostituée,</para>
+  <para style="q1">ce sont des peuples, des foules, des nations et des langues.</para>
+  <para style="q1">
+    <verse number="16" style="v" />Les dix cornes que tu as vues et la bête haïront la prostituée,</para>
+  <para style="q1">elles la rendront solitaire et nue.</para>
+  <para style="q1">Elles mangeront ses chairs et la brûleront au feu<note caller="+" style="f"><char style="fr" closed="false">17.16 </char><char style="fq" closed="false">elles la rendront solitaire </char><char style="ft" closed="false">Es 47.8-9 ; Ez 16.39-41. – </char><char style="fq" closed="false">brûlée au feu </char><char style="ft" closed="false">Lv 21.9 ; Ap 18.8.</char></note>.</para>
+  <para style="q1">
+    <verse number="17" style="v" />Car Dieu leur a mis au cœur de réaliser son dessein, un même dessein :</para>
+  <para style="q1">mettre leur royauté au service de la bête jusqu'à l'accomplissement des paroles de Dieu.</para>
+  <para style="q1">
+    <verse number="18" style="v" />Et la femme que tu as vue, c'est la grande cité qui règne sur les rois de la terre.</para>
+  <chapter number="18" style="c" />
+  <para style="s1">La chute de Babylone</para>
+  <para style="q1">
+    <verse number="1" style="v" />Je vis ensuite un autre ange descendre du ciel.</para>
+  <para style="q1">Il avait un grand pouvoir et la terre fut illuminée de sa gloire.</para>
+  <para style="q1">
+    <verse number="2" style="v" />Il s'écria d'une voix forte :</para>
+  <para style="q1">Elle est tombée, elle est tombée, Babylone la grande ;</para>
+  <para style="q1">elle est devenue demeure de démons, repaire de tous les esprits impurs, repaire de tous les oiseaux impurs et odieux<note caller="+" style="f"><char style="fr" closed="false">18.2 </char><char style="fq" closed="false">Elle est tombée </char><char style="ft" closed="false">14.8+. – </char><char style="fq" closed="false">repaire </char><char style="ft" closed="false">des animaux sauvages Es 13.21 ; 34.11 ; Jr 50.39 ; <char style="bk">Ba</char> 4.35.</char></note>.</para>
+  <para style="q1">
+    <verse number="3" style="v" />Car elle a abreuvé toutes les nations du vin de sa fureur de prostitution : les rois de la terre<note caller="+" style="f"><char style="fr" closed="false">18.3 </char><char style="fq" closed="false">vin de prostitution </char><char style="ft" closed="false">14.8+. – </char><char style="fq" closed="false">les rois de la terre </char><char style="ft" closed="false">17.2.</char></note> se sont prostitués avec elle,</para>
+  <para style="q1">et les marchands de la terre se sont enrichis de la puissance de son luxe.</para>
+  <para style="q1">
+    <verse number="4" style="v" />Et j'entendis une autre voix qui, du ciel, disait :</para>
+  <para style="q1">Sortez de cette cité, ô mon peuple<note caller="+" style="f"><char style="fr" closed="false">18.4 </char><char style="fq" closed="false">Sortez </char><char style="ft" closed="false">Es 48.20 ; 52.11 ; Jr 50.8 ; 51.6-9,45 ; 2 Co 6.17.</char></note>, de peur de participer à ses péchés, et de partager les fléaux qui lui sont destinés.</para>
+  <para style="q1">
+    <verse number="5" style="v" />Car ses péchés se sont accumulés jusqu'au ciel<note caller="+" style="f"><char style="fr" closed="false">18.5 </char><char style="ft" closed="false">Gn 18.20-21 ; Jr 51.9.</char></note>,</para>
+  <para style="q1">et Dieu s'est souvenu de ses injustices.</para>
+  <para style="q1">
+    <verse number="6" style="v" />Payez-la de sa propre monnaie,</para>
+  <para style="q1">rendez-lui au double ce qu'elle a fait.</para>
+  <para style="q1">Dans la coupe où elle a mêlé ses vins,</para>
+  <para style="q1">mêlez-en pour elle le double<note caller="+" style="f"><char style="fr" closed="false">18.6 </char><char style="ft" closed="false">Rétribution Ps 137.8 ; Jr 50.15,29 ; 2 Th 1.6.</char></note>.</para>
+  <para style="q1">
+    <verse number="7" style="v" />Autant elle s'est complu dans la gloire et le luxe,</para>
+  <para style="q1">autant rendez-lui de tourment et de deuil.</para>
+  <para style="q1">Puisqu'elle dit en son cœur :</para>
+  <para style="q1">je trône en reine et ne suis point veuve, jamais je ne verrai le deuil<note caller="+" style="f"><char style="fr" closed="false">18.7 </char><char style="ft" closed="false">Vantardise de Babylone Es 47.7-9.</char></note>,</para>
+  <para style="q1">
+    <verse number="8" style="v" />à cause de cela viendront sur elle, en un seul jour, les fléaux qui lui sont destinés :</para>
+  <para style="q1">mort, deuil, famine, et elle sera consumée par le feu<note caller="+" style="f"><char style="fr" closed="false">18.8 </char><char style="ft" closed="false">17.16+.</char></note>.</para>
+  <para style="q1">Car puissant est le Seigneur Dieu qui l'a jugée.</para>
+  <para style="q1">
+    <verse number="9" style="v" />Alors ils pleureront et se lamenteront sur elle, les rois de la terre<note caller="+" style="f"><char style="fr" closed="false">18.9 </char><char style="ft" closed="false">Ez 26.16-17 ; 27.30-35.</char></note> qui ont partagé sa prostitution et son luxe, quand ils verront la fumée de son embrasement.</para>
+  <para style="q1">
+    <verse number="10" style="v" />Ils se tiendront à distance par crainte de son tourment, et ils diront :</para>
+  <para style="q2">Malheur ! Malheur !</para>
+  <para style="q2">O grande cité, Babylone, cité puissante,</para>
+  <para style="q2">il a suffi d'une heure pour que tu sois jugée !</para>
+  <para style="q1">
+    <verse number="11" style="v" />Et les marchands<note caller="+" style="f"><char style="fr" closed="false">18.11 </char><char style="fq" closed="false">les marchands </char><char style="ft" closed="false">Ez 27.36.</char></note> de la terre pleurent et prennent son deuil,</para>
+  <para style="q1">car nul n'achète plus leurs cargaisons,</para>
+  <para style="q1">
+    <verse number="12" style="v" />cargaisons d'or et d'argent, de pierres précieuses et de perles,</para>
+  <para style="q1">de lin et de pourpre, de soie et d'écarlate<note caller="+" style="f"><char style="fr" closed="false">18.12 </char><char style="ft" closed="false">Voir 17.4 et la note. – v. 12-13 : </char><char style="fq" closed="false">cargaisons </char><char style="ft" closed="false">Ez 27.12-24.</char></note> ;</para>
+  <para style="q1">bois de senteur, objets d'ivoire, de bois précieux, de bronze, de fer ou de marbre,</para>
+  <para style="q1">
+    <verse number="13" style="v" />cannelle et amome, parfums, myrrhe et encens,</para>
+  <para style="q1">le vin et l'huile, la fleur de farine et le blé,</para>
+  <para style="q1">les bœufs et les brebis, les chevaux et les chars,</para>
+  <para style="q1">les esclaves et les captifs<note caller="+" style="f"><char style="fr" closed="false">18.13 </char><char style="fq" closed="false">cannelle et amome : </char><char style="ft" closed="false">des épices ; </char><char style="fq" closed="false">myrrhe </char><char style="ft" closed="false">et </char><char style="fq" closed="false">encens : </char><char style="ft" closed="false">des résines aromatiques. – </char><char style="fq" closed="false">esclaves et captifs </char><char style="ft" closed="false">ou </char><char style="fq" closed="false">des corps et des âmes d'hommes.</char></note>.</para>
+  <para style="q1">
+    <verse number="14" style="v" />Le fruit que désirait ton âme s'en est allé loin de toi.</para>
+  <para style="q1">Tout ce qui est raffinement et splendeur est perdu pour toi.</para>
+  <para style="q1">Jamais plus on ne le retrouvera.</para>
+  <para style="q1">
+    <verse number="15" style="v" />Les marchands, qu'elle avait enrichis de ce commerce, se tiendront à distance par crainte de son tourment. Dans les pleurs et le deuil, <verse number="16" style="v" />ils diront :</para>
+  <para style="q2">Malheur ! Malheur !</para>
+  <para style="q2">La grande cité, vêtue de lin, de pourpre et d'écarlate, étincelante d'or, de pierres précieuses et de perles<note caller="+" style="f"><char style="fr" closed="false">18.16 </char><char style="ft" closed="false">Parure de la prostituée 17.4+.</char></note>,</para>
+  <para style="q2">
+    <verse number="17" style="v" />il a suffi d'une heure pour dévaster tant de richesses !</para>
+  <para style="q1">Et tous les pilotes, tous ceux qui naviguent dans les parages,</para>
+  <para style="q1">les marins et tous ceux qui vivent de la mer se tenaient à distance,</para>
+  <para style="q1">
+    <verse number="18" style="v" />et s'écriaient en voyant la fumée de son embrasement :</para>
+  <para style="q1">Quelle cité était comparable à la grande cité ?</para>
+  <para style="q1">
+    <verse number="19" style="v" />Ils se jetaient de la poussière sur la tête, poussaient des cris de larmes et de deuil en disant :</para>
+  <para style="q2">Malheur ! Malheur !</para>
+  <para style="q2">La grande cité dont l'opulence a enrichi tous ceux qui ont des vaisseaux sur la mer,</para>
+  <para style="q2">il a suffi d'une heure pour qu'elle soit dévastée<note caller="+" style="f"><char style="fr" closed="false">18.19 </char><char style="ft" closed="false">v. 17-19 : lamentation des marins Ez 27.29-34.</char></note> !</para>
+  <para style="q1">
+    <verse number="20" style="v" />Réjouis-toi de sa ruine, ciel<note caller="+" style="f"><char style="fr" closed="false">18.20 </char><char style="ft" closed="false">12.12+.</char></note> !</para>
+  <para style="q1">Et vous aussi, les saints, les apôtres et les prophètes, car Dieu, en la jugeant, vous a fait justice.</para>
+  <para style="q1">
+    <verse number="21" style="v" />Alors un ange puissant saisit une pierre comme une lourde meule</para>
+  <para style="q1">et la précipita dans la mer en disant :</para>
+  <para style="q2">Avec la même violence sera précipitée Babylone, la grande cité.</para>
+  <para style="q2">On ne la retrouvera plus<note caller="+" style="f"><char style="fr" closed="false">18.21 </char><char style="fq" closed="false">pierre jetée à la mer </char><char style="ft" closed="false">Jr 51.63-64. – Plus de trace Ez 26.21.</char></note>.</para>
+  <para style="q2">
+    <verse number="22" style="v" />Et le chant des joueurs de harpe et des musiciens,</para>
+  <para style="q2">des joueurs de flûte et de trompette,</para>
+  <para style="q2">on ne l'entendra plus chez toi.</para>
+  <para style="q2">Aucun artisan d'aucun art ne se trouvera plus chez toi.</para>
+  <para style="q2">Et le bruit de la meule,</para>
+  <para style="q2">on ne l'entendra plus chez toi<note caller="+" style="f"><char style="fr" closed="false">18.22 </char><char style="ft" closed="false">Es 24.8 ; Ez 26.13.</char></note>.</para>
+  <para style="q2">
+    <verse number="23" style="v" />La lumière de la lampe</para>
+  <para style="q2">ne luira plus chez toi.</para>
+  <para style="q2">La voix du jeune époux et de sa compagne,</para>
+  <para style="q2">on ne l'entendra plus chez toi,</para>
+  <para style="q2">parce que tes marchands<note caller="+" style="f"><char style="fr" closed="false">18.23 </char><char style="ft" closed="false">Jr 7.34 ; 25.10. – </char><char style="fq" closed="false">les marchands </char><char style="ft" closed="false">Es 23.8.</char></note> étaient les grands de la terre,</para>
+  <para style="q2">parce que tes sortilèges ont séduit toutes les nations</para>
+  <para style="q2">
+    <verse number="24" style="v" />et que chez toi on a trouvé le sang des prophètes, des saints<note caller="+" style="f"><char style="fr" closed="false">18.24 </char><char style="ft" closed="false">16.6+.</char></note> et de tous ceux qui ont été immolés sur la terre.</para>
+  <chapter number="19" style="c" />
+  <para style="s1">Chant de triomphe et noces de l'agneau</para>
+  <para style="q1">
+    <verse number="1" style="v" />Ensuite j'entendis comme la grande rumeur d'une foule immense qui, dans le ciel, disait :</para>
+  <para style="q2">Alléluia<note caller="+" style="f"><char style="fr" closed="false">19.1 </char><char style="ft" closed="false">Expression hébraïque signifiant </char><char style="fq" closed="false">Louez le Seigneur !</char></note> !</para>
+  <para style="q2">Le salut, la gloire et la puissance sont à notre Dieu.</para>
+  <para style="q2">
+    <verse number="2" style="v" />Car ses jugements sont pleins de vérité et de justice.</para>
+  <para style="q2">Il a jugé la grande prostituée qui corrompait la terre de sa prostitution,</para>
+  <para style="q2">et il a vengé sur elle le sang de ses serviteurs<note caller="+" style="f"><char style="fr" closed="false">19.2 </char><char style="fq" closed="false">jugements pleins de vérité </char><char style="ft" closed="false">16.7+. – Dieu vengeur 6.10+.</char></note>.</para>
+  <para style="q1">
+    <verse number="3" style="v" />Et de nouveau ils dirent :</para>
+  <para style="q2">Alléluia !</para>
+  <para style="q2">Et sa fumée<note caller="+" style="f"><char style="fr" closed="false">19.3 </char><char style="fq" closed="false">la fumée </char><char style="ft" closed="false">14.11.</char></note> s'élève aux siècles des siècles.</para>
+  <para style="q1">
+    <verse number="4" style="v" />Les vingt-quatre anciens et les quatre animaux se prosternèrent<note caller="+" style="f"><char style="fr" closed="false">19.4 </char><char style="fq" closed="false">24 anciens </char><char style="ft" closed="false">4.4+ ; 7.11+. – </char><char style="fq" closed="false">4 animaux </char><char style="ft" closed="false">4.6+.</char></note>,</para>
+  <para style="q1">ils adorèrent le Dieu qui siège sur le trône et dirent :</para>
+  <para style="q2">Amen. Alléluia !</para>
+  <para style="q1">
+    <verse number="5" style="v" />Alors sortit du trône une voix qui disait :</para>
+  <para style="q2">Louez notre Dieu<note caller="+" style="f"><char style="fr" closed="false">19.5 </char><char style="fq" closed="false">Louez notre Dieu </char><char style="ft" closed="false">Ps 135.1.</char></note>, vous tous ses serviteurs,</para>
+  <para style="q2">vous qui le craignez, petits et grands !</para>
+  <para style="q1">
+    <verse number="6" style="v" />Et j'entendis comme la rumeur d'une foule immense,</para>
+  <para style="q1">comme la rumeur des océans,</para>
+  <para style="q1">et comme le grondement de puissants tonnerres.</para>
+  <para style="q1">Ils disaient :</para>
+  <para style="q2">Alléluia !</para>
+  <para style="q2">Car le Seigneur, notre Dieu souverain, a manifesté son Règne<note caller="+" style="f"><char style="fr" closed="false">19.6 </char><char style="fq" closed="false">le Règne du Seigneur </char><char style="ft" closed="false">11.15+. – </char><char style="fq" closed="false">Dieu souverain </char><char style="ft" closed="false">1.8+.</char></note>.</para>
+  <para style="q2">
+    <verse number="7" style="v" />Réjouissons-nous, soyons dans l'allégresse et rendons-lui gloire,</para>
+  <para style="q2">car voici les noces de l'agneau<note caller="+" style="f"><char style="fr" closed="false">19.7 </char><char style="ft" closed="false">Dieu époux d'Israël Es 54.1-8 ; Os 2.16-18. – Christ époux de l'Eglise Mt 22.2 ; 25.1-13 ; Ep 5.23,25,32 ; Ap 21.2,9.</char></note>.</para>
+  <para style="q2">Son épouse s'est préparée,</para>
+  <para style="q2">
+    <verse number="8" style="v" />il lui a été donné de se vêtir d'un lin resplendissant et pur,</para>
+  <para style="q2">car le lin, ce sont les œuvres justes des saints.</para>
+  <para style="q1">
+    <verse number="9" style="v" />Un ange me dit : Ecris !</para>
+  <para style="q1">Heureux ceux qui sont invités au festin des noces de l'agneau<note caller="+" style="f"><char style="fr" closed="false">19.9 </char><char style="ft" closed="false">Mt 22.1-14 ; Lc 14.15-24.</char></note> !</para>
+  <para style="q1">Puis il me dit : Ce sont les paroles mêmes de Dieu.</para>
+  <para style="q1">
+    <verse number="10" style="v" />Alors je me prosternai à ses pieds pour l'adorer,</para>
+  <para style="q1">mais il me dit : Garde-toi de le faire !</para>
+  <para style="q1">Je suis un compagnon de service, pour toi et pour tes frères qui gardent le témoignage de Jésus<note caller="+" style="f"><char style="fr" closed="false">19.10 </char><char style="fq" closed="false">Garde-toi de le faire </char><char style="ft" closed="false">Ac 10.25-26 ; Ap 22.8-9. – </char><char style="fq" closed="false">témoignage de Jésus </char><char style="ft" closed="false">1.2+.</char></note>.</para>
+  <para style="q1">C'est Dieu que tu dois adorer, car le témoignage de Jésus, c'est l'esprit de la prophétie.</para>
+  <para style="s1">La victoire du Messie</para>
+  <para style="q1">
+    <verse number="11" style="v" />Alors je vis le ciel ouvert :</para>
+  <para style="q1">C'était un cheval blanc,</para>
+  <para style="q1">celui qui le monte se nomme Fidèle et Véritable.</para>
+  <para style="q1">Il juge et il combat avec justice<note caller="+" style="f"><char style="fr" closed="false">19.11 </char><char style="fq" closed="false">le ciel ouvert </char><char style="ft" closed="false">4.1+. – </char><char style="fq" closed="false">cheval blanc </char><char style="ft" closed="false">6.2. – </char><char style="fq" closed="false">Fidèle </char><char style="ft" closed="false">1.5+. – </char><char style="fq" closed="false">avec justice </char><char style="ft" closed="false">Ps 96.13 ; Es 11.4.</char></note>.</para>
+  <para style="q1">
+    <verse number="12" style="v" />Ses yeux sont une flamme ardente ;</para>
+  <para style="q1">sur sa tête, de nombreux diadèmes, et, inscrit sur lui, est un nom qu'il est seul à connaître<note caller="+" style="f"><char style="fr" closed="false">19.12 </char><char style="ft" closed="false">2.17+.</char></note>.</para>
+  <para style="q1">
+    <verse number="13" style="v" />Il est revêtu d'un manteau trempé de sang,</para>
+  <para style="q1">et il se nomme : la Parole de Dieu<note caller="+" style="f"><char style="fr" closed="false">19.13 </char><char style="fq" closed="false">la Parole de Dieu </char><char style="ft" closed="false">Jn 1.1,14.</char></note>.</para>
+  <para style="q1">
+    <verse number="14" style="v" />Les armées du ciel le suivaient sur des chevaux blancs, vêtues d'un lin blanc<note caller="+" style="f"><char style="fr" closed="false">19.14 </char><char style="fq" closed="false">vêtues de blanc </char><char style="ft" closed="false">3.4+.</char></note> et pur.</para>
+  <para style="q1">
+    <verse number="15" style="v" />De sa bouche sort un glaive acéré pour en frapper les nations.</para>
+  <para style="q1">Il les mènera paître avec une verge de fer,</para>
+  <para style="q1">il foulera la cuve<note caller="+" style="f"><char style="fr" closed="false">19.15 </char><char style="fq" closed="false">glaive </char><char style="ft" closed="false">de la Parole 1.16+. – </char><char style="fq" closed="false">verge de fer </char><char style="ft" closed="false">12.5+. – </char><char style="fq" closed="false">il foule la cuve </char><char style="ft" closed="false">14.19+.</char></note> où bouillonne le vin de la colère du Dieu souverain.</para>
+  <para style="q1">
+    <verse number="16" style="v" />Sur son manteau et sur sa cuisse il porte un nom écrit :</para>
+  <para style="q1">Roi des rois et Seigneur des seigneurs<note caller="+" style="f"><char style="fr" closed="false">19.16 </char><char style="ft" closed="false">17.14+.</char></note>.</para>
+  <para style="q1">
+    <verse number="17" style="v" />Alors je vis un ange debout dans le soleil.</para>
+  <para style="q1">Il cria d'une voix forte à tous les oiseaux qui volaient au zénith :</para>
+  <para style="q1">Venez, rassemblez-vous pour le grand festin de Dieu,</para>
+  <para style="q1">
+    <verse number="18" style="v" />pour manger la chair des rois, la chair des chefs, la chair des puissants, la chair des chevaux et de ceux qui les montent, la chair de tous les hommes, libres et esclaves, petits et grands<note caller="+" style="f"><char style="fr" closed="false">19.18 </char><char style="ft" closed="false">v. 17-18 : Ez 39.17-20.</char></note>.</para>
+  <para style="q1">
+    <verse number="19" style="v" />Et je vis la bête, les rois de la terre et leurs armées, rassemblés pour combattre<note caller="+" style="f"><char style="fr" closed="false">19.19 </char><char style="ft" closed="false">16.14-16 ; 17.12-14.</char></note> le cavalier et son armée.</para>
+  <para style="q1">
+    <verse number="20" style="v" />La bête fut capturée, et avec elle le faux prophète qui, par les prodiges opérés devant elle, avait séduit ceux qui avaient reçu la marque de la bête et adoré son image. Tous deux furent jetés vivants dans l'étang de feu<note caller="+" style="f"><char style="fr" closed="false">19.20 </char><char style="fq" closed="false">la bête et ses prodiges </char><char style="ft" closed="false">13.9-16+. – </char><char style="fq" closed="false">étang de feu </char><char style="ft" closed="false">Es 30.33 ; Ap 20.10,15 ; 14.10+.</char></note> embrasé de soufre.</para>
+  <para style="q1">
+    <verse number="21" style="v" />Les autres périrent par le glaive qui sortait de la bouche du cavalier,</para>
+  <para style="q1">et tous les oiseaux se rassasièrent de leurs chairs.</para>
+  <chapter number="20" style="c" />
+  <para style="s1">Les mille ans</para>
+  <para style="q1">
+    <verse number="1" style="v" />Alors je vis un ange qui descendait du ciel.</para>
+  <para style="q1">Il avait à la main la clé de l'abîme<note caller="+" style="f"><char style="fr" closed="false">20.1 </char><char style="fq" closed="false">l'abîme </char><char style="ft" closed="false">9.1+.</char></note> et une lourde chaîne.</para>
+  <para style="q1">
+    <verse number="2" style="v" />Il s'empara du dragon, l'antique serpent<note caller="+" style="f"><char style="fr" closed="false">20.2 </char><char style="ft" closed="false">12.9+.</char></note>, qui est le diable et Satan, et l'enchaîna pour mille ans.</para>
+  <para style="q1">
+    <verse number="3" style="v" />Il le précipita dans l'abîme, qu'il ferma et scella sur lui, pour qu'il ne séduise plus les nations jusqu'à l'accomplissement des mille ans.</para>
+  <para style="q1">Il faut, après cela, qu'il soit relâché pour un peu de temps.</para>
+  <para style="q1">
+    <verse number="4" style="v" />Et je vis des trônes.</para>
+  <para style="q1">A ceux qui vinrent y siéger, il fut donné d'exercer le jugement.</para>
+  <para style="q1">Je vis aussi les âmes de ceux qui avaient été décapités à cause du témoignage de Jésus et de la parole de Dieu, et ceux qui n'avaient pas adoré la bête ni son image et n'avaient pas reçu la marque sur le front ni sur la main.</para>
+  <para style="q1">Ils revinrent à la vie et régnèrent avec le Christ<note caller="+" style="f"><char style="fr" closed="false">20.4 </char><char style="fq" closed="false">des trônes </char><char style="ft" closed="false">Dn 7.9,22,27 ; Mt 19.28 ; Lc 22.30 ; 1  Co 6.2. – Martyrs Ap 6.9+. – </char><char style="fq" closed="false">parole de Dieu et témoignage de Jésus </char><char style="ft" closed="false">1.2+. – </char><char style="fq" closed="false">adoration de la bête </char><char style="ft" closed="false">13.8+. – </char><char style="fq" closed="false">marque de la bête </char><char style="ft" closed="false">13.16+. – </char><char style="fq" closed="false">règne avec le Christ </char><char style="ft" closed="false">5.10+.</char></note> pendant mille ans.</para>
+  <para style="q1">
+    <verse number="5" style="v" />Les autres morts ne revinrent pas à la vie avant l'accomplissement des mille ans.</para>
+  <para style="q1">C'est la première résurrection.</para>
+  <para style="q1">
+    <verse number="6" style="v" />Heureux et saints ceux qui ont part à la première résurrection.</para>
+  <para style="q1">Sur eux la seconde mort n'a pas d'emprise :</para>
+  <para style="q1">ils seront prêtres<note caller="+" style="f"><char style="fr" closed="false">20.6 </char><char style="fq" closed="false">la seconde mort </char><char style="ft" closed="false">2.11+. – </char><char style="fq" closed="false">prêtres </char><char style="ft" closed="false">1.6+.</char></note> de Dieu et du Christ,</para>
+  <para style="q1">et régneront avec lui pendant les mille ans.</para>
+  <para style="s1">Victoire finale et jugement</para>
+  <para style="q1">
+    <verse number="7" style="v" />Quand les mille ans seront accomplis, Satan sera relâché de sa prison,</para>
+  <para style="q1">
+    <verse number="8" style="v" />et il s'en ira séduire les nations qui sont aux quatre coins de la terre, Gog et Magog<note caller="+" style="f"><char style="fr" closed="false">20.8 </char><char style="ft" closed="false">Depuis Ez 38–39 c'est ainsi qu'on désignait les nations ennemies du peuple de Dieu à la fin des temps. – </char><char style="fq" closed="false">quatre coins de la terre </char><char style="ft" closed="false">7.1+.</char></note>.</para>
+  <para style="q1">Il les rassemblera pour le combat : leur nombre est comme le sable de la mer.</para>
+  <para style="q1">
+    <verse number="9" style="v" />Ils envahirent toute l'étendue de la terre et investirent le camp des saints et la cité bien-aimée<note caller="+" style="f"><char style="fr" closed="false">20.9 </char><char style="fq" closed="false">la cité investie </char><char style="ft" closed="false">Lc 21.20,24.</char></note>.</para>
+  <para style="q1">Mais un feu descendit du ciel et les dévora.</para>
+  <para style="q1">
+    <verse number="10" style="v" />Et le diable, leur séducteur, fut précipité dans l'étang de feu<note caller="+" style="f"><char style="fr" closed="false">20.10 </char><char style="fq" closed="false">étang de feu </char><char style="ft" closed="false">19.20+.</char></note> et de soufre, auprès de la bête et du faux prophète.</para>
+  <para style="q1">Et ils souffriront des tourments jour et nuit aux siècles des siècles.</para>
+  <para style="q1">
+    <verse number="11" style="v" />Alors je vis un grand trône<note caller="+" style="f"><char style="fr" closed="false">20.11 </char><char style="ft" closed="false">Voir <char style="bk">4 Esd</char> 7.33.</char></note> blanc et celui qui y siégeait :</para>
+  <para style="q1">devant sa face la terre et le ciel s'enfuirent sans laisser de traces.</para>
+  <para style="q1">
+    <verse number="12" style="v" />Et je vis les morts, les grands et les petits, debout devant le trône,</para>
+  <para style="q1">et des livres furent ouverts.</para>
+  <para style="q1">Un autre livre fut ouvert : le livre de vie,</para>
+  <para style="q1">et les morts furent jugés selon leurs œuvres<note caller="+" style="f"><char style="fr" closed="false">20.12 </char><char style="fq" closed="false">les livres </char><char style="ft" closed="false">Dn 7.10 ; <char style="bk">4 Esd</char> 6.20. – </char><char style="fq" closed="false">le livre de vie </char><char style="ft" closed="false">3.5+. – </char><char style="fq" closed="false">selon leurs œuvres </char><char style="ft" closed="false">2.23+.</char></note>, d'après ce qui était écrit dans les livres.</para>
+  <para style="q1">
+    <verse number="13" style="v" />La mer rendit ses morts,</para>
+  <para style="q1">la mort et l'Hadès rendirent leurs morts,</para>
+  <para style="q1">et chacun fut jugé selon ses œuvres.</para>
+  <para style="q1">
+    <verse number="14" style="v" />Alors la mort et l'Hadès furent précipités dans l'étang de feu<note caller="+" style="f"><char style="fr" closed="false">20.14 </char><char style="ft" closed="false">1 Co 15.26,54 ; Ap 21.4.</char></note>.</para>
+  <para style="q1">L'étang de feu, voilà la seconde mort !</para>
+  <para style="q1">
+    <verse number="15" style="v" />Et quiconque ne fut pas trouvé inscrit dans le livre de vie fut précipité dans l'étang de feu.</para>
+  <chapter number="21" style="c" />
+  <para style="s1">Les nouveaux cieux et la nouvelle terre</para>
+  <para style="q1">
+    <verse number="1" style="v" />Alors je vis un ciel nouveau et une terre nouvelle<note caller="+" style="f"><char style="fr" closed="false">21.1 </char><char style="ft" closed="false">Es 65.17 ; 66.22 ; 2 P 3.13 ; voir <char style="bk">4 Esd</char> 7.75 ; Mt 19.28 ; 2 Co 5.17 ; Col 3.10.</char></note>, car le premier ciel et la première terre ont disparu et la mer n'est plus.</para>
+  <para style="q1">
+    <verse number="2" style="v" />Et la cité sainte, la Jérusalem nouvelle, je la vis qui descendait du ciel, d'auprès de Dieu,</para>
+  <para style="q1">comme une épouse qui s'est parée pour son époux<note caller="+" style="f"><char style="fr" closed="false">21.2 </char><char style="fq" closed="false">Jérusalem nouvelle </char><char style="ft" closed="false">Es 60 ; 62 ; 65.18-25 ; Ga 4.26 ; He 11.10,16 ; Ap 3.12. – </char><char style="fq" closed="false">parée pour son époux </char><char style="ft" closed="false">Es 61.10 ; Ap 19.7+.</char></note>.</para>
+  <para style="q1">
+    <verse number="3" style="v" />Et j'entendis, venant du trône, une voix forte qui disait :</para>
+  <para style="q1">Voici la demeure de Dieu avec les hommes.</para>
+  <para style="q1">Il demeurera avec eux.</para>
+  <para style="q1">Ils seront ses peuples et lui sera le <char style="it">Dieu qui est avec eux</char><note caller="+" style="f"><char style="fr" closed="false">21.3 </char><char style="fq" closed="false">la demeure de Dieu </char><char style="ft" closed="false">Lv 26.11-12 ; Ez 37.27 ; Za 2.14 ; 2 Co 6.16 ; Ap 7.15+. – </char><char style="fq" closed="false">Dieu avec eux </char><char style="ft" closed="false">Es 7.14 ; 8.8 (Mt 1.23).</char></note>.</para>
+  <para style="q1">
+    <verse number="4" style="v" />Il essuiera toute larme de leurs yeux<note caller="+" style="f"><char style="fr" closed="false">21.4 </char><char style="ft" closed="false">7.17+.</char></note>,</para>
+  <para style="q1">la mort ne sera plus.</para>
+  <para style="q1">Il n'y aura plus ni deuil, ni cri, ni souffrance,</para>
+  <para style="q1">car le monde ancien a disparu.</para>
+  <para style="q1">
+    <verse number="5" style="v" />Et celui qui siège sur le trône dit :</para>
+  <para style="q1">Voici, je fais toutes choses nouvelles<note caller="+" style="f"><char style="fr" closed="false">21.5 </char><char style="ft" closed="false">2 Co 5.17.</char></note>.</para>
+  <para style="q1">Puis il dit : Ecris : Ces paroles sont certaines et véridiques.</para>
+  <para style="q1">
+    <verse number="6" style="v" />Et il me dit : C'en est fait.</para>
+  <para style="q1">Je suis l'Alpha et l'Oméga,</para>
+  <para style="q1">le commencement et la fin.</para>
+  <para style="q1">A celui qui a soif,</para>
+  <para style="q1">je donnerai de la source d'eau vive, gratuitement<note caller="+" style="f"><char style="fr" closed="false">21.6 </char><char style="fq" closed="false">Alpha et Oméga </char><char style="ft" closed="false">1.8. – </char><char style="fq" closed="false">je donnerai </char><char style="ft" closed="false">Es 55.1 </char><char style="fq" closed="false">l'eau de la vie </char><char style="ft" closed="false">Jn 4.10,14 ; 7.37-38 ; Ap 7.17+ ; 22.17.</char></note>.</para>
+  <para style="q1">
+    <verse number="7" style="v" />Le vainqueur recevra cet héritage, et je serai son Dieu, et lui sera mon fils<note caller="+" style="f"><char style="fr" closed="false">21.7 </char><char style="ft" closed="false">2 S 7.14 ; Ps 2.7 ; 89.27-28 ; He 1.5.</char></note>.</para>
+  <para style="q1">
+    <verse number="8" style="v" />Quant aux lâches, aux infidèles, aux dépravés, aux meurtriers, aux impudiques, aux magiciens, aux idolâtres et à tous les menteurs, leur part se trouve dans l'étang embrasé de feu et de soufre : c'est la seconde mort<note caller="+" style="f"><char style="fr" closed="false">21.8 </char><char style="fq" closed="false">étang de feu </char><char style="ft" closed="false">19.20+. – </char><char style="fq" closed="false">seconde mort </char><char style="ft" closed="false">2.11+.</char></note>.</para>
+  <para style="s1">La Jérusalem nouvelle</para>
+  <para style="q1">
+    <verse number="9" style="v" />Alors l'un des sept anges qui tenaient les sept coupes pleines des sept derniers fléaux vint m'adresser la parole et me dit :</para>
+  <para style="q1">Viens, je te montrerai la fiancée, l'épouse de l'agneau<note caller="+" style="f"><char style="fr" closed="false">21.9 </char><char style="fq" closed="false">sept anges </char><char style="ft" closed="false">15.1+. – </char><char style="fq" closed="false">l'épouse de l'agneau </char><char style="ft" closed="false">19.7+.</char></note>.</para>
+  <para style="q1">
+    <verse number="10" style="v" />Il me transporta en esprit sur une grande et haute montagne,</para>
+  <para style="q1">et il me montra la cité sainte, Jérusalem, qui descendait du ciel, d'auprès de Dieu.</para>
+  <para style="q1">
+    <verse number="11" style="v" />Elle brillait de la gloire même de Dieu. Son éclat rappelait une pierre précieuse, comme une pierre d'un jaspe cristallin<note caller="+" style="f"><char style="fr" closed="false">21.11 </char><char style="fq" closed="false">la gloire de Dieu </char><char style="ft" closed="false">Es 60.1-2 ; Ap 15.8+. – </char><char style="fq" closed="false">jaspe : </char><char style="ft" closed="false">pierre fine teintée de vert et de rouge.</char></note>.</para>
+  <para style="q1">
+    <verse number="12" style="v" />Elle avait d'épais et hauts remparts.</para>
+  <para style="q1">Elle avait douze portes</para>
+  <para style="q1">et, aux portes, douze anges et des noms inscrits :</para>
+  <para style="q1">les noms des douze tribus des fils d'Israël.</para>
+  <para style="q1">
+    <verse number="13" style="v" />A l'orient trois portes, au nord trois portes,</para>
+  <para style="q1">au midi trois portes et à l'occident trois portes<note caller="+" style="f"><char style="fr" closed="false">21.13 </char><char style="ft" closed="false">v. 12-13 : Ez 48.31-35.</char></note>.</para>
+  <para style="q1">
+    <verse number="14" style="v" />Les remparts de la cité avaient douze assises<note caller="+" style="f"><char style="fr" closed="false">21.14 </char><char style="fq" closed="false">douze assises </char><char style="ft" closed="false">Ep 2.20.</char></note>,</para>
+  <para style="q1">et sur elles les douze noms des douze apôtres de l'agneau.</para>
+  <para style="q1">
+    <verse number="15" style="v" />Celui qui me parlait tenait une mesure<note caller="+" style="f"><char style="fr" closed="false">21.15 </char><char style="fq" closed="false">mesure </char><char style="ft" closed="false">11.1+.</char></note>, un roseau d'or,</para>
+  <para style="q1">pour mesurer la cité, ses portes et ses remparts.</para>
+  <para style="q1">
+    <verse number="16" style="v" />La cité était carrée : sa longueur égalait sa largeur. Il la mesura au roseau, elle comptait douze mille stades :</para>
+  <para style="q1">la longueur, la largeur et la hauteur en étaient égales.</para>
+  <para style="q1">
+    <verse number="17" style="v" />Il mesura les remparts, ils comptaient cent quarante-quatre coudées,</para>
+  <para style="q1">mesure humaine que l'ange utilisait<note caller="+" style="f"><char style="fr" closed="false">21.17 </char><char style="ft" closed="false">v. 16-17 : Ez 48.16-17. – </char><char style="fq" closed="false">stades, coudées : </char><char style="ft" closed="false">voir au glossaire POIDS ET MESURES.</char></note>.</para>
+  <para style="q1">
+    <verse number="18" style="v" />Les matériaux de ses remparts étaient de jaspe,</para>
+  <para style="q1">et la cité était d'un or pur semblable au pur cristal.</para>
+  <para style="q1">
+    <verse number="19" style="v" />Les assises des remparts de la cité s'ornaient de pierres précieuses de toute sorte.</para>
+  <para style="q1">La première assise était de jaspe, la deuxième de saphir,</para>
+  <para style="q1">la troisième de calcédoine, la quatrième d'émeraude,</para>
+  <para style="q1">
+    <verse number="20" style="v" />la cinquième de sardoine, la sixième de cornaline,</para>
+  <para style="q1">la septième de chrysolithe, la huitième de béryl,</para>
+  <para style="q1">la neuvième de topaze, la dixième de chrysoprase,</para>
+  <para style="q1">la onzième d'hyacinthe, la douzième d'améthyste<note caller="+" style="f"><char style="fr" closed="false">21.20 </char><char style="ft" closed="false">Les v. 19-20 énumèrent 12 variétés de pierres fines ou précieuses. – v. 18-21 : </char><char style="fq" closed="false">matériaux des remparts </char><char style="ft" closed="false">Es 54.11-12.</char></note>.</para>
+  <para style="q1">
+    <verse number="21" style="v" />Les douze portes étaient douze perles.</para>
+  <para style="q1">Chacune des portes était d'une seule perle.</para>
+  <para style="q1">Et la place de la cité était d'or pur comme un cristal limpide.</para>
+  <para style="q1">
+    <verse number="22" style="v" />Mais de temple, je n'en vis point dans la cité,</para>
+  <para style="q1">car son temple, c'est le Seigneur<note caller="+" style="f"><char style="fr" closed="false">21.22 </char><char style="ft" closed="false">Jn 2.19-21 ; Ap 21.3 ; 22.3.</char></note>, le Dieu souverain, ainsi que l'agneau.</para>
+  <para style="q1">
+    <verse number="23" style="v" />La cité n'a besoin ni du soleil<note caller="+" style="f"><char style="fr" closed="false">21.23 </char><char style="ft" closed="false">Es 60.19-20 ; Ap 22.5.</char></note> ni de la lune pour l'éclairer,</para>
+  <para style="q1">car la gloire de Dieu l'illumine, et son flambeau, c'est l'agneau.</para>
+  <para style="q1">
+    <verse number="24" style="v" />Les nations marcheront à sa lumière,</para>
+  <para style="q1">et les rois de la terre y apporteront leur gloire<note caller="+" style="f"><char style="fr" closed="false">21.24 </char><char style="ft" closed="false">Es 60.3-5.</char></note>.</para>
+  <para style="q1">
+    <verse number="25" style="v" />Ses portes ne se fermeront pas au long des jours,</para>
+  <para style="q1">car, en ce lieu, il n'y aura plus de nuit<note caller="+" style="f"><char style="fr" closed="false">21.25 </char><char style="fq" closed="false">portes ouvertes </char><char style="ft" closed="false">Es 60.11. – </char><char style="fq" closed="false">plus de nuit </char><char style="ft" closed="false">Za 14.7 ; Ap 22.5.</char></note>.</para>
+  <para style="q1">
+    <verse number="26" style="v" />On y apportera la gloire et l'honneur des nations<note caller="+" style="f"><char style="fr" closed="false">21.26 </char><char style="fq" closed="false">la gloire des nations </char><char style="ft" closed="false">Ps 72.10-11.</char></note>.</para>
+  <para style="q1">
+    <verse number="27" style="v" />Il n'y entrera nulle souillure,</para>
+  <para style="q1">ni personne qui pratique abomination et mensonge,</para>
+  <para style="q1">mais ceux-là seuls qui sont inscrits dans le livre de vie de l'agneau<note caller="+" style="f"><char style="fr" closed="false">21.27 </char><char style="fq" closed="false">nulle souillure </char><char style="ft" closed="false">Es 35.8 ; 52.1 ; Za 13.1-2 ; 1 Co 6.9-10 ; 2 P 3.13 ; Ap 22.15. – </char><char style="fq" closed="false">le livre de vie </char><char style="ft" closed="false">3.5+.</char></note>.</para>
+  <chapter number="22" style="c" />
+  <para style="q1">
+    <verse number="1" style="v" />Puis il me montra un fleuve d'eau vive<note caller="+" style="f"><char style="fr" closed="false">22.1 </char><char style="ft" closed="false">Ez 47.1 ; Za 14.8 ; Jn 7.38.</char></note>, brillant comme du cristal,</para>
+  <para style="q1">qui jaillissait du trône de Dieu et de l'agneau.</para>
+  <para style="q1">
+    <verse number="2" style="v" />Au milieu de la place de la cité et des deux bras du fleuve,</para>
+  <para style="q1">est un arbre de vie produisant douze récoltes.</para>
+  <para style="q1">Chaque mois il donne son fruit,</para>
+  <para style="q1">et son feuillage sert à la guérison des nations<note caller="+" style="f"><char style="fr" closed="false">22.2 </char><char style="fq" closed="false">arbre de vie </char><char style="ft" closed="false">2.7+. Voir aussi <char style="bk">4 Esd</char> 7.123. – </char><char style="fq" closed="false">la guérison des nations </char><char style="ft" closed="false">Ez 47.12.</char></note>.</para>
+  <para style="q1">
+    <verse number="3" style="v" />Il n'y aura plus de malédiction.</para>
+  <para style="q1">Le trône de Dieu<note caller="+" style="f"><char style="fr" closed="false">22.3 </char><char style="fq" closed="false">plus de malédiction </char><char style="ft" closed="false">Gn 3.22-24 ; Za 14.11. – </char><char style="fq" closed="false">trône de Dieu </char><char style="ft" closed="false">4.2+.</char></note> et de l'agneau sera dans la cité, et ses serviteurs lui rendront un culte,</para>
+  <para style="q1">
+    <verse number="4" style="v" />ils verront son visage et son nom sera sur leurs fronts<note caller="+" style="f"><char style="fr" closed="false">22.4 </char><char style="fq" closed="false">ils verront sa face </char><char style="ft" closed="false">Ps 17.15 ; 42.3 ; Mt 5.8. – Marqués du nom de Dieu 3.12+.</char></note>.</para>
+  <para style="q1">
+    <verse number="5" style="v" />Il n'y aura plus de nuit,</para>
+  <para style="q1">nul n'aura besoin de la lumière du flambeau ni de la lumière du soleil,</para>
+  <para style="q1">car le Seigneur Dieu répandra sur eux sa lumière,</para>
+  <para style="q1">et ils régneront aux siècles des siècles<note caller="+" style="f"><char style="fr" closed="false">22.5 </char><char style="fq" closed="false">plus de nuit </char><char style="ft" closed="false">21.23,25+. – </char><char style="fq" closed="false">ils régneront </char><char style="ft" closed="false">5.10+.</char></note>.</para>
+  <para style="s1">Epilogue</para>
+  <para style="q1">
+    <verse number="6" style="v" />Puis il me dit : Ces paroles sont certaines et véridiques ; le Seigneur, le Dieu des esprits des prophètes, a envoyé son ange,</para>
+  <para style="q1">pour montrer à ses serviteurs ce qui doit arriver<note caller="+" style="f"><char style="fr" closed="false">22.6 </char><char style="fq" closed="false">ce qui doit arriver </char><char style="ft" closed="false">1.1+.</char></note> bientôt.</para>
+  <para style="q1">
+    <verse number="7" style="v" />Voici, je viens bientôt<note caller="+" style="f"><char style="fr" closed="false">22.7 </char><char style="ft" closed="false">C'est le Ressuscité qui parle (voir v. 12,16, etc.) ; 2.16+.</char></note>.</para>
+  <para style="q1">Heureux celui qui garde les paroles prophétiques de ce livre.</para>
+  <para style="q1">
+    <verse number="8" style="v" />Moi, Jean, j'ai entendu et j'ai vu cela.</para>
+  <para style="q1">Et, après avoir entendu et vu, je me prosternai, pour l'adorer, aux pieds de l'ange qui me montrait cela.</para>
+  <para style="q1">
+    <verse number="9" style="v" />Mais il me dit : Garde-toi de le faire<note caller="+" style="f"><char style="fr" closed="false">22.9 </char><char style="ft" closed="false">v. 8-9 : </char><char style="fq" closed="false">Garde-toi de le faire </char><char style="ft" closed="false">19.10+.</char></note> !</para>
+  <para style="q1">Je suis un compagnon de service,</para>
+  <para style="q1">pour toi et pour tes frères les prophètes,</para>
+  <para style="q1">et pour ceux qui gardent les paroles de ce livre.</para>
+  <para style="q1">C'est Dieu que tu dois adorer.</para>
+  <para style="q1">
+    <verse number="10" style="v" />Puis il me dit : Ne garde pas secrètes les paroles prophétiques de ce livre,</para>
+  <para style="q1">car le temps est proche<note caller="+" style="f"><char style="fr" closed="false">22.10 </char><char style="fq" closed="false">Ne garde pas secrètes </char><char style="ft" closed="false">10.4+. – </char><char style="fq" closed="false">le temps est proche </char><char style="ft" closed="false">1.3+.</char></note>.</para>
+  <para style="q1">
+    <verse number="11" style="v" />Que l'injuste commette encore l'injustice et que l'impur vive encore dans l'impureté,</para>
+  <para style="q1">mais que le juste<note caller="+" style="f"><char style="fr" closed="false">22.11 </char><char style="fq" closed="false">l'injuste </char><char style="ft" closed="false">et </char><char style="fq" closed="false">le juste </char><char style="ft" closed="false">Dn 12.10.</char></note> pratique encore la justice et que le saint se sanctifie encore.</para>
+  <para style="q1">
+    <verse number="12" style="v" />Voici, je viens bientôt,</para>
+  <para style="q1">et ma rétribution est avec moi, pour rendre à chacun selon son œuvre<note caller="+" style="f"><char style="fr" closed="false">22.12 </char><char style="fq" closed="false">selon son œuvre </char><char style="ft" closed="false">2.23+.</char></note>.</para>
+  <para style="q1">
+    <verse number="13" style="v" />Je suis l'Alpha et l'Oméga<note caller="+" style="f"><char style="fr" closed="false">22.13 </char><char style="fq" closed="false">Alpha et Oméga </char><char style="ft" closed="false">1.8,17+.</char></note>,</para>
+  <para style="q1">le Premier et le Dernier,</para>
+  <para style="q1">le commencement et la fin.</para>
+  <para style="q1">
+    <verse number="14" style="v" />Heureux ceux qui lavent leurs robes,</para>
+  <para style="q1">afin d'avoir droit à l'arbre de vie<note caller="+" style="f"><char style="fr" closed="false">22.14 </char><char style="fq" closed="false">ceux qui lavent leur robe </char><char style="ft" closed="false">7.14. – </char><char style="fq" closed="false">l'arbre de vie </char><char style="ft" closed="false">2.7+.</char></note>, et d'entrer, par les portes, dans la cité.</para>
+  <para style="q1">
+    <verse number="15" style="v" />Dehors les chiens<note caller="+" style="f"><char style="fr" closed="false">22.15 </char><char style="ft" closed="false">Voir Dt 23.19 ; Ph 3.2 : désignation des dépravés ; 1 Co 6.9-10 ; Ap 21.8.</char></note> et les magiciens, les impudiques et les meurtriers, les idolâtres et quiconque aime ou pratique le mensonge !</para>
+  <para style="q1">
+    <verse number="16" style="v" />Moi, Jésus, j'ai envoyé mon ange pour vous apporter ce témoignage au sujet des Eglises.</para>
+  <para style="q1">Je suis le rejeton et la lignée de David,</para>
+  <para style="q1">l'étoile brillante du matin<note caller="+" style="f"><char style="fr" closed="false">22.16 </char><char style="fq" closed="false">au sujet des Eglises </char><char style="ft" closed="false">ou </char><char style="fq" closed="false">au milieu des Eglises</char><char style="ft" closed="false">. – </char><char style="fq" closed="false">rejeton de David </char><char style="ft" closed="false">5.5+. – </char><char style="fq" closed="false">étoile du matin </char><char style="ft" closed="false">2.28.</char></note>.</para>
+  <para style="q2">
+    <verse number="17" style="v" />L'Esprit et l'épouse disent : Viens !</para>
+  <para style="q2">Que celui qui entend dise : Viens !</para>
+  <para style="q2">Que celui qui a soif<note caller="+" style="f"><char style="fr" closed="false">22.17 </char><char style="fq" closed="false">celui qui a soif </char><char style="ft" closed="false">21.6+.</char></note> vienne.</para>
+  <para style="q2">Que celui qui le veut reçoive de l'eau vive, gratuitement.</para>
+  <para style="q1">
+    <verse number="18" style="v" />Je l'atteste à quiconque entend les paroles prophétiques de ce livre : Si quelqu'un y ajoute, Dieu lui ajoutera les fléaux décrits dans ce livre.</para>
+  <para style="q1">
+    <verse number="19" style="v" />Et si quelqu'un retranche aux paroles de ce livre prophétique,</para>
+  <para style="q1">Dieu retranchera sa part de l'arbre de vie et de la cité sainte<note caller="+" style="f"><char style="fr" closed="false">22.19 </char><char style="ft" closed="false">v. 18-19 : </char><char style="fq" closed="false">retrancher, ajouter </char><char style="ft" closed="false">Dt 4.2 ; 13.1.</char></note></para>
+  <para style="q1">qui sont décrits dans ce livre.</para>
+  <para style="q1">
+    <verse number="20" style="v" />Celui qui atteste cela dit : Oui, je viens bientôt.</para>
+  <para style="q2">Amen, viens Seigneur Jésus<note caller="+" style="f"><char style="fr" closed="false">22.20 </char><char style="fq" closed="false">je viens bientôt </char><char style="ft" closed="false">2.16+. – </char><char style="fq" closed="false">viens… : </char><char style="ft" closed="false">voir 1 Co 16.22 et la note.</char></note> !</para>
+  <para style="q1">
+    <verse number="21" style="v" />La grâce du Seigneur Jésus soit avec tous !</para>
+</usx>

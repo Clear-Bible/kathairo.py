@@ -98,7 +98,7 @@ def corpus_to_word_level_tsv(targetVersification:Versification, sourceVersificat
             #else:
             #    tokenized_row = tokenizer.tokenize(row.text) # Include for Double Tokenization
             
-            #print(f"{row.ref}: {row.text}")
+            # print(f"{row.ref}: {row.text}")
 
             current_verse_num = row.ref.verse_num
             if(current_verse_num != previous_verse_num):
@@ -106,7 +106,7 @@ def corpus_to_word_level_tsv(targetVersification:Versification, sourceVersificat
             previous_verse_num = current_verse_num
             
             targetVref = VerseRef.from_bbbcccvvv(row.ref.bbbcccvvv, targetVersification) #dependent on which .vrs is being used    
-            
+
             sourceVref, source_verse_range_end = helpers.versification.set_source_verse(targetVref, sourceVersification, unused_versification_mapping)
             
             if(not in_parentheses):    
@@ -129,7 +129,7 @@ def corpus_to_word_level_tsv(targetVersification:Versification, sourceVersificat
                     tsv_writer.writerow(unprinted_row)
                 is_verse_range = False
                 unprinted_row_list.clear()
-            
+
             sourceBcv = fromubs(f"{re.sub(r'[^0-9]', '', sourceVref.bbbcccvvvs)}00000").to_bcvid
             rowBcv= fromubs(f"{re.sub(r'[^0-9]', '', row.ref.bbbcccvvvs)}00000").to_bcvid
             
@@ -381,13 +381,26 @@ if(__name__ == "__main__"):
     # removeZwFromWordsPath = None
 
     # TPB08
-    usfm_language = "tpi"
-    usfm_abbrev = "TPB08"
+    # usfm_language = "tpi"
+    # usfm_abbrev = "TPB08"
+    # targetVersification = Versification.load(f"./resources/versification/eng.vrs", fallback_name="web")
+    # sourceVersification = Versification(name="sourceVersification", base_versification=ORIGINAL_VERSIFICATION)
+    # language = usfm_language
+    # corpus = UsfmFileTextCorpus(f"./resources/{usfm_language}/{usfm_abbrev}/", versification=targetVersification, handler=ModifiedTextRowCollector, psalmSuperscriptionTag="d")
+    # # corpus = UsxFileTextCorpus(f"./resources/{usfm_language}/{usfm_abbrev}/", versification=targetVersification)
+    # tokenizer = LatinWhitespaceIncludedWordTokenizer(language=language)
+    # project_name = usfm_abbrev
+    # excludeBracketedText = False
+    # removeZwFromWordsPath = None
+
+    # TOB10 (French Ecumenical Bible Translation)
+    usfm_language = "fra"
+    usfm_abbrev = "TOB10"
     targetVersification = Versification.load(f"./resources/versification/eng.vrs", fallback_name="web")
     sourceVersification = Versification(name="sourceVersification", base_versification=ORIGINAL_VERSIFICATION)
     language = usfm_language
-    corpus = UsfmFileTextCorpus(f"./resources/{usfm_language}/{usfm_abbrev}/", versification=targetVersification, handler=ModifiedTextRowCollector, psalmSuperscriptionTag="d")
-    # corpus = UsxFileTextCorpus(f"./resources/{usfm_language}/{usfm_abbrev}/", versification=targetVersification)
+    # corpus = UsfmFileTextCorpus(f"./resources/{usfm_language}/{usfm_abbrev}/", versification=targetVersification, handler=ModifiedTextRowCollector, psalmSuperscriptionTag="d")
+    corpus = UsxFileTextCorpus(f"./resources/{usfm_language}/{usfm_abbrev}/USX/", versification=targetVersification)
     tokenizer = LatinWhitespaceIncludedWordTokenizer(language=language)
     project_name = usfm_abbrev
     excludeBracketedText = False

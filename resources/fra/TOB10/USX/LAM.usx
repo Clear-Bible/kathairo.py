@@ -1,0 +1,816 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<usx version="2.6">
+  <book code="LAM" style="id">TOB25.SBF 16.02.2010 ES ©Société biblique française et Editions du Cerf</book>
+  <para style="h">LAMENTATIONS</para>
+  <para style="toc1">Les Lamentations</para>
+  <para style="toc2">LAMENTATIONS</para>
+  <para style="toc3">Lm</para>
+  <para style="mt2">Les Lamentations</para>
+  <para style="mt1">LAMENTATIONS</para>
+  <para style="imt">INTRODUCTION</para>
+  <para style="is2">Les circonstances</para>
+  <para style="ip">Dans la Bible hébraïque le nom de ce livre est « Comment ! » d'après le premier mot des deux premiers et du quatrième poèmes. Mais le titre grec devenu traditionnel correspond bien au genre hébraïque de la « lamentation » qui, à côté du chant funèbre (comparer 2 S 1.17s), peut s'appliquer aussi à une catastrophe nationale. Celle dont il est question ici, c'est la prise de Jérusalem et la destruction du temple en 587 par Nabuchodonosor, qui déporte en Babylonie une partie de la population. C'est pourquoi les Juifs lisent ce livre le 9 Ab (cinquième mois, l'année commençant à Pâque) qui, chose curieuse, marque non seulement cet anniversaire, mais aussi la chute du Second temple sous les coups des Romains.</para>
+  <para style="is2">L'auteur</para>
+  <para style="ip">La Septante attribue ce livre à Jérémie, peut-être sur la foi de 2 Ch 35.25 qui, en fait, parle d'un chant funèbre sur Josias. En réalité, 4.20 ne s'accorde guère avec ce que Jérémie pensait de Sédécias (Jr 24.8) ; d'autre part, la doctrine de rétribution exprimée à 5.7 est combattue par Jr 31.29-30, de même que l'alliance égyptienne de 4.17 par Jr 37.5-7 ; et il serait contradictoire que Jérémie ait pu prononcer 2.9. Les différences de forme et de fond montrent qu'on a peut-être affaire à cinq poèmes d'origines diverses. Les <char style="bk">Lamentations</char> ne sont donc pas de Jérémie ; pour certains, elles auraient même été écrites « contre » Jérémie et le parti pro-babylonien.</para>
+  <para style="is2">Forme et sujet du livre</para>
+  <para style="ip">Les quatre premiers poèmes sont alphabétiques, le début des vingt-deux vers présentant les vingt-deux lettres de l'alphabet hébreu. Et dans le troisième, l'alphabétisme est triple. Ce procédé pouvait aider à la mémorisation, et aussi indiquer que le sujet était pleinement traité, comme nous disons « de A à Z ». Quant au sujet, les deux premières lamentations sont des lamentations politiques ; Sion y est représentée sous les traits d'une femme (sauf dans la cinquième qui est une complainte collective) ; mais la troisième semble individuelle et met en avant un homme souffrant qui, il est vrai, peut représenter le peuple tout entier, en en incarnant les souffrances.</para>
+  <para style="is2">Date</para>
+  <para style="ip">L'anonymat et la diversité posent la question de date. Tous les poèmes datent d'avant la fin de l'exil en 538. Bien des détails (notamment dans le deuxième et le quatrième) montrent qu'on est proche des événements de 587. Peut-être même le premier remonte-t-il à l'époque de la première déportation, en 598.</para>
+  <para style="is2">Contenu</para>
+  <para style="ip">Les <char style="bk">Lamentations</char> déplorent le <char style="it">deuil</char> de Jérusalem (1.1,4 ; 2.8 ; 5.15), avec larmes (1.2,16 ; 2.11,18 ; 3.48s), gémissements (1.4,8,11,21,22), affliction (1.4,5,12 ; 3.32s), état désertique (1.4,13,16 ; 3.11 ; 4.5 ; 5.18), dénuement (1.8) et faim (1.11,19 ; 2.12,19 ; 4.4,5,8-9 ; 5.6,10).</para>
+  <para style="ip">Elle est blessée dans ses êtres les plus chers : enfants (1.5,20 ; 2.4,11,19,20,22 ; 4.4,10 ; 5.13), jeunes filles (1.4,18 ; 2.4,10,21 ; 5.11), jeunes gens (1.15,18 ; 2.21 ; 4.7 ; 5.14), anciens (1.19 ; 2.10,21 ; 4.16 ; 5.12,14), et prêtres (1.4,19 ; 2.6,20 ; 4.16), prophètes (2.9,20) et rois (1.6 ; 2.2,6,9 ; 4.20 ; 5.12). Elle est profanée dans ses réalités les plus saintes : le temple (1.4,10 ; 2.1,4,6,7,20) et l'assemblée fidèle au Rendez-vous divin (1.4,10 ; 2.6,7,22).</para>
+  <para style="ip">La Ville sainte prend alors conscience de son <char style="it">péché</char>, qui est révolte (1.5,14,22 ; 3.42), désobéissance (1.18,20 ; 3.42), faute (1.8 ; 3.39 ; 4.6,13,22 ; 5.7,16) et perversité (2.14 ; 4.6,13,22 ; 5.7). Elle le confesse (3.42 ; 5.7,16). Il appesantit sur elle sa main : c'est la main des ennemis (plus de vingt fois nommés), mais ce n'est autre chose, au fond, que la main de Dieu lui-même (1.14).</para>
+  <para style="ip">C'est <char style="it">Dieu,</char> en effet, qui fait découvrir à ses enfants son refus absolu de tout mal, qu'on appelle sa colère (1.12 ; 2.1,3,6,21,22 ; 3.43,66 ; 4.11), sa fureur (2.4 ; 4.11), son déchaînement (2.2 ; 3.1), sa flamme terrifiante (1.13 ; 2.3-4 ; 4.11). Il prend pour les pécheurs le visage d'un ennemi (2.4-5 ; 3.1-18,43-45) : il afflige (1.5,12), assombrit (2.1), engloutit (2.1-8). Il semble alors loin (1.16) et pourtant il est toujours proche (3.57), il entend (3.56,61), il voit (1.9,11,20 ; 2.20 ; 3.50,59-60,63 ; 5.1), il se souvient (3.19 ; 5.1,20).</para>
+  <para style="ip">On peut compter sur lui, juste (1.18 ; 3.34-36), libre de ses décisions (3.37-38 ; 5.19), fidèle (3.32), sauveur (3.26), rédempteur (3.58), capable de consoler (1.16), et tellement bon (3.25) qu'il manifeste des tendresses maternelles, nouvelles tous les matins (3.22-23). Le malheur, fruit du péché, est de sa part la grâce suprême : il conduit à la <char style="it">conversion</char>, non point accomplie par l'homme lui-même (3.40), mais opérée par Dieu seul en l'homme : <char style="it">Fais-nous revenir vers toi, Seigneur, et nous reviendrons (5.21).</char></para>
+  <para style="mt1">Les Lamentations</para>
+  <chapter number="1" style="c" />
+  <para style="s1">La ville sans amour</para>
+  <para style="qa">Alef</para>
+  <para style="q1">
+    <verse number="1" style="v" />Comment !</para>
+  <para style="q1">Elle habite à l'écart,</para>
+  <para style="q1">la Ville qui comptait un peuple nombreux !</para>
+  <para style="q1">elle se trouve comme veuve<note caller="+" style="f"><char style="fr" closed="false">1.1 </char><char style="ft" closed="false">Sur les poèmes </char><char style="fq" closed="false">alphabétiques </char><char style="ft" closed="false">voir Ps 25.1 et la note. – </char><char style="fq" closed="false">à l'écart </char><char style="ft" closed="false">Lv 13.46. – </char><char style="fq" closed="false">comme veuve </char><char style="ft" closed="false">Lm 5.3 ; <char style="bk">Ba</char> 4.12.</char></note>.</para>
+  <para style="q1">Elle, qui comptait parmi les nations,</para>
+  <para style="q1">princesse parmi les provinces,</para>
+  <para style="q1">elle est bonne pour le bagne.</para>
+  <para style="qa">Beth</para>
+  <para style="q1">
+    <verse number="2" style="v" />Elle pleure et pleure dans la nuit :</para>
+  <para style="q1">des larmes plein les joues ;</para>
+  <para style="q1">pour elle pas de consolateur</para>
+  <para style="q1">parmi tous ses amants.</para>
+  <para style="q1">Tous ses compagnons la trahissent :</para>
+  <para style="q1">ils deviennent ses ennemis<note caller="+" style="f"><char style="fr" closed="false">1.2 </char><char style="fq" closed="false">nuit </char><char style="ft" closed="false">passée à </char><char style="fq" closed="false">pleurer </char><char style="ft" closed="false">Ps 6.7. – </char><char style="fq" closed="false">pas de consolateur </char><char style="ft" closed="false">v. 9,16,17,21 ; Ps 69.21 (consolateur, consolation Es 12.1 ; 40.1 ; Ps 71.21 ; 86.17 ; Lc 2.25 ; Jn 14.16,26 ; 15.26 ; 16.7). – </char><char style="fq" closed="false">amants, compagnons : </char><char style="ft" closed="false">désignation imagée des peuples étrangers, dont la population de Jérusalem, symbolisée ici par une femme, avait préféré l'appui à celui du Seigneur ; voir aussi les notes sur Os 1.2 ; 2.4 et Za 13.6. – </char><char style="fq" closed="false">la trahissent : </char><char style="ft" closed="false">allusion à l'attitude des peuples sur lesquels le royaume de Juda comptait au moment de l'attaque babylonienne de 588-587 av. J.C. Les Egyptiens ont eu peur d'intervenir ; les Edomites ont participé au pillage de Jérusalem ; voir Jr 30.14.</char></note>.</para>
+  <para style="qa">Guimel</para>
+  <para style="q1">
+    <verse number="3" style="v" />Sous l'humiliation, sous le poids de l'esclavage,</para>
+  <para style="q1">Judée va en déportation ;</para>
+  <para style="q1">elle, elle habite parmi les nations,</para>
+  <para style="q1">elle ne trouve pas à s'établir.</para>
+  <para style="q1">Tous ses persécuteurs la traquent</para>
+  <para style="q1">dans des étranglements<note caller="+" style="f"><char style="fr" closed="false">1.3 </char><char style="fq" closed="false">étranglements </char><char style="ft" closed="false">Ps 116.3.</char></note>.</para>
+  <para style="qa">Daleth</para>
+  <para style="q1">
+    <verse number="4" style="v" />Les routes de Sion sont en deuil,</para>
+  <para style="q1">sans personne venant au Rendez-vous ;</para>
+  <para style="q1">ses portes sont toutes ruinées,</para>
+  <para style="q1">ses prêtres gémissent.</para>
+  <para style="q1">Ses jeunes filles sont affligées ;</para>
+  <para style="q1">quelle amertume<note caller="+" style="f"><char style="fr" closed="false">1.4 </char><char style="fq" closed="false">en deuil </char><char style="ft" closed="false">Es 3.26 ; Jr 14.2. – </char><char style="fq" closed="false">Rendez-vous </char><char style="ft" closed="false">Lm 1.15 ; 2.6,22 ; allusion aux fêtes célébrées dans le temple de Jérusalem, où les fidèles venaient en pèlerinage pour adorer Dieu. En hébreu c'est le même terme qui est employé dans l'expression la tente de la rencontre (Ex 27.21, etc.). – </char><char style="fq" closed="false">amertume </char><char style="ft" closed="false">(de la mort) 1 S 15.32 ; Rt 1.13 ; Qo 7.26.</char></note> pour elle.</para>
+  <para style="qa">Hé</para>
+  <para style="q1">
+    <verse number="5" style="v" />Ses adversaires se trouvent au pinacle<note caller="+" style="f"><char style="fr" closed="false">1.5 </char><char style="ft" closed="false">Ou </char><char style="fq" closed="false">au sommet de leur gloire.</char></note>,</para>
+  <para style="q1">ses ennemis sont bien aise</para>
+  <para style="q1">car le <char style="nd">SEIGNEUR</char> l'afflige,</para>
+  <para style="q1">vu le poids de ses révoltes.</para>
+  <para style="q1">Ses bambins s'en vont,</para>
+  <para style="q1">captifs, devant l'adversaire.</para>
+  <para style="qa">Waw</para>
+  <para style="q1">
+    <verse number="6" style="v" />Et de la Belle Sion s'échappe</para>
+  <para style="q1">tout son honneur<note caller="+" style="f"><char style="fr" closed="false">1.6 </char><char style="fq" closed="false">la Belle Sion : </char><char style="ft" closed="false">comme souvent ailleurs la ville de Jérusalem est ici personnifiée par une jeune fille ou une jeune femme ; autre traduction </char><char style="fq" closed="false">la population de Sion. – l'honneur de Sion </char><char style="ft" closed="false">s'échappe Ez 10.18-22 ; 11.22-23.</char></note>.</para>
+  <para style="q1">Ses princes, les voilà comme des cerfs</para>
+  <para style="q1">qui ne trouvent point de pâture :</para>
+  <para style="q1">ils s'en vont sans énergie</para>
+  <para style="q1">devant le persécuteur.</para>
+  <para style="qa">Zaïn</para>
+  <para style="q1">
+    <verse number="7" style="v" />Jérusalem se rappelle,</para>
+  <para style="q1">en ses jours d'errance et d'humiliation,</para>
+  <para style="q1">tous ses charmes,</para>
+  <para style="q1">qui existaient aux jours de l'ancien temps !</para>
+  <para style="q1">Quand son peuple tombe aux mains de l'adversaire</para>
+  <para style="q1">et que personne ne vient l'aider,</para>
+  <para style="q1">les adversaires la voient :</para>
+  <para style="q1">ils rient<note caller="+" style="f"><char style="fr" closed="false">1.7 </char><char style="fq" closed="false">errance et humiliation </char><char style="ft" closed="false">Es 58.7. – </char><char style="fq" closed="false">tous ses charmes </char><char style="ft" closed="false">ou </char><char style="fq" closed="false">tout ce qu'elle aimait </char><char style="ft" closed="false">voir Lm 1.10,11 ; 2.4 ; 1 R 20.6 ; Ez 24.16,21 ; Dn 11.37. – </char><char style="fq" closed="false">rire des adversaires </char><char style="ft" closed="false">Ps 13.5 ; 35.19 ; 38.17.</char></note> de son anéantissement.</para>
+  <para style="qa">Heth</para>
+  <para style="q1">
+    <verse number="8" style="v" />Elle a commis la faute, Jérusalem ;</para>
+  <para style="q1">et la voilà devenue une ordure.</para>
+  <para style="q1">Tous ceux qui la glorifient l'avilissent,</para>
+  <para style="q1">car ils voient sa nudité<note caller="+" style="f"><char style="fr" closed="false">1.8 </char><char style="fq" closed="false">une ordure </char><char style="ft" closed="false">ou </char><char style="fq" closed="false">une chose impure </char><char style="ft" closed="false">(terme qui peut s'entendre du sang menstruel ; voir Lv 15.19-24). – </char><char style="fq" closed="false">toute nue </char><char style="ft" closed="false">Es 47.3 ; Ez 16.37.</char></note> ;</para>
+  <para style="q1">pour sa part, elle gémit</para>
+  <para style="q1">et tourne le dos.</para>
+  <para style="qa">Teth</para>
+  <para style="q1">
+    <verse number="9" style="v" />Sa souillure est sur sa jupe ;</para>
+  <para style="q1">elle ne songeait pas à ce qui s'ensuivrait.</para>
+  <para style="q1">Sa déchéance est prodigieuse ;</para>
+  <para style="q1">pas de consolateur pour elle.</para>
+  <para style="q1">« Vois <char style="nd">SEIGNEUR</char><note caller="+" style="f"><char style="fr" closed="false">1.9 </char><char style="ft" closed="false">Penser aux conséquences Dt 32.29 ; Es 47.7 ; voir Lc 14.28. – </char><char style="fq" closed="false">Vois Seigneur </char><char style="ft" closed="false">v. 11 ; 2.20 ; 3.59 ; 5.1.</char></note>, mon humiliation ;</para>
+  <para style="q1">l'ennemi en effet se grandit. »</para>
+  <para style="qa">Yod</para>
+  <para style="q1">
+    <verse number="10" style="v" />L'adversaire étend la main</para>
+  <para style="q1">sur tous ses charmes.</para>
+  <para style="q1">Oui, dans son sanctuaire</para>
+  <para style="q1">elle voit entrer des nations</para>
+  <para style="q1">auxquelles tu as commandé de ne pas entrer</para>
+  <para style="q1">dans l'assemblée qui est à toi<note caller="+" style="f"><char style="fr" closed="false">1.10 </char><char style="ft" closed="false">L'ennemi s'empare de tout ce qui est précieux 2 R 24.13 ; Es 64.10. – Etrangers non admis à l'assemblée Dt 23.4 ; Ez 44.7-9 ; Ac 21.28.</char></note>.</para>
+  <para style="qa">Kaf</para>
+  <para style="q1">
+    <verse number="11" style="v" />Son peuple tout entier gémit :</para>
+  <para style="q1">ils cherchent du pain ;</para>
+  <para style="q1">ils donnent leurs charmes contre de la nourriture,</para>
+  <para style="q1">pour se ranimer<note caller="+" style="f"><char style="fr" closed="false">1.11 </char><char style="ft" closed="false">Famine Dt 28.51 ; Jr 52.6.</char></note>.</para>
+  <para style="q1">« Vois, <char style="nd">SEIGNEUR</char>, et regarde</para>
+  <para style="q1">combien je me trouve avilie. »</para>
+  <para style="qa">Lamed</para>
+  <para style="q1">
+    <verse number="12" style="v" />« Rien de tel pour vous tous qui passez sur le chemin ;</para>
+  <para style="q1">regardez et voyez</para>
+  <para style="q1">s'il est douleur comme ma douleur,</para>
+  <para style="q1">celle qui me fait si mal,</para>
+  <para style="q1">celle que le <char style="nd">SEIGNEUR</char> inflige</para>
+  <para style="q1">au jour de son ardente colère<note caller="+" style="f"><char style="fr" closed="false">1.12 </char><char style="fq" closed="false">une douleur comme la mienne </char><char style="ft" closed="false">1.18 ; voir 2,13,20 ; Dn 9.12 ; 12.1 ; Mt 24.21. – </char><char style="fq" closed="false">le jour de la colère du Seigneur </char><char style="ft" closed="false">Lm 2.1,21,22 ; 4.11 ; Ez 7.19 ; So 2.2-3 ; Ps 110.5 ; Jb 20.28 ; Pr 11.4 ; Rm 2.5 ; Ap 6.17 ; Ps 31.11 ; 51.10.</char></note>.</para>
+  <para style="qa">Mem</para>
+  <para style="q1">
+    <verse number="13" style="v" />De là-haut, il a envoyé du feu</para>
+  <para style="q1">dans mes os ; il en est le maître.</para>
+  <para style="q1">Il a tendu un filet à mes pieds ;</para>
+  <para style="q1">il m'a culbutée ;</para>
+  <para style="q1">il a fait de moi une femme ruinée,</para>
+  <para style="q1">tout le temps indisposée<note caller="+" style="f"><char style="fr" closed="false">1.13 </char><char style="fq" closed="false">mes os : </char><char style="ft" closed="false">pour les anciens Israélites les </char><char style="fq" closed="false">os </char><char style="ft" closed="false">représentaient ce qui reste d'un homme après sa mort ; ils pouvaient donc symboliser ainsi la partie la plus fondamentale de son être Lm 3.4 ; Es 38.13 ; Ps 31.11 ; 51.10. – </char><char style="fq" closed="false">filet </char><char style="ft" closed="false">Ps 9.16+. – </char><char style="fq" closed="false">une femme ruinée/abandonnée </char><char style="ft" closed="false">2 S 13.20 ; Es 54.1. – </char><char style="fq" closed="false">indisposée </char><char style="ft" closed="false">Lv 15.33 ; 20.18.</char></note>.</para>
+  <para style="qa">Noun</para>
+  <para style="q1">
+    <verse number="14" style="v" />Le voilà lié, le joug<note caller="+" style="f"><char style="fr" closed="false">1.14 </char><char style="fq" closed="false">joug </char><char style="ft" closed="false">Dt 28.48 ; Jr 27.2.</char></note> formé de mes révoltes ;</para>
+  <para style="q1">dans sa main elles se sont nouées ;</para>
+  <para style="q1">elles sont hissées sur mon cou ;</para>
+  <para style="q1">il fait chanceler mon énergie.</para>
+  <para style="q1">Le Seigneur m'a livrée en de telles mains</para>
+  <para style="q1">que je ne peux pas tenir debout.</para>
+  <para style="qa">Samek</para>
+  <para style="q1">
+    <verse number="15" style="v" />Le Seigneur a expulsé tous les vaillants</para>
+  <para style="q1">qui étaient chez moi ;</para>
+  <para style="q1">il a fixé un rendez-vous contre moi</para>
+  <para style="q1">pour briser mes jeunes gens.</para>
+  <para style="q1">Le Seigneur a foulé au pressoir</para>
+  <para style="q1">la jeune fille, la Belle Judée<note caller="+" style="f"><char style="fr" closed="false">1.15 </char><char style="fq" closed="false">un rendez-vous : </char><char style="ft" closed="false">le texte sous-entend </char><char style="fq" closed="false">à mes ennemis</char><char style="ft" closed="false"> ; voir 1.4+. – </char><char style="fq" closed="false">au pressoir </char><char style="ft" closed="false">Es 63.2 ; Jl 4.13. – Le peuple de Dieu comparé à une </char><char style="fq" closed="false">jeune fille </char><char style="ft" closed="false">Lm 2.13 ; Jr 18.13 ; 31.4,21 ; Am 5.2.</char></note>.</para>
+  <para style="qa">Aïn</para>
+  <para style="q1">
+    <verse number="16" style="v" />C'est là-dessus que je pleure<note caller="+" style="f"><char style="fr" closed="false">1.16 </char><char style="ft" closed="false">Jr 13.17.</char></note> :</para>
+  <para style="q1">mes deux yeux se liquéfient ;</para>
+  <para style="q1">car loin de moi est le consolateur,</para>
+  <para style="q1">celui qui me ranimerait.</para>
+  <para style="q1">Mes fils, les voilà ruinés,</para>
+  <para style="q1">car l'ennemi a été le plus fort. »</para>
+  <para style="qa">Pé</para>
+  <para style="q1">
+    <verse number="17" style="v" />Sion tend les mains ;</para>
+  <para style="q1">pas de consolateur pour elle ;</para>
+  <para style="q1">le <char style="nd">SEIGNEUR</char> mande contre Jacob</para>
+  <para style="q1">autour de lui ses adversaires.</para>
+  <para style="q1">Jérusalem, au milieu d'eux,</para>
+  <para style="q1">est devenue une ordure<note caller="+" style="f"><char style="fr" closed="false">1.17 </char><char style="ft" closed="false">Voir v. 8 et la note.</char></note>.</para>
+  <para style="qa">Çadé</para>
+  <para style="q1">
+    <verse number="18" style="v" />« Il est juste le <char style="nd">SEIGNEUR</char>,</para>
+  <para style="q1">puisque j'avais désobéi à son ordre.</para>
+  <para style="q1">Ecoutez donc tous, peuples,</para>
+  <para style="q1">et voyez ma douleur<note caller="+" style="f"><char style="fr" closed="false">1.18 </char><char style="fq" closed="false">Il est juste, le Seigneur </char><char style="ft" closed="false">Ps 51.6. – Aveu de désobéissance Lm 1.20,22 ; 3.42 ; 5.16 voir 1.5,8. – </char><char style="fq" closed="false">voyez ma douleur </char><char style="ft" closed="false">v. 12.</char></note>.</para>
+  <para style="q1">Mes jeunes filles et mes jeunes gens</para>
+  <para style="q1">sont allés en captivité.</para>
+  <para style="qa">Qof</para>
+  <para style="q1">
+    <verse number="19" style="v" />J'appelais mes amants :</para>
+  <para style="q1">eux, ils m'ont trompée<note caller="+" style="f"><char style="fr" closed="false">1.19 </char><char style="fq" closed="false">mes amants </char><char style="ft" closed="false">Jr 30.14 </char><char style="fq" closed="false">m'ont trompée </char><char style="ft" closed="false">v. 2 et la note.</char></note> ;</para>
+  <para style="q1">mes prêtres et mes anciens</para>
+  <para style="q1">ont expiré dans la Ville</para>
+  <para style="q1">alors qu'ils cherchaient de la nourriture pour eux</para>
+  <para style="q1">afin de se ranimer.</para>
+  <para style="qa">Resh</para>
+  <para style="q1">
+    <verse number="20" style="v" />Vois <char style="nd">SEIGNEUR</char> que pour moi c'est la détresse ;</para>
+  <para style="q1">mon ventre en est remué ;</para>
+  <para style="q1">au fond de moi mon cœur est bouleversé,</para>
+  <para style="q1">car pour désobéir, j'ai désobéi !</para>
+  <para style="q1">Dehors l'épée<note caller="+" style="f"><char style="fr" closed="false">1.20 </char><char style="fq" closed="false">douleurs de ventre </char><char style="ft" closed="false">2.11 ; Es 16.11 ; Jr 4.19. – </char><char style="fq" closed="false">Dehors l'épée </char><char style="ft" closed="false">Dt 32.25 ; Jr 9.20.</char></note> privait de descendance,</para>
+  <para style="q1">dedans c'était comme chez la Mort.</para>
+  <para style="qa">Shîn</para>
+  <para style="q1">
+    <verse number="21" style="v" />Ils m'entendaient gémir :</para>
+  <para style="q1">pas de consolateur pour moi ;</para>
+  <para style="q1">tous mes ennemis entendaient mon malheur,</para>
+  <para style="q1">ils jouissaient ; en fait c'est toi qui agissais :</para>
+  <para style="q1">tu as fait venir le jour<note caller="+" style="f"><char style="fr" closed="false">1.21 </char><char style="fq" closed="false">consolateur </char><char style="ft" closed="false">v. 2+. – </char><char style="fq" closed="false">le jour </char><char style="ft" closed="false">du Seigneur Jl 1.15+.</char></note> que tu avais fixé.</para>
+  <para style="q1">Qu'eux aussi soient comme moi !</para>
+  <para style="qa">Taw</para>
+  <para style="q1">
+    <verse number="22" style="v" />Que vienne devant toi toute leur malice,</para>
+  <para style="q1">et traite-les</para>
+  <para style="q1">comme tu m'as traitée<note caller="+" style="f"><char style="fr" closed="false">1.22 </char><char style="ft" closed="false">Appel à Dieu contre les adversaires Jr 17.18. – </char><char style="fq" closed="false">comme tu m'as traitée </char><char style="ft" closed="false">Jr 51.35.</char></note></para>
+  <para style="q1">à cause de toutes mes révoltes.</para>
+  <para style="q1">Car nombreux sont mes gémissements,</para>
+  <para style="q1">et tout mon être est malade. »</para>
+  <chapter number="2" style="c" />
+  <para style="s1">L'ennemi divin</para>
+  <para style="qa">Alef</para>
+  <para style="q1">
+    <verse number="1" style="v" />Comment !</para>
+  <para style="q1">Le Seigneur, dans sa colère,</para>
+  <para style="q1">veut assombrir la Belle Sion !</para>
+  <para style="q1">Il jette de ciel en terre</para>
+  <para style="q1">la splendeur d'Israël.</para>
+  <para style="q1">Il ne se souvient pas de l'escabeau de ses pieds<note caller="+" style="f"><char style="fr" closed="false">2.1 </char><char style="fq" closed="false">(Alef) : </char><char style="ft" closed="false">voir Ps 25.1 et la note. – </char><char style="fq" closed="false">la splendeur d'Israël : </char><char style="ft" closed="false">Jérusalem et son temple Es 60.7 ; 64.10. – </char><char style="fq" closed="false">l'escabeau de ses pieds : </char><char style="ft" closed="false">probablement la colline de Sion ; Es 66.1 ; Ez 43.7 ; Ps 99.5 ; 132.7 ; 1 Ch 28.2 ; <char style="bk">4 Esd</char> 6.4.</char></note></para>
+  <para style="q1">au jour de sa colère.</para>
+  <para style="qa">Beth</para>
+  <para style="q1">
+    <verse number="2" style="v" />Le Seigneur engloutit sans pitié</para>
+  <para style="q1">toutes les prairies de Jacob ;</para>
+  <para style="q1">il démolit dans son déchaînement</para>
+  <para style="q1">les fortifications<note caller="+" style="f"><char style="fr" closed="false">2.2 </char><char style="fq" closed="false">Jacob, </char><char style="ft" closed="false">ancêtre du peuple d'Israël, personnifie ici l'ensemble de ce peuple. – </char><char style="fq" closed="false">fortifications démolies </char><char style="ft" closed="false">Dt 28.52.</char></note> de la Belle Judée :</para>
+  <para style="q1">il fait toucher terre,</para>
+  <para style="q1">il profane la royauté et ses princes.</para>
+  <para style="qa">Guimel</para>
+  <para style="q1">
+    <verse number="3" style="v" />Dans l'ardeur de la colère il supprime</para>
+  <para style="q1">toute la puissance d'Israël ;</para>
+  <para style="q1">il ne maintient pas sa droite<note caller="+" style="f"><char style="fr" closed="false">2.3 </char><char style="fq" closed="false">puissance </char><char style="ft" closed="false">abattue Jr 48.25 ; Ps 75.11. – </char><char style="fq" closed="false">sa droite </char><char style="ft" closed="false">ou </char><char style="fq" closed="false">sa main droite : </char><char style="ft" closed="false">il s'agit de la main favorable de Dieu.</char></note></para>
+  <para style="q1">devant l'ennemi.</para>
+  <para style="q1">Il allume en Jacob comme un brasier</para>
+  <para style="q1">qui dévore à l'entour.</para>
+  <para style="qa">Daleth</para>
+  <para style="q1">
+    <verse number="4" style="v" />Il bande son arc comme un ennemi,</para>
+  <para style="q1">la droite en position</para>
+  <para style="q1">comme un adversaire,</para>
+  <para style="q1">et il tue tous ceux qui charmaient les yeux.</para>
+  <para style="q1">Sur la tente de la Belle Sion</para>
+  <para style="q1">il déverse comme un feu sa fureur<note caller="+" style="f"><char style="fr" closed="false">2.4 </char><char style="ft" closed="false">Dieu </char><char style="fq" closed="false">comme un ennemi </char><char style="ft" closed="false">pour son peuple Jr 21.5-6. – </char><char style="fq" closed="false">la fureur </char><char style="ft" closed="false">de Dieu Es 42.25.</char></note>.</para>
+  <para style="qa">Hé</para>
+  <para style="q1">
+    <verse number="5" style="v" />Le Seigneur se comporte comme un ennemi ;</para>
+  <para style="q1">il engloutit Israël ;</para>
+  <para style="q1">il engloutit tous ses donjons ;</para>
+  <para style="q1">il ruine ses fortifications.</para>
+  <para style="q1">Il multiplie pour la Belle Judée</para>
+  <para style="q1">plainte et complainte<note caller="+" style="f"><char style="fr" closed="false">2.5 </char><char style="fq" closed="false">plainte et complainte </char><char style="ft" closed="false">Es 29.2.</char></note>.</para>
+  <para style="qa">Waw</para>
+  <para style="q1">
+    <verse number="6" style="v" />Il dévaste et le Jardin, et sa Cabane ;</para>
+  <para style="q1">il ravage son lieu de Rendez-vous.</para>
+  <para style="q1">Le <char style="nd">SEIGNEUR</char> fait oublier dans Sion</para>
+  <para style="q1">Rendez-vous et Sabbat ;</para>
+  <para style="q1">il réprouve, dans sa fulminante colère<note caller="+" style="f"><char style="fr" closed="false">2.6 </char><char style="fq" closed="false">le Jardin : </char><char style="ft" closed="false">désignation poétique de la Palestine (voir Nb 24.6 ; Jl 2.3). – </char><char style="fq" closed="false">sa Cabane, </char><char style="ft" closed="false">c'est-à-dire Jérusalem (voir Es 1.8 ; Am 9.11). – </char><char style="fq" closed="false">le lieu de Rendez-vous : </char><char style="ft" closed="false">le temple (voir 1.4+ et la note). – </char><char style="fq" closed="false">temple ravagé </char><char style="ft" closed="false">Jr 52.13 ; 2 Ch 36.19. – </char><char style="fq" closed="false">colère </char><char style="ft" closed="false">de Dieu So 3.8.</char></note>,</para>
+  <para style="q1">roi et prêtre.</para>
+  <para style="qa">Zaïn</para>
+  <para style="q1">
+    <verse number="7" style="v" />Le Seigneur rejette son autel ;</para>
+  <para style="q1">il exècre son sanctuaire<note caller="+" style="f"><char style="fr" closed="false">2.7 </char><char style="ft" closed="false">Ez 24.21 ; Ps 89.40.</char></note> ;</para>
+  <para style="q1">il livre aux mains de l'ennemi</para>
+  <para style="q1">les remparts des donjons de la Ville.</para>
+  <para style="q1">On donne de la voix dans la Maison du <char style="nd">SEIGNEUR</char></para>
+  <para style="q1">comme au jour du Rendez-vous.</para>
+  <para style="qa">Heth</para>
+  <para style="q1">
+    <verse number="8" style="v" />Le <char style="nd">SEIGNEUR</char> médite de ravager</para>
+  <para style="q1">le rempart de la Belle Sion ;</para>
+  <para style="q1">il va niveler<note caller="+" style="f"><char style="fr" closed="false">2.8 </char><char style="fq" closed="false">ravages </char><char style="ft" closed="false">Jr 5.10. – </char><char style="fq" closed="false">nivellement </char><char style="ft" closed="false">(au cordeau) 2 R 21.13 ; Es 34.11.</char></note> ;</para>
+  <para style="q1">il ne ramène pas sa main avant d'avoir englouti.</para>
+  <para style="q1">Il endeuille retranchement et rempart :</para>
+  <para style="q1">ensemble ils se délabrent.</para>
+  <para style="qa">Teth</para>
+  <para style="q1">
+    <verse number="9" style="v" />Les portes de Sion s'enfoncent dans la terre ;</para>
+  <para style="q1">il détruit et brise ses verrous.</para>
+  <para style="q1">Son roi et ses princes sont parmi les nations ;</para>
+  <para style="q1">il n'y a plus de Loi ;</para>
+  <para style="q1">même ses prophètes<note caller="+" style="f"><char style="fr" closed="false">2.9 </char><char style="fq" closed="false">roi et princes parmi les nations </char><char style="ft" closed="false">(c'est-à-dire en exil) Dt 28.36 ; 2 R 25.7. – </char><char style="fq" closed="false">il n'y a plus de Loi </char><char style="ft" closed="false">ou </char><char style="fq" closed="false">il n'y a plus d'oracle </char><char style="ft" closed="false">(prononcé par le prêtre de la part de Dieu). Voir Dt 4.5-8. – </char><char style="fq" closed="false">plus de prophètes </char><char style="ft" closed="false">Ps 74.9. – </char><char style="fq" closed="false">plus de visions </char><char style="ft" closed="false">Ez 7.26.</char></note> ne trouvent pas</para>
+  <para style="q1">de vision venant du <char style="nd">SEIGNEUR</char>.</para>
+  <para style="qa">Yod</para>
+  <para style="q1">
+    <verse number="10" style="v" />Assis à terre, silencieux,</para>
+  <para style="q1">les anciens de la Belle Sion</para>
+  <para style="q1">se mettent de la poussière sur la tête ;</para>
+  <para style="q1">ils se sanglent dans des sacs<note caller="+" style="f"><char style="fr" closed="false">2.10 </char><char style="fq" closed="false">se mettre de la poussière sur la tête : </char><char style="ft" closed="false">geste exprimant une grande tristesse (voir aussi au glossaire DÉCHIRER SES VÊTEMENTS) ; Jr 6.26.</char></note>.</para>
+  <para style="q1">Elles laissent choir leur tête jusqu'à terre,</para>
+  <para style="q1">les jeunes filles de Jérusalem.</para>
+  <para style="qa">Kaf</para>
+  <para style="q1">
+    <verse number="11" style="v" />Mes yeux sont consumés de larmes ;</para>
+  <para style="q1">mon ventre en est remué ;</para>
+  <para style="q1">je suis vidé de ma force, elle est par terre,</para>
+  <para style="q1">car mon peuple, cette belle, est brisé<note caller="+" style="f"><char style="fr" closed="false">2.11 </char><char style="fq" closed="false">belle : </char><char style="ft" closed="false">voir 1.6 et la note. – </char><char style="fq" closed="false">peuple brisé </char><char style="ft" closed="false">Jr 8.21-22.</char></note></para>
+  <para style="q1">quand défaillent bambin et nourrisson</para>
+  <para style="q1">sur les places de la Cité.</para>
+  <para style="qa">Lamed</para>
+  <para style="q1">
+    <verse number="12" style="v" />A leurs mères ils disent :</para>
+  <para style="q1">« Où sont le blé et le vin<note caller="+" style="f"><char style="fr" closed="false">2.12 </char><char style="ft" closed="false">Voir Dt 7.13 ; Jl 1.10 ; 2.19.</char></note> ? »</para>
+  <para style="q1">quand ils défaillent comme des blessés</para>
+  <para style="q1">sur les places de la Ville,</para>
+  <para style="q1">quand leur vie s'échappe</para>
+  <para style="q1">au giron de leurs mères.</para>
+  <para style="qa">Mem</para>
+  <para style="q1">
+    <verse number="13" style="v" />Quel témoignage te citer ? Que comparerai-je à toi,</para>
+  <para style="q1">Belle Jérusalem ?</para>
+  <para style="q1">Qu'égalerai-je à toi afin de te consoler,</para>
+  <para style="q1">jeune fille, Belle Sion ?</para>
+  <para style="q1">Car grand comme la mer est ton brisement.</para>
+  <para style="q1">Qui te guérira<note caller="+" style="f"><char style="fr" closed="false">2.13 </char><char style="fq" closed="false">jeune fille, Belle Sion </char><char style="ft" closed="false">1.6 et la note ; 1.15+. – </char><char style="fq" closed="false">pour te consoler ? </char><char style="ft" closed="false">Es 51.19. – </char><char style="fq" closed="false">Qui te guérira ? </char><char style="ft" closed="false">Jr 30.12.</char></note> ?</para>
+  <para style="qa">Noun</para>
+  <para style="q1">
+    <verse number="14" style="v" />Tes prophètes ont des visions pour toi :</para>
+  <para style="q1">du vide et de l'insipide<note caller="+" style="f"><char style="fr" closed="false">2.14 </char><char style="ft" closed="false">Autre traduction </char><char style="fq" closed="false">du badigeon </char><char style="ft" closed="false">(voir Ez 13.10-15), c'est-à-dire quelque chose qui n'est là que pour l'apparence. – </char><char style="fq" closed="false">visions </char><char style="ft" closed="false">prophétiques sans valeur Jr 23.9-40 ; 28 ; 29.8-9 ; Ez 12.24 ; 13.6-23 ; 21.34 ; 22.28.</char></note> ;</para>
+  <para style="q1">ils ne dévoilent pas ta perversité,</para>
+  <para style="q1">ce qui retournerait ta situation.</para>
+  <para style="q1">Ils ont des visions pour toi :</para>
+  <para style="q1">proclamations de vide et de séduction.</para>
+  <para style="qa">Samek</para>
+  <para style="q1">
+    <verse number="15" style="v" />Ils applaudissent à tes dépens,</para>
+  <para style="q1">tous les passants du chemin ;</para>
+  <para style="q1">ils sifflent et hochent la tête</para>
+  <para style="q1">aux dépens de la Belle Jérusalem :</para>
+  <para style="q1">« Est-ce la Ville qu'on devrait dire</para>
+  <para style="q1">beauté parfaite, réjouissance pour toute la terre<note caller="+" style="f"><char style="fr" closed="false">2.15 </char><char style="fq" closed="false">siffler, hocher la tête : </char><char style="ft" closed="false">signes d'un grand étonnement, réel ou simulé (Jr 18.16), d'où ici, de moquerie ; voir Ps 22.8+. – </char><char style="fq" closed="false">beauté parfaite </char><char style="ft" closed="false">Ez 16.14 ; Ps 50.2. – Jérusalem </char><char style="fq" closed="false">sujet de joie pour toute la terre </char><char style="ft" closed="false">Es 60.15 ; Ps 48.3.</char></note> ? »</para>
+  <para style="qa">Pé</para>
+  <para style="q1">
+    <verse number="16" style="v" />Ils ouvrent la bouche à tes dépens,</para>
+  <para style="q1">tous tes ennemis ;</para>
+  <para style="q1">ils sifflent et grincent des dents ;</para>
+  <para style="q1">ils disent : « Nous engloutissons.</para>
+  <para style="q1">Enfin ! Le voici, le jour que nous attendions :</para>
+  <para style="q1">nous le trouvons, nous le voyons ! »</para>
+  <para style="qa">Aïn</para>
+  <para style="q1">
+    <verse number="17" style="v" />Le <char style="nd">SEIGNEUR</char> fait ce qu'il a projeté ;</para>
+  <para style="q1">il accomplit sa parole</para>
+  <para style="q1">qu'il a mandée depuis les jours de l'ancien temps<note caller="+" style="f"><char style="fr" closed="false">2.17 </char><char style="ft" closed="false">Dt 28.15.</char></note> ;</para>
+  <para style="q1">il démolit sans pitié.</para>
+  <para style="q1">Il fait exulter l'ennemi à tes dépens ;</para>
+  <para style="q1">il rehausse la puissance de tes adversaires.</para>
+  <para style="qa">Çadé</para>
+  <para style="q1">
+    <verse number="18" style="v" />Leur cœur<note caller="+" style="f"><char style="fr" closed="false">2.18 </char><char style="ft" closed="false">Le </char><char style="fq" closed="false">cœur </char><char style="ft" closed="false">des habitants de Jérusalem.</char></note> crie vers le Seigneur.</para>
+  <para style="q1">Rempart de la Belle Sion,</para>
+  <para style="q1">laisse couler tes larmes comme un torrent</para>
+  <para style="q1">jour et nuit ;</para>
+  <para style="q1">ne te donne pas de répit ;</para>
+  <para style="q1">que la pupille de ton œil ne tarisse pas.</para>
+  <para style="qa">Qof</para>
+  <para style="q1">
+    <verse number="19" style="v" />Lève-toi ; clame, la nuit,</para>
+  <para style="q1">à chaque relève de garde ;</para>
+  <para style="q1">répands ton cœur comme de l'eau</para>
+  <para style="q1">devant la face du Seigneur.</para>
+  <para style="q1">Elève vers lui tes mains</para>
+  <para style="q1">pour la vie de tes bambins</para>
+  <para style="q1">– défaillant de faim</para>
+  <para style="q1">à tous les coins de rues<note caller="+" style="f"><char style="fr" closed="false">2.19 </char><char style="fq" closed="false">élever les mains (vers Dieu) : </char><char style="ft" closed="false">geste de la prière ; 3.41 ; Ps 28.2+ ; 44.21 ; 141.2. – </char><char style="fq" closed="false">à tous les coins de rue </char><char style="ft" closed="false">Lm 4.1 ; Es 51.20.</char></note>.</para>
+  <para style="qa">Resh</para>
+  <para style="q1">
+    <verse number="20" style="v" />Vois <char style="nd">SEIGNEUR</char>, et regarde</para>
+  <para style="q1">qui tu traites ainsi.</para>
+  <para style="q1">Si des femmes mangent leur fruit,</para>
+  <para style="q1">des bambins bien formés<note caller="+" style="f"><char style="fr" closed="false">2.20 </char><char style="fq" closed="false">Vois Seigneur… </char><char style="ft" closed="false">1.9+. – Femmes réduites à manger leurs enfants 4.10 ; Lv 26.29 ; Dt 28.53-57 ; 2 R 6.28-29 ; Es 49.26 ; Jr 19.9 ; Ez 5.10 ; <char style="bk">Ba</char> 2.3.</char></note> !…</para>
+  <para style="q1">Si prêtre et prophète sont tués</para>
+  <para style="q1">dans le sanctuaire du Seigneur !…</para>
+  <para style="qa">Shîn</para>
+  <para style="q1">
+    <verse number="21" style="v" />Par terre dans les rues sont couchés</para>
+  <para style="q1">jeunes et vieux ;</para>
+  <para style="q1">mes jeunes filles et mes jeunes gens</para>
+  <para style="q1">tombent par l'épée ;</para>
+  <para style="q1">tu massacres au jour de ta colère ;</para>
+  <para style="q1">tu égorges sans pitié.</para>
+  <para style="qa">Taw</para>
+  <para style="q1">
+    <verse number="22" style="v" />Tu vas convoquer, comme au jour du Rendez-vous,</para>
+  <para style="q1">les terreurs qui m'entourent ;</para>
+  <para style="q1">et il n'existe, au jour de la colère du <char style="nd">SEIGNEUR</char>,</para>
+  <para style="q1">ni rescapé ni survivant.</para>
+  <para style="q1">Ceux que je forme et que je développe<note caller="+" style="f"><char style="fr" closed="false">2.22 </char><char style="fq" closed="false">Rendez-vous : </char><char style="ft" closed="false">voir 1.4+ et la note. – </char><char style="fq" closed="false">terreurs tout autour </char><char style="ft" closed="false">Jr 6.25 ; 20.3,10 ; Ps 31.14. – </char><char style="fq" closed="false">Ceux que je forme et que je développe, </char><char style="ft" closed="false">c'est-à-dire </char><char style="fq" closed="false">mes enfants.</char></note>,</para>
+  <para style="q1">mon ennemi les achève.</para>
+  <chapter number="3" style="c" />
+  <para style="s1">L'homme de douleurs</para>
+  <para style="qa">Alef</para>
+  <para style="q1">
+    <verse number="1" style="v" />Je suis l'homme qui voit l'humiliation</para>
+  <para style="q1">sous son bâton<note caller="+" style="f"><char style="fr" closed="false">3.1 </char><char style="fq" closed="false">(Alef) : </char><char style="ft" closed="false">voir Ps 25.1 et la note. – </char><char style="fq" closed="false">Je suis : </char><char style="ft" closed="false">on ne sait si celui qui s'exprime ici est l'auteur lui-même ou le peuple personnifié sous les traits d'un homme dans le malheur. – </char><char style="fq" closed="false">son bâton : </char><char style="ft" closed="false">le bâton de Dieu.</char></note> déchaîné ;</para>
+  <para style="q1">
+    <verse number="2" style="v" />c'est moi qu'il emmène et fait marcher</para>
+  <para style="q1">dans la ténèbre et non dans la lumière<note caller="+" style="f"><char style="fr" closed="false">3.2 </char><char style="ft" closed="false">Ténèbres, lumière Gn 1.3-5 ; Es 9.1 ; Am 5.18 ; voir Es 45.7 ; Jn 8.12.</char></note> ;</para>
+  <para style="q1">
+    <verse number="3" style="v" />oui, contre moi<note caller="+" style="f"><char style="fr" closed="false">3.3 </char><char style="ft" closed="false">Autre traduction </char><char style="fq" closed="false">contre moi seul.</char></note> il recommence à tourner</para>
+  <para style="q1">son poing toute la journée.</para>
+  <para style="qa">Beth</para>
+  <para style="q1">
+    <verse number="4" style="v" />Il ronge ma chair et ma peau,</para>
+  <para style="q1">il brise mes os<note caller="+" style="f"><char style="fr" closed="false">3.4 </char><char style="fq" closed="false">Il ronge ma chair et ma peau </char><char style="ft" closed="false">Jb 30.30. – </char><char style="fq" closed="false">mes os </char><char style="ft" closed="false">Lm 1.13+.</char></note> ;</para>
+  <para style="q1">
+    <verse number="5" style="v" />il amoncelle contre moi et il met tout autour</para>
+  <para style="q1">poison et difficulté ;</para>
+  <para style="q1">
+    <verse number="6" style="v" />dans les ténèbres il me fait habiter</para>
+  <para style="q1">comme les morts de la nuit des temps.</para>
+  <para style="qa">Guimel</para>
+  <para style="q1">
+    <verse number="7" style="v" />Il m'emmure pour que je ne sorte pas ;</para>
+  <para style="q1">il alourdit ma chaîne.</para>
+  <para style="q1">
+    <verse number="8" style="v" />J'ai beau crier et appeler au secours,</para>
+  <para style="q1">il étouffe ma prière.</para>
+  <para style="q1">
+    <verse number="9" style="v" />Il mure mes chemins avec des pierres de taille ;</para>
+  <para style="q1">il brouille mes sentiers.</para>
+  <para style="qa">Daleth</para>
+  <para style="q1">
+    <verse number="10" style="v" />Il est pour moi un ours à l'affût,</para>
+  <para style="q1">un lion<note caller="+" style="f"><char style="fr" closed="false">3.10 </char><char style="fq" closed="false">ours, lion </char><char style="ft" closed="false">Os 13.7-8 ; voir Jb 10.16.</char></note> en embuscade ;</para>
+  <para style="q1">
+    <verse number="11" style="v" />il détourne mes chemins ; il me laisse en friche,</para>
+  <para style="q1">ruiné ;</para>
+  <para style="q1">
+    <verse number="12" style="v" />il bande son arc et il me dresse</para>
+  <para style="q1">comme cible pour la flèche<note caller="+" style="f"><char style="fr" closed="false">3.12 </char><char style="ft" closed="false">Jb 16.12-13.</char></note>.</para>
+  <para style="qa">Hé</para>
+  <para style="q1">
+    <verse number="13" style="v" />Il fait pénétrer dans mes reins</para>
+  <para style="q1">le contenu de son carquois.</para>
+  <para style="q1">
+    <verse number="14" style="v" />Me voilà la risée de tout mon peuple<note caller="+" style="f"><char style="fr" closed="false">3.14 </char><char style="fq" closed="false">la risée </char><char style="ft" closed="false">Dt 28.37 ; Jr 20.7 ; Ps 69.12-13 ; Jb 30.9. – </char><char style="fq" closed="false">de tout mon peuple : </char><char style="ft" closed="false">autre texte (certains manuscrits hébreux et ancienne version syriaque) </char><char style="fq" closed="false">de tous les peuples.</char></note>,</para>
+  <para style="q1">sa perpétuelle rengaine ;</para>
+  <para style="q1">
+    <verse number="15" style="v" />il me sature d'amertumes,</para>
+  <para style="q1">il me soûle d'absinthe<note caller="+" style="f"><char style="fr" closed="false">3.15 </char><char style="ft" closed="false">Jr 23.15 ; Ps 69.22 ; voir Mt 27.34.</char></note>.</para>
+  <para style="qa">Waw</para>
+  <para style="q1">
+    <verse number="16" style="v" />Il me fait concasser du gravier avec les dents ;</para>
+  <para style="q1">il m'enfouit dans la cendre ;</para>
+  <para style="q1">
+    <verse number="17" style="v" />tu me rejettes loin de la paix<note caller="+" style="f"><char style="fr" closed="false">3.17 </char><char style="fq" closed="false">tu me rejettes : </char><char style="ft" closed="false">l'auteur s'adresse ici directement à Dieu. – </char><char style="fq" closed="false">loin de la paix </char><char style="ft" closed="false">Jr 16.5.</char></note> ;</para>
+  <para style="q1">j'oublie le bonheur ;</para>
+  <para style="q1">
+    <verse number="18" style="v" />et je dis : C'en est fini de ma continuité,</para>
+  <para style="q1">de mon espoir<note caller="+" style="f"><char style="fr" closed="false">3.18 </char><char style="fq" closed="false">espoir fini </char><char style="ft" closed="false">Jb 17.15.</char></note> qui venait du <char style="nd">SEIGNEUR</char>.</para>
+  <para style="qa">Zaïn</para>
+  <para style="q1">
+    <verse number="19" style="v" />Souviens-toi de mon humiliation et de mon errance :</para>
+  <para style="q1">absinthe et poison !</para>
+  <para style="q1">
+    <verse number="20" style="v" />Je me souviens, je me souviens, et je suis miné</para>
+  <para style="q1">par mon propre cas.</para>
+  <para style="q1">
+    <verse number="21" style="v" />Voici ce que je vais me remettre en mémoire<note caller="+" style="f"><char style="fr" closed="false">3.21 </char><char style="ft" closed="false">Se souvenir… Es 44.21 ; 46.8.</char></note>,</para>
+  <para style="q1">ce pour quoi j'espérerai :</para>
+  <para style="qa">Heth</para>
+  <para style="q1">
+    <verse number="22" style="v" />Les bontés du <char style="nd">SEIGNEUR</char> ! C'est qu'elles ne sont pas finies !</para>
+  <para style="q1">C'est que ses tendresses<note caller="+" style="f"><char style="fr" closed="false">3.22 </char><char style="fq" closed="false">qu'elles ne sont pas finies : </char><char style="ft" closed="false">d'après un manuscrit hébreu et certaines versions anciennes ; texte hébreu traditionnel </char><char style="fq" closed="false">que nous ne sommes pas finis. – tendresse </char><char style="ft" closed="false">de Dieu Ex 34.6-7.</char></note> ne sont pas achevées !</para>
+  <para style="q1">
+    <verse number="23" style="v" />Elles sont neuves tous les matins.</para>
+  <para style="q1">Grande est ta fidélité !</para>
+  <para style="q1">
+    <verse number="24" style="v" />Ma part, c'est le <char style="nd">SEIGNEUR</char>, me dis-je ;</para>
+  <para style="q1">c'est pourquoi j'espérerai en lui<note caller="+" style="f"><char style="fr" closed="false">3.24 </char><char style="fq" closed="false">Ma part, c'est le Seigneur </char><char style="ft" closed="false">Ps 16.5 ; 73.26. – </char><char style="fq" closed="false">j'espérerai en lui </char><char style="ft" closed="false">Mi 7.7.</char></note>.</para>
+  <para style="qa">Teth</para>
+  <para style="q1">
+    <verse number="25" style="v" />Il est bon, le <char style="nd">SEIGNEUR</char>, pour qui l'attend,</para>
+  <para style="q1">pour celui qui le cherche<note caller="+" style="f"><char style="fr" closed="false">3.25 </char><char style="fq" closed="false">attendre le Seigneur </char><char style="ft" closed="false">Es 8.17 ; 25.9 ; Ps 25.3+ ; 40.2 ; 69.7. – </char><char style="fq" closed="false">chercher le Seigneur </char><char style="ft" closed="false">Ps 9.11+.</char></note> ;</para>
+  <para style="q1">
+    <verse number="26" style="v" />il est bon d'espérer en silence</para>
+  <para style="q1">le salut du <char style="nd">SEIGNEUR</char> ;</para>
+  <para style="q1">
+    <verse number="27" style="v" />il est bon pour l'homme de porter</para>
+  <para style="q1">le joug dans sa jeunesse.</para>
+  <para style="qa">Yod</para>
+  <para style="q1">
+    <verse number="28" style="v" />Il doit s'asseoir à l'écart et se taire</para>
+  <para style="q1">quand le <char style="nd">SEIGNEUR</char> le lui impose<note caller="+" style="f"><char style="fr" closed="false">3.28 </char><char style="fq" closed="false">s'asseoir en silence </char><char style="ft" closed="false">2.10. – </char><char style="fq" closed="false">quand le Seigneur l'impose </char><char style="ft" closed="false">Jr 15.17.</char></note> ;</para>
+  <para style="q1">
+    <verse number="29" style="v" />mettre sa bouche dans la poussière</para>
+  <para style="q1">– il y a peut-être de l'espoir<note caller="+" style="f"><char style="fr" closed="false">3.29 </char><char style="ft" closed="false">Voir 2 S 12.15-23.</char></note> ! –</para>
+  <para style="q1">
+    <verse number="30" style="v" />tendre la joue<note caller="+" style="f"><char style="fr" closed="false">3.30 </char><char style="fq" closed="false">tendre la joue </char><char style="ft" closed="false">Es 50.6 ; Mt 5.39.</char></note> à qui le frappe ;</para>
+  <para style="q1">être saturé d'insultes.</para>
+  <para style="qa">Kaf</para>
+  <para style="q1">
+    <verse number="31" style="v" />Car le Seigneur</para>
+  <para style="q1">ne rejettera pas pour toujours<note caller="+" style="f"><char style="fr" closed="false">3.31 </char><char style="fq" closed="false">pas pour toujours </char><char style="ft" closed="false">Jr 3.12.</char></note> ;</para>
+  <para style="q1">
+    <verse number="32" style="v" />car s'il afflige, il est plein de tendresse,</para>
+  <para style="q1">selon sa grande bonté<note caller="+" style="f"><char style="fr" closed="false">3.32 </char><char style="fq" closed="false">s'il afflige, il est plein de tendresse </char><char style="ft" closed="false">Es 54.8-9. – </char><char style="fq" closed="false">sa grande bonté </char><char style="ft" closed="false">Es 63.7.</char></note> ;</para>
+  <para style="q1">
+    <verse number="33" style="v" />car ce n'est pas de bon cœur<note caller="+" style="f"><char style="fr" closed="false">3.33 </char><char style="fq" closed="false">pas de bon cœur </char><char style="ft" closed="false">Ez 33.11.</char></note> qu'il humilie</para>
+  <para style="q1">et qu'il afflige les humains.</para>
+  <para style="qa">Lamed</para>
+  <para style="q1">
+    <verse number="34" style="v" />Quand on piétine</para>
+  <para style="q1">tous les prisonniers d'un pays<note caller="+" style="f"><char style="fr" closed="false">3.34 </char><char style="fq" closed="false">Quand on piétine les prisonniers </char><char style="ft" closed="false">Am 1.6-9. – </char><char style="fq" closed="false">d'un pays : </char><char style="ft" closed="false">autre traduction </char><char style="fq" closed="false">du pays </char><char style="ft" closed="false">(c'est-à-dire de Juda).</char></note>,</para>
+  <para style="q1">
+    <verse number="35" style="v" />quand on fausse le droit<note caller="+" style="f"><char style="fr" closed="false">3.35 </char><char style="ft" closed="false">Am 5.7,10.</char></note> de l'homme</para>
+  <para style="q1">à la face du Très-Haut,</para>
+  <para style="q1">
+    <verse number="36" style="v" />quand on fait du tort à un homme dans son procès,</para>
+  <para style="q1">le Seigneur ne voit pas ?</para>
+  <para style="qa">Mem</para>
+  <para style="q1">
+    <verse number="37" style="v" />Qui est-ce qui parle, et cela existe<note caller="+" style="f"><char style="fr" closed="false">3.37 </char><char style="ft" closed="false">Gn 1 ; Ps 33.9.</char></note> ?</para>
+  <para style="q1">Le Seigneur ne commande pas ?</para>
+  <para style="q1">
+    <verse number="38" style="v" />De la bouche du Très-Haut ne sortent pas</para>
+  <para style="q1">maux et bonheur<note caller="+" style="f"><char style="fr" closed="false">3.38 </char><char style="fq" closed="false">maux et bonheur </char><char style="ft" closed="false">Es 45.7.</char></note> ?</para>
+  <para style="q1">
+    <verse number="39" style="v" />De quoi se plaindrait l'homme vivant<note caller="+" style="f"><char style="fr" closed="false">3.39 </char><char style="ft" closed="false">Nb 11.1 ; Jr 45.5.</char></note>,</para>
+  <para style="q1">debout en dépit de ses fautes ?</para>
+  <para style="qa">Noun</para>
+  <para style="q1">
+    <verse number="40" style="v" />Examinons nos chemins et explorons ;</para>
+  <para style="q1">revenons au <char style="nd">SEIGNEUR</char><note caller="+" style="f"><char style="fr" closed="false">3.40 </char><char style="ft" closed="false">Es 55.7 ; Jr 3.22 ; Os 6.1+.</char></note>.</para>
+  <para style="q1">
+    <verse number="41" style="v" />En même temps que nos mains<note caller="+" style="f"><char style="fr" closed="false">3.41 </char><char style="ft" closed="false">Voir 2.19+ et la note.</char></note>, élevons notre cœur</para>
+  <para style="q1">vers Dieu qui est aux cieux.</para>
+  <para style="q1">
+    <verse number="42" style="v" />Nous, nous sommes révoltés, nous sommes désobéissants<note caller="+" style="f"><char style="fr" closed="false">3.42 </char><char style="ft" closed="false">1.18+ ; Jr 3.25 ; 8.14 ; 14.7.</char></note> ;</para>
+  <para style="q1">toi, tu ne pardonnes pas !</para>
+  <para style="qa">Samek</para>
+  <para style="q1">
+    <verse number="43" style="v" />Tu te retranches dans la colère et tu nous persécutes,</para>
+  <para style="q1">tu massacres sans pitié ;</para>
+  <para style="q1">
+    <verse number="44" style="v" />tu te retranches dans ton nuage</para>
+  <para style="q1">pour que la prière ne passe pas<note caller="+" style="f"><char style="fr" closed="false">3.44 </char><char style="ft" closed="false">v. 8 ; voir Jr 7.16 ; 11.14 ; 14.11.</char></note> ;</para>
+  <para style="q1">
+    <verse number="45" style="v" />tu fais de nous un déchet, un rebut,</para>
+  <para style="q1">au milieu des peuples.</para>
+  <para style="qa">Pé</para>
+  <para style="q1">
+    <verse number="46" style="v" />Ils ouvrent la bouche contre nous,</para>
+  <para style="q1">tous nos ennemis ;</para>
+  <para style="q1">
+    <verse number="47" style="v" />effroi et gouffre, c'est pour nous,</para>
+  <para style="q1">désastre et brisement ;</para>
+  <para style="q1">
+    <verse number="48" style="v" />mes yeux ruissellent</para>
+  <para style="q1">car mon peuple, cette belle<note caller="+" style="f"><char style="fr" closed="false">3.48 </char><char style="fq" closed="false">cette belle : </char><char style="ft" closed="false">voir 1.6 et la note.</char></note>, est brisé.</para>
+  <para style="qa">Aïn</para>
+  <para style="q1">
+    <verse number="49" style="v" />Mes yeux coulent sans tarir</para>
+  <para style="q1">parce qu'il n'y a pas de répit,</para>
+  <para style="q1">
+    <verse number="50" style="v" />jusqu'à ce que des cieux le <char style="nd">SEIGNEUR</char></para>
+  <para style="q1">se penche pour voir<note caller="+" style="f"><char style="fr" closed="false">3.50 </char><char style="ft" closed="false">Es 63.15 ; Ps 14.2 ; 102.20.</char></note> ;</para>
+  <para style="q1">
+    <verse number="51" style="v" />mes yeux me font mal</para>
+  <para style="q1">au spectacle de toutes les filles de ma Ville<note caller="+" style="f"><char style="fr" closed="false">3.51 </char><char style="ft" closed="false">Tournure hébraïque pour désigner </char><char style="fq" closed="false">les villages </char><char style="ft" closed="false">voisins </char><char style="fq" closed="false">qui dépendent de Jérusalem.</char></note>.</para>
+  <para style="qa">Çadé</para>
+  <para style="q1">
+    <verse number="52" style="v" />Ils me chassent, ils me pourchassent comme un oiseau,</para>
+  <para style="q1">ceux qui sont mes ennemis sans motif<note caller="+" style="f"><char style="fr" closed="false">3.52 </char><char style="fq" closed="false">ennemis sans motif </char><char style="ft" closed="false">Ps 35.19 ; 69.5.</char></note> ;</para>
+  <para style="q1">
+    <verse number="53" style="v" />ils anéantissent ma vie dans la fosse<note caller="+" style="f"><char style="fr" closed="false">3.53 </char><char style="fq" closed="false">la fosse </char><char style="ft" closed="false">ou </char><char style="fq" closed="false">la tombe</char><char style="ft" closed="false"> ; voir aussi au glossaire SÉJOUR DES MORTS ; Gn 37.20 ; Jr 38.6.</char></note> ;</para>
+  <para style="q1">ils abattent une pierre sur moi ;</para>
+  <para style="q1">
+    <verse number="54" style="v" />les eaux débordent sur ma tête<note caller="+" style="f"><char style="fr" closed="false">3.54 </char><char style="ft" closed="false">Jon 2.4 ; Ps 42.8 ; 69.2-3.</char></note> ;</para>
+  <para style="q1">je dis : Je suis perdu !</para>
+  <para style="qa">Qof</para>
+  <para style="q1">
+    <verse number="55" style="v" />J'invoque ton nom, <char style="nd">SEIGNEUR</char>,</para>
+  <para style="q1">depuis la fosse infernale<note caller="+" style="f"><char style="fr" closed="false">3.55 </char><char style="ft" closed="false">Ps 130.1-2.</char></note> ;</para>
+  <para style="q1">
+    <verse number="56" style="v" />tu entends ma voix : « Ne bouche pas tes oreilles</para>
+  <para style="q1">à mon halètement et à mon appel au secours ! »</para>
+  <para style="q1">
+    <verse number="57" style="v" />Tu t'approches le jour où je t'invoque ;</para>
+  <para style="q1">tu dis : « N'aie pas peur<note caller="+" style="f"><char style="fr" closed="false">3.57 </char><char style="ft" closed="false">Es 41.10-14 ; Jr 1.8 ; 30.10.</char></note> ! »</para>
+  <para style="qa">Resh</para>
+  <para style="q1">
+    <verse number="58" style="v" />Tu plaides, Seigneur, un procès dont je suis l'enjeu ;</para>
+  <para style="q1">tu rachètes ma vie ;</para>
+  <para style="q1">
+    <verse number="59" style="v" />tu vois, <char style="nd">SEIGNEUR</char><note caller="+" style="f"><char style="fr" closed="false">3.59 </char><char style="fq" closed="false">tu vois, Seigneur… </char><char style="ft" closed="false">1.9+.</char></note>, comme on me fait tort ;</para>
+  <para style="q1">fais droit à mon droit !</para>
+  <para style="q1">
+    <verse number="60" style="v" />Tu vois toute leur vengeance,</para>
+  <para style="q1">toutes leurs machinations<note caller="+" style="f"><char style="fr" closed="false">3.60 </char><char style="ft" closed="false">Jr 11.19 ; 18.23.</char></note> envers moi.</para>
+  <para style="qa">Shïn</para>
+  <para style="q1">
+    <verse number="61" style="v" />Tu entends leur insulte, <char style="nd">SEIGNEUR</char>,</para>
+  <para style="q1">toutes leurs machinations contre moi ;</para>
+  <para style="q1">
+    <verse number="62" style="v" />les lèvres de mes agresseurs et leur chuchotement</para>
+  <para style="q1">sont contre moi à longueur de jour ;</para>
+  <para style="q1">
+    <verse number="63" style="v" />qu'ils soient assis, qu'ils soient debout, regarde-les :</para>
+  <para style="q1">c'est moi leur rengaine<note caller="+" style="f"><char style="fr" closed="false">3.63 </char><char style="ft" closed="false">Ou </char><char style="fq" closed="false">c'est de moi qu'ils se moquent dans leurs chansons</char><char style="ft" closed="false"> ; v. 14+.</char></note>.</para>
+  <para style="qa">Taw</para>
+  <para style="q1">
+    <verse number="64" style="v" />Tu leur rendras la pareille<note caller="+" style="f"><char style="fr" closed="false">3.64 </char><char style="ft" closed="false">Jr 51.56.</char></note>, <char style="nd">SEIGNEUR</char>,</para>
+  <para style="q1">selon leurs actions ;</para>
+  <para style="q1">
+    <verse number="65" style="v" />tu vas les hébéter :</para>
+  <para style="q1">sur eux sera ta malédiction !</para>
+  <para style="q1">
+    <verse number="66" style="v" />Plein de colère, tu les persécuteras et les extirperas</para>
+  <para style="q1">de dessous les cieux du <char style="nd">SEIGNEUR</char>.</para>
+  <chapter number="4" style="c" />
+  <para style="s1">Misère de la politique</para>
+  <para style="qa">Alef</para>
+  <para style="q1">
+    <note caller="+" style="f">
+      <char style="fr" closed="false">4.1 </char>
+      <char style="fq" closed="false">(Alef) : </char>
+      <char style="ft" closed="false">voir Ps 25.1 et la note.</char>
+    </note> <verse number="1" style="v" />Comment !</para>
+  <para style="q1">L'or peut-il se ternir,</para>
+  <para style="q1">le bon lingot s'altérer,</para>
+  <para style="q1">les pierres saintes s'éparpiller</para>
+  <para style="q1">à tous les coins de rues ?</para>
+  <para style="qa">Beth</para>
+  <para style="q1">
+    <verse number="2" style="v" />Les fils de Sion<note caller="+" style="f"><char style="fr" closed="false">4.2 </char><char style="ft" closed="false">Ou </char><char style="fq" closed="false">Ceux qui ont leur domicile à Sion.</char></note>, précieux,</para>
+  <para style="q1">estimés à valeur d'or fin,</para>
+  <para style="q1">comment ! ils sont comptés pour des cruches de terre,</para>
+  <para style="q1">œuvre des mains du potier !</para>
+  <para style="qa">Guimel</para>
+  <para style="q1">
+    <verse number="3" style="v" />Même chez les chacals on donne à téter,</para>
+  <para style="q1">on nourrit ses petits ;</para>
+  <para style="q1">cette belle qu'est mon peuple devient aussi cruelle</para>
+  <para style="q1">que les autruches<note caller="+" style="f"><char style="fr" closed="false">4.3 </char><char style="fq" closed="false">chacals </char><char style="ft" closed="false">Es 43.20. – </char><char style="fq" closed="false">cette belle : </char><char style="ft" closed="false">voir Lm 1.6 et la note. – </char><char style="fq" closed="false">cruelle comme l'autruche </char><char style="ft" closed="false">Jb 39.13-18.</char></note> de la steppe.</para>
+  <para style="qa">Daleth</para>
+  <para style="q1">
+    <verse number="4" style="v" />De soif<note caller="+" style="f"><char style="fr" closed="false">4.4 </char><char style="fq" closed="false">soif </char><char style="ft" closed="false">Es 41.17.</char></note>, la langue du nourrisson</para>
+  <para style="q1">colle à son palais ;</para>
+  <para style="q1">les bambins réclament du pain ;</para>
+  <para style="q1">personne ne leur en présente.</para>
+  <para style="qa">Hé</para>
+  <para style="q1">
+    <verse number="5" style="v" />Les mangeurs de gourmandises</para>
+  <para style="q1">sont ruinés, à la rue ;</para>
+  <para style="q1">les personnages élevés dans la pourpre</para>
+  <para style="q1">étreignent le tas de détritus<note caller="+" style="f"><char style="fr" closed="false">4.5 </char><char style="fq" closed="false">dans la pourpre </char><char style="ft" closed="false">ou </char><char style="fq" closed="false">dans des vêtements de luxe. – le tas de détritus </char><char style="ft" closed="false">c'est-à-dire la décharge publique ; 1 S 2.8 ; Ps 113.7 ; Jb 2.8 ; Ne 2.13.</char></note>.</para>
+  <para style="qa">Waw</para>
+  <para style="q1">
+    <verse number="6" style="v" />Et la perversité de cette belle qu'est mon peuple</para>
+  <para style="q1">est plus grande que la faute de Sodome,</para>
+  <para style="q1">qui fut chavirée en un instant<note caller="+" style="f"><char style="fr" closed="false">4.6 </char><char style="fq" closed="false">comme Sodome </char><char style="ft" closed="false">Es 1.10 ; Jr 23.14. – </char><char style="fq" closed="false">la faute de Sodome </char><char style="ft" closed="false">Ez 16.46-52 ; Mt 10.15 ; 11.23-24. – </char><char style="fq" closed="false">chavirée en un instant </char><char style="ft" closed="false">Gn 19.23-25.</char></note></para>
+  <para style="q1">sans que des mains s'y soient démenées.</para>
+  <para style="qa">Zaïn</para>
+  <para style="q1">
+    <verse number="7" style="v" />Ses consacrés<note caller="+" style="f"><char style="fr" closed="false">4.7 </char><char style="ft" closed="false">Le terme hébreu correspondant désigne habituellement des </char><char style="fq" closed="false">hommes qui ont consacré leur vie à Dieu </char><char style="ft" closed="false">par un vœu (voir Nb 6.1-21 ; Jg 13.5) ; mais il semble pouvoir désigner aussi des </char><char style="fq" closed="false">princes </char><char style="ft" closed="false">(Gn 49.26 ; Dt 33.16). Autre traduction (conjecturale) proposée par certains </char><char style="fq" closed="false">ses jeunes gens.</char></note> plus purs que la neige,</para>
+  <para style="q1">plus blancs que le lait,</para>
+  <para style="q1">plus roses de corps que le corail,</para>
+  <para style="q1">aux veines de saphir,</para>
+  <para style="qa">Heth</para>
+  <para style="q1">
+    <verse number="8" style="v" />leur aspect est plus ténébreux que la suie :</para>
+  <para style="q1">on ne les reconnaît pas dans les rues ;</para>
+  <para style="q1">leur peau se ratatine sur leurs os :</para>
+  <para style="q1">elle est sèche comme du bois.</para>
+  <para style="qa">Teth</para>
+  <para style="q1">
+    <verse number="9" style="v" />Plus heureuses sont les victimes de l'épée</para>
+  <para style="q1">que les victimes de la faim</para>
+  <para style="q1">qui elles, fondront, diaphanes,</para>
+  <para style="q1">faute de produits des champs.</para>
+  <para style="qa">Yod</para>
+  <para style="q1">
+    <verse number="10" style="v" />De leurs mains, des femmes faites pour la tendresse</para>
+  <para style="q1">font bouillir leurs enfants ;</para>
+  <para style="q1">ils deviennent leur aliment,</para>
+  <para style="q1">lorsque mon peuple, cette belle<note caller="+" style="f"><char style="fr" closed="false">4.10 </char><char style="ft" closed="false">Manger leurs enfants 2.20+. – </char><char style="fq" closed="false">cette belle : </char><char style="ft" closed="false">voir 1.6 et la note.</char></note>, est brisé.</para>
+  <para style="qa">Kaf</para>
+  <para style="q1">
+    <verse number="11" style="v" />Le <char style="nd">SEIGNEUR</char> assouvit sa fureur,</para>
+  <para style="q1">il déverse son ardente colère<note caller="+" style="f"><char style="fr" closed="false">4.11 </char><char style="fq" closed="false">la colère du Seigneur </char><char style="ft" closed="false">1.12+.</char></note> ;</para>
+  <para style="q1">dans Sion il allume un feu</para>
+  <para style="q1">qui dévore ses fondations.</para>
+  <para style="qa">Lamed</para>
+  <para style="q1">
+    <verse number="12" style="v" />Ils ne le croyaient pas<note caller="+" style="f"><char style="fr" closed="false">4.12 </char><char style="ft" closed="false">Es 52.15–53.1.</char></note>, ni les rois de la terre,</para>
+  <para style="q1">ni aucun habitant du monde,</para>
+  <para style="q1">que l'adversaire et l'ennemi entreraient</para>
+  <para style="q1">dans l'enceinte de Jérusalem.</para>
+  <para style="qa">Mem</para>
+  <para style="q1">
+    <verse number="13" style="v" />C'est à cause des fautes de ses prophètes,</para>
+  <para style="q1">des perversités de ses prêtres<note caller="+" style="f"><char style="fr" closed="false">4.13 </char><char style="ft" closed="false">Jr 5.31 ; 6.13.</char></note>,</para>
+  <para style="q1">qui ont répandu au milieu d'elle</para>
+  <para style="q1">le sang des justes !</para>
+  <para style="qa">Noun</para>
+  <para style="q1">
+    <verse number="14" style="v" />Ils vagabondent, aveugles, dans les rues ;</para>
+  <para style="q1">ils sont souillés de sang<note caller="+" style="f"><char style="fr" closed="false">4.14 </char><char style="ft" closed="false">Nb 35.33 ; Es 59.3.</char></note>,</para>
+  <para style="q1">si bien qu'il n'est pas permis de toucher à leurs vêtements.</para>
+  <para style="qa">Samek</para>
+  <para style="q1">
+    <verse number="15" style="v" />« Gare ! un impur<note caller="+" style="f"><char style="fr" closed="false">4.15 </char><char style="ft" closed="false">Voir Lv 13.45-46 ; Es 52.11.</char></note> ! » crie-t-on pour eux.</para>
+  <para style="q1">« Gare ! Gare ! ne touchez pas ! »</para>
+  <para style="q1">Ils fuient, ils vagabondent, mais on dit chez les nations :</para>
+  <para style="q1">« Ils ne peuvent plus être nos hôtes. »</para>
+  <para style="qa">Pé</para>
+  <para style="q1">
+    <verse number="16" style="v" />L'apparition du <char style="nd">SEIGNEUR</char> les disperse ;</para>
+  <para style="q1">il ne veut plus les voir !</para>
+  <para style="q1">On ne respecte pas les prêtres,</para>
+  <para style="q1">on n'a pas d'égards pour les anciens<note caller="+" style="f"><char style="fr" closed="false">4.16 </char><char style="fq" closed="false">anciens non respectés </char><char style="ft" closed="false">5.12.</char></note>.</para>
+  <para style="qa">Aïn</para>
+  <para style="q1">
+    <verse number="17" style="v" />Nous, nos yeux se consument encore</para>
+  <para style="q1">dans l'attente d'une aide illusoire ;</para>
+  <para style="q1">à nos postes de guet nous guettons</para>
+  <para style="q1">la venue d'une nation qui ne peut pas sauver<note caller="+" style="f"><char style="fr" closed="false">4.17 </char><char style="ft" closed="false">Allusion au secours que le royaume de Juda attendait de l'Egypte (voir Jr 37.5-7) ; Ez 29.6-16.</char></note>.</para>
+  <para style="qa">Çadé</para>
+  <para style="q1">
+    <verse number="18" style="v" />On nous fait la chasse à la trace :</para>
+  <para style="q1">impossible d'aller sur nos places.</para>
+  <para style="q1">Notre fin est proche<note caller="+" style="f"><char style="fr" closed="false">4.18 </char><char style="ft" closed="false">Ez 7.1-14.</char></note> ; nos jours sont au complet ;</para>
+  <para style="q1">oui, notre fin arrive.</para>
+  <para style="qa">Qof</para>
+  <para style="q1">
+    <verse number="19" style="v" />Nos persécuteurs sont plus rapides</para>
+  <para style="q1">que les aigles des cieux :</para>
+  <para style="q1">sur les montagnes ils nous harcèlent,</para>
+  <para style="q1">dans la steppe ils sont à l'affût de nous.</para>
+  <para style="qa">Resh</para>
+  <para style="q1">
+    <verse number="20" style="v" />Le souffle de nos narines, le messie du <char style="nd">SEIGNEUR</char>,</para>
+  <para style="q1">est captif dans leurs oubliettes,</para>
+  <para style="q1">lui dont nous disions : « Sous sa protection<note caller="+" style="f"><char style="fr" closed="false">4.20 </char><char style="fq" closed="false">Le souffle de nos narines : </char><char style="ft" closed="false">c'est-à-dire </char><char style="fq" closed="false">ce qui nous fait vivre</char><char style="ft" closed="false"> ; l'image est appliquée au roi de Juda. Les v. 19-20 semblent faire allusion, en effet, à la fuite et à la capture du roi Sédécias (2 R 25.4-7 ; Jr 52.6-11). – </char><char style="fq" closed="false">dans leurs oubliettes </char><char style="ft" closed="false">ou </char><char style="fq" closed="false">dans un cachot </char><char style="ft" closed="false">(babylonien) ; pour le roi prisonnier c'est déjà une sorte de tombe. – Le roi, gage de </char><char style="fq" closed="false">protection </char><char style="ft" closed="false">voir Os 10.3.</char></note>,</para>
+  <para style="q1">au milieu des nations, nous vivrons. »</para>
+  <para style="qa">Shïn</para>
+  <para style="q1">
+    <verse number="21" style="v" />Sois joyeuse et exultante, Belle Edom</para>
+  <para style="q1">qui habites au pays de Ouç !</para>
+  <para style="q1">A toi aussi passera la coupe ;</para>
+  <para style="q1">tu t'enivreras et tu te mettras nue<note caller="+" style="f"><char style="fr" closed="false">4.21 </char><char style="fq" closed="false">Sois joyeuse </char><char style="ft" closed="false">Es 66.10. – </char><char style="fq" closed="false">Belle Edom : </char><char style="ft" closed="false">comme pour Juda en 1.6 et ailleurs, la nation édomite est ici personnifiée ; Am 1.11+. – </char><char style="fq" closed="false">le pays de Ouç : </char><char style="ft" closed="false">voir Jb 1.1 et la note. – </char><char style="fq" closed="false">coupe, enivrée, nue : </char><char style="ft" closed="false">voir Jr 25.15+ ; Ha 2.16+ et les notes.</char></note> !</para>
+  <para style="qa">Taw</para>
+  <para style="q1">
+    <verse number="22" style="v" />C'en est fini de ta perversité, Belle Sion :</para>
+  <para style="q1">il ne te déportera plus ;</para>
+  <para style="q1">il passe en revue ta perversité, Belle Edom<note caller="+" style="f"><char style="fr" closed="false">4.22 </char><char style="fq" closed="false">C'en est fini </char><char style="ft" closed="false">Es 40.2. – </char><char style="fq" closed="false">perversités d'Edom </char><char style="ft" closed="false">lors de la prise de Jérusalem Jl 4.19 ; Ab 11+. – Châtiment d'Edom Jr 49.8 ; Ez 25.14.</char></note> :</para>
+  <para style="q1">il fait un rapport sur tes fautes !</para>
+  <chapter number="5" style="c" />
+  <para style="s1">La grâce de la conversion</para>
+  <para style="q1">
+    <verse number="1" style="v" />Souviens-toi, <char style="nd">SEIGNEUR</char>, de ce qui nous arrive :</para>
+  <para style="q1">regarde et vois<note caller="+" style="f"><char style="fr" closed="false">5.1 </char><char style="fq" closed="false">Souviens-toi… </char><char style="ft" closed="false">Jg 16.28 ; 1 S 1.11 ; 2 R 20.3 ; Ps 89.51 ; 106.4 ; 137.7 ; Lc 23.42. – </char><char style="fq" closed="false">regarde et vois… </char><char style="ft" closed="false">Lm 1.9+ ; Es 63.15.</char></note> comme on nous insulte.</para>
+  <para style="q1">
+    <verse number="2" style="v" />Notre patrimoine est détourné au profit de métèques<note caller="+" style="f"><char style="fr" closed="false">5.2 </char><char style="ft" closed="false">Ab 11 ; voir Es 60.5. – </char><char style="fq" closed="false">Notre patrimoine : </char><char style="ft" closed="false">le pays que nous avons reçu de Dieu. – </char><char style="fq" closed="false">métèques </char><char style="ft" closed="false">ou </char><char style="fq" closed="false">étrangers </char><char style="ft" closed="false">(avec une nuance de mépris).</char></note>,</para>
+  <para style="q1">nos maisons au profit d'inconnus.</para>
+  <para style="q1">
+    <verse number="3" style="v" />Nous voilà orphelins, sans père,</para>
+  <para style="q1">nos mères sont comme veuves<note caller="+" style="f"><char style="fr" closed="false">5.3 </char><char style="fq" closed="false">sans père, </char><char style="ft" closed="false">c'est-à-dire </char><char style="fq" closed="false">sans protecteur : </char><char style="ft" closed="false">le royaume est privé de son roi, et les familles de leur chef. – </char><char style="fq" closed="false">orphelins </char><char style="ft" closed="false">Jn 14.18 </char><char style="fq" closed="false">et veuves </char><char style="ft" closed="false">Ps 68.6.</char></note>.</para>
+  <para style="q1">
+    <verse number="4" style="v" />Notre eau, nous la buvons à prix d'argent<note caller="+" style="f"><char style="fr" closed="false">5.4 </char><char style="ft" closed="false">Voir Es 55.1.</char></note> ;</para>
+  <para style="q1">nos fagots rentrent contre paiement.</para>
+  <para style="q1">
+    <verse number="5" style="v" />Ils sont sur notre dos ; nous sommes persécutés ;</para>
+  <para style="q1">nous sommes exténués ; pas de repos pour nous.</para>
+  <para style="q1">
+    <verse number="6" style="v" />A l'Egypte nous tendons la main,</para>
+  <para style="q1">à l'Assyrie<note caller="+" style="f"><char style="fr" closed="false">5.6 </char><char style="ft" closed="false">4.17 ; Jr 2.18 ; Os 12.2.</char></note>, pour nous rassasier de pain.</para>
+  <para style="q1">
+    <verse number="7" style="v" />Nos pères ont failli : ils ne sont plus ;</para>
+  <para style="q1">c'est nous qui sommes chargés de leurs perversités<note caller="+" style="f"><char style="fr" closed="false">5.7 </char><char style="fq" closed="false">Nos pères </char><char style="ft" closed="false">ou </char><char style="fq" closed="false">les générations qui nous ont précédés. – </char><char style="ft" closed="false">Défaillance des pères Jr 2.5 ; 7.25-26. – Des enfants qui paient les fautes des parents Ex 20.5 ; Jr 16.10-13 ; 31.29-30 ; Ez 18.2 ; voir Es 53.6.</char></note>.</para>
+  <para style="q1">
+    <verse number="8" style="v" />Des esclaves dominent sur nous :</para>
+  <para style="q1">personne pour nous arracher de leur main !</para>
+  <para style="q1">
+    <verse number="9" style="v" />Nous faisons rentrer notre pain au péril de notre vie<note caller="+" style="f"><char style="fr" closed="false">5.9 </char><char style="ft" closed="false">2 S 23.17 ; 1 Ch 11.19.</char></note>,</para>
+  <para style="q1">à cause des brigands de la steppe.</para>
+  <para style="q1">
+    <verse number="10" style="v" />Notre peau est fiévreuse comme au four</para>
+  <para style="q1">à cause des affres de la faim.</para>
+  <para style="q1">
+    <verse number="11" style="v" />Ils violent des femmes dans Sion,</para>
+  <para style="q1">des jeunes filles dans les villes de Judée.</para>
+  <para style="q1">
+    <verse number="12" style="v" />Par leur main des princes sont pendus ;</para>
+  <para style="q1">la personne des anciens n'est pas honorée.</para>
+  <para style="q1">
+    <verse number="13" style="v" />Des jeunes gens portent la meule</para>
+  <para style="q1">et des garçons sous le bois trébuchent.</para>
+  <para style="q1">
+    <verse number="14" style="v" />Les anciens cessent d'aller au Conseil<note caller="+" style="f"><char style="fr" closed="false">5.14 </char><char style="fq" closed="false">le Conseil </char><char style="ft" closed="false">(siégeant à la porte de la ville) Rt 4.1,11.</char></note> ;</para>
+  <para style="q1">les jeunes gens, de chanter leur refrain.</para>
+  <para style="q1">
+    <verse number="15" style="v" />Elle cesse, la joie de notre cœur ;</para>
+  <para style="q1">notre danse a dégénéré en deuil.</para>
+  <para style="q1">
+    <verse number="16" style="v" />Elle tombe, la couronne de notre tête.</para>
+  <para style="q1">Oh, malheur à nous, car nous avons failli<note caller="+" style="f"><char style="fr" closed="false">5.16 </char><char style="ft" closed="false">1.18+.</char></note> !</para>
+  <para style="q1">
+    <verse number="17" style="v" />Voici pourquoi tout notre être est malade ;</para>
+  <para style="q1">voici pourquoi nos yeux sont enténébrés<note caller="+" style="f"><char style="fr" closed="false">5.17 </char><char style="fq" closed="false">malade </char><char style="ft" closed="false">1.13,20,22. – </char><char style="fq" closed="false">yeux enténébrés </char><char style="ft" closed="false">4.14.</char></note> :</para>
+  <para style="q1">
+    <verse number="18" style="v" />c'est à cause du mont Sion qui est ruiné,</para>
+  <para style="q1">et où rôdent les renards<note caller="+" style="f"><char style="fr" closed="false">5.18 </char><char style="fq" closed="false">mont Sion </char><char style="ft" closed="false">Mi 3.12 </char><char style="fq" closed="false">ruiné </char><char style="ft" closed="false">Lm 1.4,13,16 ; 3.11 ; 4.5. – </char><char style="fq" closed="false">renards qui rôdent </char><char style="ft" closed="false">Ez 13.4.</char></note>.</para>
+  <para style="q1">
+    <verse number="19" style="v" />Toi, <char style="nd">SEIGNEUR</char>, tu sièges pour toujours ;</para>
+  <para style="q1">ton trône subsiste de génération en génération<note caller="+" style="f"><char style="fr" closed="false">5.19 </char><char style="ft" closed="false">Roi </char><char style="fq" closed="false">pour toujours </char><char style="ft" closed="false">Ps 9.8+. – Pérennité du </char><char style="fq" closed="false">trône </char><char style="ft" closed="false">de Dieu Ps 146.10.</char></note>.</para>
+  <para style="q1">
+    <verse number="20" style="v" />Pourquoi nous oublierais-tu continuellement,</para>
+  <para style="q1">nous abandonnerais-tu<note caller="+" style="f"><char style="fr" closed="false">5.20 </char><char style="fq" closed="false">Pourquoi ? </char><char style="ft" closed="false">Jr 14.8-9 ; Ha 1.13 ; Ps 10.1 ; 74.11. – </char><char style="fq" closed="false">nous oublier </char><char style="ft" closed="false">Es 49.14 ; Ps 42.10 ; 44.25 ; </char><char style="fq" closed="false">nous abandonner </char><char style="ft" closed="false">Ps 22.2.</char></note> à longueur de jours ?</para>
+  <para style="q1">
+    <verse number="21" style="v" />Fais-nous revenir vers toi, <char style="nd">SEIGNEUR</char>, et nous reviendrons<note caller="+" style="f"><char style="fr" closed="false">5.21 </char><char style="fq" closed="false">Fais-nous revenir à toi </char><char style="ft" closed="false">Jr 31.18. – Retour au Seigneur 3.40+ ; Es 44.22 ; Os 2.8-9.</char></note> ;</para>
+  <para style="q1">renouvelle nos jours comme dans l'ancien temps.</para>
+  <para style="q1">
+    <verse number="22" style="v" />A moins que tu nous mettes vraiment au rebut,</para>
+  <para style="q1">tu t'irrites<note caller="+" style="f"><char style="fr" closed="false">5.22 </char><char style="fq" closed="false">au rebut </char><char style="ft" closed="false">Jr 14.19 ; 33.24-26. – </char><char style="fq" closed="false">l'irritation </char><char style="ft" closed="false">de Dieu Es 64.8.</char></note> contre nous beaucoup trop !</para>
+</usx>

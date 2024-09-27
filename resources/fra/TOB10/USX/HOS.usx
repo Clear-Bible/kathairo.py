@@ -1,0 +1,950 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<usx version="2.6">
+  <book code="HOS" style="id">TOB28.SBF 16.02.2010 ES ©Société biblique française et Editions du Cerf</book>
+  <para style="h">OSÉE</para>
+  <para style="toc1">Osée</para>
+  <para style="toc2">OSÉE</para>
+  <para style="toc3">Os</para>
+  <para style="mt2">Osée</para>
+  <para style="mt1">OSÉE</para>
+  <para style="imt">INTRODUCTION</para>
+  <para style="ip">Le livre d’<char style="bk">Osée</char> est placé en tête du recueil des douze prophètes, aussi bien selon l'ordre des livres hébreux que selon l'ordre des livres dans la version grecque. Osée est assurément l'un des plus anciens parmi les prophètes « écrivains » – c'est-à-dire de ceux dont le nom est attaché à un livre particulier. Il est de peu postérieur au prophète Amos.</para>
+  <para style="is2">Situation historique</para>
+  <para style="ip">Osée a vécu et parlé dans le royaume du Nord, Israël, qu'on appelle aussi Jacob (12.3) ou Ephraïm (4.17), durant le troisième quart du VIII<char style="ord">e</char> siècle. C'est sous le règne long et prospère de Jéroboam II, auquel succèdent des règnes plus courts et plus troublés, qui aboutirent à la chute du royaume en 722 (ou 721, prise de Samarie). L'Assyrie est en train de devenir la première puissance du Proche-Orient et multiplie les campagnes militaires à l'ouest, dont les royaumes araméens de Syrie, les villes phéniciennes et les cités philistines subissent, avec Israël et Juda, les funestes conséquences. A ce moment, l'autre grande puissance, l'Egypte, est affaiblie, mais fomente des troubles dans les régions que l'Assyrie est en train de se soumettre. Le livre d’<char style="bk">Osée</char> montre Israël en perpétuelle balance entre les deux grands (7.11) se livrant ainsi à un jeu dont l'issue tragique n'échappe pas au regard lucide du prophète.</para>
+  <para style="is2">Le prophète et son message</para>
+  <para style="ip">Nous ne savons pas grand-chose sur les origines du prophète ; le seul événement qui concerne sa personne est l'épisode de son mariage. Osée doit, sur l'ordre du Seigneur, épouser une femme se livrant à la prostitution, et engendrer avec elle des enfants qui seront de ce fait « des enfants de prostitution » (1.2-3). Il s'agit, selon toute probabilité, d'une prostituée sacrée. La prostitution sacrée, coutume largement attestée dans le monde oriental d'alors, était, selon Osée, l'une des plus grandes déviations religieuses et morales. Nous sommes en présence d'une histoire réellement vécue, mais ayant dès l'origine une portée symbolique. Par son mariage, conclu, rompu et repris (comparer les chapitres 1 et 3) avec Gomer, le prophète doit illustrer publiquement à la fois l'étendue de la corruption du peuple et l'amour de Dieu qui reste fidèle à son peuple malgré le refus obstiné que celui-ci lui oppose. Cette histoire du mariage, qui occupe les chapitres 1–3, donne le ton du reste du livre qui peut être considéré comme un commentaire de cette action prophétique. Osée, tout en stigmatisant sévèrement la politique des rois et des chefs du peuple, s'attaque surtout à la corruption religieuse et morale qui est une véritable gangrène, dont l'issue ne peut être que fatale. Le baalisme, survivance de la religion cananéenne, a connu au temps d'Osée une résurgence, comme il en avait connu une au temps d'Elie un siècle plus tôt. La raison profonde en est que les Israélites estimaient que Baal, dieu de la nature, de la végétation et de la pluie fécondante, convenait mieux au genre de vie agricole qui était désormais le leur. Ce culte faisait appel à toutes les forces de la nature, en particulier à celles de la reproduction favorisées par des pratiques d'ordre sexuel, telles que la prostitution sacrée. Contre ces tentations Osée montre les faiblesses du culte de Baal : les taureaux, sous les traits desquels ce dieu était représenté, ne sont rien d'autre que des animaux ; quant à la nature et ses produits, blé, vin, huile, elle est sous la seule dépendance du dieu d'Israël, YHWH (2.10-12), qui exerce sur elle sa souveraineté autant que sur l'histoire. Le culte de Baal avait fait glisser la religion sur la voie de la facilité, de la jouissance et du formalisme. Aussi le prophète polémique-t-il sûrement contre la religion extérieure, les sacrifices et les rites. Ce qu'il dénonce, ce n'est pas le rite et le sacrifice comme tels, mais l'assurance illusoire que la pratique exacte des rites suffit à se concilier automatiquement les faveurs de Dieu (6.1-8 ; 14.2-4).</para>
+  <para style="ip">Ce que le Seigneur demande, c'est une piété et un amour véritables, qui engagent la vie tout entière ; pour que cette réponse de l'homme soit possible, le Seigneur va lui-même donner l'exemple et se convertir à l'amour et à la tendresse (2.20-22 ; 9.10 ; 11.8-9). Ce sera difficile, comme le mariage d'Osée, qui a été un échec. Mais Dieu n'abandonne jamais l'espérance, et le dernier mot du livre sera le triomphe de l'amour sur la colère et le pardon du péché (14.5).</para>
+  <para style="is2">Le livre</para>
+  <para style="ip">Il n'est pas facile de retrouver dans le livre un véritable plan ; il s'agit plutôt de la réunion d'oracles et de paroles prononcées dans des circonstances diverses, dont nous pouvons préciser quelques-unes seulement, situées entre la guerre syro-éphraïmite (734) et la chute de Samarie (722). L'impression d'ensemble qui se dégage du livre est celle de la reprise constante des mêmes thèmes plutôt que d'une composition linéaire, même si le dernier chapitre peut être considéré comme un sommet. La part personnelle d'Osée à la composition du livre est difficile à déterminer, mais elle se situe vraisemblablement aux chapitres 1 et 3, où se rencontre à l'occasion le style autobiographique.</para>
+  <para style="ip">La suscription, qui mentionne plusieurs rois de Juda ainsi que la mise en avant de Juda (p. ex. en 1.7), fait supposer que le recueil d’<char style="bk">Osée</char>, né dans le royaume du Nord, a subi une rédaction judéenne. Le sort de Samarie devait servir d'avertissement à Juda et être un appel à revenir à des sentiments plus fidèles envers le Seigneur. Les écrivains bibliques ont ainsi voulu montrer l'actualité toujours vivante de la parole de Dieu, au-delà des circonstances historiques particulières qui en ont provoqué le premier énoncé. On peut supposer que dans l'ensemble les paroles authentiques d'Osée ont été fidèlement rapportées. La langue et le style ont un caractère personnel et unique. Fidèle reflet de sa personnalité, la langue du prophète est forte, sonore et passionnée. Elle est souvent difficile à comprendre ; la critique conjecturale s'est exercée sur le livre sans toutefois arriver à le rendre plus clair, aussi la présente traduction s'est-elle abstenue d'y recourir.</para>
+  <para style="is2">Influence du livre</para>
+  <para style="ip">Elle a été considérable et profonde à travers toute la Bible. Jérémie est celui qui l'a subie le plus fortement et qui a précisé en quoi consistait la nouvelle alliance déjà annoncée par <char style="bk">Osée</char> (Os 2.17 ; Jr 31.31s). L'image du mariage, pour signifier la relation entre Dieu et le peuple, a été reprise par Jérémie (2.23 ; 3.1), Ezéchiel (16 et 23), l'auteur de la deuxième partie d'Esaïe (50.1 ; 54.4-7 ; 62.4-5) et probablement par le Cantique des cantiques si ce dernier est une allégorie. Le N.T. la reprend dans Mc 2.19-20 et Ep 5.25 ; il cite <char style="bk">Osée</char> dix-sept fois. Mais l'influence du livre d’<char style="bk">Osée</char> ne se laisse pas mesurer au nombre des références explicites. La théologie d’<char style="bk">Osée</char> est celle de l'amour de Dieu, amour souffrant, exigeant, patient, dont l'expression la plus achevée est donnée par Paul : « En ceci Dieu prouve son amour envers nous : Christ est mort pour nous, alors que nous étions encore pécheurs » (Rm 5.6-8). Source de l'amour, Dieu est aussi le seul objet d'amour : c'est la promesse et l'exigence que le livre d’<char style="bk">Osée</char> offre à ses lecteurs aujourd'hui.</para>
+  <para style="mt1">Osée</para>
+  <chapter number="1" style="c" />
+  <para style="p">
+    <verse number="1" style="v" />Parole du <char style="nd">SEIGNEUR</char> qui fut adressée à Osée fils de Bééri, aux jours d'Ozias, de Yotam, d'Akhaz, d'Ezékias, rois de Juda, et aux jours de Jéroboam, fils de Joas, roi d'Israël<note caller="+" style="f"><char style="fr" closed="false">1.1 </char><char style="ft" closed="false">C'est-à-dire vers l'année 750 av. J.C. – </char><char style="fq" closed="false">Ozias, Yotam, Akhaz </char><char style="ft" closed="false">2 R 15–16. – </char><char style="fq" closed="false">Jéroboam</char><char style="ft" closed="false"> (II) 2 R 14.23-29.</char></note>.</para>
+  <para style="s1">L'ordre de Dieu à Osée</para>
+  <para style="p">
+    <verse number="2" style="v" />Début des paroles du <char style="nd">SEIGNEUR</char> par Osée.</para>
+  <para style="p">Le <char style="nd">SEIGNEUR</char> dit à Osée :</para>
+  <para style="q1">« Va, prends-toi une femme se livrant à la prostitution</para>
+  <para style="q1">et des enfants de prostitution,</para>
+  <para style="q1">car le pays ne fait que se prostituer<note caller="+" style="f"><char style="fr" closed="false">1.2 </char><char style="ft" closed="false">Le dieu </char><char style="fq" closed="false">Baal</char><char style="ft" closed="false">, adoré par les Cananéens et par beaucoup d'Israélites contemporains d'Osée, était censé favoriser la fertilité des champs et la fécondité des troupeaux ou des familles humaines (2.7). Le culte qu'on lui offrait s'accompagnait d'une prostitution sacrée ; 4.12-14 ; 5.4 ; Ex 34.16 ; Dt 31.16 ; Jg 8.33 ; Es 1.21 ; Jr 2.20,23 ; 3.1-2 ; 13.27 ; Ez 6.9 ; 16.15,34 ; 23.3,7,8, etc. ; Na 3.4 ; Ps 106.39.</char></note></para>
+  <para style="q1">en se détournant du <char style="nd">SEIGNEUR</char>. »</para>
+  <para style="p">
+    <verse number="3" style="v" />Il alla prendre Gomer, fille de Divlaïm : elle conçut et lui enfanta un fils. <verse number="4" style="v" />Et le <char style="nd">SEIGNEUR</char> dit à Osée :</para>
+  <para style="p">« Donne-lui le nom d'Izréel, car encore un peu de temps et je ferai rendre compte à la maison de Jéhu du sang d'Izréel<note caller="+" style="f"><char style="fr" closed="false">1.4 </char><char style="ft" closed="false">Allusion à l'extermination de la famille du roi Akhab par Jéhu (voir 2 R 9–10). Jéroboam II (v. 1), roi d'Israël au temps d'Osée, est un descendant de Jéhu.</char></note> et je mettrai fin à la royauté de la maison d'Israël.</para>
+  <para style="q1">
+    <verse number="5" style="v" />Il arrivera en ce jour-là</para>
+  <para style="q1">que je briserai l'arc<note caller="+" style="f"><char style="fr" closed="false">1.5 </char><char style="fq" closed="false">en ce jour-là </char><char style="ft" closed="false">Es 2.11 ; 27.1-2 ; Jr 39.17 ; Am 8.9 ; Jl 3.2 ; Za 14.9 ; Mt 7.22 ; Lc 6.23 ; Jn 14.20. – </char><char style="fq" closed="false">arc </char><char style="ft" closed="false">( symbole de la force ) 1 S 2.4 ; Jb 29.20.</char></note> d'Israël</para>
+  <para style="q1">dans la vallée d'Izréel. »</para>
+  <para style="p">
+    <verse number="6" style="v" />Elle conçut encore et enfanta une fille, et le <char style="nd">SEIGNEUR</char> dit à Osée :</para>
+  <para style="q1">« Donne-lui le nom de Lo-Rouhama</para>
+  <para style="q1">– c'est-à-dire : Non-aimée –,</para>
+  <para style="q1">car je ne continuerai plus à manifester de l'amour à la maison d'Israël :</para>
+  <para style="q1">je le lui retirerai tout entier<note caller="+" style="f"><char style="fr" closed="false">1.6 </char><char style="ft" closed="false">D'autres traduisent </char><char style="fq" closed="false">je ne lui pardonnerai plus.</char></note>.</para>
+  <para style="q1">
+    <verse number="7" style="v" />Mais la maison de Juda, je l'aimerai</para>
+  <para style="q1">et je les sauverai par le <char style="nd">SEIGNEUR</char> leur Dieu ;</para>
+  <para style="q1">je ne les sauverai ni par l'arc ni par l'épée ni par la guerre,</para>
+  <para style="q1">ni par les chevaux<note caller="+" style="f"><char style="fr" closed="false">1.7 </char><char style="fq" closed="false">Juda </char><char style="ft" closed="false">Os 4.15 ; 6.11 ; 8.14 ; 10.11 ; 12.1,3. – </char><char style="fq" closed="false">ni par l'arc, ni par l'épée</char><char style="ft" closed="false">… </char><char style="fq" closed="false">ni par les chevaux </char><char style="ft" closed="false">Jos 24.12 ; Es 31.1 ; Za 4.6 ; Ps 20.8 ; Pr 21.31.</char></note> ni par les cavaliers. »</para>
+  <para style="p">
+    <verse number="8" style="v" />Elle sevra Lo-Rouhama, puis elle conçut et enfanta un fils. <verse number="9" style="v" />Et le <char style="nd">SEIGNEUR</char> dit :</para>
+  <para style="q1">« Donne-lui le nom de Lo-Ammi</para>
+  <para style="q1">– c'est-à-dire : Celui qui n'est pas mon peuple –,</para>
+  <para style="q1">car vous n'êtes pas mon peuple<note caller="+" style="f"><char style="fr" closed="false">1.9 </char><char style="fq" closed="false">mon peuple </char><char style="ft" closed="false">2.25 ; Jr 31.33.</char></note></para>
+  <para style="q1">et moi je n'existe pas pour vous. »</para>
+  <chapter number="2" style="c" />
+  <para style="s1">Promesse d'une ère de bonheur</para>
+  <para style="p">
+    <verse number="1" style="v" />Le nombre des fils d'Israël sera comme le sable de la mer</para>
+  <para style="q1">qu'on ne peut ni mesurer ni compter,</para>
+  <para style="q1">et il arrivera qu'à l'endroit où on leur disait :</para>
+  <para style="q1">« Vous n'êtes pas mon peuple »,</para>
+  <para style="q1">on leur dira : « Fils du Dieu vivant<note caller="+" style="f"><char style="fr" closed="false">2.1 </char><char style="fq" closed="false">comme le sable de la mer </char><char style="ft" closed="false">Gn 22.17 ; 1 R 4.20 ; Es 10.22. – </char><char style="fq" closed="false">Vous n'êtes pas mon peuple </char><char style="ft" closed="false">Rm 9.26. – </char><char style="fq" closed="false">Dieu vivant </char><char style="ft" closed="false">Dt 5.26+.</char></note> »,</para>
+  <para style="q1">
+    <verse number="2" style="v" />Les fils de Juda et les fils d'Israël se réuniront,</para>
+  <para style="q1">ils se donneront un chef unique</para>
+  <para style="q1">et ils submergeront le pays :</para>
+  <para style="q1">car grand sera le jour d'Izréel<note caller="+" style="f"><char style="fr" closed="false">2.2 </char><char style="fq" closed="false">réunion d'Israël et de Juda </char><char style="ft" closed="false">Jr 3.18 ; Ez 37.19. – </char><char style="fq" closed="false">un chef unique </char><char style="ft" closed="false">Ez 37.22,24. – </char><char style="fq" closed="false">jour d'Izréel : </char><char style="ft" closed="false">voir 2.24 et la note.</char></note>.</para>
+  <para style="q1">
+    <verse number="3" style="v" />Dites à vos frères : « Ammi, mon peuple »,</para>
+  <para style="q1">et à vos sœurs : « Rouhama, Bien-aimée ».</para>
+  <para style="s1">Le peuple rompt l'union</para>
+  <para style="q1">
+    <verse number="4" style="v" />Faites un procès à votre mère, faites-lui un procès,</para>
+  <para style="q1">car elle n'est pas ma femme,</para>
+  <para style="q1">et moi je ne suis pas son mari.</para>
+  <para style="q1">Qu'elle éloigne de son visage les signes de sa prostitution,</para>
+  <para style="q1">et d'entre ses seins les marques de son adultère<note caller="+" style="f"><char style="fr" closed="false">2.4 </char><char style="ft" closed="false">Voir 1.2 et la note. L'infidélité d'Israël à son Dieu est comparée à une prostitution. Voir aussi 4.13. – Dieu en </char><char style="fq" closed="false">procès </char><char style="ft" closed="false">contre son peuple Os 4.1 ; 12.3 ; Es 1.18 ; 3.13-15 ; Mi 6.1-2. – Répudiation Es 50.1. – </char><char style="fq" closed="false">signes </char><char style="ft" closed="false">distinctifs de la prostituée sacrée Os 2.15 ; <char style="bk">Ba</char> 6.42.</char></note>.</para>
+  <para style="q1">
+    <verse number="5" style="v" />Sinon, je la déshabillerai et la mettrai nue,</para>
+  <para style="q1">je la mettrai comme au jour de sa naissance<note caller="+" style="f"><char style="fr" closed="false">2.5 </char><char style="ft" closed="false">Ez 16.4-5,22, etc. ; 23.29.</char></note>,</para>
+  <para style="q1">je la rendrai semblable au désert,</para>
+  <para style="q1">j'en ferai une terre desséchée</para>
+  <para style="q1">et je la ferai mourir de soif.</para>
+  <para style="q1">
+    <verse number="6" style="v" />Ses enfants, je ne les aimerai pas,</para>
+  <para style="q1">car ce sont des enfants de prostitution<note caller="+" style="f"><char style="fr" closed="false">2.6 </char><char style="fq" closed="false">enfants de prostitution </char><char style="ft" closed="false">1.2.</char></note>.</para>
+  <para style="q1">
+    <verse number="7" style="v" />Oui, leur mère s'est prostituée,</para>
+  <para style="q1">celle qui les a conçus s'est couverte de honte</para>
+  <para style="q1">lorsqu'elle disait :</para>
+  <para style="q1">« Je veux courir après mes amants,</para>
+  <para style="q1">ceux qui me donnent le pain et l'eau,</para>
+  <para style="q1">la laine et le lin, l'huile et les boissons<note caller="+" style="f"><char style="fr" closed="false">2.7 </char><char style="fq" closed="false">prostitution </char><char style="ft" closed="false">1.2+. – </char><char style="fq" closed="false">courir après des amants </char><char style="ft" closed="false">Jr 2.25. – une idolâtrie intéressée Jr 44.17.</char></note>. »</para>
+  <para style="q1">
+    <verse number="8" style="v" />C'est pourquoi je vais fermer ton chemin avec des ronces,</para>
+  <para style="q1">le barrer d'une barrière</para>
+  <para style="q1">– et elle ne trouvera plus ses sentiers.</para>
+  <para style="q1">
+    <verse number="9" style="v" />Elle poursuivra ses amants</para>
+  <para style="q1">sans les atteindre,</para>
+  <para style="q1">elle les recherchera</para>
+  <para style="q1">sans les trouver ;</para>
+  <para style="q1">elle dira :</para>
+  <para style="q1">« Je vais retourner<note caller="+" style="f"><char style="fr" closed="false">2.9 </char><char style="fq" closed="false">recherche </char><char style="ft" closed="false">5.15. – </char><char style="fq" closed="false">je vais retourner </char><char style="ft" closed="false">Jr 3.22 ; Lc 15.17-18.</char></note> chez mon premier mari,</para>
+  <para style="q1">car j'étais plus heureuse alors que maintenant. »</para>
+  <para style="q1">
+    <verse number="10" style="v" />Et elle n'a pas compris que c'est moi qui lui donnais</para>
+  <para style="q1">blé, vin nouveau, huile fraîche ;</para>
+  <para style="q1">je lui prodiguais de l'argent,</para>
+  <para style="q1">et l'or, ils l'ont employé pour Baal<note caller="+" style="f"><char style="fr" closed="false">2.10 </char><char style="ft" closed="false">Le vrai donateur Dt 7.13 ; 8.16-17 ; Ag 2.8. – </char><char style="fq" closed="false">argent et or pour les idoles </char><char style="ft" closed="false">8.4 ; 13.2. – </char><char style="fq" closed="false">Baal : </char><char style="ft" closed="false">voir 1.2 et la note.</char></note>.</para>
+  <para style="q1">
+    <verse number="11" style="v" />C'est pourquoi je viendrai</para>
+  <para style="q1">reprendre mon blé en son temps,</para>
+  <para style="q1">mon vin nouveau en sa saison,</para>
+  <para style="q1">j'arracherai ma laine et mon lin</para>
+  <para style="q1">qui devaient cacher sa nudité.</para>
+  <para style="q1">
+    <verse number="12" style="v" />Maintenant je vais dévoiler sa honte aux yeux de ses amants</para>
+  <para style="q1">et personne ne la délivrera<note caller="+" style="f"><char style="fr" closed="false">2.12 </char><char style="fq" closed="false">honte dévoilée </char><char style="ft" closed="false">Ez 16.36-37. – </char><char style="fq" closed="false">personne ne la délivrera </char><char style="ft" closed="false">5.14 ; Dt 32.39 ; Mi 5.7 ; Ps 50.22 ; Jb 10.7 ; 19.21 ; Dn 4.32 ; voir Jn 10.28.</char></note> de ma main.</para>
+  <para style="q1">
+    <verse number="13" style="v" />Je ferai cesser toute sa joie,</para>
+  <para style="q1">ses fêtes<note caller="+" style="f"><char style="fr" closed="false">2.13 </char><char style="ft" closed="false">Voir au glossaire CALENDRIER.</char></note>, ses néoménies, ses sabbats,</para>
+  <para style="q1">et toutes ses assemblées solennelles.</para>
+  <para style="q1">
+    <verse number="14" style="v" />Je dévasterai sa vigne et son figuier</para>
+  <para style="q1">dont elle disait :</para>
+  <para style="q1">« Voilà le salaire que m'ont donné mes amants. »</para>
+  <para style="q1">Je les changerai en fourré,</para>
+  <para style="q1">et les bêtes sauvages en feront leur nourriture<note caller="+" style="f"><char style="fr" closed="false">2.14 </char><char style="fq" closed="false">vigne et figuier </char><char style="ft" closed="false">1 R 5.5 ; Es 36.16 ; Mi 4.4 ; Za 3.10. – Retour du pays à l'état sauvage Lv 26.32-35 ; Es 5.5-6 ; 32.13.</char></note>.</para>
+  <para style="q1">
+    <verse number="15" style="v" />Je lui ferai rendre compte des jours des Baals</para>
+  <para style="q1">auxquels elle brûlait des offrandes :</para>
+  <para style="q1">elle se parait de ses anneaux et de ses bijoux,</para>
+  <para style="q1">elle courait après ses amants</para>
+  <para style="q1">et moi, elle m'oubliait !</para>
+  <para style="q1">– oracle du <char style="nd">SEIGNEUR</char>.</para>
+  <para style="s1">Dieu restaure l'union</para>
+  <para style="q1">
+    <verse number="16" style="v" />Eh bien, c'est moi qui vais la séduire,</para>
+  <para style="q1">je la conduirai au désert</para>
+  <para style="q1">et je regagnerai sa confiance<note caller="+" style="f"><char style="fr" closed="false">2.16 </char><char style="fq" closed="false">séduction </char><char style="ft" closed="false">Jr 20.7. – </char><char style="fq" closed="false">Israël au désert </char><char style="ft" closed="false">Dt 8.2-5 ; Os 13.5 ; voir 12.10. – </char><char style="fq" closed="false">regagnerai sa confiance : </char><char style="ft" closed="false">litt. </char><char style="fq" closed="false">parlerai contre son cœur </char><char style="ft" closed="false">Gn 34.3 ; Jg 19.3 ; Rt 2.13.</char></note>.</para>
+  <para style="q1">
+    <verse number="17" style="v" />Et de là-bas, je lui rendrai ses vignobles</para>
+  <para style="q1">et je ferai de la vallée de Akor</para>
+  <para style="q1">une porte d'espérance,</para>
+  <para style="q1">et là elle répondra comme au temps de sa jeunesse<note caller="+" style="f"><char style="fr" closed="false">2.17 </char><char style="ft" closed="false">Vallée proche de Jéricho et donnant accès au centre de la Palestine. Osée fait allusion aux événements racontés en Jos 7 ; voir Jos 7.26 ; Es 65.10. – </char><char style="fq" closed="false">une porte </char><char style="ft" closed="false">Ap 3.7-8 </char><char style="fq" closed="false">d'espérance </char><char style="ft" closed="false">Jr 29.11. – </char><char style="fq" closed="false">comme au temps de sa jeunesse </char><char style="ft" closed="false">Os 11.1-3.</char></note>,</para>
+  <para style="q1">au jour où elle monta du pays d'Egypte.</para>
+  <para style="q1">
+    <verse number="18" style="v" />Et il adviendra en ce jour-là</para>
+  <para style="q1">– oracle du <char style="nd">SEIGNEUR</char> –</para>
+  <para style="q1">que tu m'appelleras « mon mari »,</para>
+  <para style="q1">et tu ne m'appelleras plus « mon baal<note caller="+" style="f"><char style="fr" closed="false">2.18 </char><char style="fq" closed="false">baal : </char><char style="ft" closed="false">à la fois nom commun </char><char style="fq" closed="false">(maître, </char><char style="ft" closed="false">parfois </char><char style="fq" closed="false">mari) </char><char style="ft" closed="false">et nom propre du dieu adoré par les Cananéens (voir v. 19).</char></note>, mon maître ».</para>
+  <para style="q1">
+    <verse number="19" style="v" />J'ôterai de sa bouche les noms des Baals,</para>
+  <para style="q1">et on ne mentionnera même plus leur nom.</para>
+  <para style="q1">
+    <verse number="20" style="v" />Je conclurai avec eux en ce jour-là une alliance,</para>
+  <para style="q1">avec les bêtes des champs, les oiseaux du ciel, les reptiles du sol ;</para>
+  <para style="q1">l'arc, l'épée et la guerre,</para>
+  <para style="q1">je les briserai<note caller="+" style="f"><char style="fr" closed="false">2.20 </char><char style="fq" closed="false">alliance avec les bêtes sauvages </char><char style="ft" closed="false">Es 11.6-9 ; 65.25 ; Ez 34.25 ; Jb 5.23 ; Mc 1.13. – Armes de guerre 1.7 détruites Es 2.4 ; Za 9.10.</char></note>, il n'y en aura plus dans le pays,</para>
+  <para style="q1">et je permettrai aux habitants de dormir en sécurité.</para>
+  <para style="q1">
+    <verse number="21" style="v" />Je te fiancerai<note caller="+" style="f"><char style="fr" closed="false">2.21 </char><char style="ft" closed="false">fiançailles, nouvelle alliance Es 54.5-10 ; Jr 31.31-33.</char></note> à moi pour toujours,</para>
+  <para style="q1">je te fiancerai à moi</para>
+  <para style="q1">par la justice et le droit, l'amour et la tendresse.</para>
+  <para style="q1">
+    <verse number="22" style="v" />Je te fiancerai à moi par la fidélité</para>
+  <para style="q1">et tu connaîtras le <char style="nd">SEIGNEUR</char>.</para>
+  <para style="q1">
+    <verse number="23" style="v" />Et il adviendra en ce jour-là que je répondrai<note caller="+" style="f"><char style="fr" closed="false">2.23 </char><char style="fq" closed="false">réponse </char><char style="ft" closed="false">2.17 ; 14.9.</char></note></para>
+  <para style="q1">– oracle du <char style="nd">SEIGNEUR</char> –,</para>
+  <para style="q1">je répondrai à l'attente des cieux</para>
+  <para style="q1">et eux répondront à l'attente de la terre.</para>
+  <para style="q1">
+    <verse number="24" style="v" />Et la terre, elle, répondra</para>
+  <para style="q1">par le blé, le vin nouveau, l'huile fraîche,</para>
+  <para style="q1">et eux répondront à l'attente d'Izréel<note caller="+" style="f"><char style="fr" closed="false">2.24 </char><char style="fq" closed="false">blé, vin, huile </char><char style="ft" closed="false">2.7,10. – Le nom d’</char><char style="fq" closed="false">Izréel </char><char style="ft" closed="false">(étymologiquement </char><char style="fq" closed="false">Dieu sème</char><char style="ft" closed="false">) fait jeu de mots avec le début du v. 25 </char><char style="fq" closed="false">(Je l'ensemencerai).</char></note>.</para>
+  <para style="q1">
+    <verse number="25" style="v" />Je l'ensemencerai pour moi dans le pays,</para>
+  <para style="q1">et j'aimerai Lo-Rouhama,</para>
+  <para style="q1">et je dirai à Lo-Ammi : « Tu es mon peuple »,</para>
+  <para style="q1">et lui, il dira : « Mon Dieu<note caller="+" style="f"><char style="fr" closed="false">2.25 </char><char style="ft" closed="false">Rm 9.25 ; 1 P 2.10. – </char><char style="fq" closed="false">Lo-Rouhama, Lo-Ammi </char><char style="ft" closed="false">Os 1.3-9. – </char><char style="fq" closed="false">mon peuple</char><char style="ft" closed="false">… </char><char style="fq" closed="false">mon Dieu </char><char style="ft" closed="false">Jr 7.23+.</char></note> ».</para>
+  <chapter number="3" style="c" />
+  <para style="s1">Le prix de la réconciliation</para>
+  <para style="p">
+    <verse number="1" style="v" />Le <char style="nd">SEIGNEUR</char> me dit : « Va encore, aime une femme aimée par un autre et se livrant à l'adultère :</para>
+  <para style="q1">Car tel est l'amour du <char style="nd">SEIGNEUR</char> pour les fils d'Israël,</para>
+  <para style="q1">tandis qu'ils se tournent, eux, vers d'autres dieux</para>
+  <para style="q1">et qu'ils aiment les gâteaux de raisin<note caller="+" style="f"><char style="fr" closed="false">3.1 </char><char style="fq" closed="false">adultère </char><char style="ft" closed="false">2.4. – </char><char style="fq" closed="false">vers d'autres dieux </char><char style="ft" closed="false">Ex 20.3 ; Dt 5.7 ; 6.4. – </char><char style="fq" closed="false">gâteaux de raisin : </char><char style="ft" closed="false">offrande caractéristique du culte de Baal.</char></note>. »</para>
+  <para style="p">
+    <verse number="2" style="v" />J'en fis l'acquisition pour quinze sicles<note caller="+" style="f"><char style="fr" closed="false">3.2 </char><char style="ft" closed="false">Voir au glossaire MONNAIES.</char></note> d'argent et une mesure et demie d'orge. <verse number="3" style="v" />Et je lui dis :</para>
+  <para style="q1">« Pendant de longs jours tu resteras à moi,</para>
+  <para style="q1">sans te prostituer et sans être à un homme.</para>
+  <para style="q1">J'agirai de même à ton égard. »</para>
+  <para style="q1">
+    <verse number="4" style="v" />Ainsi pendant de longs jours les fils d'Israël resteront :</para>
+  <para style="q1">pas de roi, pas de chef, pas de sacrifice,</para>
+  <para style="q1">pas de stèle, pas d'éphod ni de téraphim<note caller="+" style="f"><char style="fr" closed="false">3.4 </char><char style="fq" closed="false">éphod </char><char style="ft" closed="false">et </char><char style="fq" closed="false">téraphim : </char><char style="ft" closed="false">objets servant à consulter Dieu Jg 8.27 et la note ; 17.5 ; 18.14-17 ; 1 S 23.9-10 ; 30.7-8.</char></note>.</para>
+  <para style="p">
+    <verse number="5" style="v" />Après cela les fils d'Israël rechercheront à nouveau le <char style="nd">SEIGNEUR</char>, leur Dieu, et David<note caller="+" style="f"><char style="fr" closed="false">3.5 </char><char style="fq" closed="false">le Seigneur</char><char style="ft" closed="false">… </char><char style="fq" closed="false">et David </char><char style="ft" closed="false">Jr 30.9 ; Ez 37.24-25.</char></note>, leur roi, et ils se tourneront en tremblant vers le <char style="nd">SEIGNEUR</char> et vers ses biens, dans l'avenir.</para>
+  <chapter number="4" style="c" />
+  <para style="s1">Acte d'accusation</para>
+  <para style="p">
+    <verse number="1" style="v" />Ecoutez la parole du <char style="nd">SEIGNEUR</char>, fils d'Israël :</para>
+  <para style="q1">le <char style="nd">SEIGNEUR</char> est en procès avec les habitants du pays,</para>
+  <para style="q1">car il n'y a ni sincérité ni amour du prochain</para>
+  <para style="q1">ni connaissance de Dieu<note caller="+" style="f"><char style="fr" closed="false">4.1 </char><char style="fq" closed="false">Dieu en procès </char><char style="ft" closed="false">2.4+. – </char><char style="fq" closed="false">sincérité </char><char style="ft" closed="false">Ex 18.21 ; Jos 24.14 ; 1 R 10.6. – </char><char style="fq" closed="false">amour (du prochain) </char><char style="ft" closed="false">2.21 ; 6.4-6 ; 10.12 ; 12.7. – </char><char style="fq" closed="false">sincérité et amour </char><char style="ft" closed="false">Gn 47.29 ; Ex 34.6 ; Jos 2.14 ; Ps 86.11,15. – </char><char style="fq" closed="false">connaissance de Dieu </char><char style="ft" closed="false">4.6 ; 5.4 ; 6.6 ; Jr 5.4 ; 22.16.</char></note> dans le pays.</para>
+  <para style="q1">
+    <verse number="2" style="v" />Imprécations, tromperies, meurtres, rapts, adultères se multiplient<note caller="+" style="f"><char style="fr" closed="false">4.2 </char><char style="ft" closed="false">Ex 20.13-17 ; Lv 19.11 ; Jr 7.9.</char></note> :</para>
+  <para style="q1">le sang versé succède au sang versé.</para>
+  <para style="q1">
+    <verse number="3" style="v" />Aussi le pays est-il désolé,</para>
+  <para style="q1">et tous ses habitants s'étiolent,</para>
+  <para style="q1">en même temps que les bêtes des champs et les oiseaux du ciel ;</para>
+  <para style="q1">et même les poissons de la mer disparaîtront<note caller="+" style="f"><char style="fr" closed="false">4.3 </char><char style="ft" closed="false">Solidarité des hommes et de la création Gn 3.17 ; 6.5-7 ; Es 24.4-6 ; 33.8-9 ; Jr 12.4 ; 23.10 ; Os 2.23-25 ; So 1.3 ; Ag 1.10-11.</char></note>.</para>
+  <para style="s1">Le péché des prêtres</para>
+  <para style="q1">
+    <verse number="4" style="v" />Attention !</para>
+  <para style="q1">que personne n'ait l'audace de se défendre,</para>
+  <para style="q1">que personne ne conteste,</para>
+  <para style="q1">que ni ton peuple ni toi, prêtre, n'ose plaider<note caller="+" style="f"><char style="fr" closed="false">4.4 </char><char style="ft" closed="false">Procès 2.4+.</char></note> !</para>
+  <para style="q1">
+    <verse number="5" style="v" />Tu trébucheras le jour,</para>
+  <para style="q1">et le prophète aussi trébuchera avec toi la nuit ;</para>
+  <para style="q1">je réduirai ta mère<note caller="+" style="f"><char style="fr" closed="false">4.5 </char><char style="ft" closed="false">Israël, comme une </char><char style="fq" closed="false">mère </char><char style="ft" closed="false">2.4 ; Es 50.1 ; Jr 31.15 ; voir Es 51.2.</char></note> au silence,</para>
+  <para style="q1">
+    <verse number="6" style="v" />mon peuple sera réduit au silence</para>
+  <para style="q1">faute de connaissance.</para>
+  <para style="q1">Puisque tu as repoussé la connaissance<note caller="+" style="f"><char style="fr" closed="false">4.6 </char><char style="fq" closed="false">connaissance de Dieu </char><char style="ft" closed="false">4.1+.</char></note>,</para>
+  <para style="q1">je te repousserai et tu ne seras plus mon prêtre :</para>
+  <para style="q1">tu as oublié l'instruction de ton Dieu,</para>
+  <para style="q1">j'oublierai tes fils, moi aussi.</para>
+  <para style="q1">
+    <verse number="7" style="v" />Tous, tant qu'ils sont, ont péché contre moi</para>
+  <para style="q1">– je vais changer leur gloire en infamie.</para>
+  <para style="q1">
+    <verse number="8" style="v" />Ils se repaissent du péché de mon peuple</para>
+  <para style="q1">et sont avides de ses fautes.</para>
+  <para style="q1">
+    <verse number="9" style="v" />Un même sort atteindra le peuple et le prêtre.</para>
+  <para style="q1">Je leur ferai rendre compte de leur conduite</para>
+  <para style="q1">et je leur revaudrai leurs actions.</para>
+  <para style="q1">
+    <verse number="10" style="v" />Ils mangeront sans se rassasier<note caller="+" style="f"><char style="fr" closed="false">4.10 </char><char style="fq" closed="false">sans se rassasier </char><char style="ft" closed="false">Mi 6.14.</char></note>,</para>
+  <para style="q1">ils se prostitueront sans se multiplier,</para>
+  <para style="q1">car ils ont cessé de respecter le <char style="nd">SEIGNEUR</char>.</para>
+  <para style="q1">
+    <verse number="11" style="v" />La débauche et l'ivresse font perdre le sens<note caller="+" style="f"><char style="fr" closed="false">4.11 </char><char style="fq" closed="false">ivresse </char><char style="ft" closed="false">et égarement Es 28.7 ; Pr 26.9.</char></note>.</para>
+  <para style="q1">
+    <verse number="12" style="v" />Mon peuple consulte son arbre</para>
+  <para style="q1">et c'est sa branche qui le renseigne,</para>
+  <para style="q1">car un esprit de prostitution<note caller="+" style="f"><char style="fr" closed="false">4.12 </char><char style="fq" closed="false">sa branche… : </char><char style="ft" closed="false">allusion à des pratiques visant à deviner l'avenir. – </char><char style="fq" closed="false">prostitution </char><char style="ft" closed="false">1.2+.</char></note> l'égare</para>
+  <para style="q1">et en se prostituant ils se soustraient à leur Dieu.</para>
+  <para style="q1">
+    <verse number="13" style="v" />Sur le sommet des montagnes, ils ont coutume de sacrifier,</para>
+  <para style="q1">et sur les collines, de brûler des offrandes,</para>
+  <para style="q1">sous le chêne, le peuplier, le térébinthe</para>
+  <para style="q1">– leur ombre est si agréable !</para>
+  <para style="q1">Aussi vos filles se prostituent-elles</para>
+  <para style="q1">et vos belles-filles sont-elles adultères<note caller="+" style="f"><char style="fr" closed="false">4.13 </char><char style="ft" closed="false">Voir 1.2 ; 2.4 et les notes. – Cultes païens sous les arbres Dt 12.2 ; 1 R 14.23 ; Jr 2.20.</char></note>.</para>
+  <para style="q1">
+    <verse number="14" style="v" />Je ne ferai pas le compte des prostitutions de vos filles,</para>
+  <para style="q1">des adultères de vos belles-filles,</para>
+  <para style="q1">puisqu'eux-mêmes – les prêtres –</para>
+  <para style="q1">s'en vont à l'écart avec les prostituées</para>
+  <para style="q1">et partagent les sacrifices avec les courtisanes sacrées<note caller="+" style="f"><char style="fr" closed="false">4.14 </char><char style="ft" closed="false">Participation au culte des faux dieux 13.1 ; Nb 25.1 ; voir 1 Co 10.8.</char></note> :</para>
+  <para style="q1">un peuple qui a si peu de discernement va à sa perte.</para>
+  <para style="q1">
+    <verse number="15" style="v" />Si toi, Israël, tu te prostitues,</para>
+  <para style="q1">que Juda du moins ne se rende pas coupable !</para>
+  <para style="q1">N'allez pas au Guilgal, ne montez pas à Beth-Awèn</para>
+  <para style="q1">et ne prononcez pas le serment :</para>
+  <para style="q1">« Le <char style="nd">SEIGNEUR</char> est vivant<note caller="+" style="f"><char style="fr" closed="false">4.15 </char><char style="fq" closed="false">le Guilgal : </char><char style="ft" closed="false">lieu de culte de l'ancien Israël 9.15 ; 12.12 ; Am 4.4 ; 5.5 ; Jos 4.19-20 ; 5.2-9 ; 1 S 11.14. – </char><char style="fq" closed="false">Beth-Awèn </char><char style="ft" closed="false">(= maison du péché) est ici une appellation ironique de Béthel (= maison de Dieu), autre lieu de culte traditionnel du royaume d'Israël Gn 28.16-19 ; 1 R 12.29-33 ; Os 5.8 ; voir Am 4.4 ; 5.5. – Formule de </char><char style="fq" closed="false">serment </char><char style="ft" closed="false">1 S 26.10,16 ; 1 R 17.12 ; 18.10 ; Jr 38.16 etc.</char></note> ! »</para>
+  <para style="q1">
+    <verse number="16" style="v" />Oui, Israël a été rétif comme une vache rétive</para>
+  <para style="q1">– et maintenant le <char style="nd">SEIGNEUR</char> devrait les lâcher vers les pâturages, comme des agneaux ?</para>
+  <para style="q1">
+    <verse number="17" style="v" />Ephraïm<note caller="+" style="f"><char style="fr" closed="false">4.17 </char><char style="ft" closed="false">Nom d'une des principales tribus du royaume du Nord, ou royaume d'Israël Gn 41.52. Dans le livre d'Osée, </char><char style="fq" closed="false">Ephraïm </char><char style="ft" closed="false">désigne souvent ce royaume lui-même ou sa population 5.3 ; 6.10, etc.</char></note> est l'associé des idoles : laisse-le.</para>
+  <para style="q1">
+    <verse number="18" style="v" />Leurs beuveries finies, ils poussent à la débauche ;</para>
+  <para style="q1">ses chefs aiment provoquer l'infamie.</para>
+  <para style="q1">
+    <verse number="19" style="v" />Un vent les enveloppera de ses ailes</para>
+  <para style="q1">et ils rougiront de leurs sacrifices<note caller="+" style="f"><char style="fr" closed="false">4.19 </char><char style="fq" closed="false">vent </char><char style="ft" closed="false">dévastateur 13.15 ; Jr 4.11. – Honte d'avoir participé aux cultes idolâtriques 10.5-6 ; Es 1.29.</char></note>.</para>
+  <chapter number="5" style="c" />
+  <para style="s1">Prêtres et maison royale</para>
+  <para style="p">
+    <verse number="1" style="v" />Ecoutez ceci, les prêtres ;</para>
+  <para style="q1">sois attentive, maison d'Israël ;</para>
+  <para style="q1">maison du roi, prêtez l'oreille :</para>
+  <para style="q1">C'était à vous de rendre la justice,</para>
+  <para style="q1">or vous avez été un piège à Miçpa</para>
+  <para style="q1">et un filet tendu sur le Tabor<note caller="+" style="f"><char style="fr" closed="false">5.1 </char><char style="fq" closed="false">C'était à vous de rendre la justice </char><char style="ft" closed="false">Dt 1.17 ; Mi 3.1 : autre traduction parfois adoptée </char><char style="fq" closed="false">le jugement s'exercera contre vous</char><char style="ft" closed="false">. – </char><char style="fq" closed="false">Miçpa : </char><char style="ft" closed="false">plusieurs localités du même nom existaient en Israël ; on ignore laquelle précisément Osée mentionne ici et à quel événement il fait allusion (voir Jg 11.11 ; 1 S 7.6…). Le nom </char><char style="fq" closed="false">Miçpa </char><char style="ft" closed="false">peut faire jeu de mots avec le terme traduit ici par </char><char style="fq" closed="false">justice</char><char style="ft" closed="false">. – </char><char style="fq" closed="false">le Tabor : </char><char style="ft" closed="false">montagne isolée, qui domine la plaine d'Izréel Jg 4.6.</char></note> ;</para>
+  <para style="q1">
+    <verse number="2" style="v" />des infidèles ont creusé une fosse profonde.</para>
+  <para style="q1">Et moi, je prépare leur punition à eux tous<note caller="+" style="f"><char style="fr" closed="false">5.2 </char><char style="fq" closed="false">tous </char><char style="ft" closed="false">Es 24.2 ; voir Rm 3.23.</char></note>.</para>
+  <para style="q1">
+    <verse number="3" style="v" />Moi, je connais Ephraïm<note caller="+" style="f"><char style="fr" closed="false">5.3 </char><char style="ft" closed="false">Voir 4.17 et la note.</char></note></para>
+  <para style="q1">et Israël ne m'est pas caché.</para>
+  <para style="q1">Ephraïm, du fait que tu as poussé à la débauche,</para>
+  <para style="q1">Israël en a été souillé.</para>
+  <para style="q1">
+    <verse number="4" style="v" />Leurs actions rendent impossible leur retour à leur Dieu,</para>
+  <para style="q1">car un esprit de prostitution souffle chez eux,</para>
+  <para style="q1">et ils ne connaissent pas le <char style="nd">SEIGNEUR</char><note caller="+" style="f"><char style="fr" closed="false">5.4 </char><char style="fq" closed="false">impossible retour à Dieu </char><char style="ft" closed="false">Jr 13.23 ; Pr 27.22 ; voir Mt 7.17. – </char><char style="fq" closed="false">prostitution </char><char style="ft" closed="false">1.2+ et la note ; voir Jn 8.34. – </char><char style="fq" closed="false">pas de connaissance de Dieu </char><char style="ft" closed="false">4.1+ ; voir Ep 4.18.</char></note>.</para>
+  <para style="q1">
+    <verse number="5" style="v" />L'orgueil d'Israël témoigne contre lui.</para>
+  <para style="q1">Israël et Ephraïm trébuchent sur leur faute,</para>
+  <para style="q1">et Juda lui aussi trébuche avec eux.</para>
+  <para style="q1">
+    <verse number="6" style="v" />Avec leur petit et leur gros bétail, ils viennent</para>
+  <para style="q1">pour rechercher le <char style="nd">SEIGNEUR</char> et ne le trouveront pas<note caller="+" style="f"><char style="fr" closed="false">5.6 </char><char style="fq" closed="false">chercher le Seigneur sans le trouver </char><char style="ft" closed="false">Am 8.11-12 ; Jn 7.34.</char></note> :</para>
+  <para style="q1">il s'est débarrassé d'eux.</para>
+  <para style="q1">
+    <verse number="7" style="v" />Ils ont trahi le <char style="nd">SEIGNEUR</char>, car ils ont engendré des bâtards ;</para>
+  <para style="q1">à présent la néoménie va les dévorer avec leur héritage.</para>
+  <para style="s1">Crime et châtiment d'une guerre fratricide</para>
+  <para style="q1">
+    <verse number="8" style="v" />Sonnez du cor à Guivéa,</para>
+  <para style="q1">de la trompette à Rama,</para>
+  <para style="q1">donnez l'alarme à Beth-Awèn<note caller="+" style="f"><char style="fr" closed="false">5.8 </char><char style="fq" closed="false">alarme </char><char style="ft" closed="false">Jr 4.5 ; Jl 2.1. – </char><char style="fq" closed="false">Beth-Awèn : </char><char style="ft" closed="false">voir 4.15 et la note. – </char><char style="fq" closed="false">Ephraïm </char><char style="ft" closed="false">(v. 9) : voir 4.17 et la note.</char></note>.</para>
+  <para style="q1">On te prend à revers, Benjamin !</para>
+  <para style="q1">
+    <verse number="9" style="v" />Ephraïm deviendra une ruine au jour du châtiment.</para>
+  <para style="q1">Parmi les tribus d'Israël, j'en fais l'annonce véridique.</para>
+  <para style="q1">
+    <verse number="10" style="v" />Les chefs de Juda sont des gens qui déplacent les frontières<note caller="+" style="f"><char style="fr" closed="false">5.10 </char><char style="fq" closed="false">Juda </char><char style="ft" closed="false">1.7+. – bornes déplacées Dt 19.14 ; 27.17.</char></note> ;</para>
+  <para style="q1">sur eux, je répandrai à flots ma fureur.</para>
+  <para style="q1">
+    <verse number="11" style="v" />Ephraïm est opprimé, brisé dans le jugement,</para>
+  <para style="q1">car il a persisté à courir après le néant.</para>
+  <para style="q1">
+    <verse number="12" style="v" />Et moi je serai comme la teigne pour Ephraïm</para>
+  <para style="q1">et comme la carie pour la maison de Juda.</para>
+  <para style="q1">
+    <verse number="13" style="v" />Ephraïm a vu sa maladie,</para>
+  <para style="q1">et Juda son ulcère ;</para>
+  <para style="q1">Ephraïm est allé vers Assour</para>
+  <para style="q1">et a envoyé des messagers au grand roi<note caller="+" style="f"><char style="fr" closed="false">5.13 </char><char style="ft" closed="false">C'est-à-dire au roi d'Assyrie (voir 10.6) ; 2 R 15.19-20 ; Os 7.11 ; 8.9 ; 12.2 ; voir 14.4.</char></note>,</para>
+  <para style="q1">mais lui, il ne peut pas vous guérir</para>
+  <para style="q1">ni vous débarrasser de votre ulcère.</para>
+  <para style="q1">
+    <verse number="14" style="v" />Bien plus, moi je serai comme un lion pour Ephraïm</para>
+  <para style="q1">et comme un jeune lion pour la maison de Juda.</para>
+  <para style="q1">C'est moi, moi qui vais déchirer,</para>
+  <para style="q1">puis je m'en irai avec ma proie,</para>
+  <para style="q1">et personne ne me l'arrachera<note caller="+" style="f"><char style="fr" closed="false">5.14 </char><char style="ft" closed="false">2.12+.</char></note>.</para>
+  <para style="s1">Dieu se retire</para>
+  <para style="q1">
+    <verse number="15" style="v" />Je m'en irai, je retournerai chez moi,</para>
+  <para style="q1">jusqu'à ce qu'ils s'avouent coupables</para>
+  <para style="q1">et qu'ils recherchent ma face.</para>
+  <para style="q1">Dans leur détresse, ils se mettront en quête de moi<note caller="+" style="f"><char style="fr" closed="false">5.15 </char><char style="ft" closed="false">Jr 29.13 ; Ps 78.34 ; voir Os 5.6 ; 10.12.</char></note>.</para>
+  <chapter number="6" style="c" />
+  <para style="p">
+    <verse number="1" style="v" />« Venez, retournons vers le <char style="nd">SEIGNEUR</char><note caller="+" style="f"><char style="fr" closed="false">6.1 </char><char style="ft" closed="false">14.2 ; Lm 3.40 ; 5.21.</char></note>.</para>
+  <para style="q1">C'est lui qui a déchiré et c'est lui qui nous guérira,</para>
+  <para style="q1">il a frappé et il pansera nos plaies.</para>
+  <para style="q1">
+    <verse number="2" style="v" />Au bout de deux jours, il nous aura rendu la vie,</para>
+  <para style="q1">au troisième jour, il nous aura relevés</para>
+  <para style="q1">et nous vivrons en sa présence<note caller="+" style="f"><char style="fr" closed="false">6.2 </char><char style="fq" closed="false">deux… trois… </char><char style="ft" closed="false">Am 1.3s ; Mi 5.4 ; Pr 30.15,18,21… ; voir Lc 24.7 ; 1 Co 15.4. – </char><char style="fq" closed="false">en présence du Seigneur </char><char style="ft" closed="false">Ps 116.9 ; Lc 1.75.</char></note>.</para>
+  <para style="q1">
+    <verse number="3" style="v" />Efforçons-nous de connaître le <char style="nd">SEIGNEUR</char> :</para>
+  <para style="q1">son lever est sûr comme l'aurore,</para>
+  <para style="q1">il viendra vers nous comme vient la pluie,</para>
+  <para style="q1">comme l'ondée de printemps arrose la terre<note caller="+" style="f"><char style="fr" closed="false">6.3 </char><char style="fq" closed="false">connaître le Seigneur </char><char style="ft" closed="false">4.1+ ; Ph 3.8. – </char><char style="fq" closed="false">la pluie </char><char style="ft" closed="false">au bon moment Dt 11.14 ; Ps 72.6 ; voir Gn 8.22 ; Jr 33.25 ; Jl 2.23.</char></note>. »</para>
+  <para style="q1">
+    <verse number="4" style="v" />Que vais-je te faire, Ephraïm ?</para>
+  <para style="q1">Que vais-je te faire, Juda ?</para>
+  <para style="q1">Votre amour est comme la nuée du matin,</para>
+  <para style="q1">comme la rosée<note caller="+" style="f"><char style="fr" closed="false">6.4 </char><char style="fq" closed="false">Ephraïm : </char><char style="ft" closed="false">voir 4.17 et la note. – </char><char style="fq" closed="false">nuée du matin, rosée </char><char style="ft" closed="false">13.3 ; 14.6 ; Mi 5.6 ; Pr 19.12.</char></note> matinale qui passe.</para>
+  <para style="q1">
+    <verse number="5" style="v" />C'est pourquoi j'ai frappé par les prophètes,</para>
+  <para style="q1">je les ai massacrés par les paroles de ma bouche<note caller="+" style="f"><char style="fr" closed="false">6.5 </char><char style="fq" closed="false">la parole de Dieu comme une épée </char><char style="ft" closed="false">Es 49.2 ; He 4.12-13+ ; voir Es 11.4 ; Jr 5.14 ; 23.29.</char></note> :</para>
+  <para style="q1">et mon jugement jaillit comme la lumière.</para>
+  <para style="q1">
+    <verse number="6" style="v" />Car c'est l'amour qui me plaît, non le sacrifice ;</para>
+  <para style="q1">et la connaissance de Dieu, je la préfère aux holocaustes<note caller="+" style="f"><char style="fr" closed="false">6.6 </char><char style="fq" closed="false">amour </char><char style="ft" closed="false">4.1. – </char><char style="fq" closed="false">connaissance de Dieu </char><char style="ft" closed="false">4.1+. – </char><char style="fq" closed="false">plutôt que des sacrifices </char><char style="ft" closed="false">Es 1.11-17 ; Am 5.22-24 ; Ps 40.7 ; 51.19 ; Pr 21.3 ; Mt 9.13 ; 12.7.</char></note>.</para>
+  <para style="s1">Infidélités et trahisons</para>
+  <para style="q1">
+    <verse number="7" style="v" />Mais eux, comme Adam, ont transgressé l'alliance<note caller="+" style="f"><char style="fr" closed="false">6.7 </char><char style="ft" closed="false">8.1 ; Jr 31.32 ; 34.15-18.</char></note>,</para>
+  <para style="q1">voici où ils m'ont trahi :</para>
+  <para style="q1">
+    <verse number="8" style="v" />Galaad<note caller="+" style="f"><char style="fr" closed="false">6.8 </char><char style="fq" closed="false">Galaad </char><char style="ft" closed="false">désigne ici une localité de Transjordanie 12.12 ; voir Gn 31.46-48 ; 2 R 15.25.</char></note> est une cité de malfaiteurs,</para>
+  <para style="q1">pleine de traces de sang ;</para>
+  <para style="q1">
+    <verse number="9" style="v" />comme une bande en embuscade,</para>
+  <para style="q1">une troupe de prêtres</para>
+  <para style="q1">assassine sur le chemin de Sichem :</para>
+  <para style="q1">voilà les horreurs qu'ils commettent !</para>
+  <para style="q1">
+    <verse number="10" style="v" />Dans la maison d'Israël,</para>
+  <para style="q1">j'ai vu des choses horribles :</para>
+  <para style="q1">là, c'est la débauche d'Ephraïm,</para>
+  <para style="q1">Israël en est souillé.</para>
+  <para style="q1">
+    <verse number="11" style="v" />A toi aussi Juda, je prépare une moisson</para>
+  <para style="q1">– quand je changerai la destinée<note caller="+" style="f"><char style="fr" closed="false">6.11 </char><char style="ft" closed="false">Dt 30.3 ; Jr 29.14+ ; Ez 16.53 ; 29.14 ; 39.25 ; Am 9.14 ; So 2.7 ; 3.20 ; Lm 2.14.</char></note> de mon peuple.</para>
+  <chapter number="7" style="c" />
+  <para style="p">
+    <verse number="1" style="v" />Au moment même où je veux guérir Israël,</para>
+  <para style="q1">se dévoilent la faute d'Ephraïm et les crimes de Samarie<note caller="+" style="f"><char style="fr" closed="false">7.1 </char><char style="fq" closed="false">Ephraïm : </char><char style="ft" closed="false">voir 4.17 et la note. – </char><char style="fq" closed="false">Samarie : </char><char style="ft" closed="false">capitale du royaume d'Israël.</char></note> :</para>
+  <para style="q1">oui, l'on pratique l'imposture ;</para>
+  <para style="q1">le voleur s'introduit dans les maisons ;</para>
+  <para style="q1">au-dehors, le brigand sévit.</para>
+  <para style="q1">
+    <verse number="2" style="v" />Et ils ne se disent point dans leur cœur</para>
+  <para style="q1">que tout ce qu'ils font de mal,</para>
+  <para style="q1">je le garde en mémoire ;</para>
+  <para style="q1">à présent leurs actions les enveloppent<note caller="+" style="f"><char style="fr" closed="false">7.2 </char><char style="ft" closed="false">Dieu se souvient 1 R 17.18 ; Ps 10.11 ; Ml 3.16 ; voir Os 8.13 ; 9.9 ; Am 8.7. – </char><char style="fq" closed="false">leurs actions les enveloppent </char><char style="ft" closed="false">Jr 2.19 ; Pr 5.21-22.</char></note>,</para>
+  <para style="q1">elles sont là devant moi.</para>
+  <para style="s1">Conspirations et ingratitude</para>
+  <para style="q1">
+    <verse number="3" style="v" />Dans leur méchanceté, ils amusent le roi,</para>
+  <para style="q1">et par leurs perfidies, les chefs.</para>
+  <para style="q1">
+    <verse number="4" style="v" />Tous, ils sont adultères.</para>
+  <para style="q1">Ils sont comme un four brûlant que le boulanger cesse d'attiser</para>
+  <para style="q1">depuis que la pâte est pétrie jusqu'à ce qu'elle lève.</para>
+  <para style="q1">
+    <verse number="5" style="v" />Au jour de notre roi,</para>
+  <para style="q1">les chefs se rendent malades par les fumées du vin,</para>
+  <para style="q1">on tend la main aux railleurs.</para>
+  <para style="q1">
+    <verse number="6" style="v" />Car ils se sont approchés comme un feu de fournaise,</para>
+  <para style="q1">le cœur plein de fourberie :</para>
+  <para style="q1">toute la nuit, leur colère<note caller="+" style="f"><char style="fr" closed="false">7.6 </char><char style="fq" closed="false">leur colère : </char><char style="ft" closed="false">d'après deux anciennes versions ; hébreu </char><char style="fq" closed="false">leur boulanger.</char></note> sommeille ;</para>
+  <para style="q1">au matin, elle brûle comme un feu violent.</para>
+  <para style="q1">
+    <verse number="7" style="v" />Tous ils sont échauffés comme un four :</para>
+  <para style="q1">ils dévorent leurs souverains,</para>
+  <para style="q1">tous leurs rois sont tombés<note caller="+" style="f"><char style="fr" closed="false">7.7 </char><char style="ft" closed="false">2 R 15.10,14,25.</char></note>,</para>
+  <para style="q1">et il n'y en a pas un parmi eux pour crier vers moi.</para>
+  <para style="q1">
+    <verse number="8" style="v" />Ephraïm se laisse mélanger aux autres peuples,</para>
+  <para style="q1">Ephraïm est une crêpe qu'on n'a pas retournée.</para>
+  <para style="q1">
+    <verse number="9" style="v" />Des étrangers dévorent sa vigueur,</para>
+  <para style="q1">et lui n'en sait rien ;</para>
+  <para style="q1">et même, des cheveux blancs parsèment sa tête,</para>
+  <para style="q1">et lui n'en sait rien<note caller="+" style="f"><char style="fr" closed="false">7.9 </char><char style="ft" closed="false">Inconscient de ce qui se passe Jr 5.3 ; Ap 3.17.</char></note>.</para>
+  <para style="q1">
+    <verse number="10" style="v" />L'orgueil d'Israël témoigne contre lui,</para>
+  <para style="q1">mais ils ne reviennent pas au <char style="nd">SEIGNEUR</char><note caller="+" style="f"><char style="fr" closed="false">7.10 </char><char style="ft" closed="false">11.5 ; Es 9.12 ; Am 4.6-11 ; voir Os 5.4.</char></note>, leur Dieu ;</para>
+  <para style="q1">malgré tout cela, ils ne le recherchent pas.</para>
+  <para style="q1">
+    <verse number="11" style="v" />Ephraïm est une colombe naïve et sans cervelle :</para>
+  <para style="q1">ils appellent l'Egypte, ils courent en Assyrie<note caller="+" style="f"><char style="fr" closed="false">7.11 </char><char style="fq" closed="false">sans cervelle </char><char style="ft" closed="false">4.11 ; voir Mt 10.16. – </char><char style="fq" closed="false">appels à l'Egypte et à l'Assyrie </char><char style="ft" closed="false">12.2 ; Jr 2.18 ; Lm 5.6.</char></note>.</para>
+  <para style="q1">
+    <verse number="12" style="v" />Pendant qu'ils courent, je jette sur eux mon filet<note caller="+" style="f"><char style="fr" closed="false">7.12 </char><char style="ft" closed="false">Ez 12.13 ; 32.3 ; voir Qo 9.12 ; Mt 13.47.</char></note>,</para>
+  <para style="q1">je les abats comme les oiseaux du ciel,</para>
+  <para style="q1">je les capture dès que j'entends leur rassemblement.</para>
+  <para style="q1">
+    <verse number="13" style="v" />Malheur à eux car ils me fuient !</para>
+  <para style="q1">Ruine sur eux car ils se sont révoltés contre moi !</para>
+  <para style="q1">Et moi, je devrais les racheter,</para>
+  <para style="q1">eux qui profèrent des mensonges à mon endroit<note caller="+" style="f"><char style="fr" closed="false">7.13 </char><char style="ft" closed="false">Un </char><char style="fq" closed="false">rachat </char><char style="ft" closed="false">qui ne va pas de soi 13.14.</char></note> ?</para>
+  <para style="q1">
+    <verse number="14" style="v" />Ce n'est pas du fond du cœur qu'ils crient vers moi :</para>
+  <para style="q1">quand ils se lamentent sur leurs couches,</para>
+  <para style="q1">qu'ils se font des incisions<note caller="+" style="f"><char style="fr" closed="false">7.14 </char><char style="ft" closed="false">Sans doute pour provoquer l'attention ou la pitié de Dieu. Comparer 1 R 18.28. Voir aussi au glossaire DÉCHIRER SES VÊTEMENTS.</char></note> pour du blé et du vin nouveau,</para>
+  <para style="q1">c'est contre moi qu'ils se montrent récalcitrants.</para>
+  <para style="q1">
+    <verse number="15" style="v" />Moi, j'avais dirigé, fortifié leur bras,</para>
+  <para style="q1">et ils machinaient le mal à mon endroit.</para>
+  <para style="q1">
+    <verse number="16" style="v" />S'ils retournent, ce n'est pas vers en haut,</para>
+  <para style="q1">ils sont comme un arc défaillant.</para>
+  <para style="q1">Leurs chefs tomberont par l'épée</para>
+  <para style="q1">pour l'insolence de leur langage :</para>
+  <para style="q1">on en rira au pays d'Egypte<note caller="+" style="f"><char style="fr" closed="false">7.16 </char><char style="fq" closed="false">vers en haut </char><char style="ft" closed="false">11.7. – Ironie en Egypte 9.6 ; Jr 42.18.</char></note>.</para>
+  <chapter number="8" style="c" />
+  <para style="s1">Anarchie intérieure, politique étrangère</para>
+  <para style="p">
+    <verse number="1" style="v" />Embouche le cor !</para>
+  <para style="q1">Comme l'aigle, le malheur fond sur la maison du <char style="nd">SEIGNEUR</char>,</para>
+  <para style="q1">parce qu'ils ont transgressé mon alliance<note caller="+" style="f"><char style="fr" closed="false">8.1 </char><char style="fq" closed="false">maison du Seigneur : </char><char style="ft" closed="false">ici le territoire d'Israël ; 9.15 ; Jr 12.7 ; voir Za 9.1. – </char><char style="fq" closed="false">alliance transgressée </char><char style="ft" closed="false">6.7+.</char></note></para>
+  <para style="q1">et se sont révoltés contre mon instruction.</para>
+  <para style="q1">
+    <verse number="2" style="v" />Ils crient vers moi :</para>
+  <para style="q1">« Mon Dieu, nous te connaissons, nous, Israël<note caller="+" style="f"><char style="fr" closed="false">8.2 </char><char style="ft" closed="false">6.3 ; voir 4.1+.</char></note> ! »</para>
+  <para style="q1">
+    <verse number="3" style="v" />Israël a repoussé le bien :</para>
+  <para style="q1">que l'ennemi le poursuive !</para>
+  <para style="q1">
+    <verse number="4" style="v" />Ils ont créé des rois sans moi<note caller="+" style="f"><char style="fr" closed="false">8.4 </char><char style="ft" closed="false">2 R 15.10,14,25.</char></note>,</para>
+  <para style="q1">sans moi nommé des chefs.</para>
+  <para style="q1">De leur argent et de leur or, ils se sont fait des idoles,</para>
+  <para style="q1">pour être anéantis eux-mêmes.</para>
+  <para style="q1">
+    <verse number="5" style="v" />Il est repoussant, ton veau<note caller="+" style="f"><char style="fr" closed="false">8.5 </char><char style="ft" closed="false">Allusion ironique à un veau d'or, honoré à Samarie 2 R 17.16 ; Os 10.5-6 ; 13.2 ; voir Ex 32.4,8 ; Dt 9.16 ; 1 R 12.28,32 ; 2 R 17.16 ; 2 Ch 11.15 ; 13.8 ; Ne 9.18 ; Ps 106.19 ; Ac 7.41.</char></note>, Samarie !</para>
+  <para style="q1">– Ma colère s'est enflammée contre eux.</para>
+  <para style="q1">Jusqu'à quand seront-ils incapables de pureté ?</para>
+  <para style="q1">
+    <verse number="6" style="v" />Il vient d'Israël, un artisan l'a fait,</para>
+  <para style="q1">il n'est pas Dieu ;</para>
+  <para style="q1">oui, le veau de Samarie s'en ira en morceaux.</para>
+  <para style="q1">
+    <verse number="7" style="v" />Ils sèment le vent<note caller="+" style="f"><char style="fr" closed="false">8.7 </char><char style="ft" closed="false">Jb 4.8 ; Pr 22.8 ; Ga 6.7.</char></note>, ils récolteront la tempête.</para>
+  <para style="q1">Blé sans épi ne donne pas de farine,</para>
+  <para style="q1">et s'il en donne quand même,</para>
+  <para style="q1">ce sont des étrangers qui l'engloutissent.</para>
+  <para style="q1">
+    <verse number="8" style="v" />Israël est englouti :</para>
+  <para style="q1">les voici parmi les nations comme un objet sans valeur !</para>
+  <para style="q1">
+    <verse number="9" style="v" />Quand il est monté vers Assour</para>
+  <para style="q1">– onagre livré à lui seul –,</para>
+  <para style="q1">Ephraïm s'est acheté des amants<note caller="+" style="f"><char style="fr" closed="false">8.9 </char><char style="fq" closed="false">vers Assour </char><char style="ft" closed="false">5.13. – </char><char style="fq" closed="false">onagre </char><char style="ft" closed="false">(âne sauvage) fait jeu de mots, en hébreu, avec </char><char style="fq" closed="false">Ephraïm</char><char style="ft" closed="false">. – </char><char style="fq" closed="false">Ephraïm : </char><char style="ft" closed="false">voir 4.17 et la note. – </char><char style="fq" closed="false">des amants </char><char style="ft" closed="false">2.7.</char></note>.</para>
+  <para style="q1">
+    <verse number="10" style="v" />Même s'ils distribuent des cadeaux parmi les nations,</para>
+  <para style="q1">je les rassemblerai maintenant,</para>
+  <para style="q1">et sous peu ils trembleront sous le poids du roi des princes.</para>
+  <para style="q1">
+    <verse number="11" style="v" />Ephraïm a multiplié les autels<note caller="+" style="f"><char style="fr" closed="false">8.11 </char><char style="ft" closed="false">10.1 ; 12.12.</char></note></para>
+  <para style="q1">pour enlever le péché,</para>
+  <para style="q1">mais voici que ces autels sont devenus pour lui</para>
+  <para style="q1">une occasion de pécher.</para>
+  <para style="q1">
+    <verse number="12" style="v" />Que j'écrive pour lui mille prescriptions de ma loi,</para>
+  <para style="q1">on les considère comme venant d'un étranger.</para>
+  <para style="q1">
+    <verse number="13" style="v" />En guise de sacrifice</para>
+  <para style="q1">ils sacrifient de la chair et la mangent,</para>
+  <para style="q1">mais le <char style="nd">SEIGNEUR</char> n'y trouve pas de plaisir ;</para>
+  <para style="q1">à présent il fait mémoire de leurs fautes</para>
+  <para style="q1">et il fait le compte de leurs péchés.</para>
+  <para style="q1">Ils devront retourner en Egypte<note caller="+" style="f"><char style="fr" closed="false">8.13 </char><char style="ft" closed="false">Des </char><char style="fq" closed="false">sacrifices </char><char style="ft" closed="false">qui ne plaisent pas à Dieu 6.6 ; Am 5.21-24+. – Dieu se souvient 7.2+. – </char><char style="fq" closed="false">retourner en Egypte </char><char style="ft" closed="false">9.3 ; 11.5.</char></note>.</para>
+  <para style="q1">
+    <verse number="14" style="v" />Israël oublie son créateur<note caller="+" style="f"><char style="fr" closed="false">8.14 </char><char style="fq" closed="false">créateur oublié </char><char style="ft" closed="false">Dt 32.15,18 ; Es 1.2-3 ; 51.13 ; Jr 2.32 ; 3.21 ; Ez 22.12.</char></note>,</para>
+  <para style="q1">il s'est construit des palais.</para>
+  <para style="q1">Quant à Juda, il multiplie ses villes fortes.</para>
+  <para style="q1">Mais j'enverrai le feu dans ses villes</para>
+  <para style="q1">et il en dévorera les citadelles.</para>
+  <chapter number="9" style="c" />
+  <para style="s1">Un pain de deuil</para>
+  <para style="p">
+    <verse number="1" style="v" />Israël, ne pousse pas la joie</para>
+  <para style="q1">jusqu'au délire, comme les peuples,</para>
+  <para style="q1">pour avoir pratiqué la prostitution<note caller="+" style="f"><char style="fr" closed="false">9.1 </char><char style="ft" closed="false">Voir 1.2+ ; 2.4 et les notes.</char></note> loin de ton Dieu</para>
+  <para style="q1">et pour en avoir aimé le salaire sur toutes les aires à blé.</para>
+  <para style="q1">
+    <verse number="2" style="v" />L'aire et le pressoir ne les satisferont pas,</para>
+  <para style="q1">le vin nouveau trompera leur attente<note caller="+" style="f"><char style="fr" closed="false">9.2 </char><char style="ft" closed="false">Récoltes qui profitent à d'autres 2.11 ; 8.7 ; voir Es 65.22 ; Dt 28.38-43.</char></note>.</para>
+  <para style="q1">
+    <verse number="3" style="v" />Ils ne pourront pas rester dans le pays du <char style="nd">SEIGNEUR</char> :</para>
+  <para style="q1">Ephraïm retournera en Egypte,</para>
+  <para style="q1">et en Assyrie<note caller="+" style="f"><char style="fr" closed="false">9.3 </char><char style="fq" closed="false">Ephraïm : </char><char style="ft" closed="false">voir 4.17 et la note. – </char><char style="fq" closed="false">retour en Egypte </char><char style="ft" closed="false">8.13+. – </char><char style="fq" closed="false">en Assyrie </char><char style="ft" closed="false">10.6 ; 11.5.</char></note> ils mangeront une nourriture impure.</para>
+  <para style="q1">
+    <verse number="4" style="v" />Ils ne verseront pas de vin en libation<note caller="+" style="f"><char style="fr" closed="false">9.4 </char><char style="ft" closed="false">Voir au glossaire SACRIFICES.</char></note> pour le <char style="nd">SEIGNEUR</char>,</para>
+  <para style="q1">leurs sacrifices ne lui plairont pas :</para>
+  <para style="q1">ce sera pour eux comme un pain de deuil,</para>
+  <para style="q1">tous ceux qui en mangent deviennent impurs,</para>
+  <para style="q1">– car leur pain assurera leur vie,</para>
+  <para style="q1">mais il n'entrera pas dans la Maison du <char style="nd">SEIGNEUR</char>.</para>
+  <para style="q1">
+    <verse number="5" style="v" />Que ferez-vous au jour de la solennité,</para>
+  <para style="q1">au jour de fête<note caller="+" style="f"><char style="fr" closed="false">9.5 </char><char style="fq" closed="false">fête </char><char style="ft" closed="false">Ex 23.14-17.</char></note> du <char style="nd">SEIGNEUR</char> ?</para>
+  <para style="s1">Le prophète méprisé</para>
+  <para style="q1">
+    <verse number="6" style="v" />Voici qu'ils ont fui la destruction,</para>
+  <para style="q1">l'Egypte verra leur rassemblement,</para>
+  <para style="q1">Memphis<note caller="+" style="f"><char style="fr" closed="false">9.6 </char><char style="ft" closed="false">Ville d'Egypte proche des pyramides (déjà célèbres au temps d'Osée).</char></note> sera leur tombeau.</para>
+  <para style="q1">Leurs trésors précieux, les chardons en hériteront,</para>
+  <para style="q1">les ronces envahiront leurs tentes.</para>
+  <para style="q1">
+    <verse number="7" style="v" />Le temps du châtiment est arrivé,</para>
+  <para style="q1">le temps des comptes est arrivé :</para>
+  <para style="q1">qu'Israël le sache !</para>
+  <para style="q1">Le prophète devient fou,</para>
+  <para style="q1">l'homme de l'esprit délire,</para>
+  <para style="q1">à cause de la grandeur de ton crime</para>
+  <para style="q1">et de la grandeur de l'attaque que tu subis.</para>
+  <para style="q1">
+    <verse number="8" style="v" />La sentinelle d'Ephraïm est avec mon Dieu</para>
+  <para style="q1">– c'est le prophète –,</para>
+  <para style="q1">on lui tend un piège sur tous ses chemins,</para>
+  <para style="q1">on l'attaque jusque dans la maison de son Dieu<note caller="+" style="f"><char style="fr" closed="false">9.8 </char><char style="fq" closed="false">le prophète sentinelle </char><char style="ft" closed="false">Jr 6.17 ; Ez 3.17 ; 33.2-7. – </char><char style="fq" closed="false">prophète </char><char style="ft" closed="false">persécuté Am 7.10-17 ; Jr 20.1-6 ; 36.26 ; 37.15-16 ; 38.4-6 ; 2 Ch 24.20-21 ; Mt 23.29-36 ; Lc 11.51.</char></note>.</para>
+  <para style="q1">
+    <verse number="9" style="v" />Ils sont allés au fond de la corruption,</para>
+  <para style="q1">comme aux jours de Guivéa.</para>
+  <para style="q1">Dieu se souviendra<note caller="+" style="f"><char style="fr" closed="false">9.9 </char><char style="ft" closed="false">Allusion aux événements racontés en Jg 19–21 ; Os 10.9. – </char><char style="fq" closed="false">Dieu se souviendra </char><char style="ft" closed="false">7.2+.</char></note> de leur crime,</para>
+  <para style="q1">il fera le compte de leurs péchés.</para>
+  <para style="s1">Baal-Péor</para>
+  <para style="q1">
+    <verse number="10" style="v" />C'est comme des raisins au désert</para>
+  <para style="q1">que j'ai trouvé Israël,</para>
+  <para style="q1">comme un fruit précoce sur un figuier, dans sa primeur,</para>
+  <para style="q1">que j'ai vu vos pères.</para>
+  <para style="q1">Eux, dès leur arrivée à Baal-Péor,</para>
+  <para style="q1">se sont voués à la Honte<note caller="+" style="f"><char style="fr" closed="false">9.10 </char><char style="fq" closed="false">au désert </char><char style="ft" closed="false">2.16 ; Dt 32.10. – </char><char style="fq" closed="false">à Baal-Péor : </char><char style="ft" closed="false">allusion à la scène d'idolâtrie racontée en Nb 25 ; Dt 3.29 ; 4.46 ; 34.6. – </char><char style="fq" closed="false">la Honte : </char><char style="ft" closed="false">terme injurieux par lequel les Israélites remplaçaient le nom de Baal.</char></note></para>
+  <para style="q1">et sont devenus des abominations</para>
+  <para style="q1">comme l'objet de leur amour.</para>
+  <para style="q1">
+    <verse number="11" style="v" />Ephraïm, ce qui fait sa gloire</para>
+  <para style="q1">va s'envoler comme un oiseau,</para>
+  <para style="q1">dès la naissance, dès la grossesse, dès la conception.</para>
+  <para style="q1">
+    <verse number="12" style="v" />Même s'ils élèvent des fils,</para>
+  <para style="q1">je les en priverai<note caller="+" style="f"><char style="fr" closed="false">9.12 </char><char style="ft" closed="false">Dt 32.25.</char></note> avant qu'ils soient des hommes.</para>
+  <para style="q1">Oh oui, malheur à eux quand je vais me retirer d'eux !</para>
+  <para style="q1">
+    <verse number="13" style="v" />Ephraïm, je le vois comme une autre Tyr<note caller="+" style="f"><char style="fr" closed="false">9.13 </char><char style="ft" closed="false">Ville principale de la Phénicie, construite sur une île proche de la côte Ez 26–28.</char></note>,</para>
+  <para style="q1">plantée dans un lieu verdoyant,</para>
+  <para style="q1">et pourtant Ephraïm devra livrer ses fils à la tuerie.</para>
+  <para style="q1">
+    <verse number="14" style="v" />Donne-leur, <char style="nd">SEIGNEUR</char>…</para>
+  <para style="q1">Que donneras-tu ?</para>
+  <para style="q1">Donne-leur ventre stérile et mamelles desséchées<note caller="+" style="f"><char style="fr" closed="false">9.14 </char><char style="ft" closed="false">Au lieu de la fertilité que les Israélites espéraient recevoir de Baal (voir la note sur 1.2) ; Jb 3.11-12 ; Lc 23.29.</char></note>.</para>
+  <para style="s1">Guilgal</para>
+  <para style="q1">
+    <verse number="15" style="v" />Toute leur perversité s'est manifestée au Guilgal :</para>
+  <para style="q1">c'est là que je les ai pris en haine ;</para>
+  <para style="q1">à cause de la perversité de leurs actions</para>
+  <para style="q1">je les chasserai de ma maison<note caller="+" style="f"><char style="fr" closed="false">9.15 </char><char style="fq" closed="false">Guilgal </char><char style="ft" closed="false">4.15+ et la note. – </char><char style="fq" closed="false">la maison du Seigneur </char><char style="ft" closed="false">8.1+.</char></note>,</para>
+  <para style="q1">je n'aurai plus d'amour pour eux ;</para>
+  <para style="q1">tous leurs chefs sont des rebelles.</para>
+  <para style="q1">
+    <verse number="16" style="v" />Ephraïm a été frappé,</para>
+  <para style="q1">leur racine est desséchée,</para>
+  <para style="q1">de fruit<note caller="+" style="f"><char style="fr" closed="false">9.16 </char><char style="ft" closed="false">En hébreu le terme traduit par </char><char style="fq" closed="false">fruit (peri</char><char style="ft" closed="false">) évoque par allitération le nom d’</char><char style="fq" closed="false">Ephraïm.</char></note>, ils n'en donneront point.</para>
+  <para style="q1">Même s'ils enfantent,</para>
+  <para style="q1">je ferai mourir le fruit chéri de leur ventre.</para>
+  <para style="q1">
+    <verse number="17" style="v" />Mon Dieu les repoussera,</para>
+  <para style="q1">car ils ne l'ont pas écouté,</para>
+  <para style="q1">et ils vont se mettre à errer parmi les nations.</para>
+  <chapter number="10" style="c" />
+  <para style="s1">Roi et veau</para>
+  <para style="p">
+    <verse number="1" style="v" />Israël, vigne florissante,</para>
+  <para style="q1">produisait du fruit à l'avenant.</para>
+  <para style="q1">Plus ses fruits se multipliaient,</para>
+  <para style="q1">plus il multipliait les autels<note caller="+" style="f"><char style="fr" closed="false">10.1 </char><char style="fq" closed="false">Israël </char><char style="ft" closed="false">comme une </char><char style="fq" closed="false">vigne </char><char style="ft" closed="false">Es 5.1-7+. – </char><char style="fq" closed="false">les autels multipliés </char><char style="ft" closed="false">Os 8.11 ; 12.12.</char></note> ;</para>
+  <para style="q1">plus sa terre était belle,</para>
+  <para style="q1">plus ils embellissaient les stèles.</para>
+  <para style="q1">
+    <verse number="2" style="v" />Leur cœur est faux,</para>
+  <para style="q1">maintenant ils vont payer :</para>
+  <para style="q1">lui-même, le <char style="nd">SEIGNEUR</char>, va briser leurs autels</para>
+  <para style="q1">et détruire leurs stèles.</para>
+  <para style="q1">
+    <verse number="3" style="v" />A présent ils disent :</para>
+  <para style="q1">« Nous n'avons pas de roi, puisque nous ne craignons pas le <char style="nd">SEIGNEUR</char></para>
+  <para style="q1">– et le roi, que pourrait-il faire pour nous ? »</para>
+  <para style="q1">
+    <verse number="4" style="v" />On prononce des paroles,</para>
+  <para style="q1">on fait de faux serments,</para>
+  <para style="q1">on conclut des alliances,</para>
+  <para style="q1">et le droit pousse comme une plante vénéneuse<note caller="+" style="f"><char style="fr" closed="false">10.4 </char><char style="ft" closed="false">Am 5.7 ; 6.12.</char></note> sur les sillons des champs.</para>
+  <para style="q1">
+    <verse number="5" style="v" />Les habitants de Samarie tremblent pour les génisses de Beth-Awèn,</para>
+  <para style="q1">car son peuple est en deuil au sujet du veau,</para>
+  <para style="q1">ainsi que sa prêtraille<note caller="+" style="f"><char style="fr" closed="false">10.5 </char><char style="fq" closed="false">Beth-Awèn </char><char style="ft" closed="false">4.15+ et la note. – </char><char style="fq" closed="false">le veau </char><char style="ft" closed="false">8.5+ et la note. – </char><char style="fq" closed="false">sa prêtraille : </char><char style="ft" closed="false">terme ironique visant les prêtres des cultes contaminés par la religion de Baal (voir 2 R 23.5).</char></note>.</para>
+  <para style="q1">Qu'ils se réjouissent de sa magnificence,</para>
+  <para style="q1">maintenant qu'elle est transportée loin de nous !</para>
+  <para style="q1">
+    <verse number="6" style="v" />Le veau aussi, on l'emportera en Assyrie</para>
+  <para style="q1">en offrande pour le grand roi<note caller="+" style="f"><char style="fr" closed="false">10.6 </char><char style="fq" closed="false">en Assyrie </char><char style="ft" closed="false">9.3 ; 11.5. – </char><char style="fq" closed="false">le grand roi </char><char style="ft" closed="false">5.13.</char></note>.</para>
+  <para style="q1">Ephraïm en recueillera de la honte</para>
+  <para style="q1">et Israël rougira de ses intrigues.</para>
+  <para style="q1">
+    <verse number="7" style="v" />C'en est fait de Samarie, de son roi :</para>
+  <para style="q1">il est comme un éclat de bois à la surface de l'eau.</para>
+  <para style="q1">
+    <verse number="8" style="v" />Les hauts lieux de la Fausseté seront supprimés,</para>
+  <para style="q1">ce péché d'Israël ;</para>
+  <para style="q1">les ronces et les épines grimperont sur leurs autels</para>
+  <para style="q1">et ils diront aux montagnes : Couvrez-nous<note caller="+" style="f"><char style="fr" closed="false">10.8 </char><char style="fq" closed="false">la Fausseté : </char><char style="ft" closed="false">en hébreu </char><char style="fq" closed="false">Awèn </char><char style="ft" closed="false">(v. 5) ; comparer Jr 5.31 et la note. – </char><char style="fq" closed="false">hauts lieux </char><char style="ft" closed="false">Os 4.13 détruits 2 R 23.15-16. – </char><char style="fq" closed="false">épines et ronces </char><char style="ft" closed="false">Gn 3.18 ; Es 5.6 ; 7.23,25 ; 32.13. – </char><char style="fq" closed="false">montagnes, couvrez-nous </char><char style="ft" closed="false">Lc 23.30 ; Ap 6.16 ; voir Es 2.10,19,21.</char></note> !</para>
+  <para style="q1">et aux collines : Tombez sur nous !</para>
+  <para style="q1">
+    <verse number="9" style="v" />Depuis les jours de Guivéa<note caller="+" style="f"><char style="fr" closed="false">10.9 </char><char style="ft" closed="false">9.9 et la note ; voir Jg 19–21.</char></note> tu as péché, Israël</para>
+  <para style="q1">– et ils n'en ont pas bougé !</para>
+  <para style="q1">N'est-ce pas à Guivéa</para>
+  <para style="q1">que les atteindra le combat contre les criminels ?</para>
+  <para style="q1">
+    <verse number="10" style="v" />Je veux les châtier ;</para>
+  <para style="q1">parce qu'ils sont attachés à leurs deux crimes<note caller="+" style="f"><char style="fr" closed="false">10.10 </char><char style="ft" closed="false">En hébreu le terme traduit par </char><char style="fq" closed="false">attachés </char><char style="ft" closed="false">fait jeu de mots avec celui qui est rendu par </char><char style="fq" closed="false">châtier</char><char style="ft" closed="false">. – </char><char style="fq" closed="false">deux crimes </char><char style="ft" closed="false">Jr 2.13.</char></note>,</para>
+  <para style="q1">les peuples se ligueront contre eux.</para>
+  <para style="q1">
+    <verse number="11" style="v" />Ephraïm était une génisse bien dressée</para>
+  <para style="q1">qui aimait à fouler le grain.</para>
+  <para style="q1">Lorsque je vins à passer devant la beauté de son cou,</para>
+  <para style="q1">je mis Ephraïm à l'attelage</para>
+  <para style="q1">– Juda est au labour</para>
+  <para style="q1">et Jacob lui, à la herse.</para>
+  <para style="q1">
+    <verse number="12" style="v" />Faites-vous de justes semailles,</para>
+  <para style="q1">vous récolterez de généreuses moissons ;</para>
+  <para style="q1">défrichez-vous un champ nouveau ;</para>
+  <para style="q1">c'est maintenant qu'il faut chercher le <char style="nd">SEIGNEUR</char></para>
+  <para style="q1">jusqu'à ce qu'il vienne répandre sur vous la justice<note caller="+" style="f"><char style="fr" closed="false">10.12 </char><char style="fq" closed="false">défrichez-vous un champ nouveau </char><char style="ft" closed="false">Jr 4.3. – </char><char style="fq" closed="false">chercher le Seigneur </char><char style="ft" closed="false">Os 5.15 ; Dt 4.29 ; Ps 14.2, etc. Es 55.6 ; 65.1 ; Jr 29.13 ; Am 5.4 ; Za 8.22 ; Ac 17.27 ; voir 1 R 22.5 ; 2 R 22.13 ; Jr 37.7, etc. – </char><char style="fq" closed="false">la justice </char><char style="ft" closed="false">Es 42.1 ; Ps 85.11,14.</char></note>.</para>
+  <para style="q1">
+    <verse number="13" style="v" />Vous avez labouré la méchanceté</para>
+  <para style="q1">et récolté l'iniquité,</para>
+  <para style="q1">vous avez mangé un fruit de mensonge.</para>
+  <para style="q1">Tu as mis ta confiance dans ta puissance,</para>
+  <para style="q1">dans la multitude de tes guerriers<note caller="+" style="f"><char style="fr" closed="false">10.13 </char><char style="fq" closed="false">récolter l'iniquité : </char><char style="ft" closed="false">voir 8.7+. – </char><char style="fq" closed="false">confiance </char><char style="ft" closed="false">dans la force armée Es 31.1 ; Mi 1.13.</char></note>.</para>
+  <para style="q1">
+    <verse number="14" style="v" />Le tumulte s'élève parmi ton peuple,</para>
+  <para style="q1">en sorte que toutes tes villes fortes seront dévastées,</para>
+  <para style="q1">comme Shalmân dévasta Beth-Arvel</para>
+  <para style="q1">au jour du combat où l'on écrasait la mère sur ses fils<note caller="+" style="f"><char style="fr" closed="false">10.14 </char><char style="fq" closed="false">Shalmân : </char><char style="ft" closed="false">probablement un roi de Moab (on le trouve mentionné dans une inscription assyrienne). – </char><char style="fq" closed="false">Beth-Arvel : </char><char style="ft" closed="false">une ville de Transjordanie du nord ; l'expression </char><char style="fq" closed="false">ses fils </char><char style="ft" closed="false">est peut-être une tournure imagée désignant les villages qui dépendent de Beth-Arvel. – </char><char style="fq" closed="false">la mère </char><char style="ft" closed="false">massacrée avec ses enfants 14.1 ; 2 R 8.12 ; Es 13.18 ; Na 3.10 ; Ps 137.9.</char></note>.</para>
+  <para style="q1">
+    <verse number="15" style="v" />C'est là ce que vous aura fait Béthel<note caller="+" style="f"><char style="fr" closed="false">10.15 </char><char style="fq" closed="false">Béthel </char><char style="ft" closed="false">4.15.</char></note></para>
+  <para style="q1">à cause de votre extrême méchanceté :</para>
+  <para style="q1">à l'aurore, c'en sera fait du roi d'Israël.</para>
+  <chapter number="11" style="c" />
+  <para style="s1">L'amour déçu du père</para>
+  <para style="p">
+    <verse number="1" style="v" />Quand Israël était jeune, je l'ai aimé,</para>
+  <para style="q1">et d'Egypte j'ai appelé mon fils<note caller="+" style="f"><char style="fr" closed="false">11.1 </char><char style="fq" closed="false">Israël</char><char style="ft" closed="false">, comme un </char><char style="fq" closed="false">fils </char><char style="ft" closed="false">Ex 4.22 ; Dt 32.6 ; Es 1.2 ; Jr 3.19 ; Ml 1.6 ; voir Es 63.16 ; Jr 31.9 ; Os 11.10. – </char><char style="fq" closed="false">d'Egypte j'ai appelé mon fils </char><char style="ft" closed="false">Mt 2.15.</char></note>.</para>
+  <para style="q1">
+    <verse number="2" style="v" />Ceux qui les appelaient, ils s'en sont écartés :</para>
+  <para style="q1">c'est aux Baals qu'ils ont sacrifié</para>
+  <para style="q1">et c'est à des idoles taillées qu'ils ont brûlé des offrandes.</para>
+  <para style="q1">
+    <verse number="3" style="v" />C'est pourtant moi qui avais appris à marcher à Ephraïm,</para>
+  <para style="q1">les prenant par les bras,</para>
+  <para style="q1">mais ils n'ont pas reconnu que je prenais soin d'eux<note caller="+" style="f"><char style="fr" closed="false">11.3 </char><char style="fq" closed="false">Ephraïm : </char><char style="ft" closed="false">voir 4.17 et la note. – Comme un enfant qui </char><char style="fq" closed="false">apprend à marcher </char><char style="ft" closed="false">Dt 1.31. – </char><char style="fq" closed="false">ils n'ont pas reconnu</char><char style="ft" closed="false">… 2.10 ; voir 4.6 ; 7.9 ; 8.14 ; 13.6.</char></note>.</para>
+  <para style="q1">
+    <verse number="4" style="v" />Je les menais avec des attaches humaines,</para>
+  <para style="q1">avec des liens d'amour,</para>
+  <para style="q1">j'étais pour eux comme ceux qui soulèvent un nourrisson contre leur joue</para>
+  <para style="q1">et je lui tendais de quoi se nourrir<note caller="+" style="f"><char style="fr" closed="false">11.4 </char><char style="ft" closed="false">Ex 16.4,8,12 ; Nb 11.7-9 ; Dt 8.16.</char></note>.</para>
+  <para style="q1">
+    <verse number="5" style="v" />Il ne reviendra pas au pays d'Egypte,</para>
+  <para style="q1">c'est Assour qui sera son roi,</para>
+  <para style="q1">car ils ont refusé de revenir à moi<note caller="+" style="f"><char style="fr" closed="false">11.5 </char><char style="ft" closed="false">Retour en Egypte 8.13+. – Sous la domination assyrienne 9.3 ; 10.6. – Retour à Dieu 2.9 ; 5.4 ; 6.1 ; 7.10 ; 12.7 ; 14.2.</char></note>.</para>
+  <para style="q1">
+    <verse number="6" style="v" />L'épée tournoiera dans ses villes,</para>
+  <para style="q1">elle anéantira ses défenses, elle dévorera</para>
+  <para style="q1">à cause de leurs intrigues.</para>
+  <para style="q1">
+    <verse number="7" style="v" />Mon peuple ! ils s'accrochent à leur apostasie<note caller="+" style="f"><char style="fr" closed="false">11.7 </char><char style="fq" closed="false">leur apostasie </char><char style="ft" closed="false">ou </char><char style="fq" closed="false">leur trahison.</char></note> :</para>
+  <para style="q1">on les appelle en haut,</para>
+  <para style="q1">mais, tous, tant qu'ils sont, ils ne s'élèvent pas.</para>
+  <para style="s1">L'amour l'emporte malgré tout</para>
+  <para style="q1">
+    <verse number="8" style="v" />Comment te traiterai-je, Ephraïm,</para>
+  <para style="q1">te livrerai-je, Israël ?</para>
+  <para style="q1">Comment te traiterai-je comme Adma,</para>
+  <para style="q1">te rendrai-je comme Cevoïm<note caller="+" style="f"><char style="fr" closed="false">11.8 </char><char style="fq" closed="false">Adma </char><char style="ft" closed="false">et </char><char style="fq" closed="false">Cevoïm : </char><char style="ft" closed="false">villes voisines de Sodome et Gomorrhe ; Gn 10.19 ; 14.2,8 ; Dt 29.22.</char></note> ?</para>
+  <para style="q1">Mon cœur est bouleversé en moi,</para>
+  <para style="q1">en même temps ma pitié s'est émue.</para>
+  <para style="q1">
+    <verse number="9" style="v" />Je ne donnerai pas cours à l'ardeur de ma colère,</para>
+  <para style="q1">je ne reviendrai pas détruire Ephraïm ;</para>
+  <para style="q1">car je suis Dieu et non pas homme,</para>
+  <para style="q1">au milieu de toi, je suis saint<note caller="+" style="f"><char style="fr" closed="false">11.9 </char><char style="fq" closed="false">Dieu et non pas homme </char><char style="ft" closed="false">Nb 23.19 ; voir Ml 3.6 ; Jb 9.32. – </char><char style="fq" closed="false">Dieu saint </char><char style="ft" closed="false">Es 5.16 ; 6.3 ; voir 1.4 ; Os 12.1.</char></note> :</para>
+  <para style="q1">je ne viendrai pas avec rage.</para>
+  <para style="q1">
+    <verse number="10" style="v" />Ils marcheront à la suite du <char style="nd">SEIGNEUR</char>.</para>
+  <para style="q1">Comme un lion il rugira ;</para>
+  <para style="q1">quand il se prendra à rugir,</para>
+  <para style="q1">des fils accourront en tremblant de l'occident<note caller="+" style="f"><char style="fr" closed="false">11.10 </char><char style="ft" closed="false">Es 11.10-12 ; 43.5-7 ; Jr 31.8-9.</char></note>.</para>
+  <para style="q1">
+    <verse number="11" style="v" />De l'Egypte ils accourront en tremblant comme des moineaux,</para>
+  <para style="q1">et du pays d'Assour comme des colombes,</para>
+  <para style="q1">et je les ferai habiter dans leurs maisons</para>
+  <para style="q1">– oracle du <char style="nd">SEIGNEUR</char>.</para>
+  <chapter number="12" style="c" />
+  <para style="s1">Mensonge d'Ephraïm</para>
+  <para style="p">
+    <verse number="1" style="v" />Ephraïm m'entoure de mensonge et la maison d'Israël d'imposture.</para>
+  <para style="q1">Mais Juda<note caller="+" style="f"><char style="fr" closed="false">12.1 </char><char style="fq" closed="false">Ephraïm : </char><char style="ft" closed="false">voir 4.17 et la note. – </char><char style="fq" closed="false">mensonge et imposture </char><char style="ft" closed="false">4.2 ; 7.1 ; 10.4,13 ; 12.2. – </char><char style="fq" closed="false">Juda </char><char style="ft" closed="false">1.7+.</char></note> marche encore avec Dieu</para>
+  <para style="q1">et reste fidèle au Très-Saint.</para>
+  <para style="q1">
+    <verse number="2" style="v" />Ephraïm se repaît de vent</para>
+  <para style="q1">et court après le vent d'est tout le long du jour ;</para>
+  <para style="q1">il multiplie mensonges et violences.</para>
+  <para style="q1">Ils concluent un pacte avec l'Assyrie</para>
+  <para style="q1">et livrent de l'huile en Egypte<note caller="+" style="f"><char style="fr" closed="false">12.2 </char><char style="fq" closed="false">du vent </char><char style="ft" closed="false">8.7 ; Qo 1.6. – </char><char style="fq" closed="false">vent d'est </char><char style="ft" closed="false">13.15. – Politique double 7.11+ ; à l'époque d'Osée </char><char style="fq" closed="false">l'Assyrie </char><char style="ft" closed="false">(à l’</char><char style="fq" closed="false">est</char><char style="ft" closed="false">) et l’</char><char style="fq" closed="false">Egypte </char><char style="ft" closed="false">étaient ennemies.</char></note>.</para>
+  <para style="s1">Un ancêtre trompeur : Jacob</para>
+  <para style="q1">
+    <verse number="3" style="v" />Le <char style="nd">SEIGNEUR</char> a un procès avec Juda,</para>
+  <para style="q1">pour faire rendre compte à Jacob<note caller="+" style="f"><char style="fr" closed="false">12.3 </char><char style="fq" closed="false">le Seigneur en procès </char><char style="ft" closed="false">2.4+. – </char><char style="fq" closed="false">Jacob</char><char style="ft" closed="false">, nom de l'ancêtre du peuple d'Israël, sert à désigner ici ce peuple lui-même (voir Gn 32.28-29 ; 35.10).</char></note> de sa conduite</para>
+  <para style="q1">et le rétribuer selon ses actions.</para>
+  <para style="q1">
+    <verse number="4" style="v" />Dans le sein maternel, il a supplanté son frère</para>
+  <para style="q1">et, arrivé à l'âge mûr, il lutta avec Dieu<note caller="+" style="f"><char style="fr" closed="false">12.4 </char><char style="ft" closed="false">Le verbe traduit par </char><char style="fq" closed="false">supplanter (acab) </char><char style="ft" closed="false">fait jeu de mots avec le nom </char><char style="fq" closed="false">Jacob</char><char style="ft" closed="false"> ; Gn 25.26 ; 27.35-36. De même l'expression </char><char style="fq" closed="false">il lutta avec Dieu </char><char style="ft" closed="false">fait jeu de mots avec le nom </char><char style="fq" closed="false">Israël</char><char style="ft" closed="false"> ; Gn 32.25-29.</char></note>.</para>
+  <para style="q1">
+    <verse number="5" style="v" />Il lutta avec un ange et l'emporta,</para>
+  <para style="q1">il pleura et le supplia.</para>
+  <para style="q1">A Béthel il le trouva</para>
+  <para style="q1">et c'est là que Dieu a parlé<note caller="+" style="f"><char style="fr" closed="false">12.5 </char><char style="fq" closed="false">Jacob à Béthel </char><char style="ft" closed="false">Gn 28.12-19. – </char><char style="fq" closed="false">Dieu lui a parlé </char><char style="ft" closed="false">Gn 35.15.</char></note> avec nous</para>
+  <para style="q1">
+    <verse number="6" style="v" />– « le <char style="nd">SEIGNEUR</char>, Dieu de l'univers, le <char style="nd">SEIGNEUR</char> »,</para>
+  <para style="q1">c'est ainsi qu'il faut l'invoquer.</para>
+  <para style="q1">
+    <verse number="7" style="v" />Toi donc tu reviendras chez ton Dieu<note caller="+" style="f"><char style="fr" closed="false">12.7 </char><char style="ft" closed="false">11.5+.</char></note> :</para>
+  <para style="q1">garde la fidélité et la droiture</para>
+  <para style="q1">et mets continuellement ton espoir en ton Dieu.</para>
+  <para style="q1">
+    <verse number="8" style="v" />Canaan a dans la main une balance trompeuse, il aime à frauder<note caller="+" style="f"><char style="fr" closed="false">12.8 </char><char style="ft" closed="false">Cananéen trafiquant Za 14.21 ; Pr 31.24.</char></note>.</para>
+  <para style="q1">
+    <verse number="9" style="v" />Et Ephraïm dit : « Je n'ai fait que m'enrichir<note caller="+" style="f"><char style="fr" closed="false">12.9 </char><char style="fq" closed="false">s'enrichir </char><char style="ft" closed="false">Ap 3.17-18.</char></note>,</para>
+  <para style="q1">j'ai acquis une fortune ;</para>
+  <para style="q1">dans tout mon travail, on ne me trouvera pas un motif de péché. »</para>
+  <para style="q1">
+    <verse number="10" style="v" />Mais moi, je suis le <char style="nd">SEIGNEUR</char> ton Dieu depuis le pays d'Egypte.</para>
+  <para style="q1">Je te ferai de nouveau habiter sous des tentes</para>
+  <para style="q1">comme aux jours où je vous rencontrais<note caller="+" style="f"><char style="fr" closed="false">12.10 </char><char style="fq" closed="false">le Seigneur ton Dieu </char><char style="ft" closed="false">13.4 ; Ex 20.2 ; Dt 5.6. – </char><char style="fq" closed="false">de nouveau sous des tentes </char><char style="ft" closed="false">voir 2.16 ; 13.5. – </char><char style="fq" closed="false">rencontre </char><char style="ft" closed="false">Ex 33.7.</char></note>.</para>
+  <para style="q1">
+    <verse number="11" style="v" />Je parlerai aux prophètes</para>
+  <para style="q1">et je multiplierai les visions<note caller="+" style="f"><char style="fr" closed="false">12.11 </char><char style="ft" closed="false">Nb 12.2-8 ; Dt 18.15,18-22 ; Ps 74.9 ; Lm 2.9.</char></note>,</para>
+  <para style="q1">et par les prophètes je dirai des paraboles.</para>
+  <para style="q1">
+    <verse number="12" style="v" />Si déjà Galaad est fausseté,</para>
+  <para style="q1">ils sont devenus, eux, du néant ;</para>
+  <para style="q1">au Guilgal ils ne cessent de sacrifier des taureaux,</para>
+  <para style="q1">et même, leurs autels sont comme des tas de pierres<note caller="+" style="f"><char style="fr" closed="false">12.12 </char><char style="fq" closed="false">Galaad </char><char style="ft" closed="false">6.8+ et la note. – </char><char style="fq" closed="false">Guilgal </char><char style="ft" closed="false">4.15+ et la note. – </char><char style="fq" closed="false">des tas de pierres </char><char style="ft" closed="false">(en hébreu </char><char style="fq" closed="false">gal</char><char style="ft" closed="false">) fait jeu de mots avec </char><char style="fq" closed="false">Gal </char><char style="ft" closed="false">aad et Guil </char><char style="fq" closed="false">gal.</char></note></para>
+  <para style="q1">sur les sillons des champs.</para>
+  <para style="q1">
+    <verse number="13" style="v" />Jacob s'enfuit aux plaines d'Aram<note caller="+" style="f"><char style="fr" closed="false">12.13 </char><char style="fq" closed="false">Jacob </char><char style="ft" closed="false">(voir 12.3 et la note) </char><char style="fq" closed="false">au pays d'Aram </char><char style="ft" closed="false">Gn 29.1-30.</char></note></para>
+  <para style="q1">et Israël servit pour une femme,</para>
+  <para style="q1">et pour une femme il se fit gardien de troupeaux.</para>
+  <para style="q1">
+    <verse number="14" style="v" />Mais par un prophète le <char style="nd">SEIGNEUR</char> a fait monter Israël hors d'Egypte,</para>
+  <para style="q1">et par un prophète<note caller="+" style="f"><char style="fr" closed="false">12.14 </char><char style="ft" closed="false">Moïse </char><char style="fq" closed="false">prophète </char><char style="ft" closed="false">Nb 12.6-8 ; Dt 18.15,18.</char></note> Israël a été gardé.</para>
+  <para style="q1">
+    <verse number="15" style="v" />Ephraïm a fait à Dieu une peine amère :</para>
+  <para style="q1">son Seigneur rejettera sur lui le sang qu'il a versé</para>
+  <para style="q1">et il lui rendra ses outrages.</para>
+  <chapter number="13" style="c" />
+  <para style="s1">La mort d'Ephraïm</para>
+  <para style="p">
+    <verse number="1" style="v" />Quand Ephraïm<note caller="+" style="f"><char style="fr" closed="false">13.1 </char><char style="ft" closed="false">Voir 4.17 et la note.</char></note> parlait,</para>
+  <para style="q1">il portait, lui, la terreur en Israël.</para>
+  <para style="q1">Mais par Baal il s'est rendu coupable</para>
+  <para style="q1">et il en est mort.</para>
+  <para style="q1">
+    <verse number="2" style="v" />A présent ils continuent de pécher :</para>
+  <para style="q1">ils se sont fait un ouvrage en fonte,</para>
+  <para style="q1">de leur argent – avec leur technique – des idoles !</para>
+  <para style="q1">Produit d'artisans que tout cela.</para>
+  <para style="q1">C'est à leur propos que l'on dit :</para>
+  <para style="q1">« Des sacrificateurs, des hommes,</para>
+  <para style="q1">offrent des baisers à des veaux<note caller="+" style="f"><char style="fr" closed="false">13.2 </char><char style="fq" closed="false">un ouvrage en fonte </char><char style="ft" closed="false">8.5-6+. – </char><char style="fq" closed="false">veaux : </char><char style="ft" closed="false">voir 8.5 et la note.</char></note>. »</para>
+  <para style="q1">
+    <verse number="3" style="v" />C'est pourquoi ils seront comme la nuée du matin<note caller="+" style="f"><char style="fr" closed="false">13.3 </char><char style="ft" closed="false">6.4+.</char></note></para>
+  <para style="q1">et comme la rosée matinale qui passe,</para>
+  <para style="q1">comme de la paille qui tourbillonne loin de l'aire</para>
+  <para style="q1">et comme de la fumée qui sort d'une ouverture.</para>
+  <para style="q1">
+    <verse number="4" style="v" />Et moi, le <char style="nd">SEIGNEUR</char> ton Dieu,</para>
+  <para style="q1">depuis le pays d'Egypte,</para>
+  <para style="q1">– et moi excepté, tu ne connais pas de Dieu,</para>
+  <para style="q1">et de sauveur, il n'y en a point sauf moi<note caller="+" style="f"><char style="fr" closed="false">13.4 </char><char style="fq" closed="false">le Seigneur ton Dieu </char><char style="ft" closed="false">12.10+. – </char><char style="fq" closed="false">pas d'autre sauveur </char><char style="ft" closed="false">Es 44.8 ; 45.21 ; voir Ps 18.32.</char></note> –,</para>
+  <para style="q1">
+    <verse number="5" style="v" />moi, je t'ai connu au désert<note caller="+" style="f"><char style="fr" closed="false">13.5 </char><char style="fq" closed="false">au désert </char><char style="ft" closed="false">2.16 ; voir 12.10.</char></note>, dans un pays de fièvre.</para>
+  <para style="q1">
+    <verse number="6" style="v" />Aussitôt arrivés au pâturage, ils se rassasièrent,</para>
+  <para style="q1">une fois rassasiés, leur cœur s'est enflé,</para>
+  <para style="q1">c'est pour cela qu'ils m'ont oublié<note caller="+" style="f"><char style="fr" closed="false">13.6 </char><char style="fq" closed="false">oublié </char><char style="ft" closed="false">8.14+.</char></note>.</para>
+  <para style="q1">
+    <verse number="7" style="v" />Je devins pour eux comme un lion ;</para>
+  <para style="q1">comme une panthère sur le chemin, je guette.</para>
+  <para style="q1">
+    <verse number="8" style="v" />Je les attaque comme une ourse à qui l'on a ravi ses petits,</para>
+  <para style="q1">je déchire l'enveloppe de leur cœur,</para>
+  <para style="q1">comme une lionne je les dévore sur place,</para>
+  <para style="q1">les bêtes sauvages les mettront en pièces.</para>
+  <para style="q1">
+    <verse number="9" style="v" />Te voilà détruit, Israël ;</para>
+  <para style="q1">moi seul peux te porter secours.</para>
+  <para style="q1">
+    <verse number="10" style="v" />Où donc est ton roi,</para>
+  <para style="q1">pour qu'il te sauve</para>
+  <para style="q1">dans toutes tes villes,</para>
+  <para style="q1">– et tes juges, eux dont tu disais :</para>
+  <para style="q1">« Donne-moi un roi<note caller="+" style="f"><char style="fr" closed="false">13.10 </char><char style="fq" closed="false">Donne-moi un roi </char><char style="ft" closed="false">1 S 8.5-6.</char></note> et des chefs » ?</para>
+  <para style="q1">
+    <verse number="11" style="v" />Je te donne un roi dans ma colère,</para>
+  <para style="q1">et dans ma fureur je le reprends<note caller="+" style="f"><char style="fr" closed="false">13.11 </char><char style="fq" closed="false">le roi repris </char><char style="ft" closed="false">10.15.</char></note>.</para>
+  <para style="q1">
+    <verse number="12" style="v" />La faute d'Ephraïm est serrée en lieu sûr,</para>
+  <para style="q1">son péché est mis en réserve.</para>
+  <para style="q1">
+    <verse number="13" style="v" />Sur celle qui enfante vont survenir les douleurs ;</para>
+  <para style="q1">lui, c'est un fils qui ne sait pas s'y prendre :</para>
+  <para style="q1">venu à terme, il ne se présente pas à la sortie du sein maternel<note caller="+" style="f"><char style="fr" closed="false">13.13 </char><char style="ft" closed="false">Naissance impossible Es 37.3.</char></note>.</para>
+  <para style="q1">
+    <verse number="14" style="v" />Je devrais les racheter à l'emprise du séjour des morts ?</para>
+  <para style="q1">De la mort je devrais les garantir ?</para>
+  <para style="q1">– Mort, où sont tes calamités ?</para>
+  <para style="q1">Séjour des morts, où est ton fléau<note caller="+" style="f"><char style="fr" closed="false">13.14 </char><char style="ft" closed="false">1 Co 15.55.</char></note> ?</para>
+  <para style="q1">Toute pitié se dérobe à mes yeux.</para>
+  <para style="q1">
+    <verse number="15" style="v" />Ephraïm a beau prospérer au milieu de ses frères,</para>
+  <para style="q1">un vent d'est<note caller="+" style="f"><char style="fr" closed="false">13.15 </char><char style="ft" closed="false">12.2 ; Gn 41.6 ; Ez 19.12.</char></note> viendra,</para>
+  <para style="q1">un vent du <char style="nd">SEIGNEUR</char>, montant du désert :</para>
+  <para style="q1">la source tarira, la fontaine sera mise à sec</para>
+  <para style="q1">– on dépouillera le trésor de tous les objets précieux.</para>
+  <chapter number="14" style="c" />
+  <para style="q1">
+    <verse number="1" style="v" />Samarie devra payer, car elle s'est révoltée contre son Dieu :</para>
+  <para style="q1">ils tomberont par l'épée,</para>
+  <para style="q1">les nourrissons seront écrasés</para>
+  <para style="q1">et les femmes enceintes éventrées<note caller="+" style="f"><char style="fr" closed="false">14.1 </char><char style="fq" closed="false">Samarie : </char><char style="ft" closed="false">voir 7.1 et la note. – La mère massacrée avec ses enfants 10.14+ ; 2 R 15.16 ; Am 1.13.</char></note>.</para>
+  <para style="s1">Retour et vie nouvelle</para>
+  <para style="q1">
+    <verse number="2" style="v" />Reviens donc, Israël, au <char style="nd">SEIGNEUR</char><note caller="+" style="f"><char style="fr" closed="false">14.2 </char><char style="fq" closed="false">Reviens </char><char style="ft" closed="false">Jr 31.21 </char><char style="fq" closed="false">au Seigneur </char><char style="ft" closed="false">6.1 ; 11.5+.</char></note> ton Dieu,</para>
+  <para style="q1">car ta faute t'a fait trébucher.</para>
+  <para style="q1">
+    <verse number="3" style="v" />Prenez avec vous des paroles et revenez au <char style="nd">SEIGNEUR</char>,</para>
+  <para style="q1">dites-lui :</para>
+  <para style="q1">« Tu enlèves toute faute,</para>
+  <para style="q1">accepte ce qui est bon ;</para>
+  <para style="q1">en guise de taureaux,</para>
+  <para style="q1">nous t'offrirons en sacrifice</para>
+  <para style="q1">les paroles de nos lèvres<note caller="+" style="f"><char style="fr" closed="false">14.3 </char><char style="ft" closed="false">He 13.15.</char></note>.</para>
+  <para style="q1">
+    <verse number="4" style="v" />L'Assyrie ne peut nous sauver,</para>
+  <para style="q1">nous ne monterons pas sur un cheval</para>
+  <para style="q1">et nous ne dirons plus “Notre Dieu” à l'ouvrage de nos mains</para>
+  <para style="q1">– ô toi par qui l'orphelin est pris en pitié<note caller="+" style="f"><char style="fr" closed="false">14.4 </char><char style="fq" closed="false">L'Assyrie ne peut nous sauver </char><char style="ft" closed="false">5.13 ; 7.11 ; 8.9 ; 12.2 ; Es 31.1. – Le </char><char style="fq" closed="false">cheval </char><char style="ft" closed="false">était utilisé essentiellement pour la guerre. – Force armée 1.7 ; voir 8.14 ; 10.13. – Faux-dieux, ouvrages d'hommes Es 44.9,20 ; Jr 2.28 ; 10.3-5. – « </char><char style="fq" closed="false">notre Dieu</char><char style="ft" closed="false"> » dit à une idole Ex 32.4,8 ; 1 R 12.28 ; Es 44.16-17 ; Jr 2.27 ; voir Os 2.10 ; 4.17 ; 8.4-6 ; 10.5-6 ; 11.2 ; 13.2. – </char><char style="fq" closed="false">pitié </char><char style="ft" closed="false">de Dieu pour </char><char style="fq" closed="false">les orphelins </char><char style="ft" closed="false">Ex 22.21-23 ; Ps 68.6 ; 146.9.</char></note> ! »</para>
+  <para style="q1">
+    <verse number="5" style="v" />Je les guérirai de leur apostasie,</para>
+  <para style="q1">je les aimerai<note caller="+" style="f"><char style="fr" closed="false">14.5 </char><char style="fq" closed="false">guérison </char><char style="ft" closed="false">6.1 ; 7.1 ; Es 30.26 ; 57.18 ; Jr 30.17. – </char><char style="fq" closed="false">leur apostasie </char><char style="ft" closed="false">ou </char><char style="fq" closed="false">leur trahison</char><char style="ft" closed="false">. – </char><char style="fq" closed="false">amour </char><char style="ft" closed="false">Os 2.3 ; voir 1.6 ; 9.15.</char></note> avec générosité :</para>
+  <para style="q1">ma colère s'est détournée de lui,</para>
+  <para style="q1">
+    <verse number="6" style="v" />je serai pour Israël comme la rosée,</para>
+  <para style="q1">il fleurira comme le lis</para>
+  <para style="q1">et il enfoncera ses racines comme la forêt du Liban<note caller="+" style="f"><char style="fr" closed="false">14.6-8 </char><char style="ft" closed="false">Es 27.6.</char></note>,</para>
+  <para style="q1">
+    <verse number="7" style="v" />ses rejetons s'étendront,</para>
+  <para style="q1">sa splendeur sera comme celle de l'olivier,</para>
+  <para style="q1">et son parfum comme celui du Liban ;</para>
+  <para style="q1">
+    <verse number="8" style="v" />ils reviendront, ceux qui habitaient à son ombre,</para>
+  <para style="q1">ils feront revivre le blé,</para>
+  <para style="q1">ils fleuriront comme la vigne,</para>
+  <para style="q1">et on en parlera comme du vin du Liban.</para>
+  <para style="q1">
+    <verse number="9" style="v" />Ephraïm ! qu'ai-je encore à faire avec les idoles ?</para>
+  <para style="q1">C'est moi qui lui réponds et qui veille sur lui.</para>
+  <para style="q1">Je suis, moi, comme un genévrier toujours vert,</para>
+  <para style="q1">c'est de moi que procède ton fruit<note caller="+" style="f"><char style="fr" closed="false">14.9 </char><char style="ft" closed="false">Dieu </char><char style="fq" closed="false">répond </char><char style="ft" closed="false">2.23-25. – Dieu donateur 2.10.</char></note>.</para>
+  <para style="q1">
+    <verse number="10" style="v" />Qui est assez sage<note caller="+" style="f"><char style="fr" closed="false">14.10 </char><char style="fq" closed="false">Qui est sage ? </char><char style="ft" closed="false">Jr 9.11 ; Ps 107.43 ; Qo 8.1.</char></note> pour discerner ces choses</para>
+  <para style="q1">et assez intelligent pour les connaître ?</para>
+  <para style="q1">Oui, les chemins du <char style="nd">SEIGNEUR</char> sont droits,</para>
+  <para style="q1">et les justes y marcheront,</para>
+  <para style="q1">mais les rebelles y trébucheront.</para>
+</usx>

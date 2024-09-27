@@ -1,0 +1,610 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<usx version="2.6">
+  <book code="HEB" style="id">TOB59.SBF 19.04.2010 ES ©Société biblique française et Editions du Cerf</book>
+  <para style="h">HÉBREUX</para>
+  <para style="toc1">Epître aux Hébreux</para>
+  <para style="toc2">HÉBREUX</para>
+  <para style="toc3">He</para>
+  <para style="mt2">Epître aux Hébreux</para>
+  <para style="mt1">HÉBREUX</para>
+  <para style="imt">INTRODUCTION</para>
+  <para style="ip">L’<char style="bk">Epître aux Hébreux</char> peut déconcerter le lecteur moderne. Tantôt l'auteur a des formules incomparables pour proclamer la transcendance du Christ et il sait en même temps exprimer avec réalisme l'extrême solidarité qui unit Jésus à « ses frères ». De plus, la profonde connaissance qu'il a de l'Ancien Testament apparaît à chaque ligne et son amour de l'Eglise sous-tend chacune de ses exhortations. Tantôt il donne beaucoup de place aux rites anciens, et bien des lecteurs ont alors l'impression de perdre pied.</para>
+  <para style="ip">Par ailleurs, l'origine même de cette œuvre pose des questions complexes : de qui provient cette épître ? Peut-on, oui ou non, la rattacher au nom de l'apôtre Paul ? Pourquoi ressemble-t-elle si peu aux grandes épîtres pauliniennes ? A qui fut-elle adressée et en quelle occasion ? Est-ce même réellement une épître ?</para>
+  <para style="is2">Une origine controversée</para>
+  <para style="ip">Pendant les quatre premiers siècles, la position de l’<char style="bk">Epître aux Hébreux</char> connut bien des vicissitudes, mais on note une différence sensible entre les Eglises d'Orient et celles d'Occident.</para>
+  <para style="ip">Dans les Eglises d'Orient, <char style="it">Hébreux</char> fut toujours considérée comme paulinienne. Clément d'Alexandrie présente l'épître comme une adaptation grecque d'un texte composé par Paul en hébreu et traduit par Luc. Un peu plus tard, Origène pense que la composition n'est pas de l'apôtre, mais d'un disciple de Paul, sans savoir qui il est. D'autres commentateurs orientaux s'en tenaient à l'affirmation de l'origine paulinienne, garantie par la tradition de leurs Eglises.</para>
+  <para style="ip">En Occident, la situation était différente et l’<char style="bk">Epître aux Hébreux</char> ne fut pas acceptée sans réticences. Etait-ce un écrit inspiré ? L'usage qu'en firent certaines sectes contribua à augmenter les soupçons. Les spéculations sur Melkisédeq (ch. 7), le refus du pardon aux chrétiens qui avaient apostasié pendant la persécution (6.4-6 et 10.26), l'affirmation que le Verbe ne serait qu'une créature (3.2), tout cela fit qu'à la fin du IV<char style="ord">e</char> siècle, l'épître n'était pas lue dans les Eglises. Saint Jérôme et saint Augustin adoptèrent l'attitude des Eglises d'Orient. Les listes du « canon des Ecritures » établies à la fin du IV<char style="ord">e</char> siècle mentionnent explicitement l’<char style="bk">Epître aux Hébreux</char>.</para>
+  <para style="is2">Au temps de la Réforme et au XX<char style="ord">e</char> siècle</para>
+  <para style="ip">Les discussions reprirent à la Renaissance. On en trouve un écho dans le commentaire que Luther donna de l'épître en 1517-1518. Si He 2.3 est un argument très fort pour montrer que l'épître n'est pas de Paul, He 13.19 joue en sens contraire. En 1526, Luther a défini sa position : l'épître est d'un auteur inconnu qui utilise avec maîtrise les Ecritures. Calvin déclare qu’<char style="it">Hébreux</char> fait indiscutablement partie des Ecritures apostoliques sans être pour autant une œuvre de saint Paul.</para>
+  <para style="ip">L'exégèse protestante connut par la suite une certaine diversité d'opinions. Plus attaché au témoignage de la tradition, le magistère catholique se soucia de défendre l'origine paulinienne de l'épître. Lors des discussions du début du XX<char style="ord">e</char> siècle, la Commission biblique romaine interdit aux catholiques de nier l'origine paulinienne, tout en admettant qu'on parlât de rédaction non paulinienne. Aujourd'hui, on entend origine paulinienne au sens large. Par exemple, Apollos aurait composé l'épître après le martyre de Paul.</para>
+  <para style="is2">La question d'authenticité</para>
+  <para style="ip">De fait, nombreux sont les arguments qui s'opposent à l'authenticité paulinienne. L'allure générale d’<char style="it">Hébreux</char> ne correspond pas du tout au tempérament de Paul : style paisible, composition régulière, personnalité effacée, différences dans le vocabulaire, les tournures employées et la façon même de concevoir le mystère du Christ. Les citations de l'A.T. sont toujours introduites comme « paroles » (il dit). L'auteur parle souvent de l'intronisation céleste du Christ, mais une seule fois de sa résurrection. Sa présentation du Christ grand prêtre est unique dans tout le N.T.</para>
+  <para style="ip">Cependant il y a sur plusieurs points une parenté très nette entre <char style="it">Hébreux</char> et la doctrine de Paul : 1) la passion du Christ est présentée sous son aspect d'obéissance volontaire (5.8 et 10.9) ; 2) l'inefficacité de la Loi ancienne et son abrogation sont affirmées (7.11 et 10.1-10) ; 3) réciproquement c'est dans les épîtres pauliniennes que l'aspect sacrificiel et sacerdotal de la rédemption a été mis progressivement en lumière (voir Ga 2.20 et Ep 5.2,25) ; 4) entre la christologie d’<char style="it">Hébreux</char> et celle des épîtres de la captivité, il y a des affinités : le Fils image de Dieu, son élévation au-dessus des anges, le nom qu'il reçoit à l'issue de son sacrifice.</para>
+  <para style="ip">Quant à déterminer plus précisément <char style="it">le nom de l'auteur</char>, on n'y peut guère prétendre. On a proposé Luc, Clément de Rome, Barnabas. Luther met en avant celui d'Apollos, juif, d'éducation hellénistique à Alexandrie, connaisseur des Ecritures et orateur. Mais on ne peut vérifier cette hypothèse. Résignons-nous donc à ignorer le nom de l'auteur.</para>
+  <para style="is2">Genre littéraire : épître ou sermon ?</para>
+  <para style="ip">Le genre même de l'œuvre prête à contestation : on l'appelle couramment épître. Mais le corps de l'écrit ne contient aucun élément épistolaire. Il faut attendre les tout derniers versets pour que le ton change. On est donc amené à distinguer dans l'écrit que nous possédons, d'une part, un sermon destiné à être prononcé oralement (1.1–13.21) et, d'autre part, un court billet qui lui a été ajouté (13.22-25). Prononcé devant l'assemblée des fidèles, le sermon a été de surcroît envoyé par écrit à d'autres chrétiens.</para>
+  <para style="is2">Destinataires</para>
+  <para style="ip">Le titre « aux Hébreux » a été choisi au moment d'insérer l'écrit dans un recueil de plusieurs épîtres. Son sens n'est pas clair. Des commentateurs anciens en avaient déduit que les destinataires étaient d'origine juive, habitaient la Palestine et parlaient hébreu. Cette façon de voir n'est plus admise. Car le grec de l'épître est un excellent grec.</para>
+  <para style="ip">Bien des hypothèses ont été émises : les destinataires seraient des membres de la secte de Qumrân ou encore des gnostiques. Il en ressort que l'épître s'est nourrie d'un terreau très riche dans un milieu sensible à diverses influences et s'adresse à des communautés de fondation assez ancienne (5.12 ; 13.7). L'influence judéo-chrétienne semble en tout cas marquer profondément ces communautés (13.9).</para>
+  <para style="is2">Circonstances et dates</para>
+  <para style="ip">La finale épistolaire évoque des circonstances que nous ne pouvons pas préciser. La date de la composition peut, elle aussi, être estimée de façon très diverse : très tôt avant les grandes épîtres de Paul, ou à la fin du I<char style="ord">er</char> siècle et même au-delà. L'utilisation d’<char style="it">Hébreux</char> par Clément de Rome, vers 95, exclut une datation trop tardive. On peut penser aux années qui précédèrent la destruction du temple de Jérusalem, survenue en 70.</para>
+  <para style="is2">Structure</para>
+  <para style="ip">Le genre littéraire de l’<char style="bk">Epître aux Hébreux</char> lui assure une notable indépendance par rapport aux événements particuliers. Une étude précise de la composition met en évidence une technique de composition très ferme dont les procédés (inclusions, mots-crochets, symétries) se rattachent à des traditions littéraires bibliques. On peut ainsi reconnaître une structure en cinq parties annoncées par l'auteur.</para>
+  <para style="ip">1) Dans une première partie (1.5–2.18), l'auteur s'attache à définir la position du Christ par rapport à Dieu (1.5-14) et par rapport aux hommes (2.5-18). Ce développement aboutit à l'affirmation du sacerdoce du Christ (2.17).</para>
+  <para style="ip">2) Une deuxième partie (3.1–5.10) montre deux traits fondamentaux du sacerdoce du Christ : Le Christ est accrédité auprès de Dieu (3.1-6) et il est solidaire des hommes (4.15–5.10).</para>
+  <para style="ip">3) La troisième partie (5.11–10.39) met en lumière les traits spécifiques du sacerdoce du Christ : grand prêtre d'un genre nouveau (7.1-28) ; son sacrifice personnel diffère des rites anciens et ouvre l'accès au vrai sanctuaire (8.1–9.28) par un pardon définitif des péchés (10.1-18).</para>
+  <para style="ip">4) Une quatrième partie (11.1–12.13) insiste sur deux aspects : la foi, à l'exemple des anciens (11.1-40), et l'endurance nécessaire (12.1-13).</para>
+  <para style="ip">5) La dernière partie (12.14–13.18) brosse un tableau de l'existence chrétienne.</para>
+  <para style="is2">Le sacerdoce du Christ</para>
+  <para style="ip">L'apport doctrinal de l’<char style="bk">Epître aux Hébreux</char> consiste avant tout dans sa présentation sacerdotale du mystère du Christ.</para>
+  <para style="ip">Pour que soit pleinement révélé le caractère sacrificiel de la passion et de la résurrection du Christ, un double dépassement est nécessaire : il faut, d'une part, qu'éclate l'étroitesse des conceptions traditionnelles, attachées à l'exécution des rites et, d'autre part, que soit reconnu, au-delà des apparences, le sens profond de l'événement. Avec l’<char style="bk">Epître aux Hébreux</char>, l'affirmation arrive à ce résultat par une comparaison avec les rites anciens et les sacrifices d'animaux.</para>
+  <para style="ip">Dans le Christ glorifié à l'issue de sa passion, l'auteur reconnaît le parfait accomplissement du sacerdoce : Fils de Dieu, Frère des hommes, le Christ glorieux assure aux hommes l'accès auprès de Dieu. Selon le Ps 110, Dieu voulait susciter un prêtre d'un genre nouveau « dans la ligne de Melkisédeq » (7.1-28). La mort et la glorification du Christ constituent le seul véritable sacrifice (9.9 ; 10.1-4). La mort du Christ, offrande personnelle parfaite (9.14), prend l'homme tout entier et le soumet entièrement à la volonté de Dieu (5.8 ; 10.9-10). Elle le renouvelle de fond en comble et l'établit dans l'intimité de Dieu.</para>
+  <para style="is2">La condition chrétienne</para>
+  <para style="ip">Elle se définit avant tout par cette mise en relation sacerdotale avec Dieu : Nous avons un grand prêtre (8.1 ; 10.21 ; 9.12 ; 7.25 ; 9.24). Il nous a ouvert le chemin : à sa suite, nous sommes invités à nous approcher de Dieu en toute confiance (4.16 ; 7.19 ; 10.22) ; le péché est aboli (9.26 ; 10.12) ; l'ennemi vaincu (2.14) ; la libération définitive obtenue (2.15 ; 9.12). Les chrétiens ont part dès maintenant aux biens du monde à venir (6.4-5 ; 12.28). Dans ce monde terrestre, ils attendent la cité à venir (13.14) et la seconde apparition de leur Sauveur (9.28). Ils perçoivent la proximité du jour (10.25,37), mais ne jouissent pas encore de toute sa lumière.</para>
+  <para style="ip">Leur relation avec Dieu par le Christ est réelle et étroite, mais elle leur est donnée dans <char style="it">la foi.</char> Dans sa façon de parler de la foi, l'auteur unit deux points de vue assez différents, l'un plus intellectuel, qui précise le contenu de la foi (11.1b,3,6), l'autre plus existentiel, qui montre le dynamisme de la foi et la rapproche de l'espérance (11.1a,8-10).</para>
+  <para style="ip">C'est d'ailleurs ce que l'on peut observer en d'autres développements. Dans le culte ancien, l'auteur montre à la fois le reflet de l'immuable réalité céleste (8.5 ; 9.24) et la préfiguration d'un événement « à venir », le sacrifice du Christ, dont la portée est eschatologique (9.7-12). Cette jonction paradoxale de deux perspectives qu'on pourrait croire inconciliables manifeste assurément la pénétration de son esprit, mais aussi et surtout la profondeur de sa foi.</para>
+  <para style="ip">L'auteur montre que la foi est riche en œuvres et que tout ce qui s'est réalisé de valable dans l'Ancien Testament avait la foi pour base. Dans la situation d'épreuve où nous sommes, notre foi doit se doubler d’<char style="it">endurance</char> (6.12 ; 10.36 ; 12.1-13). Si le Christ a pris sur lui la souffrance et la mort humaines et en a fait le chemin de sa gloire (2.9) et de notre salut (5.8-9) c'est pour nous permettre de les affronter pleins d'espoir (12.2-3).</para>
+  <para style="ip">Bien qu'il insiste beaucoup sur la parfaite efficacité d'un seul sacrifice, celui du Christ, l'auteur n'hésite pas à présenter <char style="it">la vie chrétienne</char> comme une offrande continuelle (13.15) de « sacrifices » (au pluriel : 13.16). A l'exemple du sacrifice du Christ, et en union avec lui, le chrétien ne met pas le culte à côté de sa vie, mais il s'unit à Dieu par son existence réelle. L'auteur rappelle la nécessité de la cohésion entre chrétiens : sollicitude des uns pour les autres (3.12 ; 4.1,11 ; 10.24 ; 12.15), assiduité aux assemblées chrétiennes (10.25), obéissance aux dirigeants (13.17). Il fait comprendre toute l'importance qu'il reconnaît à la prédication (2.1,3 ; 4.2 ; 5.11 ; 13.7) et à la liturgie chrétiennes (6.4 ; 10.19-22,29).</para>
+  <para style="is2">Dialectique des deux Testaments</para>
+  <para style="ip">Mieux peut-être qu'aucun autre écrit du Nouveau Testament, l’<char style="bk">Epître aux Hébreux</char> montre comment les Ecritures anciennes se sont accomplies dans le Christ et elle révèle l'ensemble des apports qui définissent cet accomplissement chrétien. L'exemple le plus significatif est celui du sacrifice du Christ : en un sens, la mort du Christ en croix est la négation même du culte ancien ; elle paraît sans rapport avec lui. Un regard attentif découvre cependant une profonde continuité : d'un côté comme de l'autre, une offrande est présentée à Dieu, qui va jusqu'à l'effusion du sang et qui vise à obtenir le pardon des péchés. Mais quelle supériorité dans le cas du Christ ! A l'immolation rituelle d'animaux succède un don personnel poussé à l'extrême, dans une obéissance parfaite envers Dieu et une solidarité totale avec les hommes.</para>
+  <para style="ip">Cet exemple est loin d'être le seul. D'un bout à l'autre de son œuvre, l'auteur confronte les promesses et leur réalisation, les préfigurations anciennes et leur accomplissement. Il a un sens aigu de la continuité du dessein de Dieu qui fait l'unité des deux Testaments, mais il ne se montre pas moins conscient de la nouveauté et du caractère final de la révélation apportée par le Christ.</para>
+  <para style="is2">Conclusion</para>
+  <para style="ip">S'il faut un certain effort pour aborder le texte de l’<char style="bk">Epître aux Hébreux</char>, cet effort ne tarde pas à être amplement récompensé. On perçoit dans cet écrit du Nouveau Testament un si intense désir d'entrer en communion avec Dieu, on y découvre une doctrine si profonde de la médiation du Christ et une compréhension si réelle des difficultés de l'existence humaine, qu'on ne se lasse plus de revenir à ces pages substantielles. Leur apport est sans doute, en notre temps, plus précieux que jamais. L’<char style="bk">Epître aux Hébreux</char> s'adresse en effet à des chrétiens désorientés et menacés de découragement. Elle indique le vrai remède à ce genre de mal : non pas de vagues exhortations moralisantes, mais un sérieux effort d'approfondissement dans la foi du Christ.</para>
+  <para style="mt1">Epître aux Hébreux</para>
+  <chapter number="1" style="c" />
+  <para style="s1">Dieu nous a parlé par son Fils</para>
+  <para style="p">
+    <verse number="1" style="v" />Après avoir, à bien des reprises et de bien des manières, parlé autrefois aux pères<note caller="+" style="f"><char style="fr" closed="false">1.1 </char><char style="ft" closed="false">Ou </char><char style="fq" closed="false">à nos pères, </char><char style="ft" closed="false">les ancêtres du peuple israélite ; Rm 4.16-18 ; 11.17 ; 1 Co 10.1.</char></note> par les prophètes, Dieu, <verse number="2" style="v" />en la période finale où nous sommes, nous a parlé à nous par un Fils qu'il a établi héritier de tout, par qui aussi il a créé les mondes<note caller="+" style="f"><char style="fr" closed="false">1.2 </char><char style="ft" closed="false">Les derniers temps Ez 38.16 ; Dn 2.28 ; 10.14 ; Mi 4.1 ; Ac 2.17 ; 1 Co 10.11 ; 1 P 1.20. – Le Christ </char><char style="fq" closed="false">héritier </char><char style="ft" closed="false">Mt 21.38 ; 28.18 ; Ps 2.8 ; Gn 15.3-4 ; <char style="bk">Si</char> 44.21. – Le Christ et la création Jn 1.3 ; 1 Co 8.6 ; Col 1.16 (voir Pr 8.27-31 ; <char style="bk">Sg</char> 7.21 ; 9.9).</char></note>. <verse number="3" style="v" />Ce Fils est resplendissement de sa gloire et expression de son être et il porte l'univers par la puissance de sa parole. Après avoir accompli la purification des péchés, il s'est assis à la droite de la Majesté<note caller="+" style="f"><char style="fr" closed="false">1.3 </char><char style="fq" closed="false">image de Dieu </char><char style="ft" closed="false">2 Co 4.4 ; Col 1.15. – Le Christ </char><char style="fq" closed="false">assis à la droite de Dieu </char><char style="ft" closed="false">Ps 110.1 (Mt 22.44+). – La </char><char style="fq" closed="false">droite </char><char style="ft" closed="false">est le côté honorifique. – </char><char style="fq" closed="false">Majesté : </char><char style="ft" closed="false">un des titres de Dieu, adopté par les Juifs pour n'avoir pas à prononcer son nom.</char></note> dans les hauteurs, <verse number="4" style="v" />devenu d'autant supérieur aux anges qu'il a hérité d'un nom<note caller="+" style="f"><char style="fr" closed="false">1.4 </char><char style="fq" closed="false">le nom </char><char style="ft" closed="false">Ep 1.21 ; Ph 2.9.</char></note> bien différent du leur.</para>
+  <para style="s1">Le Fils de Dieu supérieur aux anges</para>
+  <para style="p">
+    <verse number="5" style="v" />Auquel des anges, en effet, a-t-il jamais dit :</para>
+  <para style="q1">
+    <char style="it">Tu es mon fils,</char></para>
+  <para style="q1">
+    <char style="it">moi, aujourd'hui, je t'ai engendré ?</char></para>
+  <para style="p">et encore :</para>
+  <para style="q1">
+    <char style="it">Moi, je serai pour lui un père</char></para>
+  <para style="q1">
+    <char style="it">et lui sera pour moi un fils</char>
+    <note caller="+" style="f">
+      <char style="fr" closed="false">1.5 </char>
+      <char style="ft" closed="false">v. 5 </char>
+      <char style="fq" closed="false">a : </char>
+      <char style="ft" closed="false">Ps 2.7. – le Christ </char>
+      <char style="fq" closed="false">Fils </char>
+      <char style="ft" closed="false">Ac 13.33 ; He 5.5. – v. 5 </char>
+      <char style="fq" closed="false">b : </char>
+      <char style="ft" closed="false">2 S 7.14 ; 1 Ch 17.13.</char>
+    </note> ?</para>
+  <para style="p">
+    <verse number="6" style="v" />Par contre, lorsqu'il introduit le premier-né dans le monde, il dit :</para>
+  <para style="q1">
+    <char style="it">Et que se prosternent devant lui tous les anges de Dieu</char>
+    <note caller="+" style="f">
+      <char style="fr" closed="false">1.6 </char>
+      <char style="ft" closed="false">Dt 32.43 (grec). – </char>
+      <char style="fq" closed="false">premier-né </char>
+      <char style="ft" closed="false">Col 1.18. – </char>
+      <char style="fq" closed="false">le monde : </char>
+      <char style="ft" closed="false">voir He 2.5 où le même terme grec désigne le monde à venir.</char>
+    </note>.</para>
+  <para style="p">
+    <verse number="7" style="v" />Pour les anges, il a cette parole :</para>
+  <para style="q1">
+    <char style="it">Celui qui fait de ses anges des esprits</char></para>
+  <para style="q1">
+    <char style="it">et de ses serviteurs une flamme de feu</char>
+    <note caller="+" style="f">
+      <char style="fr" closed="false">1.7 </char>
+      <char style="ft" closed="false">Ps 104.4.</char>
+    </note>.</para>
+  <para style="p">
+    <verse number="8" style="v" />Mais pour le Fils, celle-ci :</para>
+  <para style="q1">
+    <char style="it">Ton trône, Dieu, est établi à tout jamais !</char> et :</para>
+  <para style="q1">
+    <char style="it">Le sceptre de la droiture est sceptre de ton règne</char>
+    <note caller="+" style="f">
+      <char style="fr" closed="false">1.8 </char>
+      <char style="ft" closed="false">Ou </char>
+      <char style="fq" closed="false">son règne. – </char>
+      <char style="ft" closed="false">v. 8-9 : Ps 45.7-8.</char>
+    </note>.</para>
+  <para style="q1">
+    <verse number="9" style="v" />
+    <char style="it">Tu aimas la justice et détestas l'iniquité,</char></para>
+  <para style="q1">
+    <char style="it">c'est pourquoi, ô Dieu, ton Dieu te donna l'onction</char></para>
+  <para style="q1">
+    <char style="it">d'une huile d'allégresse, de préférence à tes compagnons.</char></para>
+  <para style="m">
+    <verse number="10" style="v" />Et encore :</para>
+  <para style="q1">
+    <char style="it">C'est toi qui, aux origines, Seigneur, fondas la terre,</char></para>
+  <para style="q1">
+    <char style="it">et les cieux sont l'œuvre de tes mains.</char></para>
+  <para style="q1">
+    <verse number="11" style="v" />
+    <char style="it">Eux périront, mais toi, tu demeures.</char></para>
+  <para style="q1">
+    <char style="it">Oui, tous comme un vêtement vieilliront</char></para>
+  <para style="q1">
+    <verse number="12" style="v" />
+    <char style="it">et comme on fait d'un manteau, tu les enrouleras</char>
+    <note caller="+" style="f">
+      <char style="fr" closed="false">1.12 </char>
+      <char style="ft" closed="false">Autre texte (voir Es 34.4) : </char>
+      <char style="fq" closed="false">tu les changeras. – </char>
+      <char style="ft" closed="false">v. 10-12 : Ps 102.26-28.</char>
+    </note>,</para>
+  <para style="q1">comme un vêtement, <char style="it">oui, ils seront changés,</char></para>
+  <para style="q1">
+    <char style="it">mais toi, tu es le même et tes années ne tourneront pas court</char>.</para>
+  <para style="p">
+    <verse number="13" style="v" />Et auquel des anges a-t-il jamais dit :</para>
+  <para style="q1">
+    <char style="it">Siège à ma droite,</char></para>
+  <para style="q1">
+    <char style="it">de tes ennemis, je vais faire ton marchepied</char>
+    <note caller="+" style="f">
+      <char style="fr" closed="false">1.13 </char>
+      <char style="ft" closed="false">Ps 110.1 (Mt 22.44+ ; He 10.13).</char>
+    </note> ?</para>
+  <para style="p">
+    <verse number="14" style="v" />Ne sont-ils pas tous des esprits remplissant des fonctions et envoyés en service pour le bien de ceux qui doivent recevoir en héritage le salut ?</para>
+  <chapter number="2" style="c" />
+  <para style="s1">Importance décisive du salut annoncé</para>
+  <para style="p">
+    <verse number="1" style="v" />Il s'ensuit que nous devons prendre plus au sérieux le message entendu, si nous ne voulons pas aller à la dérive. <verse number="2" style="v" />Car si la parole annoncée par des anges entra en vigueur et si toute transgression et toute désobéissance reçurent une juste rétribution<note caller="+" style="f"><char style="fr" closed="false">2.2 </char><char style="ft" closed="false">Selon une tradition rabbinique, la révélation de la Loi au Sinaï a été promulguée </char><char style="fq" closed="false">par des anges </char><char style="ft" closed="false">(Ga 3.19 ; Ac 7.53). – </char><char style="fq" closed="false">rétribution </char><char style="ft" closed="false">He 10.29 ; 12.25.</char></note>, <verse number="3" style="v" />comment nous-mêmes échapperons-nous, si nous négligeons un pareil salut, qui commença à être annoncé par le Seigneur, puis fut confirmé pour nous par ceux qui l'avaient entendu, <verse number="4" style="v" />et fut appuyé aussi du témoignage de Dieu par des signes<note caller="+" style="f"><char style="fr" closed="false">2.4 </char><char style="ft" closed="false">Mc 16.17-18,20 ; Ac 5.12 ; Rm 15.19 ; 2 Co 12.12.</char></note> et des prodiges, des miracles de toute sorte, et par des dons de l'Esprit Saint répartis selon sa volonté !</para>
+  <para style="s1">Le Frère des hommes</para>
+  <para style="p">
+    <verse number="5" style="v" />Car ce n'est pas à des anges qu'il a soumis le monde à venir, dont nous parlons. <verse number="6" style="v" />L'attestation en fut donnée quelque part en ces termes :</para>
+  <para style="q1">
+    <char style="it">Qu'est-ce que l'homme pour que tu te souviennes de lui</char> ?</para>
+  <para style="q1">
+    <char style="it">Ou le fils de l'homme pour que tu portes tes regards sur lui</char> ?</para>
+  <para style="q1">
+    <verse number="7" style="v" />
+    <char style="it">Tu l'abaissas quelque peu par rapport aux anges</char> ;</para>
+  <para style="q1">
+    <char style="it">de gloire et d'honneur tu le couronnas ;</char></para>
+  <para style="q1">
+    <verse number="8" style="v" />
+    <char style="it">tu mis toutes choses sous ses pieds.</char></para>
+  <para style="p">En lui soumettant toutes choses, il n'a rien laissé qui puisse lui rester insoumis<note caller="+" style="f"><char style="fr" closed="false">2.8 </char><char style="ft" closed="false">v. 6-8 : Ps 8.5-7. – Tout est soumis au Christ 1 Co 15.27 ; Ep 1.22 ; Ph 3.21.</char></note>. Or, en fait, nous ne voyons pas encore que tout lui ait été soumis, <verse number="9" style="v" />mais nous faisons une constatation : celui qui a été <char style="it">abaissé quelque peu par rapport aux anges</char>, Jésus, se trouve, à cause de la mort qu'il a soufferte, <char style="it">couronné de gloire et d'honneur</char><note caller="+" style="f"><char style="fr" closed="false">2.9 </char><char style="fq" closed="false">quelque peu : à un niveau un peu inférieur, </char><char style="ft" closed="false">ou bien </char><char style="fq" closed="false">pendant un peu de temps. – abaissé et glorifié </char><char style="ft" closed="false">Ph 2.8-9.</char></note>. Ainsi, par la grâce de Dieu, c'est pour tout homme qu'il a goûté la mort.</para>
+  <para style="p">
+    <verse number="10" style="v" />Il convenait, en effet, à celui pour qui et par qui tout existe et qui voulait conduire à la gloire une multitude de fils, de mener à l'accomplissement par des souffrances l'initiateur<note caller="+" style="f"><char style="fr" closed="false">2.10 </char><char style="fq" closed="false">celui par qui… : </char><char style="ft" closed="false">Dieu. – Le Christ </char><char style="fq" closed="false">mené à l'accomplissement </char><char style="ft" closed="false">par sa passion Lc 13.32 ; He 5.9 ; 7.28. – </char><char style="fq" closed="false">l'initiateur… : </char><char style="ft" closed="false">le Fils.</char></note> de leur salut. <verse number="11" style="v" />Car le sanctificateur et les sanctifiés ont tous une même origine ; aussi ne rougit-il pas de les appeler <char style="it">frères</char><note caller="+" style="f"><char style="fr" closed="false">2.11 </char><char style="ft" closed="false">Mt 25.40 ; Mc 3.35 ; Jn 20.17.</char></note> <verse number="12" style="v" />et de dire :</para>
+  <para style="q1">
+    <char style="it">J'annoncerai ton nom à mes frères,</char></para>
+  <para style="q1">
+    <char style="it">au milieu de l'assemblée, je te louerai</char>
+    <note caller="+" style="f">
+      <char style="fr" closed="false">2.12 </char>
+      <char style="ft" closed="false">Ps 22.23.</char>
+    </note>,</para>
+  <para style="m">
+    <verse number="13" style="v" />et encore :</para>
+  <para style="q1">
+    <char style="it">Moi, je serai plein de confiance en lui</char>,</para>
+  <para style="p">et encore :</para>
+  <para style="q1">
+    <char style="it">Me voici, moi et les enfants que Dieu m'a donnés</char>
+    <note caller="+" style="f">
+      <char style="fr" closed="false">2.13 </char>
+      <char style="ft" closed="false">v. 13 </char>
+      <char style="fq" closed="false">a : </char>
+      <char style="ft" closed="false">2 S 22.3 ; Es 8.17. – v. 13 </char>
+      <char style="fq" closed="false">b : </char>
+      <char style="ft" closed="false">Es 8.18.</char>
+    </note>.</para>
+  <para style="p">
+    <verse number="14" style="v" />Ainsi donc, puisque <char style="it">les enfants</char> ont en commun le sang et la chair, lui aussi, pareillement, partagea la même condition, afin de réduire à l'impuissance, par sa mort, celui qui détenait le pouvoir de la mort, c'est-à-dire le diable<note caller="+" style="f"><char style="fr" closed="false">2.14 </char><char style="ft" closed="false">Le Christ a </char><char style="fq" closed="false">partagé notre condition </char><char style="ft" closed="false">Rm 8.3 ; Ph 2.7 ; He 2.17. – L'œuvre du </char><char style="fq" closed="false">diable </char><char style="ft" closed="false"><char style="bk">Sg</char> 2.24 ; 1 Jn 3.8.</char></note>, <verse number="15" style="v" />et de délivrer ceux qui, par crainte de la mort, passaient toute leur vie dans une situation d'esclaves. <verse number="16" style="v" />Car ce n'est pas à des anges qu'il vient en aide, mais c'est à la descendance d'Abraham. <verse number="17" style="v" />Aussi devait-il en tous points se faire semblable à ses <char style="it">frères</char>, afin de devenir un grand prêtre miséricordieux en même temps qu'accrédité auprès de Dieu pour effacer<note caller="+" style="f"><char style="fr" closed="false">2.17 </char><char style="ft" closed="false">Lv 4.20,26,35 ; 16.6,10,11 donnent un aperçu des rites de purification opérés par le grand prêtre de l'ancienne alliance. – Le Christ </char><char style="fq" closed="false">grand prêtre </char><char style="ft" closed="false">He 3.1 ; 4.14 ; 5.1 ; 6.20 ; 7.26 ; 8.1 ; 9.11.</char></note> les péchés du peuple. <verse number="18" style="v" />Car puisqu'il a souffert lui-même l'épreuve, il est en mesure de porter secours à ceux qui sont éprouvés.</para>
+  <chapter number="3" style="c" />
+  <para style="s1">Jésus comparé à Moïse</para>
+  <para style="p">
+    <verse number="1" style="v" />Ainsi donc, frères saints, qui avez en partage une vocation céleste, considérez l'apôtre et le grand prêtre de notre confession de foi, Jésus<note caller="+" style="f"><char style="fr" closed="false">3.1 </char><char style="fq" closed="false">apôtre : </char><char style="ft" closed="false">au sens étymologique d'envoyé. – </char><char style="fq" closed="false">Jésus grand prêtre </char><char style="ft" closed="false">2.17+.</char></note>. <verse number="2" style="v" />Il est <char style="it">accrédité</char> auprès de celui qui l'a constitué, comme <char style="it">Moïse</char> le fut <char style="it">dans toute sa maison</char><note caller="+" style="f"><char style="fr" closed="false">3.2 </char><char style="fq" closed="false">constitué </char><char style="ft" closed="false">ou </char><char style="fq" closed="false">établi </char><char style="ft" closed="false">(dans sa fonction de grand prêtre). – </char><char style="fq" closed="false">Moïse dans la maison de Dieu </char><char style="ft" closed="false">Nb 12.7.</char></note>. <verse number="3" style="v" />En fait, c'est une gloire supérieure à celle de Moïse qui lui revient, dans toute la mesure où le constructeur de la maison est plus honoré que la maison elle-même. <verse number="4" style="v" />Toute maison, en effet, a son constructeur, et le constructeur de tout est Dieu. <verse number="5" style="v" />Or <char style="it">Moïse</char> fut <char style="it">accrédité dans toute sa maison</char> comme <char style="it">serviteur</char> en vue de garantir ce qui allait être dit, <verse number="6" style="v" />mais Christ l'est comme Fils, et sur sa maison. Sa maison, c'est nous, si nous conservons la pleine assurance et la fierté de l'espérance<note caller="+" style="f"><char style="fr" closed="false">3.6 </char><char style="ft" closed="false">Certains manuscrits ajoutent : </char><char style="fq" closed="false">fermement jusqu'à la fin </char><char style="ft" closed="false">(mots empruntés à 3.14).</char></note>.</para>
+  <para style="s1">L'entrée par la foi dans le repos de Dieu</para>
+  <para style="p">
+    <verse number="7" style="v" />C'est pourquoi, comme dit l'Esprit Saint :</para>
+  <para style="q1">
+    <char style="it">Aujourd'hui, si vous entendez sa voix,</char></para>
+  <para style="q1">
+    <verse number="8" style="v" />
+    <char style="it">n'endurcissez pas vos cœurs comme au temps de l'exaspération,</char></para>
+  <para style="q1">
+    <char style="it">au jour de la mise à l'épreuve dans le désert</char>
+    <note caller="+" style="f">
+      <char style="fr" closed="false">3.8 </char>
+      <char style="ft" closed="false">v. 7-11 : Ps 95.7-11. – Episode de Massa et Mériba Ex 17.7.</char>
+    </note>,</para>
+  <para style="q1">
+    <verse number="9" style="v" />
+    <char style="it">où vos pères me mirent à l'épreuve en cherchant à me sonder,</char></para>
+  <para style="q1">
+    <char style="it">et ils virent mes œuvres</char> <verse number="10" style="v" /><char style="it">pendant quarante ans.</char></para>
+  <para style="q1">C'est pourquoi, <char style="it">je me suis emporté contre cette génération</char></para>
+  <para style="q1">
+    <char style="it">et j'ai dit : Toujours leurs cœurs s'égarent ;</char></para>
+  <para style="q1">
+    <char style="it">ces gens-là n'ont pas trouvé mes chemins,</char></para>
+  <para style="q1">
+    <verse number="11" style="v" />
+    <char style="it">car j'ai juré dans ma colère :</char></para>
+  <para style="q1">
+    <char style="it">On verra bien s'ils entreront dans mon repos !</char></para>
+  <para style="p">
+    <verse number="12" style="v" />Prenez garde, frères, qu'aucun de vous n'ait un cœur mauvais que l'incrédulité détache du Dieu vivant, <verse number="13" style="v" />mais encouragez-vous les uns les autres, jour après jour, tant que dure la proclamation de <char style="it">l'aujourd'hui</char>, afin qu'aucun d'entre vous ne <char style="it">s'endurcisse</char>, trompé par le péché. <verse number="14" style="v" />Nous voici devenus, en effet, les compagnons du Christ, pourvu que nous tenions fermement jusqu'à la fin notre position initiale, <verse number="15" style="v" />alors qu'il est dit :</para>
+  <para style="q1">
+    <char style="it">Aujourd'hui, si vous entendez sa voix,</char></para>
+  <para style="q1">
+    <char style="it">n'endurcissez pas vos cœurs comme au temps de l'exaspération.</char></para>
+  <para style="p">
+    <verse number="16" style="v" />Quels sont, en effet, ceux qui <char style="it">entendirent</char> et qui provoquèrent <char style="it">l'exaspération ?</char> N'est-ce pas tous ceux qui sortirent d'Egypte grâce à Moïse ? <verse number="17" style="v" />Et contre qui s'est-il <char style="it">emporté pendant quarante ans ?</char> N'est-ce pas contre ceux qui avaient péché, dont <char style="it">les cadavres tombèrent dans le désert ?</char> <verse number="18" style="v" />Et à qui <char style="it">jura-t-il qu'ils n'entreraient pas dans son repos</char>, sinon à ces indociles<note caller="+" style="f"><char style="fr" closed="false">3.18 </char><char style="ft" closed="false">v. 11-18 : mission de reconnaissance en Canaan Nb 13. – Manque de foi du peuple Nb 14.11 ; Dt 1.26. – Interdiction d'entrer en Terre promise Nb 14.21-23. – Leur mort dans le désert Nb 14.29,32 ; 1 Co 10.10.</char></note> ? <verse number="19" style="v" />Et nous constatons qu'ils ne purent pas entrer à cause de leur incrédulité.</para>
+  <chapter number="4" style="c" />
+  <para style="p">
+    <verse number="1" style="v" />Alors que subsiste une promesse d'entrer dans son repos, craignons donc que quelqu'un d'entre vous ne soit convaincu d'être resté en retrait. <verse number="2" style="v" />Car nous avons reçu la bonne nouvelle tout comme ces gens-là, mais la parole qu'ils avaient entendue ne leur a été d'aucun profit, car les auditeurs ne s'en sont pas pénétrés par la foi<note caller="+" style="f"><char style="fr" closed="false">4.2 </char><char style="ft" closed="false">Autre texte : </char><char style="fq" closed="false">car ils n'ont pas fusionné par la foi avec les auditeurs de la parole.</char></note>.</para>
+  <para style="p">
+    <verse number="3" style="v" />Nous qui sommes venus à la foi, nous entrons dans le repos, dont il a dit :</para>
+  <para style="q1">
+    <char style="it">Comme j'ai juré dans ma colère :</char></para>
+  <para style="q1">
+    <char style="it">On verra bien s'ils entreront dans mon repos !</char></para>
+  <para style="p">son ouvrage, assurément, ayant été réalisé dès la fondation du monde, <verse number="4" style="v" />car on a dit du septième jour : <char style="it">Et Dieu se reposa le septième jour de tout son ouvrage</char><note caller="+" style="f"><char style="fr" closed="false">4.4 </char><char style="ft" closed="false">Gn 2.2.</char></note>, <verse number="5" style="v" />et de nouveau dans notre texte : <char style="it">s'ils entreront dans mon repos.</char></para>
+  <para style="p">
+    <verse number="6" style="v" />Ainsi donc, puisqu'il reste décidé que certains y entrent, et que les premiers à avoir reçu la bonne nouvelle n'y entrèrent pas à cause de leur indocilité, <verse number="7" style="v" />il fixe de nouveau un jour, <char style="it">aujourd'hui</char>, disant beaucoup plus tard, dans le texte de David déjà cité :</para>
+  <para style="q1">
+    <char style="it">Aujourd'hui, si vous entendez sa voix,</char></para>
+  <para style="q1">
+    <char style="it">n'endurcissez pas vos cœurs.</char></para>
+  <para style="p">
+    <verse number="8" style="v" />De fait, si Josué leur avait assuré le repos<note caller="+" style="f"><char style="fr" closed="false">4.8 </char><char style="fq" closed="false">repos </char><char style="ft" closed="false">dans la Terre promise Jos 21.44 ; 22.4 ; 23.1.</char></note>, il ne parlerait pas, après cela, d'un autre jour. <verse number="9" style="v" />Un repos sabbatique reste donc en réserve pour le peuple de Dieu. <verse number="10" style="v" />Car celui qui est entré dans son repos s'est mis, lui aussi, à <char style="it">se reposer de son ouvrage</char>, comme Dieu s'est reposé du sien. <verse number="11" style="v" />Empressons-nous donc d'entrer dans ce repos, afin que le même exemple d'indocilité n'entraîne plus personne dans la chute<note caller="+" style="f"><char style="fr" closed="false">4.11 </char><char style="ft" closed="false">Ou </char><char style="fq" closed="false">afin que personne ne tombe en donnant le même exemple d'indocilité.</char></note>.</para>
+  <para style="p">
+    <verse number="12" style="v" />Vivante, en effet, est la parole de Dieu, énergique et plus tranchante qu'aucun glaive à double tranchant. Elle pénètre jusqu'à diviser âme et esprit<note caller="+" style="f"><char style="fr" closed="false">4.12 </char><char style="ft" closed="false">Ou </char><char style="fq" closed="false">jusqu'au point de division de l'âme et de l'esprit. – le glaive de la parole </char><char style="ft" closed="false">Es 49.2 ; <char style="bk">Sg</char> 18.15,16 ; Ap 19.15.</char></note>, articulations et moelles. Elle passe au crible les mouvements et les pensées du cœur. <verse number="13" style="v" />Il n'est pas de créature qui échappe à sa vue ; tout est nu à ses yeux, tout est subjugué par son regard. Et c'est à elle que nous devons rendre compte.</para>
+  <para style="s1">L'adhésion au Christ grand prêtre</para>
+  <para style="p">
+    <verse number="14" style="v" />Ayant donc un grand prêtre<note caller="+" style="f"><char style="fr" closed="false">4.14 </char><char style="fq" closed="false">grand prêtre </char><char style="ft" closed="false">2.17+.</char></note> éminent, qui a traversé les cieux, Jésus, le Fils de Dieu, tenons ferme la confession de foi. <verse number="15" style="v" />Nous n'avons pas, en effet, un grand prêtre incapable de compatir à nos faiblesses ; il a été éprouvé en tous points à notre ressemblance, mais sans pécher<note caller="+" style="f"><char style="fr" closed="false">4.15 </char><char style="ft" closed="false">2.17-18 ; 7.26 ; 9.14 ; Jn 8.46 ; 2 Co 5.21 ; 1 Jn 3.5.</char></note>. <verse number="16" style="v" />Avançons-nous donc avec pleine assurance vers le trône de la grâce, afin d'obtenir miséricorde et de trouver grâce, pour un secours en temps voulu.</para>
+  <chapter number="5" style="c" />
+  <para style="s1">Le Christ, grand prêtre compatissant</para>
+  <para style="p">
+    <verse number="1" style="v" />Tout grand prêtre, en effet, pris d'entre les hommes est établi en faveur des hommes pour leurs rapports avec Dieu. Son rôle est d'offrir des dons et des sacrifices pour les péchés<note caller="+" style="f"><char style="fr" closed="false">5.1 </char><char style="fq" closed="false">le prêtre </char><char style="ft" closed="false">s'approche de Dieu Ex 28.43 ; 29.30 ; Nb 18.1-7. – </char><char style="fq" closed="false">il enseigne la Loi </char><char style="ft" closed="false">Dt 33.10 ; Lv 10.11 ; Ml 2.7. – </char><char style="fq" closed="false">il offre le sacrifice </char><char style="ft" closed="false">Lv 1 ; 4 ; 9 etc.</char></note>. <verse number="2" style="v" />Il est capable d'avoir de la compréhension pour ceux qui ne savent pas et s'égarent, car il est, lui aussi, atteint de tous côtés par la faiblesse<note caller="+" style="f"><char style="fr" closed="false">5.2 </char><char style="fq" closed="false">compréhension pour la faiblesse </char><char style="ft" closed="false">2.17-18 ; 4.15. – Péché d'ignorance Nb 15.22-31 ; Lc 23.34 ; Ac 3.17.</char></note> <verse number="3" style="v" />et, à cause d'elle, il doit offrir, pour lui-même<note caller="+" style="f"><char style="fr" closed="false">5.3 </char><char style="ft" closed="false">Lv 9.7-8 ; 16.6,11 ; He 7.27.</char></note> aussi bien que pour le peuple, des sacrifices pour les péchés. <verse number="4" style="v" />On ne s'attribue pas à soi-même cet honneur, on le reçoit par appel de Dieu<note caller="+" style="f"><char style="fr" closed="false">5.4 </char><char style="ft" closed="false">Ex 28.1 ; Nb 16–17.</char></note>, comme ce fut le cas pour Aaron.</para>
+  <para style="p">
+    <verse number="5" style="v" />C'est ainsi que le Christ non plus ne s'est pas attribué à lui-même la gloire de devenir grand prêtre ; il l'a reçue de celui qui lui a dit : <char style="it">Tu es mon fils, moi, aujourd'hui, je t'ai engendré</char><note caller="+" style="f"><char style="fr" closed="false">5.5 </char><char style="ft" closed="false">Ps 2.7 (He 1.5).</char></note>, <verse number="6" style="v" />conformément à cette autre parole : <char style="it">Tu es prêtre pour l'éternité dans la ligne de Melkisédeq</char><note caller="+" style="f"><char style="fr" closed="false">5.6 </char><char style="ft" closed="false">Ps 110.4 (selon l'ancienne version grecque). Voir aussi He 6.20 ; 7.17.</char></note>. <verse number="7" style="v" />C'est lui qui, au cours de sa vie terrestre, offrit prières et supplications avec grand cri et larmes à celui qui pouvait le sauver de la mort, et il fut exaucé en raison de sa soumission. <verse number="8" style="v" />Tout Fils qu'il était, il apprit par ses souffrances l'obéissance<note caller="+" style="f"><char style="fr" closed="false">5.8 </char><char style="ft" closed="false">Mt 26.36-46 par. ; Ph 2.8.</char></note>, <verse number="9" style="v" />et, conduit jusqu'à son propre accomplissement<note caller="+" style="f"><char style="fr" closed="false">5.9 </char><char style="ft" closed="false">Ou </char><char style="fq" closed="false">rendu parfait. – </char><char style="ft" closed="false">accomplissement 2.10+.</char></note>, il devint pour tous ceux qui lui obéissent cause de salut éternel, <verse number="10" style="v" />ayant été proclamé par Dieu grand prêtre <char style="it">dans la ligne de Melkisédeq</char>.</para>
+  <para style="s1">Vers un approfondissement de la vie chrétienne</para>
+  <para style="p">
+    <verse number="11" style="v" />Sur ce sujet, nous avons bien des choses à dire et leur explication s'avère difficile, car vous êtes devenus lents à comprendre. <verse number="12" style="v" />Vous devriez être, depuis le temps, des maîtres et vous avez de nouveau besoin qu'on vous enseigne les tout premiers éléments des paroles de Dieu<note caller="+" style="f"><char style="fr" closed="false">5.12 </char><char style="ft" closed="false">1 Co 2.14-15 ; 3.1-3 ; 1 P 2.2.</char></note>. Vous en êtes arrivés au point d'avoir besoin de lait, non de nourriture solide. <verse number="13" style="v" />Quiconque en est encore au lait ne peut suivre un raisonnement sur ce qui est juste, car c'est un bébé. <verse number="14" style="v" />Les adultes, par contre, prennent de la nourriture solide, eux qui, par la pratique, ont les sens exercés à discerner ce qui est bon et ce qui est mauvais.</para>
+  <chapter number="6" style="c" />
+  <para style="p">
+    <verse number="1" style="v" />Ainsi donc, laissons l'enseignement élémentaire sur le Christ pour nous élever à une perfection d'adulte, sans revenir sur les données fondamentales : repentir des œuvres mortes<note caller="+" style="f"><char style="fr" closed="false">6.1 </char><char style="ft" closed="false">9.14 ; Rm 8.6,13 ; Ep 5.11 ; Ga 5.19.</char></note> et foi en Dieu, <verse number="2" style="v" />doctrine des baptêmes et imposition des mains<note caller="+" style="f"><char style="fr" closed="false">6.2 </char><char style="fq" closed="false">baptêmes : </char><char style="ft" closed="false">ce pluriel peut désigner soit les rites d'ablution pratiqués par les Juifs et les païens, soit l'ensemble des actes accompagnant le baptême chrétien, soit conjointement le baptême de Jean et le baptême chrétien (Ac 18.25 ; 19.1). – </char><char style="fq" closed="false">imposition des mains </char><char style="ft" closed="false">Ac 8.17 ; 19.6 ; 1 Tm 4.14 ; 5.22.</char></note>, résurrection des morts et jugement définitif. <verse number="3" style="v" />Voilà ce que nous allons faire, si du moins Dieu le permet.</para>
+  <para style="p">
+    <verse number="4" style="v" />Il est impossible, en effet, que des hommes qui un jour ont reçu la lumière<note caller="+" style="f"><char style="fr" closed="false">6.4 </char><char style="ft" closed="false">10.32 ; Ep 1.18 ; 5.14.</char></note>, ont goûté au don céleste, ont eu part à l'Esprit Saint, <verse number="5" style="v" />ont savouré la parole excellente de Dieu et les forces du monde à venir, <verse number="6" style="v" />et qui pourtant sont retombés, – il est impossible qu'ils trouvent une seconde fois le renouveau, en remettant sur la croix le Fils de Dieu pour leur conversion<note caller="+" style="f"><char style="fr" closed="false">6.6 </char><char style="ft" closed="false">Péché impardonnable 10.26 ; Mt 12.31 ; 1 Jn 5.16. – </char><char style="fq" closed="false">pour leur conversion </char><char style="ft" closed="false">ou </char><char style="fq" closed="false">pour leur repentance.</char></note> et en l'exposant aux injures.</para>
+  <para style="p">
+    <verse number="7" style="v" />Lorsqu'une terre boit les fréquentes ondées qui tombent sur elle et produit une végétation utile à ceux qui la font cultiver, elle reçoit de Dieu sa part de bénédiction. <verse number="8" style="v" />Mais produit-elle épines et chardons, elle est jugée sans valeur, bien près d'être maudite, et finira par être brûlée.</para>
+  <para style="p">
+    <verse number="9" style="v" />Quant à vous, bien-aimés, nous sommes convaincus, tout en parlant ainsi, que vous êtes du bon côté, celui du salut. <verse number="10" style="v" />Dieu, en effet, n'est pas injuste ; il ne peut oublier votre activité et l'amour que vous avez montré à l'égard de son nom en vous mettant au service des saints<note caller="+" style="f"><char style="fr" closed="false">6.10 </char><char style="fq" closed="false">saints </char><char style="ft" closed="false">Ex 19.5-6 ; Rm 1.7 ; 12.13 ; 15.25 ; 16.2 ; 1 P 1.16 ; 2.9.</char></note> dans le passé, et encore dans le présent. <verse number="11" style="v" />Mais notre désir est que chacun de vous montre la même ardeur à porter l'espérance à son épanouissement jusqu'à la fin, <verse number="12" style="v" />sans ralentir votre effort, mais en imitant ceux qui, par la foi et la persévérance, reçoivent l'héritage des promesses.</para>
+  <para style="s1">Promesse de Dieu et espérance</para>
+  <para style="p">
+    <verse number="13" style="v" />Lorsque Dieu fit sa promesse à Abraham, comme il n'avait personne de plus grand par qui jurer, il jura par lui-même <verse number="14" style="v" />et dit :</para>
+  <para style="q1">
+    <char style="it">Oui, de bénédictions je te comblerai,</char></para>
+  <para style="q1">
+    <char style="it">une immense expansion je te donnerai</char>
+    <note caller="+" style="f">
+      <char style="fr" closed="false">6.14 </char>
+      <char style="ft" closed="false">Gn 22.17 (grec) ; <char style="bk">Si</char> 44.21 ; He 11.12.</char>
+    </note>.</para>
+  <para style="p">
+    <verse number="15" style="v" />Ayant alors persévéré, Abraham vit se réaliser la promesse<note caller="+" style="f"><char style="fr" closed="false">6.15 </char><char style="fq" closed="false">persévérance </char><char style="ft" closed="false">dans la foi Rm 4.20. – L'objet de la </char><char style="fq" closed="false">promesse </char><char style="ft" closed="false">He 11.9,13,33,39.</char></note>. <verse number="16" style="v" />Les hommes jurent par plus grand qu'eux-mêmes, et pour mettre un terme à toute contestation, ils recourent à la garantie du serment. <verse number="17" style="v" />En ce sens, Dieu, voulant bien davantage montrer aux héritiers de la promesse le caractère irrévocable de sa décision, intervint par un serment. <verse number="18" style="v" />Ainsi, deux actes irrévocables, dans lesquels il ne peut y avoir de mensonge de la part de Dieu<note caller="+" style="f"><char style="fr" closed="false">6.18 </char><char style="fq" closed="false">deux actes : </char><char style="ft" closed="false">la promesse </char><char style="fq" closed="false">et </char><char style="ft" closed="false">le serment. – Dieu ne ment pas Nb 23.19 ; 1 S 15.29.</char></note>, nous apportent un encouragement puissant, à nous qui avons tout laissé pour saisir l'espérance proposée. <verse number="19" style="v" />Elle est pour nous comme une ancre de l'âme, bien fermement fixée, qui pénètre au-delà du voile<note caller="+" style="f"><char style="fr" closed="false">6.19 </char><char style="ft" closed="false">Allusion au voile qui, dans le temple de Jérusalem, isolait le Saint des Saints, lieu de la présence de Dieu (9.3). Il s'agit ici du sanctuaire céleste ; 10.20 ; Lv 16.2-3,12,15.</char></note>, <verse number="20" style="v" />là où est entré pour nous, en précurseur, Jésus, devenu grand prêtre <char style="it">pour l'éternité dans la ligne de Melkisédeq.</char></para>
+  <chapter number="7" style="c" />
+  <para style="s1">Melkisédeq</para>
+  <para style="p">
+    <verse number="1" style="v" />Ce <char style="it">Melkisédeq, roi de Salem, prêtre du Dieu Très-Haut, est allé à la rencontre d'Abraham, lorsque celui-ci revenait du combat contre les rois, et l'a béni</char><note caller="+" style="f"><char style="fr" closed="false">7.1 </char><char style="ft" closed="false">Gn 14.17-20.</char></note>. <verse number="2" style="v" /><char style="it">C'est à lui qu'Abraham</char> remit <char style="it">la dîme de tout</char>. D'abord, il porte un nom qui se traduit « roi de justice », et ensuite, il est aussi <char style="it">roi de Salem</char>, c'est-à-dire roi de paix<note caller="+" style="f"><char style="fr" closed="false">7.2 </char><char style="fq" closed="false">roi de justice </char><char style="ft" closed="false">est le sens étymologique de </char><char style="fq" closed="false">Melkisédeq. – Salem </char><char style="ft" closed="false">signifie </char><char style="fq" closed="false">paix </char><char style="ft" closed="false">et désigne Jérusalem, ville de la paix.</char></note>. <verse number="3" style="v" />Lui qui n'a ni père, ni mère, ni généalogie, ni commencement pour ses jours, ni fin pour sa vie, mais qui est assimilé au Fils de Dieu<note caller="+" style="f"><char style="fr" closed="false">7.3 </char><char style="ft" closed="false">Gn 14 ne parle ni de l'ascendance, ni de la naissance, ni de la mort de Melkisédeq. Certaines tendances du judaïsme considéraient Melkisédeq comme un être divin, une sorte de Sauveur céleste.</char></note> reste prêtre à perpétuité.</para>
+  <para style="p">
+    <verse number="4" style="v" />Contemplez la grandeur de ce personnage, à qui Abraham a donné en dîme la meilleure part du butin, lui, le patriarche. <verse number="5" style="v" />Or, ceux des fils de Lévi qui reçoivent le sacerdoce ont ordre, de par la loi, de prélever la dîme<note caller="+" style="f"><char style="fr" closed="false">7.5 </char><char style="fq" closed="false">loi de la dîme </char><char style="ft" closed="false">Nb 18.21.</char></note> sur le peuple, c'est-à-dire sur leurs frères, qui sont pourtant des descendants d'Abraham. <verse number="6" style="v" />Mais lui, qui ne figure pas dans leurs généalogies, a soumis Abraham à la dîme et a béni le titulaire des promesses. <verse number="7" style="v" />Or sans aucune contestation, c'est l'inférieur qui est béni par le supérieur. <verse number="8" style="v" />Et ici, ceux qui perçoivent la dîme sont des hommes qui meurent, là c'est quelqu'un dont on atteste qu'il vit. <verse number="9" style="v" />Et pour tout dire, en la personne d'Abraham, même Lévi, qui perçoit la dîme, a été soumis à la dîme. <verse number="10" style="v" />Car il était encore dans les reins<note caller="+" style="f"><char style="fr" closed="false">7.10 </char><char style="ft" closed="false">Siège de la vigueur physique, </char><char style="fq" closed="false">les reins </char><char style="ft" closed="false">étaient censés contenir à l'avance toute la postérité d'un homme (Gn 35.11 ; 1 R 8.19).</char></note> de son ancêtre, lorsque eut lieu <char style="it">la rencontre avec Melkisédeq</char>.</para>
+  <para style="s1">Grand prêtre à la manière de Melkisédeq</para>
+  <para style="p">
+    <verse number="11" style="v" />Si on était parvenu à un parfait accomplissement par le sacerdoce lévitique, car il était la base de la législation donnée au peuple, quel besoin y aurait-il eu encore de susciter un autre prêtre, <char style="it">dans la ligne de Melkisédeq</char>, au lieu de le désigner <char style="it">dans la ligne</char> d'Aaron ? <verse number="12" style="v" />Car un changement de sacerdoce entraîne forcément un changement de loi. <verse number="13" style="v" />Et celui que vise le texte cité fait partie d'une tribu dont aucun membre n'a été affecté au service de l'autel. <verse number="14" style="v" />Il est notoire, en effet, que notre Seigneur est issu de Juda<note caller="+" style="f"><char style="fr" closed="false">7.14 </char><char style="ft" closed="false">Par l'intermédiaire de David (Lc 1.32 ; Mt 9.27 ; Rm 1.3 ; 2 Tm 2.8), lui-même descendant de </char><char style="fq" closed="false">Juda </char><char style="ft" closed="false">(Mt 1.2 ; Lc 3.33 ; Ap 5.5).</char></note>, d'une tribu pour laquelle Moïse n'a rien dit au sujet des prêtres. <verse number="15" style="v" />Et l'évidence est plus grande encore si l'autre prêtre suscité ressemble à Melkisédeq, <verse number="16" style="v" />et n'accède pas à la prêtrise en vertu d'une loi de filiation humaine, mais selon une puissance de vie indestructible. <verse number="17" style="v" />Ce témoignage, en effet, lui est rendu :</para>
+  <para style="q1">
+    <char style="it">Tu es prêtre pour l'éternité</char></para>
+  <para style="q1">
+    <char style="it">dans la ligne de Melkisédeq</char>
+    <note caller="+" style="f">
+      <char style="fr" closed="false">7.17 </char>
+      <char style="ft" closed="false">Ps 110.4 (He 5.6 ; 6.20).</char>
+    </note>.</para>
+  <para style="p">
+    <verse number="18" style="v" />De fait, on a là, d'une part, l'abrogation du précepte antérieur en raison de sa déficience et de son manque d'utilité, <verse number="19" style="v" />car la loi n'a rien mené à l'accomplissement, et, d'autre part, l'introduction d'une espérance meilleure, par laquelle nous approchons de Dieu.</para>
+  <para style="p">
+    <verse number="20" style="v" />Et dans la mesure où cela ne s'est pas réalisé sans prestation de serment – car s'il n'y a pas eu prestation de serment pour le sacerdoce des autres, <verse number="21" style="v" />pour lui il y a eu le serment prononcé par celui qui a dit à son intention : <char style="it">Le Seigneur l'a juré et il ne reviendra pas sur cela : Tu es prêtre pour l'éternité</char> –, <verse number="22" style="v" />dans cette mesure, c'est d'une meilleure alliance<note caller="+" style="f"><char style="fr" closed="false">7.22 </char><char style="fq" closed="false">meilleure alliance </char><char style="ft" closed="false">8.6.</char></note> que Jésus est devenu le garant. <verse number="23" style="v" />De plus, les autres sont nombreux à être devenus prêtres, puisque la mort les empêchait de continuer ; <verse number="24" style="v" />mais lui, puisqu'il demeure pour l'éternité, possède un sacerdoce exclusif. <verse number="25" style="v" />Et c'est pourquoi il est en mesure de sauver d'une manière définitive ceux qui, par lui, s'approchent de Dieu, puisqu'il est toujours vivant pour intercéder<note caller="+" style="f"><char style="fr" closed="false">7.25 </char><char style="ft" closed="false">Rm 8.34 ; 1 Jn 2.1.</char></note> en leur faveur. <verse number="26" style="v" />Et tel est bien le grand prêtre<note caller="+" style="f"><char style="fr" closed="false">7.26 </char><char style="fq" closed="false">le grand prêtre </char><char style="ft" closed="false">2.17+.</char></note> qui nous convenait, saint, innocent, immaculé, séparé des pécheurs, élevé au-dessus des cieux. <verse number="27" style="v" />Il n'a pas besoin, comme les autres grands prêtres, d'offrir chaque jour des sacrifices, d'abord pour ses propres péchés<note caller="+" style="f"><char style="fr" closed="false">7.27 </char><char style="ft" closed="false">5.3+.</char></note>, puis pour ceux du peuple. Cela, il l'a fait une fois pour toutes en s'offrant lui-même. <verse number="28" style="v" />Alors que la loi établit grands prêtres des hommes qui restent déficients<note caller="+" style="f"><char style="fr" closed="false">7.28 </char><char style="ft" closed="false">Faiblesse du </char><char style="fq" closed="false">prêtre </char><char style="ft" closed="false">5.2+.</char></note>, la parole du serment qui intervient après la loi établit un Fils qui, pour l'éternité, est arrivé au parfait accomplissement.</para>
+  <chapter number="8" style="c" />
+  <para style="s1">Notre grand prêtre et le culte terrestre</para>
+  <para style="p">
+    <verse number="1" style="v" />Or, point capital de notre exposé, c'est bien un tel grand prêtre que nous avons, lui qui s'est assis à la droite du trône de la Majesté<note caller="+" style="f"><char style="fr" closed="false">8.1 </char><char style="fq" closed="false">assis à la droite </char><char style="ft" closed="false">Mt 22.44+. – </char><char style="fq" closed="false">la Majesté : </char><char style="ft" closed="false">voir 1.3 et la note.</char></note> dans les cieux, <verse number="2" style="v" />comme ministre du sanctuaire et de la véritable tente<note caller="+" style="f"><char style="fr" closed="false">8.2 </char><char style="fq" closed="false">la véritable tente </char><char style="ft" closed="false">9.11. – </char><char style="fq" closed="false">sanctuaire </char><char style="ft" closed="false">9.24.</char></note> dressée par le Seigneur et non par un homme. <verse number="3" style="v" />Tout grand prêtre est établi pour offrir des dons et des sacrifices ; d'où la nécessité pour lui aussi d'avoir quelque chose à offrir. <verse number="4" style="v" />Si le Christ était sur la terre, il ne serait pas même prêtre, la place étant prise par ceux qui offrent les dons conformément à la loi ; <verse number="5" style="v" />mais leur culte, ils le rendent à une copie<note caller="+" style="f"><char style="fr" closed="false">8.5 </char><char style="ft" closed="false">Ou </char><char style="fq" closed="false">à une figure. </char><char style="ft" closed="false">Voir Ex 25.40 : le sanctuaire terrestre construit par Moïse d'après le modèle qui lui fut montré sur la montagne n'était qu'une copie, nécessairement déficiente, de l'habitation de Dieu.</char></note>, à une esquisse des réalités célestes, selon l'avertissement divin reçu par Moïse pour construire la tente :</para>
+  <para style="p">
+    <char style="it">Vois</char>, lui est-il dit,</para>
+  <para style="q1">
+    <char style="it">tu feras tout d'après le modèle qui t'a été montré sur la montagne</char>.</para>
+  <para style="p">
+    <verse number="6" style="v" />En réalité, c'est un ministère bien supérieur qui lui revient, car il est médiateur d'une bien meilleure alliance, dont la constitution repose sur de meilleures promesses.</para>
+  <para style="s1">Annonce du changement d'alliance</para>
+  <para style="p">
+    <verse number="7" style="v" />Si, en effet, cette première alliance<note caller="+" style="f"><char style="fr" closed="false">8.7 </char><char style="ft" closed="false">Celle conclue au Sinaï (Ex 24.3-8).</char></note> avait été sans reproche, il ne serait pas question de la remplacer par une seconde. <verse number="8" style="v" />En fait, c'est bien un reproche qu'il leur adresse :</para>
+  <para style="q1">
+    <char style="it">Voici : des jours viennent, dit le Seigneur,</char></para>
+  <para style="q1">
+    <char style="it">où je conclurai avec la maison d'Israël</char></para>
+  <para style="q1">
+    <char style="it">et avec la maison de Juda une alliance nouvelle</char>
+    <note caller="+" style="f">
+      <char style="fr" closed="false">8.8 </char>
+      <char style="ft" closed="false">v. 8-12 : Jr 31.31-34. – </char>
+      <char style="fq" closed="false">nouvelle alliance </char>
+      <char style="ft" closed="false">Lc 22.20 ; 1 Co 11.25 ; 2 Co 3.6 ; He 8.13 ; 9.15 ; 12.24.</char>
+    </note>,</para>
+  <para style="q1">
+    <verse number="9" style="v" />
+    <char style="it">non pas comme l'alliance que je fis avec leurs pères</char></para>
+  <para style="q1">
+    <char style="it">le jour où je les pris par la main</char></para>
+  <para style="q1">
+    <char style="it">pour les mener hors du pays d'Egypte.</char></para>
+  <para style="q1">
+    <char style="it">Parce qu'eux-mêmes ne se sont pas maintenus dans mon alliance,</char></para>
+  <para style="q1">
+    <char style="it">moi aussi je les ai délaissés, dit le Seigneur.</char></para>
+  <para style="q1">
+    <verse number="10" style="v" />
+    <char style="it">Car voici l'alliance par laquelle je m'allierai avec la maison d'Israël</char></para>
+  <para style="q1">
+    <char style="it">après ces jours-là, dit le Seigneur :</char></para>
+  <para style="q1">
+    <char style="it">en donnant mes lois,</char></para>
+  <para style="q1">
+    <char style="it">c'est dans leur pensée et dans leurs cœurs que je les inscrirai.</char></para>
+  <para style="q1">
+    <char style="it">Je deviendrai leur Dieu,</char></para>
+  <para style="q1">
+    <char style="it">ils deviendront mon peuple.</char></para>
+  <para style="q1">
+    <verse number="11" style="v" />
+    <char style="it">Chacun d'eux n'aura plus à enseigner son compatriote</char></para>
+  <para style="q1">
+    <char style="it">ni son frère en disant : Connais le Seigneur !</char></para>
+  <para style="q1">
+    <char style="it">car tous me connaîtront,</char></para>
+  <para style="q1">
+    <char style="it">du plus petit jusqu'au plus grand,</char></para>
+  <para style="q1">
+    <verse number="12" style="v" />
+    <char style="it">parce que je serai indulgent pour leurs fautes</char></para>
+  <para style="q1">
+    <char style="it">et de leurs péchés, je ne me souviendrai plus</char>
+    <note caller="+" style="f">
+      <char style="fr" closed="false">8.12 </char>
+      <char style="ft" closed="false">Pardon des </char>
+      <char style="fq" closed="false">péchés </char>
+      <char style="ft" closed="false">10.17-18.</char>
+    </note>.</para>
+  <para style="p">
+    <verse number="13" style="v" />En parlant d'une alliance <char style="it">nouvelle,</char> il a rendu ancienne la première ; or ce qui devient ancien et qui vieillit est près de disparaître.</para>
+  <chapter number="9" style="c" />
+  <para style="s1">Le culte ancien</para>
+  <para style="p">
+    <verse number="1" style="v" />La première alliance avait donc un rituel pour le culte et un temple terrestre. <verse number="2" style="v" />En effet, une tente fut installée, une première tente appelée le Saint, où étaient le chandelier, la table et les pains d'offrande<note caller="+" style="f"><char style="fr" closed="false">9.2 </char><char style="fq" closed="false">la tente </char><char style="ft" closed="false">Ex 26.1-30. – </char><char style="fq" closed="false">le chandelier </char><char style="ft" closed="false">Ex 25.31-40. – </char><char style="fq" closed="false">la table des pains </char><char style="ft" closed="false">Ex 25.23-30.</char></note>. <verse number="3" style="v" />Puis, derrière le second voile, se trouvait une tente, appelée Saint des Saints<note caller="+" style="f"><char style="fr" closed="false">9.3 </char><char style="fq" closed="false">le Saint des Saints </char><char style="ft" closed="false">Ex 26.31-33.</char></note>, <verse number="4" style="v" />avec un brûle-parfum en or et l'arche de l'alliance toute recouverte d'or ; dans celle-ci un vase d'or qui contenait la manne, le bâton d'Aaron qui avait fleuri et les tables de l'alliance<note caller="+" style="f"><char style="fr" closed="false">9.4 </char><char style="fq" closed="false">le brûle-parfum </char><char style="ft" closed="false">Ex 30.1-6. – </char><char style="fq" closed="false">l'arche </char><char style="ft" closed="false">Ex 25.10-16. – l'urne pour </char><char style="fq" closed="false">la manne </char><char style="ft" closed="false">Ex 16.32-34. – </char><char style="fq" closed="false">le bâton d'Aaron </char><char style="ft" closed="false">Nb 17.16-26. – </char><char style="fq" closed="false">les tables de l'alliance </char><char style="ft" closed="false">Ex 25.16 ; 40.20 ; Dt 10.3-5 ; 1 R 8.9.</char></note>. <verse number="5" style="v" />Au-dessus de l'arche, les chérubins de gloire couvraient de leur ombre le propitiatoire<note caller="+" style="f"><char style="fr" closed="false">9.5 </char><char style="fq" closed="false">les chérubins et le propitiatoire </char><char style="ft" closed="false">Ex 25.17-22.</char></note>. Mais il n'y a pas lieu d'entrer ici dans les détails. <verse number="6" style="v" />L'ensemble étant ainsi installé, les prêtres, pour accomplir leur service, rentrent en tout temps dans la première tente<note caller="+" style="f"><char style="fr" closed="false">9.6 </char><char style="ft" closed="false">Nb 18.2-6.</char></note>. <verse number="7" style="v" />Mais, dans la seconde, une seule fois par an, seul entre le grand prêtre<note caller="+" style="f"><char style="fr" closed="false">9.7 </char><char style="ft" closed="false">Lv 16.2,12,15 ; <char style="bk">3 M</char> 1.11.</char></note>, et encore, ce n'est pas sans offrir du sang pour ses propres manquements et pour ceux du peuple. <verse number="8" style="v" />Le Saint Esprit a voulu montrer ainsi que le chemin du sanctuaire n'est pas encore manifesté, tant que subsiste la première tente. <verse number="9" style="v" />C'est là un symbole pour le temps présent : des offrandes et des sacrifices y sont offerts, incapables de mener à l'accomplissement, en sa conscience, celui qui rend le culte<note caller="+" style="f"><char style="fr" closed="false">9.9 </char><char style="ft" closed="false">Impuissance des </char><char style="fq" closed="false">sacrifices </char><char style="ft" closed="false">10.1-4,11.</char></note>. <verse number="10" style="v" />Fondés sur des aliments, des boissons et des ablutions diverses, ce ne sont que rites humains, laissés en place jusqu'au temps du relèvement<note caller="+" style="f"><char style="fr" closed="false">9.10 </char><char style="ft" closed="false">Le temps de la nouvelle alliance.</char></note>.</para>
+  <para style="s1">Le sacrifice du Christ</para>
+  <para style="p">
+    <verse number="11" style="v" />Mais Christ est survenu, grand prêtre des biens à venir<note caller="+" style="f"><char style="fr" closed="false">9.11 </char><char style="ft" closed="false">Autre texte : </char><char style="fq" closed="false">des biens advenus. – le Christ grand prêtre </char><char style="ft" closed="false">2.17+.</char></note>. C'est par une tente plus grande et plus parfaite, qui n'est pas œuvre des mains – c'est-à-dire qui n'appartient pas à cette création-ci –, <verse number="12" style="v" />et non par le sang des boucs et des veaux, mais par son propre sang, qu'il est entré une fois pour toutes<note caller="+" style="f"><char style="fr" closed="false">9.12 </char><char style="ft" closed="false">9.26 ; 10.10.</char></note> dans le sanctuaire et qu'il a obtenu une libération définitive. <verse number="13" style="v" />Car si le sang de boucs et de taureaux et si la cendre de génisse répandue sur les êtres souillés les sanctifient en purifiant<note caller="+" style="f"><char style="fr" closed="false">9.13 </char><char style="fq" closed="false">purification </char><char style="ft" closed="false">par le </char><char style="fq" closed="false">sang </char><char style="ft" closed="false">Lv 16.14-16. – </char><char style="fq" closed="false">la cendre de génisse </char><char style="ft" closed="false">Nb 19.9,17-19.</char></note> leur corps, <verse number="14" style="v" />combien plus le sang du Christ<note caller="+" style="f"><char style="fr" closed="false">9.14 </char><char style="ft" closed="false">10.19 ; 1 P 1.18-19 ; 1 Jn 1.7.</char></note>, qui, par l'esprit éternel, s'est offert lui-même à Dieu comme une victime sans tache, purifiera-t-il notre conscience des œuvres mortes pour servir le Dieu vivant.</para>
+  <para style="s1">L'alliance scellée par le sang</para>
+  <para style="p">
+    <verse number="15" style="v" />Voilà pourquoi il est médiateur d'une alliance nouvelle, d'un testament nouveau<note caller="+" style="f"><char style="fr" closed="false">9.15 </char><char style="ft" closed="false">Le texte original n'a qu'un seul mot pour désigner à la fois </char><char style="fq" closed="false">l'alliance </char><char style="ft" closed="false">et </char><char style="fq" closed="false">le testament. – alliance nouvelle </char><char style="ft" closed="false">8.8-12+.</char></note> ; sa mort étant intervenue pour le rachat des transgressions commises sous la première alliance, ceux qui sont appelés reçoivent la promesse de l'héritage éternel. <verse number="16" style="v" />Car là où il y a testament, il est nécessaire que soit constatée la mort du testateur. <verse number="17" style="v" />Un testament ne devient valide qu'en cas de décès ; il n'a pas d'effet tant que le testateur est en vie. <verse number="18" style="v" />Aussi la première alliance elle-même n'a-t-elle pas été inaugurée sans effusion de sang. <verse number="19" style="v" />Lorsque Moïse eut proclamé à tout le peuple chaque commandement conformément à la loi, il prit le sang des veaux et des boucs, puis de l'eau, de la laine écarlate et de l'hysope, et il en aspergea le livre lui-même et tout le peuple, <verse number="20" style="v" />en disant : <char style="it">Ceci est le sang de l'alliance que Dieu a ordonnée pour vous</char><note caller="+" style="f"><char style="fr" closed="false">9.20 </char><char style="ft" closed="false">v. 19-20 : conclusion de l'alliance Ex 24.3-8. – </char><char style="fq" closed="false">le sang de l'alliance </char><char style="ft" closed="false">Za 9.11 ; Mt 26.28 ; 1 Co 11.25 ; He 10.29 ; 12.24 ; 13.20. – </char><char style="fq" closed="false">l'hysope </char><char style="ft" closed="false">Lv 14.4 ; Nb 19.6. – L'auteur a rapproché Ex 24.8 des paroles de la Cène en remplaçant </char><char style="fq" closed="false">voici </char><char style="ft" closed="false">par </char><char style="fq" closed="false">ceci </char><char style="ft" closed="false">(Mt 26.68 ; Mc 14.24).</char></note> ; <verse number="21" style="v" />puis il aspergea aussi avec le sang la tente et tous les ustensiles du culte, <verse number="22" style="v" />et c'est avec du sang que, d'après la loi, on purifie presque tout, et sans effusion de sang, il n'y a pas de pardon<note caller="+" style="f"><char style="fr" closed="false">9.22 </char><char style="ft" closed="false">Lv 17.11 ; Nb 35.33.</char></note>. <verse number="23" style="v" />Si donc les images de ce qui est dans les cieux sont purifiées par ces rites, il est nécessaire que les réalités célestes elles-mêmes le soient par des sacrifices bien meilleurs.</para>
+  <para style="s1">L'entrée du Christ au ciel</para>
+  <para style="p">
+    <verse number="24" style="v" />Ce n'est pas, en effet, dans un sanctuaire fait de main d'homme, simple copie du véritable, que Christ est entré, mais dans le ciel même, afin de paraître maintenant pour nous devant la face de Dieu. <verse number="25" style="v" />Et ce n'est pas afin de s'offrir lui-même à plusieurs reprises, comme le grand prêtre qui entre chaque année dans le sanctuaire avec du sang étranger. <verse number="26" style="v" />Car alors il aurait dû souffrir à plusieurs reprises depuis la fondation du monde. En fait, c'est une seule fois, à la fin des temps, qu'il a été manifesté pour abolir le péché par son propre sacrifice. <verse number="27" style="v" />Et comme le sort des hommes est de mourir une seule fois, après quoi vient le jugement, <verse number="28" style="v" />ainsi le Christ fut offert une seule fois pour enlever les péchés de la multitude et il apparaîtra une seconde fois, sans plus de rapport avec le péché, à ceux qui l'attendent<note caller="+" style="f"><char style="fr" closed="false">9.28 </char><char style="fq" closed="false">les péchés de la multitude </char><char style="ft" closed="false">Es 53.12 ; 1 P 2.24. – </char><char style="fq" closed="false">le Christ attendu </char><char style="ft" closed="false">1 Th 1.10 ; Ph 3.20 ; 2 Tm 4.8.</char></note> pour le salut.</para>
+  <chapter number="10" style="c" />
+  <para style="s1">L'unique sacrifice efficace</para>
+  <para style="p">
+    <verse number="1" style="v" />Ne possédant que l'esquisse des biens à venir et non l'expression même des réalités, la loi est à jamais incapable, malgré les sacrifices, toujours les mêmes, offerts chaque année indéfiniment, de mener à l'accomplissement ceux qui viennent y prendre part<note caller="+" style="f"><char style="fr" closed="false">10.1 </char><char style="fq" closed="false">la loi </char><char style="ft" closed="false">de Moïse. – </char><char style="fq" closed="false">à l'accomplissement : </char><char style="ft" closed="false">ou </char><char style="fq" closed="false">à la perfection. – </char><char style="ft" closed="false">Insuffisance des sacrifices Es 1.11-13 ; Jr 6.20 ; 7.22 ; Os 6.6 ; Am 5.21-25 ; Mi 6.6-8.</char></note>. <verse number="2" style="v" />Sinon, n'aurait-on pas cessé de les offrir pour la simple raison que, purifiés une fois pour toutes, ceux qui rendent ainsi leur culte n'auraient plus eu conscience d'aucun péché ? <verse number="3" style="v" />Mais, en fait, par ces sacrifices, on remet les péchés en mémoire chaque année.</para>
+  <para style="p">
+    <verse number="4" style="v" />Car il est impossible que du sang de taureaux et de boucs enlève les péchés. <verse number="5" style="v" />Aussi, en entrant dans le monde, le Christ dit :</para>
+  <para style="q1">
+    <char style="it">De sacrifice et d'offrande, tu n'as pas voulu,</char></para>
+  <para style="q1">
+    <char style="it">mais tu m'as façonné un corps.</char></para>
+  <para style="q1">
+    <verse number="6" style="v" />
+    <char style="it">Holocaustes et sacrifices pour le péché</char></para>
+  <para style="q1">
+    <char style="it">ne t'ont pas plu.</char></para>
+  <para style="q1">
+    <verse number="7" style="v" />
+    <char style="it">Alors j'ai dit :</char></para>
+  <para style="q1">
+    <char style="it">Me voici, car c'est bien de moi</char></para>
+  <para style="q1">
+    <char style="it">qu'il est écrit dans le rouleau du livre :</char></para>
+  <para style="q1">
+    <char style="it">Je suis venu, ô Dieu, pour faire ta volonté</char>
+    <note caller="+" style="f">
+      <char style="fr" closed="false">10.7 </char>
+      <char style="ft" closed="false">v. 5-7 : Ps 40.7-9 (grec).</char>
+    </note>.</para>
+  <para style="p">
+    <verse number="8" style="v" />Il déclare tout d'abord :</para>
+  <para style="q1">
+    <char style="it">Sacrifices, offrandes, holocaustes, sacrifices pour le péché,</char></para>
+  <para style="q1">
+    <char style="it">tu n'en as pas voulu, ils ne t'ont pas plu.</char></para>
+  <para style="p">Il s'agit là, notons-le, des offrandes prescrites par la loi.</para>
+  <para style="p">
+    <verse number="9" style="v" />Il dit alors :</para>
+  <para style="q1">
+    <char style="it">Me voici, je suis venu pour faire ta volonté.</char></para>
+  <para style="p">Il supprime ce qui est premier pour établir ce qui est second. <verse number="10" style="v" />C'est dans cette volonté que nous avons été sanctifiés par l'offrande du corps de Jésus Christ, faite une fois pour toutes.</para>
+  <para style="p">
+    <verse number="11" style="v" />Et tandis que chaque prêtre se tient chaque jour<note caller="+" style="f"><char style="fr" closed="false">10.11 </char><char style="ft" closed="false">Sacrifice quotidien Ex 29.38.</char></note> debout pour remplir ses fonctions et offre fréquemment les mêmes sacrifices, qui sont à jamais incapables d'enlever les péchés, <verse number="12" style="v" />lui, par contre, après avoir offert pour les péchés un sacrifice unique, <char style="it">siège</char> pour toujours <char style="it">à la droite de Dieu</char><note caller="+" style="f"><char style="fr" closed="false">10.12 </char><char style="fq" closed="false">la droite : </char><char style="ft" closed="false">voir 1.3 et note. – v. 12-13 : Ps 110.1 (Mt 22.44+).</char></note> <verse number="13" style="v" />et il attend désormais que ses <char style="it">ennemis en soient réduits à lui servir de marchepied</char>. <verse number="14" style="v" />Par une offrande unique, en effet, il a mené pour toujours à l'accomplissement ceux qu'il sanctifie. <verse number="15" style="v" />C'est ce que l'Esprit Saint nous atteste, lui aussi. Car après avoir dit :</para>
+  <para style="q1">
+    <verse number="16" style="v" />
+    <char style="it">Voici l'alliance par laquelle je m'allierai</char> avec eux <char style="it">après ces jours-là,</char></para>
+  <para style="q1">
+    <char style="it">dit le Seigneur :</char></para>
+  <para style="q1">
+    <char style="it">En donnant mes lois,</char></para>
+  <para style="q1">
+    <char style="it">c'est dans leurs cœurs et dans leur pensée que je les inscrirai,</char></para>
+  <para style="q1">
+    <verse number="17" style="v" />
+    <char style="it">et de leurs péchés et de leurs iniquités je ne me souviendrai plus</char>
+    <note caller="+" style="f">
+      <char style="fr" closed="false">10.17 </char>
+      <char style="ft" closed="false">v. 16-17 : Jr 31.31-34 (He 8.10-12).</char>
+    </note>.</para>
+  <para style="p">
+    <verse number="18" style="v" />Or, là où il y a eu pardon, on ne fait plus d'offrande pour le péché.</para>
+  <para style="s1">Appel à une vie chrétienne généreuse</para>
+  <para style="p">
+    <verse number="19" style="v" />Nous avons ainsi, frères, pleine assurance d'accéder au sanctuaire par le sang de Jésus<note caller="+" style="f"><char style="fr" closed="false">10.19 </char><char style="ft" closed="false">9.12,14+.</char></note>. <verse number="20" style="v" />Nous avons là une voie nouvelle et vivante, qu'il a inaugurée à travers le voile, c'est-à-dire par son humanité. <verse number="21" style="v" />Et nous avons un prêtre éminent établi sur la maison de Dieu. <verse number="22" style="v" />Approchons-nous donc avec un cœur droit et dans la plénitude de la foi, le cœur purifié de toute faute de conscience et le corps lavé d'une eau pure<note caller="+" style="f"><char style="fr" closed="false">10.22 </char><char style="ft" closed="false">Ez 36.25 ; Ep 5.26.</char></note> ; <verse number="23" style="v" />sans fléchir, continuons à affirmer notre espérance, car il est fidèle, celui qui a promis. <verse number="24" style="v" />Veillons les uns sur les autres, pour nous exciter à la charité et aux œuvres bonnes. <verse number="25" style="v" />Ne désertons pas nos assemblées, comme certains en ont pris l'habitude, mais encourageons-nous et cela d'autant plus que vous voyez s'approcher le Jour.</para>
+  <para style="p">
+    <verse number="26" style="v" />Car si nous péchons délibérément après avoir reçu la pleine connaissance de la vérité, il ne reste plus pour les péchés aucun sacrifice, <verse number="27" style="v" />mais seulement une attente terrible du jugement et l'ardeur d'un feu qui doit dévorer les rebelles. <verse number="28" style="v" />Quelqu'un viole-t-il la loi de Moïse ? Sans pitié, <char style="it">sur la déposition de deux ou trois témoins</char><note caller="+" style="f"><char style="fr" closed="false">10.28 </char><char style="ft" closed="false">Dt 17.6 ; 19.15 ; Mt 18.16 ; 2 Co 13.1 ; 1 Tm 5.19.</char></note><char style="it">, c'est pour lui la mort.</char> <verse number="29" style="v" />Quelle peine plus sévère encore ne méritera-t-il pas, vous le pensez, celui qui aura foulé aux pieds le Fils de Dieu, qui aura profané le sang de l'alliance<note caller="+" style="f"><char style="fr" closed="false">10.29 </char><char style="fq" closed="false">le sang de l'alliance </char><char style="ft" closed="false">9.20+.</char></note> dans lequel il a été sanctifié, et qui aura outragé l'Esprit de la grâce ? <verse number="30" style="v" />Nous le connaissons, en effet, celui qui a dit :</para>
+  <para style="q1">
+    <char style="it">A moi la vengeance, c'est moi qui rétribuerai !</char></para>
+  <para style="p">Et encore :</para>
+  <para style="q1">
+    <char style="it">Le Seigneur jugera son peuple</char>
+    <note caller="+" style="f">
+      <char style="fr" closed="false">10.30 </char>
+      <char style="ft" closed="false">Dt 32.35-36 (Rm 12.19).</char>
+    </note>.</para>
+  <para style="p">
+    <verse number="31" style="v" />Il est terrible de tomber aux mains du Dieu vivant.</para>
+  <para style="p">
+    <verse number="32" style="v" />Mais souvenez-vous de vos débuts : à peine aviez-vous reçu la lumière<note caller="+" style="f"><char style="fr" closed="false">10.32 </char><char style="ft" closed="false">6.4+.</char></note> que vous avez enduré un lourd et douloureux combat, <verse number="33" style="v" />ici, donnés en spectacle sous les injures et les persécutions ; là, devenus solidaires de ceux qui subissaient de tels traitements. <verse number="34" style="v" />Et, en effet, vous avez pris part à la souffrance des prisonniers et vous avez accepté avec joie la spoliation de vos biens, vous sachant en possession d'une fortune meilleure et durable. <verse number="35" style="v" />Ne perdez pas votre assurance, elle obtient une grande récompense. <verse number="36" style="v" />C'est d'endurance, en effet, que vous avez besoin, pour accomplir la volonté de Dieu et obtenir ainsi la réalisation de la promesse.</para>
+  <para style="q1">
+    <verse number="37" style="v" />Car encore <char style="it">si peu, si peu de temps,</char></para>
+  <para style="q1">
+    <char style="it">et celui qui vient sera là, il ne tardera pas</char>
+    <note caller="+" style="f">
+      <char style="fr" closed="false">10.37 </char>
+      <char style="ft" closed="false">Es 26.20 (grec).</char>
+    </note>.</para>
+  <para style="q1">
+    <verse number="38" style="v" />
+    <char style="it">Mon juste par la foi vivra,</char></para>
+  <para style="q1">
+    <char style="it">mais s'il fait défection,</char></para>
+  <para style="q1">
+    <char style="it">mon âme ne trouve plus de satisfaction en lui</char>
+    <note caller="+" style="f">
+      <char style="fr" closed="false">10.38 </char>
+      <char style="ft" closed="false">Ha 2.3-4 (Rm 1.17 ; Ga 3.11).</char>
+    </note>.</para>
+  <para style="p">
+    <verse number="39" style="v" />Nous, nous ne sommes pas hommes à faire défection pour notre perte, mais hommes de foi pour le salut de nos âmes.</para>
+  <chapter number="11" style="c" />
+  <para style="s1">Les réalisations de la foi</para>
+  <para style="p">
+    <verse number="1" style="v" />La foi est une manière de posséder déjà ce que l'on espère<note caller="+" style="f"><char style="fr" closed="false">11.1 </char><char style="fq" closed="false">La foi </char><char style="ft" closed="false">1 Co 13.12 ; 2 Co 5.7. – </char><char style="fq" closed="false">l'espérance </char><char style="ft" closed="false">Rm 8.24-25.</char></note>, un moyen de connaître des réalités que l'on ne voit pas. <verse number="2" style="v" />C'est elle qui valut aux anciens un bon témoignage.</para>
+  <para style="p">
+    <verse number="3" style="v" />Par la foi, nous comprenons que les mondes ont été organisés par la parole de Dieu<note caller="+" style="f"><char style="fr" closed="false">11.3 </char><char style="ft" closed="false">Gn 1 ; Ps 33.6,9 ; 2 P 3.5.</char></note>. Il s'ensuit que le monde visible ne prend pas son origine en des apparences.</para>
+  <para style="p">
+    <verse number="4" style="v" />Par la foi, Abel<note caller="+" style="f"><char style="fr" closed="false">11.4 </char><char style="fq" closed="false">Abel </char><char style="ft" closed="false">Gn 4.4-10.</char></note> offrit à Dieu un sacrifice meilleur que celui de Caïn. Grâce à elle, il reçut le témoignage qu'il était juste, et Dieu rendit témoignage à ses dons. Grâce à elle, bien que mort, il parle encore.</para>
+  <para style="p">
+    <verse number="5" style="v" />Par la foi, Hénoch fut enlevé afin d'échapper à la mort et <char style="it">on ne le retrouva pas, parce que Dieu l'avait enlevé</char> ; avant son enlèvement, en effet, il avait reçu le témoignage <char style="it">qu'il avait été agréable à Dieu</char><note caller="+" style="f"><char style="fr" closed="false">11.5 </char><char style="ft" closed="false">Gn 5.18-24 (grec) ; <char style="bk">Si</char> 44.16 ; 49.14 ; Lc 3.37.</char></note>. <verse number="6" style="v" />Or, sans la foi, il est impossible d'être agréable à Dieu, car celui qui s'approche de Dieu doit croire qu'il existe et qu'il récompense ceux qui le cherchent.</para>
+  <para style="p">
+    <verse number="7" style="v" />Par la foi, Noé<note caller="+" style="f"><char style="fr" closed="false">11.7 </char><char style="fq" closed="false">Noé </char><char style="ft" closed="false">Gn 6.13-22 ; 7.1.</char></note>, divinement averti de ce que l'on ne voyait pas encore, prit l'oracle au sérieux, et construisit une arche pour sauver sa famille. Ainsi, il condamna le monde et devint héritier de la justice qui s'obtient par la foi.</para>
+  <para style="p">
+    <verse number="8" style="v" />Par la foi, répondant à l'appel, Abraham<note caller="+" style="f"><char style="fr" closed="false">11.8 </char><char style="fq" closed="false">Abraham </char><char style="ft" closed="false">Gn 12.1-5.</char></note> obéit et partit pour un pays qu'il devait recevoir en héritage, et il partit sans savoir où il allait. <verse number="9" style="v" />Par la foi, il vint résider en étranger dans la Terre promise<note caller="+" style="f"><char style="fr" closed="false">11.9 </char><char style="fq" closed="false">étranger </char><char style="ft" closed="false">Gn 23.4. – </char><char style="fq" closed="false">la Terre promise </char><char style="ft" closed="false">Gn 26.3 ; 35.12.</char></note>, habitant sous la tente avec Isaac et Jacob, les cohéritiers de la même promesse. <verse number="10" style="v" />Car il attendait la ville munie de fondations, qui a pour architecte et constructeur Dieu lui-même<note caller="+" style="f"><char style="fr" closed="false">11.10 </char><char style="ft" closed="false">C'est la Jérusalem céleste que la cité de David ne faisait que préfigurer ; 11.16 ; 12.22 ; Ap 21.2,10-27.</char></note>.</para>
+  <para style="p">
+    <verse number="11" style="v" />Par la foi, Sara<note caller="+" style="f"><char style="fr" closed="false">11.11 </char><char style="fq" closed="false">Sara </char><char style="ft" closed="false">Gn 17.19 ; 18.11-14 ; 21.2.</char></note>, elle aussi, malgré son âge avancé, fut rendue capable d'avoir une postérité, parce qu'elle tint pour fidèle l'auteur de la promesse. <verse number="12" style="v" />C'est pourquoi aussi, d'un seul homme, déjà marqué par la mort, naquit une multitude comparable à celle des <char style="it">astres du ciel, innombrable, comme le sable du bord de la mer</char><note caller="+" style="f"><char style="fr" closed="false">11.12 </char><char style="fq" closed="false">descendance nombreuse comme le sable </char><char style="ft" closed="false">Gn 13.16 ; 32.13. – </char><char style="fq" closed="false">comme les étoiles </char><char style="ft" closed="false">Gn 15.5 ; 26.4 ; Dt 1.10. – </char><char style="fq" closed="false">comme le sable et les étoiles </char><char style="ft" closed="false">Gn 22.17 ; <char style="bk">Si</char> 44.21.</char></note>.</para>
+  <para style="p">
+    <verse number="13" style="v" />Dans la foi, ils moururent tous, sans avoir obtenu la réalisation des promesses, mais après les avoir vues et saluées de loin et après s'être reconnus pour étrangers et voyageurs sur la terre. <verse number="14" style="v" />Car ceux qui parlent ainsi montrent clairement qu'ils sont à la recherche d'une patrie ; <verse number="15" style="v" />et s'ils avaient eu dans l'esprit celle dont ils étaient sortis, ils auraient eu le temps d'y retourner ; <verse number="16" style="v" />en fait, c'est à une patrie meilleure qu'ils aspirent, à une patrie céleste. C'est pourquoi Dieu n'a pas honte d'être appelé leur Dieu ; il leur a, en effet, préparé une ville.</para>
+  <para style="p">
+    <verse number="17" style="v" />Par la foi, Abraham, mis à l'épreuve, a offert Isaac<note caller="+" style="f"><char style="fr" closed="false">11.17 </char><char style="ft" closed="false">Gn 22.1-14 ; Jc 2.21.</char></note> ; il offrait le fils unique, alors qu'il avait reçu les promesses <verse number="18" style="v" />et qu'on lui avait dit :</para>
+  <para style="q1">
+    <char style="it">C'est par Isaac qu'une descendance te sera assurée.</char></para>
+  <para style="p">
+    <verse number="19" style="v" />Même un mort, se disait-il, Dieu est capable de le ressusciter ; aussi, dans une sorte de préfiguration, il retrouva son fils.</para>
+  <para style="p">
+    <verse number="20" style="v" />Par la foi aussi, Isaac bénit Jacob et Esaü en vue de l'avenir<note caller="+" style="f"><char style="fr" closed="false">11.20 </char><char style="ft" closed="false">Gn 27.27-29,39-40.</char></note>. <verse number="21" style="v" />Par la foi, Jacob, sur le point de mourir, bénit chacun des fils de Joseph et <char style="it">se prosterna appuyé sur l'extrémité de son bâton</char><note caller="+" style="f"><char style="fr" closed="false">11.21 </char><char style="ft" closed="false">Gn 48.15-20 ; 49.</char></note>. <verse number="22" style="v" />Par la foi, Joseph, approchant de sa fin, évoqua l'Exode des fils d'Israël et donna des ordres au sujet de ses ossements<note caller="+" style="f"><char style="fr" closed="false">11.22 </char><char style="ft" closed="false">Gn 50.24-25 ; Ex 13.19.</char></note>.</para>
+  <para style="p">
+    <verse number="23" style="v" />Par la foi, Moïse, après sa naissance, fut caché trois mois durant par ses parents, car ils avaient vu la beauté de leur enfant et ils ne craignirent pas le décret du roi<note caller="+" style="f"><char style="fr" closed="false">11.23 </char><char style="fq" closed="false">Moïse caché </char><char style="ft" closed="false">Ex 2.2. – </char><char style="fq" closed="false">le décret du roi </char><char style="ft" closed="false">Ex 1.22.</char></note>. <verse number="24" style="v" />Par la foi, Moïse, devenu grand, renonça à être appelé fils de la fille du Pharaon. <verse number="25" style="v" />Il choisit d'être maltraité avec le peuple de Dieu plutôt que de jouir pour un temps du péché. <verse number="26" style="v" />Il considéra l'humiliation du Christ comme une richesse plus grande que les trésors de l'Egypte, car il avait les yeux fixés sur la récompense. <verse number="27" style="v" />Par la foi, il quitta l'Egypte<note caller="+" style="f"><char style="fr" closed="false">11.27 </char><char style="ft" closed="false">v. 24-27 : Ex 2.11-15.</char></note> sans craindre la colère du roi et, en homme qui voit celui qui est invisible, il tint ferme.</para>
+  <para style="p">
+    <verse number="28" style="v" />Par la foi, il a célébré la Pâque<note caller="+" style="f"><char style="fr" closed="false">11.28 </char><char style="fq" closed="false">la Pâque </char><char style="ft" closed="false">Ex 12.12-13,22-23.</char></note> et fait l'aspersion du sang afin que le Destructeur ne touchât point aux premiers-nés d'Israël. <verse number="29" style="v" />Par la foi, ils traversèrent la mer Rouge<note caller="+" style="f"><char style="fr" closed="false">11.29 </char><char style="fq" closed="false">la mer Rouge </char><char style="ft" closed="false">Ex 14.</char></note> comme une terre sèche, alors que les Egyptiens, qui s'y essayèrent, furent engloutis. <verse number="30" style="v" />Par la foi, les remparts de Jéricho<note caller="+" style="f"><char style="fr" closed="false">11.30 </char><char style="fq" closed="false">Jéricho </char><char style="ft" closed="false">Jos 6.</char></note> tombèrent, après qu'on en eut fait le tour pendant sept jours. <verse number="31" style="v" />Par la foi, Rahab<note caller="+" style="f"><char style="fr" closed="false">11.31 </char><char style="ft" closed="false">Jos 2.1-13 ; 6.17,22-25 ; Mt 1.5 ; Jc 2.25.</char></note>, la prostituée, ne périt pas avec les rebelles, car elle avait accueilli pacifiquement les espions.</para>
+  <para style="p">
+    <verse number="32" style="v" />Et que dire encore ? Le temps me manquerait pour parler en détail de Gédéon, Baraq, Samson, Jephté, David, Samuel<note caller="+" style="f"><char style="fr" closed="false">11.32 </char><char style="fq" closed="false">Gédéon </char><char style="ft" closed="false">Jg 6–7. – </char><char style="fq" closed="false">Baraq </char><char style="ft" closed="false">Jg 4–5. – </char><char style="fq" closed="false">Samson </char><char style="ft" closed="false">Jg 13–16. – </char><char style="fq" closed="false">Jephté </char><char style="ft" closed="false">Jg 10–12. – </char><char style="fq" closed="false">Samuel </char><char style="ft" closed="false">et </char><char style="fq" closed="false">David </char><char style="ft" closed="false">1 S–2 S.</char></note> et les prophètes, <verse number="33" style="v" />eux qui, grâce à la foi, conquirent des royaumes, mirent en œuvre la justice, virent se réaliser des promesses, muselèrent la gueule des lions<note caller="+" style="f"><char style="fr" closed="false">11.33 </char><char style="ft" closed="false">Jg 14.5-6 ; 1 S 17.34-36 ; Dn 6.</char></note>, <verse number="34" style="v" />éteignirent la puissance du feu<note caller="+" style="f"><char style="fr" closed="false">11.34 </char><char style="ft" closed="false">Dn 3.23-25.</char></note>, échappèrent au tranchant de l'épée, reprirent vigueur après la maladie, se montrèrent vaillants à la guerre, repoussèrent les armées étrangères. <verse number="35" style="v" />Des femmes retrouvèrent leurs morts par résurrection<note caller="+" style="f"><char style="fr" closed="false">11.35 </char><char style="ft" closed="false">1 R 17.17-24 ; 2 R 4.18-37.</char></note>, alors que d'autres subirent l'écartèlement, refusant la délivrance pour aboutir à une meilleure résurrection ; <verse number="36" style="v" />d'autres encore subirent l'épreuve des moqueries et du fouet et celle des liens et de la prison ; <verse number="37" style="v" />ils furent lapidés, ils furent sciés ; ils moururent tués à coups d'épée ; ils menèrent une vie errante, vêtus de peaux de moutons ou de toisons de chèvres ; ils étaient soumis aux privations, opprimés, maltraités<note caller="+" style="f"><char style="fr" closed="false">11.37 </char><char style="ft" closed="false">v. 36-37 : Persécutions <char style="bk">2 M</char> 6.18–7.42 ; Jr 20 ; 37 ; 38 ; 2 Ch 24.21.</char></note>, <verse number="38" style="v" />eux dont le monde n'était pas digne ; ils erraient dans les déserts et les montagnes, dans les grottes et les cavités de la terre. <verse number="39" style="v" />Eux tous, s'ils ont reçu bon témoignage grâce à leur foi, n'ont cependant pas obtenu la réalisation de la promesse. <verse number="40" style="v" />Puisque Dieu prévoyait pour nous mieux encore, ils ne devaient pas arriver sans nous à l'accomplissement.</para>
+  <chapter number="12" style="c" />
+  <para style="s1">Endurance dans l'épreuve</para>
+  <para style="p">
+    <verse number="1" style="v" />Ainsi donc, nous aussi, qui avons autour de nous une telle nuée de témoins, rejetons tout fardeau et le péché qui sait si bien nous entourer, et courons avec endurance<note caller="+" style="f"><char style="fr" closed="false">12.1 </char><char style="fq" closed="false">témoins : </char><char style="ft" closed="false">non pas des spectateurs mais tous ceux qui, selon le chapitre précédent, ont témoigné de leur foi. – </char><char style="fq" closed="false">endurance </char><char style="ft" closed="false">du chrétien 10.32 ; 1 Co 9.24-27 ; Ph 3.12 ; 1 Tm 6.12 ; 2 Tm 2.5.</char></note> l'épreuve qui nous est proposée, <verse number="2" style="v" />les regards fixés sur celui qui est l'initiateur de la foi et qui la mène à son accomplissement, Jésus, lui qui, renonçant à la joie qui lui revenait, endura la croix au mépris de la honte et s'est assis à la droite<note caller="+" style="f"><char style="fr" closed="false">12.2 </char><char style="ft" closed="false">Le Christ </char><char style="fq" closed="false">initiateur </char><char style="ft" closed="false">2.10. – </char><char style="fq" closed="false">renonçant à la joie… </char><char style="ft" closed="false">ou </char><char style="fq" closed="false">en vue de la joie qui lui était réservée. – assis à la droite </char><char style="ft" closed="false">Mt 22.44+.</char></note> du trône de Dieu. <verse number="3" style="v" />Oui, pensez à celui qui a enduré de la part des pécheurs une telle opposition contre lui, afin de ne pas vous laisser accabler par le découragement. <verse number="4" style="v" />Vous n'avez pas encore résisté jusqu'au sang dans votre combat contre le péché <verse number="5" style="v" />et vous avez oublié l'exhortation qui s'adresse à vous comme à des fils :</para>
+  <para style="q1">
+    <char style="it">Mon fils, ne méprise pas la correction du Seigneur,</char></para>
+  <para style="q1">
+    <char style="it">ne te décourage pas quand il te reprend.</char></para>
+  <para style="q1">
+    <verse number="6" style="v" />
+    <char style="it">Car le Seigneur corrige celui qu'il aime,</char></para>
+  <para style="q1">
+    <char style="it">il châtie tout fils qu'il accueille</char>
+    <note caller="+" style="f">
+      <char style="fr" closed="false">12.6 </char>
+      <char style="ft" closed="false">v. 5-6 : Pr 3.11-12.</char>
+    </note>.</para>
+  <para style="p">
+    <verse number="7" style="v" />C'est pour votre éducation que vous souffrez. C'est en fils que Dieu vous traite. Quel est, en effet, le fils que son père ne corrige pas<note caller="+" style="f"><char style="fr" closed="false">12.7 </char><char style="ft" closed="false">Dt 8.5 ; 2 S 7.14.</char></note> ? <verse number="8" style="v" />Si vous êtes privés de la correction, dont tous ont leur part, alors vous êtes des bâtards et non des fils.</para>
+  <para style="p">
+    <verse number="9" style="v" />Nous avons eu nos pères terrestres pour éducateurs, et nous nous en sommes bien trouvés ; n'allons-nous pas, à plus forte raison, nous soumettre au Père des esprits et recevoir de lui la vie ? <verse number="10" style="v" />Eux, en effet, c'était pour un temps, selon leurs impressions, qu'ils nous corrigeaient ; lui, c'est pour notre profit, en vue de nous communiquer sa sainteté. <verse number="11" style="v" />Toute correction, sur le moment, ne semble pas sujet de joie, mais de tristesse. Mais plus tard, elle produit chez ceux qu'elle a ainsi exercés un fruit de paix et de justice. <verse number="12" style="v" /><char style="it">Redressez donc les mains défaillantes et les genoux chancelants</char><note caller="+" style="f"><char style="fr" closed="false">12.12 </char><char style="ft" closed="false">Es 35.3.</char></note>, <verse number="13" style="v" />et <char style="it">pour vos pieds, faites des pistes droites</char><note caller="+" style="f"><char style="fr" closed="false">12.13 </char><char style="ft" closed="false">Pr 4.26 (grec).</char></note>, afin que le boiteux ne s'estropie pas, mais plutôt qu'il guérisse.</para>
+  <para style="s1">Fidélité à la vocation chrétienne</para>
+  <para style="p">
+    <verse number="14" style="v" />Recherchez la paix avec tous, et la sanctification sans laquelle personne ne verra le Seigneur. <verse number="15" style="v" />Veillez à ce que personne ne vienne à se soustraire à la grâce de Dieu ; qu'aucune racine amère ne se mette à pousser, à causer du trouble et à en infecter ainsi beaucoup<note caller="+" style="f"><char style="fr" closed="false">12.15 </char><char style="ft" closed="false">Dt 29.17 (grec) ; He 6.4-8 ; 10.26-31.</char></note>.</para>
+  <para style="p">
+    <verse number="16" style="v" />Veillez à ce qu'il n'y ait pas de débauché ou de profanateur, tel Esaü<note caller="+" style="f"><char style="fr" closed="false">12.16 </char><char style="fq" closed="false">Esaü </char><char style="ft" closed="false">Gn 25.33-34.</char></note> qui, pour un seul plat, vendit son droit d'aînesse. <verse number="17" style="v" />Car, vous le savez, lorsqu'il voulut par la suite hériter de la bénédiction, il fut exclu et il n'y eut pour lui aucune possibilité de changement, malgré ses supplications et ses larmes<note caller="+" style="f"><char style="fr" closed="false">12.17 </char><char style="ft" closed="false">Gn 27.34. – </char><char style="fq" closed="false">changement </char><char style="ft" closed="false">ou </char><char style="fq" closed="false">conversion </char><char style="ft" closed="false">ou </char><char style="fq" closed="false">repentance.</char></note> !</para>
+  <para style="p">
+    <verse number="18" style="v" />Vous ne vous êtes pas approchés d'une réalité palpable<note caller="+" style="f"><char style="fr" closed="false">12.18 </char><char style="ft" closed="false">v. 18-19 : allusion aux phénomènes terrifiants qui accompagnaient la révélation de Dieu au Sinaï ; Ex 19.16-21 ; 20.18-21 ; Dt 4.11-12 ; 5.23.</char></note>, feu qui s'est consumé, obscurité, ténèbres, ouragan, <verse number="19" style="v" />son de trompette et bruit de voix ; ceux qui l'entendirent refusèrent d'écouter une parole de plus. <verse number="20" style="v" />Car ils ne pouvaient supporter cette injonction :</para>
+  <para style="q1">
+    <char style="it">Qui touchera la montagne – fût-ce une bête – sera lapidé</char>
+    <note caller="+" style="f">
+      <char style="fr" closed="false">12.20 </char>
+      <char style="ft" closed="false">Ex 19.12-13.</char>
+    </note> !</para>
+  <para style="p">
+    <verse number="21" style="v" />Et si terrifiant était ce spectacle que Moïse dit :</para>
+  <para style="q1">
+    <char style="it">Je suis terrifié</char> et tremblant<note caller="+" style="f"><char style="fr" closed="false">12.21 </char><char style="ft" closed="false">Dt 9.19.</char></note>.</para>
+  <para style="m">
+    <verse number="22" style="v" />Mais vous vous êtes approchés de la montagne de Sion et de la ville du Dieu vivant, la Jérusalem céleste<note caller="+" style="f"><char style="fr" closed="false">12.22 </char><char style="ft" closed="false">11.10+.</char></note>, et des myriades d'anges en réunion de fête, <verse number="23" style="v" />et de l'assemblée des premiers-nés, dont les noms sont inscrits dans les cieux, et de Dieu, le juge de tous, et des esprits des justes parvenus à l'accomplissement, <verse number="24" style="v" />et de Jésus, médiateur d'une alliance neuve, et du sang de l'aspersion qui parle mieux encore que celui d'Abel<note caller="+" style="f"><char style="fr" closed="false">12.24 </char><char style="fq" closed="false">nouvelle alliance </char><char style="ft" closed="false">8.8-12. – </char><char style="fq" closed="false">Abel </char><char style="ft" closed="false">11.4+.</char></note>.</para>
+  <para style="p">
+    <verse number="25" style="v" />Veillez à ne pas repousser celui qui vous parle ! Car s'ils n'ont pas échappé au châtiment lorsqu'ils repoussèrent celui qui les avertissait sur la terre, à plus forte raison nous non plus n'y échapperons pas, si nous nous détournons de qui nous parle du haut des cieux.</para>
+  <para style="p">
+    <verse number="26" style="v" />Lui, dont la voix ébranla alors la terre, fait maintenant cette proclamation : <char style="it">Une dernière fois je ferai trembler</char> non seulement <char style="it">la terre</char> mais aussi <char style="it">le ciel</char><note caller="+" style="f"><char style="fr" closed="false">12.26 </char><char style="ft" closed="false">Ag 2.6.</char></note>. <verse number="27" style="v" />Les mots <char style="it">une dernière fois</char> annoncent la disparition de tout ce qui participe à l'instabilité du monde créé, afin que subsiste ce qui est inébranlable. <verse number="28" style="v" />Puisque nous recevons un royaume<note caller="+" style="f"><char style="fr" closed="false">12.28 </char><char style="ft" closed="false">Dn 7.18.</char></note> inébranlable, tenons bien cette grâce. Par elle, servons Dieu d'une manière qui lui soit agréable, avec soumission et avec crainte. <verse number="29" style="v" />Car notre Dieu est un feu dévorant<note caller="+" style="f"><char style="fr" closed="false">12.29 </char><char style="ft" closed="false">Dt 4.24 ; 9.3 ; Es 33.14.</char></note>.</para>
+  <chapter number="13" style="c" />
+  <para style="s1">La vraie communauté</para>
+  <para style="p">
+    <verse number="1" style="v" />Que l'amour fraternel<note caller="+" style="f"><char style="fr" closed="false">13.1 </char><char style="ft" closed="false">1 Th 4.9 ; Rm 12.10 ; 1 P 1.22 ; 2 P 1.7 ; 1 Jn 3.10-18.</char></note> demeure. <verse number="2" style="v" />N'oubliez pas l'hospitalité, car, grâce à elle, certains, sans le savoir, ont accueilli des anges<note caller="+" style="f"><char style="fr" closed="false">13.2 </char><char style="ft" closed="false">Gn 18.1-8 ; 19.1-3 ; <char style="bk">Tb</char> 5–7.</char></note>. <verse number="3" style="v" />Souvenez-vous de ceux qui sont en prison<note caller="+" style="f"><char style="fr" closed="false">13.3 </char><char style="ft" closed="false">10.34 ; 11.36.</char></note>, comme si vous étiez prisonniers avec eux, de ceux qui sont maltraités, puisque vous aussi, vous avez un corps. <verse number="4" style="v" />Que le mariage<note caller="+" style="f"><char style="fr" closed="false">13.4 </char><char style="ft" closed="false">Ep 5.5 ; 1 Co 6.13-19.</char></note> soit honoré de tous et le lit conjugal sans souillure, car les débauchés et les adultères, Dieu les jugera. <verse number="5" style="v" />Que l'amour de l'argent n'inspire pas votre conduite ; contentez-vous de ce que vous avez, car le Seigneur lui-même a dit :</para>
+  <para style="q1">
+    <char style="it">Non, je ne te lâcherai pas, je ne t'abandonnerai pas</char>
+    <note caller="+" style="f">
+      <char style="fr" closed="false">13.5 </char>
+      <char style="ft" closed="false">Dt 31.6 (selon une version d'origine inconnue).</char>
+    </note> !</para>
+  <para style="p">
+    <verse number="6" style="v" />Si bien qu'en toute assurance nous pouvons dire :</para>
+  <para style="q1">
+    <char style="it">Le Seigneur est mon secours,</char></para>
+  <para style="q1">
+    <char style="it">je ne craindrai rien ;</char></para>
+  <para style="q1">
+    <char style="it">que peut me faire un homme</char>
+    <note caller="+" style="f">
+      <char style="fr" closed="false">13.6 </char>
+      <char style="ft" closed="false">Ps 118.6.</char>
+    </note> ?</para>
+  <para style="p">
+    <verse number="7" style="v" />Souvenez-vous de vos dirigeants, qui vous ont annoncé la parole de Dieu ; considérez comment leur vie s'est terminée et imitez leur foi. <verse number="8" style="v" />Jésus Christ est le même, hier, aujourd'hui et pour l'éternité. <verse number="9" style="v" />Ne vous laissez pas égarer par toutes sortes de doctrines étrangères. Car il est bon que le cœur soit fortifié par la grâce et non par des aliments, qui n'ont jamais profité à ceux qui en font une question d'observance<note caller="+" style="f"><char style="fr" closed="false">13.9 </char><char style="ft" closed="false">Rm 14.2-23 ; 1 Co 8.8 ; Col 2.16-22 ; 1 Tm 4.3.</char></note>. <verse number="10" style="v" />Nous avons un autel<note caller="+" style="f"><char style="fr" closed="false">13.10 </char><char style="ft" closed="false">Voir 9.11-14 : </char><char style="fq" closed="false">l'autel </char><char style="ft" closed="false">du sanctuaire céleste. Les </char><char style="fq" closed="false">desservants de la tente </char><char style="ft" closed="false">sont les prêtres lévitiques.</char></note> dont les desservants de la tente n'ont pas le droit de tirer leur nourriture. <verse number="11" style="v" />Car les corps des animaux, dont le grand prêtre porte le sang dans le sanctuaire pour l'expiation du péché, sont brûlés hors du camp<note caller="+" style="f"><char style="fr" closed="false">13.11 </char><char style="ft" closed="false">Lv 16.27.</char></note>. <verse number="12" style="v" />C'est la raison pour laquelle Jésus, pour sanctifier le peuple par son propre sang, a souffert en dehors de la porte<note caller="+" style="f"><char style="fr" closed="false">13.12 </char><char style="ft" closed="false">Jn 19.17,20.</char></note>. <verse number="13" style="v" />Sortons donc à sa rencontre en dehors du camp, en portant son humiliation<note caller="+" style="f"><char style="fr" closed="false">13.13 </char><char style="fq" closed="false">humiliation </char><char style="ft" closed="false">du Christ 11.26.</char></note>. <verse number="14" style="v" />Car nous n'avons pas ici-bas de cité permanente, mais nous sommes à la recherche de la cité à venir<note caller="+" style="f"><char style="fr" closed="false">13.14 </char><char style="fq" closed="false">la cité à venir </char><char style="ft" closed="false">11.16.</char></note>. <verse number="15" style="v" />Par lui, offrons sans cesse à Dieu <char style="it">un sacrifice de louange</char>, c'est-à-dire <char style="it">le fruit de lèvres</char> qui confessent son nom<note caller="+" style="f"><char style="fr" closed="false">13.15 </char><char style="fq" closed="false">sacrifice de louange </char><char style="ft" closed="false">2 Ch 29.31 ; Ps 50.14,23. – </char><char style="fq" closed="false">le fruit de lèvres qui confessent son nom </char><char style="ft" closed="false">Os 14.3.</char></note>. <verse number="16" style="v" />N'oubliez pas la bienfaisance et l'entraide communautaire, car ce sont de tels sacrifices qui plaisent à Dieu. <verse number="17" style="v" />Obéissez à vos dirigeants<note caller="+" style="f"><char style="fr" closed="false">13.17 </char><char style="ft" closed="false">13.7 ; 1 Th 5.12.</char></note> et soyez-leur dociles ; car ils veillent personnellement sur vos âmes, puisqu'ils en rendront compte. Ainsi pourront-ils le faire avec joie et non en gémissant, ce qui ne tournerait pas à votre avantage. <verse number="18" style="v" />Priez pour nous, car nous avons la conviction d'avoir une conscience pure avec la volonté de bien nous conduire en toute occasion. <verse number="19" style="v" />Faites-le, je vous le demande instamment, afin que je vous sois plus vite rendu<note caller="+" style="f"><char style="fr" closed="false">13.19 </char><char style="ft" closed="false">L'auteur est retenu par des circonstances qu'il ne précise pas.</char></note>.</para>
+  <para style="s1">Souhait final</para>
+  <para style="p">
+    <verse number="20" style="v" />Que le Dieu de la paix qui a fait remonter d'entre les morts, par le sang d'une alliance éternelle<note caller="+" style="f"><char style="fr" closed="false">13.20 </char><char style="ft" closed="false">Es 63.11. – </char><char style="fq" closed="false">le sang de l'alliance </char><char style="ft" closed="false">9.20+. – </char><char style="fq" closed="false">alliance éternelle </char><char style="ft" closed="false">Es 55.3 ; 61.8 ; Jr 32.40 ; Ez 37.26.</char></note>, le grand berger des brebis, notre Seigneur Jésus, <verse number="21" style="v" />vous rende aptes à tout ce qui est bien pour faire sa volonté ; qu'il réalise en nous ce qui lui est agréable, par Jésus Christ, à qui soit la gloire dans les siècles des siècles. Amen !</para>
+  <para style="s1">Envoi</para>
+  <para style="p">
+    <verse number="22" style="v" />Frères, je vous engage à supporter ce sermon ! D'ailleurs, je ne vous envoie que quelques mots. <verse number="23" style="v" />Apprenez que notre frère Timothée<note caller="+" style="f"><char style="fr" closed="false">13.23 </char><char style="fq" closed="false">Timothée </char><char style="ft" closed="false">Ac 16.1+.</char></note> a été libéré. S'il vient assez vite, j'irai vous voir avec lui. <verse number="24" style="v" />Saluez tous vos dirigeants et tous les saints. Ceux d'Italie<note caller="+" style="f"><char style="fr" closed="false">13.24 </char><char style="ft" closed="false">Soit des personnes résidant en Italie, soit un groupe d'Italiens habitant une des provinces de l'Empire romain.</char></note> vous saluent.</para>
+  <para style="p">
+    <verse number="25" style="v" />La grâce soit avec vous tous !</para>
+</usx>

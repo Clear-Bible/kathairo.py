@@ -1,0 +1,591 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<usx version="2.6">
+  <book code="SNG" style="id">TOB22.SBF 06.07.2010 ES ©Société biblique française et Editions du Cerf</book>
+  <para style="h">CANTIQUE DES CANTIQUES</para>
+  <para style="toc1">Le Cantique des cantiques</para>
+  <para style="toc2">CANTIQUE DES CANTIQUES</para>
+  <para style="toc3">Ct</para>
+  <para style="mt2">Le Cantique des cantiques</para>
+  <para style="mt1">CANTIQUE DES CANTIQUES</para>
+  <para style="imt">INTRODUCTION</para>
+  <para style="is2">Un livre énigmatique</para>
+  <para style="ip">Ce petit livre constitue une des questions les plus controversées de la littérature biblique. Que vient faire dans l'Ancien Testament ce poème d'amour ? Il est d'allure assez érotique ; il s'attache seulement à la beauté physique, sans jamais parler de Dieu ni de procréation ; il contient des allusions à la géographie de la Palestine, voire des réminiscences mythologiques, cependant sans aucune clé évidente pour l'interpréter.</para>
+  <para style="ip">La langue et le style paraissent assez tardifs et font penser à l'époque perse – V<char style="ord">e</char> siècle av. J.C. – ou peut-être même hellénistique – III<char style="ord">e</char> siècle. Mais, il faut aussitôt souligner un grand nombre d'archaïsmes. En sorte que, même composé tard, le Cantique peut inclure des éléments anciens. Cependant Salomon n'en est manifestement pas l'auteur : comme pour les Proverbes, Qohélet ou le Livre de la Sagesse, le <char style="bk">Cantique</char> lui a été attribué sur la foi de 1 R 5.12 et des allusions de 1.1 ; 3.7,9,11 ; 8.11,12 (la première concerne un terme générique – comme on parle de meubles de Louis XV –, la deuxième pourrait s'inspirer d'un vieil épithalame, et la troisième a pour but de montrer que le vrai roi selon le <char style="bk">Cantique</char> n'est pas le Salomon de l'histoire). Quant à sa canonisation, il y a eu un certain malaise, qui montre en tout cas que le sens originel – quel qu'il soit – était obscurci. Fut-il utilisé aux noces ? C'est difficile à affirmer, malgré la coutume de le chanter dans les salles de banquets, contre laquelle s'élève Rabbi Aqiba à la fin du I<char style="ord">er</char> siècle apr. J.C. Son usage liturgique à la Pâque juive n'est pas attesté avant le V<char style="ord">e</char> siècle av. J.C.</para>
+  <para style="is2">Cinq types d'interprétation</para>
+  <para style="ip">Les diverses interprétations peuvent être résumées sous quatre chefs, qu'on peut grouper deux par deux suivant qu'il s'agit d'allégorie ou de réalité.</para>
+  <para style="ip">1. <char style="it">L'interprétation allégorique</char> remonte au moins au I<char style="ord">er</char> siècle apr. J.C. et évacue le scandale de cette poésie érotique. Elle interprète les relations du garçon et de la fille soit de façon historique soit de façon mystique. Deux possibilités se présentent dans le premier cas : <char style="it">ou bien</char> il s'agit de la confrontation du peuple de Dieu avec quelque autre peuple à un moment de l'histoire <char style="it">ou bien</char> il s'agit de la relation entre le <char style="nd">SEIGNEUR</char> et son peuple. L'interprétation mystique offre aussi deux voies, <char style="it">l'une</char> collective concernant Dieu et Israël, Christ et l'Eglise ou Christ et l'Humanité, <char style="it">l'autre</char> individuelle reliant Dieu ou Christ et l'âme humaine, voire le Saint-Esprit et Marie, ou encore Salomon et la Sagesse.</para>
+  <para style="ip">2. <char style="it">L'interprétation cultuelle</char> voit dans le <char style="bk">Cantique</char> la traduction d'une liturgie païenne proche-orientale en l'honneur d'un dieu qui meurt et que va chercher aux enfers son amante la déesse de l'amour et de la guerre ; ils sont représentés par le roi et la grande-prêtresse dont le mariage sacré symbolise l'union et provoque le renouvellement de la fécondité au Nouvel An. Ici aussi en un certain sens le scandale érotique est évacué puisque l'union sexuelle n'a plus sa fin en elle-même mais est au service d'une cause religieuse. Les prophètes d'Israël ont lutté contre cette sorte de culte (voir Es 17.10 ; Ez 8.14 ; Za 12.11). Mais cette liturgie aurait été adaptée à la théologie d'Israël, comme la fête agraire des pains sans levain fut réinterprétée pour exprimer la foi historique de la Pâque.</para>
+  <para style="ip">3. <char style="it">L'interprétation dramatique</char> accepte la réalité sexuelle du Cantique mais en évacue le scandale en mettant au premier plan la fidélité, surtout s'il y a non pas deux mais trois personnages : on assiste au drame de la bergère qui reste fidèle à son berger en dépit de Salomon qui veut la lui ravir, et un discrédit certain est jeté ainsi sur l'appétit érotique.</para>
+  <para style="ip">4. <char style="it">L'interprétation naturaliste</char> voit dans le Cantique une collection de chants d'amour, à la façon de chants d'amour égyptiens ou de chants populaires arabes ; on tâche parfois de les ordonner sur le schéma des noces syriennes encore constatées à la fin du XIX<char style="ord">e</char> siècle en Transjordanie et au Liban. Certains n'y voient qu'une composition profane. D'autres parlent du sens moral d'un amour honnête.</para>
+  <para style="ip">5. Une cinquième interprétation peut être proposée, qui tient compte des éléments des précédentes. Les deux groupes de thèses indiqués s'affrontent de la façon suivante : pour les thèses 1 et 2 le sens premier est sacré et allégorique et c'est parce qu'il est oublié qu'on est réduit à un sens sexuel et profane ; pour les thèses 3 et 4 le sens premier est sexuel et profane et c'est pour l'éviter qu'on a recours à l'allégorie. Cependant il se pourrait que l'amour du <char style="bk">Cantique</char> soit <char style="it">humain</char>, à la fois <char style="it">sexuel et sacré</char>, et la méconnaissance de l'un de ces deux aspects aurait conduit dans un cas au sens profane, dans l'autre cas au sens allégorique. Dans cette hypothèse le <char style="bk">Cantique</char> décrit l'amour humain comme ayant sa fin en lui-même dans l'œuvre bonne de Dieu – comme une sorte de commentaire de Gn 2.23-24 ; pour cela, il incorpore plus ou moins sciemment les éléments de la liturgie païenne du mariage sacré mais en les démythifiant jusqu'au bout pour annoncer que le vrai rôle de l'amour est non pas d'unir religieusement la terre au ciel mais d'unir deux créatures que Dieu a créées complémentaires ; et il décrit cet amour charnel authentique (Pr 2.16-17 ; Ml 2.14) avec le langage de l'Alliance pour montrer dans l'amour de Dieu pour son peuple le modèle de tout amour – comme Paul le redira, selon Ep 5.25. Ainsi le sens spirituel du<char style="bk">Cantique</char> est dans son sens littéral, décrivant l'amour humain dans le langage de l'amour divin pour démythifier l'amour païen.</para>
+  <para style="mt1">Le Cantique des cantiques</para>
+  <chapter number="1" style="c" />
+  <para style="p">
+    <verse number="1" style="v" />Le plus beau chant de Salomon<note caller="+" style="f"><char style="fr" closed="false">1.1 </char><char style="fq" closed="false">Le plus beau chant : </char><char style="ft" closed="false">équivalent français d'un superlatif hébreu, dont la forme a été conservée dans le titre traditionnel </char><char style="fq" closed="false">Cantique des cantiques. </char><char style="ft" closed="false">Comparer Dt 10.17 ; Ps 136.2-3. – </char><char style="fq" closed="false">Salomon </char><char style="ft" closed="false">1 R 5.12 ; Ct 8.11-12 ; voir 3.7.</char></note>.</para>
+  <para style="s1">Qu'il m'embrasse !</para>
+  <para style="sp">(Elle)</para>
+  <para style="q1">
+    <verse number="2" style="v" />Qu'il m'embrasse à pleine bouche !</para>
+  <para style="q1">Car tes caresses sont meilleures que du vin<note caller="+" style="f"><char style="fr" closed="false">1.2 </char><char style="ft" closed="false">Les Hébreux pouvaient passer de la troisième personne </char><char style="fq" closed="false">(il) </char><char style="ft" closed="false">à la deuxième </char><char style="fq" closed="false">(tes caresses) </char><char style="ft" closed="false">quand ils s'adressaient à quelqu'un. – Baiser 8.1. – </char><char style="fq" closed="false">vin </char><char style="ft" closed="false">(symbole de tous les plaisirs) v. 4 ; 4.10 ; 5.1 ; 7.10 ; 8.2 ; voir 2.4 ; Qo 2.3.</char></note>,</para>
+  <para style="q1">
+    <verse number="3" style="v" />meilleures que la senteur de tes parfums.</para>
+  <para style="q1">Ta personne est un parfum raffiné.</para>
+  <para style="q1">C'est pourquoi les adolescentes<note caller="+" style="f"><char style="fr" closed="false">1.3 </char><char style="fq" closed="false">adolescentes </char><char style="ft" closed="false">(filles) 2.2 ; 6.8-9 ; voir Gn 24.43 ; Es 7.14 ; Pr 30.19.</char></note> sont amoureuses de toi.</para>
+  <para style="q1">
+    <verse number="4" style="v" />Entraîne-moi après toi, courons.</para>
+  <para style="q1">Le roi me fait entrer dans sa chambre :</para>
+  <para style="q1">« Soyons heureux et joyeux grâce à toi<note caller="+" style="f"><char style="fr" closed="false">1.4 </char><char style="fq" closed="false">Le roi : </char><char style="ft" closed="false">cette appellation semble désigner ici le jeune homme lui-même, comme en 1.12 ; 7.6. En 3.9,11 la même expression est appliquée à Salomon, mais c'est peut-être encore une manière de désigner le jeune homme du poème. – </char><char style="fq" closed="false">grâce à toi : </char><char style="ft" closed="false">la jeune fille cite une parole de son amoureux.</char></note>. »</para>
+  <para style="q1">Célébrons tes caresses plus que du vin.</para>
+  <para style="q1">C'est à bon droit qu'elles sont amoureuses de toi.</para>
+  <para style="q1">
+    <verse number="5" style="v" />Noire je suis et belle, filles de Jérusalem,</para>
+  <para style="q1">comme les tentes de Qédar,</para>
+  <para style="q1">comme les tentures de Salomon.</para>
+  <para style="q1">
+    <verse number="6" style="v" />Ne me regardez pas comme si j'étais noircie,</para>
+  <para style="q1">comme si le soleil m'avait brûlée.</para>
+  <para style="q1">Mes frères m'ont tannée :</para>
+  <para style="q1">ils m'ont mise à surveiller les vignes ;</para>
+  <para style="q1">ma vigne à moi, je ne l'ai pas surveillée<note caller="+" style="f"><char style="fr" closed="false">1.6 </char><char style="fq" closed="false">frères </char><char style="ft" closed="false">8.8. – </char><char style="fq" closed="false">m'ont tannée </char><char style="ft" closed="false">ou </char><char style="fq" closed="false">m'ont querellée. – ma vigne à moi : </char><char style="ft" closed="false">manière indirecte pour la jeune fille de parler d'elle-même ; 2.15 ; 7.13 ; 8.12 ; voir 8.11 ; Es 5.1.</char></note>.</para>
+  <para style="q1">
+    <verse number="7" style="v" />Explique-moi donc, toi que j'aime,</para>
+  <para style="q1">où tu feras paître, où tu feras reposer à midi,</para>
+  <para style="q1">pour que je n'aie pas l'air d'une coureuse<note caller="+" style="f"><char style="fr" closed="false">1.7 </char><char style="fq" closed="false">où tu feras paître… reposer… : </char><char style="ft" closed="false">le texte sous-entend </char><char style="fq" closed="false">ton troupeau. – une coureuse : </char><char style="ft" closed="false">autre traduction </char><char style="fq" closed="false">une vagabonde.</char></note></para>
+  <para style="q1">près des troupeaux de tes camarades.</para>
+  <para style="sp">(Bergers)</para>
+  <para style="q1">
+    <verse number="8" style="v" />« Si tu ne le sais pas, toi, la plus belle des femmes,</para>
+  <para style="q1">toi, sors sur les traces du bétail</para>
+  <para style="q1">et fais paître tes biquettes près des demeures des pâtres<note caller="+" style="f"><char style="fr" closed="false">1.8 </char><char style="ft" closed="false">La jeune fille cite ici la réponse que des bergers (ou </char><char style="fq" closed="false">pâtres</char><char style="ft" closed="false">) ont donnée à sa question du v. 7.</char></note>. »</para>
+  <para style="sp">(Lui)</para>
+  <para style="q1">
+    <verse number="9" style="v" />A une cavale d'équipage de luxe,</para>
+  <para style="q1">je te compare, ma compagne.</para>
+  <para style="q1">
+    <verse number="10" style="v" />Tes joues sont jolies entre les torsades,</para>
+  <para style="q1">ton cou<note caller="+" style="f"><char style="fr" closed="false">1.10 </char><char style="fq" closed="false">Tes joues </char><char style="ft" closed="false">5.13. – </char><char style="fq" closed="false">ton cou </char><char style="ft" closed="false">4.4 ; 7.5.</char></note> dans les guirlandes.</para>
+  <para style="q1">
+    <verse number="11" style="v" />Des torsades d'or nous te ferons faire avec incrustations d'argent.</para>
+  <para style="sp">(Elle)</para>
+  <para style="q1">
+    <verse number="12" style="v" />D'ici que le roi soit à son enclos,</para>
+  <para style="q1">mon nard donne sa senteur<note caller="+" style="f"><char style="fr" closed="false">1.12 </char><char style="fq" closed="false">le roi : </char><char style="ft" closed="false">voir 1.4 et la note. – </char><char style="fq" closed="false">son enclos : </char><char style="ft" closed="false">comme le </char><char style="fq" closed="false">jardin </char><char style="ft" closed="false">mentionné en 4.12-14, ce terme semble employé ici au sens figuré et faire allusion à la jeune fille elle-même 4.12,16 ; 5.1 ; 6.2. – </char><char style="fq" closed="false">nard : </char><char style="ft" closed="false">parfum extrait d'une plante originaire du nord de l'Inde. – Parfums symbolisant les attraits de la jeune fille 4.6,10,13-14 ; 5.1,5 ; 8.2 ; voir 4.11 ; ou ceux du jeune homme v. 13,14 ; 5.13 ; voir 3.6.</char></note>.</para>
+  <para style="q1">
+    <verse number="13" style="v" />Mon chéri pour moi est un sachet de myrrhe :</para>
+  <para style="q1">entre mes seins il passe la nuit<note caller="+" style="f"><char style="fr" closed="false">1.13 </char><char style="fq" closed="false">Mon chéri </char><char style="ft" closed="false">5.8-9. – </char><char style="fq" closed="false">myrrhe : </char><char style="ft" closed="false">parfum d'origine végétale. – </char><char style="fq" closed="false">entre mes seins : </char><char style="ft" closed="false">les femmes de cette époque avaient coutume de porter un sachet parfumé pendu à leur cou.</char></note>.</para>
+  <para style="q1">
+    <verse number="14" style="v" />Mon chéri pour moi est une grappe de henné</para>
+  <para style="q1">à la vigne de la Font-au-Biquet<note caller="+" style="f"><char style="fr" closed="false">1.14 </char><char style="ft" closed="false">Le </char><char style="fq" closed="false">henné, </char><char style="ft" closed="false">plante aux fleurs en grappes fortement parfumées, poussait dans l'oasis de </char><char style="fq" closed="false">Font-au-Biquet </char><char style="ft" closed="false">(ou </char><char style="fq" closed="false">Source du Chevreau, </char><char style="ft" closed="false">en hébreu </char><char style="fq" closed="false">Ein-Guèdi</char><char style="ft" closed="false">), sur la rive occidentale de la mer Morte (1 S 24.1-2).</char></note>.</para>
+  <para style="sp">(Lui)</para>
+  <para style="q1">
+    <verse number="15" style="v" />Que tu es belle, ma compagne, que tu es belle !</para>
+  <para style="q1">Tes yeux sont des colombes<note caller="+" style="f"><char style="fr" closed="false">1.15 </char><char style="fq" closed="false">Que tu es belle ! </char><char style="ft" closed="false">4.1,7 ; 6.4 ; 7.7. – </char><char style="fq" closed="false">colombe </char><char style="ft" closed="false">2.14 ; 5.12 ; 6.9.</char></note> !</para>
+  <para style="sp">(Elle)</para>
+  <para style="q1">
+    <verse number="16" style="v" />Que tu es beau, mon chéri, combien gracieux !</para>
+  <para style="q1">Combien verdoyante est notre couche !</para>
+  <para style="q1">
+    <verse number="17" style="v" />Les poutres de notre maison sont les cèdres,</para>
+  <para style="q1">et nos lambris, les genévriers.</para>
+  <chapter number="2" style="c" />
+  <para style="q1">
+    <verse number="1" style="v" />Je suis un narcisse de la Plaine,</para>
+  <para style="q1">un lis des vallées<note caller="+" style="f"><char style="fr" closed="false">2.1 </char><char style="fq" closed="false">narcisse, lis </char><char style="ft" closed="false">(ou </char><char style="fq" closed="false">anémone</char><char style="ft" closed="false">) : les fleurs désignées ici n'ont pas été identifiées de façon certaine ; d'après 5.13 la seconde est probablement rouge ; v. 16 ; 4.5 ; 6.2-3 ; voir Os 14.6 ; Mt 6.28. – </char><char style="fq" closed="false">la Plaine, </char><char style="ft" closed="false">c'est-à-dire la plaine du </char><char style="fq" closed="false">Sharôn, </char><char style="ft" closed="false">en bordure de la côte méditerranéenne ; Es 35.1-2 ; voir 33.9.</char></note>.</para>
+  <para style="sp">(Lui)</para>
+  <para style="q1">
+    <verse number="2" style="v" />Comme un lis parmi des ronces,</para>
+  <para style="q1">telle est ma compagne parmi les filles.</para>
+  <para style="sp">(Elle)</para>
+  <para style="q1">
+    <verse number="3" style="v" />Comme un pommier au milieu des arbres de la forêt,</para>
+  <para style="q1">tel est mon chéri parmi les garçons.</para>
+  <para style="q1">A son ombre, selon mon désir, je m'assieds ;</para>
+  <para style="q1">et son fruit est doux à mon palais<note caller="+" style="f"><char style="fr" closed="false">2.3 </char><char style="fq" closed="false">pommier </char><char style="ft" closed="false">8.5. – </char><char style="fq" closed="false">palais </char><char style="ft" closed="false">5.16 ; 7.10.</char></note>.</para>
+  <para style="q1">
+    <verse number="4" style="v" />Il me fait entrer au cabaret<note caller="+" style="f"><char style="fr" closed="false">2.4 </char><char style="ft" closed="false">Le </char><char style="fq" closed="false">cabaret </char><char style="ft" closed="false">semble désigner ici, au sens figuré, le lieu où les deux amoureux s'enivrent de leur amour.</char></note>,</para>
+  <para style="q1">mais son enseigne au-dessus de moi est Amour.</para>
+  <para style="q1">
+    <verse number="5" style="v" />Restaurez-moi avec des gâteaux de raisins ;</para>
+  <para style="q1">soutenez-moi avec des pommes :</para>
+  <para style="q1">car je suis malade d'amour<note caller="+" style="f"><char style="fr" closed="false">2.5 </char><char style="fq" closed="false">gâteaux de raisins </char><char style="ft" closed="false">Es 16.7 ; Jr 7.18 ; 44.19 ; Os 3.1. – </char><char style="fq" closed="false">pommes </char><char style="ft" closed="false">v. 3 ; 7.9. – </char><char style="fq" closed="false">malade d'amour </char><char style="ft" closed="false">5.8.</char></note>.</para>
+  <para style="q1">
+    <verse number="6" style="v" />Sa gauche est sous ma tête,</para>
+  <para style="q1">et sa droite m'enlace<note caller="+" style="f"><char style="fr" closed="false">2.6 </char><char style="fq" closed="false">sa gauche… sa droite… </char><char style="ft" closed="false">8.3.</char></note> !</para>
+  <para style="sp">(Lui ?)</para>
+  <para style="q1">
+    <verse number="7" style="v" />Je vous en conjure, filles de Jérusalem,</para>
+  <para style="q1">par les gazelles ou par les biches de la campagne :</para>
+  <para style="q1">N'éveillez pas, ne réveillez pas mon Amour<note caller="+" style="f"><char style="fr" closed="false">2.7 </char><char style="fq" closed="false">mon Amour </char><char style="ft" closed="false">ou </char><char style="fq" closed="false">celle que j'aime</char><char style="ft" closed="false"> ; autre traduction </char><char style="fq" closed="false">l'Amour</char><char style="ft" closed="false"> ; 7.7.</char></note></para>
+  <para style="q1">avant son bon vouloir.</para>
+  <para style="s1">J'entends mon chéri(Elle)</para>
+  <para style="q1">
+    <verse number="8" style="v" />J'entends mon chéri !</para>
+  <para style="q1">Le voici : il vient !</para>
+  <para style="q1">Sautant par-dessus les monts,</para>
+  <para style="q1">bondissant par-dessus les collines,</para>
+  <para style="q1">
+    <verse number="9" style="v" />mon chéri est comparable à une gazelle</para>
+  <para style="q1">ou à un faon de biche.</para>
+  <para style="q1">Le voici : il s'arrête derrière notre mur ;</para>
+  <para style="q1">il regarde par la fenêtre ;</para>
+  <para style="q1">il épie par le treillis.</para>
+  <para style="q1">
+    <verse number="10" style="v" />Mon chéri chante</para>
+  <para style="q1">et me dit :</para>
+  <para style="sp">(Lui)</para>
+  <para style="q1">« Debout, toi, ma compagne,</para>
+  <para style="q1">ma belle, et viens-t'en<note caller="+" style="f"><char style="fr" closed="false">2.10 </char><char style="fq" closed="false">Viens… </char><char style="ft" closed="false">7.12.</char></note>.</para>
+  <para style="q1">
+    <verse number="11" style="v" />Car voici que l'hiver passe ;</para>
+  <para style="q1">la pluie cesse, elle s'en va.</para>
+  <para style="q1">
+    <verse number="12" style="v" />On voit des fleurs dans le pays ;</para>
+  <para style="q1">la saison de la chanson arrive ;</para>
+  <para style="q1">et on entend dans notre pays</para>
+  <para style="q1">la voix de la tourterelle.</para>
+  <para style="q1">
+    <verse number="13" style="v" />Le figuier mûrit son fruit vert,</para>
+  <para style="q1">et les ceps en bouton donnent leur senteur.</para>
+  <para style="q1">Debout, toi, ma compagne,</para>
+  <para style="q1">ma belle, et viens-t'en.</para>
+  <para style="q1">
+    <verse number="14" style="v" />Ma colombe<note caller="+" style="f"><char style="fr" closed="false">2.14 </char><char style="fq" closed="false">Ma colombe </char><char style="ft" closed="false">1.15+.</char></note> au creux d'un rocher,</para>
+  <para style="q1">au plus caché d'une falaise,</para>
+  <para style="q1">fais-moi voir ton visage,</para>
+  <para style="q1">fais-moi entendre ta voix ;</para>
+  <para style="q1">car ta voix est agréable,</para>
+  <para style="q1">et ton visage est joli. »</para>
+  <para style="sp">(Mère)</para>
+  <para style="q1">
+    <verse number="15" style="v" />« Saisissez-nous les renards,</para>
+  <para style="q1">les petits renards</para>
+  <para style="q1">qui ravagent les vignes,</para>
+  <para style="q1">alors que notre vigne est en bouton<note caller="+" style="f"><char style="fr" closed="false">2.15 </char><char style="ft" closed="false">Comme en 1.4,8, la jeune fille cite sans doute ici des paroles entendues. C'est peut-être la mère, qui envoie ses fils à la poursuite du jeune homme (</char><char style="fq" closed="false">les renards</char><char style="ft" closed="false">), qu'elle accuse de nuire à sa fille (</char><char style="fq" closed="false">notre vigne</char><char style="ft" closed="false">). – </char><char style="fq" closed="false">renards/chacals </char><char style="ft" closed="false">Ez 13.4 ; Ne 3.35 ; Lc 13.32. – </char><char style="fq" closed="false">vigne </char><char style="ft" closed="false">Ct 1.6+.</char></note> ! »</para>
+  <para style="sp">(Elle)</para>
+  <para style="q1">
+    <verse number="16" style="v" />Mon chéri est à moi, et je suis à lui,</para>
+  <para style="q1">qui paît parmi les lis<note caller="+" style="f"><char style="fr" closed="false">2.16 </char><char style="fq" closed="false">il est à moi, je suis à lui </char><char style="ft" closed="false">6.3 ; 7.11 ; voir Os 2.4-25. – </char><char style="fq" closed="false">qui paît : </char><char style="ft" closed="false">on peut comprendre soit </char><char style="fq" closed="false">qui fait paître son troupeau </char><char style="ft" closed="false">(comme en 1.7), soit </char><char style="fq" closed="false">qui broute </char><char style="ft" closed="false">(comme en 4.5). – </char><char style="fq" closed="false">les lis : </char><char style="ft" closed="false">voir 2.1+ et la note.</char></note>,</para>
+  <para style="q1">
+    <verse number="17" style="v" />d'ici que le jour respire</para>
+  <para style="q1">et que les ombres soient fuyantes,</para>
+  <para style="q1">retourne !… toi, sois comparable, mon chéri,</para>
+  <para style="q1">à une gazelle ou à un faon de biche,</para>
+  <para style="q1">sur des monts séparés<note caller="+" style="f"><char style="fr" closed="false">2.17 </char><char style="fq" closed="false">d'ici que le jour… </char><char style="ft" closed="false">4.6. –Les expressions imagées du début du verset font allusion au prochain matin. – </char><char style="fq" closed="false">retourne… toi : </char><char style="ft" closed="false">expression intentionnellement ambiguë ; la jeune fille fait semblant de congédier son amoureux </char><char style="fq" closed="false">(retourne, </char><char style="ft" closed="false">au sens de </char><char style="fq" closed="false">va-t'en) </char><char style="ft" closed="false">tout en lui donnant un nouveau rendez-vous </char><char style="fq" closed="false">(retourne </char><char style="ft" closed="false">au sens de </char><char style="fq" closed="false">reviens)</char><char style="ft" closed="false">. – </char><char style="fq" closed="false">comme une gazelle… </char><char style="ft" closed="false">8.14. – </char><char style="fq" closed="false">des monts séparés </char><char style="ft" closed="false">ou </char><char style="fq" closed="false">des monts de Bètèr : </char><char style="ft" closed="false">lieu inconnu dont le nom a peut-être une valeur symbolique.</char></note>.</para>
+  <chapter number="3" style="c" />
+  <para style="s1">Je cherche celui que j'aime(Elle)</para>
+  <para style="q1">
+    <verse number="1" style="v" />Sur mon lit, au long de la nuit,</para>
+  <para style="q1">je cherche celui que j'aime.</para>
+  <para style="q1">Je le cherche<note caller="+" style="f"><char style="fr" closed="false">3.1 </char><char style="ft" closed="false">5.6 ; Es 65.1 ; Jr 29.13 ; Os 2.9 ; 5.6 ; Pr 1.28 ; voir Mt 7.7.</char></note> mais ne le rencontre pas.</para>
+  <para style="q1">
+    <verse number="2" style="v" />Il faut que je me lève</para>
+  <para style="q1">et que je fasse le tour de la ville ;</para>
+  <para style="q1">dans les rues et les places,</para>
+  <para style="q1">que je cherche celui que j'aime.</para>
+  <para style="q1">Je le cherche mais ne le rencontre pas.</para>
+  <para style="q1">
+    <verse number="3" style="v" />Ils me rencontrent, les gardes<note caller="+" style="f"><char style="fr" closed="false">3.3 </char><char style="fq" closed="false">les gardes </char><char style="ft" closed="false">5.7.</char></note></para>
+  <para style="q1">qui font le tour de la ville :</para>
+  <para style="q1">« Celui que j'aime, vous l'avez vu ? »</para>
+  <para style="q1">
+    <verse number="4" style="v" />A peine les ai-je dépassés</para>
+  <para style="q1">que je rencontre celui que j'aime.</para>
+  <para style="q1">Je le saisis et ne le lâcherai pas</para>
+  <para style="q1">que je ne l'aie fait entrer chez ma mère<note caller="+" style="f"><char style="fr" closed="false">3.4 </char><char style="fq" closed="false">je ne le lâcherai pas </char><char style="ft" closed="false">Gn 2.24. – </char><char style="fq" closed="false">mère </char><char style="ft" closed="false">de la jeune fille Ct 6.9 ; 8.2, du jeune homme 3.11 ; 8.5.</char></note> ,</para>
+  <para style="q1">dans la chambre de celle qui m'a conçue :</para>
+  <para style="sp">(Lui)</para>
+  <para style="q1">
+    <verse number="5" style="v" />« Je vous en conjure, filles de Jérusalem,</para>
+  <para style="q1">par les gazelles ou par les biches de la campagne :</para>
+  <para style="q1">N'éveillez pas, ne réveillez pas mon Amour<note caller="+" style="f"><char style="fr" closed="false">3.5 </char><char style="ft" closed="false">Voir 2.7 et la note.</char></note></para>
+  <para style="q1">avant son bon vouloir. »</para>
+  <para style="sp">(Amoureuses)</para>
+  <para style="q1">
+    <verse number="6" style="v" />« Qui est-ce qui monte du désert</para>
+  <para style="q1">comme en une colonne de fumée</para>
+  <para style="q1">vaporisée de myrrhe et d'encens,</para>
+  <para style="q1">de toute poudre d'importation<note caller="+" style="f"><char style="fr" closed="false">3.6 </char><char style="ft" closed="false">Les v. 6-11 reproduisent peut-être un poème composé pour le mariage du roi Salomon ; la jeune fille l'applique maintenant à son amoureux. – </char><char style="fq" closed="false">Qui est ?… </char><char style="ft" closed="false">6.10 ; 8.5. – </char><char style="fq" closed="false">myrrhe et encens </char><char style="ft" closed="false">voir 1.12+ ; 1.13 et la note. – </char><char style="fq" closed="false">importation </char><char style="ft" closed="false">1 R 10.15 ; Ez 27.13-24 ; Na 3.16.</char></note> ? »</para>
+  <para style="sp">(Elle)</para>
+  <para style="q1">
+    <verse number="7" style="v" />Voici sa litière – celle de Salomon<note caller="+" style="f"><char style="fr" closed="false">3.7 </char><char style="fq" closed="false">Salomon </char><char style="ft" closed="false">v. 9,11 ; 8.11-12.</char></note> –</para>
+  <para style="q1">entourée de soixante braves</para>
+  <para style="q1">d'entre les braves d'Israël,</para>
+  <para style="q1">
+    <verse number="8" style="v" />tous s'étant saisis de l'épée,</para>
+  <para style="q1">initiés au combat,</para>
+  <para style="q1">chacun son épée sur sa hanche</para>
+  <para style="q1">pour s'abriter de la terreur nocturne<note caller="+" style="f"><char style="fr" closed="false">3.8 </char><char style="ft" closed="false">Ps 91.5 ; <char style="bk">Tb</char> 3.7-8 ; 6.14.</char></note>.</para>
+  <para style="q1">
+    <verse number="9" style="v" />Le roi Salomon s'est fait faire un palanquin :</para>
+  <para style="q1">de bois du Liban<note caller="+" style="f"><char style="fr" closed="false">3.9 </char><char style="fq" closed="false">un palanquin : </char><char style="ft" closed="false">le mot hébreu correspondant est mal connu et la traduction incertaine. – </char><char style="fq" closed="false">de bois du Liban : </char><char style="ft" closed="false">c'est-à-dire </char><char style="fq" closed="false">de cèdre </char><char style="ft" closed="false">(voir la note sur Es 10.34).</char></note></para>
+  <para style="q1">
+    <verse number="10" style="v" />il a fait faire ses piliers ;</para>
+  <para style="q1">en argent, son appui ;</para>
+  <para style="q1">en or, son siège ;</para>
+  <para style="q1">en pourpre<note caller="+" style="f"><char style="fr" closed="false">3.10 </char><char style="ft" closed="false">Teinture de luxe (rouge foncé) : par extension le terme désigne aussi les tissus de cette couleur.</char></note>, son intérieur,</para>
+  <para style="q1">arrangé amoureusement</para>
+  <para style="q1">par les filles de Jérusalem.</para>
+  <para style="q1">
+    <verse number="11" style="v" />Sortez admirer, filles de Sion, le roi Salomon</para>
+  <para style="q1">avec la couronne dont le couronne sa mère</para>
+  <para style="q1">au jour de son mariage :</para>
+  <para style="q1">au jour où son être est dans la joie<note caller="+" style="f"><char style="fr" closed="false">3.11 </char><char style="fq" closed="false">couronne </char><char style="ft" closed="false">Es 61.10 ; 62.3. – </char><char style="fq" closed="false">mariage </char><char style="ft" closed="false">et </char><char style="fq" closed="false">joie </char><char style="ft" closed="false">Es 62.5.</char></note>.</para>
+  <chapter number="4" style="c" pubnumber="4 (Lui)" />
+  <para style="q1">
+    <verse number="1" style="v" />Que tu es belle, ma compagne ! Que tu es belle !</para>
+  <para style="q1">Tes yeux sont des colombes à travers ton voile.</para>
+  <para style="q1">Ta chevelure est comme un troupeau de chèvres</para>
+  <para style="q1">dégringolant du mont Galaad<note caller="+" style="f"><char style="fr" closed="false">4.1 </char><char style="ft" closed="false">v. 1-14 : Eloge de la bien aimée 6.4-10 ; 7.2-10, du bien aimé 5.10-16. – </char><char style="fq" closed="false">Que tu es belle ! </char><char style="ft" closed="false">1.15+. – </char><char style="fq" closed="false">ton voile : </char><char style="ft" closed="false">le jour des noces la mariée se présentait voilée au marié ; Gn 24.65. – </char><char style="fq" closed="false">Ta chevelure… </char><char style="ft" closed="false">Ct 6.5. Les </char><char style="fq" closed="false">chèvres </char><char style="ft" closed="false">de cette région sont noires. – Le </char><char style="fq" closed="false">mont Galaad </char><char style="ft" closed="false">est situé à l'est du Jourdain ; Gn 31.21.</char></note>.</para>
+  <para style="q1">
+    <verse number="2" style="v" />Tes dents<note caller="+" style="f"><char style="fr" closed="false">4.2 </char><char style="fq" closed="false">Tes dents </char><char style="ft" closed="false">6.6.</char></note> sont comme un troupeau de bêtes à tondre</para>
+  <para style="q1">qui remontent du lavoir :</para>
+  <para style="q1">toutes ont des jumeaux,</para>
+  <para style="q1">on ne les arrache à aucune.</para>
+  <para style="q1">
+    <verse number="3" style="v" />Comme un ruban écarlate sont tes lèvres,</para>
+  <para style="q1">et ta babillarde est jolie.</para>
+  <para style="q1">Comme la tranche d'une grenade<note caller="+" style="f"><char style="fr" closed="false">4.3 </char><char style="fq" closed="false">ta babillarde </char><char style="ft" closed="false">ou </char><char style="fq" closed="false">ta langue. – grenade </char><char style="ft" closed="false">4.13 ; 6.7,11 ; 7.13 ; 8.2.</char></note> est ta tempe</para>
+  <para style="q1">à travers ton voile.</para>
+  <para style="q1">
+    <verse number="4" style="v" />Comme la Tour-de-David est ton cou,</para>
+  <para style="q1">bâti pour des trophées :</para>
+  <para style="q1">un millier de boucliers y est pendu,</para>
+  <para style="q1">toutes sortes d'armures de braves<note caller="+" style="f"><char style="fr" closed="false">4.4 </char><char style="fq" closed="false">ton cou </char><char style="ft" closed="false">1.10+. – Le collier de pièces de monnaie que porte la jeune fille évoque les </char><char style="fq" closed="false">boucliers </char><char style="ft" closed="false">qui ornent la </char><char style="fq" closed="false">Tour-de-David </char><char style="ft" closed="false">(monument inconnu par ailleurs) ; voir Ez 27.10-11.</char></note>.</para>
+  <para style="q1">
+    <verse number="5" style="v" />Tes deux seins sont comme deux faons,</para>
+  <para style="q1">jumeaux d'une gazelle</para>
+  <para style="q1">qui paissent parmi les lis<note caller="+" style="f"><char style="fr" closed="false">4.5 </char><char style="fq" closed="false">Tes seins </char><char style="ft" closed="false">7.4,8,9 ; 8.10 ; Pr 5.19. – </char><char style="fq" closed="false">comme deux faons </char><char style="ft" closed="false">7.4 ; voir 2.9,17. – </char><char style="fq" closed="false">qui paissent parmi les lis </char><char style="ft" closed="false">2.16.</char></note>.</para>
+  <para style="q1">
+    <verse number="6" style="v" />D'ici que le jour respire</para>
+  <para style="q1">et que les ombres soient fuyantes,</para>
+  <para style="q1">je m'en irai au mont emmyrrhé</para>
+  <para style="q1">et à la colline encensée<note caller="+" style="f"><char style="fr" closed="false">4.6 </char><char style="fq" closed="false">D'ici que le jour… </char><char style="ft" closed="false">2.17. – </char><char style="fq" closed="false">emmyrrhé, encensée : </char><char style="ft" closed="false">parfumés respectivement à la myrrhe (voir 1.13 et la note) et à l'encens ; 1.12+.</char></note>.</para>
+  <para style="q1">
+    <verse number="7" style="v" />Tu es toute belle, ma compagne !</para>
+  <para style="q1">De défaut, tu n'en as pas<note caller="+" style="f"><char style="fr" closed="false">4.7 </char><char style="fq" closed="false">belle </char><char style="ft" closed="false">1.15+. – </char><char style="fq" closed="false">sans défaut </char><char style="ft" closed="false">voir Ep 5.27.</char></note> !</para>
+  <para style="q1">
+    <verse number="8" style="v" />Avec moi, du Liban, ô fiancée,</para>
+  <para style="q1">avec moi, du Liban tu viendras ;</para>
+  <para style="q1">tu dévaleras du sommet de l'Amana,</para>
+  <para style="q1">du sommet du Senir et de l'Hermon<note caller="+" style="f"><char style="fr" closed="false">4.8 </char><char style="fq" closed="false">Liban, Amana, Senir, Hermon : </char><char style="ft" closed="false">montagnes situées au nord de la Palestine ; 7.5 ; Dt 3.8-9 ; 1 Ch 5.23.</char></note>,</para>
+  <para style="q1">des retraites de lions et des montagnes à panthères.</para>
+  <para style="q1">
+    <verse number="9" style="v" />Tu me rends fou<note caller="+" style="f"><char style="fr" closed="false">4.9 </char><char style="fq" closed="false">Tu me rends fou </char><char style="ft" closed="false">6.5.</char></note>, ma sœur, ô fiancée,</para>
+  <para style="q1">tu me rends fou par une seule de tes œillades,</para>
+  <para style="q1">par un seul cercle de tes colliers.</para>
+  <para style="q1">
+    <verse number="10" style="v" />Que tes caresses sont belles, ma sœur, ô fiancée !</para>
+  <para style="q1">Que tes caresses sont meilleures que du vin,</para>
+  <para style="q1">et la senteur de tes parfums<note caller="+" style="f"><char style="fr" closed="false">4.10 </char><char style="fq" closed="false">vin </char><char style="ft" closed="false">1.2+. – </char><char style="fq" closed="false">parfums </char><char style="ft" closed="false">1.12+.</char></note>, que tous les baumes !</para>
+  <para style="q1">
+    <verse number="11" style="v" />Tes lèvres distillent du nectar, ô fiancée ;</para>
+  <para style="q1">du miel et du lait sont sous ta langue ;</para>
+  <para style="q1">et la senteur de tes vêtements</para>
+  <para style="q1">est comme la senteur du Liban<note caller="+" style="f"><char style="fr" closed="false">4.11 </char><char style="fq" closed="false">Tes lèvres distillent… </char><char style="ft" closed="false">Pr 5.3. – </char><char style="fq" closed="false">du miel et du lait </char><char style="ft" closed="false">Ex 3.8 ; Es 55.1. – </char><char style="fq" closed="false">vêtements parfumés </char><char style="ft" closed="false">Ps 45.9 ; Pr 7.17. – </char><char style="fq" closed="false">senteur du Liban </char><char style="ft" closed="false">Os 14.7.</char></note>.</para>
+  <para style="q1">
+    <verse number="12" style="v" />Tu es un jardin verrouillé, ma sœur, ô fiancée ;</para>
+  <para style="q1">une source verrouillée,</para>
+  <para style="q1">une fontaine scellée<note caller="+" style="f"><char style="fr" closed="false">4.12 </char><char style="ft" closed="false">Au lieu de </char><char style="fq" closed="false">une source </char><char style="ft" closed="false">certains manuscrits hébreux et les versions anciennes proposent </char><char style="fq" closed="false">un jardin, </char><char style="ft" closed="false">répétant ainsi le vers précédent. – </char><char style="fq" closed="false">jardin </char><char style="ft" closed="false">(symbole de la jeune fille) 1.12+. – </char><char style="fq" closed="false">fontaine scellée </char><char style="ft" closed="false">Pr 5.16.</char></note> !</para>
+  <para style="q1">
+    <verse number="13" style="v" />Tes surgeons sont un paradis de grenades,</para>
+  <para style="q1">avec des fruits de choix :</para>
+  <para style="q1">le henné avec le nard<note caller="+" style="f"><char style="fr" closed="false">4.13 </char><char style="ft" closed="false">Le terme traduit pas </char><char style="fq" closed="false">surgeons </char><char style="ft" closed="false">évoque par assonance le mot désignant la dot (voir 1 R 9.16), et le terme rendu par </char><char style="fq" closed="false">choix </char><char style="ft" closed="false">rappelle le cadeau que le fiancé faisait à son futur beau-père (Gn 24.53). Mais ici, par contraste, tout est gratuit dans le don que les amants font d'eux-mêmes l'un à l'autre. – </char><char style="fq" closed="false">paradis </char><char style="ft" closed="false">2 Co 12.4+. – </char><char style="fq" closed="false">fruits de choix </char><char style="ft" closed="false">Ct 4.16 ; 7.14. – </char><char style="fq" closed="false">henné : </char><char style="ft" closed="false">voir 1.14 et la note. – </char><char style="fq" closed="false">nard : </char><char style="ft" closed="false">voir 1.12 et la note.</char></note>,</para>
+  <para style="q1">
+    <verse number="14" style="v" />du nard et du safran,</para>
+  <para style="q1">de la cannelle et du cinnamome,</para>
+  <para style="q1">avec toutes sortes d'arbres à encens ;</para>
+  <para style="q1">de la myrrhe et de l'aloès<note caller="+" style="f"><char style="fr" closed="false">4.14 </char><char style="fq" closed="false">cannelle, myrrhe, aloès </char><char style="ft" closed="false">(Ps 45.9), </char><char style="fq" closed="false">safran, cinnamome : </char><char style="ft" closed="false">parfums d'origine végétale ; voir Ct 1.12+ ; Ps 45.9 ; Pr 7.17.</char></note>,</para>
+  <para style="q1">avec tous les baumes de première qualité.</para>
+  <para style="sp">(Elle)</para>
+  <para style="q1">
+    <verse number="15" style="v" />Je suis une fontaine de jardins,</para>
+  <para style="q1">un puits d'eaux courantes,</para>
+  <para style="q1">ruisselant du Liban !</para>
+  <para style="q1">
+    <verse number="16" style="v" />Eveille-toi, Aquilon ! Viens, Autan !</para>
+  <para style="q1">Fais respirer mon jardin,</para>
+  <para style="q1">et que ses baumes ruissellent !</para>
+  <para style="q1">Que mon chéri vienne à son jardin<note caller="+" style="f"><char style="fr" closed="false">4.16 </char><char style="fq" closed="false">Aquilon, Autan : </char><char style="ft" closed="false">vents du nord et du sud respectivement ; ils doivent répandre les senteurs du « jardin » (voir 1.12+ et la note).</char></note></para>
+  <para style="q1">et en mange les fruits de choix !</para>
+  <chapter number="5" style="c" pubnumber="4 (Lui)" />
+  <para style="q1">
+    <verse number="1" style="v" />Je viens à mon jardin, ma sœur, ô fiancée ;</para>
+  <para style="q1">je récolte ma myrrhe avec mon baume ;</para>
+  <para style="q1">je mange mon rayon avec mon miel ;</para>
+  <para style="q1">je bois mon vin avec mon lait !</para>
+  <para style="sp">(Chœur)</para>
+  <para style="q1">« Mangez, compagnons ;</para>
+  <para style="q1">buvez, enivrez-vous, chéris<note caller="+" style="f"><char style="fr" closed="false">5.1 </char><char style="fq" closed="false">parfums </char><char style="ft" closed="false">1.12+. – </char><char style="fq" closed="false">vin </char><char style="ft" closed="false">1.2+. – La fin du v. 1 s'adresse aux deux amoureux. Elle conclut le rêve que la jeune fille a commencé en 3.1.</char></note> ! »</para>
+  <para style="s1">Je dormais, mais je m'éveille(Elle)</para>
+  <para style="q1">
+    <verse number="2" style="v" />Je dormais mais je m'éveille :</para>
+  <para style="q1">j'entends mon chéri qui frappe !</para>
+  <para style="sp">(Lui)</para>
+  <para style="q1">« Ouvre-moi, ma sœur, ma compagne,</para>
+  <para style="q1">ma colombe, ma parfaite ;</para>
+  <para style="q1">car ma tête est pleine de rosée ;</para>
+  <para style="q1">mes boucles, des gouttes de la nuit. »</para>
+  <para style="sp">(Elle)</para>
+  <para style="q1">
+    <verse number="3" style="v" />« J'ai enlevé ma chemise : comment ! je la revêtirais ?</para>
+  <para style="q1">J'ai lavé mes pieds : comment ! je les salirais<note caller="+" style="f"><char style="fr" closed="false">5.3 </char><char style="ft" closed="false">Le v. 3 cite les objections que la jeune fille fait à son amoureux.</char></note> ? »</para>
+  <para style="q1">
+    <verse number="4" style="v" />Mon chéri avance la main par le trou<note caller="+" style="f"><char style="fr" closed="false">5.4 </char><char style="ft" closed="false">Le texte sous-entend </char><char style="fq" closed="false">de la porte : </char><char style="ft" closed="false">le jeune homme essaie d'ouvrir le loquet intérieur.</char></note> ;</para>
+  <para style="q1">et mon ventre s'en émeut.</para>
+  <para style="q1">
+    <verse number="5" style="v" />Moi, je me lève pour ouvrir à mon chéri.</para>
+  <para style="q1">Et mes mains distillent de la myrrhe,</para>
+  <para style="q1">et mes doigts de la myrrhe fluide,</para>
+  <para style="q1">sur les paumelles du verrou<note caller="+" style="f"><char style="fr" closed="false">5.5 </char><char style="fq" closed="false">myrrhe : </char><char style="ft" closed="false">voir 1.12+ ; 1.13 et la note. – </char><char style="fq" closed="false">les paumelles </char><char style="ft" closed="false">ou </char><char style="fq" closed="false">la poignée.</char></note>.</para>
+  <para style="q1">
+    <verse number="6" style="v" />Moi, j'ouvre à mon chéri !</para>
+  <para style="q1">Mais mon chéri s'est détourné, il a passé.</para>
+  <para style="q1">Hors de moi je sors à sa suite :</para>
+  <para style="q1">je le cherche mais ne le rencontre pas<note caller="+" style="f"><char style="fr" closed="false">5.6 </char><char style="fq" closed="false">je le cherche, mais… </char><char style="ft" closed="false">3.1-2.</char></note> ;</para>
+  <para style="q1">je l'appelle mais il ne me répond pas.</para>
+  <para style="q1">
+    <verse number="7" style="v" />Ils me rencontrent, les gardes</para>
+  <para style="q1">qui font le tour de la ville ;</para>
+  <para style="q1">ils me frappent, ils me blessent ;</para>
+  <para style="q1">ils enlèvent de dessus moi ma houppelande<note caller="+" style="f"><char style="fr" closed="false">5.7 </char><char style="ft" closed="false">Elle a mis cet ample manteau pour sortir précipitamment, au saut du lit, et les gardes la prennent pour une fille de mauvaise conduite. – </char><char style="fq" closed="false">les gardes </char><char style="ft" closed="false">3.3.</char></note>,</para>
+  <para style="q1">les gardes des remparts.</para>
+  <para style="q1">
+    <verse number="8" style="v" />Je vous en conjure, filles de Jérusalem :</para>
+  <para style="q1">Si vous rencontrez mon chéri,</para>
+  <para style="q1">que lui expliquerez-vous ?</para>
+  <para style="q1">Que je suis malade d'amour<note caller="+" style="f"><char style="fr" closed="false">5.8 </char><char style="fq" closed="false">malade d'amour </char><char style="ft" closed="false">2.5.</char></note> !</para>
+  <para style="sp">(Chœur)</para>
+  <para style="q1">
+    <verse number="9" style="v" />Celui que tu chéris, qu'a-t-il de plus qu'un autre,</para>
+  <para style="q1">ô la plus belle des femmes ?</para>
+  <para style="q1">Celui que tu chéris, qu'a-t-il de plus qu'un autre,</para>
+  <para style="q1">pour qu'ainsi tu nous conjures ?</para>
+  <para style="sp">(Elle)</para>
+  <para style="q1">
+    <verse number="10" style="v" />Mon chéri est clair et rose,</para>
+  <para style="q1">il est insigne plus que dix mille<note caller="+" style="f"><char style="fr" closed="false">5.10 </char><char style="ft" closed="false">v. 10-16 : éloge du bien aimé voir 4.1-14+. – </char><char style="fq" closed="false">clair et rose </char><char style="ft" closed="false">voir 1 S 16.12. – </char><char style="fq" closed="false">plus que dix mille </char><char style="ft" closed="false">2 S 18.3.</char></note>.</para>
+  <para style="q1">
+    <verse number="11" style="v" />Sa tête est un lingot d'or fin.</para>
+  <para style="q1">Ses boucles sont des panicules<note caller="+" style="f"><char style="fr" closed="false">5.11 </char><char style="ft" closed="false">Ces fruits en grappes de certaines variétés de palmier sont noirs comme les cheveux du jeune homme.</char></note>,</para>
+  <para style="q1">noires comme un corbeau.</para>
+  <para style="q1">
+    <verse number="12" style="v" />Ses yeux sont comme des colombes<note caller="+" style="f"><char style="fr" closed="false">5.12 </char><char style="fq" closed="false">colombes </char><char style="ft" closed="false">1.15+.</char></note> sur des bassins à eau,</para>
+  <para style="q1">se lavant dans du lait,</para>
+  <para style="q1">se posant sur des vasques.</para>
+  <para style="q1">
+    <verse number="13" style="v" />Ses joues sont comme un parterre embaumé</para>
+  <para style="q1">produisant des aromates<note caller="+" style="f"><char style="fr" closed="false">5.13 </char><char style="fq" closed="false">joues </char><char style="ft" closed="false">1.10. – </char><char style="fq" closed="false">produisant : </char><char style="ft" closed="false">d'après les anciennes versions ; hébreu obscur. – </char><char style="fq" closed="false">des aromates </char><char style="ft" closed="false">ou </char><char style="fq" closed="false">des parfums</char><char style="ft" closed="false"> ; 1.12+.</char></note>.</para>
+  <para style="q1">Ses lèvres sont des lis</para>
+  <para style="q1">distillant de la myrrhe fluide.</para>
+  <para style="q1">
+    <verse number="14" style="v" />Ses mains sont des bracelets d'or</para>
+  <para style="q1">remplis de topazes.</para>
+  <para style="q1">Son ventre est une plaque d'ivoire</para>
+  <para style="q1">couverte de saphirs<note caller="+" style="f"><char style="fr" closed="false">5.14 </char><char style="fq" closed="false">topazes : </char><char style="ft" closed="false">pierres précieuses de couleur ambrée ; allusion à des bagues, ou plus vraisemblablement aux ongles du jeune homme. – </char><char style="fq" closed="false">saphirs : </char><char style="ft" closed="false">pierres précieuses de teinte bleue ; allusion aux veines qui apparaissent sous la peau.</char></note>.</para>
+  <para style="q1">
+    <verse number="15" style="v" />Ses jambes sont des piliers<note caller="+" style="f"><char style="fr" closed="false">5.15 </char><char style="fq" closed="false">piliers </char><char style="ft" closed="false">voir Ps 144.12 ; <char style="bk">Si</char> 26.18.</char></note> d'albâtre</para>
+  <para style="q1">fondés sur des socles d'or fin.</para>
+  <para style="q1">Son visage est comme le Liban :</para>
+  <para style="q1">c'est l'élite, comme les cèdres.</para>
+  <para style="q1">
+    <verse number="16" style="v" />Son palais<note caller="+" style="f"><char style="fr" closed="false">5.16 </char><char style="fq" closed="false">son palais </char><char style="ft" closed="false">2.3.</char></note> est la douceur même ;</para>
+  <para style="q1">et tout son être est l'objet même du désir.</para>
+  <para style="q1">Tel est mon chéri, tel est mon compagnon,</para>
+  <para style="q1">filles de Jérusalem !</para>
+  <chapter number="6" style="c" pubnumber="6 (Chœurs)" />
+  <para style="q1">
+    <verse number="1" style="v" />Où est allé ton chéri,</para>
+  <para style="q1">ô la plus belle des femmes ?</para>
+  <para style="q1">Où s'est dirigé ton chéri,</para>
+  <para style="q1">que nous le cherchions<note caller="+" style="f"><char style="fr" closed="false">6.1 </char><char style="fq" closed="false">que nous le cherchions </char><char style="ft" closed="false">3.1.</char></note> avec toi ?</para>
+  <para style="sp">(Elle)</para>
+  <para style="q1">
+    <verse number="2" style="v" />Mon chéri descend à son jardin,</para>
+  <para style="q1">aux parterres embaumés,</para>
+  <para style="q1">pour paître au jardin</para>
+  <para style="q1">et pour cueillir des lis<note caller="+" style="f"><char style="fr" closed="false">6.2 </char><char style="fq" closed="false">parterres embaumés </char><char style="ft" closed="false">5.13 ; voir 1.12+. – Comme en 2.1-2 ; 4.12-16 le </char><char style="fq" closed="false">jardin </char><char style="ft" closed="false">(1.12+) et le </char><char style="fq" closed="false">lis </char><char style="ft" closed="false">(2.1+) sont ici des symboles de la jeune fille.</char></note>.</para>
+  <para style="q1">
+    <verse number="3" style="v" />Je suis à mon chéri, et mon chéri est à moi,</para>
+  <para style="q1">lui qui paît parmi les lis<note caller="+" style="f"><char style="fr" closed="false">6.3 </char><char style="fq" closed="false">Je suis à lui, il est à moi </char><char style="ft" closed="false">2.16+. – </char><char style="fq" closed="false">lis : </char><char style="ft" closed="false">voir 2.1 et la note.</char></note>.</para>
+  <para style="s1">Tu es belle, ma compagne(Lui)</para>
+  <para style="q1">
+    <verse number="4" style="v" />Tu es belle, ma compagne, comme Tirça<note caller="+" style="f"><char style="fr" closed="false">6.4 </char><char style="ft" closed="false">v. 4-10 : éloge de la bien-aimée 4.1-14+. – </char><char style="fq" closed="false">Tu es belle </char><char style="ft" closed="false">1.15+. – </char><char style="fq" closed="false">Tirça </char><char style="ft" closed="false">(Plaisance) fut la capitale du royaume d'Israël avant Samarie (voir 1 R 15.33 ; 16.8,23).</char></note>,</para>
+  <para style="q1">jolie comme Jérusalem,</para>
+  <para style="q1">terrible comme ces choses insignes.</para>
+  <para style="q1">
+    <verse number="5" style="v" />Détourne de moi tes yeux,</para>
+  <para style="q1">car eux m'ensorcellent.</para>
+  <para style="q1">Ta chevelure est comme un troupeau de chèvres</para>
+  <para style="q1">dégringolant du Galaad<note caller="+" style="f"><char style="fr" closed="false">6.5 </char><char style="fq" closed="false">tes yeux m'ensorcellent </char><char style="ft" closed="false">4.9. – </char><char style="fq" closed="false">Ta chevelure… </char><char style="ft" closed="false">4.1 et la note.</char></note>.</para>
+  <para style="q1">
+    <verse number="6" style="v" />Tes dents<note caller="+" style="f"><char style="fr" closed="false">6.6 </char><char style="fq" closed="false">tes dents </char><char style="ft" closed="false">4.2.</char></note> sont comme un troupeau de brebis</para>
+  <para style="q1">qui remontent du lavoir :</para>
+  <para style="q1">toutes ont des jumeaux,</para>
+  <para style="q1">on ne les arrache à aucune.</para>
+  <para style="q1">
+    <verse number="7" style="v" />Comme la tranche d'une grenade<note caller="+" style="f"><char style="fr" closed="false">6.7 </char><char style="fq" closed="false">Comme la tranche d'une grenade </char><char style="ft" closed="false">4.3+.</char></note> est ta tempe</para>
+  <para style="q1">à travers ton voile.</para>
+  <para style="q1">
+    <verse number="8" style="v" />Soixante sont les reines,</para>
+  <para style="q1">et quatre-vingts les maîtresses,</para>
+  <para style="q1">et les adolescentes sans nombre<note caller="+" style="f"><char style="fr" closed="false">6.8 </char><char style="ft" closed="false">Le poème évoque ici le harem de Salomon (1 R 11.3), pour faire ressortir par contraste les qualités exceptionnelles de la jeune fille (v. 9). – </char><char style="fq" closed="false">adolescentes </char><char style="ft" closed="false">(filles) 1.3+ ; voir Est 2.12-17.</char></note>.</para>
+  <para style="q1">
+    <verse number="9" style="v" />Elle est unique, ma colombe, ma parfaite.</para>
+  <para style="q1">Elle est unique pour sa mère,</para>
+  <para style="q1">brillante pour celle qui l'enfanta.</para>
+  <para style="q1">Les filles la voient : elles la disent heureuse<note caller="+" style="f"><char style="fr" closed="false">6.9 </char><char style="fq" closed="false">colombe </char><char style="ft" closed="false">1.15+. – </char><char style="fq" closed="false">unique pour sa mère </char><char style="ft" closed="false">Pr 4.3. – </char><char style="fq" closed="false">brillante : </char><char style="ft" closed="false">autres traductions </char><char style="fq" closed="false">pure, resplendissante </char><char style="ft" closed="false">ou </char><char style="fq" closed="false">préférée. – Les filles </char><char style="ft" closed="false">1.3+. – </char><char style="fq" closed="false">la disent heureuse </char><char style="ft" closed="false">Pr 31.28 ; voir Ps 1.1+ ; Mt 5.3+.</char></note> ;</para>
+  <para style="q1">les reines et les maîtresses : elles font son éloge :</para>
+  <para style="sp">(Amoureuses)</para>
+  <para style="q1">
+    <verse number="10" style="v" />« Qui est Celle qui toise comme l'Aurore,</para>
+  <para style="q1">belle comme la Lune,</para>
+  <para style="q1">brillante comme le Soleil,</para>
+  <para style="q1">terrible comme ces choses insignes<note caller="+" style="f"><char style="fr" closed="false">6.10 </char><char style="ft" closed="false">Le v. 10 cite les louanges que les femmes du harem royal adressent à la jeune fille. – </char><char style="fq" closed="false">Qui est ?… </char><char style="ft" closed="false">3.6+. – </char><char style="fq" closed="false">l'Aurore </char><char style="ft" closed="false">Es 14.12. – </char><char style="fq" closed="false">comme le soleil </char><char style="ft" closed="false"><char style="bk">Si</char> 26.16. – </char><char style="fq" closed="false">belle… terrible </char><char style="ft" closed="false">v. 4.</char></note> ? »</para>
+  <para style="q1">
+    <verse number="11" style="v" />Au jardin des noyers je descends</para>
+  <para style="q1">pour admirer les pousses de la gorge,</para>
+  <para style="q1">pour voir si le cep bourgeonne,</para>
+  <para style="q1">si les grenadiers fleurissent<note caller="+" style="f"><char style="fr" closed="false">6.11 </char><char style="fq" closed="false">de la gorge </char><char style="ft" closed="false">ou </char><char style="fq" closed="false">de la vallée. – pour voir si le cep… </char><char style="ft" closed="false">7.13.</char></note>.</para>
+  <para style="sp">(Elle)</para>
+  <para style="q1">
+    <verse number="12" style="v" />Je ne reconnais pas mon propre moi :</para>
+  <para style="q1">il me rend timide,</para>
+  <para style="q1">bien que fille de nobles gens<note caller="+" style="f"><char style="fr" closed="false">6.12 </char><char style="fq" closed="false">il me rend… nobles gens : </char><char style="ft" closed="false">traduction conjecturale ; hébreu obscur.</char></note> !</para>
+  <chapter number="7" style="c" pubnumber="7 (Chœur)" />
+  <para style="q1">
+    <verse number="1" style="v" />« Reviens, reviens, Sulamite !</para>
+  <para style="q1">Reviens, reviens, que nous te contemplions ! »</para>
+  <para style="sp">(Lui)</para>
+  <para style="q1">– Comment contemplerez-vous la Sulamite ?</para>
+  <para style="q1">– Comme en une contredanse<note caller="+" style="f"><char style="fr" closed="false">7.1 </char><char style="fq" closed="false">Sulamite : </char><char style="ft" closed="false">nom propre qui pourrait être considéré comme le féminin de </char><char style="fq" closed="false">Salomon. </char><char style="ft" closed="false">Les deux noms sont construits sur la racine qui désigne </char><char style="fq" closed="false">la paix </char><char style="ft" closed="false">(voir 8.10). Ceux qui interpellent ainsi la jeune fille la considèrent comme une reine, inséparable de son « roi Salomon » (voir la note sur 1.4). – </char><char style="fq" closed="false">contredanse </char><char style="ft" closed="false">ou </char><char style="fq" closed="false">danse à deux </char><char style="ft" closed="false">(deux partenaires ou deux groupes).</char></note> !</para>
+  <para style="q1">
+    <verse number="2" style="v" />Comme sont beaux tes pieds dans les sandales,</para>
+  <para style="q1">fille de noble<note caller="+" style="f"><char style="fr" closed="false">7.2 </char><char style="ft" closed="false">v. 2-10 : éloge de la bien-aimée 4.1-14+.</char></note> !</para>
+  <para style="q1">Les contours de tes hanches sont comme des anneaux,</para>
+  <para style="q1">œuvre de mains d'artiste.</para>
+  <para style="q1">
+    <verse number="3" style="v" />Ton nombril<note caller="+" style="f"><char style="fr" closed="false">7.3 </char><char style="ft" closed="false">Le sens exact du terme hébreu ainsi traduit d'après Ez 16.4 est incertain. Peut-être est-ce un euphémisme pour désigner le sexe féminin.</char></note> est une coupe en demi-lune :</para>
+  <para style="q1">que le mélange ne manque pas !</para>
+  <para style="q1">Ton abdomen est un monceau de blé bordé de lis.</para>
+  <para style="q1">
+    <verse number="4" style="v" />Tes deux seins sont comme deux faons<note caller="+" style="f"><char style="fr" closed="false">7.4 </char><char style="ft" closed="false">4.5+.</char></note>,</para>
+  <para style="q1">jumeaux d'une gazelle.</para>
+  <para style="q1">
+    <verse number="5" style="v" />Ton cou est comme la Tour-d'Ivoire.</para>
+  <para style="q1">Tes yeux sont des étangs à Heshbôn,</para>
+  <para style="q1">près de la porte Populeuse.</para>
+  <para style="q1">Ton nez est comme la Tour-du-Liban<note caller="+" style="f"><char style="fr" closed="false">7.5 </char><char style="fq" closed="false">cou </char><char style="ft" closed="false">1.10+. – </char><char style="fq" closed="false">tour </char><char style="ft" closed="false">4.4. – </char><char style="fq" closed="false">Heshbôn : </char><char style="ft" closed="false">ville de Transjordanie ; les archéologues y ont découvert d'anciens réservoirs d'eau Nb 21.27 ; Es 15.4. – </char><char style="fq" closed="false">la Tour-du-Liban : </char><char style="ft" closed="false">peut-être désignation poétique du mont Hermon ; Ct 4.8.</char></note>,</para>
+  <para style="q1">sentinelle face à Damas.</para>
+  <para style="q1">
+    <verse number="6" style="v" />Ta tête sur ton corps est comme le Carmel,</para>
+  <para style="q1">et ses mèches sont comme la pourpre :</para>
+  <para style="q1">un roi est enchaîné par ces flots<note caller="+" style="f"><char style="fr" closed="false">7.6 </char><char style="fq" closed="false">le Carmel </char><char style="ft" closed="false">Es 33.9 et la note ; 35.2. – </char><char style="fq" closed="false">pourpre : </char><char style="ft" closed="false">cette couleur (rouge ou violette) très foncée décrit les reflets de la chevelure. – </char><char style="fq" closed="false">un roi : </char><char style="ft" closed="false">voir Ct 1.4+ et la note. – </char><char style="fq" closed="false">ces flots : </char><char style="ft" closed="false">image pour les longs cheveux ondulés de la jeune fille.</char></note>.</para>
+  <para style="q1">
+    <verse number="7" style="v" />Que tu es belle, et que tu es gracieuse,</para>
+  <para style="q1">amour<note caller="+" style="f"><char style="fr" closed="false">7.7 </char><char style="fq" closed="false">belle </char><char style="ft" closed="false">1.15+. – </char><char style="fq" closed="false">amour </char><char style="ft" closed="false">2.7.</char></note>, fille délicieuse !</para>
+  <para style="q1">
+    <verse number="8" style="v" />Ta stature que voici est comparable à un palmier<note caller="+" style="f"><char style="fr" closed="false">7.8 </char><char style="fq" closed="false">palmier </char><char style="ft" closed="false">(Tamar) Gn 38.6 ; 2 S 13.1 ; 14.27.</char></note> ;</para>
+  <para style="q1">et tes seins, à des grappes.</para>
+  <para style="q1">
+    <verse number="9" style="v" />Je dis : « Il faut que je monte au palmier,</para>
+  <para style="q1">que je saisisse ses régimes » :</para>
+  <para style="q1">Que tes seins soient donc comme les grappes d'un cep,</para>
+  <para style="q1">et la senteur de ta narine comme des pommes<note caller="+" style="f"><char style="fr" closed="false">7.9 </char><char style="fq" closed="false">pommes </char><char style="ft" closed="false">2.5.</char></note>,</para>
+  <para style="q1">
+    <verse number="10" style="v" />et ton palais comme un vin<note caller="+" style="f"><char style="fr" closed="false">7.10 </char><char style="fq" closed="false">palais </char><char style="ft" closed="false">2.3. – </char><char style="fq" closed="false">vin </char><char style="ft" closed="false">1.2+.</char></note> de marque…</para>
+  <para style="sp">(Elle)</para>
+  <para style="q1">… allant tout droit à mon chéri,</para>
+  <para style="q1">coulant aux lèvres des dormeurs.</para>
+  <para style="s1">Je suis à mon chéri(Elle)</para>
+  <para style="q1">
+    <verse number="11" style="v" />Je suis à mon chéri<note caller="+" style="f"><char style="fr" closed="false">7.11 </char><char style="fq" closed="false">Je suis à lui… </char><char style="ft" closed="false">2.16+.</char></note>, et vers moi est son élan.</para>
+  <para style="q1">
+    <verse number="12" style="v" />Viens<note caller="+" style="f"><char style="fr" closed="false">7.12 </char><char style="fq" closed="false">Viens… </char><char style="ft" closed="false">2.10,13 ; voir Ap 22.17.</char></note>, mon chéri ; sortons à la campagne ;</para>
+  <para style="q1">passons la nuit au village ;</para>
+  <para style="q1">
+    <verse number="13" style="v" />de bonne heure, aux vignes,</para>
+  <para style="q1">allons voir si le cep bourgeonne,</para>
+  <para style="q1">si le bouton s'ouvre,</para>
+  <para style="q1">si les grenadiers fleurissent.</para>
+  <para style="q1">Là je te donnerai mes caresses<note caller="+" style="f"><char style="fr" closed="false">7.13 </char><char style="fq" closed="false">voir si le cep… </char><char style="ft" closed="false">6.11. – </char><char style="fq" closed="false">caresses </char><char style="ft" closed="false">1.2.</char></note>.</para>
+  <para style="q1">
+    <verse number="14" style="v" />Les pommes d'amour donnent leur senteur ;</para>
+  <para style="q1">et à nos ouvertures sont toutes sortes de fruits de choix :</para>
+  <para style="q1">nouveaux, anciens aussi<note caller="+" style="f"><char style="fr" closed="false">7.14 </char><char style="fq" closed="false">pommes d'amour </char><char style="ft" closed="false">ou </char><char style="fq" closed="false">mandragores : </char><char style="ft" closed="false">ces fruits étaient considérés comme favorisant la fécondité (Gn 30.14-16). – </char><char style="fq" closed="false">à nos ouvertures </char><char style="ft" closed="false">ou </char><char style="fq" closed="false">à nos portes. – fruits de choix </char><char style="ft" closed="false">Ct 4.13,16. – </char><char style="fq" closed="false">nouveaux, anciens… </char><char style="ft" closed="false">Lv 26.10.</char></note>, mon chéri, je les réserve pour toi.</para>
+  <chapter number="8" style="c" />
+  <para style="q1">
+    <verse number="1" style="v" />Que n'es-tu vraiment mon frère,</para>
+  <para style="q1">nourri aux seins de ma mère !</para>
+  <para style="q1">Je te rencontrerais dehors, je t'embrasserais<note caller="+" style="f"><char style="fr" closed="false">8.1 </char><char style="fq" closed="false">mon frère </char><char style="ft" closed="false">voir 4.9. – Baisers 1.2 en public Pr 7.13.</char></note> :</para>
+  <para style="q1">cependant les gens ne me mépriseraient pas.</para>
+  <para style="q1">
+    <verse number="2" style="v" />Je te conduirais ; je te ferais entrer chez ma mère.</para>
+  <para style="q1">Tu m'initierais ;</para>
+  <para style="q1">je te ferais boire du vin aromatisé,</para>
+  <para style="q1">de mon jus de grenades<note caller="+" style="f"><char style="fr" closed="false">8.2 </char><char style="fq" closed="false">entrer chez ma mère </char><char style="ft" closed="false">3.4. – </char><char style="fq" closed="false">vin </char><char style="ft" closed="false">1.2+. – </char><char style="fq" closed="false">grenades </char><char style="ft" closed="false">4.13.</char></note>.</para>
+  <para style="q1">
+    <verse number="3" style="v" />Sa gauche sous ma tête,</para>
+  <para style="q1">et sa droite m'enlace !<note caller="+" style="f"><char style="fr" closed="false">8.3 </char><char style="fq" closed="false">sa gauche… sa droite… </char><char style="ft" closed="false">2.6.</char></note></para>
+  <para style="sp">(Lui ?)</para>
+  <para style="q1">
+    <verse number="4" style="v" />« Je vous en conjure, filles de Jérusalem,</para>
+  <para style="q1">n'éveillez pas, ne réveillez pas mon Amour</para>
+  <para style="q1">avant son bon vouloir. »</para>
+  <para style="s1">Fort comme la Mort est Amour(Chœur)</para>
+  <para style="q1">
+    <verse number="5" style="v" />« Qui est-ce qui monte du désert,</para>
+  <para style="q1">s'appuyant sur son chéri ? »</para>
+  <para style="sp">(Elle)</para>
+  <para style="q1">– Sous le pommier<note caller="+" style="f"><char style="fr" closed="false">8.5 </char><char style="fq" closed="false">Qui est… ? </char><char style="ft" closed="false">3.6+. – </char><char style="fq" closed="false">pommier </char><char style="ft" closed="false">2.3.</char></note> je te réveille :</para>
+  <para style="q1">là où fut enceinte de toi ta mère,</para>
+  <para style="q1">là où fut enceinte celle qui t'enfanta,</para>
+  <para style="q1">
+    <verse number="6" style="v" />mets-moi comme un sceau sur ton cœur,</para>
+  <para style="q1">comme un sceau sur ton bras.</para>
+  <para style="q1">Car :</para>
+  <para style="q1">Fort comme la Mort est Amour ;</para>
+  <para style="q1">inflexible comme Enfer est Jalousie ;</para>
+  <para style="q1">ses flammes sont des flammes ardentes :</para>
+  <para style="q1">un coup de foudre sacré<note caller="+" style="f"><char style="fr" closed="false">8.6 </char><char style="ft" closed="false">Le </char><char style="fq" closed="false">sceau </char><char style="ft" closed="false">(voir la note sur Ex 28.11) pouvait se porter en pendentif autour du cou. La fiancée désire à la fois représenter pour son fiancé ce qu'il aura toujours de plus personnel et en quelque sorte apposer sa marque sur lui ; Gn 38.18 ; 1 R 21.8 ; Jr 22.24 ; Ag 2.23. – </char><char style="fq" closed="false">fort comme la mort </char><char style="ft" closed="false">Es 28.15 ; Os 13.14 ; Ha 2.5. – </char><char style="fq" closed="false">un coup de foudre sacré </char><char style="ft" closed="false">ou </char><char style="fq" closed="false">une flamme du Seigneur </char><char style="ft" closed="false">Nb 11.1,3 ; 1 R 18.38 ; 2 R 1.12 ; Jb 1.16.</char></note>.</para>
+  <para style="q1">
+    <verse number="7" style="v" />Les Grandes Eaux ne pourraient éteindre l'Amour</para>
+  <para style="q1">et les Fleuves ne le submergeraient pas.</para>
+  <para style="q1">Si quelqu'un donnait tout l'avoir de sa maison<note caller="+" style="f"><char style="fr" closed="false">8.7 </char><char style="fq" closed="false">Les Grandes Eaux </char><char style="ft" closed="false">ou </char><char style="fq" closed="false">toute l'eau de l'univers</char><char style="ft" closed="false"> ; Ez 26.19 ; Ha 3.15 ; Ps 18.17. – </char><char style="fq" closed="false">les Fleuves </char><char style="ft" closed="false">Es 43.2 ; Ha 3.8. – </char><char style="fq" closed="false">tout l'avoir de sa maison </char><char style="ft" closed="false">Gn 34.12 ; Pr 6.31 ; 31.10.</char></note> en échange de l'amour,</para>
+  <para style="q1">à coup sûr on le mépriserait.</para>
+  <para style="sp">(Frères)</para>
+  <para style="q1">
+    <verse number="8" style="v" />« Nous avons une sœur. Elle est petite :</para>
+  <para style="q1">elle n'a pas de seins.</para>
+  <para style="q1">Que ferons-nous de notre sœur</para>
+  <para style="q1">au jour où l'on parlera d'elle<note caller="+" style="f"><char style="fr" closed="false">8.8 </char><char style="ft" closed="false">Le rôle des frères était de défendre leur sœur (comparer 1.6) et de veiller à son mariage (voir Gn 24.50 ; 34 ; 2 S 13). – Les v. 8-9 évoquent rétrospectivement leurs intentions concernant la jeune fille du poème.</char></note> ?</para>
+  <para style="q1">
+    <verse number="9" style="v" />Si elle était un rempart,</para>
+  <para style="q1">nous bâtirions sur elle des créneaux d'argent.</para>
+  <para style="q1">Si elle était une porte,</para>
+  <para style="q1">nous la bloquerions d'une planche de cèdre. »</para>
+  <para style="sp">(Elle)</para>
+  <para style="q1">
+    <verse number="10" style="v" />Je suis un rempart</para>
+  <para style="q1">et mes seins sont vraiment des tours ?</para>
+  <para style="q1">Alors j'existe à ses yeux</para>
+  <para style="q1">comme celle qui rencontre la paix<note caller="+" style="f"><char style="fr" closed="false">8.10 </char><char style="fq" closed="false">qui rencontre la paix </char><char style="ft" closed="false">ou </char><char style="fq" closed="false">qui procure la paix : </char><char style="ft" closed="false">le terme ainsi traduit évoque par assonance les noms de </char><char style="fq" closed="false">Salomon </char><char style="ft" closed="false">(voir la note sur 1.4) et de la </char><char style="fq" closed="false">Sulamite </char><char style="ft" closed="false">(voir 7.1 et la note). – </char><char style="fq" closed="false">recherche </char><char style="ft" closed="false">et </char><char style="fq" closed="false">rencontre </char><char style="ft" closed="false">voir 3.1-4 ; 5.6-8.</char></note>.</para>
+  <para style="sp">(Lui)</para>
+  <para style="q1">
+    <verse number="11" style="v" />Salomon a une vigne à Baal-Hamôn.</para>
+  <para style="q1">Il donne la vigne aux surveillants.</para>
+  <para style="q1">Chacun fera rentrer pour son fruit mille pièces d'argent<note caller="+" style="f"><char style="fr" closed="false">8.11 </char><char style="fq" closed="false">Salomon </char><char style="ft" closed="false">3.7+. – </char><char style="fq" closed="false">Baal-Hamôn : </char><char style="ft" closed="false">lieu non identifié, dont le nom est sans doute symbolique : « possesseur de foule » ou « possesseur de richesses » ; c'est peut-être une allusion au harem de Salomon (voir la note sur 6.8). – </char><char style="fq" closed="false">vigne à surveiller </char><char style="ft" closed="false">1.6. – </char><char style="fq" closed="false">mille pièces d'argent </char><char style="ft" closed="false">Es 7.23.</char></note>.</para>
+  <para style="q1">
+    <verse number="12" style="v" />Ma vigne à moi est à ma disposition.</para>
+  <para style="q1">Les mille sont à toi, Salomon,</para>
+  <para style="q1">mais deux cents à ceux qui en surveillent le fruit<note caller="+" style="f"><char style="fr" closed="false">8.12 </char><char style="ft" closed="false">Sur la </char><char style="fq" closed="false">vigne </char><char style="ft" closed="false">comme symbole de la jeune fille voir 1.6 et la note. Par contraste avec le jeune homme du poème, </char><char style="fq" closed="false">Salomon </char><char style="ft" closed="false">ne peut profiter seul du fruit de sa « vigne ».</char></note>.</para>
+  <para style="q1">
+    <verse number="13" style="v" />Toi qui es assise au milieu des jardins<note caller="+" style="f"><char style="fr" closed="false">8.13 </char><char style="fq" closed="false">jardins </char><char style="ft" closed="false">4.12+.</char></note>,</para>
+  <para style="q1">des camarades sont attentifs à ta voix ;</para>
+  <para style="q1">fais-moi entendre :</para>
+  <para style="sp">(Elle)</para>
+  <para style="q1">
+    <verse number="14" style="v" />« Echappe, mon chéri ! Et sois comparable, toi,</para>
+  <para style="q1">à une gazelle ou à un faon de biche,</para>
+  <para style="q1">sur des monts embaumés<note caller="+" style="f"><char style="fr" closed="false">8.14 </char><char style="ft" closed="false">Comparer 2.17 et la note.</char></note>. »</para>
+  <para style="b" />
+</usx>

@@ -1,0 +1,542 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<usx version="2.6">
+  <book code="1JN" style="id">TOB63.SBF 02.03.2010 ES ©Société biblique française et Editions du Cerf</book>
+  <para style="h">1 JEAN</para>
+  <para style="toc1">Première épître de Jean</para>
+  <para style="toc2">1 JEAN</para>
+  <para style="toc3">1 Jn</para>
+  <para style="mt2">Première épître de Jean</para>
+  <para style="mt1">1 JEAN</para>
+  <para style="imt">INTRODUCTION</para>
+  <para style="is2">Circonstances de la composition</para>
+  <para style="ip">Les <char style="bk">Epîtres johanniques</char>, au moins les deux premières, ne contiennent pratiquement pas de détails sur les circonstances de leur composition et la personne de leur auteur.</para>
+  <para style="ip">Du ton polémique de plusieurs passages on peut déduire que les communautés auxquelles les épîtres sont adressées traversaient une crise grave. Elles subissaient l'influence de prédicateurs dont l'enseignement s'écartait dangereusement de la révélation chrétienne. Le point le plus sensible de l'hérésie propagée par ceux-ci concernait le Christ : ils n'identifiaient plus Jésus et le Messie (1 Jn 2.22) et rejetaient l'Incarnation (1 Jn 4.2 ; 2 Jn 7). Sur le plan moral, ils ne se souciaient pas du commandement de l'amour fraternel (1 Jn 2.4,9), tout en prétendant être dans la communion de Dieu et n'avoir pas besoin de confesser leurs fautes (1.8,10).</para>
+  <para style="ip">Ce type de spiritualité, où l'humanité de Jésus n'est pas prise plus au sérieux que l'amour fraternel, caractérisera plus tard les grands systèmes gnostiques du II<char style="ord">e</char> siècle.</para>
+  <para style="ip">Tout en appliquant à ces docteurs les épithètes les plus graves, notamment celles de prophètes de mensonge (1 Jn 4.1) et d'antichrists (1 Jn 2.18,22 ; 4.3 ; 2 Jn 7), l'auteur de nos épîtres n'entre pas en polémique directement avec eux. Son but est d'aider les chrétiens à résister victorieusement à leur séduction. Pour cela, il les assure que ce sont eux, dans la fidélité à l'enseignement apostolique, qui possèdent vraiment la communion avec Dieu (1 Jn 1.3), et il va leur indiquer les critères permettant de distinguer les croyants véritables. Cela explique la fréquence d'une formule qui revient comme un refrain : « à ceci nous reconnaissons que… (que nous sommes en lui, par exemple) ».</para>
+  <para style="is2">L'auteur</para>
+  <para style="ip">Bien que l'unité d'auteur ne fasse pas aujourd'hui l'objet d'un consensus, il y a des raisons de penser que les trois épîtres pourraient être de la même main : même situation sous-jacente, se reflétant au moins dans les deux premières, même vocabulaire, mêmes formules de prédilection.</para>
+  <para style="ip">Mais l'identification de cet auteur pose un problème. Les seules indications contenues dans le texte sont celles-ci : le titre d'Ancien, au début des deux petites épîtres, et la prétention, affirmée par l'auteur de la grande épître, d'appartenir au groupe des témoins oculaires de la vie de Jésus (1 Jn 1.1-3 ; 4.14).</para>
+  <para style="ip">Le titre d'Ancien doit se comprendre, selon l'usage des Eglises d'Asie (dont témoignent Papias et Irénée), comme désignant un homme qui avait connu soit Jésus lui-même, soit ses disciples ; il peut s'appliquer à un apôtre parvenu à un grand âge.</para>
+  <para style="ip">L'opinion traditionnelle, s'appuyant aussi sur la ressemblance de nos épîtres avec le quatrième évangile, attribue celles-ci également à l'apôtre Jean.</para>
+  <para style="is2">La première épître</para>
+  <para style="ip">Ce texte, qui s'ouvre sans mention d'auteur ni de destinataire et qui ne compte aucune salutation finale (comparer avec les épîtres de Paul), n'est pas une véritable lettre. Cependant l'auteur montre qu'il connaît ses lecteurs : dans la situation critique où ils se trouvent, il les exhorte à la fidélité en les appelant ses « petits enfants ».</para>
+  <para style="ip">L'épître semble donc avoir été adressée à un groupe d'Eglises, sans doute situées dans la province d'Asie, comme le rapporte l'ancienne tradition, afin de les soutenir et de les éclairer dans le combat pour la foi.</para>
+  <para style="is2">Les deux petites épîtres</para>
+  <para style="ip">A la différence de <char style="bk">1 Jean</char>, ces deux petits écrits ont toutes les caractéristiques de véritables lettres.</para>
+  <para style="ip">La deuxième épître est adressée « à la Dame élue et à ses enfants », titre donné par l'Ancien à une des Eglises d'Asie qui dépendent de lui, non identifiée par ailleurs. Les dangers menaçant cette communauté et les instructions que lui donne l'auteur sont ceux-là mêmes sur lesquels s'étend plus longuement la grande épître.</para>
+  <para style="ip">La troisième épître, qui présente d'étonnantes ressemblances stylistiques avec la deuxième, a cependant un caractère beaucoup plus personnel. Elle est adressée à un certain Gaïus, que l'Ancien félicite pour sa fidélité et encourage à persévérer. Il s'agit d'une entreprise missionnaire accomplie par des prédicateurs itinérants envoyés par l'Ancien. Gaïus continue à leur fournir son appui, tandis que Diotréphès, sans doute le chef de la Communauté, refuse les messages de l'Ancien et se soustrait à son autorité.</para>
+  <para style="ip">Apparemment, ce billet a donc un caractère pastoral et ne contient aucune allusion aux doctrines hérétiques dont parlent les deux autres épîtres. Cependant, l'opposition farouche de Diotréphès à l'œuvre d'évangélisation dirigée par l'Ancien pourrait s'expliquer par ses sympathies pour la doctrine des faux prophètes.</para>
+  <para style="is2">Théologie de la première épître</para>
+  <para style="ip">L'auteur tient à communiquer à ses lecteurs l'assurance dont ils ont besoin : ce sont eux, et non les prophètes de mensonge, qui possèdent la vie divine. Il en fait l'objet de son verset de conclusion : « Je vous ai écrit tout cela <char style="it">pour que vous sachiez</char> que vous avez la vie éternelle, vous qui avez la foi au nom du Fils de Dieu » (5.13). Puis, dans l'épilogue qui s'y ajoute, on notera l'accumulation des sentences où s'exprime la certitude de la foi.</para>
+  <para style="ip">Autre trait dominant de cet écrit : la fréquence du thème de la communion avec Dieu. Il apparaît d'entrée dans les versets du prologue où l'auteur célèbre la joie de « notre communion avec le Père et avec son Fils Jésus Christ » (1.3). D'autres formules prennent ensuite le relais pour décrire la même réalité, comme par exemple celle qui affirme du chrétien qu’« il demeure en Dieu et Dieu demeure en lui » (1 Jn 4.16).</para>
+  <para style="ip">Mais cette communion divine diffère doublement de celle des faux prophètes. Avec une remarquable insistance, Jean souligne qu'elle ne peut s'atteindre que par et dans la médiation de Jésus, lui que les premiers témoins ont entendu et contemplé. De plus, l'épître répète inlassablement qu'il n'y a pas d'authentique communion avec le Père sans la pratique de l'amour à l'égard des frères.</para>
+  <para style="ip">Connaître Dieu : la <char style="it">première épître johannique</char> nous propose pour cela trois énoncés esquissant trois aspects sous lesquels le Dieu biblique se fait connaître.</para>
+  <para style="ip">
+    <char style="it">Dieu est lumière</char> (1.5). Tel est le grand message dévoilé dès le début de l'épître. Ici comme dans le judaïsme, le mot lumière signifie révélation. En Jésus Christ nous est révélée la vie éternelle, annonce déjà le prologue, et nous participons à cette vie éternelle en aimant.</para>
+  <para style="ip">
+    <char style="it">Dieu est juste</char> (1.9 ; 2.29). Cette perfection de Dieu, appliquée aussi au Christ (2.1 ; 3.7), désigne essentiellement l'intervention par laquelle Dieu sauve l'homme de son péché et lui fait pratiquer la justice, à la suite de Jésus.</para>
+  <para style="ip">Le troisième énoncé où l'auteur essaie de dire le mystère de Dieu est le plus célèbre ; il se trouve vraiment au cœur de la révélation néo-testamentaire : <char style="it">Dieu est amour</char> (4.8,16). Pour saint Jean, l'amour est à la fois don de soi et communion. Il se révèle et il se communique. Le chrétien participe donc par sa foi à la grande révélation de l'amour par le Père, qui a été faite en Jésus Christ.</para>
+  <para style="ip">Jean n'oublie pourtant pas que les docteurs de mensonge, eux aussi, prétendent « connaître Dieu ». C'est pourquoi il énumère pour ses lecteurs les critères de la vie chrétienne authentique. Ces critères sont de deux sortes : ceux qui relèvent de l'ordre moral, où est particulièrement soulignée la nécessité de l'amour fraternel, et les critères doctrinaux, se résumant dans l'enseignement de l'Eglise depuis l'origine : la foi en Jésus Christ, le Fils de Dieu « venu dans la chair » (4.2).</para>
+  <para style="ip">Quels sont les fruits de cette authentique communion avec Dieu et avec les frères ? L'action de la parole de Dieu et l'intensité de la foi rendent le chrétien victorieux du péché et du monde (2.13-14 ; 4.4 ; 5.4-5) ; quiconque vit pleinement sa vie d'enfant de Dieu n'est même plus, pour ainsi dire, capable de pécher (3.6,9 ; 5.18). Son entière soumission à la volonté de Dieu bannit chez lui toute crainte (4.18) et lui donne une pleine assurance devant le souverain Juge (2.28 ; 3.21 ; 4.17), l'assurance aussi d'être exaucé dans sa prière (3.21-22 ; 5.14-15). C'est pourquoi cette communion des croyants devient pour eux source de paix (2 Jn 3) et elle suscite en eux la joie chrétienne (1 Jn 1.3).</para>
+  <para style="is2">Conclusion</para>
+  <para style="ip">Les <char style="bk">Epîtres johanniques</char> présentent une synthèse de la vie chrétienne authentique. Vie de communion avec Dieu, elle réalise en perfection l'Alliance Nouvelle entre Dieu et les hommes, annoncée par les prophètes pour les temps du salut. Vie qui prend corps aussi dans la communion fraternelle, et qui est rendue possible dans la vie du croyant par la vérité de Dieu intériorisée en lui sous l'action de l'Esprit.</para>
+  <para style="ip">Sans abandonner la perspective ultime du salut où nous verrons le Fils de Dieu tel qu'il est, Jean perçoit déjà dans l'existence chrétienne ici-bas la joie des derniers temps qui approche de sa plénitude.</para>
+  <para style="ip">Mais cette dernière heure, où nous sommes introduits par la venue du Christ, exige le discernement des esprits.</para>
+  <para style="ip">Autant par cet appel à la clairvoyance que par le tableau qu'elles offrent de la vie chrétienne accomplie, les <char style="bk">Epîtres johanniques</char> sont précieuses pour éclairer et affermir la fidélité de tous ceux qui, aujourd'hui encore, font profession de croire au Fils de Dieu venu parmi nous.</para>
+  <para style="mt1">Première épître de Jean</para>
+  <chapter number="1" style="c" />
+  <para style="s1">Prologue</para>
+  <para style="q1">
+    <verse number="1" style="v" />Ce qui était dès le commencement,</para>
+  <para style="q1">ce que nous avons entendu,</para>
+  <para style="q1">ce que nous avons vu de nos yeux,</para>
+  <para style="q1">ce que nous avons contemplé</para>
+  <para style="q1">et que nos mains ont touché</para>
+  <para style="q1">du Verbe de vie<note caller="+" style="f"><char style="fr" closed="false">1.1 </char><char style="ft" closed="false">Ou </char><char style="fq" closed="false">au sujet de la Parole de vie. – commencement </char><char style="ft" closed="false">Jn 1.1-2 ; 1 Jn 2.13-14. – Témoignage oculaire Jn 1.14 ; 20.25 ; 1 Jn 4.14.</char></note></para>
+  <para style="q1">
+    <verse number="2" style="v" />– car la vie s'est manifestée,</para>
+  <para style="q1">et nous avons vu</para>
+  <para style="q1">et nous rendons témoignage</para>
+  <para style="q1">et nous vous annonçons la vie éternelle,</para>
+  <para style="q1">qui était tournée vers le Père<note caller="+" style="f"><char style="fr" closed="false">1.2 </char><char style="fq" closed="false">la vie </char><char style="ft" closed="false">Jn 1.4 ; 11.25-26 ; 1 Jn 4.9 </char><char style="fq" closed="false">éternelle </char><char style="ft" closed="false">Jn 3.16 ; 1 Jn 2.25 ; 5.11,13. – </char><char style="fq" closed="false">vers le Père </char><char style="ft" closed="false">Jn 1.1.</char></note> et s'est manifestée à nous –,</para>
+  <para style="q1">
+    <verse number="3" style="v" />ce que nous avons vu et entendu,</para>
+  <para style="q1">nous vous l'annonçons, à vous aussi,</para>
+  <para style="q1">afin que vous aussi vous soyez en communion<note caller="+" style="f"><char style="fr" closed="false">1.3 </char><char style="ft" closed="false">v. 7 ; Jn 17.20-21 ; 1 Co 1.9.</char></note> avec nous.</para>
+  <para style="q1">Et notre communion est communion avec le Père</para>
+  <para style="q1">et avec son Fils Jésus Christ.</para>
+  <para style="q1">
+    <verse number="4" style="v" />Et nous vous écrivons cela</para>
+  <para style="q1">pour que notre joie<note caller="+" style="f"><char style="fr" closed="false">1.4 </char><char style="ft" closed="false">Certains manuscrits lisent </char><char style="fq" closed="false">votre joie</char><char style="ft" closed="false"> ; Jn 15.11 ; 16.24 ; 2 Jn 12.</char></note> soit complète.</para>
+  <para style="s1">Marcher dans la lumière, libérés du péché</para>
+  <para style="q1">
+    <verse number="5" style="v" />Et voici le message que nous avons entendu de lui</para>
+  <para style="q1">et que nous vous dévoilons :</para>
+  <para style="q1">Dieu est lumière<note caller="+" style="f"><char style="fr" closed="false">1.5 </char><char style="fq" closed="false">le message </char><char style="ft" closed="false">3.11 </char><char style="fq" closed="false">dévoilé </char><char style="ft" closed="false">Es 40.21 ; 42.9, etc. ; Dn 2.2,4,7 ; 5.12,15, etc. ; Jn 4.25 ; 16.13-15. – </char><char style="fq" closed="false">lumière </char><char style="ft" closed="false">Jn 1.4,5,9 ; 8.12 ; 9.5 ; 12.46 ; 1 Tm 6.16 ; Jc 1.17.</char></note>,</para>
+  <para style="q1">et de ténèbres, il n'y a pas trace en lui.</para>
+  <para style="q1">
+    <verse number="6" style="v" />Si nous disons : « Nous sommes en communion avec lui »,</para>
+  <para style="q1">tout en marchant dans les ténèbres,</para>
+  <para style="q1">nous mentons</para>
+  <para style="q1">et nous ne faisons pas la vérité<note caller="+" style="f"><char style="fr" closed="false">1.6 </char><char style="fq" closed="false">dans les ténèbres </char><char style="ft" closed="false">Jn 8.12 ; 1 Jn 2.9. – Prétention mensongère 2.4,9. – </char><char style="fq" closed="false">la vérité </char><char style="ft" closed="false">mise en œuvre Jn 3.21.</char></note>.</para>
+  <para style="q1">
+    <verse number="7" style="v" />Mais si nous marchons dans la lumière</para>
+  <para style="q1">comme lui-même est dans la lumière,</para>
+  <para style="q1">nous sommes en communion les uns avec les autres,</para>
+  <para style="q1">et le sang de Jésus, son Fils, nous purifie de tout péché<note caller="+" style="f"><char style="fr" closed="false">1.7 </char><char style="fq" closed="false">marcher dans la lumière </char><char style="ft" closed="false">Es 2.5 ; Ep 5.8. – La mort de Jésus et la </char><char style="fq" closed="false">purification des péchés </char><char style="ft" closed="false">He 9.14 ; Ap 1.5 ; 7.14 ; voir <char style="bk">4 M</char> 17.22.</char></note>.</para>
+  <para style="q1">
+    <verse number="8" style="v" />Si nous disons : « Nous n'avons pas de péché<note caller="+" style="f"><char style="fr" closed="false">1.8 </char><char style="ft" closed="false">1 R 8.46 ; Jb 9.2 ; Pr 20.9 ; Qo 7.20 ; <char style="bk">4 Esd</char> 8.35 ; 16.54 ; Rm 3.10-20.</char></note> »,</para>
+  <para style="q1">nous nous égarons nous-mêmes</para>
+  <para style="q1">et la vérité n'est pas en nous.</para>
+  <para style="q1">
+    <verse number="9" style="v" />Si nous confessons nos péchés,</para>
+  <para style="q1">fidèle et juste comme il est,</para>
+  <para style="q1">il nous pardonnera nos péchés<note caller="+" style="f"><char style="fr" closed="false">1.9 </char><char style="fq" closed="false">confession des péchés </char><char style="ft" closed="false">Ps 32.1-5 ; Pr 28.13 ; Mt 3.6 ; Mc 1.5 ; Jc 5.16. – </char><char style="fq" closed="false">fidèle et juste </char><char style="ft" closed="false">Dt 32.4 ; 1 Jn 2.29–3.1. – </char><char style="fq" closed="false">pardon des péchés </char><char style="ft" closed="false">Rm 4.6-8.</char></note></para>
+  <para style="q1">et nous purifiera de toute iniquité.</para>
+  <para style="q1">
+    <verse number="10" style="v" />Si nous disons : « Nous ne sommes pas pécheurs »,</para>
+  <para style="q1">nous faisons de lui un menteur,</para>
+  <para style="q1">et sa parole n'est pas en nous.</para>
+  <chapter number="2" style="c" />
+  <para style="q1">
+    <verse number="1" style="v" />Mes petits enfants,</para>
+  <para style="q1">je vous écris cela pour que vous ne péchiez pas.</para>
+  <para style="q1">Mais si quelqu'un vient à pécher,</para>
+  <para style="q1">nous avons un défenseur<note caller="+" style="f"><char style="fr" closed="false">2.1 </char><char style="ft" closed="false">Jn 14.16,26 ; 15.26 ; 16.7 ; Rm 8.34 ; He 7.25 ; 9.24.</char></note> devant le Père,</para>
+  <para style="q1">Jésus Christ, qui est juste ;</para>
+  <para style="q1">
+    <verse number="2" style="v" />car il est, lui, victime d'expiation pour nos péchés ;</para>
+  <para style="q1">et pas seulement pour les nôtres,</para>
+  <para style="q1">mais encore pour ceux du monde entier<note caller="+" style="f"><char style="fr" closed="false">2.2 </char><char style="fq" closed="false">expiation </char><char style="ft" closed="false">Ex 29.36-37 ; Jn 1.29 ; Rm 3.25 ; Col 1.20 ; He 2.17 ; 1 Jn 4.10,14 ; Ap 5.9-10. – </char><char style="fq" closed="false">pour le monde entier </char><char style="ft" closed="false">Jn 4.42 ; Col 1.20 ; 1 Jn 4.14.</char></note>.</para>
+  <para style="s1">Observer le commandement divin de l'Amour</para>
+  <para style="q1">
+    <verse number="3" style="v" />Et à ceci nous savons que nous le connaissons :</para>
+  <para style="q1">si nous gardons ses commandements<note caller="+" style="f"><char style="fr" closed="false">2.3 </char><char style="fq" closed="false">connaître </char><char style="ft" closed="false">Jr 31.34 ; He 8.11 ; 1 Jn 2.13-14. – </char><char style="fq" closed="false">garder ses commandements </char><char style="ft" closed="false">3.22-24 ; 4.21 ; 5.2-3 ; 2 Jn 6.</char></note>.</para>
+  <para style="q1">
+    <verse number="4" style="v" />Celui qui dit : « Je le connais »,</para>
+  <para style="q1">mais ne garde pas ses commandements,</para>
+  <para style="q1">est un menteur,</para>
+  <para style="q1">et la vérité n'est pas en lui<note caller="+" style="f"><char style="fr" closed="false">2.4 </char><char style="ft" closed="false">Tt 1.16 ; 1 Jn 1.6 ; 4.20.</char></note>.</para>
+  <para style="q1">
+    <verse number="5" style="v" />Mais celui qui garde sa parole,</para>
+  <para style="q1">en lui, vraiment, l'amour de Dieu est accompli<note caller="+" style="f"><char style="fr" closed="false">2.5 </char><char style="fq" closed="false">garder la parole </char><char style="ft" closed="false">du Christ Jn 14.21,23 ; 1 Jn 5.3. – </char><char style="fq" closed="false">amour parfait </char><char style="ft" closed="false">4.12,17.</char></note> ;</para>
+  <para style="q1">à cela nous reconnaissons que nous sommes en lui.</para>
+  <para style="q1">
+    <verse number="6" style="v" />Celui qui prétend demeurer en lui,</para>
+  <para style="q1">il faut qu'il marche lui-même dans la voie où lui a marché<note caller="+" style="f"><char style="fr" closed="false">2.6 </char><char style="ft" closed="false">Jn 13.15,34 ; 1 Co 11.1 ; 1 P 2.21-25 ; 1 Jn 3.3,16 ; 4.17.</char></note>.</para>
+  <para style="q1">
+    <verse number="7" style="v" />Mes bien-aimés,</para>
+  <para style="q1">ce n'est pas un commandement nouveau que je vous écris,</para>
+  <para style="q1">mais un commandement ancien<note caller="+" style="f"><char style="fr" closed="false">2.7 </char><char style="ft" closed="false">2.24 ; 3.11 ; 2 Jn 5-6.</char></note>,</para>
+  <para style="q1">que vous avez depuis le commencement ;</para>
+  <para style="q1">ce commandement ancien, c'est la parole que vous avez entendue.</para>
+  <para style="q1">
+    <verse number="8" style="v" />Néanmoins, c'est un commandement nouveau que je vous écris</para>
+  <para style="q1">– cela est vrai en lui et en vous –</para>
+  <para style="q1">puisque les ténèbres passent</para>
+  <para style="q1">et que déjà luit la lumière véritable<note caller="+" style="f"><char style="fr" closed="false">2.8 </char><char style="fq" closed="false">commandement nouveau </char><char style="ft" closed="false">Jn 13.34 ; 15.12,17 ; 1 Jn 3.16. – </char><char style="fq" closed="false">ténèbres et lumière </char><char style="ft" closed="false">Pr 4.18-19 ; Jn 8.12 ; Rm 13.12. – </char><char style="fq" closed="false">lumière véritable </char><char style="ft" closed="false">Jn 1.9.</char></note>.</para>
+  <para style="q1">
+    <verse number="9" style="v" />Celui qui prétend être dans la lumière,</para>
+  <para style="q1">tout en haïssant son frère<note caller="+" style="f"><char style="fr" closed="false">2.9 </char><char style="ft" closed="false">Fausse prétention 1.6 ; 2.4. – </char><char style="fq" closed="false">ne pas aimer son frère </char><char style="ft" closed="false">2.11 ; 3.10,15 ; 4.20.</char></note>,</para>
+  <para style="q1">est toujours dans les ténèbres.</para>
+  <para style="q1">
+    <verse number="10" style="v" />Qui aime son frère</para>
+  <para style="q1">demeure dans la lumière,</para>
+  <para style="q1">et il n'y a rien en lui pour le faire trébucher<note caller="+" style="f"><char style="fr" closed="false">2.10 </char><char style="ft" closed="false">Ou </char><char style="fq" closed="false">il n'y a rien en lui qui risque de faire tomber (les autres)</char><char style="ft" closed="false">. – Occasion de </char><char style="fq" closed="false">trébucher </char><char style="ft" closed="false">Ps 119.165 ; Rm 14.13.</char></note>.</para>
+  <para style="q1">
+    <verse number="11" style="v" />Mais qui hait son frère</para>
+  <para style="q1">se trouve dans les ténèbres ;</para>
+  <para style="q1">il marche dans les ténèbres<note caller="+" style="f"><char style="fr" closed="false">2.11 </char><char style="ft" closed="false">Jn 12.35 ; 1 Jn 1.6 ; 2.9.</char></note></para>
+  <para style="q1">et il ne sait pas où il va,</para>
+  <para style="q1">parce que les ténèbres ont aveuglé ses yeux.</para>
+  <para style="s1">La foi du croyant face au monde et aux antichrists</para>
+  <para style="q1">
+    <verse number="12" style="v" />Je vous l'écris, mes petits enfants :</para>
+  <para style="q1">« Vos péchés vous sont pardonnés<note caller="+" style="f"><char style="fr" closed="false">2.12 </char><char style="ft" closed="false">Ou </char><char style="fq" closed="false">Je vous écris, mes petits enfants, parce que vos péchés vous sont pardonnés. </char><char style="ft" closed="false">De même aux v. 13-14 certains traduisent : </char><char style="fq" closed="false">Je vous écris… parce que… </char><char style="ft" closed="false">– </char><char style="fq" closed="false">péchés pardonnés </char><char style="ft" closed="false">Ps 25.11 ; Mt 9.2 ; Lc 24.47 ; Jn 20.23 ; 1 Co 6.11.</char></note> à cause de son nom à lui, Jésus. »</para>
+  <para style="q1">
+    <verse number="13" style="v" />Je vous l'écris, pères :</para>
+  <para style="q1">« Vous connaissez celui qui est dès le commencement. »</para>
+  <para style="q1">Je vous l'écris, jeunes gens :</para>
+  <para style="q1">« Vous êtes vainqueurs du Mauvais<note caller="+" style="f"><char style="fr" closed="false">2.13 </char><char style="fq" closed="false">pères et jeunes gens </char><char style="ft" closed="false">Ac 2.17-18. – </char><char style="fq" closed="false">connaître Dieu </char><char style="ft" closed="false">1 Jn 2.3+. – </char><char style="fq" closed="false">dès le commencement </char><char style="ft" closed="false">Jn 1.1-2 ; 1 Jn 1.1. – </char><char style="fq" closed="false">vainqueurs du Mauvais </char><char style="ft" closed="false">4.4 ; 5.4-5,18 ; 1 P 5.8-9 ; Ap 12.11.</char></note>. »</para>
+  <para style="q1">
+    <verse number="14" style="v" />Je vous l'ai donc écrit, mes petits enfants :</para>
+  <para style="q1">« Vous connaissez le Père. »</para>
+  <para style="q1">Je vous l'ai écrit, pères :</para>
+  <para style="q1">« Vous connaissez celui qui est dès le commencement. »</para>
+  <para style="q1">Je vous l'ai écrit, jeunes gens :</para>
+  <para style="q1">« Vous êtes forts<note caller="+" style="f"><char style="fr" closed="false">2.14 </char><char style="fq" closed="false">forts </char><char style="ft" closed="false">Ep 6.10-17.</char></note>,</para>
+  <para style="q1">et la parole de Dieu demeure en vous,</para>
+  <para style="q1">et vous êtes vainqueurs du Mauvais. »</para>
+  <para style="q1">
+    <verse number="15" style="v" />N'aimez pas le monde ni ce qui est dans le monde.</para>
+  <para style="q1">Si quelqu'un aime le monde,</para>
+  <para style="q1">l'amour du Père n'est pas en lui<note caller="+" style="f"><char style="fr" closed="false">2.15 </char><char style="fq" closed="false">le monde </char><char style="ft" closed="false">(en tant qu'il s'oppose à Dieu) Jn 12.31+ ; 17.14 ; Jc 4.4. – non pénétré de </char><char style="fq" closed="false">l'amour de Dieu </char><char style="ft" closed="false">Jn 5.42.</char></note>,</para>
+  <para style="q1">
+    <verse number="16" style="v" />puisque tout ce qui est dans le monde</para>
+  <para style="q1">– la convoitise de la chair,</para>
+  <para style="q1">la convoitise des yeux,</para>
+  <para style="q1">et la confiance orgueilleuse dans les biens<note caller="+" style="f"><char style="fr" closed="false">2.16 </char><char style="fq" closed="false">convoitise </char><char style="ft" closed="false">Ex 20.17 ; Rm 13.14 ; Ep 2.3 ; Tt 2.12 ; 1 P 2.11. – </char><char style="fq" closed="false">confiance dans les biens </char><char style="ft" closed="false">Mc 10.24 ; Lc 12.19 ; voir Jc 4.16.</char></note> –</para>
+  <para style="q1">ne provient pas du Père,</para>
+  <para style="q1">mais provient du monde.</para>
+  <para style="q1">
+    <verse number="17" style="v" />Or le monde passe, lui et sa convoitise ;</para>
+  <para style="q1">mais celui qui fait la volonté de Dieu<note caller="+" style="f"><char style="fr" closed="false">2.17 </char><char style="fq" closed="false">le monde passe </char><char style="ft" closed="false">1 Co 7.31. – </char><char style="fq" closed="false">faire la volonté de Dieu </char><char style="ft" closed="false"><char style="bk">Sg</char> 5.15 ; Mt 7.21.</char></note> demeure à jamais.</para>
+  <para style="q1">
+    <verse number="18" style="v" />Mes petits enfants,</para>
+  <para style="q1">c'est la dernière heure.</para>
+  <para style="q1">Vous avez entendu annoncer</para>
+  <para style="q1">qu'un antichrist<note caller="+" style="f"><char style="fr" closed="false">2.18 </char><char style="fq" closed="false">la dernière heure </char><char style="ft" closed="false">2 Tm 3.1 ; Jc 5.3 ; 2 P 3.3 ; Jude 18. – </char><char style="fq" closed="false">antichrist </char><char style="ft" closed="false">Mt 24.5,23-24 ; Mc 13.21-22 ; 2 Th 2.3-4 ; 1 Tm 4.1 ; 1 Jn 3.18 ; 4.1,3 ; 2 Jn 7.</char></note> vient ;</para>
+  <para style="q1">or dès maintenant beaucoup d'antichrists sont là ;</para>
+  <para style="q1">à quoi nous reconnaissons que c'est la dernière heure.</para>
+  <para style="q1">
+    <verse number="19" style="v" />C'est de chez nous qu'ils sont sortis,</para>
+  <para style="q1">mais ils n'étaient pas des nôtres.</para>
+  <para style="q1">S'ils avaient été des nôtres,</para>
+  <para style="q1">ils seraient demeurés avec nous.</para>
+  <para style="q1">Mais il fallait que fût manifesté<note caller="+" style="f"><char style="fr" closed="false">2.19 </char><char style="fq" closed="false">de chez nous </char><char style="ft" closed="false">Ac 20.30. – </char><char style="fq" closed="false">manifestation </char><char style="ft" closed="false">nécessaire Mc 4.22 ; 1 Co 11.19.</char></note></para>
+  <para style="q1">que tous, tant qu'ils sont,</para>
+  <para style="q1">ils ne sont pas des nôtres.</para>
+  <para style="q1">
+    <verse number="20" style="v" />Quant à vous, vous possédez une onction, reçue du Saint,</para>
+  <para style="q1">et tous, vous savez<note caller="+" style="f"><char style="fr" closed="false">2.20 </char><char style="fq" closed="false">onction </char><char style="ft" closed="false">v. 27 ; 2 Co 1.21. – </char><char style="fq" closed="false">le Saint </char><char style="ft" closed="false">(de Dieu) Mc 1.24 ; Lc 4.34 ; Jn 6.68 ; Ac 3.14 ; Ap 3.7. – </char><char style="fq" closed="false">vous savez </char><char style="ft" closed="false">Jr 31.34 ; 2 P 1.12 ; Jude 5 ; au lieu de </char><char style="fq" closed="false">tous, vous savez, </char><char style="ft" closed="false">certains manuscrits lisent : </char><char style="fq" closed="false">vous savez tout.</char></note>.</para>
+  <para style="q1">
+    <verse number="21" style="v" />Je ne vous ai pas écrit</para>
+  <para style="q1">que vous ne savez pas la vérité,</para>
+  <para style="q1">mais que vous la savez,</para>
+  <para style="q1">et que rien de ce qui est mensonge<note caller="+" style="f"><char style="fr" closed="false">2.21 </char><char style="fq" closed="false">savoir la vérité </char><char style="ft" closed="false">Jn 8.32 ; 2 Jn 1. – </char><char style="fq" closed="false">mensonge </char><char style="ft" closed="false">Jn 8.44.</char></note></para>
+  <para style="q1">ne provient de la vérité.</para>
+  <para style="q1">
+    <verse number="22" style="v" />Qui est le menteur,</para>
+  <para style="q1">sinon celui qui nie</para>
+  <para style="q1">que Jésus est le Christ<note caller="+" style="f"><char style="fr" closed="false">2.22 </char><char style="ft" closed="false">Mt 10.33 ; 1 Jn 4.3 ; 2 Jn 7.</char></note> ?</para>
+  <para style="q1">Voilà l'antichrist,</para>
+  <para style="q1">celui qui nie le Père et le Fils.</para>
+  <para style="q1">
+    <verse number="23" style="v" />Quiconque nie le Fils</para>
+  <para style="q1">n'a pas non plus le Père ;</para>
+  <para style="q1">qui confesse le Fils</para>
+  <para style="q1">a le Père, aussi<note caller="+" style="f"><char style="fr" closed="false">2.23 </char><char style="fq" closed="false">le Père </char><char style="ft" closed="false">et </char><char style="fq" closed="false">le Fils </char><char style="ft" closed="false">Mt 11.27 ; Jn 5.23 ; 15.23 ; 1 Jn 4.15 ; 5.1 ; 2 Jn 9. – Reconnaître le </char><char style="fq" closed="false">Fils </char><char style="ft" closed="false">1 Jn 4.2,15.</char></note>.</para>
+  <para style="q1">
+    <verse number="24" style="v" />Pour vous, que le message entendu dès le commencement</para>
+  <para style="q1">demeure en vous.</para>
+  <para style="q1">S'il demeure en vous,</para>
+  <para style="q1">le message entendu dès le commencement,</para>
+  <para style="q1">vous aussi, vous demeurerez dans<note caller="+" style="f"><char style="fr" closed="false">2.24 </char><char style="fq" closed="false">message </char><char style="ft" closed="false">fondamental 2.7,18 ; 3.11 ; 4.3 ; 2 Jn 6. – </char><char style="fq" closed="false">demeurer dans </char><char style="ft" closed="false">Jn 15.7-10 ; 1 Jn 2.27 ; 3.24.</char></note> le Fils et dans le Père ;</para>
+  <para style="q1">
+    <verse number="25" style="v" />et telle est la promesse que lui-même nous a faite,</para>
+  <para style="q1">la vie éternelle<note caller="+" style="f"><char style="fr" closed="false">2.25 </char><char style="ft" closed="false">Jn 3.15 ; 6.40.</char></note>.</para>
+  <para style="q1">
+    <verse number="26" style="v" />Voilà ce que j'ai tenu à vous écrire</para>
+  <para style="q1">à propos de ceux qui cherchent à vous égarer<note caller="+" style="f"><char style="fr" closed="false">2.26 </char><char style="ft" closed="false">séducteurs Mt 24.4-5,11,24 ; Tt 1.10 ; 1 Jn 3.7 ; 2 Jn 7 ; Ap 2.20 ; 12.9, etc.</char></note>.</para>
+  <para style="q1">
+    <verse number="27" style="v" />Pour vous, l'onction que vous avez reçue de lui</para>
+  <para style="q1">demeure en vous,</para>
+  <para style="q1">et vous n'avez pas besoin qu'on vous enseigne ;</para>
+  <para style="q1">mais comme son onction vous enseigne sur tout</para>
+  <para style="q1">– et elle est véridique</para>
+  <para style="q1">et elle ne ment pas –,</para>
+  <para style="q1">puisqu'elle vous a enseignés,</para>
+  <para style="q1">vous demeurez en lui<note caller="+" style="f"><char style="fr" closed="false">2.27 </char><char style="fq" closed="false">onction </char><char style="ft" closed="false">et connaissance 1 Jn 2.20,24 ; voir Jn 14.26 ; 16.13. – Un </char><char style="fq" closed="false">enseignement </char><char style="ft" closed="false">devenu inutile Jr 31.34 (He 8.11). – </char><char style="fq" closed="false">Vous demeurez en lui </char><char style="ft" closed="false">ou </char><char style="fq" closed="false">demeurez en lui !.</char></note>.</para>
+  <para style="q1">
+    <verse number="28" style="v" />Ainsi donc, mes petits enfants, demeurez en lui,</para>
+  <para style="q1">afin que, lorsqu'il paraîtra,</para>
+  <para style="q1">nous ayons pleine assurance<note caller="+" style="f"><char style="fr" closed="false">2.28 </char><char style="fq" closed="false">lorsqu'il paraîtra </char><char style="ft" closed="false">3.2. – </char><char style="fq" closed="false">assurance </char><char style="ft" closed="false">Ph 1.20-21 ; 1 Jn 4.17.</char></note></para>
+  <para style="q1">et ne soyons pas remplis de honte, loin de lui,</para>
+  <para style="q1">à son avènement.</para>
+  <para style="s1">Pratiquer la justice et ne pas pécher</para>
+  <para style="q1">
+    <verse number="29" style="v" />Puisque vous savez qu'il est juste,</para>
+  <para style="q1">reconnaissez que quiconque pratique lui aussi la justice est né de lui<note caller="+" style="f"><char style="fr" closed="false">2.29 </char><char style="fq" closed="false">pratiquer la justice </char><char style="ft" closed="false">3.10. – </char><char style="fq" closed="false">né de Dieu </char><char style="ft" closed="false">4.7 ; 5.1.</char></note>.</para>
+  <chapter number="3" style="c" />
+  <para style="q1">
+    <verse number="1" style="v" />Voyez de quel grand amour le Père nous a fait don :</para>
+  <para style="q1">nous sommes appelés enfants de Dieu ;</para>
+  <para style="q1">et nous le sommes !</para>
+  <para style="q1">Voilà pourquoi le monde ne peut pas nous connaître :</para>
+  <para style="q1">il n'a pas découvert Dieu<note caller="+" style="f"><char style="fr" closed="false">3.1 </char><char style="fq" closed="false">enfants de Dieu </char><char style="ft" closed="false">Jn 1.12 ; Rm 8.16 ; Ga 4.4-5 ; Ep 1.5 ; 1 Jn 3.10. – </char><char style="fq" closed="false">le monde n'a pas découvert Dieu </char><char style="ft" closed="false">Jn 16.3 ; 17.25 ; 1 Co 1.21 ; 1 Jn 4.8-9.</char></note>.</para>
+  <para style="q1">
+    <verse number="2" style="v" />Mes bien-aimés,</para>
+  <para style="q1">dès à présent nous sommes enfants de Dieu,</para>
+  <para style="q1">mais ce que nous serons n'a pas encore été manifesté.</para>
+  <para style="q1">Nous savons que, lorsqu'il paraîtra,</para>
+  <para style="q1">nous lui serons semblables,</para>
+  <para style="q1">puisque nous le verrons tel qu'il est<note caller="+" style="f"><char style="fr" closed="false">3.2 </char><char style="fq" closed="false">lorsqu'il paraîtra </char><char style="ft" closed="false">(ou </char><char style="fq" closed="false">lorsque cela sera manifesté) </char><char style="ft" closed="false">2.28. – </char><char style="fq" closed="false">semblables </char><char style="ft" closed="false">2 Co 3.18 ; Ph 3.21 ; Col 3.4. – </char><char style="fq" closed="false">tel qu'il est </char><char style="ft" closed="false">Jn 17.24.</char></note>.</para>
+  <para style="q1">
+    <verse number="3" style="v" />Et quiconque fonde sur lui une telle espérance</para>
+  <para style="q1">se rend pur comme lui est pur<note caller="+" style="f"><char style="fr" closed="false">3.3 </char><char style="fq" closed="false">se rend pur </char><char style="ft" closed="false">2 Co 7.1. – </char><char style="fq" closed="false">comme Jésus </char><char style="ft" closed="false">1 Jn 2.6+.</char></note>.</para>
+  <para style="q1">
+    <verse number="4" style="v" />Quiconque commet le péché</para>
+  <para style="q1">commet aussi l'iniquité ;</para>
+  <para style="q1">car le péché, c'est l'iniquité<note caller="+" style="f"><char style="fr" closed="false">3.4 </char><char style="fq" closed="false">iniquité : </char><char style="ft" closed="false">opposition à Dieu, typique des derniers temps Mt 7.23 ; 13.41 ; 24.12 ; 2 Th 2.3-7.</char></note>.</para>
+  <para style="q1">
+    <verse number="5" style="v" />Mais vous savez que lui a paru pour enlever les péchés ;</para>
+  <para style="q1">et il n'y a pas de péché en lui<note caller="+" style="f"><char style="fr" closed="false">3.5 </char><char style="fq" closed="false">enlever les péchés </char><char style="ft" closed="false">Es 53.4,5,9 ; Jn 1.29 ; 1 P 2.22-24 ; 1 Jn 2.2 ; 4.10. – Jésus est sans péché Jn 8.46 ; 9.16,24,31 ; 2 Co 5.21 ; He 4.15 ; 7.26 ; 9.14 ; 1 P 1.19 ; 2.22 ; 3.18.</char></note>.</para>
+  <para style="q1">
+    <verse number="6" style="v" />Quiconque demeure en lui ne pèche plus<note caller="+" style="f"><char style="fr" closed="false">3.6 </char><char style="ft" closed="false">Rm 6.14,17-18 ; 1 Jn 3.9.</char></note>.</para>
+  <para style="q1">Quiconque pèche ne le voit ni ne le connaît.</para>
+  <para style="q1">
+    <verse number="7" style="v" />Mes petits enfants,</para>
+  <para style="q1">que nul ne vous égare.</para>
+  <para style="q1">Qui pratique la justice<note caller="+" style="f"><char style="fr" closed="false">3.7 </char><char style="ft" closed="false">2.29 ; 3.10.</char></note> est juste,</para>
+  <para style="q1">comme lui est juste.</para>
+  <para style="q1">
+    <verse number="8" style="v" />Qui commet le péché est du diable,</para>
+  <para style="q1">parce que depuis l'origine le diable est pécheur.</para>
+  <para style="q1">Voici pourquoi a paru le Fils de Dieu :</para>
+  <para style="q1">pour détruire les œuvres du diable<note caller="+" style="f"><char style="fr" closed="false">3.8 </char><char style="ft" closed="false">Dans la dépendance </char><char style="fq" closed="false">du diable </char><char style="ft" closed="false">Jn 8.34. – </char><char style="fq" closed="false">depuis l'origine </char><char style="ft" closed="false">Gn 3.15 ; Jn 8.44. – </char><char style="fq" closed="false">détruire les œuvres du diable </char><char style="ft" closed="false">Mc 1.24 ; Jn 12.31 ; 16.11 ; Ap 12.9-11.</char></note>.</para>
+  <para style="q1">
+    <verse number="9" style="v" />Quiconque est né de Dieu</para>
+  <para style="q1">ne commet plus le péché,</para>
+  <para style="q1">parce que sa semence demeure en lui ;</para>
+  <para style="q1">et il ne peut plus pécher<note caller="+" style="f"><char style="fr" closed="false">3.9 </char><char style="fq" closed="false">semence de Dieu </char><char style="ft" closed="false">Lc 8.12 ; 1 P 1.23-24 ; 1 Jn 2.14,24 ; 2 Jn 2. – le </char><char style="fq" closed="false">péché </char><char style="ft" closed="false">devenu impossible Ps 37.31 ; 119.11 ; Jr 31.33-34 ; Ez 36.27-28 ; Rm 6.11 ; 1 Jn 5.18.</char></note>,</para>
+  <para style="q1">parce qu'il est né de Dieu.</para>
+  <para style="q1">
+    <verse number="10" style="v" />A ceci se révèlent les enfants de Dieu<note caller="+" style="f"><char style="fr" closed="false">3.10 </char><char style="ft" closed="false">3.1+.</char></note> et les enfants du diable :</para>
+  <para style="q1">quiconque ne pratique pas la justice n'est pas de Dieu,</para>
+  <para style="q1">ni celui qui n'aime pas son frère.</para>
+  <para style="s1">Pratiquer la charité à l'exemple du Fils de Dieu</para>
+  <para style="q1">
+    <verse number="11" style="v" />Car tel est le message que vous avez entendu dès le commencement :</para>
+  <para style="q1">que nous nous aimions les uns les autres<note caller="+" style="f"><char style="fr" closed="false">3.11 </char><char style="ft" closed="false">Jn 13.34 ; 15.12,17 ; 1 Jn 2.7 ; 3.23 ; 2 Jn 5.</char></note>.</para>
+  <para style="q1">
+    <verse number="12" style="v" />Non comme Caïn :</para>
+  <para style="q1">étant du Mauvais, il égorgea son frère<note caller="+" style="f"><char style="fr" closed="false">3.12 </char><char style="fq" closed="false">du Mauvais : </char><char style="ft" closed="false">c'est-à-dire sous la dépendance du diable. – </char><char style="fq" closed="false">Caïn </char><char style="ft" closed="false">et Abel Gn 4.1-8 ; He 11.4.</char></note>.</para>
+  <para style="q1">Et pourquoi l'égorgea-t-il ?</para>
+  <para style="q1">Ses œuvres étaient mauvaises,</para>
+  <para style="q1">tandis que celles de son frère étaient justes.</para>
+  <para style="q1">
+    <verse number="13" style="v" />Ne vous étonnez pas, frères,</para>
+  <para style="q1">si le monde vous hait<note caller="+" style="f"><char style="fr" closed="false">3.13 </char><char style="ft" closed="false">Lc 6.22 ; Jn 15.18-19 ; 17.14.</char></note>.</para>
+  <para style="q1">
+    <verse number="14" style="v" />Nous, nous savons que nous sommes passés de la mort dans la vie,</para>
+  <para style="q1">puisque nous aimons nos frères.</para>
+  <para style="q1">Qui n'aime pas<note caller="+" style="f"><char style="fr" closed="false">3.14 </char><char style="fq" closed="false">de la mort à la vie </char><char style="ft" closed="false">Jn 5.24. – Absence d'amour 1 Jn 2.11.</char></note> demeure dans la mort.</para>
+  <para style="q1">
+    <verse number="15" style="v" />Quiconque hait son frère est un meurtrier.</para>
+  <para style="q1">Et, vous le savez, aucun meurtrier n'a la vie éternelle</para>
+  <para style="q1">demeurant en lui<note caller="+" style="f"><char style="fr" closed="false">3.15 </char><char style="fq" closed="false">la haine </char><char style="ft" closed="false">est un </char><char style="fq" closed="false">meurtre </char><char style="ft" closed="false">Mt 5.21-22 ; voir 1 Jn 2.9. – Incompatible avec la </char><char style="fq" closed="false">vie éternelle </char><char style="ft" closed="false">Jn 8.44 ; Ga 5.20-21 ; Ap 21.8.</char></note>.</para>
+  <para style="q1">
+    <verse number="16" style="v" />C'est à ceci que désormais nous connaissons l'amour :</para>
+  <para style="q1">lui, Jésus, a donné sa vie pour nous ;</para>
+  <para style="q1">nous aussi<note caller="+" style="f"><char style="fr" closed="false">3.16 </char><char style="fq" closed="false">l'amour </char><char style="ft" closed="false">authentique Jn 10.11,15,17 ; 13.1 ; 15.13 ; Ga 2.20 ; 1 Tm 2.6 ; Tt 2.14 ; 1 Jn 4.16. – </char><char style="fq" closed="false">nous aussi </char><char style="ft" closed="false">Ph 2.17 ; 1 Th 2.8.</char></note>, nous devons donner notre vie pour nos frères.</para>
+  <para style="q1">
+    <verse number="17" style="v" />Si quelqu'un possède les biens de ce monde</para>
+  <para style="q1">et voit son frère dans le besoin,</para>
+  <para style="q1">et qu'il se ferme à toute compassion<note caller="+" style="f"><char style="fr" closed="false">3.17 </char><char style="ft" closed="false">Dt 15.7-8 ; Lc 10.31-32 ; Jc 2.15-16.</char></note>,</para>
+  <para style="q1">comment l'amour de Dieu demeurerait-il en lui ?</para>
+  <para style="q1">
+    <verse number="18" style="v" />Mes petits enfants,</para>
+  <para style="q1">n'aimons pas en paroles et de langue,</para>
+  <para style="q1">mais en acte et dans la vérité<note caller="+" style="f"><char style="fr" closed="false">3.18 </char><char style="fq" closed="false">amour en actes </char><char style="ft" closed="false">Ga 5.6 ; Jc 2.14-17 </char><char style="fq" closed="false">et dans la vérité </char><char style="ft" closed="false">2 Jn 1-2.</char></note> ;</para>
+  <para style="q1">
+    <verse number="19" style="v" />à cela nous reconnaîtrons que nous sommes de la vérité,</para>
+  <para style="q1">et devant lui nous apaiserons notre cœur<note caller="+" style="f"><char style="fr" closed="false">3.19 </char><char style="ft" closed="false">Pr 10.12 ; 1 P 4.8.</char></note>,</para>
+  <para style="q1">
+    <verse number="20" style="v" />car, si notre cœur nous accuse,</para>
+  <para style="q1">Dieu est plus grand que notre cœur et il discerne tout<note caller="+" style="f"><char style="fr" closed="false">3.20 </char><char style="fq" closed="false">accusation </char><char style="ft" closed="false">Lc 18.13. – </char><char style="fq" closed="false">Dieu discerne tout </char><char style="ft" closed="false">1 R 8.39 ; Ps 7.10 ; Ac 15.8.</char></note>.</para>
+  <para style="q1">
+    <verse number="21" style="v" />Mes bien-aimés,</para>
+  <para style="q1">si notre cœur ne nous accuse pas,</para>
+  <para style="q1">nous nous adressons à Dieu avec assurance<note caller="+" style="f"><char style="fr" closed="false">3.21 </char><char style="ft" closed="false">He 4.16 ; 1 Jn 5.14.</char></note> ;</para>
+  <para style="q1">
+    <verse number="22" style="v" />et quoi que nous demandions, nous l'obtenons de lui<note caller="+" style="f"><char style="fr" closed="false">3.22 </char><char style="ft" closed="false">Jr 29.12-13 ; Mt 7.7-8 ; 21.22 ; Mc 11.24 ; Jn 14.13 ; 15.7 ; 16.23-24 ; Rm 8.26-27 ; Jc 1.5 ; 1 Jn 5.14-15.</char></note>,</para>
+  <para style="q1">parce que nous gardons ses commandements</para>
+  <para style="q1">et faisons ce qui lui agrée.</para>
+  <para style="q1">
+    <verse number="23" style="v" />Et voici son commandement :</para>
+  <para style="q1">adhérer avec foi à son Fils Jésus Christ</para>
+  <para style="q1">et nous aimer les uns les autres<note caller="+" style="f"><char style="fr" closed="false">3.23 </char><char style="fq" closed="false">foi </char><char style="ft" closed="false">Jn 6.29 ; Rm 10.14. – </char><char style="fq" closed="false">foi et amour fraternel </char><char style="ft" closed="false">1 Jn 5.1-5. – Le </char><char style="fq" closed="false">commandement d'amour </char><char style="ft" closed="false">1 Th 4.9 ; 1 P 1.22 ; 1 Jn 3.11+ ; 4.21.</char></note>,</para>
+  <para style="q1">comme il nous en a donné le commandement.</para>
+  <para style="q1">
+    <verse number="24" style="v" />Celui qui garde ses commandements demeure en Dieu, et Dieu en lui.</para>
+  <para style="q1">Par là nous reconnaissons qu'il demeure en nous,</para>
+  <para style="q1">grâce à l'Esprit<note caller="+" style="f"><char style="fr" closed="false">3.24 </char><char style="fq" closed="false">demeurer </char><char style="ft" closed="false">Jn 14.23 ; 1 Jn 2.27. – </char><char style="fq" closed="false">l'Esprit </char><char style="ft" closed="false">Rm 8.9 ; 1 Jn 4.13.</char></note> dont il nous a fait don.</para>
+  <chapter number="4" style="c" />
+  <para style="s1">Le discernement des esprits par la foi en Jésus Christ</para>
+  <para style="q1">
+    <verse number="1" style="v" />Mes bien-aimés,</para>
+  <para style="q1">n'ajoutez pas foi à tout esprit,</para>
+  <para style="q1">mais éprouvez les esprits,</para>
+  <para style="q1">pour voir s'ils sont de Dieu ;</para>
+  <para style="q1">car beaucoup de prophètes de mensonge<note caller="+" style="f"><char style="fr" closed="false">4.1 </char><char style="fq" closed="false">voir s'ils sont de Dieu </char><char style="ft" closed="false">Dt 13.2-6 ; Jr 23.21-22 ; 28.8-9 ; Mt 7.15-20 ; Jn 8.42-47 ; Ep 5.8-10 ; Col 2.8 ; 1 Th 5.21. – </char><char style="fq" closed="false">prophètes menteurs </char><char style="ft" closed="false">Mt 7.15 ; 24.4,5,24 ; 2 P 2.1 ; 2 Jn 7.</char></note> se sont répandus dans le monde.</para>
+  <para style="q1">
+    <verse number="2" style="v" />A ceci vous reconnaissez l'Esprit de Dieu :</para>
+  <para style="q1">tout esprit qui confesse Jésus Christ venu dans la chair</para>
+  <para style="q1">est de Dieu<note caller="+" style="f"><char style="fr" closed="false">4.2 </char><char style="ft" closed="false">Caractéristique de </char><char style="fq" closed="false">l'Esprit de Dieu </char><char style="ft" closed="false">1 Co 12.3. – </char><char style="fq" closed="false">confession </char><char style="ft" closed="false">de la foi 1 Tm 6.12-13,20-21.</char></note>,</para>
+  <para style="q1">
+    <verse number="3" style="v" />et tout esprit qui divise Jésus</para>
+  <para style="q1">n'est pas de Dieu ;</para>
+  <para style="q1">c'est l'esprit de l'antichrist<note caller="+" style="f"><char style="fr" closed="false">4.3 </char><char style="ft" closed="false">de nombreux manuscrits lisent ici : </char><char style="fq" closed="false">tout esprit qui ne confesse pas (sa foi en) Jésus… </char><char style="ft" closed="false">Voir au v. 2. – </char><char style="fq" closed="false">antichrist </char><char style="ft" closed="false">Ac 20.29 ; 2 Th 2.7 ; 1 Jn 2.18+.</char></note>,</para>
+  <para style="q1">dont vous avez entendu annoncer qu'il vient,</para>
+  <para style="q1">et dès maintenant il est dans le monde.</para>
+  <para style="q1">
+    <verse number="4" style="v" />Vous, mes petits enfants, qui êtes de Dieu,</para>
+  <para style="q1">vous êtes vainqueurs de ces prophètes-là,</para>
+  <para style="q1">parce que celui qui est au milieu de vous</para>
+  <para style="q1">est plus grand<note caller="+" style="f"><char style="fr" closed="false">4.4 </char><char style="fq" closed="false">vainqueur </char><char style="ft" closed="false">Jn 16.33 ; Rm 8.37 ; 1 Jn 2.13-14 ; 5.4-5 ; Ap 2.7,11,26 ; 3.5,12,21 ; 12.11 ; 17.14. – </char><char style="fq" closed="false">plus grand </char><char style="ft" closed="false">Mt 12.29.</char></note> que celui qui est dans le monde.</para>
+  <para style="q1">
+    <verse number="5" style="v" />Eux, ils sont du monde<note caller="+" style="f"><char style="fr" closed="false">4.5 </char><char style="ft" closed="false">Jn 15.19 ; 17.14.</char></note> ;</para>
+  <para style="q1">aussi parlent-ils le langage du monde,</para>
+  <para style="q1">et le monde les écoute.</para>
+  <para style="q1">
+    <verse number="6" style="v" />Nous, nous sommes de Dieu.</para>
+  <para style="q1">Celui qui s'ouvre à la connaissance de Dieu nous écoute<note caller="+" style="f"><char style="fr" closed="false">4.6 </char><char style="fq" closed="false">de Dieu </char><char style="ft" closed="false">Jn 18.37. – </char><char style="fq" closed="false">celui qui écoute </char><char style="ft" closed="false">Jn 8.47 ; 10.26-27 ; 2 Tm 4.4.</char></note>.</para>
+  <para style="q1">Celui qui n'est pas de Dieu ne nous écoute pas.</para>
+  <para style="q1">C'est à cela que nous reconnaissons</para>
+  <para style="q1">l'Esprit de la vérité et l'esprit de l'erreur.</para>
+  <para style="s1">L'amour vient de Dieu et s'enracine dans la foi</para>
+  <para style="q1">
+    <verse number="7" style="v" />Mes bien-aimés,</para>
+  <para style="q1">aimons-nous les uns les autres,</para>
+  <para style="q1">car l'amour vient de Dieu,</para>
+  <para style="q1">et quiconque aime</para>
+  <para style="q1">est né de Dieu<note caller="+" style="f"><char style="fr" closed="false">4.7 </char><char style="fq" closed="false">amour mutuel </char><char style="ft" closed="false">3.11,23 ; 4.11. – </char><char style="fq" closed="false">né de Dieu </char><char style="ft" closed="false">2.29 ; 5.1.</char></note> et parvient à la connaissance de Dieu.</para>
+  <para style="q1">
+    <verse number="8" style="v" />Qui n'aime pas n'a pas découvert Dieu,</para>
+  <para style="q1">puisque Dieu est amour<note caller="+" style="f"><char style="fr" closed="false">4.8 </char><char style="fq" closed="false">Dieu est </char><char style="ft" closed="false">Jn 4.24 ; 1 Jn 1.5 </char><char style="fq" closed="false">amour </char><char style="ft" closed="false">Jn 3.16 ; 5.20 ; 10.17 ; 15.9 ; 17.26 ; 1 Jn 4.9-11,16.</char></note>.</para>
+  <para style="q1">
+    <verse number="9" style="v" />Voici comment s'est manifesté l'amour de Dieu au milieu de nous :</para>
+  <para style="q1">Dieu a envoyé son Fils unique dans le monde,</para>
+  <para style="q1">afin que nous vivions par lui<note caller="+" style="f"><char style="fr" closed="false">4.9 </char><char style="fq" closed="false">l'envoi du Fils unique </char><char style="ft" closed="false">Jn 3.16. – </char><char style="fq" closed="false">vivre par le Fils </char><char style="ft" closed="false">Ep 2.4-5 ; Col 2.13.</char></note>.</para>
+  <para style="q1">
+    <verse number="10" style="v" />Voici ce qu'est l'amour :</para>
+  <para style="q1">ce n'est pas nous qui avons aimé Dieu,</para>
+  <para style="q1">c'est lui qui nous a aimés</para>
+  <para style="q1">et qui a envoyé son Fils en victime d'expiation<note caller="+" style="f"><char style="fr" closed="false">4.10 </char><char style="fq" closed="false">Dieu nous a aimés d'abord </char><char style="ft" closed="false">Rm 5.8-10 ; 1 Jn 4.19. – </char><char style="fq" closed="false">expiation </char><char style="ft" closed="false">2 Co 5.19 ; 1 Jn 2.2+.</char></note> pour nos péchés.</para>
+  <para style="q1">
+    <verse number="11" style="v" />Mes bien-aimés,</para>
+  <para style="q1">si Dieu nous a aimés ainsi,</para>
+  <para style="q1">nous devons, nous aussi<note caller="+" style="f"><char style="fr" closed="false">4.11 </char><char style="fq" closed="false">nous aussi </char><char style="ft" closed="false">Mt 18.33.</char></note>, nous aimer les uns les autres.</para>
+  <para style="q1">
+    <verse number="12" style="v" />Dieu, nul ne l'a jamais contemplé.</para>
+  <para style="q1">Si nous nous aimons les uns les autres,</para>
+  <para style="q1">Dieu demeure en nous,</para>
+  <para style="q1">et son amour, en nous, est accompli<note caller="+" style="f"><char style="fr" closed="false">4.12 </char><char style="ft" closed="false">Dieu invisible Ex 33.20 ; Jn 1.18 ; 1 Tm 6.16. – Présence de Dieu par </char><char style="fq" closed="false">l'amour </char><char style="ft" closed="false">Jn 14.23 ; 1 Jn 3.24. – Perfection de </char><char style="fq" closed="false">l'amour </char><char style="ft" closed="false">2.5 ; 4.17.</char></note>.</para>
+  <para style="q1">
+    <verse number="13" style="v" />A ceci nous reconnaissons</para>
+  <para style="q1">que nous demeurons en lui, et lui en nous :</para>
+  <para style="q1">il nous a donné de son Esprit<note caller="+" style="f"><char style="fr" closed="false">4.13 </char><char style="ft" closed="false">Rm 8.9 ; 1 Co 12.3 ; 1 Jn 3.24.</char></note>.</para>
+  <para style="q1">
+    <verse number="14" style="v" />Et nous, nous témoignons, pour l'avoir contemplé,</para>
+  <para style="q1">que le Père a envoyé son Fils comme Sauveur du monde<note caller="+" style="f"><char style="fr" closed="false">4.14 </char><char style="ft" closed="false">Témoignage oculaire 1.2. – </char><char style="fq" closed="false">Sauveur du monde </char><char style="ft" closed="false">Jn 3.17 ; 4.42.</char></note>.</para>
+  <para style="q1">
+    <verse number="15" style="v" />Quiconque confesse que Jésus est le Fils de Dieu<note caller="+" style="f"><char style="fr" closed="false">4.15 </char><char style="fq" closed="false">confesser </char><char style="ft" closed="false">sa foi en </char><char style="fq" closed="false">Jésus </char><char style="ft" closed="false">Jn 9.22,35 ; Rm 10.9 ; 1 Jn 2.23 ; 2 Jn 9. – </char><char style="fq" closed="false">le Fils </char><char style="ft" closed="false">1 Jn 5.5.</char></note>,</para>
+  <para style="q1">Dieu demeure en lui, et lui en Dieu.</para>
+  <para style="q1">
+    <verse number="16" style="v" />Et nous, nous connaissons, pour y avoir cru,</para>
+  <para style="q1">l'amour que Dieu manifeste au milieu de nous.</para>
+  <para style="q1">Dieu est amour<note caller="+" style="f"><char style="fr" closed="false">4.16 </char><char style="ft" closed="false">Foi et connaissance Jn 6.69 ; 8.31-32 ; 10.38 ; 1 Jn 3.16. – </char><char style="fq" closed="false">l'amour que Dieu manifeste </char><char style="ft" closed="false">Rm 5.8. – </char><char style="fq" closed="false">Dieu est amour </char><char style="ft" closed="false">1 Jn 4.8+.</char></note> :</para>
+  <para style="q1">qui demeure dans l'amour</para>
+  <para style="q1">demeure en Dieu, et Dieu demeure en lui.</para>
+  <para style="q1">
+    <verse number="17" style="v" />En ceci, l'amour, parmi nous, est accompli,</para>
+  <para style="q1">que nous avons pleine assurance pour le jour du jugement,</para>
+  <para style="q1">parce que, tel il est, lui,</para>
+  <para style="q1">tels nous sommes<note caller="+" style="f"><char style="fr" closed="false">4.17 </char><char style="ft" closed="false">Perfection de </char><char style="fq" closed="false">l'amour </char><char style="ft" closed="false">2.5 ; 4.12. – </char><char style="fq" closed="false">assurance </char><char style="ft" closed="false">2.28. – comme Jésus 2.6.</char></note>, nous aussi, dans ce monde.</para>
+  <para style="q1">
+    <verse number="18" style="v" />De crainte, il n'y en a pas dans l'amour ;</para>
+  <para style="q1">mais le parfait amour jette dehors la crainte<note caller="+" style="f"><char style="fr" closed="false">4.18 </char><char style="ft" closed="false">Rm 8.15 ; 1 Jn 3.20.</char></note>,</para>
+  <para style="q1">car la crainte implique un châtiment ;</para>
+  <para style="q1">et celui qui craint n'est pas accompli dans l'amour.</para>
+  <para style="q1">
+    <verse number="19" style="v" />Nous, nous aimons,</para>
+  <para style="q1">parce que lui, le premier, nous a aimés<note caller="+" style="f"><char style="fr" closed="false">4.19 </char><char style="ft" closed="false">4.10.</char></note>.</para>
+  <para style="q1">
+    <verse number="20" style="v" />Si quelqu'un dit : « J'aime Dieu », et qu'il haïsse son frère,</para>
+  <para style="q1">c'est un menteur<note caller="+" style="f"><char style="fr" closed="false">4.20 </char><char style="fq" closed="false">aimer Dieu, son frère </char><char style="ft" closed="false">Lv 19.18 ; Mt 5.23-24,44-45 ; 25.40,45. – </char><char style="fq" closed="false">menteur </char><char style="ft" closed="false">1 Jn 2.4.</char></note>.</para>
+  <para style="q1">En effet, celui qui n'aime pas son frère, qu'il voit,</para>
+  <para style="q1">ne peut pas aimer Dieu, qu'il ne voit pas.</para>
+  <para style="q1">
+    <verse number="21" style="v" />Et voici le commandement que nous tenons de lui :</para>
+  <para style="q1">celui qui aime Dieu,</para>
+  <para style="q1">qu'il aime aussi son frère<note caller="+" style="f"><char style="fr" closed="false">4.21 </char><char style="ft" closed="false">Mt 22.36-40 par. ; voir 1 Co 13 ; 1 Jn 3.23.</char></note>.</para>
+  <chapter number="5" style="c" />
+  <para style="s1">La foi dans le Fils de Dieu, racine de la charité</para>
+  <para style="q1">
+    <verse number="1" style="v" />Quiconque croit que Jésus est le Christ</para>
+  <para style="q1">est né de Dieu<note caller="+" style="f"><char style="fr" closed="false">5.1 </char><char style="ft" closed="false">1 P 1.22-23 ; 1 Jn 2.29+.</char></note> ;</para>
+  <para style="q1">et quiconque aime Dieu, qui engendre,</para>
+  <para style="q1">aime aussi celui qui est né de Dieu.</para>
+  <para style="q1">
+    <verse number="2" style="v" />A ceci nous reconnaissons que nous aimons les enfants de Dieu<note caller="+" style="f"><char style="fr" closed="false">5.2 </char><char style="ft" closed="false">3.23+.</char></note>,</para>
+  <para style="q1">si nous aimons Dieu et mettons en pratique ses commandements.</para>
+  <para style="q1">
+    <verse number="3" style="v" />Car voici ce qu'est l'amour de Dieu :</para>
+  <para style="q1">que nous gardions ses commandements.</para>
+  <para style="q1">Et ses commandements ne sont pas un fardeau<note caller="+" style="f"><char style="fr" closed="false">5.3 </char><char style="fq" closed="false">amour </char><char style="ft" closed="false">et </char><char style="fq" closed="false">commandements </char><char style="ft" closed="false">Jn 14.15,23,24 ; 15.10 ; 2 Jn 6. – </char><char style="fq" closed="false">un fardeau </char><char style="ft" closed="false">léger Dt 30.11 ; Mt 11.29-30.</char></note>,</para>
+  <para style="q1">
+    <verse number="4" style="v" />puisque tout ce qui est né de Dieu est vainqueur<note caller="+" style="f"><char style="fr" closed="false">5.4 </char><char style="fq" closed="false">vainqueur </char><char style="ft" closed="false">4.4+.</char></note> du monde.</para>
+  <para style="q1">Et la victoire qui a vaincu le monde, c'est notre foi.</para>
+  <para style="q1">
+    <verse number="5" style="v" />Qui est vainqueur du monde<note caller="+" style="f"><char style="fr" closed="false">5.5 </char><char style="ft" closed="false">1 Co 15.57 ; Ep 6.16.</char></note>,</para>
+  <para style="q1">sinon celui qui croit que Jésus est le Fils de Dieu ?</para>
+  <para style="q1">
+    <verse number="6" style="v" />C'est lui qui est venu par l'eau et par le sang,</para>
+  <para style="q1">Jésus Christ,</para>
+  <para style="q1">non avec l'eau seulement,</para>
+  <para style="q1">mais avec l'eau et le sang ;</para>
+  <para style="q1">et c'est l'Esprit qui rend témoignage,</para>
+  <para style="q1">parce que l'Esprit est la vérité<note caller="+" style="f"><char style="fr" closed="false">5.6 </char><char style="fq" closed="false">l'eau et le sang </char><char style="ft" closed="false">Jn 19.34. – </char><char style="fq" closed="false">le témoignage de l'Esprit </char><char style="ft" closed="false">Jn 15.26. – </char><char style="fq" closed="false">l'Esprit est la vérité </char><char style="ft" closed="false">Jn 14.17 ; 15.26 ; 16.13.</char></note>.</para>
+  <para style="q1">
+    <verse number="7" style="v" />C'est qu'ils sont trois à rendre témoignage<note caller="+" style="f"><char style="fr" closed="false">5.7 </char><char style="ft" closed="false">Nb 35.30 ; Dt 19.15.</char></note>,</para>
+  <para style="q1">
+    <verse number="8" style="v" />l'Esprit, l'eau et le sang,</para>
+  <para style="q1">et ces trois convergent dans l'unique témoignage :</para>
+  <para style="q1">
+    <verse number="9" style="v" />si nous recevons le témoignage des hommes,</para>
+  <para style="q1">le témoignage de Dieu<note caller="+" style="f"><char style="fr" closed="false">5.9 </char><char style="ft" closed="false">Jn 3.33 ; 5.32,34,36-37 ; 8.18 ; Rm 8.16 ; Ga 4.6.</char></note> est plus grand ;</para>
+  <para style="q1">car tel est le témoignage de Dieu :</para>
+  <para style="q1">il a rendu témoignage en faveur de son Fils.</para>
+  <para style="q1">
+    <verse number="10" style="v" />Qui croit au Fils de Dieu</para>
+  <para style="q1">a ce témoignage en lui-même.</para>
+  <para style="q1">Qui ne croit pas Dieu</para>
+  <para style="q1">fait de lui un menteur,</para>
+  <para style="q1">puisqu'il n'a pas foi dans le témoignage</para>
+  <para style="q1">que Dieu a rendu en faveur de son Fils<note caller="+" style="f"><char style="fr" closed="false">5.10 </char><char style="fq" closed="false">croire Dieu </char><char style="ft" closed="false">Jn 5.24. – Refus opposé au témoignage de Dieu Jn 5.37,40.</char></note>.</para>
+  <para style="q1">
+    <verse number="11" style="v" />Et voici ce témoignage :</para>
+  <para style="q1">Dieu nous a donné la vie éternelle<note caller="+" style="f"><char style="fr" closed="false">5.11 </char><char style="ft" closed="false">Jn 17.3 ; 1 Jn 5.20.</char></note>,</para>
+  <para style="q1">et cette vie est en son Fils.</para>
+  <para style="q1">
+    <verse number="12" style="v" />Qui a le Fils a la vie<note caller="+" style="f"><char style="fr" closed="false">5.12 </char><char style="fq" closed="false">le Fils </char><char style="ft" closed="false">et </char><char style="fq" closed="false">la vie </char><char style="ft" closed="false">Jn 3.36.</char></note> ;</para>
+  <para style="q1">qui n'a pas le Fils de Dieu n'a pas la vie.</para>
+  <para style="s1">Epilogue</para>
+  <para style="q1">
+    <verse number="13" style="v" />Je vous ai écrit tout cela</para>
+  <para style="q1">pour que vous sachiez<note caller="+" style="f"><char style="fr" closed="false">5.13 </char><char style="fq" closed="false">pour que vous sachiez </char><char style="ft" closed="false">Jn 20.31.</char></note> que vous avez la vie éternelle,</para>
+  <para style="q1">vous qui avez la foi au nom du Fils de Dieu.</para>
+  <para style="q1">
+    <verse number="14" style="v" />Et voici l'assurance que nous avons devant lui :</para>
+  <para style="q1">si nous lui demandons quelque chose selon sa volonté,</para>
+  <para style="q1">il nous écoute<note caller="+" style="f"><char style="fr" closed="false">5.14 </char><char style="ft" closed="false">exaucement 3.22+.</char></note>.</para>
+  <para style="q1">
+    <verse number="15" style="v" />Et sachant qu'il nous écoute quoi que nous lui demandions,</para>
+  <para style="q1">nous savons que nous possédons ce que nous lui avons demandé.</para>
+  <para style="q1">
+    <verse number="16" style="v" />Si quelqu'un voit son frère commettre un péché,</para>
+  <para style="q1">un péché qui ne conduit pas à la mort,</para>
+  <para style="q1">qu'il prie, et Dieu lui donnera la vie,</para>
+  <para style="q1">si vraiment le péché commis ne conduit pas à la mort.</para>
+  <para style="q1">Il existe un péché qui conduit à la mort<note caller="+" style="f"><char style="fr" closed="false">5.16 </char><char style="fq" closed="false">péché n'entraînant pas la mort </char><char style="ft" closed="false">Dt 22.26. – </char><char style="fq" closed="false">péché entraînant la mort </char><char style="ft" closed="false">Nb 15.30 ; 18.22 ; Mt 12.31-32 par. ; He 6.4-6 ; 10.26-27 ; 2 P 2.20-21.</char></note> :</para>
+  <para style="q1">ce n'est pas à propos de celui-là que je dis de prier ;</para>
+  <para style="q1">
+    <verse number="17" style="v" />toute iniquité est péché ;</para>
+  <para style="q1">mais tout péché ne conduit pas à la mort.</para>
+  <para style="q1">
+    <verse number="18" style="v" />Nous savons que quiconque est né de Dieu ne pèche plus,</para>
+  <para style="q1">mais l'Engendré de Dieu le garde,</para>
+  <para style="q1">et le Mauvais n'a pas prise sur lui<note caller="+" style="f"><char style="fr" closed="false">5.18 </char><char style="fq" closed="false">l'Engendré de Dieu : </char><char style="ft" closed="false">il s'agit de Jésus, le Fils de Dieu (3.8). Certains manuscrits lisent ici : </char><char style="fq" closed="false">celui qui est né de Dieu se garde lui-même. – ne plus pécher </char><char style="ft" closed="false">3.9. – Préservé du </char><char style="fq" closed="false">Mauvais </char><char style="ft" closed="false">Jn 17.15 ; Jude 1. – </char><char style="fq" closed="false">pas de prise </char><char style="ft" closed="false">Rm 6.7.</char></note>.</para>
+  <para style="q1">
+    <verse number="19" style="v" />Nous savons que nous sommes de Dieu,</para>
+  <para style="q1">mais le monde tout entier gît sous l'empire du Mauvais<note caller="+" style="f"><char style="fr" closed="false">5.19 </char><char style="fq" closed="false">être de Dieu </char><char style="ft" closed="false">Jn 8.47. – </char><char style="fq" closed="false">l'empire du Mauvais </char><char style="ft" closed="false">Col 1.13.</char></note>.</para>
+  <para style="q1">
+    <verse number="20" style="v" />Nous savons que le Fils de Dieu est venu</para>
+  <para style="q1">et nous a donné l'intelligence</para>
+  <para style="q1">pour connaître le Véritable.</para>
+  <para style="q1">Et nous sommes dans le Véritable, en son Fils Jésus Christ.</para>
+  <para style="q1">Lui est le Véritable, il est Dieu et la vie éternelle<note caller="+" style="f"><char style="fr" closed="false">5.20 </char><char style="fq" closed="false">l'intelligence </char><char style="ft" closed="false">Jr 31.33 ; Ez 11.19 ; 36.26 ; Ep 1.17-18 ; Col 1.10 ; 1 Jn 2.3. – </char><char style="fq" closed="false">le Véritable </char><char style="ft" closed="false">Ap 3.7 ; dans ce verset, cette appellation est appliquée successivement à Dieu lui-même et à son Fils. – </char><char style="fq" closed="false">il est Dieu </char><char style="ft" closed="false">Jn 20.28 ; Rm 9.5 </char><char style="fq" closed="false">et la vie éternelle </char><char style="ft" closed="false">Jn 11.25 ; 17.3.</char></note>.</para>
+  <para style="q1">
+    <verse number="21" style="v" />Mes petits enfants,</para>
+  <para style="q1">gardez-vous des idoles<note caller="+" style="f"><char style="fr" closed="false">5.21 </char><char style="fq" closed="false">gardez-vous </char><char style="ft" closed="false">2 P 3.17. – </char><char style="fq" closed="false">idoles </char><char style="ft" closed="false">Ez 11.21 ; 36.25 ; 1 Co 10.14.</char></note>.</para>
+</usx>
