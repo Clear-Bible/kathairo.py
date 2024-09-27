@@ -142,5 +142,12 @@
     "language": "hin",
     "removeZwFromWordsPath": "./resources/hin/zw-removal-words.tsv",
     "treatApostropheAsSingleQuote": true
+  },
+  {
+    "projectName": "TOB10",
+    "targetVersificationPath": "./resources/versification/eng.vrs",
+    "targetUsxCorpusPath": "./resources/hin/TOB10/USX",
+    "latinWhiteSpaceIncludedTokenizer": true,
+    "language": "fra"
   }
 ]
