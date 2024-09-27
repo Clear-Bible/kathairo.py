@@ -20,7 +20,7 @@ class TestVersification:
         
         os.makedirs(os.path.dirname(output_file), exist_ok=True)
         with open(output_file, 'w', newline='', encoding='utf-8') as out_file:
-            tsv_writer = csv.writer(out_file, delimiter='\t')
+            tsv_writer = csv.writer(out_file, delimiter='\t', quoting=csv.QUOTE_NONE, quotechar=None)
             
             targetVersification = Versification.load(tsv_vrs_name_files[1], fallback_name="web")
             mapping_sources = targetVersification.mappings._versification_to_standard.values()
@@ -60,7 +60,7 @@ class TestVersification:
         
         os.makedirs(os.path.dirname(output_file), exist_ok=True)
         with open(output_file, 'w', newline='', encoding='utf-8') as out_file:
-            tsv_writer = csv.writer(out_file, delimiter='\t')
+            tsv_writer = csv.writer(out_file, delimiter='\t', quoting=csv.QUOTE_NONE, quotechar=None)
         
             print(tsv_vrs_name_files[0])
             originalVersification = Versification.load("./resources/versification/org.vrs", fallback_name="web")
@@ -172,7 +172,7 @@ class TestVersification:
         
         os.makedirs(os.path.dirname(output_file), exist_ok=True)
         with open(output_file, 'w', newline='', encoding='utf-8') as out_file:
-            tsv_writer = csv.writer(out_file, delimiter='\t')
+            tsv_writer = csv.writer(out_file, delimiter='\t', quoting=csv.QUOTE_NONE, quotechar=None)
         
             targetVersification = Versification.load(tsv_vrs_name_files[1], fallback_name="web")
             mapping_targets = targetVersification.mappings._versification_to_standard.keys()
@@ -212,7 +212,7 @@ class TestVersification:
         
         os.makedirs(os.path.dirname(output_file), exist_ok=True)
         with open(output_file, 'w', newline='', encoding='utf-8') as out_file:
-            tsv_writer = csv.writer(out_file, delimiter='\t')
+            tsv_writer = csv.writer(out_file, delimiter='\t', quoting=csv.QUOTE_NONE, quotechar=None)
         
             targetVersification = Versification.load(tsv_vrs_name_files[1], fallback_name="web")
             
