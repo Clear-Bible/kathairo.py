@@ -45,9 +45,6 @@ def corpus_to_verse_level_tsv(targetVersification:Versification, sourceVersifica
 
             targetVref = VerseRef.from_bbbcccvvv(row.ref.bbbcccvvv, targetVersification) #dependent on which .vrs is being used    
             
-            if(targetVref.bbbcccvvvs == "016002004"):
-                stop = True
-            
             sourceVref, source_verse_range_end = helpers.versification.set_source_verse(targetVref, sourceVersification, unused_versification_mapping)
 
             if(not row.is_in_range or row.is_range_start):
