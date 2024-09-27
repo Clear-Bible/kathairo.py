@@ -25,14 +25,14 @@ def test_file_is_valid_utf8(tsv_vrs_files):
 #Do the IDs only contain numbers?
 @pytest.mark.parametrize("tsv_vrs_files", __tsv_vrs_name_files__)
 def test_id_numeric(tsv_vrs_files):
-    data_frame = pl.read_csv(tsv_vrs_files[0], separator='\t', infer_schema_length=0)
+    data_frame = pl.read_csv(tsv_vrs_files[0], separator='\t', infer_schema_length=0, quote_char=None)
     for id in data_frame['id']:
         assert id.isnumeric(), tsv_vrs_files[2] + " {} ".format(id) + "is not numeric"
 
 #Are the IDs valid length?
 @pytest.mark.parametrize("tsv_vrs_files", __tsv_vrs_name_files__)
 def test_id_length(tsv_vrs_files):
-    data_frame = pl.read_csv(tsv_vrs_files[0], separator='\t', infer_schema_length=0)
+    data_frame = pl.read_csv(tsv_vrs_files[0], separator='\t', infer_schema_length=0, quote_char=None)
     for id in data_frame['id']:
         assert len(str(id)) == 11, tsv_vrs_files[2] + " {} ".format(id) + "!= 11"
 
@@ -49,7 +49,7 @@ def test_id_book_value(tsv_vrs_files):
         if(len(book) > 1 or book[0] > 1):
             present_book_id_list.append(current_book_number)
     
-    data_frame = pl.read_csv(tsv_vrs_files[0], separator='\t', infer_schema_length=0)
+    data_frame = pl.read_csv(tsv_vrs_files[0], separator='\t', infer_schema_length=0, quote_char=None)
     for id in data_frame['id']:
         book_id = int(str(id)[:2])
         assert (book_id > 0 and book_id in present_book_id_list), tsv_vrs_files[2] + " {} ".format(id) + "invalid book ID"
@@ -66,7 +66,7 @@ def test_id_chapter_value(tsv_vrs_files):
         if(book_size > max_chapter_number):
                 max_chapter_number = book_size
                 
-    data_frame = pl.read_csv(tsv_vrs_files[0], separator='\t', infer_schema_length=0)
+    data_frame = pl.read_csv(tsv_vrs_files[0], separator='\t', infer_schema_length=0, quote_char=None)
     for id in data_frame['id']:
         chapter_id = int(str(id)[2:5])
         assert (chapter_id > 0 and chapter_id <= max_chapter_number), tsv_vrs_files[2] + " {} ".format(id) + "invalid chapter ID"
@@ -83,7 +83,7 @@ def test_id_verse_value(tsv_vrs_files):
             if(chapter_size > max_verse_number):
                 max_verse_number = chapter_size
                 
-    data_frame = pl.read_csv(tsv_vrs_files[0], separator='\t', infer_schema_length=0)
+    data_frame = pl.read_csv(tsv_vrs_files[0], separator='\t', infer_schema_length=0, quote_char=None)
     for id in data_frame['id']:
         verse_id = int(str(id)[5:8])
         assert (verse_id >= 0 and verse_id <= max_verse_number), tsv_vrs_files[2] + " {} ".format(id) + "invalid verse ID"
@@ -97,10 +97,10 @@ def test_verse_text_reconstitution(tsv_vrs_files):
     
     #Compare Reconstituted File to VerseText File
     verseTextPath = tsv_path.parent.parent.parent / "VerseText"/ tsv_vrs_files[3] /f"{tsv_path.stem}.tsv"
-    verseTextRows = [r for r in csv.DictReader(verseTextPath.open("r", encoding='utf-8'), delimiter="\t")]
+    verseTextRows = [r for r in csv.DictReader(verseTextPath.open("r", encoding='utf-8'), delimiter="\t", quoting=csv.QUOTE_NONE, quotechar=None)]
 
     reconstitutedPath = tsv_path.parent.parent.parent / "test" /"reconstituted" / tsv_vrs_files[3] / f"{tsv_path.stem}_reconstitution.tsv"
-    reconstitutedRows = [r for r in csv.DictReader(reconstitutedPath.open("r", encoding='utf-8'), delimiter="\t")]
+    reconstitutedRows = [r for r in csv.DictReader(reconstitutedPath.open("r", encoding='utf-8'), delimiter="\t", quoting=csv.QUOTE_NONE, quotechar=None)]
      
     for index in range(len(verseTextRows)):    
         if(tsv_vrs_files[3] == "hin"): #TODO we're ignoring hindi reconstitution issues until we remove zw characters at verse level
@@ -125,7 +125,7 @@ def test_verse_text_reconstitution(tsv_vrs_files):
 #Is punctuation excluded 
 @pytest.mark.parametrize("tsv_vrs_files", __tsv_vrs_name_files__)
 def test_exclude_punctuation(tsv_vrs_files):    
-    data_frame = pl.read_csv(tsv_vrs_files[0], separator='\t', infer_schema_length=0)
+    data_frame = pl.read_csv(tsv_vrs_files[0], separator='\t', infer_schema_length=0, quote_char=None)
     for row in data_frame.iter_rows(named=True):
         id = row["id"]
         token = row["text"]
@@ -153,7 +153,7 @@ def test_exclude_bracketed_text(tsv_vrs_files):
         
         in_brackets = False
         
-        data_frame = pl.read_csv(tsv_vrs_files[0], separator='\t', infer_schema_length=0)
+        data_frame = pl.read_csv(tsv_vrs_files[0], separator='\t', infer_schema_length=0, quote_char=None)
         for row in data_frame.iter_rows(named=True):
             
             id = row["id"]
@@ -187,7 +187,7 @@ def test_cross_references_are_excluded(tsv_vrs_files):
         unprinted_parenthetical_token_list = []
         #use prompts to control if this test gets skipped
 
-        data_frame = pl.read_csv(tsv_vrs_files[0], separator='\t', infer_schema_length=0)
+        data_frame = pl.read_csv(tsv_vrs_files[0], separator='\t', infer_schema_length=0, quote_char=None)
         for row in data_frame.iter_rows(named=True):
 
             id = str(row["id"])

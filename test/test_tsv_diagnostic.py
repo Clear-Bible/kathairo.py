@@ -17,7 +17,7 @@ def test_cross_references_only_on_verse_ends(tsv_vrs_files):
     in_parentheses = False
     is_cross_reference = False
 
-    data_frame = pl.read_csv(tsv_vrs_files[0], separator='\t', infer_schema_length=0)
+    data_frame = pl.read_csv(tsv_vrs_files[0], separator='\t', infer_schema_length=0, quote_char=None)
     for row in data_frame.iter_rows(named=True):
         
         previous_bcv_id = current_bcv_id

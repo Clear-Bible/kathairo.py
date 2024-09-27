@@ -5,6 +5,7 @@ from machine.scripture import Versification
 from helpers.paths import get_target_file_location
 import os
 import polars as pl
+from helpers.verse_text import reconstitute
 
 #__macula_greek_tsv_rows__ = []
 

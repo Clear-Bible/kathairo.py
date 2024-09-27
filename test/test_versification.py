@@ -26,7 +26,7 @@ class TestVersification:
             mapping_sources = targetVersification.mappings._versification_to_standard.values()
             
             tsv_source_verses = []
-            data_frame = pl.read_csv(tsv_vrs_name_files[0], separator='\t', infer_schema_length=0)
+            data_frame = pl.read_csv(tsv_vrs_name_files[0], separator='\t', infer_schema_length=0, quote_char=None)
             
             for row in data_frame.iter_rows(named=True):
                 source_verse = int(row["source_verse"])      
@@ -71,7 +71,7 @@ class TestVersification:
             previous_source_verse = "01001000000"
             previous_source_verse_range_end = "01001000000"
             
-            data_frame = pl.read_csv(tsv_vrs_name_files[0], separator='\t', infer_schema_length=0)
+            data_frame = pl.read_csv(tsv_vrs_name_files[0], separator='\t', infer_schema_length=0, quote_char=None)
             
             for row in data_frame.iter_rows(named=True):
                 source_verse = row["source_verse"]
@@ -178,7 +178,7 @@ class TestVersification:
             mapping_targets = targetVersification.mappings._versification_to_standard.keys()
             
             tsv_ids = []
-            data_frame = pl.read_csv(tsv_vrs_name_files[0], separator='\t', infer_schema_length=0)
+            data_frame = pl.read_csv(tsv_vrs_name_files[0], separator='\t', infer_schema_length=0, quote_char=None)
                     
             for row in data_frame.iter_rows(named=True):
                 id = int(row["id"][:8])      
@@ -221,7 +221,7 @@ class TestVersification:
             current_verse_count = 0
             previous_id = "01001000000"
             
-            data_frame = pl.read_csv(tsv_vrs_name_files[0], separator='\t', infer_schema_length=0)
+            data_frame = pl.read_csv(tsv_vrs_name_files[0], separator='\t', infer_schema_length=0, quote_char=None)
             
             for row in data_frame.iter_rows(named=True):
                 id = row["id"]   
