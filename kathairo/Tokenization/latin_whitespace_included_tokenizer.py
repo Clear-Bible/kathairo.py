@@ -11,7 +11,7 @@ from .whitespace_included_tokenizer import WhitespaceIncludedTokenizer
 from spacy.lang.fr.tokenizer_exceptions import FR_BASE_EXCEPTIONS
 
 INNER_WORD_PUNCT_REGEX = re.compile(
-    r"[&\-:=?@\xAD\xB7\u2010\u2011\u2027]+|['_]+",
+    r"[&\-:=@\xAD\xB7\u2010\u2011\u2027]+|['_]+",#?
 )
 URL_REGEX = re.compile(r"(?:[\w-]+://?|www[.])[^\s()<>]+(?:[\w\d]+|(?:[^\p{P}\s]|/))", re.IGNORECASE)
 

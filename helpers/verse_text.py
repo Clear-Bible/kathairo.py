@@ -7,7 +7,7 @@ def reconstitute(tsv_file_path:Path, language:str):
     #input_files = directory.glob("*reconstitution*.tsv")
     input_files = [Path(tsv_file_path)]
     for input_file in input_files:
-        rows = [r for r in csv.DictReader(input_file.open("r", encoding='utf-8'), delimiter="\t")]
+        rows = [r for r in csv.DictReader(input_file.open("r", encoding='utf-8'), delimiter="\t", quoting=csv.QUOTE_NONE, quotechar=None)]
         verses = []
         verses.append(["id", "text"])
         text = ""
@@ -39,6 +39,6 @@ def reconstitute(tsv_file_path:Path, language:str):
         
         os.makedirs(os.path.dirname(output_file), exist_ok=True)
         with open(output_file, 'w', newline='', encoding='utf-8') as out_file:
-            tsv_writer = csv.writer(out_file, delimiter='\t')
+            tsv_writer = csv.writer(out_file, delimiter='\t', quoting=csv.QUOTE_NONE, quotechar=None)
 
             tsv_writer.writerows(verses) #OLD WAY
