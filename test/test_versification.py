@@ -67,9 +67,9 @@ class TestVersification:
             
             book_list = []
             chapter_list = []
-            current_verse_count = 0
-            previous_source_verse = "01001000000"
-            previous_source_verse_range_end = "01001000000"
+            verse_count = 0
+            previous_source_verse = "01001001000"
+            previous_source_verse_range_end = "01001001000"
             
             data_frame = pl.read_csv(tsv_vrs_name_files[0], separator='\t', infer_schema_length=0, quote_char=None)
             
@@ -99,39 +99,42 @@ class TestVersification:
                 
                 if(current_chapter_source_verse == current_chapter_source_verse_range_end and 
                    current_book_source_verse == current_book_source_verse_range_end):
-                    range_size = current_verse_source_verse_range_end - current_verse_source_verse
+                    range_size = previous_verse_source_verse_range_end - previous_verse_source_verse
                 else:
                     range_size = 0
                 
-                if(current_verse_source_verse > previous_verse_source_verse):#verse changes != #elif
+                if(current_verse_source_verse > previous_verse_source_verse): #verse changes
                     #increment verse count
-                    current_verse_count += 1 + range_size
+                    verse_count += 1 + range_size
                 
                 if(current_verse_source_verse < previous_verse_source_verse or 
                    previous_chapter_source_verse < current_chapter_source_verse):#chapter changes
+                    #increment verse count
+                    verse_count += 1
+                    
+                    if(range_size > 0):
+                        verse_count += range_size
+                    
                     #add chapter to chapter_list
-                    chapter_list.append(current_verse_count)
-                    current_verse_count = 0
+                    chapter_list.append(verse_count)
+                    verse_count = 0
                     
                     #cross-chapter verse range
-                    if(previous_book_source_verse_range_end == current_book_source_verse_range_end and 
-                       previous_chapter_source_verse_range_end == current_chapter_source_verse):        
+                    if(range_size < 0):
                         #assume that the cross-chapter source_verse range is a single verse
-                        current_verse_count += 1 
-                       
-                    #increment verse count
-                    current_verse_count += 1 + range_size
-                
+                        range_size = 1
+                        verse_count += range_size
+                    
                 if(current_book_source_verse > previous_book_source_verse):#book changes
                     #add book to book_list
-                    chapter_list.append(current_verse_count)
+                    chapter_list.append(verse_count)
                     book_list.append(chapter_list)
                     chapter_list = []
                     
                 previous_source_verse = source_verse
                 previous_source_verse_range_end = source_verse_range_end    
             
-            chapter_list.append(current_verse_count)
+            chapter_list.append(verse_count + 1)
             book_list.append(chapter_list)  
             
             for bookIndex in range(len(originalVersification.book_list)):
@@ -218,8 +221,9 @@ class TestVersification:
             
             book_list = []
             chapter_list = []
-            current_verse_count = 0
-            previous_id = "01001000000"
+            verse_count = 0
+            previous_id = "01001001000"
+            previous_id_range_end = "01001001000"
             
             data_frame = pl.read_csv(tsv_vrs_name_files[0], separator='\t', infer_schema_length=0, quote_char=None)
             
@@ -235,6 +239,10 @@ class TestVersification:
                 previous_chapter_id = int(str(previous_id)[2:5])
                 previous_verse_id = int(str(previous_id)[5:8])
                 
+                previous_book_id_range_end = int(str(previous_id_range_end)[:2])
+                previous_chapter_id_range_end = int(str(previous_id_range_end)[2:5])
+                previous_verse_id_range_end = int(str(previous_id_range_end)[5:8])
+                
                 current_book_id = int(str(id)[:2])
                 current_chapter_id = int(str(id)[2:5])
                 current_verse_id = int(str(id)[5:8])
@@ -243,31 +251,47 @@ class TestVersification:
                 current_chapter_id_range_end = int(str(id_range_end)[2:5])
                 current_verse_id_range_end = int(str(id_range_end)[5:8])
                 
-                range_size = current_verse_id_range_end - current_verse_id
+                if(current_chapter_id == current_chapter_id_range_end and 
+                   current_book_id == current_book_id_range_end):
+                    range_size = current_verse_id_range_end - current_verse_id
+                    range_size = previous_verse_id_range_end - previous_verse_id
+                else:
+                    range_size = 0
                 
                 if(current_verse_id > previous_verse_id):#verse changes !=
                     #increment verse count
-                    current_verse_count += 1 + range_size
+                    verse_count += 1 + range_size
                 
                 if(current_verse_id < previous_verse_id or 
                    previous_chapter_id < current_chapter_id):#chapter changes
-                    #add chapter to chapter_list
-                    chapter_list.append(current_verse_count)
-                    current_verse_count = 0
-                    if(current_verse_id == 0):
-                        current_verse_count = -1
                     #increment verse count
-                    current_verse_count += 1 + range_size
-                
+                    verse_count += 1
+                    
+                    if(range_size > 0):
+                        verse_count += range_size
+                    
+                    #add chapter to chapter_list
+                    chapter_list.append(verse_count)
+                    verse_count = 0
+                    if(current_verse_id == 0):
+                        verse_count = -1
+                        
+                    #cross-chapter verse range
+                    if(range_size < 0):
+                        #assume that the cross-chapter source_verse range is a single verse
+                        range_size = 1
+                        verse_count += range_size
+                    
                 if(current_book_id > previous_book_id):#book changes
                     #add book to book_list
-                    chapter_list.append(current_verse_count)
+                    chapter_list.append(verse_count)
                     book_list.append(chapter_list)
                     chapter_list = []
-                    
-                previous_id = id    
+                      
+                previous_id = id
+                previous_id_range_end = id_range_end  
             
-            chapter_list.append(current_verse_count)
+            chapter_list.append(verse_count + 1)
             book_list.append(chapter_list)  
             
             #for book in book_list:

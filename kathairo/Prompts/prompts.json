@@ -77,7 +77,7 @@
   },
   {
     "projectName": "RUSSYN",
-    "targetVersificationPath": "./resources/versification/rsc.vrs",
+    "targetVersificationPath": "./resources/rus/ru_rsb/russyn.vrs",
     "targetUsfmCorpusPath": "./resources/rus/ru_rsb",
     "latinWhiteSpaceIncludedTokenizer": true,
     "excludeBracketedText": true,
