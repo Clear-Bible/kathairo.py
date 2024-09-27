@@ -119,6 +119,13 @@
     "language": "eng"
   },
   {
+    "projectName": "TPB08",
+    "targetVersificationPath": "./resources/versification/eng.vrs",
+    "targetUsfmCorpusPath": "./resources/tpi/TPB08",
+    "latinWhiteSpaceIncludedTokenizer": true,
+    "language": "tpi"
+  },
+  {
     "projectName": "GLT",
     "targetVersificationPath": "./resources/hin/GLT/versification.vrs",
     "targetUsfmCorpusPath": "./resources/hin/GLT",
