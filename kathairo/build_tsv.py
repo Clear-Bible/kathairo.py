@@ -36,7 +36,7 @@ def corpus_to_verse_level_tsv(targetVersification:Versification, sourceVersifica
 
     os.makedirs(os.path.dirname(outputFileName), exist_ok=True)
     with open(outputFileName, 'w', newline='', encoding='utf-8') as out_file:
-        tsv_writer = csv.writer(out_file, delimiter='\t')
+        tsv_writer = csv.writer(out_file, delimiter='\t', quoting=csv.QUOTE_NONE, quotechar=None)
 
         tsv_writer.writerow(["id", "source_verse", "text","id_range_end", "source_verse_range_end"])
         verse_range_list = []
@@ -75,7 +75,7 @@ def corpus_to_word_level_tsv(targetVersification:Versification, sourceVersificat
 
     os.makedirs(os.path.dirname(outputFileName), exist_ok=True)
     with open(outputFileName, 'w', newline='', encoding='utf-8') as out_file:
-        tsv_writer = csv.writer(out_file, delimiter='\t')
+        tsv_writer = csv.writer(out_file, delimiter='\t', quoting=csv.QUOTE_NONE, quotechar=None)
 
         tsv_writer.writerow(["id", "source_verse", "text", "skip_space_after", "exclude", "id_range_end", "source_verse_range_end"])
 
@@ -285,8 +285,27 @@ if(__name__ == "__main__"):
     #project_name="IRVHin"
     #excludeBracketedText = False
     #removeZwFromWordsPath = "./resources/hin/zw-removal-words.tsv"
-    
-    
+
+    # GLT (Hindi)
+    targetVersification = Versification.load("./resources/hin/GLT/versification.vrs", fallback_name="web")
+    sourceVersification = Versification(name = "sourceVersification", base_versification=ORIGINAL_VERSIFICATION)
+    language="hin"
+    corpus = UsfmFileTextCorpus("./resources/hin/GLT", versification = targetVersification, handler=ModifiedTextRowCollector, psalmSuperscriptionTag = "d")
+    tokenizer = LatinWhitespaceIncludedWordTokenizer(language=language)
+    project_name="GLT"
+    excludeBracketedText = False
+    removeZwFromWordsPath = "./resources/hin/zw-removal-words.tsv"
+
+    # GST (Hindi)
+    #targetVersification = Versification.load("./resources/hin/GST/versification.vrs", fallback_name="web")
+    #sourceVersification = Versification(name = "sourceVersification", base_versification=ORIGINAL_VERSIFICATION)
+    #language="hin"
+    #corpus = UsfmFileTextCorpus("./resources/hin/GST", versification = targetVersification, handler=ModifiedTextRowCollector, psalmSuperscriptionTag = "d")
+    #tokenizer = LatinWhitespaceIncludedWordTokenizer(language=language)
+    #project_name="GST"
+    #excludeBracketedText = False
+    #removeZwFromWordsPath = "./resources/hin/zw-removal-words.tsv"
+
     #LSG
     #sourceVersification = Versification(name = "sourceVersification", base_versification=ORIGINAL_VERSIFICATION)
     #project_name="LSG"

@@ -20,13 +20,13 @@ class TestVersification:
         
         os.makedirs(os.path.dirname(output_file), exist_ok=True)
         with open(output_file, 'w', newline='', encoding='utf-8') as out_file:
-            tsv_writer = csv.writer(out_file, delimiter='\t')
+            tsv_writer = csv.writer(out_file, delimiter='\t', quoting=csv.QUOTE_NONE, quotechar=None)
             
             targetVersification = Versification.load(tsv_vrs_name_files[1], fallback_name="web")
             mapping_sources = targetVersification.mappings._versification_to_standard.values()
             
             tsv_source_verses = []
-            data_frame = pl.read_csv(tsv_vrs_name_files[0], separator='\t', infer_schema_length=0)
+            data_frame = pl.read_csv(tsv_vrs_name_files[0], separator='\t', infer_schema_length=0, quote_char=None)
             
             for row in data_frame.iter_rows(named=True):
                 source_verse = int(row["source_verse"])      
@@ -60,7 +60,7 @@ class TestVersification:
         
         os.makedirs(os.path.dirname(output_file), exist_ok=True)
         with open(output_file, 'w', newline='', encoding='utf-8') as out_file:
-            tsv_writer = csv.writer(out_file, delimiter='\t')
+            tsv_writer = csv.writer(out_file, delimiter='\t', quoting=csv.QUOTE_NONE, quotechar=None)
         
             print(tsv_vrs_name_files[0])
             originalVersification = Versification.load("./resources/versification/org.vrs", fallback_name="web")
@@ -71,7 +71,7 @@ class TestVersification:
             previous_source_verse = "01001000000"
             previous_source_verse_range_end = "01001000000"
             
-            data_frame = pl.read_csv(tsv_vrs_name_files[0], separator='\t', infer_schema_length=0)
+            data_frame = pl.read_csv(tsv_vrs_name_files[0], separator='\t', infer_schema_length=0, quote_char=None)
             
             for row in data_frame.iter_rows(named=True):
                 source_verse = row["source_verse"]
@@ -172,13 +172,13 @@ class TestVersification:
         
         os.makedirs(os.path.dirname(output_file), exist_ok=True)
         with open(output_file, 'w', newline='', encoding='utf-8') as out_file:
-            tsv_writer = csv.writer(out_file, delimiter='\t')
+            tsv_writer = csv.writer(out_file, delimiter='\t', quoting=csv.QUOTE_NONE, quotechar=None)
         
             targetVersification = Versification.load(tsv_vrs_name_files[1], fallback_name="web")
             mapping_targets = targetVersification.mappings._versification_to_standard.keys()
             
             tsv_ids = []
-            data_frame = pl.read_csv(tsv_vrs_name_files[0], separator='\t', infer_schema_length=0)
+            data_frame = pl.read_csv(tsv_vrs_name_files[0], separator='\t', infer_schema_length=0, quote_char=None)
                     
             for row in data_frame.iter_rows(named=True):
                 id = int(row["id"][:8])      
@@ -212,7 +212,7 @@ class TestVersification:
         
         os.makedirs(os.path.dirname(output_file), exist_ok=True)
         with open(output_file, 'w', newline='', encoding='utf-8') as out_file:
-            tsv_writer = csv.writer(out_file, delimiter='\t')
+            tsv_writer = csv.writer(out_file, delimiter='\t', quoting=csv.QUOTE_NONE, quotechar=None)
         
             targetVersification = Versification.load(tsv_vrs_name_files[1], fallback_name="web")
             
@@ -221,7 +221,7 @@ class TestVersification:
             current_verse_count = 0
             previous_id = "01001000000"
             
-            data_frame = pl.read_csv(tsv_vrs_name_files[0], separator='\t', infer_schema_length=0)
+            data_frame = pl.read_csv(tsv_vrs_name_files[0], separator='\t', infer_schema_length=0, quote_char=None)
             
             for row in data_frame.iter_rows(named=True):
                 id = row["id"]   
