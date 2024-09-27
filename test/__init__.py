@@ -5,6 +5,13 @@ from machine.scripture import Versification
 from helpers.paths import get_target_file_location
 import os
 import polars as pl
+from helpers.verse_text import reconstitute
+
+#TODO: Add Unit Tests for
+#Should we Treat Apostrophe as Single Quote
+#Is punctuation (like question marks) being tokenized properly
+#Are quotes being escaped?
+#Are zw words removed?
 
 #__macula_greek_tsv_rows__ = []
 
