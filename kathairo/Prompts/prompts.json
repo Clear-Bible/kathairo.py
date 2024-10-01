@@ -1,5 +1,149 @@
 [
   {
+    "projectName": "AVD",
+    "targetVersificationPath": "./resources/arb/arb-vd_usfm/versification.vrs",
+    "targetUsfmCorpusPath": "./resources/arb/arb-vd_usfm",
+    "latinWhiteSpaceIncludedTokenizer": true,
+    "language": "arb"
+  },
+  {
+    "projectName": "ONAV",
+    "targetVersificationPath": "./resources/arb/onav_usx/release/versification.vrs",
+    "targetUsxCorpusPath": "./resources/arb/onav_usx/release/USX_1",
+    "latinWhiteSpaceIncludedTokenizer": true,
+    "language": "arb"
+  },
+  {
+    "projectName": "IRVAsm",
+    "targetVersificationPath": "./resources/asm/IRVAsm/release/versification.vrs",
+    "targetUsfmCorpusPath": "./resources/asm/IRVAsm/release/USX_1",
+    "latinWhiteSpaceIncludedTokenizer": true,
+    "language": "asm",
+    "psalmSuperscriptionTag": "s",
+    "removeZwFromWordsPath": "./resources/asm/zw-removal-words.tsv"
+  },
+  {
+    "projectName": "IRVBen",
+    "targetVersificationPath": "./resources/ben/IRVBen/release/versification.vrs",
+    "targetUsfmCorpusPath": "./resources/ben/IRVBen/release/USX_1",
+    "latinWhiteSpaceIncludedTokenizer": true,
+    "language": "ben",
+    "removeZwFromWordsPath": "./resources/ben/zw-removal-words.tsv"
+  },
+  {
+    "projectName": "BSB",
+    "targetVersificationPath": "./resources/eng/bsb_update_usfm/versification.vrs",
+    "targetUsfmCorpusPath": "./resources/eng/bsb_update_usfm",
+    "latinWhiteSpaceIncludedTokenizer": true,
+    "language": "eng"
+  },
+  {
+    "projectName": "LSG",
+    "targetVersificationPath": "./resources/fra/fra-LSG_usfm/versification.vrs",
+    "targetUsfmCorpusPath": "./resources/fra/fra-LSG_usfm",
+    "latinWhiteSpaceIncludedTokenizer": true,
+    "language": "fra"
+  },
+  {
+    "projectName": "IRVHin",
+    "targetVersificationPath": "./resources/hin/IRVHin/versification.vrs",
+    "targetUsxCorpusPath": "./resources/hin/IRVHin",
+    "latinWhiteSpaceIncludedTokenizer": true,
+    "language": "hin",
+    "excludeCrossReferences": true,
+    "removeZwFromWordsPath": "./resources/hin/zw-removal-words.tsv"
+  },
+  {
+    "projectName": "OHCV",
+    "targetVersificationPath": "./resources/hin/hiHCV19SFM/versification.vrs",
+    "targetUsfmCorpusPath": "./resources/hin/hiHCV19SFM",
+    "latinWhiteSpaceIncludedTokenizer": true,
+    "language": "hin",
+    "removeZwFromWordsPath": "./resources/hin/zw-removal-words.tsv"
+  },
+  {
+    "projectName": "OCCB-simplified",
+    "targetVersificationPath": "./resources/man/occb_simplified_usx/release/versification.vrs",
+    "targetUsxCorpusPath": "./resources/man/occb_simplified_usx/release/USX_1",
+    "chineseTokenizer": true,
+    "language": "man"
+  },
+  {
+    "projectName": "JFA11",
+    "targetVersificationPath": "./resources/por/JFA11/JFA11.vrs",
+    "targetUsfmCorpusPath": "./resources/por/JFA11/usfm",
+    "latinWhiteSpaceIncludedTokenizer": true,
+    "language": "por"
+  },
+  {
+    "projectName": "RUSSYN",
+    "targetVersificationPath": "./resources/rus/ru_rsb/russyn.vrs",
+    "targetUsfmCorpusPath": "./resources/rus/ru_rsb",
+    "latinWhiteSpaceIncludedTokenizer": true,
+    "excludeBracketedText": true,
+    "language": "rus"
+  },
+  {
+    "projectName": "RV09",
+    "targetVersificationPath": "./resources/spa/RV09/versification.vrs",
+    "targetUsxCorpusPath": "./resources/spa/RV09",
+    "latinWhiteSpaceIncludedTokenizer": true,
+    "language": "spa"
+  },
+  {
+    "projectName": "ONEN",
+    "targetVersificationPath": "./resources/swh/onen_usfm/versification.vrs",
+    "targetUsfmCorpusPath": "./resources/swh/onen_usfm",
+    "latinWhiteSpaceIncludedTokenizer": true,
+    "language": "swh"
+  },
+  {
+    "projectName": "TBI",
+    "targetVersificationPath": "./resources/ind/TBI/custom.vrs",
+    "targetUsfmCorpusPath": "./resources/ind/TBI",
+    "latinWhiteSpaceIncludedTokenizer": true,
+    "language": "ind"
+  },
+  {
+    "projectName": "SRUV06",
+    "targetVersificationPath": "./resources/swh/SRUV06/SRUV06.vrs",
+    "targetUsxCorpusPath": "./resources/swh/SRUV06",
+    "latinWhiteSpaceIncludedTokenizer": true,
+    "language": "swh"
+  },
+  {
+    "projectName": "ULT",
+    "targetVersificationPath": "./resources/versification/eng.vrs",
+    "targetUsfmCorpusPath": "./resources/eng/ULT",
+    "latinWhiteSpaceIncludedTokenizer": true,
+    "language": "eng"
+  },
+  {
+    "projectName": "TPB08",
+    "targetVersificationPath": "./resources/versification/eng.vrs",
+    "targetUsfmCorpusPath": "./resources/tpi/TPB08",
+    "latinWhiteSpaceIncludedTokenizer": true,
+    "language": "tpi"
+  },
+  {
+    "projectName": "GLT",
+    "targetVersificationPath": "./resources/hin/GLT/versification.vrs",
+    "targetUsfmCorpusPath": "./resources/hin/GLT",
+    "latinWhiteSpaceIncludedTokenizer": true,
+    "language": "hin",
+    "removeZwFromWordsPath": "./resources/hin/zw-removal-words.tsv",
+    "treatApostropheAsSingleQuote": true
+  },
+  {
+    "projectName": "GST",
+    "targetVersificationPath": "./resources/hin/GST/versification.vrs",
+    "targetUsfmCorpusPath": "./resources/hin/GST",
+    "latinWhiteSpaceIncludedTokenizer": true,
+    "language": "hin",
+    "removeZwFromWordsPath": "./resources/hin/zw-removal-words.tsv",
+    "treatApostropheAsSingleQuote": true
+  },
+  {
     "projectName": "BCL",
     "targetVersificationPath": "./resources/mya/BCL/versification.vrs",
     "targetUsfmCorpusPath": "./resources/mya/BCL",
