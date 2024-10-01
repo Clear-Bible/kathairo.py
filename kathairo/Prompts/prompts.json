@@ -142,5 +142,12 @@
     "language": "hin",
     "removeZwFromWordsPath": "./resources/hin/zw-removal-words.tsv",
     "treatApostropheAsSingleQuote": true
+  },
+  {
+    "projectName": "BCL",
+    "targetVersificationPath": "./resources/mya/BCL/versification.vrs",
+    "targetUsfmCorpusPath": "./resources/mya/BCL",
+    "latinWhiteSpaceIncludedTokenizer": true,
+    "language": "mya"
   }
 ]
