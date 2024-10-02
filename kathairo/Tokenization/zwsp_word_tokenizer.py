@@ -2,9 +2,8 @@ from typing import Optional, Tuple
 
 from machine.annotations.range import Range
 from machine.utils.string_utils import is_punctuation
-#from .latin_whitespace_included_tokenizer import LatinWhitespaceIncludedWordTokenizer
 from machine.tokenization.latin_word_tokenizer import LatinWordTokenizer
-
+#TODO pass in variable rather than just saying False in ignore whitespace conditions
 class ZwspWordTokenizer(LatinWordTokenizer):
     def _process_character(
         self, data: str, data_range: Range[int], ctxt: LatinWordTokenizer._TokenizeContext

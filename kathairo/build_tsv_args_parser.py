@@ -37,7 +37,6 @@ tokenizerGroup.add_argument("-zw", "--zwspWordTokenizer", action='store_true')
 
 argumentParser.add_argument("-wl", "--runBuildWordLevelTsv", action='store_true')
 
-argumentParser.add_argument("-is", "--ignoreWhitespace", action='store_true') #optional
 argumentParser.add_argument("-sq", "--treatApostropheAsSingleQuote", action='store_true') #optional
 argumentParser.add_argument("-xb", "--excludeBracketedText", action='store_true') #optional
 argumentParser.add_argument("-xx", "--excludeCrossReferences", action='store_true') #optional
@@ -85,7 +84,6 @@ if(args.latinWhiteSpaceIncludedTokenizer == True):
 if(args.zwspWordTokenizer == True):
     tokenizer = ZwspWordTokenizer(
         treat_apostrophe_as_single_quote=args.treatApostropheAsSingleQuote
-        #,ignore_whitespace = args.ignoreWhitespace
     )
 
 if(args.runBuildWordLevelTsv):
