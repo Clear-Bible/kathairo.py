@@ -2,13 +2,16 @@ from typing import Optional, Tuple
 
 from machine.annotations.range import Range
 from machine.utils.string_utils import is_punctuation
-from machine.tokenization.latin_word_tokenizer import LatinWordTokenizer
+#from machine.tokenization.latin_word_tokenizer import LatinWordTokenizer
+from .latin_whitespace_included_tokenizer import LatinWhitespaceIncludedWordTokenizer
 #TODO pass in variable rather than just saying False in ignore whitespace conditions
-class ZwspWordTokenizer(LatinWordTokenizer):
+class ZwspWordTokenizer(LatinWhitespaceIncludedWordTokenizer):
     def _process_character(
-        self, data: str, data_range: Range[int], ctxt: LatinWordTokenizer._TokenizeContext
+        self, data: str, data_range: Range[int], ctxt: LatinWhitespaceIncludedWordTokenizer._TokenizeContext
     ) -> Tuple[Optional[Range[int]], Optional[Range[int]]]:
         if data[ctxt.index].isspace():
+            if(data == "ဘု​ရား​သ​ခင်​က``အ​လင်း​ရောင်​ပေါ်​စေ'' ဟု အ​မိန့်​တော်​ချ​မှတ်​သော​အ​ခါ အ​လင်း​ရောင် ထွက်​ပေါ်​လာ​၏။-"):
+                stop = True
             end_index = ctxt.index + 1
             while end_index != data_range.end and data[end_index].isspace():
                 end_index += 1

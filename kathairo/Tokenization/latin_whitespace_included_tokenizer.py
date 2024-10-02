@@ -32,7 +32,7 @@ CONTRACTION_WORD_REGEX = re.compile(
     r"\b\w+(?:[\'\w\’]+)?\b"
 )
 
-class LatinWhitespaceIncludedWordTokenizer(WhitespaceIncludedTokenizer): #uses WhitepspaceIncludedTokenizer
+class LatinWhitespaceIncludedWordTokenizer(WhitespaceIncludedTokenizer): #uses WhitespaceIncludedTokenizer
     def __init__(self, abbreviations: Iterable[str] = [], treat_apostrophe_as_single_quote: bool = False, language:str = None, ignore_whitespace:bool = False) -> None:
         self._abbreviations = {a.lower() for a in abbreviations}
         self.treat_apostrophe_as_single_quote = treat_apostrophe_as_single_quote

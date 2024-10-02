@@ -25,6 +25,7 @@ import os
 import pandas as pd
 import helpers.strings as string
 import helpers.versification
+from kathairo.Tokenization.zwsp_word_tokenizer import ZwspWordTokenizer
 
 def corpus_to_verse_level_tsv(targetVersification:Versification, sourceVersification:Versification, corpus:ScriptureTextCorpus, tokenizer:WhitespaceTokenizer, 
                             project_name:str, language:str, removeZwFromWordsPath:str, excludeBracketedText:bool = False, excludeCrossReferences:bool = False):
@@ -161,11 +162,10 @@ def corpus_to_word_level_tsv(targetVersification:Versification, sourceVersificat
                 else:
                     next_token = ' ' #assume a space between verses
                 skip_space_after = ""
-                if(token==' '):
+                if(token==' ' or token==string.zwj or token==string.zwnj or token==string.zwsp):
                     continue
-                else:
-                    if(not next_token==' '):
-                        skip_space_after = "y"
+                elif(not next_token==' '):
+                    skip_space_after = "y"
 
                 exclude = "y"
                 for char in token:
@@ -287,14 +287,14 @@ if(__name__ == "__main__"):
     #removeZwFromWordsPath = "./resources/hin/zw-removal-words.tsv"
 
     # GLT (Hindi)
-    targetVersification = Versification.load("./resources/hin/GLT/versification.vrs", fallback_name="web")
-    sourceVersification = Versification(name = "sourceVersification", base_versification=ORIGINAL_VERSIFICATION)
-    language="hin"
-    corpus = UsfmFileTextCorpus("./resources/hin/GLT", versification = targetVersification, handler=ModifiedTextRowCollector, psalmSuperscriptionTag = "d")
-    tokenizer = LatinWhitespaceIncludedWordTokenizer(language=language)
-    project_name="GLT"
-    excludeBracketedText = False
-    removeZwFromWordsPath = "./resources/hin/zw-removal-words.tsv"
+    #targetVersification = Versification.load("./resources/hin/GLT/versification.vrs", fallback_name="web")
+    #sourceVersification = Versification(name = "sourceVersification", base_versification=ORIGINAL_VERSIFICATION)
+    #language="hin"
+    #corpus = UsfmFileTextCorpus("./resources/hin/GLT", versification = targetVersification, handler=ModifiedTextRowCollector, psalmSuperscriptionTag = "d")
+    #tokenizer = LatinWhitespaceIncludedWordTokenizer(language=language)
+    #project_name="GLT"
+    #excludeBracketedText = False
+    #removeZwFromWordsPath = "./resources/hin/zw-removal-words.tsv"
 
     # GST (Hindi)
     #targetVersification = Versification.load("./resources/hin/GST/versification.vrs", fallback_name="web")
@@ -381,14 +381,26 @@ if(__name__ == "__main__"):
     # removeZwFromWordsPath = None
 
     # TPB08
-    usfm_language = "tpi"
-    usfm_abbrev = "TPB08"
-    targetVersification = Versification.load(f"./resources/versification/eng.vrs", fallback_name="web")
+    #usfm_language = "tpi"
+    #usfm_abbrev = "TPB08"
+    #targetVersification = Versification.load(f"./resources/versification/eng.vrs", fallback_name="web")
+    #sourceVersification = Versification(name="sourceVersification", base_versification=ORIGINAL_VERSIFICATION)
+    #language = usfm_language
+    #corpus = UsfmFileTextCorpus(f"./resources/{usfm_language}/{usfm_abbrev}/", versification=targetVersification, handler=ModifiedTextRowCollector, psalmSuperscriptionTag="d")
+    ## corpus = UsxFileTextCorpus(f"./resources/{usfm_language}/{usfm_abbrev}/", versification=targetVersification)
+    #tokenizer = LatinWhitespaceIncludedWordTokenizer(language=language)
+    #project_name = usfm_abbrev
+    #excludeBracketedText = False
+    #removeZwFromWordsPath = None
+    
+    # BCL
+    usfm_language = "mya"
+    usfm_abbrev = "BCL"
+    targetVersification = Versification.load(f"./resources/{usfm_language}/{usfm_abbrev}/versification.vrs", fallback_name="web")
     sourceVersification = Versification(name="sourceVersification", base_versification=ORIGINAL_VERSIFICATION)
     language = usfm_language
     corpus = UsfmFileTextCorpus(f"./resources/{usfm_language}/{usfm_abbrev}/", versification=targetVersification, handler=ModifiedTextRowCollector, psalmSuperscriptionTag="d")
-    # corpus = UsxFileTextCorpus(f"./resources/{usfm_language}/{usfm_abbrev}/", versification=targetVersification)
-    tokenizer = LatinWhitespaceIncludedWordTokenizer(language=language)
+    tokenizer = ZwspWordTokenizer(language=language)
     project_name = usfm_abbrev
     excludeBracketedText = False
     removeZwFromWordsPath = None

@@ -13,7 +13,7 @@ from helpers import strings
 
 # Verify that the file exists.
 @pytest.mark.parametrize("tsv_vrs_files", __tsv_vrs_name_files__)
-def test_files_exists(tsv_vrs_files):
+def test_file_exists(tsv_vrs_files):
     size = os.path.getsize(tsv_vrs_files[0])
     assert size > 0, tsv_vrs_files[2] + " does not exist"
 
