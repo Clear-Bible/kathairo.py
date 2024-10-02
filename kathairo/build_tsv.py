@@ -25,6 +25,7 @@ import os
 import pandas as pd
 import helpers.strings as string
 import helpers.versification
+from kathairo.Tokenization.zwsp_word_tokenizer import ZwspWordTokenizer
 
 def corpus_to_verse_level_tsv(targetVersification:Versification, sourceVersification:Versification, corpus:ScriptureTextCorpus, tokenizer:WhitespaceTokenizer, 
                             project_name:str, language:str, removeZwFromWordsPath:str, excludeBracketedText:bool = False, excludeCrossReferences:bool = False):
@@ -154,18 +155,25 @@ def corpus_to_word_level_tsv(targetVersification:Versification, sourceVersificat
                     if token in zw_removal_df["words"].values:    
                         token = token.replace(string.zwsp, string.empty_string).replace(string.zwj, string.empty_string).replace(string.zwnj, string.empty_string)
                 
-                next_token = None
                 max_segment_index = len(row.segment) - 1
+                
+                next_token = None
                 if(index + 1 <= max_segment_index):
                     next_token = row.segment[index + 1]
                 else:
                     next_token = ' ' #assume a space between verses
-                skip_space_after = ""
-                if(token==' '):
-                    continue
+                   
+                next_next_token = None 
+                if(index + 2 <= max_segment_index):
+                    next_next_token = row.segment[index + 2]
                 else:
-                    if(not next_token==' '):
-                        skip_space_after = "y"
+                    next_next_token = ' ' #assume a space between verses
+                
+                skip_space_after = "y"
+                if(token==' ' or token==string.zwsp):
+                    continue
+                elif(next_token==' ' or (next_token==string.zwsp and next_next_token ==' ')):
+                    skip_space_after = ""
 
                 exclude = "y"
                 for char in token:
@@ -287,14 +295,14 @@ if(__name__ == "__main__"):
     #removeZwFromWordsPath = "./resources/hin/zw-removal-words.tsv"
 
     # GLT (Hindi)
-    targetVersification = Versification.load("./resources/hin/GLT/versification.vrs", fallback_name="web")
-    sourceVersification = Versification(name = "sourceVersification", base_versification=ORIGINAL_VERSIFICATION)
-    language="hin"
-    corpus = UsfmFileTextCorpus("./resources/hin/GLT", versification = targetVersification, handler=ModifiedTextRowCollector, psalmSuperscriptionTag = "d")
-    tokenizer = LatinWhitespaceIncludedWordTokenizer(language=language)
-    project_name="GLT"
-    excludeBracketedText = False
-    removeZwFromWordsPath = "./resources/hin/zw-removal-words.tsv"
+    #targetVersification = Versification.load("./resources/hin/GLT/versification.vrs", fallback_name="web")
+    #sourceVersification = Versification(name = "sourceVersification", base_versification=ORIGINAL_VERSIFICATION)
+    #language="hin"
+    #corpus = UsfmFileTextCorpus("./resources/hin/GLT", versification = targetVersification, handler=ModifiedTextRowCollector, psalmSuperscriptionTag = "d")
+    #tokenizer = LatinWhitespaceIncludedWordTokenizer(language=language)
+    #project_name="GLT"
+    #excludeBracketedText = False
+    #removeZwFromWordsPath = "./resources/hin/zw-removal-words.tsv"
 
     # GST (Hindi)
     #targetVersification = Versification.load("./resources/hin/GST/versification.vrs", fallback_name="web")
@@ -381,13 +389,25 @@ if(__name__ == "__main__"):
     # removeZwFromWordsPath = None
 
     # TPB08
-    usfm_language = "tpi"
-    usfm_abbrev = "TPB08"
-    targetVersification = Versification.load(f"./resources/versification/eng.vrs", fallback_name="web")
+    #usfm_language = "tpi"
+    #usfm_abbrev = "TPB08"
+    #targetVersification = Versification.load(f"./resources/versification/eng.vrs", fallback_name="web")
+    #sourceVersification = Versification(name="sourceVersification", base_versification=ORIGINAL_VERSIFICATION)
+    #language = usfm_language
+    #corpus = UsfmFileTextCorpus(f"./resources/{usfm_language}/{usfm_abbrev}/", versification=targetVersification, handler=ModifiedTextRowCollector, psalmSuperscriptionTag="d")
+    ## corpus = UsxFileTextCorpus(f"./resources/{usfm_language}/{usfm_abbrev}/", versification=targetVersification)
+    #tokenizer = LatinWhitespaceIncludedWordTokenizer(language=language)
+    #project_name = usfm_abbrev
+    #excludeBracketedText = False
+    #removeZwFromWordsPath = None
+    
+    # BCL
+    usfm_language = "mya"
+    usfm_abbrev = "BCL"
+    targetVersification = Versification.load(f"./resources/{usfm_language}/{usfm_abbrev}/versification.vrs", fallback_name="web")
     sourceVersification = Versification(name="sourceVersification", base_versification=ORIGINAL_VERSIFICATION)
     language = usfm_language
     corpus = UsfmFileTextCorpus(f"./resources/{usfm_language}/{usfm_abbrev}/", versification=targetVersification, handler=ModifiedTextRowCollector, psalmSuperscriptionTag="d")
-    # corpus = UsxFileTextCorpus(f"./resources/{usfm_language}/{usfm_abbrev}/", versification=targetVersification)
     tokenizer = LatinWhitespaceIncludedWordTokenizer(language=language)
     project_name = usfm_abbrev
     excludeBracketedText = False
