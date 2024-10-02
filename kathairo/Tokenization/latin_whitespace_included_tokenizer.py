@@ -33,7 +33,7 @@ CONTRACTION_WORD_REGEX = re.compile(
 )
 
 class LatinWhitespaceIncludedWordTokenizer(WhitespaceIncludedTokenizer): #uses WhitepspaceIncludedTokenizer
-    def __init__(self, abbreviations: Iterable[str] = [], treat_apostrophe_as_single_quote: bool = False, language:str = None, ignore_whitespace:bool = True) -> None:
+    def __init__(self, abbreviations: Iterable[str] = [], treat_apostrophe_as_single_quote: bool = False, language:str = None, ignore_whitespace:bool = False) -> None:
         self._abbreviations = {a.lower() for a in abbreviations}
         self.treat_apostrophe_as_single_quote = treat_apostrophe_as_single_quote
         self.language = language

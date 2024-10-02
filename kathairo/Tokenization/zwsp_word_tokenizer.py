@@ -2,11 +2,12 @@ from typing import Optional, Tuple
 
 from machine.annotations.range import Range
 from machine.utils.string_utils import is_punctuation
-from .latin_whitespace_included_tokenizer import LatinWhitespaceIncludedWordTokenizer
+#from .latin_whitespace_included_tokenizer import LatinWhitespaceIncludedWordTokenizer
+from machine.tokenization.latin_word_tokenizer import LatinWordTokenizer
 
-class ZwspWordTokenizer(LatinWhitespaceIncludedWordTokenizer):
+class ZwspWordTokenizer(LatinWordTokenizer):
     def _process_character(
-        self, data: str, data_range: Range[int], ctxt: LatinWhitespaceIncludedWordTokenizer._TokenizeContext
+        self, data: str, data_range: Range[int], ctxt: LatinWordTokenizer._TokenizeContext
     ) -> Tuple[Optional[Range[int]], Optional[Range[int]]]:
         if data[ctxt.index].isspace():
             end_index = ctxt.index + 1
@@ -14,12 +15,12 @@ class ZwspWordTokenizer(LatinWhitespaceIncludedWordTokenizer):
                 end_index += 1
             token_ranges: Tuple[Optional[Range[int]], Optional[Range[int]]] = (None, None)
             # ignore whitespace that is followed by whitespace or punctuation
-            if self.ignore_whitespace and ctxt.index != data_range.end - 1 and (is_punctuation(data[end_index]) or data[end_index].isspace()):
+            if False and ctxt.index != data_range.end - 1 and (is_punctuation(data[end_index]) or data[end_index].isspace()):
                 if ctxt.word_start != -1:
                     token_ranges = (Range.create(ctxt.word_start, ctxt.index), None)
                     ctxt.word_start = -1
             # ignore whitespace that is preceded by whitespace or punctuation
-            elif self.ignore_whitespace and ctxt.index != data_range.start and (
+            elif False and ctxt.index != data_range.start and (
                 is_punctuation(data[ctxt.index - 1]) or data[ctxt.index - 1].isspace()
             ):
                 if ctxt.inner_word_punct != -1:
