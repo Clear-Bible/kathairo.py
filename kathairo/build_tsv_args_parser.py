@@ -4,7 +4,7 @@ from Tokenization import ChineseBibleWordTokenizer
 from Tokenization.latin_whitespace_included_tokenizer import LatinWhitespaceIncludedWordTokenizer
 from Parsing.USX.usx_file_text_corpus import UsxFileTextCorpus
 from Parsing.USFM.usfm_file_text_corpus import UsfmFileTextCorpus
-from machine.tokenization import LatinWordTokenizer, WhitespaceTokenizer
+from machine.tokenization import LatinWordTokenizer, WhitespaceTokenizer, ZwspWordTokenizer
 from machine.scripture import (
     ORIGINAL_VERSIFICATION,
     Versification,
@@ -32,6 +32,7 @@ tokenizerGroup = argumentParser.add_mutually_exclusive_group(required=True)
 tokenizerGroup.add_argument("-zh", "--chineseTokenizer", action='store_true')
 tokenizerGroup.add_argument("-lt", "--latinTokenizer", action='store_true')
 tokenizerGroup.add_argument("-lw", "--latinWhiteSpaceIncludedTokenizer", action='store_true')
+tokenizerGroup.add_argument("-zw", "--zwspWordTokenizer", action='store_true')
 
 argumentParser.add_argument("-wl", "--runBuildWordLevelTsv", action='store_true')
 
@@ -78,6 +79,10 @@ if(args.latinWhiteSpaceIncludedTokenizer == True):
     tokenizer = LatinWhitespaceIncludedWordTokenizer(
         treat_apostrophe_as_single_quote=args.treatApostropheAsSingleQuote,
         language = args.language
+    )
+if(args.zwspWordTokenizer == True):
+    tokenizer = ZwspWordTokenizer(
+        treat_apostrophe_as_single_quote=args.treatApostropheAsSingleQuote
     )
 
 if(args.runBuildWordLevelTsv):

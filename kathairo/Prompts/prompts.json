@@ -3,7 +3,7 @@
     "projectName": "BCL",
     "targetVersificationPath": "./resources/mya/BCL/versification.vrs",
     "targetUsfmCorpusPath": "./resources/mya/BCL",
-    "latinWhiteSpaceIncludedTokenizer": true,
+    "zwspWordTokenizer": true,
     "language": "mya"
   }
 ]
