@@ -4,6 +4,7 @@
     "targetVersificationPath": "./resources/mya/BCL/versification.vrs",
     "targetUsfmCorpusPath": "./resources/mya/BCL",
     "zwspWordTokenizer": true,
-    "language": "mya"
+    "language": "mya",
+    "treatApostropheAsSingleQuote": true
   }
 ]
