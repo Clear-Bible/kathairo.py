@@ -14,7 +14,7 @@ class WhitespaceIncludedTokenizer(StringTokenizer):
             if self._is_whitespace(data[i]):
                 if start_index != -1:
                     yield Range.create(start_index, i)
-                    yield Range.create(i, i+1) # Added for kathairo.py to include whitespace
+                yield Range.create(i, i+1) # Added for kathairo.py to include whitespace
                 start_index = -1
             elif start_index == -1:
                 start_index = i

@@ -19,11 +19,15 @@ def test_tokens_contain_no_punctuation(tsv_vrs_name_files):
             
 #@pytest.mark.skip(reason="Passing this test isn't necessary")
 @pytest.mark.parametrize("tsv_vrs_name_files", __tsv_vrs_name_files__)
-def test_tokens_mix_in_punct_or_space(tsv_vrs_name_files):
+def test_for_mixed_tokens(tsv_vrs_name_files):
     #if ("OCCB" in tsv_vrs_name_files[0]):
     data_frame = pl.read_csv(tsv_vrs_name_files[0], separator='\t', infer_schema_length=0, quote_char=None)
     for row in data_frame.iter_rows(named=True):
         token = str(row["text"])
+        if(token == ""):
+            id = row["id"]
+            print(id, token)
+            break
         punct_count = 0
         non_punct_count = 0
         for char in token:

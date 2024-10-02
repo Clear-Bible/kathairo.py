@@ -155,17 +155,25 @@ def corpus_to_word_level_tsv(targetVersification:Versification, sourceVersificat
                     if token in zw_removal_df["words"].values:    
                         token = token.replace(string.zwsp, string.empty_string).replace(string.zwj, string.empty_string).replace(string.zwnj, string.empty_string)
                 
-                next_token = None
                 max_segment_index = len(row.segment) - 1
+                
+                next_token = None
                 if(index + 1 <= max_segment_index):
                     next_token = row.segment[index + 1]
                 else:
                     next_token = ' ' #assume a space between verses
-                skip_space_after = ""
-                if(token==' ' or token==string.zwj or token==string.zwnj or token==string.zwsp):
+                   
+                next_next_token = None 
+                if(index + 2 <= max_segment_index):
+                    next_next_token = row.segment[index + 2]
+                else:
+                    next_next_token = ' ' #assume a space between verses
+                
+                skip_space_after = "y"
+                if(token==' ' or token==string.zwsp):
                     continue
-                elif(not next_token==' '):
-                    skip_space_after = "y"
+                elif(next_token==' ' or (next_token==string.zwsp and next_next_token ==' ')):
+                    skip_space_after = ""
 
                 exclude = "y"
                 for char in token:
@@ -400,7 +408,7 @@ if(__name__ == "__main__"):
     sourceVersification = Versification(name="sourceVersification", base_versification=ORIGINAL_VERSIFICATION)
     language = usfm_language
     corpus = UsfmFileTextCorpus(f"./resources/{usfm_language}/{usfm_abbrev}/", versification=targetVersification, handler=ModifiedTextRowCollector, psalmSuperscriptionTag="d")
-    tokenizer = ZwspWordTokenizer(language=language)
+    tokenizer = LatinWhitespaceIncludedWordTokenizer(language=language)
     project_name = usfm_abbrev
     excludeBracketedText = False
     removeZwFromWordsPath = None
