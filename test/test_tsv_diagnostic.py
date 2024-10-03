@@ -9,7 +9,7 @@ import csv
 from pathlib import Path
 from helpers.strings import is_unicode_punctuation
 
-@pytest.mark.skip(reason="Passing this test isn't necessary")
+#@pytest.mark.skip(reason="Passing this test isn't necessary")
 @pytest.mark.parametrize("tsv_vrs_files", __tsv_vrs_name_files__)
 def test_cross_references_only_on_verse_ends(tsv_vrs_files):    
     print(tsv_vrs_files[0])
