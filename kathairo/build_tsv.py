@@ -63,13 +63,17 @@ def corpus_to_verse_level_tsv(targetVersification:Versification, sourceVersifica
                 tsv_writer.writerow([f"{rowBcv}", f"{sourceBcv}", row.text, "", source_verse_range_end])
 
 def corpus_to_word_level_tsv(targetVersification:Versification, sourceVersification:Versification, corpus:ScriptureTextCorpus, tokenizer:WhitespaceTokenizer, 
-                project_name:str, language:str, removeZwFromWordsPath:str, excludeBracketedText:bool = False, excludeCrossReferences:bool = False):
+                project_name:str, language:str, removeZwFromWordsPath:str, stopWordsPath:str, excludeBracketedText:bool = False, excludeCrossReferences:bool = False):
     
     unused_versification_mapping = helpers.versification.create_target_to_sources_dict(targetVersification)
     
     zw_removal_df=None
     if(removeZwFromWordsPath != None):
         zw_removal_df = pd.read_csv(removeZwFromWordsPath, sep='\t',dtype=str)
+        
+    stop_words_df=None
+    if(stopWordsPath != None):
+        stop_words_df = pd.read_csv(stopWordsPath, sep='\t',dtype=str)
 
     outputFileName = get_target_file_location("TSVs", project_name, language)
 
@@ -154,18 +158,26 @@ def corpus_to_word_level_tsv(targetVersification:Versification, sourceVersificat
                     if token in zw_removal_df["words"].values:    
                         token = token.replace(string.zwsp, string.empty_string).replace(string.zwj, string.empty_string).replace(string.zwnj, string.empty_string)
                 
+                if(stopWordsPath != None and token != " "):
+                    if token in zw_removal_df["words"].values:    
+                        token = token.replace(string.zwsp, string.empty_string).replace(string.zwj, string.empty_string).replace(string.zwnj, string.empty_string)
+                
                 next_token = None
                 max_segment_index = len(row.segment) - 1
                 if(index + 1 <= max_segment_index):
                     next_token = row.segment[index + 1]
                 else:
                     next_token = ' ' #assume a space between verses
-                skip_space_after = ""
+                skip_space_after = "y"
+                
+                if(stopWordsPath != None and token != " "):
+                    if token in stop_words_df["stop_words"].values:
+                        continue 
                 if(token==' '):
                     continue
                 else:
-                    if(not next_token==' '):
-                        skip_space_after = "y"
+                    if(next_token==' '):
+                        skip_space_after = ""
 
                 exclude = "y"
                 for char in token:

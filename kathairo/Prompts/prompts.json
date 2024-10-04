@@ -149,6 +149,7 @@
     "targetUsxCorpusPath": "./resources/mya/BCB",
     "latinWhiteSpaceIncludedTokenizer": true,
     "language": "mya",
-    "treatApostropheAsSingleQuote": true
+    "treatApostropheAsSingleQuote": true,
+    "stopWordsPath": "./mya/BCB/stop-words.tsv"
   }
 ]
