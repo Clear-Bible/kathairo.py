@@ -6,6 +6,7 @@ from helpers.paths import get_target_file_location
 import os
 import polars as pl
 from helpers.verse_text import reconstitute
+import pandas as pd
 
 #TODO: Add Unit Tests for
 #Should we Treat Apostrophe as Single Quote
@@ -38,9 +39,14 @@ with open(json_file) as json_data:
         projectName = jsonObject["projectName"]
         language = jsonObject["language"]
         
+        stopWordsPath = jsonObject["stopWordsPath"]
+        stop_words_df=None
+        if(stopWordsPath != None):
+            stop_words_df = pd.read_csv(stopWordsPath, sep='\t',dtype=str)
+        
         outputFileLocation = get_target_file_location("TSVs", projectName, language)
         
-        prompt_tsv_vrs = [outputFileLocation, targetVersificationPath, projectName, language]
+        prompt_tsv_vrs = [outputFileLocation, targetVersificationPath, projectName, language, stop_words_df]
         __tsv_vrs_name_files__.append(prompt_tsv_vrs)
 
 

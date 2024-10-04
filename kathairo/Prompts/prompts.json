@@ -150,6 +150,6 @@
     "latinWhiteSpaceIncludedTokenizer": true,
     "language": "mya",
     "treatApostropheAsSingleQuote": true,
-    "stopWordsPath": "./mya/BCB/stop-words.tsv"
+    "stopWordsPath": "./resources/mya/BCB/stop_words.tsv"
   }
 ]

@@ -158,10 +158,6 @@ def corpus_to_word_level_tsv(targetVersification:Versification, sourceVersificat
                     if token in zw_removal_df["words"].values:    
                         token = token.replace(string.zwsp, string.empty_string).replace(string.zwj, string.empty_string).replace(string.zwnj, string.empty_string)
                 
-                if(stopWordsPath != None and token != " "):
-                    if token in zw_removal_df["words"].values:    
-                        token = token.replace(string.zwsp, string.empty_string).replace(string.zwj, string.empty_string).replace(string.zwnj, string.empty_string)
-                
                 next_token = None
                 max_segment_index = len(row.segment) - 1
                 if(index + 1 <= max_segment_index):
