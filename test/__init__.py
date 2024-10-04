@@ -39,9 +39,9 @@ with open(json_file) as json_data:
         projectName = jsonObject["projectName"]
         language = jsonObject["language"]
         
-        stopWordsPath = jsonObject["stopWordsPath"]
-        stop_words_df=None
-        if(stopWordsPath != None):
+        stop_words_df = None
+        if("stopWordsPath" in jsonObject):
+            stopWordsPath = jsonObject["stopWordsPath"]
             stop_words_df = pd.read_csv(stopWordsPath, sep='\t',dtype=str)
         
         outputFileLocation = get_target_file_location("TSVs", projectName, language)
