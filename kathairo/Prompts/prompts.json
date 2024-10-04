@@ -105,13 +105,6 @@
     "language": "ind"
   },
   {
-    "projectName": "SRUV06",
-    "targetVersificationPath": "./resources/swh/SRUV06/SRUV06.vrs",
-    "targetUsxCorpusPath": "./resources/swh/SRUV06",
-    "latinWhiteSpaceIncludedTokenizer": true,
-    "language": "swh"
-  },
-  {
     "projectName": "ULT",
     "targetVersificationPath": "./resources/versification/eng.vrs",
     "targetUsfmCorpusPath": "./resources/eng/ULT",
