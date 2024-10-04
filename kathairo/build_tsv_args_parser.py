@@ -42,6 +42,7 @@ argumentParser.add_argument("-xx", "--excludeCrossReferences", action='store_tru
 argumentParser.add_argument("-ps", "--psalmSuperscriptionTag", type=str) #optional
 
 argumentParser.add_argument("-rz", "--removeZwFromWordsPath", type=str) #optional
+argumentParser.add_argument("-sw", "--stopWordsPath", type=str) #optional
 
 args = argumentParser.parse_args()
 
@@ -89,7 +90,8 @@ if(args.runBuildWordLevelTsv):
                                         excludeBracketedText = args.excludeBracketedText,
                                         excludeCrossReferences = args.excludeCrossReferences, 
                                         language = args.language,
-                                        removeZwFromWordsPath = args.removeZwFromWordsPath)  
+                                        removeZwFromWordsPath = args.removeZwFromWordsPath,
+                                        stopWordsPath = args.stopWordsPath)  
 else:
     build_tsv.corpus_to_verse_level_tsv(targetVersification = targetVersification, 
                                         sourceVersification = sourceVersification, 

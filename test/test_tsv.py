@@ -91,6 +91,7 @@ def test_id_verse_value(tsv_vrs_files):
 #Is skip_space_after column accurate
 @pytest.mark.parametrize("tsv_vrs_files", __tsv_vrs_name_files__)
 def test_verse_text_reconstitution(tsv_vrs_files):
+    stop_words_df = tsv_vrs_files[4]
     #Reconstitute VerseText File from TSV
     tsv_path = Path(tsv_vrs_files[0])
     reconstitute(tsv_path, tsv_vrs_files[3])
@@ -117,6 +118,12 @@ def test_verse_text_reconstitution(tsv_vrs_files):
         else: 
             adjusted_verse = verseTextRows[index]['text'].replace("  ", " ")
             adjusted_reconstitution = reconstitutedRows[index]['text'].rstrip().replace("  ", " ")
+            
+            if(stop_words_df is not None):
+                for word in stop_words_df["stop_words"].values:
+                    adjusted_verse = adjusted_verse.replace(word, "")
+                    adjusted_reconstitution = adjusted_reconstitution.replace(word, "")
+                
             assert(adjusted_verse == adjusted_reconstitution), tsv_vrs_files[2] +" "+ adjusted_verse +"=="+ adjusted_reconstitution
                 #print(f"MISMATCH---{adjusted_verse}")
                 #print(f"MISMATCH---{adjusted_reconstitution}")

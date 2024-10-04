@@ -142,5 +142,14 @@
     "language": "hin",
     "removeZwFromWordsPath": "./resources/hin/zw-removal-words.tsv",
     "treatApostropheAsSingleQuote": true
+  },
+  {
+    "projectName": "BCB",
+    "targetVersificationPath": "./resources/mya/BCB/versification.vrs",
+    "targetUsxCorpusPath": "./resources/mya/BCB",
+    "latinWhiteSpaceIncludedTokenizer": true,
+    "language": "mya",
+    "treatApostropheAsSingleQuote": true,
+    "stopWordsPath": "./resources/mya/BCB/stop_words.tsv"
   }
 ]
