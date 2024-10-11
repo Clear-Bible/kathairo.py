@@ -42,7 +42,8 @@
     "targetVersificationPath": "./resources/fra/fra-LSG_usfm/versification.vrs",
     "targetUsfmCorpusPath": "./resources/fra/fra-LSG_usfm",
     "latinWhiteSpaceIncludedTokenizer": true,
-    "language": "fra"
+    "language": "fra",
+    "regexRulesPath": "./resources/fra/fra-LSG_usfm/regex_rules.py"
   },
   {
     "projectName": "IRVHin",
