@@ -144,5 +144,13 @@
     "language": "mya",
     "treatApostropheAsSingleQuote": true,
     "stopWordsPath": "./resources/mya/BCB/stop_words.tsv"
+  },
+  {
+    "projectName": "YLT",
+    "targetVersificationPath": "./resources/versification/eng.vrs",
+    "targetUsfmCorpusPath": "./resources/eng/engylt_usfm",
+    "latinWhiteSpaceIncludedTokenizer": true,
+    "treatApostropheAsSingleQuote": true,
+    "language": "eng"
   }
 ]
