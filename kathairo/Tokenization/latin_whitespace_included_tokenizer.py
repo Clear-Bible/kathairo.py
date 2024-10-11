@@ -13,6 +13,8 @@ from spacy.lang.fr.tokenizer_exceptions import FR_BASE_EXCEPTIONS
 
 URL_REGEX = re.compile(r"(?:[\w-]+://?|www[.])[^\s()<>]+(?:[\w\d]+|(?:[^\p{P}\s]|/))", re.IGNORECASE)
 
+CONTRACTION_WORD_REGEX = re.compile(r"\b\w+[\'\’]\w+\b")#\b\w+([-]\w+)*[\'\’]\w+\b
+
 class LatinWhitespaceIncludedWordTokenizer(WhitespaceIncludedTokenizer): #uses WhitepspaceIncludedTokenizer
     def __init__(self, regex_rules_module, abbreviations: Iterable[str] = [], treat_apostrophe_as_single_quote: bool = False, language:str = None) -> None:
         self._abbreviations = {a.lower() for a in abbreviations}
@@ -95,22 +97,16 @@ class LatinWhitespaceIncludedWordTokenizer(WhitespaceIncludedTokenizer): #uses W
                         ctxt.inner_word_punct = ctxt.index
                         group = match.group()
                         ctxt.index += len(group)
-                        return token_ranges
                     
-                    '''
-                    is_right_single_quote_apostrophe = rule.search(substring)
-                    if is_right_single_quote_apostrophe is not None:
-                        group = is_right_single_quote_apostrophe.group()
-                        ctxt.inner_word_punct = ctxt.index
-                        ctxt.index += len(group)
                         if(self.language == "fra"):
-                            contraction_token = CONTRACTION_WORD_REGEX.match(data, ctxt.word_start).group().replace("’","'")
-                            if(contraction_token not in FR_BASE_EXCEPTIONS):
-                                token_ranges = (Range.create(ctxt.word_start, ctxt.index),None)
-                                ctxt.word_start = -1
+                            contraction_token = CONTRACTION_WORD_REGEX.match(data, ctxt.word_start)
+                            if(contraction_token is not None):
+                                group = contraction_token.group().replace("’","'")
+                                if(group not in FR_BASE_EXCEPTIONS):
+                                    token_ranges = (Range.create(ctxt.word_start, ctxt.index),None)
+                                    ctxt.word_start = -1
+                                
                         return token_ranges
-                    #end of changes
-                    '''
                     
                 token_ranges = (Range.create(ctxt.word_start, ctxt.index), Range.create(ctxt.index, end_index))
                 ctxt.word_start = -1
