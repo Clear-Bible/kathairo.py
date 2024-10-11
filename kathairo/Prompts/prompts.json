@@ -150,6 +150,7 @@
     "targetVersificationPath": "./resources/versification/eng.vrs",
     "targetUsfmCorpusPath": "./resources/engylt_usfm",
     "latinWhiteSpaceIncludedTokenizer": true,
-    "treatApostropheAsSingleQuote": true
+    "treatApostropheAsSingleQuote": true,
+    "language": "eng"
   }
 ]
