@@ -148,7 +148,7 @@
   {
     "projectName": "YLT",
     "targetVersificationPath": "./resources/versification/eng.vrs",
-    "targetUsfmCorpusPath": "./resources/engylt_usfm",
+    "targetUsfmCorpusPath": "./resources/eng/engylt_usfm",
     "latinWhiteSpaceIncludedTokenizer": true,
     "treatApostropheAsSingleQuote": true,
     "language": "eng"
