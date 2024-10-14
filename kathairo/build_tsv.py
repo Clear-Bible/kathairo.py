@@ -297,14 +297,15 @@ if(__name__ == "__main__"):
     #removeZwFromWordsPath = "./resources/hin/zw-removal-words.tsv"
 
     # GLT (Hindi)
-    #targetVersification = Versification.load("./resources/hin/GLT/versification.vrs", fallback_name="web")
-    #sourceVersification = Versification(name = "sourceVersification", base_versification=ORIGINAL_VERSIFICATION)
-    #language="hin"
-    #corpus = UsfmFileTextCorpus("./resources/hin/GLT", versification = targetVersification, handler=ModifiedTextRowCollector, psalmSuperscriptionTag = "d")
-    #tokenizer = LatinWhitespaceIncludedWordTokenizer(language=language)
-    #project_name="GLT"
-    #excludeBracketedText = False
-    #removeZwFromWordsPath = "./resources/hin/zw-removal-words.tsv"
+    targetVersification = Versification.load("./resources/hin/GLT/versification.vrs", fallback_name="web")
+    sourceVersification = Versification(name = "sourceVersification", base_versification=ORIGINAL_VERSIFICATION)
+    language="hin"
+    corpus = UsfmFileTextCorpus("./resources/hin/GLT", versification = targetVersification, handler=ModifiedTextRowCollector, psalmSuperscriptionTag = "d")
+    tokenizer = LatinWhitespaceIncludedWordTokenizer(language=language, regex_rules_module = None, treat_apostrophe_as_single_quote = True)
+    project_name="GLT"
+    excludeBracketedText = False
+    removeZwFromWordsPath = "./resources/hin/zw-removal-words.tsv"
+    stopWordsPath = None
 
     # GST (Hindi)
     #targetVersification = Versification.load("./resources/hin/GST/versification.vrs", fallback_name="web")
@@ -317,15 +318,15 @@ if(__name__ == "__main__"):
     #removeZwFromWordsPath = "./resources/hin/zw-removal-words.tsv"
 
     #LSG
-    sourceVersification = Versification(name = "sourceVersification", base_versification=ORIGINAL_VERSIFICATION)
-    project_name="LSG"
-    targetVersification = Versification.load("./resources/fra/fra-LSG_usfm/versification.vrs", fallback_name="web")
-    corpus = UsfmFileTextCorpus("./resources/fra/fra-LSG_usfm", versification = targetVersification, handler=ModifiedTextRowCollector, psalmSuperscriptionTag='d')
-    language = "fra"
-    tokenizer = LatinWhitespaceIncludedWordTokenizer(language=language, regex_rules_module = import_module_from_path("regex_rules", "./resources/fra/fra-LSG_usfm/regex_rules.py"))
-    excludeBracketedText = False
-    removeZwFromWordsPath = None
-    stopWordsPath = None
+    #sourceVersification = Versification(name = "sourceVersification", base_versification=ORIGINAL_VERSIFICATION)
+    #project_name="LSG"
+    #targetVersification = Versification.load("./resources/fra/fra-LSG_usfm/versification.vrs", fallback_name="web")
+    #corpus = UsfmFileTextCorpus("./resources/fra/fra-LSG_usfm", versification = targetVersification, handler=ModifiedTextRowCollector, psalmSuperscriptionTag='d')
+    #language = "fra"
+    #tokenizer = LatinWhitespaceIncludedWordTokenizer(language=language, regex_rules_module = import_module_from_path("regex_rules", "./resources/fra/fra-LSG_usfm/regex_rules.py"))
+    #excludeBracketedText = False
+    #removeZwFromWordsPath = None
+    #stopWordsPath = None
     
     #IRVBen
     #targetVersification = Versification.load("./resources/ben/IRVBen/release/versification.vrs", fallback_name="web")

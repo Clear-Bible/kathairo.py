@@ -13,7 +13,7 @@ from spacy.lang.fr.tokenizer_exceptions import FR_BASE_EXCEPTIONS
 
 URL_REGEX = re.compile(r"(?:[\w-]+://?|www[.])[^\s()<>]+(?:[\w\d]+|(?:[^\p{P}\s]|/))", re.IGNORECASE)
 
-CONTRACTION_WORD_REGEX = re.compile(r"\b\w+[\'\’]\w+\b")#\b\w+([-]\w+)*[\'\’]\w+\b
+CONTRACTION_WORD_REGEX = re.compile(r"\b\w+([-]\w+)*[\'\’]\w+\b")
 
 class LatinWhitespaceIncludedWordTokenizer(WhitespaceIncludedTokenizer): #uses WhitepspaceIncludedTokenizer
     def __init__(self, regex_rules_module, abbreviations: Iterable[str] = [], treat_apostrophe_as_single_quote: bool = False, language:str = None) -> None:
@@ -89,10 +89,8 @@ class LatinWhitespaceIncludedWordTokenizer(WhitespaceIncludedTokenizer): #uses W
                 for rule in self.regex_rules:
                     substring = data[ctxt.index-1:ctxt.index+2]      
                     
-                    if("’" in substring):
-                        stop = True
-                        
-                    match = rule.search(substring)
+                    match = rule.match(data, ctxt.index)
+                    #match = rule.search(substring)
                     if match is not None:
                         ctxt.inner_word_punct = ctxt.index
                         group = match.group()
