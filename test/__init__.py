@@ -38,15 +38,23 @@ with open(json_file) as json_data:
         targetVersificationPath = jsonObject["targetVersificationPath"]
         projectName = jsonObject["projectName"]
         language = jsonObject["language"]
-        
+                
         stop_words_df = None
         if("stopWordsPath" in jsonObject):
             stopWordsPath = jsonObject["stopWordsPath"]
             stop_words_df = pd.read_csv(stopWordsPath, sep='\t',dtype=str)
         
+        excludeBracketedText = False
+        if("excludeBracketedText" in jsonObject):
+            excludeBracketedText = jsonObject["excludeBracketedText"]
+       
+        excludeCrossReferences = False
+        if("excludeCrossReferences" in jsonObject):
+            excludeCrossReferences = jsonObject["excludeCrossReferences"]
+            
         outputFileLocation = get_target_file_location("TSVs", projectName, language)
         
-        prompt_tsv_vrs = [outputFileLocation, targetVersificationPath, projectName, language, stop_words_df]
+        prompt_tsv_vrs = [outputFileLocation, targetVersificationPath, projectName, language, stop_words_df, excludeBracketedText, excludeCrossReferences]
         __tsv_vrs_name_files__.append(prompt_tsv_vrs)
 
 
