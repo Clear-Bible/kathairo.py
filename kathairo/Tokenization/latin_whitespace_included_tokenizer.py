@@ -4,40 +4,24 @@ from dataclasses import dataclass
 from typing import Iterable, Optional, Tuple, cast
 
 import regex as re
+from .regex_rules import regex_rules
 
 from machine.annotations.range import Range
 from machine.utils.string_utils import is_control, is_punctuation, is_symbol
 from .whitespace_included_tokenizer import WhitespaceIncludedTokenizer
 from spacy.lang.fr.tokenizer_exceptions import FR_BASE_EXCEPTIONS
 
-INNER_WORD_PUNCT_REGEX = re.compile(
-    r"[&\-:=@\xAD\xB7\u2010\u2011\u2027]+|[_]+",#?'
-)
 URL_REGEX = re.compile(r"(?:[\w-]+://?|www[.])[^\s()<>]+(?:[\w\d]+|(?:[^\p{P}\s]|/))", re.IGNORECASE)
 
-#kathairo manually handles periods, commas, and right single quotes as opposed to having them be part of INNER_WORD_PUNCT_REGEX
-NUMBER_COMMA_REGEX = re.compile(
-    r"[(?<=\d),(?=\d)]"
-)
+CONTRACTION_WORD_REGEX = re.compile(r"\b\w+([-]\w+)*[\'\’]\w+\b")
 
-NUMBER_PERIOD_REGEX = re.compile(
-    r"[(?<=\d).(?=\d)]"
-)
-
-RIGHT_SINGLE_QUOTE_AS_APOSTROPHE_REGEX = re.compile(
-    r"(?<=\p{L})’(?=\p{L})"
-)
-
-CONTRACTION_WORD_REGEX = re.compile(
-    r"\b\w+(?:[\'\w\’]+)?\b"
-)
-
-class LatinWhitespaceIncludedWordTokenizer(WhitespaceIncludedTokenizer): #uses WhitespaceIncludedTokenizer
-    def __init__(self, abbreviations: Iterable[str] = [], treat_apostrophe_as_single_quote: bool = False, language:str = None, ignore_whitespace:bool = False) -> None:
+class LatinWhitespaceIncludedWordTokenizer(WhitespaceIncludedTokenizer): #uses WhitepspaceIncludedTokenizer
+    def __init__(self, regex_rules_module, abbreviations: Iterable[str] = [], treat_apostrophe_as_single_quote: bool = False, language:str = None) -> None:
         self._abbreviations = {a.lower() for a in abbreviations}
         self.treat_apostrophe_as_single_quote = treat_apostrophe_as_single_quote
         self.language = language
-        self.ignore_whitespace = ignore_whitespace
+        
+        self.regex_rules = regex_rules if regex_rules_module is None else regex_rules_module.regex_rules
 
     def tokenize_as_ranges(self, data: str, data_range: Optional[Range[int]] = None) -> Iterable[Range[int]]:
         if data_range is None:
@@ -101,45 +85,26 @@ class LatinWhitespaceIncludedWordTokenizer(WhitespaceIncludedTokenizer): #uses W
                     )
                 ctxt.word_start = ctxt.index
             else:
-                match = INNER_WORD_PUNCT_REGEX.match(data, ctxt.index)
-                if match is not None:
-                    ctxt.inner_word_punct = ctxt.index
-                    group = match.group()
-                    ctxt.index += len(group)
-                    return token_ranges
-                
-                #start of changes: kathairo manually handles periods, commas, and right single quotes as opposed to having them be part of INNER_WORD_PUNCT_REGEX
-                substring = data[ctxt.index-1:ctxt.index+2]
-                is_number_comma_match = NUMBER_COMMA_REGEX.match(substring)
-
-                if is_number_comma_match is not None:
-                    ctxt.inner_word_punct = ctxt.index
-                    group = is_number_comma_match.group()
-                    ctxt.index += len(group)
-                    return token_ranges
-
-                is_number_period_match = NUMBER_PERIOD_REGEX.match(substring)
-
-                if is_number_period_match is not None:# and not match_is_number_comma:
-                    ctxt.inner_word_punct = ctxt.index
-                    group = is_number_period_match.group()
-                    ctxt.index += len(group)
-                    return token_ranges
-                
-                is_right_single_quote_apostrophe = RIGHT_SINGLE_QUOTE_AS_APOSTROPHE_REGEX.search(substring)
-
-                if is_right_single_quote_apostrophe is not None:
-                    group = is_right_single_quote_apostrophe.group()
-                    ctxt.inner_word_punct = ctxt.index
-                    ctxt.index += len(group)
-                    if(self.language == "fra"):
-                        contraction_token = CONTRACTION_WORD_REGEX.match(data, ctxt.word_start).group().replace("’","'")
-                        if(contraction_token not in FR_BASE_EXCEPTIONS):
-                            token_ranges = (Range.create(ctxt.word_start, ctxt.index),None)
-                            ctxt.word_start = -1
-                    return token_ranges
-                #end of changes
-
+                for rule in self.regex_rules:
+                    substring = data[ctxt.index-1:ctxt.index+2]      
+                    
+                    match = rule.match(data, ctxt.index)
+                    #match = rule.search(substring)
+                    if match is not None:
+                        ctxt.inner_word_punct = ctxt.index
+                        group = match.group()
+                        ctxt.index += len(group)
+                    
+                        if(self.language == "fra"):
+                            contraction_token = CONTRACTION_WORD_REGEX.match(data, ctxt.word_start)
+                            if(contraction_token is not None):
+                                group = contraction_token.group().replace("’","'")
+                                if(group not in FR_BASE_EXCEPTIONS):
+                                    token_ranges = (Range.create(ctxt.word_start, ctxt.index),None)
+                                    ctxt.word_start = -1
+                                
+                        return token_ranges
+                    
                 token_ranges = (Range.create(ctxt.word_start, ctxt.index), Range.create(ctxt.index, end_index))
                 ctxt.word_start = -1
         elif ctxt.word_start == -1:

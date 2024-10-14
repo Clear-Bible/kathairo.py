@@ -13,6 +13,7 @@ from machine.scripture import (
 import argparse
 import build_tsv
 from Parsing.USFM.usfm_handlers import ModifiedTextRowCollector
+from helpers.paths import import_module_from_path
 
 argumentParser = argparse.ArgumentParser()
 
@@ -44,6 +45,8 @@ argumentParser.add_argument("-xx", "--excludeCrossReferences", action='store_tru
 argumentParser.add_argument("-ps", "--psalmSuperscriptionTag", type=str) #optional
 
 argumentParser.add_argument("-rz", "--removeZwFromWordsPath", type=str) #optional
+argumentParser.add_argument("-sw", "--stopWordsPath", type=str) #optional
+argumentParser.add_argument("-rr", "--regexRulesPath", type=str) #optional
 
 args = argumentParser.parse_args()
 
@@ -79,7 +82,8 @@ if(args.latinTokenizer == True):
 if(args.latinWhiteSpaceIncludedTokenizer == True):
     tokenizer = LatinWhitespaceIncludedWordTokenizer(
         treat_apostrophe_as_single_quote=args.treatApostropheAsSingleQuote,
-        language = args.language
+        language = args.language,
+        regex_rules_module = import_module_from_path("regex_rules", args.regexRulesPath)
     )
 if(args.zwspWordTokenizer == True):
     tokenizer = ZwspWordTokenizer(
@@ -95,7 +99,8 @@ if(args.runBuildWordLevelTsv):
                                         excludeBracketedText = args.excludeBracketedText,
                                         excludeCrossReferences = args.excludeCrossReferences, 
                                         language = args.language,
-                                        removeZwFromWordsPath = args.removeZwFromWordsPath)  
+                                        removeZwFromWordsPath = args.removeZwFromWordsPath,
+                                        stopWordsPath = args.stopWordsPath)  
 else:
     build_tsv.corpus_to_verse_level_tsv(targetVersification = targetVersification, 
                                         sourceVersification = sourceVersification, 
