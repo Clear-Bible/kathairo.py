@@ -183,6 +183,7 @@ def corpus_to_word_level_tsv(targetVersification:Versification, sourceVersificat
                 if(token==' ' or token==string.zwsp):
                     continue
                 elif((next_token==' ') or (next_token==string.zwsp and next_next_token ==' ')):
+
                         skip_space_after = ""
 
                 exclude = "y"

@@ -4,7 +4,7 @@ from test import __tsv_vrs_name_files__
 import polars as pl
 from helpers.strings import is_unicode_punctuation
 
-@pytest.mark.skip(reason="Passing this test isn't necessary")
+#@pytest.mark.skip(reason="Passing this test isn't necessary")
 @pytest.mark.parametrize("tsv_vrs_name_files", __tsv_vrs_name_files__)
 def test_tokens_contain_no_punctuation(tsv_vrs_name_files):
     #if ("OCCB" in tsv_vrs_name_files[0]):
@@ -44,7 +44,7 @@ def test_for_mixed_tokens(tsv_vrs_name_files):
                 print(id, token)#, row.verse_text)
                 break                
 
-@pytest.mark.skip(reason="Passing this test isn't necessary")
+#@pytest.mark.skip(reason="Passing this test isn't necessary")
 @pytest.mark.parametrize("tsv_vrs_name_files", __tsv_vrs_name_files__)
 def test_tokens_start_and_end_with_no_punctuation(tsv_vrs_name_files):
     print(tsv_vrs_name_files[0])
@@ -64,7 +64,7 @@ def test_tokens_start_and_end_with_no_punctuation(tsv_vrs_name_files):
             id = row["id"]
             print(id, token)#, row.verse_text)
      
-@pytest.mark.skip(reason="Passing this test isn't necessary")       
+#@pytest.mark.skip(reason="Passing this test isn't necessary")       
 @pytest.mark.parametrize("tsv_vrs_name_files", __tsv_vrs_name_files__)
 def test_consecutive_punctuation(tsv_vrs_name_files):
     print(tsv_vrs_name_files[0])
