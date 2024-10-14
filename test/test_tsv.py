@@ -117,18 +117,31 @@ def test_verse_text_reconstitution(tsv_vrs_files):
                 #print(f"MISMATCH---{adjusted_reconstitution}")
                 #print(f"------------------------------")
         else: 
-            adjusted_verse = verseTextRows[index]['text'].replace("  ", " ")
-            adjusted_reconstitution = reconstitutedRows[index]['text'].rstrip().replace("  ", " ")
+            #adjusted_verse = verseTextRows[index]['text'].replace("  ", " ")
+            adjusted_verse = verseTextRows[index]['text']#.replace("  ", " ")
+            adjusted_verse = adjusted_verse.replace(strings.zwj, strings.empty_string)
+            adjusted_verse = adjusted_verse.replace(strings.zwnj, strings.empty_string)
+            adjusted_verse = adjusted_verse.replace(strings.zwsp, strings.empty_string)
+
+            #adjusted_reconstitution = reconstitutedRows[index]['text'].rstrip().replace("  ", " ")
+            adjusted_reconstitution = reconstitutedRows[index]['text'].rstrip()#.replace("  ", " ")
+            adjusted_reconstitution = adjusted_reconstitution.replace(strings.zwj, strings.empty_string)
+            adjusted_reconstitution = adjusted_reconstitution.replace(strings.zwnj, strings.empty_string)
+            adjusted_reconstitution = adjusted_reconstitution.replace(strings.zwsp, strings.empty_string)
             
             if(stop_words_df is not None):
                 for word in stop_words_df["stop_words"].values:
                     adjusted_verse = adjusted_verse.replace(word, "")
                     adjusted_reconstitution = adjusted_reconstitution.replace(word, "")
                 
-            assert(adjusted_verse == adjusted_reconstitution), tsv_vrs_files[2] +" "+ adjusted_verse +"=="+ adjusted_reconstitution
+            assert(adjusted_verse == adjusted_reconstitution), tsv_vrs_files[2]+" "+str(index)+" "+ adjusted_verse +"!="+ adjusted_reconstitution
                 #print(f"MISMATCH---{adjusted_verse}")
                 #print(f"MISMATCH---{adjusted_reconstitution}")
                 #print(f"------------------------------")
+                
+
+            
+            
 
 #Is punctuation excluded 
 @pytest.mark.parametrize("tsv_vrs_files", __tsv_vrs_name_files__)
