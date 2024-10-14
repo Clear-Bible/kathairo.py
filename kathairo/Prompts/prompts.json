@@ -1,5 +1,12 @@
 [
   {
+    "projectName": "AVD",
+    "targetVersificationPath": "./resources/arb/arb-vd_usfm/versification.vrs",
+    "targetUsfmCorpusPath": "./resources/arb/arb-vd_usfm",
+    "latinWhiteSpaceIncludedTokenizer": true,
+    "language": "arb"
+  },
+  {
     "projectName": "BCL",
     "targetVersificationPath": "./resources/mya/BCL/versification.vrs",
     "targetUsfmCorpusPath": "./resources/mya/BCL",
