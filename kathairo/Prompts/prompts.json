@@ -11,7 +11,8 @@
     "targetVersificationPath": "./resources/mya/BCL/versification.vrs",
     "targetUsfmCorpusPath": "./resources/mya/BCL",
     "latinWhiteSpaceIncludedTokenizer": true,
-    "language": "mya"
+    "language": "mya",
+    "regexRulesPath": "./resources/mta/BCL/regex_rules.py"
   },
   {
     "projectName": "ONAV",
