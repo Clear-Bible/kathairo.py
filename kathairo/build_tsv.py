@@ -176,17 +176,7 @@ def corpus_to_word_level_tsv(targetVersification:Versification, sourceVersificat
                     if(next_token==' '):
                         skip_space_after = ""
 
-                exclude = "y"
-                for char in token:
-                    if(not in_brackets and not is_unicode_punctuation(char)):
-                        exclude = ""
-                        break
-                    
-                if(excludeBracketedText and '[' in token):
-                    in_brackets = True
-                    exclude = "y"
-                if(']' in token):
-                    in_brackets = False
+                exclude, in_brackets = calculate_exclude_value(excludeBracketedText, in_brackets, token)
                     
                 if(excludeCrossReferences and '(' in token): #add to unit test to look for that all things marked as cross references are indeed cross-references and no token has a colon and a parentheses
                     in_parentheses = True
@@ -210,6 +200,20 @@ def corpus_to_word_level_tsv(targetVersification:Versification, sourceVersificat
                     in_parentheses = False
                 
                 wordIndex += 1
+
+def calculate_exclude_value(excludeBracketedText, in_brackets, token):
+    exclude = "y"
+    for char in token:
+        if(not in_brackets and not is_unicode_punctuation(char)):
+            exclude = ""
+            break
+                    
+    if(excludeBracketedText and '[' in token):
+        in_brackets = True
+        exclude = "y"
+    if(']' in token):
+        in_brackets = False
+    return exclude, in_brackets
                 
 
 if(__name__ == "__main__"):
