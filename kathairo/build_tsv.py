@@ -25,7 +25,6 @@ import os
 import pandas as pd
 import helpers.strings as string
 import helpers.versification
-from kathairo.Tokenization.zwsp_word_tokenizer import ZwspWordTokenizer
 from helpers.paths import import_module_from_path
 from resources.mya.BCL import regex_rules
 

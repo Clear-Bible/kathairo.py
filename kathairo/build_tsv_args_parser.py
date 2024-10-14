@@ -2,7 +2,6 @@ import time
 start = time.time()
 from Tokenization import ChineseBibleWordTokenizer
 from Tokenization.latin_whitespace_included_tokenizer import LatinWhitespaceIncludedWordTokenizer
-from Tokenization.zwsp_word_tokenizer import ZwspWordTokenizer
 from Parsing.USX.usx_file_text_corpus import UsxFileTextCorpus
 from Parsing.USFM.usfm_file_text_corpus import UsfmFileTextCorpus
 from machine.tokenization import LatinWordTokenizer, WhitespaceTokenizer
@@ -84,10 +83,6 @@ if(args.latinWhiteSpaceIncludedTokenizer == True):
         treat_apostrophe_as_single_quote=args.treatApostropheAsSingleQuote,
         language = args.language,
         regex_rules_module = import_module_from_path("regex_rules", args.regexRulesPath)
-    )
-if(args.zwspWordTokenizer == True):
-    tokenizer = ZwspWordTokenizer(
-        treat_apostrophe_as_single_quote=args.treatApostropheAsSingleQuote
     )
 
 if(args.runBuildWordLevelTsv):
