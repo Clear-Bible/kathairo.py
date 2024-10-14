@@ -33,6 +33,7 @@ tokenizerGroup = argumentParser.add_mutually_exclusive_group(required=True)
 tokenizerGroup.add_argument("-zh", "--chineseTokenizer", action='store_true')
 tokenizerGroup.add_argument("-lt", "--latinTokenizer", action='store_true')
 tokenizerGroup.add_argument("-lw", "--latinWhiteSpaceIncludedTokenizer", action='store_true')
+tokenizerGroup.add_argument("-zw", "--zwspWordTokenizer", action='store_true')
 
 argumentParser.add_argument("-wl", "--runBuildWordLevelTsv", action='store_true')
 

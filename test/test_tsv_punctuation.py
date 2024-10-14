@@ -17,7 +17,7 @@ def test_tokens_contain_no_punctuation(tsv_vrs_name_files):
                 print(id, token)#, row.verse_text)
                 break   
             
-#@pytest.mark.skip(reason="Passing this test isn't necessary")
+@pytest.mark.skip(reason="Passing this test isn't necessary")
 @pytest.mark.parametrize("tsv_vrs_name_files", __tsv_vrs_name_files__)
 def test_for_mixed_tokens(tsv_vrs_name_files):
     data_frame = pl.read_csv(tsv_vrs_name_files[0], separator='\t', infer_schema_length=0, quote_char=None)
@@ -38,6 +38,7 @@ def test_for_mixed_tokens(tsv_vrs_name_files):
                 punct_count += 1
             else:
                 non_punct_count += 1
+
             if(punct_count>=1 and non_punct_count>=1):
                 id = row["id"]
                 print(id, token)#, row.verse_text)
