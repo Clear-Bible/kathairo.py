@@ -7,6 +7,15 @@
     "language": "arb"
   },
   {
+    "projectName": "BCL",
+    "targetVersificationPath": "./resources/mya/BCL/versification.vrs",
+    "targetUsfmCorpusPath": "./resources/mya/BCL",
+    "latinWhiteSpaceIncludedTokenizer": true,
+    "language": "mya",
+    "regexRulesPath": "./resources/mya/BCL/regex_rules.py",
+    "treatApostropheAsSingleQuote": true
+  },
+  {
     "projectName": "ONAV",
     "targetVersificationPath": "./resources/arb/onav_usx/release/versification.vrs",
     "targetUsxCorpusPath": "./resources/arb/onav_usx/release/USX_1",

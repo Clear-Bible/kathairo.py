@@ -9,10 +9,11 @@ from machine.scripture import Versification
 import csv
 from pathlib import Path
 from helpers.strings import is_unicode_punctuation
+from helpers import strings
 
 # Verify that the file exists.
 @pytest.mark.parametrize("tsv_vrs_files", __tsv_vrs_name_files__)
-def test_files_exists(tsv_vrs_files):
+def test_file_exists(tsv_vrs_files):
     size = os.path.getsize(tsv_vrs_files[0])
     assert size > 0, tsv_vrs_files[2] + " does not exist"
 
@@ -104,30 +105,44 @@ def test_verse_text_reconstitution(tsv_vrs_files):
     reconstitutedRows = [r for r in csv.DictReader(reconstitutedPath.open("r", encoding='utf-8'), delimiter="\t", quoting=csv.QUOTE_NONE, quotechar=None)]
      
     for index in range(len(verseTextRows)):    
-        if(tsv_vrs_files[3] == "hin"): #TODO we're ignoring hindi reconstitution issues until we remove zw characters at verse level
+        if(tsv_vrs_files[3] == "hin"): 
             break    
         if(index>=len(reconstitutedRows)): # should this just be > not >=?
             break
         if("OCCB" in tsv_path.stem):
             adjusted_verse = verseTextRows[index]['text'].strip()
             adjusted_reconstitution = reconstitutedRows[index]['text'].strip()
-            assert(adjusted_verse == adjusted_reconstitution), tsv_vrs_files[2] +" "+ adjusted_verse +"=="+ adjusted_reconstitution #due to random spaces in chinese
+            assert(adjusted_verse == adjusted_reconstitution), tsv_vrs_files[2] +" "+ adjusted_verse +"!="+ adjusted_reconstitution #due to random spaces in chinese
                 #print(f"MISMATCH---{adjusted_verse}")
                 #print(f"MISMATCH---{adjusted_reconstitution}")
                 #print(f"------------------------------")
         else: 
-            adjusted_verse = verseTextRows[index]['text'].replace("  ", " ")
-            adjusted_reconstitution = reconstitutedRows[index]['text'].rstrip().replace("  ", " ")
-            
+            #adjusted_verse = verseTextRows[index]['text'].replace("  ", " ")
+            adjusted_verse = verseTextRows[index]['text']#.replace("  ", " ")
+            adjusted_verse = adjusted_verse.replace(strings.zwj, strings.empty_string)
+            adjusted_verse = adjusted_verse.replace(strings.zwnj, strings.empty_string)
+            adjusted_verse = adjusted_verse.replace(strings.zwsp, strings.empty_string)
+
+            #adjusted_reconstitution = reconstitutedRows[index]['text'].rstrip().replace("  ", " ")
+            adjusted_reconstitution = reconstitutedRows[index]['text'].rstrip()#.replace("  ", " ")
+            adjusted_reconstitution = adjusted_reconstitution.replace(strings.zwj, strings.empty_string)
+            adjusted_reconstitution = adjusted_reconstitution.replace(strings.zwnj, strings.empty_string)
+            adjusted_reconstitution = adjusted_reconstitution.replace(strings.zwsp, strings.empty_string)
+
             if(stop_words_df is not None):
                 for word in stop_words_df["stop_words"].values:
                     adjusted_verse = adjusted_verse.replace(word, "")
                     adjusted_reconstitution = adjusted_reconstitution.replace(word, "")
                 
-            assert(adjusted_verse == adjusted_reconstitution), tsv_vrs_files[2] +" "+ adjusted_verse +"=="+ adjusted_reconstitution
+            assert(adjusted_verse == adjusted_reconstitution), tsv_vrs_files[2]+" "+str(index)+" "+ adjusted_verse +"!="+ adjusted_reconstitution
+
                 #print(f"MISMATCH---{adjusted_verse}")
                 #print(f"MISMATCH---{adjusted_reconstitution}")
                 #print(f"------------------------------")
+                
+
+            
+            
 
 #Is punctuation excluded 
 @pytest.mark.parametrize("tsv_vrs_files", __tsv_vrs_name_files__)

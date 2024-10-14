@@ -23,7 +23,6 @@ class LatinWhitespaceIncludedWordTokenizer(WhitespaceIncludedTokenizer): #uses W
         
         self.regex_rules = regex_rules if regex_rules_module is None else regex_rules_module.regex_rules
 
-
     def tokenize_as_ranges(self, data: str, data_range: Optional[Range[int]] = None) -> Iterable[Range[int]]:
         if data_range is None:
             data_range = Range.create(0, len(data))
