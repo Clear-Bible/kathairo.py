@@ -9,6 +9,7 @@ import csv
 from pathlib import Path
 from helpers.strings import is_unicode_punctuation
 
+#move tests that I want to run on a test to get a feel of it here, such as looking to see if it has cross references at all
 #@pytest.mark.skip(reason="Passing this test isn't necessary")
 @pytest.mark.parametrize("tsv_vrs_files", __tsv_vrs_name_files__)
 def test_cross_references_only_on_verse_ends(tsv_vrs_files):    

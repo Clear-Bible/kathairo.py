@@ -8,7 +8,8 @@ from helpers.strings import is_unicode_punctuation
 def test_exclude_outer_punctuation(tsv_vrs_files):    
     data_frame = pl.read_csv(tsv_vrs_files[0], separator='\t', infer_schema_length=0, quote_char=None)
     
-    INNER_PUNCT_REGEX = re.compile(r"\w+[-'\u00C0-\u02B8]+\w+") #use custom regex rules to get regex to test for inner word punct and beyond if this isn't good enough
+    INNER_PUNCT_REGEX = re.compile(r"\w+[-'\u00C0-\u02B8]+\w+") 
+    #use custom regex rules to get regex to test for inner word punct and beyond if this isn't good enough
     
     previous_row = None
     current_row = None
@@ -74,26 +75,27 @@ def test_exclude_outer_punctuation(tsv_vrs_files):
         
 #Is punctuation excluded 
 @pytest.mark.parametrize("tsv_vrs_files", __tsv_vrs_name_files__)
-def test_exclude_punctuation(tsv_vrs_files):    
+def test_punctuation_not_required(tsv_vrs_files):    
     data_frame = pl.read_csv(tsv_vrs_files[0], separator='\t', infer_schema_length=0, quote_char=None)
     for row in data_frame.iter_rows(named=True):
         id = row["id"]
         token = row["text"]
-        exclude = row["exclude"]
+        required = row["required"]
         
-        if(exclude == 'y'):
-            exclude_bool = True
+        if(required == 'y'):
+            required_bool = True
         else:
-            exclude_bool = False
+            required_bool = False
         
-        #TODO look at more than first char
+        token_is_punct = True
         if (isinstance(token, str) and len(token)>0):
-            token_is_punct = is_unicode_punctuation(token[0])
-        else:
-            token_is_punct = False
+            for char in token:
+                if(not is_unicode_punctuation(char)):
+                    token_is_punct = False
+                    break
         
         if(token_is_punct):
-            assert token_is_punct == exclude_bool, tsv_vrs_files[2] + " {} ".format(id) + "punctutation is not marked as excluded"
+            assert token_is_punct != required_bool, tsv_vrs_files[2] + " {} ".format(id) + "punctuation is not marked as required"
         
 #Is bracketed text excluded 
 @pytest.mark.parametrize("tsv_vrs_files", __tsv_vrs_name_files__)
