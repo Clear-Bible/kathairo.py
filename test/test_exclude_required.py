@@ -1,8 +1,77 @@
 import pytest
 from test import __tsv_vrs_name_files__
 import polars as pl
+import regex as re
 from helpers.strings import is_unicode_punctuation
 
+@pytest.mark.parametrize("tsv_vrs_files", __tsv_vrs_name_files__)
+def test_exclude_outer_punctuation(tsv_vrs_files):    
+    data_frame = pl.read_csv(tsv_vrs_files[0], separator='\t', infer_schema_length=0, quote_char=None)
+    
+    INNER_PUNCT_REGEX = re.compile(r"\w+[-'\u00C0-\u02B8]+\w+") #use custom regex rules to get regex to test for inner word punct and beyond if this isn't good enough
+    
+    previous_row = None
+    current_row = None
+    for next_row in data_frame.iter_rows(named=True):
+        
+        if(previous_row is not None):
+            previous_id = previous_row["id"]
+            previous_token = previous_row["text"]
+            previous_exclude = previous_row["exclude"]
+            previous_skip_space_after = previous_row["skip_space_after"]
+            
+        if(next_row is not None):    
+            next_id = next_row["id"]
+            next_token = next_row["text"]
+            next_exclude = next_row["exclude"]
+            next_skip_space_after = next_row["skip_space_after"]
+        
+        if(current_row is not None):
+            current_id = current_row["id"]
+            current_token = current_row["text"]
+            current_exclude = current_row["exclude"]
+            current_skip_space_after = current_row["skip_space_after"]
+        
+            if(current_exclude == 'y'):
+                exclude_bool = True
+            else:
+                exclude_bool = False
+            
+            token_is_punct = True
+            if (isinstance(current_token, str) and len(current_token)>0):
+                for char in current_token:
+                    if(not is_unicode_punctuation(char)):
+                        token_is_punct = False
+                        break
+                
+            if(not token_is_punct):
+                previous_row = current_row
+                current_row = next_row
+                continue
+            
+            previous_space = ""
+            if(previous_skip_space_after != 'y'):
+                previous_space = " "
+            
+            current_space = ""
+            if(current_skip_space_after != 'y'):
+                current_space = " "
+            
+            substring = previous_token + previous_space + current_token + current_space + next_token
+            
+            token_is_inner_punct = False
+            match = INNER_PUNCT_REGEX.search(substring)
+            if match is not None:
+                token_is_inner_punct = True
+            
+            if(token_is_inner_punct):
+                assert token_is_inner_punct != exclude_bool, tsv_vrs_files[2] + " {} ".format(id) + "inner punctutation is marked as excluded: " + substring
+            else:
+                assert token_is_inner_punct == exclude_bool, tsv_vrs_files[2] + " {} ".format(id) + "outer punctutation is not marked as excluded: " + substring
+        
+        previous_row = current_row
+        current_row = next_row
+        
 #Is punctuation excluded 
 @pytest.mark.parametrize("tsv_vrs_files", __tsv_vrs_name_files__)
 def test_exclude_punctuation(tsv_vrs_files):    
@@ -29,9 +98,7 @@ def test_exclude_punctuation(tsv_vrs_files):
 #Is bracketed text excluded 
 @pytest.mark.parametrize("tsv_vrs_files", __tsv_vrs_name_files__)
 def test_exclude_bracketed_text(tsv_vrs_files):    
-    
-    if ("RSB" in tsv_vrs_files[0]):
-        
+    if (tsv_vrs_files[5]):
         in_brackets = False
         
         data_frame = pl.read_csv(tsv_vrs_files[0], separator='\t', infer_schema_length=0, quote_char=None)
@@ -61,8 +128,7 @@ def test_exclude_bracketed_text(tsv_vrs_files):
                 
 @pytest.mark.parametrize("tsv_vrs_files", __tsv_vrs_name_files__)
 def test_cross_references_are_excluded(tsv_vrs_files):    
-    print(tsv_vrs_files[0])
-    if ("IRVHin" in tsv_vrs_files[0]):
+    if (tsv_vrs_files[6]):
         in_parentheses = False
         is_cross_reference = False
         unprinted_parenthetical_token_list = []
