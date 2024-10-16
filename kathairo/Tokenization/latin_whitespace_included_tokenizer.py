@@ -4,7 +4,7 @@ from dataclasses import dataclass
 from typing import Iterable, Optional, Tuple, cast
 
 import regex as re
-from .regex_rules import regex_rules
+from .regex_rules import DefaultRegexRules
 
 from machine.annotations.range import Range
 from machine.utils.string_utils import is_control, is_punctuation, is_symbol
@@ -20,8 +20,7 @@ class LatinWhitespaceIncludedWordTokenizer(WhitespaceIncludedTokenizer): #uses W
         self._abbreviations = {a.lower() for a in abbreviations}
         self.treat_apostrophe_as_single_quote = treat_apostrophe_as_single_quote
         self.language = language
-        
-        self.regex_rules = regex_rules if regex_rules_module is None else regex_rules_module.regex_rules
+        self.regex_rules = (getattr(regex_rules_module, "CustomRegexRules", DefaultRegexRules)()).get_regex_rules()
 
     def tokenize_as_ranges(self, data: str, data_range: Optional[Range[int]] = None) -> Iterable[Range[int]]:
         if data_range is None:

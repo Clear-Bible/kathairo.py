@@ -7,9 +7,8 @@ from helpers.strings import is_unicode_punctuation
 @pytest.mark.parametrize("tsv_vrs_files", __tsv_vrs_name_files__)
 def test_exclude_outer_punctuation(tsv_vrs_files):    
     data_frame = pl.read_csv(tsv_vrs_files[0], separator='\t', infer_schema_length=0, quote_char=None)
-    
-    INNER_PUNCT_REGEX = re.compile(r"\w+[-'\u00C0-\u02B8]+\w+") 
-    #use custom regex rules to get regex to test for inner word punct and beyond if this isn't good enough
+    regex_rules_class = tsv_vrs_files[7]
+    WORD_LEVEL_PUNCT_REGEX = regex_rules_class.WORD_LEVEL_PUNCT_REGEX
     
     previous_row = None
     current_row = None
@@ -59,16 +58,18 @@ def test_exclude_outer_punctuation(tsv_vrs_files):
                 current_space = " "
             
             substring = previous_token + previous_space + current_token + current_space + next_token
-            
-            token_is_inner_punct = False
-            match = INNER_PUNCT_REGEX.search(substring)
+            index = len(previous_token + previous_space + current_token) - 1
+            token_is_word_level_punct = False
+            match = WORD_LEVEL_PUNCT_REGEX.match(substring, index)
             if match is not None:
-                token_is_inner_punct = True
-            
-            if(token_is_inner_punct):
-                assert token_is_inner_punct != exclude_bool, tsv_vrs_files[2] + " {} ".format(id) + "inner punctutation is marked as excluded: " + substring
+                token_is_word_level_punct = True
+                #group = match.group()
+                #print(substring, " :: ", group, " :: ", index)
+                
+            if(token_is_word_level_punct):
+                assert token_is_word_level_punct != exclude_bool, tsv_vrs_files[2] + " {} ".format(id) + "inner punctuation is marked as excluded: " + substring
             else:
-                assert token_is_inner_punct == exclude_bool, tsv_vrs_files[2] + " {} ".format(id) + "outer punctutation is not marked as excluded: " + substring
+                assert token_is_word_level_punct == exclude_bool, tsv_vrs_files[2] + " {} ".format(id) + "outer punctuation is not marked as excluded: " + substring
         
         previous_row = current_row
         current_row = next_row

@@ -156,12 +156,27 @@ def corpus_to_word_level_tsv(targetVersification:Versification, sourceVersificat
             
                 token = row.segment[index]
                 
+                #ZW Characters
                 if(removeZwFromWordsPath != None and token != " "):
                     if token in zw_removal_df["words"].values:    
                         token = token.replace(string.zwsp, string.empty_string).replace(string.zwj, string.empty_string).replace(string.zwnj, string.empty_string)
                 
                 #Skip Space After
                 max_segment_index = len(row.segment) - 1
+                
+                '''
+                previous_previous_token = None 
+                if(index - 2 <= 0):
+                    previous_previous_token = row.segment[index - 2]
+                else:
+                    previous_previous_token = ''
+                
+                previous_token = None
+                if(index - 1 <= 0):
+                    previous_token = row.segment[index - 1]
+                else:
+                    previous_token = ''
+                '''
                 
                 next_token = None
                 if(index + 1 <= max_segment_index):
@@ -189,6 +204,10 @@ def corpus_to_word_level_tsv(targetVersification:Versification, sourceVersificat
 
                 #Exclude
                 exclude = "y"
+                
+                #substring = previous_token + previous_space + current_token + current_space + next_token
+                #index = len(previous_token + previous_space + current_token)
+                
                 for char in token:
                     if(not in_brackets and not is_unicode_punctuation(char)):
                         exclude = ""

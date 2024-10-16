@@ -7,6 +7,8 @@ import os
 import polars as pl
 from helpers.verse_text import reconstitute
 import pandas as pd
+from helpers.paths import import_module_from_path
+from kathairo.Tokenization.regex_rules import DefaultRegexRules
 
 #TODO: Add Unit Tests for
 #Should we Treat Apostrophe as Single Quote
@@ -52,9 +54,25 @@ with open(json_file) as json_data:
         if("excludeCrossReferences" in jsonObject):
             excludeCrossReferences = jsonObject["excludeCrossReferences"]
             
+        regex_rules_class = DefaultRegexRules()
+        if("regexRulesPath" in jsonObject):
+            regexRulesPath = jsonObject["regexRulesPath"]
+            regex_rules_module = import_module_from_path("regex_rules", regexRulesPath)
+            regex_rules_class = getattr(regex_rules_module, "CustomRegexRules")
+            
         outputFileLocation = get_target_file_location("TSVs", projectName, language)
         
-        prompt_tsv_vrs = [outputFileLocation, targetVersificationPath, projectName, language, stop_words_df, excludeBracketedText, excludeCrossReferences]
+        prompt_tsv_vrs = [
+            outputFileLocation, 
+            targetVersificationPath, 
+            projectName, 
+            language, 
+            stop_words_df, 
+            excludeBracketedText, 
+            excludeCrossReferences, 
+            regex_rules_class
+        ]
+        
         __tsv_vrs_name_files__.append(prompt_tsv_vrs)
 
 
@@ -64,7 +82,7 @@ with open(json_file) as json_data:
 #        __macula_greek_tsv_rows__.append(row)
      
 #for project in __tsv_vrs_name_files__:
-#    test_source_chapter_size(project)
+#    test_exclude_outer_punctuation(project)
 
 #for files in __tsv_vrs_name_files__:
 #    reconstitute(Path(files[0]))
