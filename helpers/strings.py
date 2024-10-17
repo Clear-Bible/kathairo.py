@@ -7,8 +7,18 @@ def is_unicode_punctuation(char):
 def contains_number(string):
     return any(char.isdigit() for char in string)
 
-zwsp = "​"
-zwj = "‍"
-zwnj = "‌"
 empty_string = ""
+
+zwsp = "​"#\u200b
+zwj = "‍"#\u200d
+zwnj = "‌"#\u200c
 nbsp = "\xa0"
+space = " "
+
+stop_words = [
+    space,
+    zwsp,
+    zwj,
+    zwnj,
+    nbsp
+]

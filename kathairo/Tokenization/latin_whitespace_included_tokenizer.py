@@ -15,12 +15,13 @@ URL_REGEX = re.compile(r"(?:[\w-]+://?|www[.])[^\s()<>]+(?:[\w\d]+|(?:[^\p{P}\s]
 
 CONTRACTION_WORD_REGEX = re.compile(r"\b\w+([-]\w+)*[\'\’]\w+\b")
 
-class LatinWhitespaceIncludedWordTokenizer(WhitespaceIncludedTokenizer): #uses WhitepspaceIncludedTokenizer
+class LatinWhitespaceIncludedWordTokenizer(WhitespaceIncludedTokenizer): #uses WhitespaceIncludedTokenizer
     def __init__(self, regex_rules_module, abbreviations: Iterable[str] = [], treat_apostrophe_as_single_quote: bool = False, language:str = None) -> None:
         self._abbreviations = {a.lower() for a in abbreviations}
         self.treat_apostrophe_as_single_quote = treat_apostrophe_as_single_quote
         self.language = language
         self.regex_rules = (getattr(regex_rules_module, "CustomRegexRules", DefaultRegexRules)()).get_regex_rules()
+        #self.regex_rules = DefaultRegexRules().get_regex_rules()
 
     def tokenize_as_ranges(self, data: str, data_range: Optional[Range[int]] = None) -> Iterable[Range[int]]:
         if data_range is None:
