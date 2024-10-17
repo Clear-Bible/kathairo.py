@@ -72,6 +72,7 @@ if(args.targetUsfmCorpusPath is not None):
 if(args.targetUsxCorpusPath is not None):
     corpus = UsxFileTextCorpus(args.targetUsxCorpusPath, versification = targetVersification)
 
+regex_rules_module = import_module_from_path("regex_rules", args.regexRulesPath)
 if(args.chineseTokenizer == True):
     tokenizer = ChineseBibleWordTokenizer.ChineseBibleWordTokenizer()
 if(args.latinTokenizer == True):
@@ -82,8 +83,7 @@ if(args.latinWhiteSpaceIncludedTokenizer == True):
     tokenizer = LatinWhitespaceIncludedWordTokenizer(
         treat_apostrophe_as_single_quote=args.treatApostropheAsSingleQuote,
         language = args.language,
-        regex_rules_module = import_module_from_path("regex_rules", args.regexRulesPath)
-    )
+        regex_rules_module = regex_rules_module)
 
 if(args.runBuildWordLevelTsv):
     build_tsv.corpus_to_word_level_tsv(targetVersification = targetVersification, 
@@ -95,7 +95,8 @@ if(args.runBuildWordLevelTsv):
                                         excludeCrossReferences = args.excludeCrossReferences, 
                                         language = args.language,
                                         removeZwFromWordsPath = args.removeZwFromWordsPath,
-                                        stopWordsPath = args.stopWordsPath)  
+                                        stopWordsPath = args.stopWordsPath,
+                                        regex_rules_module = regex_rules_module)  
 else:
     build_tsv.corpus_to_verse_level_tsv(targetVersification = targetVersification, 
                                         sourceVersification = sourceVersification, 

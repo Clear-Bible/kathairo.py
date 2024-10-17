@@ -61,7 +61,8 @@
     "latinWhiteSpaceIncludedTokenizer": true,
     "language": "hin",
     "excludeCrossReferences": true,
-    "removeZwFromWordsPath": "./resources/hin/zw-removal-words.tsv"
+    "removeZwFromWordsPath": "./resources/hin/zw-removal-words.tsv",
+    "regexRulesPath": "./resources/hin/GST/regex_rules.py"
   },
   {
     "projectName": "OHCV",
@@ -69,7 +70,8 @@
     "targetUsfmCorpusPath": "./resources/hin/hiHCV19SFM",
     "latinWhiteSpaceIncludedTokenizer": true,
     "language": "hin",
-    "removeZwFromWordsPath": "./resources/hin/zw-removal-words.tsv"
+    "removeZwFromWordsPath": "./resources/hin/zw-removal-words.tsv",
+    "regexRulesPath": "./resources/hin/GST/regex_rules.py"
   },
   {
     "projectName": "OCCB-simplified",
@@ -135,7 +137,8 @@
     "latinWhiteSpaceIncludedTokenizer": true,
     "language": "hin",
     "removeZwFromWordsPath": "./resources/hin/zw-removal-words.tsv",
-    "treatApostropheAsSingleQuote": true
+    "treatApostropheAsSingleQuote": true,
+    "regexRulesPath": "./resources/hin/GLT/regex_rules.py"
   },
   {
     "projectName": "GST",
@@ -144,7 +147,8 @@
     "latinWhiteSpaceIncludedTokenizer": true,
     "language": "hin",
     "removeZwFromWordsPath": "./resources/hin/zw-removal-words.tsv",
-    "treatApostropheAsSingleQuote": true
+    "treatApostropheAsSingleQuote": true,
+    "regexRulesPath": "./resources/hin/GST/regex_rules.py"
   },
   {
     "projectName": "BCB",

@@ -27,6 +27,7 @@ import helpers.strings as string
 import helpers.versification
 from helpers.paths import import_module_from_path
 from resources.mya.BCL import regex_rules
+from kathairo.Tokenization.regex_rules import DefaultRegexRules
 
 def corpus_to_verse_level_tsv(targetVersification:Versification, sourceVersification:Versification, corpus:ScriptureTextCorpus, tokenizer:WhitespaceTokenizer, 
                             project_name:str, language:str, removeZwFromWordsPath:str, excludeBracketedText:bool = False, excludeCrossReferences:bool = False):
@@ -65,7 +66,10 @@ def corpus_to_verse_level_tsv(targetVersification:Versification, sourceVersifica
                 tsv_writer.writerow([f"{rowBcv}", f"{sourceBcv}", row.text, "", source_verse_range_end])
 
 def corpus_to_word_level_tsv(targetVersification:Versification, sourceVersification:Versification, corpus:ScriptureTextCorpus, tokenizer:WhitespaceTokenizer, 
-                project_name:str, language:str, removeZwFromWordsPath:str, stopWordsPath:str, excludeBracketedText:bool = False, excludeCrossReferences:bool = False):
+                project_name:str, language:str, removeZwFromWordsPath:str, stopWordsPath:str, excludeBracketedText:bool = False, 
+                excludeCrossReferences:bool = False, regex_rules_module = None):
+    
+    WORD_LEVEL_PUNCT_REGEX = (getattr(regex_rules_module, "CustomRegexRules", DefaultRegexRules)()).WORD_LEVEL_PUNCT_REGEX
     
     unused_versification_mapping = helpers.versification.create_target_to_sources_dict(targetVersification)
     
@@ -83,7 +87,8 @@ def corpus_to_word_level_tsv(targetVersification:Versification, sourceVersificat
     with open(outputFileName, 'w', newline='', encoding='utf-8') as out_file:
         tsv_writer = csv.writer(out_file, delimiter='\t', quoting=csv.QUOTE_NONE, quotechar=None)
 
-        tsv_writer.writerow(["id", "source_verse", "text", "skip_space_after", "exclude", "id_range_end", "source_verse_range_end"])
+        tsv_writer.writerow(["id", "source_verse", "text", "skip_space_after", "exclude", "id_range_end", "source_verse_range_end", "required"])
+        #TODO Putting Required in the middle broke versification unit tests.  Fix that
 
         in_brackets = False
         unprinted_row_list = [] #rename to unprinted verse_ranges?
@@ -96,6 +101,7 @@ def corpus_to_word_level_tsv(targetVersification:Versification, sourceVersificat
         is_verse_range = False
         
         previous_verse_num = 0
+        previous_skip_space_after = ""
         
         for row in corpus.tokenize(tokenizer):#.tokenize(tokenizer).nfc_normalize() #Include for Double Tokenization    
 
@@ -156,12 +162,23 @@ def corpus_to_word_level_tsv(targetVersification:Versification, sourceVersificat
             
                 token = row.segment[index]
                 
-                if(removeZwFromWordsPath != None and token != " "):
-                    if token in zw_removal_df["words"].values:    
-                        token = token.replace(string.zwsp, string.empty_string).replace(string.zwj, string.empty_string).replace(string.zwnj, string.empty_string)
+                if(token == "၍"):#"·"
+                    stop = True
                 
-                #Skip Space After
+                #Getting Tokens
                 max_segment_index = len(row.segment) - 1
+                
+                previous_previous_token = None 
+                if(index - 2 >= 0):
+                    previous_previous_token = row.segment[index - 2]
+                else:
+                    previous_previous_token = ''
+                
+                previous_token = None
+                if(index - 1 >= 0):
+                    previous_token = row.segment[index - 1]
+                else:
+                    previous_token = ''
                 
                 next_token = None
                 if(index + 1 <= max_segment_index):
@@ -175,24 +192,63 @@ def corpus_to_word_level_tsv(targetVersification:Versification, sourceVersificat
                 else:
                     next_next_token = ' ' #assume a space between verses
                 
+                #Skip Space After
                 skip_space_after = "y"
                 
-                if(stopWordsPath != None and token != " "):
-                    if token in stop_words_df["stop_words"].values:
-                        continue 
-                
-                if(token==' ' or token==string.zwsp or token==string.nbsp):
-                    continue
-                elif((next_token==' ') or (next_token==string.zwsp and next_next_token ==' ')):
-
-                        skip_space_after = ""
+                if(is_stop_word(stopWordsPath, stop_words_df, token)):
+                    continue 
+                elif((next_token == ' ') or (next_token == string.zwsp and next_next_token == ' ')):
+                    skip_space_after = ""
+                    
+                #ZW Characters
+                if(removeZwFromWordsPath != None and token in zw_removal_df["words"].values):
+                    token = token.replace(string.zwsp, string.empty_string).replace(string.zwj, string.empty_string).replace(string.zwnj, string.empty_string)
 
                 #Exclude
-                exclude = "y"
-                for char in token:
-                    if(not in_brackets and not is_unicode_punctuation(char)):
+                exclude = ""
+                
+                token_is_punct = True
+                if (isinstance(token, str) and len(token)>0):
+                    for char in token:
+                        if(not in_brackets and not is_unicode_punctuation(char)):
+                            token_is_punct = False
+                            break
+                
+                if(token_is_punct):
+                    exclude = "y"
+                    
+                    #substring = previous_token + token + next_token
+                    #substring.replace(string.zwsp, "")
+                    #index = len(previous_token + token) - 1
+                    
+                    next_substring_token = ""
+                    if(skip_space_after == ""):
+                        next_substring_token = string.space + next_token
+                    elif(is_stop_word(stopWordsPath, stop_words_df, next_token)):
+                        next_substring_token = next_next_token
+                    elif(skip_space_after == "y"):
+                        next_substring_token = next_token
+                    
+                    previous_substring_token = ""
+                    if(previous_skip_space_after == ""):
+                        previous_substring_token = previous_token + string.space 
+                    elif(is_stop_word(stopWordsPath, stop_words_df, previous_token)):
+                        previous_substring_token = previous_previous_token
+                    elif(previous_skip_space_after == "y"):
+                        previous_substring_token = previous_token
+                    
+                    substring = previous_substring_token + token + next_substring_token
+                    index = len(previous_substring_token + token) - 1
+                
+                    match = WORD_LEVEL_PUNCT_REGEX.match(substring, index)
+                    if match is not None:
+                        group = match.group()
+                        if(token == "၍"):
+                            stop = True
                         exclude = ""
-                        break
+                    else:
+                        if(token == "၍"):
+                            stop = True
                     
                 if(excludeBracketedText and '[' in token):
                     in_brackets = True
@@ -207,23 +263,34 @@ def corpus_to_word_level_tsv(targetVersification:Versification, sourceVersificat
                 if(excludeCrossReferences and in_parentheses and has_number and ':' in token):
                     is_cross_reference = True
                 
+                #Required
+                required = "n"
+                for char in token:
+                    if(not is_unicode_punctuation(char)):
+                        required = "y"
+                        break
+                
                 #Printing
                 wordIndexStr = str(wordIndex).zfill(3)
                 
                 if(row.text != ""):
                     if(in_parentheses):
-                        unprinted_parenthetical_tokens.append(([f"{rowBcv}{wordIndexStr}", f"{sourceBcv}", token, skip_space_after, exclude, "", source_verse_range_end]))
+                        unprinted_parenthetical_tokens.append(([f"{rowBcv}{wordIndexStr}", f"{sourceBcv}", token, skip_space_after, exclude,  "", source_verse_range_end, required]))
                     elif(row.is_in_range):
                         is_verse_range = True
-                        unprinted_row_list.append([f"{rowBcv}{wordIndexStr}", f"{sourceBcv}", token, skip_space_after, exclude, "", source_verse_range_end])
+                        unprinted_row_list.append([f"{rowBcv}{wordIndexStr}", f"{sourceBcv}", token, skip_space_after, exclude, "", source_verse_range_end, required])
                     else:
-                        tsv_writer.writerow([f"{rowBcv}{wordIndexStr}", f"{sourceBcv}", token, skip_space_after, exclude, "", source_verse_range_end])
+                        tsv_writer.writerow([f"{rowBcv}{wordIndexStr}", f"{sourceBcv}", token, skip_space_after, exclude, "", source_verse_range_end, required])
                 
                 if(')' in token):
                     in_parentheses = False
                 
-                wordIndex += 1
-                
+                wordIndex += 1 
+                previous_skip_space_after = skip_space_after
+
+def is_stop_word(stopWordsPath, stop_words_df, token):
+    #return token == ' ' or token == string.zwsp or token == string.nbsp or (stopWordsPath != None and token in stop_words_df["stop_words"].values)
+    return token in string.stop_words or token == string.nbsp or (stopWordsPath != None and token in stop_words_df["stop_words"].values)               
 
 if(__name__ == "__main__"):
     #BSB
@@ -248,14 +315,15 @@ if(__name__ == "__main__"):
     # removeZwFromWordsPath = None
 
     #OCCB-Simplified
-    # targetVersification = Versification.load("./resources/man/occb_simplified_usx/release/versification.vrs", fallback_name="web")
-    # sourceVersification = Versification(name = "sourceVersification", base_versification=ORIGINAL_VERSIFICATION)
-    # corpus = UsxFileTextCorpus("./resources/man/occb_simplified_usx/release/USX_1", versification = targetVersification)
-    # tokenizer = ChineseBibleWordTokenizer.ChineseBibleWordTokenizer()
-    # project_name = "OCCB-simplified"
-    # excludeBracketedText = False
-    # language="man"
-    # removeZwFromWordsPath = None
+    #targetVersification = Versification.load("./resources/man/occb_simplified_usx/release/versification.vrs", fallback_name="web")
+    #sourceVersification = Versification(name = "sourceVersification", base_versification=ORIGINAL_VERSIFICATION)
+    #corpus = UsxFileTextCorpus("./resources/man/occb_simplified_usx/release/USX_1", versification = targetVersification)
+    #tokenizer = ChineseBibleWordTokenizer.ChineseBibleWordTokenizer()
+    #project_name = "OCCB-simplified"
+    #excludeBracketedText = False
+    #language="man"
+    #removeZwFromWordsPath = None
+    #stopWordsPath = None
 
     #ONAV
     #targetVersification = Versification.load("./resources/onav_usx/release/versification.vrs", fallback_name="web")
@@ -323,15 +391,15 @@ if(__name__ == "__main__"):
     #removeZwFromWordsPath = "./resources/hin/zw-removal-words.tsv"
 
     #LSG
-    #sourceVersification = Versification(name = "sourceVersification", base_versification=ORIGINAL_VERSIFICATION)
-    #project_name="LSG"
-    #targetVersification = Versification.load("./resources/fra/fra-LSG_usfm/versification.vrs", fallback_name="web")
-    #corpus = UsfmFileTextCorpus("./resources/fra/fra-LSG_usfm", versification = targetVersification, handler=ModifiedTextRowCollector, psalmSuperscriptionTag='d')
-    #language = "fra"
-    #tokenizer = LatinWhitespaceIncludedWordTokenizer(language=language, regex_rules_module = import_module_from_path("regex_rules", "./resources/fra/fra-LSG_usfm/regex_rules.py"))
-    #excludeBracketedText = False
-    #removeZwFromWordsPath = None
-    #stopWordsPath = None
+    sourceVersification = Versification(name = "sourceVersification", base_versification=ORIGINAL_VERSIFICATION)
+    project_name="LSG"
+    targetVersification = Versification.load("./resources/fra/fra-LSG_usfm/versification.vrs", fallback_name="web")
+    corpus = UsfmFileTextCorpus("./resources/fra/fra-LSG_usfm", versification = targetVersification, handler=ModifiedTextRowCollector, psalmSuperscriptionTag='d')
+    language = "fra"
+    tokenizer = LatinWhitespaceIncludedWordTokenizer(language=language, regex_rules_module = import_module_from_path("regex_rules", "./resources/fra/fra-LSG_usfm/regex_rules.py"))
+    excludeBracketedText = False
+    removeZwFromWordsPath = None
+    stopWordsPath = None
     
     #IRVBen
     #targetVersification = Versification.load("./resources/ben/IRVBen/release/versification.vrs", fallback_name="web")
@@ -422,19 +490,31 @@ if(__name__ == "__main__"):
     #project_name = usfm_abbrev
     #excludeBracketedText = False
     #removeZwFromWordsPath = None
+    #stopWordsPath = None
+    
+    #language = "mya"
+    #usfm_abbrev = "BCB"
+    #targetVersification = Versification.load(f"./resources/{language}/{usfm_abbrev}/versification.vrs", fallback_name="web")
+    #sourceVersification = Versification(name="sourceVersification", base_versification=ORIGINAL_VERSIFICATION)
+    #corpus = UsfmFileTextCorpus(f"./resources/{language}/{usfm_abbrev}/", versification=targetVersification, handler=ModifiedTextRowCollector, psalmSuperscriptionTag="d")
+    #tokenizer = LatinWhitespaceIncludedWordTokenizer(language=language, regex_rules_module = None)
+    #project_name = usfm_abbrev
+    #excludeBracketedText = False
+    #removeZwFromWordsPath = None
+    #stopWordsPath = f"./resources/{language}/{usfm_abbrev}/stop_words.tsv"
     
     #RSB
-    usfm_language = "rus"
-    usfm_abbrev = "ru_rsb"
-    targetVersification = Versification.load(f"./resources/{usfm_language}/{usfm_abbrev}/russyn.vrs", fallback_name="web")
-    sourceVersification = Versification(name="sourceVersification", base_versification=ORIGINAL_VERSIFICATION)
-    language = usfm_language
-    corpus = UsfmFileTextCorpus(f"./resources/{usfm_language}/{usfm_abbrev}/", versification=targetVersification, handler=ModifiedTextRowCollector, psalmSuperscriptionTag="d")
-    tokenizer = LatinWhitespaceIncludedWordTokenizer(language=language, regex_rules_module = None)
-    project_name = usfm_abbrev
-    excludeBracketedText = True
-    removeZwFromWordsPath = None
-    stopWordsPath = None
+    #usfm_language = "rus"
+    #usfm_abbrev = "ru_rsb"
+    #targetVersification = Versification.load(f"./resources/{usfm_language}/{usfm_abbrev}/russyn.vrs", fallback_name="web")
+    #sourceVersification = Versification(name="sourceVersification", base_versification=ORIGINAL_VERSIFICATION)
+    #language = usfm_language
+    #corpus = UsfmFileTextCorpus(f"./resources/{usfm_language}/{usfm_abbrev}/", versification=targetVersification, handler=ModifiedTextRowCollector, psalmSuperscriptionTag="d")
+    #tokenizer = LatinWhitespaceIncludedWordTokenizer(language=language, regex_rules_module = None)
+    #project_name = usfm_abbrev
+    #excludeBracketedText = True
+    #removeZwFromWordsPath = None
+    #stopWordsPath = None
 
     corpus_to_word_level_tsv(targetVersification, sourceVersification, corpus, tokenizer, project_name, excludeBracketedText=excludeBracketedText, language=language, removeZwFromWordsPath=removeZwFromWordsPath, stopWordsPath=stopWordsPath)
     corpus_to_verse_level_tsv(targetVersification, sourceVersification, corpus, tokenizer, project_name, language=language, removeZwFromWordsPath=None)
