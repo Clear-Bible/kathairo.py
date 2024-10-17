@@ -87,7 +87,8 @@ def corpus_to_word_level_tsv(targetVersification:Versification, sourceVersificat
     with open(outputFileName, 'w', newline='', encoding='utf-8') as out_file:
         tsv_writer = csv.writer(out_file, delimiter='\t', quoting=csv.QUOTE_NONE, quotechar=None)
 
-        tsv_writer.writerow(["id", "source_verse", "text", "skip_space_after", "exclude", "required", "id_range_end", "source_verse_range_end"])
+        tsv_writer.writerow(["id", "source_verse", "text", "skip_space_after", "exclude", "id_range_end", "source_verse_range_end", "required"])
+        #TODO Putting Required in the middle broke versification unit tests.  Fix that
 
         in_brackets = False
         unprinted_row_list = [] #rename to unprinted verse_ranges?
@@ -274,12 +275,12 @@ def corpus_to_word_level_tsv(targetVersification:Versification, sourceVersificat
                 
                 if(row.text != ""):
                     if(in_parentheses):
-                        unprinted_parenthetical_tokens.append(([f"{rowBcv}{wordIndexStr}", f"{sourceBcv}", token, skip_space_after, exclude, required, "", source_verse_range_end]))
+                        unprinted_parenthetical_tokens.append(([f"{rowBcv}{wordIndexStr}", f"{sourceBcv}", token, skip_space_after, exclude,  "", source_verse_range_end, required]))
                     elif(row.is_in_range):
                         is_verse_range = True
-                        unprinted_row_list.append([f"{rowBcv}{wordIndexStr}", f"{sourceBcv}", token, skip_space_after, exclude, required, "", source_verse_range_end])
+                        unprinted_row_list.append([f"{rowBcv}{wordIndexStr}", f"{sourceBcv}", token, skip_space_after, exclude, "", source_verse_range_end, required])
                     else:
-                        tsv_writer.writerow([f"{rowBcv}{wordIndexStr}", f"{sourceBcv}", token, skip_space_after, exclude, required, "", source_verse_range_end])
+                        tsv_writer.writerow([f"{rowBcv}{wordIndexStr}", f"{sourceBcv}", token, skip_space_after, exclude, "", source_verse_range_end, required])
                 
                 if(')' in token):
                     in_parentheses = False
