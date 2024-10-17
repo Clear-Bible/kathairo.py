@@ -216,33 +216,32 @@ def corpus_to_word_level_tsv(targetVersification:Versification, sourceVersificat
                 if(token_is_punct):
                     exclude = "y"
                     
-                    substring = previous_token + token + next_token
+                    #substring = previous_token + token + next_token
                     #substring.replace(string.zwsp, "")
-                    index = len(previous_token + token) - 1
+                    #index = len(previous_token + token) - 1
                     
-                    '''
                     next_substring_token = ""
-                    if(is_stop_word(stopWordsPath, stop_words_df, next_token)):
+                    if(skip_space_after == ""):
+                        next_substring_token = string.space + next_token
+                    elif(is_stop_word(stopWordsPath, stop_words_df, next_token)):
                         next_substring_token = next_next_token
                     elif(skip_space_after == "y"):
                         next_substring_token = next_token
-                    else:
-                        next_substring_token = string.space + next_token 
-                        
+                    
                     previous_substring_token = ""
-                    if(is_stop_word(stopWordsPath, stop_words_df, previous_token)):
+                    if(previous_skip_space_after == ""):
+                        previous_substring_token = previous_token + string.space 
+                    elif(is_stop_word(stopWordsPath, stop_words_df, previous_token)):
                         previous_substring_token = previous_previous_token
                     elif(previous_skip_space_after == "y"):
                         previous_substring_token = previous_token
-                    else:
-                        previous_substring_token = previous_token + string.space 
+                    
                     substring = previous_substring_token + token + next_substring_token
                     index = len(previous_substring_token + token) - 1
                 
-                    '''    
-                    
                     match = WORD_LEVEL_PUNCT_REGEX.match(substring, index)
                     if match is not None:
+                        group = match.group()
                         if(token == "၍"):
                             stop = True
                         exclude = ""
