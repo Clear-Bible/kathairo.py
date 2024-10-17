@@ -159,7 +159,7 @@ def corpus_to_word_level_tsv(targetVersification:Versification, sourceVersificat
             
                 token = row.segment[index]
                 
-                if(token == "·"):
+                if(token == "("):#"·"
                     stop = True
                 
                 #ZW Characters
@@ -207,19 +207,19 @@ def corpus_to_word_level_tsv(targetVersification:Versification, sourceVersificat
                         skip_space_after = ""
 
                 #Exclude
-                exclude = "y"
+                exclude = ""
+                
                 token_is_punct = True
                 if (isinstance(token, str) and len(token)>0):
                     for char in token:
                         if(not in_brackets and not is_unicode_punctuation(char)):
                             token_is_punct = False
-                            exclude = ""
                             break
                 
                 if(token_is_punct):
                     exclude = "y"
-                    substring = previous_previous_token + previous_token + token + next_token + next_next_token
-                    index = len(previous_previous_token + previous_token + token) - 1
+                    substring = previous_token + token + next_token
+                    index = len(previous_token + token) - 1
                 
                     match = WORD_LEVEL_PUNCT_REGEX.match(substring, index)
                     if match is not None:
@@ -285,15 +285,15 @@ if(__name__ == "__main__"):
     # removeZwFromWordsPath = None
 
     #OCCB-Simplified
-    targetVersification = Versification.load("./resources/man/occb_simplified_usx/release/versification.vrs", fallback_name="web")
-    sourceVersification = Versification(name = "sourceVersification", base_versification=ORIGINAL_VERSIFICATION)
-    corpus = UsxFileTextCorpus("./resources/man/occb_simplified_usx/release/USX_1", versification = targetVersification)
-    tokenizer = ChineseBibleWordTokenizer.ChineseBibleWordTokenizer()
-    project_name = "OCCB-simplified"
-    excludeBracketedText = False
-    language="man"
-    removeZwFromWordsPath = None
-    stopWordsPath = None
+    #targetVersification = Versification.load("./resources/man/occb_simplified_usx/release/versification.vrs", fallback_name="web")
+    #sourceVersification = Versification(name = "sourceVersification", base_versification=ORIGINAL_VERSIFICATION)
+    #corpus = UsxFileTextCorpus("./resources/man/occb_simplified_usx/release/USX_1", versification = targetVersification)
+    #tokenizer = ChineseBibleWordTokenizer.ChineseBibleWordTokenizer()
+    #project_name = "OCCB-simplified"
+    #excludeBracketedText = False
+    #language="man"
+    #removeZwFromWordsPath = None
+    #stopWordsPath = None
 
     #ONAV
     #targetVersification = Versification.load("./resources/onav_usx/release/versification.vrs", fallback_name="web")
@@ -450,16 +450,17 @@ if(__name__ == "__main__"):
     #removeZwFromWordsPath = None
 
     # BCL
-    #usfm_language = "mya"
-    #usfm_abbrev = "BCL"
-    #targetVersification = Versification.load(f"./resources/{usfm_language}/{usfm_abbrev}/versification.vrs", fallback_name="web")
-    #sourceVersification = Versification(name="sourceVersification", base_versification=ORIGINAL_VERSIFICATION)
-    #language = usfm_language
-    #corpus = UsfmFileTextCorpus(f"./resources/{usfm_language}/{usfm_abbrev}/", versification=targetVersification, handler=ModifiedTextRowCollector, psalmSuperscriptionTag="d")
-    #tokenizer = LatinWhitespaceIncludedWordTokenizer(language=language, regex_rules_module = import_module_from_path("regex_rules", f"./resources/{usfm_language}/{usfm_abbrev}/regex_rules.py"))
-    #project_name = usfm_abbrev
-    #excludeBracketedText = False
-    #removeZwFromWordsPath = None
+    usfm_language = "mya"
+    usfm_abbrev = "BCL"
+    targetVersification = Versification.load(f"./resources/{usfm_language}/{usfm_abbrev}/versification.vrs", fallback_name="web")
+    sourceVersification = Versification(name="sourceVersification", base_versification=ORIGINAL_VERSIFICATION)
+    language = usfm_language
+    corpus = UsfmFileTextCorpus(f"./resources/{usfm_language}/{usfm_abbrev}/", versification=targetVersification, handler=ModifiedTextRowCollector, psalmSuperscriptionTag="d")
+    tokenizer = LatinWhitespaceIncludedWordTokenizer(language=language, regex_rules_module = import_module_from_path("regex_rules", f"./resources/{usfm_language}/{usfm_abbrev}/regex_rules.py"))
+    project_name = usfm_abbrev
+    excludeBracketedText = False
+    removeZwFromWordsPath = None
+    stopWordsPath = None
     
     #RSB
     #usfm_language = "rus"

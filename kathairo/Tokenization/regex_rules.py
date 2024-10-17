@@ -32,7 +32,7 @@ class DefaultRegexRules:
         return regex_rules
 
     #NON_JOINING_PUNCT =r"[.،«?।!।၊–…{}—《》（）‘’“”;？：；。！，、,\[\]]"
-    NON_JOINING_PUNCT = r"[.،«?!।–…{}—《》（）‘’“”;？：；。！，、,\[\]]"
+    NON_JOINING_PUNCT = r"[.،«?!।၊–…{}—《》（）‘’“”;？：；。！，、,\[\]]"
     #does nothing, oddly        ।   ၊ 
     #is joining in some cases   –   —
 
