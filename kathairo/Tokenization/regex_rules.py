@@ -31,9 +31,9 @@ class DefaultRegexRules:
         
         return regex_rules
 
-    #NON_JOINING_PUNCT =r"[.،«?।!।၊–…{}—《》（）‘’“”;？：；。！，、,\[\]]"
-    NON_JOINING_PUNCT = r"[.،«?!।၊–…{}—《》（）‘’“”;？：；。！，、,\[\]]"
-    #does nothing, oddly        ।   ၊ 
+    #NON_JOINING_PUNCT =r"[.،«?!।၊–…{}—《》（）‘’“”;？：；。！，、,\[\]()]"
+    NON_JOINING_PUNCT = r"[.،«?!।၊–…{}—《》（）‘’“”;？：；。！，、,\[\]()]"
+    #does nothing, oddly        ၊ 
     #is joining in some cases   –   —
 
     WORD_LEVEL_PUNCT_REGEX = re.compile(

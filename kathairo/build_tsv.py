@@ -159,7 +159,7 @@ def corpus_to_word_level_tsv(targetVersification:Versification, sourceVersificat
             
                 token = row.segment[index]
                 
-                if(token == "("):#"·"
+                if(token == "၍"):#"·"
                     stop = True
                 
                 #ZW Characters
@@ -219,11 +219,17 @@ def corpus_to_word_level_tsv(targetVersification:Versification, sourceVersificat
                 if(token_is_punct):
                     exclude = "y"
                     substring = previous_token + token + next_token
+                    #substring.replace(string.zwsp, "")
                     index = len(previous_token + token) - 1
                 
                     match = WORD_LEVEL_PUNCT_REGEX.match(substring, index)
                     if match is not None:
+                        if(token == "၍"):
+                            stop = True
                         exclude = ""
+                    else:
+                        if(token == "၍"):
+                            stop = True
                     
                 if(excludeBracketedText and '[' in token):
                     in_brackets = True

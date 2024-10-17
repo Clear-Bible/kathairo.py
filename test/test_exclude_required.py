@@ -67,9 +67,9 @@ def test_exclude_outer_punctuation(tsv_vrs_files):
                 #print(substring, " :: ", group, " :: ", index)
                 
             if(token_is_word_level_punct):
-                assert token_is_word_level_punct != exclude_bool, tsv_vrs_files[2] + " {} ".format(id) + "inner punctuation is marked as excluded: " + substring
+                assert token_is_word_level_punct != exclude_bool, tsv_vrs_files[2] +" "+current_id+ " {} ".format(id) + "inner punctuation is marked as excluded: " + substring
             else:
-                assert token_is_word_level_punct == exclude_bool, tsv_vrs_files[2] + " {} ".format(id) + "outer punctuation is not marked as excluded: " + substring
+                assert token_is_word_level_punct != exclude_bool, tsv_vrs_files[2] +" "+current_id+ " {} ".format(id) + "outer punctuation is not marked as excluded: " + substring
         
         previous_row = current_row
         current_row = next_row
