@@ -1577,40 +1577,6 @@ files = [
 test = ["numpy", "pytest"]
 
 [[package]]
-name = "sil-thot"
-version = "3.4.6"
-description = "A toolkit for statistical word alignment and machine translation"
-optional = false
-python-versions = ">=3.8, <4.0"
-files = [
-    {file = "sil_thot-3.4.6-cp310-cp310-macosx_11_0_arm64.whl", hash = "sha256:894079b3e8245a05b589ab827f9939b2e6081ac8c4cacb6222fea69b4946f666"},
-]
-
-[package.extras]
-test = ["numpy", "pytest"]
-
-[package.source]
-type = "url"
-url = "https://storage.googleapis.com/btt-macos-wheels/sil_thot-3.4.6-cp310-cp310-macosx_11_0_arm64.whl"
-
-[[package]]
-name = "sil-thot"
-version = "3.4.6"
-description = "A toolkit for statistical word alignment and machine translation"
-optional = false
-python-versions = ">=3.8, <4.0"
-files = [
-    {file = "sil_thot-3.4.6-cp311-cp311-macosx_11_0_arm64.whl", hash = "sha256:f4546f0e9b429b39fef86f085e69baf175cb2f6d02480bef8fded9db03123567"},
-]
-
-[package.extras]
-test = ["numpy", "pytest"]
-
-[package.source]
-type = "url"
-url = "https://storage.googleapis.com/btt-macos-wheels/sil_thot-3.4.6-cp311-cp311-macosx_11_0_arm64.whl"
-
-[[package]]
 name = "six"
 version = "1.17.0"
 description = "Python 2 and 3 compatibility utilities"
@@ -2170,4 +2136,4 @@ files = [
 [metadata]
 lock-version = "2.0"
 python-versions = ">=3.10,<3.12"
-content-hash = "89ed321ceffe870f28dcc0fa6b502742ab0006891e4d268829ef85e43fe19ecc"
+content-hash = "f77368949ebf72e6cde612c9f8c13b0ef133f641939d1f565d3f306b31f50ca5"
