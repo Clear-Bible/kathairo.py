@@ -134,10 +134,9 @@ def get_json_data(json_file):
         
     return json_data
 
-def main():
-    json_file = "kathairo/Prompts/prompts.json"
+def main(json_path):
 
-    json_data = get_json_data(json_file)
+    json_data = get_json_data(json_path)
 
     with ProcessPoolExecutor() as executor:
         
