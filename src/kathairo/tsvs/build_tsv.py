@@ -292,10 +292,10 @@ def get_surrounding_tokens(token_array, index):
     return previous_previous_token, previous_token, next_token, next_next_token
 
 def is_stop_word(stop_words_df, token):
-    return token in strings.stop_words or (stop_words_df is not None and token in stop_words_df["stop_words"].values)      
+    return token in strings.stop_words or (stop_words_df is not None and token in stop_words_df["stop_words"].to_numpy())      
 
 def remove_zw_characters(zw_removal_df, token):
-    if(zw_removal_df is not None and token in zw_removal_df["words"].values):
+    if(zw_removal_df is not None and token in zw_removal_df["words"].to_numpy()):
         token = token.replace(strings.zwsp, strings.empty_string).replace(strings.zwj, strings.empty_string).replace(strings.zwnj, strings.empty_string)
     return token
 
