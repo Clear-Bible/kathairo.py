@@ -5,13 +5,16 @@ def fix_versification_file(versification_path, versification_issues_path):
     versification = Versification.load(versification_path)
     versification_issues_df = pl.read_csv(versification_issues_path, separator='\t', infer_schema_length=0, has_header=False)
     
-    fixed_versification = fix_versification(versification, versification_issues_df)
-    save_versification(versification_path, fixed_versification)
+    #fixed_versification = fix_versification(versification, versification_issues_df)
+    #save_versification(versification_path, fixed_versification)
+    
+    save_versification(versification_path, versification)
 
 def fix_versification(versification, versification_issues_df):
     for issue in versification_issues_df.iter_rows():
         if(issue[0]=="source_verse" and issue[2]=="miss_end_verse"):
-            fix_missing_end_verses_in_source_verse_column(versification, issue[4])
+            versification = fix_missing_end_verses_in_source_verse_column(versification, issue[4])
+    return versification
 
 def fix_missing_end_verses_in_source_verse_column(versification, current_verse_id):
     next_chapter = str(int(current_verse_id[3:5])+1).zfill(3)
@@ -22,11 +25,13 @@ def fix_missing_end_verses_in_source_verse_column(versification, current_verse_i
     current_verse_ref = VerseRef.from_bbbcccvvv(int(current_verse_id), ORIGINAL_VERSIFICATION)
     next_verse_ref = VerseRef.from_bbbcccvvv(int(next_verse_id), ORIGINAL_VERSIFICATION)
     
-    versification.add_mapping(next_verse_ref, current_verse_ref)
-    versification.add_mapping(next_verse_ref, next_verse_ref)
+    versification.mappings.add_mapping(next_verse_ref, current_verse_ref)
+    versification.mappings.add_mapping(next_verse_ref, next_verse_ref)
     
     #NUM 26:1 = NUM 25:19
     #NUM 26:1 = NUM 26:1
+    
+    return versification
 
 def save_versification(versification_path, versification):
     with open(versification_path, "w", encoding="utf-8") as file:
