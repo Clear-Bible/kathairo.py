@@ -5,10 +5,10 @@ def fix_versification_file(versification_path, versification_issues_path):
     versification = Versification.load(versification_path)
     versification_issues_df = pl.read_csv(versification_issues_path, separator='\t', infer_schema_length=0, has_header=False)
     
-    #fixed_versification = fix_versification(versification, versification_issues_df)
-    #save_versification(versification_path, fixed_versification)
+    fixed_versification = fix_versification(versification, versification_issues_df)
+    save_versification(versification_path, fixed_versification)
     
-    save_versification(versification_path, versification)
+    #save_versification(versification_path, versification)
 
 def fix_versification(versification, versification_issues_df):
     for issue in versification_issues_df.iter_rows():
@@ -18,14 +18,13 @@ def fix_versification(versification, versification_issues_df):
 
 def fix_missing_end_verses_in_source_verse_column(versification, current_verse_id):
     next_chapter = str(int(current_verse_id[3:5])+1).zfill(3)
-    next_verse = str(int(current_verse_id[5:7])+1).zfill(3)
     
-    next_verse_id = current_verse_id[0:2] + next_chapter + next_verse
+    next_verse_id = current_verse_id[0:2] + next_chapter + '001'
     
     current_verse_ref = VerseRef.from_bbbcccvvv(int(current_verse_id), ORIGINAL_VERSIFICATION)
     next_verse_ref = VerseRef.from_bbbcccvvv(int(next_verse_id), ORIGINAL_VERSIFICATION)
     
-    versification.mappings.add_mapping(next_verse_ref, current_verse_ref)
+    versification.mappings.add_mapping(current_verse_ref, next_verse_ref)
     versification.mappings.add_mapping(next_verse_ref, next_verse_ref)
     
     #NUM 26:1 = NUM 25:19
@@ -47,8 +46,8 @@ def save_versification(versification_path, versification):
                 
             file.write(f'{book_size_line}\n')
         
-        for key in versification.mappings._versification_to_standard:
-            file.write(f'{key} = {versification.mappings._versification_to_standard[key]}\n')
+        for key in versification.mappings._standard_to_versification:
+            file.write(f'{versification.mappings._standard_to_versification[key]} = {key}\n')
 
 bible_book_abbreviations = [
     'GEN',
