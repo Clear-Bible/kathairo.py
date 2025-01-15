@@ -5,10 +5,10 @@ def fix_versification_file(versification_path, versification_issues_path):
     versification = Versification.load(versification_path)
     versification_issues_df = pl.read_csv(versification_issues_path, separator='\t', infer_schema_length=0, has_header=False)
     
-    fixed_versification = fix_versification(versification, versification_issues_df)
-    save_versification(versification_path, fixed_versification)
+    #fixed_versification = fix_versification(versification, versification_issues_df)
+    #save_versification(versification_path, fixed_versification)
     
-    #save_versification(versification_path, versification)
+    save_versification(versification_path, versification)
 
 def fix_versification(versification, versification_issues_df):
     for issue in versification_issues_df.iter_rows():
@@ -27,9 +27,6 @@ def fix_missing_end_verses_in_source_verse_column(versification, current_verse_i
     versification.mappings.add_mapping(current_verse_ref, next_verse_ref)
     versification.mappings.add_mapping(next_verse_ref, next_verse_ref)
     
-    #NUM 26:1 = NUM 25:19
-    #NUM 26:1 = NUM 26:1
-    
     return versification
 
 def save_versification(versification_path, versification):
@@ -46,8 +43,19 @@ def save_versification(versification_path, versification):
                 
             file.write(f'{book_size_line}\n')
         
+        mappings_list = []
         for key in versification.mappings._standard_to_versification:
-            file.write(f'{versification.mappings._standard_to_versification[key]} = {key}\n')
+            mapping = f'{versification.mappings._standard_to_versification[key]} = {key}\n'
+            if(mapping not in mappings_list):
+                mappings_list.append(mapping)
+        
+        for key in versification.mappings._versification_to_standard:
+            mapping = f'{key} = {versification.mappings._versification_to_standard[key]}\n'
+            if(mapping not in mappings_list):
+                mappings_list.append(mapping)
+        
+        for mapping in mappings_list:
+            file.write(mapping)
 
 bible_book_abbreviations = [
     'GEN',
