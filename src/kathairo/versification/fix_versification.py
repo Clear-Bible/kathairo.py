@@ -5,31 +5,35 @@ def fix_versification_file(versification_path, versification_issues_path):
     versification = Versification.load(versification_path)
     versification_issues_df = pl.read_csv(versification_issues_path, separator='\t', infer_schema_length=0, has_header=False)
     
-    #fixed_versification = fix_versification(versification, versification_issues_df)
-    #save_versification(versification_path, fixed_versification)
+    fixed_versification = fix_versification(versification, versification_issues_df)
+    save_versification(versification_path, fixed_versification)
     
-    save_versification(versification_path, versification)
+    #save_versification(versification_path, versification)
 
 def fix_versification(versification, versification_issues_df):
     for issue in versification_issues_df.iter_rows():
         if(issue[0]=="source_verse" and issue[2]=="miss_end_verse"):
-            versification = fix_missing_end_verses_in_source_verse_column(versification, issue[4])
+            versification = fix_missing_end_verses_in_source_verse_column(versification, issue[4], issue[5])
     return versification
 
-def fix_missing_end_verses_in_source_verse_column(versification, current_verse_id):
+def fix_missing_end_verses_in_source_verse_column(versification:Versification, current_verse_id, is_missing_verse_in_id_column):
     next_chapter = str(int(current_verse_id[3:5])+1).zfill(3)
     
     next_verse_id = current_verse_id[0:2] + next_chapter + '001'
     
     current_verse_ref = VerseRef.from_bbbcccvvv(int(current_verse_id), ORIGINAL_VERSIFICATION)
     next_verse_ref = VerseRef.from_bbbcccvvv(int(next_verse_id), ORIGINAL_VERSIFICATION)
-    
-    versification.mappings.add_mapping(current_verse_ref, next_verse_ref)
-    versification.mappings.add_mapping(next_verse_ref, next_verse_ref)
+
+    if(is_missing_verse_in_id_column == "True"):
+        versification.mappings.add_mapping(current_verse_ref, current_verse_ref)    
+        versification.mappings.add_mapping(current_verse_ref, next_verse_ref)
+    else:
+        versification.mappings.add_mapping(next_verse_ref, next_verse_ref)
+        versification.mappings.add_mapping(next_verse_ref, current_verse_ref)
     
     return versification
 
-def save_versification(versification_path, versification):
+def save_versification(versification_path, versification:Versification):
     with open(versification_path, "w", encoding="utf-8") as file:
         
         file.write(f'# Versification  "{versification.name}"\n')
@@ -44,18 +48,25 @@ def save_versification(versification_path, versification):
             file.write(f'{book_size_line}\n')
         
         mappings_list = []
+        
         for key in versification.mappings._standard_to_versification:
+            mapping_id = versification.mappings._standard_to_versification[key].bbbcccvvvs + key.bbbcccvvvs
             mapping = f'{versification.mappings._standard_to_versification[key]} = {key}\n'
-            if(mapping not in mappings_list):
-                mappings_list.append(mapping)
-        
+            mapping_id_pair = (mapping_id, mapping)
+            if(mapping_id_pair not in mappings_list):
+                mappings_list.append(mapping_id_pair)
+
         for key in versification.mappings._versification_to_standard:
+            mapping_id =  key.bbbcccvvvs + (versification.mappings._versification_to_standard[key]).bbbcccvvvs
             mapping = f'{key} = {versification.mappings._versification_to_standard[key]}\n'
-            if(mapping not in mappings_list):
-                mappings_list.append(mapping)
+            mapping_id_pair = (mapping_id, mapping)
+            if(mapping_id_pair not in mappings_list):
+                mappings_list.append(mapping_id_pair)
         
-        for mapping in mappings_list:
-            file.write(mapping)
+        sorted_mappings_list = sorted(mappings_list, key=lambda x: x[0])  # Sort by ID (first element)
+        
+        for mapping in sorted_mappings_list:
+            file.write(mapping[1])
 
 bible_book_abbreviations = [
     'GEN',
