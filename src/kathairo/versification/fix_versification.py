@@ -1,8 +1,14 @@
 from machine.scripture import Versification, VerseRef, ORIGINAL_VERSIFICATION
 import polars as pl
+import os
 
 def fix_versification_file(versification_path, versification_issues_path):
     versification = Versification.load(versification_path)
+    
+    size = os.path.getsize(versification_issues_path)
+    if(size == 0):
+        return
+    
     versification_issues_df = pl.read_csv(versification_issues_path, separator='\t', infer_schema_length=0, has_header=False)
     
     fixed_versification = fix_versification(versification, versification_issues_df)
@@ -137,23 +143,4 @@ bible_book_abbreviations = [
     'REV'
 ]
 
-fix_versification_file("src/kathairo/versification/versification.vrs", "src/kathairo/versification/source_size_issues_AVD.tsv")
-
-'''
-genesis_31_55 = VerseRef.from_string("GEN 31:55", versification)
-mapping = versification.mappings._versification_to_standard.get_versification(genesis_31_55)
-print(mapping)
-
-if versification_ref in versification.mappings._versification_to_standard:
-    del versification.mappings._standard_to_versification[versification.mappings._versification_to_standard[versification_ref]]
-    del versification.mappings._versification_to_standard[versification_ref]
-
-versification.book_list[0][0] = 0
-
-versification.mappings.add_mapping(
-    VerseRef("GEN", 1, 1, versification), 
-    VerseRef("GEN", 1, 2, versification)
-)
-
-versification.add_mapping(new_versification_ref, new_standard_ref)
-'''
+#fix_versification_file("src/kathairo/versification/versification.vrs", "src/kathairo/versification/source_size_issues_AVD.tsv")
