@@ -110,7 +110,7 @@ def tokens_to_array(tsvPath:str, targetVersification:Versification, sourceVersif
             sourceVref, source_verse_range_end = versification.set_source_verse(targetVref, sourceVersification, unused_versification_mapping)
             sourceBcv = f"{re.sub(r'[^0-9]', '', sourceVref.bbbcccvvvs)}"[1:]
             
-            corpus_row = [previous_bcv_id, sourceBcv, verse_tokens, "", "", verse_text]
+            corpus_row = [previous_bcv_id, sourceBcv, verse_tokens, "", source_verse_range_end, verse_text]
             corpus_array.append(corpus_row)
             corpus_row = []
             verse_tokens = []
