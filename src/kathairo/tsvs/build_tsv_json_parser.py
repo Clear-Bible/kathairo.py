@@ -67,6 +67,7 @@ def get_config(json_object):
     config_dict["targetVersification"] = Versification.load(target_versification_path, fallback_name="web")
 
     config_dict["psalmSuperscriptionTag"] = json_object.get("psalmSuperscriptionTag", 'd')
+    config_dict["outputChapterFiles"] = json_object.get("outputChapterFiles", False)
 
     config_dict["projectName"] = json_object.get("projectName")
     if "tsvPath" in json_object:
@@ -105,7 +106,8 @@ def process_corpus(json_object):
                 language=config_dict["language"],
                 zwRemovalDf=config_dict["zwRemovalDf"],
                 stopWordsDf=config_dict["stopWordsDf"],
-                regex_rules_class=config_dict["regexRulesClass"]
+                regex_rules_class=config_dict["regexRulesClass"],
+                outputChapterFiles = config_dict["outputChapterFiles"]
             )
         }
     else:
@@ -120,7 +122,8 @@ def process_corpus(json_object):
                 stopWordsDf=config_dict["stopWordsDf"],
                 excludeBracketedText=config_dict["excludeBracketedText"],
                 excludeCrossReferences=config_dict["excludeCrossReferences"],
-                regex_rules_class=config_dict["regexRulesClass"]
+                regex_rules_class=config_dict["regexRulesClass"],
+                outputChapterFiles = config_dict["outputChapterFiles"]
             )            
         }
     
