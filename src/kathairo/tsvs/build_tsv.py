@@ -21,14 +21,15 @@ def corpus_to_tsv(
     stopWordsDf:str, 
     excludeBracketedText:bool = False, 
     excludeCrossReferences:bool = False, 
-    regex_rules_class = None
+    regex_rules_class = None,
+    outputChapterFiles = False
 ):    
 
     corpus_array = corpus_to_array(targetVersification, sourceVersification, corpus, tokenizer)
 
     #TODO try to make these parallel sometime
-    array_to_token_level_tsv(corpus_array, project_name, language, zwRemovalDf, stopWordsDf, excludeBracketedText, excludeCrossReferences, regex_rules_class)
-    array_to_verse_level_tsv(corpus_array, project_name, language)
+    array_to_token_level_tsv(corpus_array, project_name, language, zwRemovalDf, stopWordsDf, excludeBracketedText, excludeCrossReferences, regex_rules_class, outputChapterFiles)
+    array_to_verse_level_tsv(corpus_array, project_name, language, outputChapterFiles)
   
 def corpus_to_array(targetVersification:Versification, sourceVersification:Versification, corpus:ScriptureTextCorpus, tokenizer:WhitespaceTokenizer):
     
@@ -80,7 +81,8 @@ def tokens_to_tsv(
     stopWordsDf:str, 
     excludeBracketedText:bool = False, 
     excludeCrossReferences:bool = False, 
-    regex_rules_class = None
+    regex_rules_class = None,
+    outputChapterFiles = False
 ):
     corpus_array = tokens_to_array(tsvPath, targetVersification, sourceVersification)
     
@@ -137,7 +139,8 @@ def tokens_to_array(tsvPath:str, targetVersification:Versification, sourceVersif
 def array_to_verse_level_tsv(
     corpus_array, 
     project_name: str, 
-    language: str
+    language: str,
+    outputChapterFiles = False
 ):
     outputFileName = get_file_location("output", language, project_name, "verse", "verse")
     os.makedirs(os.path.dirname(outputFileName), exist_ok=True)
@@ -151,7 +154,7 @@ def array_to_verse_level_tsv(
             
 def array_to_token_level_tsv(corpus_array,
                 project_name:str, language:str, zwRemovalDf:str, stopWordsDf:str, excludeBracketedText:bool = False, 
-                excludeCrossReferences:bool = False, regex_rules_class = None):
+                excludeCrossReferences:bool = False, regex_rules_class = None, outputChapterFiles = False):
     
     zw_removal_df= zwRemovalDf
         
@@ -166,7 +169,7 @@ def array_to_token_level_tsv(corpus_array,
 
         tsv_writer.writerow(["id", "source_verse", "text", "skip_space_after", "exclude", "id_range_end", "source_verse_range_end", "required"])
 
-        in_brackets = False
+        in_brackets = False 
         
         in_parentheses = False
         is_cross_reference = False
