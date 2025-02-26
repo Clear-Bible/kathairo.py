@@ -1,5 +1,7 @@
-def get_file_location(directory:str, language:str, project_name:str, sub_directory:str, file_prefix:str):
-    output_file_location = directory+"/"+language+"/"+project_name+"/"+sub_directory+"/"+file_prefix+"_"+project_name+".tsv"
+def get_file_location(directory:str, language:str, project_name:str, sub_directory:str, file_prefix:str, suffix:str=""):
+    if suffix != "":
+        suffix = "_" + suffix
+    output_file_location = directory+"/"+language+"/"+project_name+"/"+sub_directory+"/"+file_prefix+"_"+project_name+suffix+".tsv"
     return output_file_location
 
 import importlib.util
