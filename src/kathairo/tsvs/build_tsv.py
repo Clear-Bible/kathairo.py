@@ -142,14 +142,45 @@ def array_to_verse_level_tsv(
     language: str,
     outputChapterFiles = False
 ):
-    outputFileName = set_output_file_path("output", language, project_name, "verse", "verse")
-    with open(outputFileName, 'w', newline='', encoding='utf-8') as out_file:
+    output_file_name = None
+    chapter_output_file_name = None
+    
+    output_file = None
+    chapter_output_file = None
+
+    tsv_writer = None
+    chapter_tsv_writer = None
+    
+    column_header_row = ["id", "source_verse", "text", "id_range_end", "source_verse_range_end"]
+    last_book_chapter_value = None
+    
+    output_file_name = set_output_file_path("output", language, project_name, "verse", "verse")
         
-        tsv_writer = csv.writer(out_file, delimiter='\t', quoting=csv.QUOTE_NONE, quotechar=None)
-        tsv_writer.writerow(["id", "source_verse", "text", "id_range_end", "source_verse_range_end"])
+    for row in corpus_array:
         
-        for row in corpus_array:
-            tsv_writer.writerow([row[0], row[1], row[5], row[3], row[4]])
+        book_chapter_value = row[0][0:5]
+    
+        if tsv_writer is None:
+            output_file_name = set_output_file_path("output", language, project_name, "verse", "verse")
+            tsv_writer, output_file = get_tsv_writer_and_out_file(output_file_name)
+            tsv_writer.writerow(column_header_row)
+            
+        if outputChapterFiles and last_book_chapter_value != book_chapter_value:
+            if chapter_tsv_writer is not None:
+                close_tsv_writer(chapter_tsv_writer, chapter_output_file)
+                last_book_chapter_value = book_chapter_value
+            
+            chapter_output_file_name = set_output_file_path("output", language, project_name, "verse/chapters", "verse", book_chapter_value)
+            chapter_tsv_writer, chapter_output_file = get_tsv_writer_and_out_file(chapter_output_file_name)
+            chapter_tsv_writer.writerow(column_header_row)
+        
+        tsv_writer.writerow([row[0], row[1], row[5], row[3], row[4]])
+        if outputChapterFiles:
+            chapter_tsv_writer.writerow([row[0], row[1], row[5], row[3], row[4]])
+    
+    close_tsv_writer(tsv_writer, output_file)
+    if outputChapterFiles:    
+        close_tsv_writer(chapter_tsv_writer, chapter_output_file)
             
 def array_to_token_level_tsv(corpus_array,
                 project_name:str, language:str, zwRemovalDf:str, stopWordsDf:str, excludeBracketedText:bool = False, 
