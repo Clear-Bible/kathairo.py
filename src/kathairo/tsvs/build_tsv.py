@@ -21,16 +21,18 @@ def corpus_to_tsv(
     stopWordsDf:str, 
     excludeBracketedText:bool = False, 
     excludeCrossReferences:bool = False, 
-    regex_rules_class = None
+    regex_rules_class = None,
+    outputChapterFiles = False,
+    includeHeaders = False
 ):    
 
-    corpus_array = corpus_to_array(targetVersification, sourceVersification, corpus, tokenizer)
+    corpus_array = corpus_to_array(targetVersification, sourceVersification, corpus, tokenizer, includeHeaders)
 
     #TODO try to make these parallel sometime
-    array_to_token_level_tsv(corpus_array, project_name, language, zwRemovalDf, stopWordsDf, excludeBracketedText, excludeCrossReferences, regex_rules_class)
-    array_to_verse_level_tsv(corpus_array, project_name, language)
+    array_to_token_level_tsv(corpus_array, project_name, language, zwRemovalDf, stopWordsDf, excludeBracketedText, excludeCrossReferences, regex_rules_class, outputChapterFiles)
+    array_to_verse_level_tsv(corpus_array, project_name, language, outputChapterFiles)
   
-def corpus_to_array(targetVersification:Versification, sourceVersification:Versification, corpus:ScriptureTextCorpus, tokenizer:WhitespaceTokenizer):
+def corpus_to_array(targetVersification:Versification, sourceVersification:Versification, corpus:ScriptureTextCorpus, tokenizer:WhitespaceTokenizer, includeHeaders):
     
     corpus_array = []
     unused_versification_mapping = versification.create_target_to_sources_dict(targetVersification)
@@ -63,12 +65,22 @@ def corpus_to_array(targetVersification:Versification, sourceVersification:Versi
         
         row_text = untokenized_row.text
         if row_text:
+            is_header = ''
+            if(includeHeaders):
+                is_header = is_text_header(row_text)
+                if(is_header):
+                    row_text = row_text[1:]
             if untokenized_row.is_in_range:
-                append_range_list([rowBcv, sourceBcv, row_tokens, "", source_verse_range_end, row_text])
+                append_range_list([rowBcv, sourceBcv, row_tokens, "", source_verse_range_end, row_text, is_header])
             else:
-                corpus_array.append([rowBcv, sourceBcv, row_tokens, "", source_verse_range_end, row_text])
+                corpus_array.append([rowBcv, sourceBcv, row_tokens, "", source_verse_range_end, row_text, is_header])
         
     return corpus_array
+
+def is_text_header(row_text):
+    if(row_text[0] == '#'):
+        return 'y'
+    return ''
 
 def tokens_to_tsv(
     targetVersification:Versification, 
@@ -80,7 +92,8 @@ def tokens_to_tsv(
     stopWordsDf:str, 
     excludeBracketedText:bool = False, 
     excludeCrossReferences:bool = False, 
-    regex_rules_class = None
+    regex_rules_class = None,
+    outputChapterFiles = False
 ):
     corpus_array = tokens_to_array(tsvPath, targetVersification, sourceVersification)
     
@@ -137,21 +150,52 @@ def tokens_to_array(tsvPath:str, targetVersification:Versification, sourceVersif
 def array_to_verse_level_tsv(
     corpus_array, 
     project_name: str, 
-    language: str
+    language: str,
+    outputChapterFiles = False
 ):
-    outputFileName = get_file_location("output", language, project_name, "verse", "verse")
-    os.makedirs(os.path.dirname(outputFileName), exist_ok=True)
-    with open(outputFileName, 'w', newline='', encoding='utf-8') as out_file:
+    output_file_name = None
+    chapter_output_file_name = None
+    
+    output_file = None
+    chapter_output_file = None
+
+    tsv_writer = None
+    chapter_tsv_writer = None
+    
+    column_header_row = ["id", "source_verse", "text", "id_range_end", "source_verse_range_end", "is_header"]
+    last_book_chapter_value = None
+    
+    output_file_name = set_output_file_path("output", language, project_name, "verse", "verse")
         
-        tsv_writer = csv.writer(out_file, delimiter='\t', quoting=csv.QUOTE_NONE, quotechar=None)
-        tsv_writer.writerow(["id", "source_verse", "text", "id_range_end", "source_verse_range_end"])
+    for row in corpus_array:
         
-        for row in corpus_array:
-            tsv_writer.writerow([row[0], row[1], row[5], row[3], row[4]])
+        book_chapter_value = row[0][0:5]
+    
+        if tsv_writer is None:
+            output_file_name = set_output_file_path("output", language, project_name, "verse", "verse")
+            tsv_writer, output_file = get_tsv_writer_and_out_file(output_file_name)
+            tsv_writer.writerow(column_header_row)
+            
+        if outputChapterFiles and last_book_chapter_value != book_chapter_value:
+            if chapter_tsv_writer is not None:
+                close_tsv_writer(chapter_tsv_writer, chapter_output_file)
+                last_book_chapter_value = book_chapter_value
+            
+            chapter_output_file_name = set_output_file_path("output", language, project_name, "verse/chapters", "verse", book_chapter_value)
+            chapter_tsv_writer, chapter_output_file = get_tsv_writer_and_out_file(chapter_output_file_name)
+            chapter_tsv_writer.writerow(column_header_row)
+        
+        tsv_writer.writerow([row[0], row[1], row[5], row[3], row[4], row[6]])
+        if outputChapterFiles:
+            chapter_tsv_writer.writerow([row[0], row[1], row[5], row[3], row[4], row[6]])
+    
+    close_tsv_writer(tsv_writer, output_file)
+    if outputChapterFiles:    
+        close_tsv_writer(chapter_tsv_writer, chapter_output_file)
             
 def array_to_token_level_tsv(corpus_array,
                 project_name:str, language:str, zwRemovalDf:str, stopWordsDf:str, excludeBracketedText:bool = False, 
-                excludeCrossReferences:bool = False, regex_rules_class = None):
+                excludeCrossReferences:bool = False, regex_rules_class = None, outputChapterFiles = False):
     
     zw_removal_df= zwRemovalDf
         
@@ -159,115 +203,165 @@ def array_to_token_level_tsv(corpus_array,
 
     WORD_LEVEL_PUNCT_REGEX = regex_rules_class.WORD_LEVEL_PUNCT_REGEX
     
-    outputFileName = get_file_location("output", language, project_name, "token", "token")
-    os.makedirs(os.path.dirname(outputFileName), exist_ok=True)
-    with open(outputFileName, 'w', newline='', encoding='utf-8') as out_file:
-        tsv_writer = csv.writer(out_file, delimiter='\t', quoting=csv.QUOTE_NONE, quotechar=None)
+    output_file_name = None
+    chapter_output_file_name = None
+    
+    output_file = None
+    chapter_output_file = None
 
-        tsv_writer.writerow(["id", "source_verse", "text", "skip_space_after", "exclude", "id_range_end", "source_verse_range_end", "required"])
+    tsv_writer = None
+    chapter_tsv_writer = None
+    
+    column_header_row = ["id", "source_verse", "text", "skip_space_after", "exclude", "id_range_end", "source_verse_range_end", "required"]
+    last_book_chapter_value = None
 
-        in_brackets = False
+    in_brackets = False 
+    
+    in_parentheses = False
+    is_cross_reference = False
+    has_number = False
+    unprinted_parenthetical_tokens = []
+    
+    previous_verse_num = 0
+    previous_skip_space_after = ""
+    
+    for row in corpus_array:
+        book_chapter_value = row[0][0:5]
         
-        in_parentheses = False
-        is_cross_reference = False
-        has_number = False
-        unprinted_parenthetical_tokens = []
-        
-        previous_verse_num = 0
-        previous_skip_space_after = ""
-        
-        for row in corpus_array:
-
-            current_verse_num = row[0]
-            if(current_verse_num != previous_verse_num):
-                wordIndex = 1
-            previous_verse_num = current_verse_num
-
-            for index in range(len(row[2])):
+        if tsv_writer is None:
+            output_file_name = set_output_file_path("output", language, project_name, "token", "token")
+            tsv_writer, output_file = get_tsv_writer_and_out_file(output_file_name)
+            tsv_writer.writerow(column_header_row)
             
+        if outputChapterFiles and last_book_chapter_value != book_chapter_value:
+            if chapter_tsv_writer is not None:
+                close_tsv_writer(chapter_tsv_writer, chapter_output_file)
+                last_book_chapter_value = book_chapter_value
+            
+            chapter_output_file_name = set_output_file_path("output", language, project_name, "token/chapters", "token", book_chapter_value)
+            chapter_tsv_writer, chapter_output_file = get_tsv_writer_and_out_file(chapter_output_file_name)
+            chapter_tsv_writer.writerow(column_header_row)
+        
+        current_verse_num = row[0]
+        if(current_verse_num != previous_verse_num):
+            wordIndex = 1
+        previous_verse_num = current_verse_num
+
+        for index in range(len(row[2])):
+        
+            has_number, is_cross_reference, unprinted_parenthetical_tokens = process_and_print_parenthetical_tokens(
+                excludeCrossReferences, 
+                tsv_writer, 
+                in_parentheses, 
+                has_number,
+                is_cross_reference, 
+                unprinted_parenthetical_tokens
+            )
+            
+            if outputChapterFiles:
                 has_number, is_cross_reference, unprinted_parenthetical_tokens = process_and_print_parenthetical_tokens(
                     excludeCrossReferences, 
-                    tsv_writer, 
+                    chapter_tsv_writer, 
                     in_parentheses, 
                     has_number,
                     is_cross_reference, 
                     unprinted_parenthetical_tokens
                 )
 
-                #id = row[2][index][0]
+            #id = row[2][index][0]
+            
+            token = row[2][index]
+            #token = row[2][index][1]
+            
+            #isPunc = row[2][index][2]
+            #if(isPunc == "False"):
+            #    isPunc = ""
+            #else:
+            #    isPunc = "y"
+            #isPrimary = row[2][index][3]
+            #if(isPrimary == "False"):
+            #    isPrimary = "n"
+            #else:
+            #    isPrimary = "y"
+                        
                 
-                token = row[2][index]
-                #token = row[2][index][1]
-                
-                #isPunc = row[2][index][2]
-                #if(isPunc == "False"):
-                #    isPunc = ""
-                #else:
-                #    isPunc = "y"
-                #isPrimary = row[2][index][3]
-                #if(isPrimary == "False"):
-                #    isPrimary = "n"
-                #else:
-                #    isPrimary = "y"
-                         
-                    
-                #Getting Tokens
-                previous_previous_token, previous_token, next_token, next_next_token = get_surrounding_tokens(row[2], index)
-                
-                #Skip Space After
-                skip_space_after = "y"
-                
-                if(is_stop_word(stop_words_df, token)):
-                    continue 
-                elif((next_token in strings.spaces) or (next_token in strings.invisible_spaces and next_next_token in strings.spaces)):
-                    skip_space_after = ""
-                
-                #''' 
-                #ZW Characters
-                token = remove_zw_characters(zw_removal_df, token)
+            #Getting Tokens
+            previous_previous_token, previous_token, next_token, next_next_token = get_surrounding_tokens(row[2], index)
+            
+            #Skip Space After
+            skip_space_after = "y"
+            
+            if(is_stop_word(stop_words_df, token)):
+                continue 
+            elif((next_token in strings.spaces) or (next_token in strings.invisible_spaces and next_next_token in strings.spaces)):
+                skip_space_after = ""
+            
+            #''' 
+            #ZW Characters
+            token = remove_zw_characters(zw_removal_df, token)
 
-                #Exclude
-                exclude = ""
+            #Exclude
+            exclude = ""
 
-                if isinstance(token, str) and len(token) > 0 and all(in_brackets or is_unicode_punctuation(char) for char in token):
-                    exclude = "y"
+            if isinstance(token, str) and len(token) > 0 and all(in_brackets or is_unicode_punctuation(char) for char in token):
+                exclude = "y"
 
-                    if is_token_word_level_punct(stop_words_df, WORD_LEVEL_PUNCT_REGEX, previous_skip_space_after, token, previous_previous_token, previous_token, next_token, next_next_token, skip_space_after):
-                        exclude = ""
+                if is_token_word_level_punct(stop_words_df, WORD_LEVEL_PUNCT_REGEX, previous_skip_space_after, token, previous_previous_token, previous_token, next_token, next_next_token, skip_space_after):
+                    exclude = ""
+                
+            if(excludeBracketedText and '[' in token):
+                in_brackets = True
+                exclude = "y"
+            if(']' in token):
+                in_brackets = False
+                
+            if(excludeCrossReferences and '(' in token): #add to unit test to look for that all things marked as cross references are indeed cross-references and no token has a colon and a parentheses
+                in_parentheses = True
+            if(excludeCrossReferences and in_parentheses and contains_number(token)):#add this change to the unit test
+                has_number = True
+            if(excludeCrossReferences and in_parentheses and has_number and ':' in token):
+                is_cross_reference = True
+            
+            #Required
+            required = calculate_required(token)
+            #'''
+            
+            #Printing
+            wordIndexStr = str(wordIndex).zfill(3)
+            
+            if(row[5] != ""):
+                if(in_parentheses):
+                    unprinted_parenthetical_tokens.append(([f"{row[0]}{wordIndexStr}", f"{row[1]}", token, skip_space_after, exclude,  row[3], row[4], required]))
+                    #unprinted_parenthetical_tokens.append(([id, f"{row[1]}", token, skip_space_after, isPunc,  row[3], row[4], isPrimary]))
+                else:
+                    tsv_writer.writerow([f"{row[0]}{wordIndexStr}", f"{row[1]}", token, skip_space_after, exclude, row[3], row[4], required])
+                    #tsv_writer.writerow([id, f"{row[1]}", token, skip_space_after, isPunc, row[3], row[4], isPrimary])
+                    if outputChapterFiles:
+                        chapter_tsv_writer.writerow([f"{row[0]}{wordIndexStr}", f"{row[1]}", token, skip_space_after, exclude, row[3], row[4], required])
                     
-                if(excludeBracketedText and '[' in token):
-                    in_brackets = True
-                    exclude = "y"
-                if(']' in token):
-                    in_brackets = False
-                    
-                if(excludeCrossReferences and '(' in token): #add to unit test to look for that all things marked as cross references are indeed cross-references and no token has a colon and a parentheses
-                    in_parentheses = True
-                if(excludeCrossReferences and in_parentheses and contains_number(token)):#add this change to the unit test
-                    has_number = True
-                if(excludeCrossReferences and in_parentheses and has_number and ':' in token):
-                    is_cross_reference = True
-                
-                #Required
-                required = calculate_required(token)
-                #'''
-                
-                #Printing
-                wordIndexStr = str(wordIndex).zfill(3)
-                
-                if(row[5] != ""):
-                    if(in_parentheses):
-                        unprinted_parenthetical_tokens.append(([f"{row[0]}{wordIndexStr}", f"{row[1]}", token, skip_space_after, exclude,  row[3], row[4], required]))
-                        #unprinted_parenthetical_tokens.append(([id, f"{row[1]}", token, skip_space_after, isPunc,  row[3], row[4], isPrimary]))
-                    else:
-                        tsv_writer.writerow([f"{row[0]}{wordIndexStr}", f"{row[1]}", token, skip_space_after, exclude, row[3], row[4], required])
-                        #tsv_writer.writerow([id, f"{row[1]}", token, skip_space_after, isPunc, row[3], row[4], isPrimary])
-                
-                if(')' in token):
-                    in_parentheses = False
-                
-                wordIndex += 1 
-                previous_skip_space_after = skip_space_after
+            if(')' in token):
+                in_parentheses = False
+            
+            wordIndex += 1 
+            previous_skip_space_after = skip_space_after
+    
+    close_tsv_writer(tsv_writer, output_file)
+    if outputChapterFiles:    
+        close_tsv_writer(chapter_tsv_writer, chapter_output_file)
+
+def set_output_file_path(directory, language, project_name, subdirectory, prefix, suffix = ""):
+    outputFileName = get_file_location(directory, language, project_name, subdirectory, prefix, suffix)
+    os.makedirs(os.path.dirname(outputFileName), exist_ok=True)
+    return outputFileName
+
+def get_tsv_writer_and_out_file(file_name):
+    out_file = open(file_name, 'w', newline='', encoding='utf-8')
+    tsv_writer = csv.writer(out_file, delimiter='\t', quoting=csv.QUOTE_NONE, quotechar=None)
+    return tsv_writer, out_file
+
+def close_tsv_writer(tsv_writer, out_file):
+    if tsv_writer is not None:
+        out_file.close()
 
 def process_and_print_parenthetical_tokens(excludeCrossReferences, tsv_writer, in_parentheses, has_number, is_cross_reference, unprinted_parenthetical_tokens):
     if(not in_parentheses):    

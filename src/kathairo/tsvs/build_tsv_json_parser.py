@@ -38,13 +38,14 @@ def create_tokenizer(json_object, regex_rules_class):
         )
     return None
 
-def create_corpus(json_object, target_versification, psalm_superscription_tag):
+def create_corpus(json_object, target_versification, psalm_superscription_tag, include_headers):
     if "targetUsfmCorpusPath" in json_object:
         return UsfmFileTextCorpus(
                 json_object["targetUsfmCorpusPath"],
             handler=ModifiedTextRowCollector,
             versification=target_versification,
-            psalmSuperscriptionTag=psalm_superscription_tag
+            psalmSuperscriptionTag=psalm_superscription_tag,
+            include_headers = include_headers
         )
     return UsxFileTextCorpus(
         json_object["targetUsxCorpusPath"],
@@ -67,13 +68,15 @@ def get_config(json_object):
     config_dict["targetVersification"] = Versification.load(target_versification_path, fallback_name="web")
 
     config_dict["psalmSuperscriptionTag"] = json_object.get("psalmSuperscriptionTag", 'd')
+    config_dict["outputChapterFiles"] = json_object.get("outputChapterFiles", False)
+    config_dict["includeHeaders"] = json_object.get("includeHeaders", False)
 
     config_dict["projectName"] = json_object.get("projectName")
     if "tsvPath" in json_object:
         config_dict["tsvPath"] = json_object.get("tsvPath")
         config_dict["isCorpus"] = False
     else:
-        config_dict["corpus"] = create_corpus(json_object, config_dict["targetVersification"], config_dict["psalmSuperscriptionTag"])
+        config_dict["corpus"] = create_corpus(json_object, config_dict["targetVersification"], config_dict["psalmSuperscriptionTag"], config_dict["includeHeaders"])
         config_dict["isCorpus"] = True
     
     config_dict["excludeBracketedText"] = json_object.get("excludeBracketedText", False)
@@ -105,7 +108,9 @@ def process_corpus(json_object):
                 language=config_dict["language"],
                 zwRemovalDf=config_dict["zwRemovalDf"],
                 stopWordsDf=config_dict["stopWordsDf"],
-                regex_rules_class=config_dict["regexRulesClass"]
+                regex_rules_class=config_dict["regexRulesClass"],
+                outputChapterFiles = config_dict["outputChapterFiles"],
+                includeHeaders = config_dict["includeHeaders"]
             )
         }
     else:
@@ -120,7 +125,9 @@ def process_corpus(json_object):
                 stopWordsDf=config_dict["stopWordsDf"],
                 excludeBracketedText=config_dict["excludeBracketedText"],
                 excludeCrossReferences=config_dict["excludeCrossReferences"],
-                regex_rules_class=config_dict["regexRulesClass"]
+                regex_rules_class=config_dict["regexRulesClass"],
+                outputChapterFiles = config_dict["outputChapterFiles"],
+                includeHeaders = config_dict["includeHeaders"]
             )            
         }
     

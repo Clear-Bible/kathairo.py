@@ -14,6 +14,7 @@ class UsfmFileTextCorpus(ScriptureTextCorpus):
         project_dir: StrPath,
         handler:UsfmParserHandler,
         psalmSuperscriptionTag:str,
+        include_headers:bool,
         stylesheet_filename: StrPath = "usfm.sty",
         encoding: str = "utf-8-sig",
         versification: Optional[Versification] = None,
@@ -25,5 +26,5 @@ class UsfmFileTextCorpus(ScriptureTextCorpus):
         stylesheet = UsfmStylesheet(stylesheet_filename)
         texts: List[UsfmFileText] = []
         for sfm_filename in Path(project_dir).glob(file_pattern):
-            texts.append(UsfmFileText(stylesheet, encoding, sfm_filename, handler, psalmSuperscriptionTag, versification, include_markers)) #passes in handler
+            texts.append(UsfmFileText(stylesheet, encoding, sfm_filename, handler, psalmSuperscriptionTag, include_headers, versification, include_markers)) #passes in handler
         super().__init__(versification, texts)
