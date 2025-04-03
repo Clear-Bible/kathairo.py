@@ -64,12 +64,20 @@ def corpus_to_array(targetVersification:Versification, sourceVersification:Versi
         
         row_text = untokenized_row.text
         if row_text:
+            is_header = is_text_header(row_text)
+            if(is_header):
+                row_text = row_text[1:]
             if untokenized_row.is_in_range:
-                append_range_list([rowBcv, sourceBcv, row_tokens, "", source_verse_range_end, row_text])
+                append_range_list([rowBcv, sourceBcv, row_tokens, "", source_verse_range_end, row_text, is_header])
             else:
-                corpus_array.append([rowBcv, sourceBcv, row_tokens, "", source_verse_range_end, row_text])
+                corpus_array.append([rowBcv, sourceBcv, row_tokens, "", source_verse_range_end, row_text, is_header])
         
     return corpus_array
+
+def is_text_header(row_text):
+    if(row_text[0] == '#'):
+        return 'y'
+    return ''
 
 def tokens_to_tsv(
     targetVersification:Versification, 
@@ -151,7 +159,7 @@ def array_to_verse_level_tsv(
     tsv_writer = None
     chapter_tsv_writer = None
     
-    column_header_row = ["id", "source_verse", "text", "id_range_end", "source_verse_range_end"]
+    column_header_row = ["id", "source_verse", "text", "id_range_end", "source_verse_range_end", "is_header"]
     last_book_chapter_value = None
     
     output_file_name = set_output_file_path("output", language, project_name, "verse", "verse")
@@ -174,9 +182,9 @@ def array_to_verse_level_tsv(
             chapter_tsv_writer, chapter_output_file = get_tsv_writer_and_out_file(chapter_output_file_name)
             chapter_tsv_writer.writerow(column_header_row)
         
-        tsv_writer.writerow([row[0], row[1], row[5], row[3], row[4]])
+        tsv_writer.writerow([row[0], row[1], row[5], row[3], row[4], row[6]])
         if outputChapterFiles:
-            chapter_tsv_writer.writerow([row[0], row[1], row[5], row[3], row[4]])
+            chapter_tsv_writer.writerow([row[0], row[1], row[5], row[3], row[4], row[6]])
     
     close_tsv_writer(tsv_writer, output_file)
     if outputChapterFiles:    
