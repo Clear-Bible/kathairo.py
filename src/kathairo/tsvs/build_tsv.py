@@ -22,16 +22,17 @@ def corpus_to_tsv(
     excludeBracketedText:bool = False, 
     excludeCrossReferences:bool = False, 
     regex_rules_class = None,
-    outputChapterFiles = False
+    outputChapterFiles = False,
+    includeHeaders = False
 ):    
 
-    corpus_array = corpus_to_array(targetVersification, sourceVersification, corpus, tokenizer)
+    corpus_array = corpus_to_array(targetVersification, sourceVersification, corpus, tokenizer, includeHeaders)
 
     #TODO try to make these parallel sometime
     array_to_token_level_tsv(corpus_array, project_name, language, zwRemovalDf, stopWordsDf, excludeBracketedText, excludeCrossReferences, regex_rules_class, outputChapterFiles)
     array_to_verse_level_tsv(corpus_array, project_name, language, outputChapterFiles)
   
-def corpus_to_array(targetVersification:Versification, sourceVersification:Versification, corpus:ScriptureTextCorpus, tokenizer:WhitespaceTokenizer):
+def corpus_to_array(targetVersification:Versification, sourceVersification:Versification, corpus:ScriptureTextCorpus, tokenizer:WhitespaceTokenizer, includeHeaders):
     
     corpus_array = []
     unused_versification_mapping = versification.create_target_to_sources_dict(targetVersification)
@@ -64,9 +65,11 @@ def corpus_to_array(targetVersification:Versification, sourceVersification:Versi
         
         row_text = untokenized_row.text
         if row_text:
-            is_header = is_text_header(row_text)
-            if(is_header):
-                row_text = row_text[1:]
+            is_header = ''
+            if(includeHeaders):
+                is_header = is_text_header(row_text)
+                if(is_header):
+                    row_text = row_text[1:]
             if untokenized_row.is_in_range:
                 append_range_list([rowBcv, sourceBcv, row_tokens, "", source_verse_range_end, row_text, is_header])
             else:
