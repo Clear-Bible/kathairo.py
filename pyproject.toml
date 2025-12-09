@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "kathairo"
-version = "0.4.2"
+version = "0.4.3"
 description = "Scripture processing pipeline for converting USFM and USX formats into structured TSV files"
 authors = ["Robertson Brinker <robertsonbrinker@gmail.com>"]
 readme = "README.md"
