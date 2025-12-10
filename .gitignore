@@ -1,3 +1,5 @@
 
 *.pyc
 *.pyc
+*.pyc
+/src/kathairo/tokenization/__pycache__

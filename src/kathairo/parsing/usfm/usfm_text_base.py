@@ -20,8 +20,9 @@ class ModifiedUsfmTextBase(UsfmTextBase):
         psalmSuperscriptionTag: str,
         versification: Optional[Versification],
         include_markers: bool,
+        include_all_text: bool = False,
     ) -> None:
-        super().__init__(id, stylesheet, encoding, versification, include_markers)
+        super().__init__(id, stylesheet, encoding, versification, include_markers, include_all_text)
 
         self._stylesheet = stylesheet
         self._encoding = encoding
