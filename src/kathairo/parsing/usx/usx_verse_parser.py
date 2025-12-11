@@ -8,7 +8,17 @@ from machine.corpora.corpora_utils import merge_verse_ranges
 from machine.corpora.usx_verse import UsxVerse
 from machine.corpora.usx_verse_parser import UsxVerseParser
 from machine.corpora.usx_verse_parser import _ParseContext
-from machine.corpora.usx_verse_parser import _is_numbered_style
+
+
+def _is_numbered_style(base_style: str, style: str) -> bool:
+    """
+    Check if a style is a numbered variant of a base style.
+    For example, 's1', 's2' are numbered variants of 's'.
+    """
+    if not style.startswith(base_style):
+        return False
+    suffix = style[len(base_style):]
+    return suffix.isdigit() if suffix else False
 
 
 class ModifiedUsxVerseParser(UsxVerseParser):
