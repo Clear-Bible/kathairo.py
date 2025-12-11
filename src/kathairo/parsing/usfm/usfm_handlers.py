@@ -6,6 +6,7 @@ from machine.corpora.usfm_parser_state import UsfmParserState
 from machine.corpora.usfm_token import UsfmToken
 from machine.corpora.usfm_token import UsfmTokenType
 from machine.corpora.scripture_ref import ScriptureRef
+from machine.utils.string_utils import has_sentence_ending
 
 from machine.corpora.usfm_text_base import UsfmTextBase
 from machine.corpora.usfm_text_base import _TextRowCollector
@@ -17,7 +18,6 @@ class ModifiedTextRowCollector(_TextRowCollector):
         super().__init__(text)
         self._psalm_superscription_tag = psalm_superscription_tag
         self._in_psalm_superscription = False
-        self._verse_0_created = False
 
     def start_para(
         self,
@@ -32,27 +32,22 @@ class ModifiedTextRowCollector(_TextRowCollector):
             and state.verse_ref.bbbcccvvvs not in ("019119000", "019107000")
         )
 
-        #if self._in_psalm_superscription and not is_superscription:
-        #    self.verse(state, "0", "v", None, None)
-        #    self._in_psalm_superscription = False
-
         if is_superscription:
             self._in_psalm_superscription = True
-        
+
         super().start_para(state, marker, unknown, attributes)
 
     def end_para(self, state: UsfmParserState, marker: str) -> None:
-        if marker == self._psalm_superscription_tag:#
-            self._in_psalm_superscription = False#
-
         super().end_para(state, marker)
 
-    def text(self, state: UsfmParserState, text: str) -> None:
+        if marker == self._psalm_superscription_tag:
+            self._in_psalm_superscription = False
 
-        if self._in_psalm_superscription and state.note_tag is None:
+    def _end_non_verse_text(self, state: UsfmParserState, scripture_ref: ScriptureRef) -> None:
+        text = self._row_texts_stack.pop() if self._row_texts_stack else ""
 
-            self._row_texts_stack.append("")
-            self._row_texts_stack[-1] += text
-            self.verse(state, "0", "v", None, None)#
-
-        super().text(state, text)
+        if self._in_psalm_superscription and text.strip():
+            self._rows.append(self._text._create_scripture_row(scripture_ref, text, self._sentence_start))
+            self._sentence_start = has_sentence_ending(text)
+        elif self._text._include_all_text and text:
+            self._rows.append(self._text._create_scripture_row(scripture_ref, text, self._sentence_start))
