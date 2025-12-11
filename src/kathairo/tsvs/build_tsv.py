@@ -48,7 +48,7 @@ def corpus_to_array(targetVersification:Versification, sourceVersification:Versi
             token = tokenized_row.segment[index]
             row_tokens.append(token)
         
-        targetVref = VerseRef.from_bbbcccvvv(untokenized_row.ref.bbbcccvvv, targetVersification)
+        targetVref = VerseRef.from_bbbcccvvv(untokenized_row.ref.verse_ref.bbbcccvvv, targetVersification)
         sourceVref, source_verse_range_end = versification.set_source_verse(targetVref, sourceVersification, unused_versification_mapping)
 
         if not untokenized_row.is_in_range or untokenized_row.is_range_start:
@@ -59,7 +59,7 @@ def corpus_to_array(targetVersification:Versification, sourceVersification:Versi
             verse_range_list.clear()
 
         sourceBcv = f"{re.sub(r'[^0-9]', '', sourceVref.bbbcccvvvs)}"[1:]
-        rowBcv = f"{re.sub(r'[^0-9]', '', untokenized_row.ref.bbbcccvvvs)}"[1:]
+        rowBcv = f"{re.sub(r'[^0-9]', '', untokenized_row.ref.verse_ref.bbbcccvvvs)}"[1:]
         
         row_text = untokenized_row.text
         if row_text:

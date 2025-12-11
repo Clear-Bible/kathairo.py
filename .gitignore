@@ -1,2 +1,17 @@
 
 *.pyc
+*.pyc
+*.pyc
+/src/kathairo/tokenization/__pycache__
+src/kathairo/tsvs/__pycache__/build_tsv_json_parser.cpython-311.pyc
+src/kathairo/tsvs/__pycache__/build_tsv.cpython-311.pyc
+src/kathairo/tokenization/__pycache__/ChineseBibleWordTokenizer.cpython-311.pyc
+src/kathairo/parsing/usx/__pycache__/usx_verse_parser.cpython-311.pyc
+src/kathairo/parsing/usx/__pycache__/usx_text_base.cpython-311.pyc
+src/kathairo/parsing/usx/__pycache__/usx_file_text_corpus.cpython-311.pyc
+src/kathairo/parsing/usx/__pycache__/usx_file_text.cpython-311.pyc
+src/kathairo/parsing/usfm/__pycache__/usfm_text_base.cpython-311.pyc
+src/kathairo/parsing/usfm/__pycache__/usfm_handlers.cpython-311.pyc
+src/kathairo/parsing/usfm/__pycache__/usfm_file_text_corpus.cpython-311.pyc
+src/kathairo/parsing/usfm/__pycache__/usfm_file_text.cpython-311.pyc
+src/kathairo/helpers/__pycache__/paths.cpython-311.pyc
