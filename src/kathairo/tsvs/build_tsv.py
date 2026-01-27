@@ -147,7 +147,7 @@ def array_to_verse_level_tsv(
         tsv_writer.writerow(["id", "source_verse", "text", "id_range_end", "source_verse_range_end"])
         
         for row in corpus_array:
-            tsv_writer.writerow([row[0], row[1], row[5], row[3], row[4]])
+            tsv_writer.writerow([row[0], row[1], row[5].replace("  ", " "), row[3], row[4]])
             
 def array_to_token_level_tsv(corpus_array,
                 project_name:str, language:str, zwRemovalDf:str, stopWordsDf:str, excludeBracketedText:bool = False, 
@@ -292,10 +292,10 @@ def get_surrounding_tokens(token_array, index):
     return previous_previous_token, previous_token, next_token, next_next_token
 
 def is_stop_word(stop_words_df, token):
-    return token in strings.stop_words or (stop_words_df is not None and token in stop_words_df["stop_words"].to_numpy())      
+    return token in strings.stop_words or (stop_words_df is not None and token in stop_words_df["stop_words"].values)      
 
 def remove_zw_characters(zw_removal_df, token):
-    if(zw_removal_df is not None and token in zw_removal_df["words"].to_numpy()):
+    if(zw_removal_df is not None and token in zw_removal_df["words"].values):
         token = token.replace(strings.zwsp, strings.empty_string).replace(strings.zwj, strings.empty_string).replace(strings.zwnj, strings.empty_string)
     return token
 
