@@ -18,7 +18,7 @@ from kathairo.helpers.paths import import_module_from_path
 
 from kathairo.tsvs.build_tsv import corpus_to_tsv, tokens_to_tsv
 
-import polars as pl
+import pandas as pd
 
 SOURCE_VERSIFICATION = Versification(name="sourceVersification", base_versification=ORIGINAL_VERSIFICATION)
 
@@ -81,10 +81,10 @@ def get_config(json_object):
     config_dict["language"] = json_object.get("language")
     
     zw_removal_path = json_object.get("zwRemovalPath")
-    config_dict["zwRemovalDf"] = pl.read_csv(zw_removal_path, separator='\t', infer_schema_length=0, quote_char=None) if zw_removal_path else None
+    config_dict["zwRemovalDf"] = pd.read_csv(zw_removal_path, sep='\t', dtype=str) if zw_removal_path else None
     
     stop_words_path = json_object.get("stopWordsPath")
-    config_dict["stopWordsDf"] = pl.read_csv(stop_words_path, separator='\t', infer_schema_length=0, quote_char=None) if stop_words_path else None
+    config_dict["stopWordsDf"] = pd.read_csv(stop_words_path, sep='\t', dtype=str) if stop_words_path else None
     
     return config_dict
 
@@ -134,9 +134,10 @@ def get_json_data(json_file):
         
     return json_data
 
-def main(json_path):
+def main():
+    json_file = "kathairo/Prompts/prompts.json"
 
-    json_data = get_json_data(json_path)
+    json_data = get_json_data(json_file)
 
     with ProcessPoolExecutor() as executor:
         

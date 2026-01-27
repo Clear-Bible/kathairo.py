@@ -9,12 +9,7 @@ from machine.corpora.usx_verse import UsxVerse
 from machine.corpora.usx_verse_parser import UsxVerseParser
 from machine.corpora.usx_verse_parser import _ParseContext
 
-
 def _is_numbered_style(base_style: str, style: str) -> bool:
-    """
-    Check if a style is a numbered variant of a base style.
-    For example, 's1', 's2' are numbered variants of 's'.
-    """
     if not style.startswith(base_style):
         return False
     suffix = style[len(base_style):]
@@ -49,7 +44,7 @@ class ModifiedUsxVerseParser(UsxVerseParser):
                     ctxt.verse = verse
                 ###
                         
-                ctxt.para_element = e
+                ctxt.parent_element = e
                 for evt in self._parse_element(e, ctxt):
                     yield evt
             elif e.tag == "verse":
