@@ -143,7 +143,7 @@ def array_to_verse_level_tsv(
     output_dir: str = None
 ):
     if output_dir:
-        outputFileName = os.path.join(output_dir, f"verse_{project_name}.tsv")
+        outputFileName = os.path.join(output_dir, "verse", f"verse_{project_name}.tsv")
     else:
         outputFileName = get_file_location("output", language, project_name, "verse", "verse")
     os.makedirs(os.path.dirname(outputFileName), exist_ok=True)
@@ -166,7 +166,7 @@ def array_to_token_level_tsv(corpus_array,
     WORD_LEVEL_PUNCT_REGEX = regex_rules_class.WORD_LEVEL_PUNCT_REGEX
 
     if output_dir:
-        outputFileName = os.path.join(output_dir, f"token_{project_name}.tsv")
+        outputFileName = os.path.join(output_dir, "token", f"token_{project_name}.tsv")
     else:
         outputFileName = get_file_location("output", language, project_name, "token", "token")
     os.makedirs(os.path.dirname(outputFileName), exist_ok=True)
