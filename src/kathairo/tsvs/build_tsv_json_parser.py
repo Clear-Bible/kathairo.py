@@ -78,6 +78,7 @@ def get_config(config_dict):
     processed_config["excludeBracketedText"] = config_dict.get("excludeBracketedText", False)
     processed_config["excludeCrossReferences"] = config_dict.get("excludeCrossReferences", False)
     processed_config["language"] = config_dict.get("language")
+    processed_config["output_dir"] = config_dict.get("output_dir")
 
     zw_removal_path = config_dict.get("zwRemovalPath")
     processed_config["zwRemovalDf"] = pd.read_csv(zw_removal_path, sep='\t', dtype=str) if zw_removal_path else None
@@ -99,11 +100,12 @@ def process_corpus(config_dict):
                 corpus=processed_config["corpus"],
                 tokenizer=processed_config["tokenizer"],
                 project_name=processed_config["projectName"],
-                excludeBracketedText=processed_config["excludeBracketedText"],
-                excludeCrossReferences=processed_config["excludeCrossReferences"],
-                language=processed_config["language"],
                 zwRemovalDf=processed_config["zwRemovalDf"],
                 stopWordsDf=processed_config["stopWordsDf"],
+                language=processed_config["language"],
+                output_dir=processed_config["output_dir"],
+                excludeBracketedText=processed_config["excludeBracketedText"],
+                excludeCrossReferences=processed_config["excludeCrossReferences"],
                 regex_rules_class=processed_config["regexRulesClass"]
             )
         }
@@ -114,9 +116,10 @@ def process_corpus(config_dict):
                 sourceVersification=SOURCE_VERSIFICATION,
                 tsvPath=processed_config["tsvPath"],
                 project_name=processed_config["projectName"],
-                language=processed_config["language"],
                 zwRemovalDf=processed_config["zwRemovalDf"],
                 stopWordsDf=processed_config["stopWordsDf"],
+                language=processed_config["language"],
+                output_dir=processed_config["output_dir"],
                 excludeBracketedText=processed_config["excludeBracketedText"],
                 excludeCrossReferences=processed_config["excludeCrossReferences"],
                 regex_rules_class=processed_config["regexRulesClass"]

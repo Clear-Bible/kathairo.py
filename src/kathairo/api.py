@@ -26,7 +26,7 @@ def create_tsv(
 
     language=None,
     projectName=None,
-    output_path=None,
+    output_dir=None,
 
     metadata_source_url=None,
     metadata_path=None,
@@ -51,7 +51,7 @@ def create_tsv(
         zwRemovalPath=zwRemovalPath,
         language=language,
         projectName=projectName,
-        output_path=output_path,
+        output_dir=output_dir,
         metadata_source_url=metadata_source_url,
         metadata_path=metadata_path,
         metadata_kind=metadata_kind
@@ -103,15 +103,15 @@ def _validate_config(config_dict):
             f"Cannot provide multiple corpus inputs. Got: {', '.join(provided_corpus)}"
         )
 
-    has_output_path = config_dict.get('output_path')
+    has_output_dir = config_dict.get('output_dir')
     has_project_name = config_dict.get('projectName')
     has_language = config_dict.get('language')
 
-    if not has_output_path:
-        if not has_project_name:
-            raise ValueError("Must provide 'projectName' when not using 'output_path'")
-        if not has_language:
-            raise ValueError("Must provide 'language' when not using 'output_path'")
+    if not has_project_name:
+        raise ValueError("Must provide 'projectName'")
+
+    if not has_output_dir and not has_language:
+        raise ValueError("Must provide either 'output_dir' or 'language'")
 
     tokenizers = [
         ParamHelper.get_python_name(p) for p in ParamGroups.TOKENIZERS
