@@ -16,9 +16,10 @@ def corpus_to_tsv(
     corpus:ScriptureTextCorpus,
     tokenizer:WhitespaceTokenizer,
     project_name:str,
-    language:str,
     zwRemovalDf:str,
     stopWordsDf:str,
+    language:str = None,
+    output_dir:str = None,
     excludeBracketedText:bool = False,
     excludeCrossReferences:bool = False,
     regex_rules_class = None
@@ -27,8 +28,8 @@ def corpus_to_tsv(
     corpus_array = corpus_to_array(targetVersification, sourceVersification, corpus, tokenizer)
 
     #TODO try to make these parallel sometime
-    array_to_token_level_tsv(corpus_array, project_name, language, zwRemovalDf, stopWordsDf, excludeBracketedText, excludeCrossReferences, regex_rules_class)
-    array_to_verse_level_tsv(corpus_array, project_name, language)
+    array_to_token_level_tsv(corpus_array, project_name, zwRemovalDf, stopWordsDf, language, output_dir, excludeBracketedText, excludeCrossReferences, regex_rules_class)
+    array_to_verse_level_tsv(corpus_array, project_name, language, output_dir)
 
 def corpus_to_array(targetVersification:Versification, sourceVersification:Versification, corpus:ScriptureTextCorpus, tokenizer:WhitespaceTokenizer):
 
@@ -75,9 +76,10 @@ def tokens_to_tsv(
     sourceVersification:Versification,
     tsvPath:str,
     project_name:str,
-    language:str,
     zwRemovalDf:str,
     stopWordsDf:str,
+    language:str = None,
+    output_dir:str = None,
     excludeBracketedText:bool = False,
     excludeCrossReferences:bool = False,
     regex_rules_class = None
@@ -85,8 +87,8 @@ def tokens_to_tsv(
     corpus_array = tokens_to_array(tsvPath, targetVersification, sourceVersification)
 
     #TODO try to make these parallel sometime
-    array_to_verse_level_tsv(corpus_array, project_name, language)
-    array_to_token_level_tsv(corpus_array, project_name, language, zwRemovalDf, stopWordsDf, excludeBracketedText, excludeCrossReferences, regex_rules_class)
+    array_to_verse_level_tsv(corpus_array, project_name, language, output_dir)
+    array_to_token_level_tsv(corpus_array, project_name, zwRemovalDf, stopWordsDf, language, output_dir, excludeBracketedText, excludeCrossReferences, regex_rules_class)
 
 def tokens_to_array(tsvPath:str, targetVersification:Versification, sourceVersification:Versification,):
     pattern = re.compile(r'[^0-9]')
@@ -137,9 +139,13 @@ def tokens_to_array(tsvPath:str, targetVersification:Versification, sourceVersif
 def array_to_verse_level_tsv(
     corpus_array,
     project_name: str,
-    language: str
+    language: str = None,
+    output_dir: str = None
 ):
-    outputFileName = get_file_location("output", language, project_name, "verse", "verse")
+    if output_dir:
+        outputFileName = os.path.join(output_dir, f"verse_{project_name}.tsv")
+    else:
+        outputFileName = get_file_location("output", language, project_name, "verse", "verse")
     os.makedirs(os.path.dirname(outputFileName), exist_ok=True)
     with open(outputFileName, 'w', newline='', encoding='utf-8') as out_file:
 
@@ -150,7 +156,7 @@ def array_to_verse_level_tsv(
             tsv_writer.writerow([row[0], row[1], row[5].replace("  ", " "), row[3], row[4]])
 
 def array_to_token_level_tsv(corpus_array,
-                project_name:str, language:str, zwRemovalDf:str, stopWordsDf:str, excludeBracketedText:bool = False,
+                project_name:str, zwRemovalDf:str, stopWordsDf:str, language:str = None, output_dir:str = None, excludeBracketedText:bool = False,
                 excludeCrossReferences:bool = False, regex_rules_class = None):
 
     zw_removal_df= zwRemovalDf
@@ -159,7 +165,10 @@ def array_to_token_level_tsv(corpus_array,
 
     WORD_LEVEL_PUNCT_REGEX = regex_rules_class.WORD_LEVEL_PUNCT_REGEX
 
-    outputFileName = get_file_location("output", language, project_name, "token", "token")
+    if output_dir:
+        outputFileName = os.path.join(output_dir, f"token_{project_name}.tsv")
+    else:
+        outputFileName = get_file_location("output", language, project_name, "token", "token")
     os.makedirs(os.path.dirname(outputFileName), exist_ok=True)
     with open(outputFileName, 'w', newline='', encoding='utf-8') as out_file:
         tsv_writer = csv.writer(out_file, delimiter='\t', quoting=csv.QUOTE_NONE, quotechar=None)

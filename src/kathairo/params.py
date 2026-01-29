@@ -21,7 +21,7 @@ class Param:
 
     LANGUAGE = ("lang", "language")
     PROJECT_NAME = ("project", "projectName")
-    OUTPUT_PATH = ("output", "output_path")
+    OUTPUT_DIR = ("output-dir", "output_dir")
 
     METADATA_SOURCE_URL = ("source-url", "metadata_source_url")
     METADATA_PATH = ("meta-path", "metadata_path")
@@ -73,7 +73,7 @@ class ParamGroups:
     OUTPUT_NAMING = [
         Param.PROJECT_NAME,
         Param.LANGUAGE,
-        Param.OUTPUT_PATH,
+        Param.OUTPUT_DIR,
     ]
 
     BOOLEAN_FLAGS = [
