@@ -1,4 +1,4 @@
-from .params import ParamHelper, ParamGroups
+from .params import Param, ParamGroups
 from .tsvs import build_tsv_json_parser
 import json
 
@@ -89,9 +89,7 @@ def _normalize_to_config_list(config_path, config_object, **params):
 
 def _validate_config(config_dict):
 
-    corpus_inputs = [
-        ParamHelper.get_python_name(p) for p in ParamGroups.CORPUS_INPUTS
-    ]
+    corpus_inputs = ParamGroups.CORPUS_INPUTS
     provided_corpus = [k for k in corpus_inputs if k in config_dict and config_dict[k]]
 
     if len(provided_corpus) == 0:
@@ -103,19 +101,17 @@ def _validate_config(config_dict):
             f"Cannot provide multiple corpus inputs. Got: {', '.join(provided_corpus)}"
         )
 
-    has_output_dir = config_dict.get('output_dir')
-    has_project_name = config_dict.get('projectName')
-    has_language = config_dict.get('language')
+    has_output_dir = config_dict.get(Param.OUTPUT_DIR)
+    has_project_name = config_dict.get(Param.PROJECT_NAME)
+    has_language = config_dict.get(Param.LANGUAGE)
 
     if not has_project_name:
-        raise ValueError("Must provide 'projectName'")
+        raise ValueError(f"Must provide '{Param.PROJECT_NAME}'")
 
     if not has_output_dir and not has_language:
-        raise ValueError("Must provide either 'output_dir' or 'language'")
+        raise ValueError(f"Must provide either '{Param.OUTPUT_DIR}' or '{Param.LANGUAGE}'")
 
-    tokenizers = [
-        ParamHelper.get_python_name(p) for p in ParamGroups.TOKENIZERS
-    ]
+    tokenizers = ParamGroups.TOKENIZERS
     provided_tokenizers = [k for k in tokenizers if config_dict.get(k) is True]
 
     if len(provided_tokenizers) > 1:

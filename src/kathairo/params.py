@@ -1,72 +1,44 @@
 class Param:
-    JSON_PATH = ("json", "json_path")
-    CONFIG = ("config", "config")
+    JSON_PATH = "json_path"
+    CONFIG = "config"
 
-    USFM_CORPUS_PATH = ("usfm", "targetUsfmCorpusPath")
-    USX_CORPUS_PATH = ("usx", "targetUsxCorpusPath")
-    TSV_PATH = ("tsv", "tsvPath")
+    USFM_PATH = "targetUsfmCorpusPath"
+    USX_PATH = "targetUsxCorpusPath"
+    TSV_PATH = "tsvPath"
 
-    VERSIFICATION_PATH = ("vrs", "targetVersificationPath")
+    VERSIFICATION_PATH = "targetVersificationPath"
 
-    USE_LATIN_TOKENIZER = ("latin-ws", "latinWhiteSpaceIncludedTokenizer")
-    USE_CHINESE_TOKENIZER = ("chinese", "chineseTokenizer")
+    USE_LATIN_TOKENIZER = "latinTokenizer"
+    USE_LATIN_WS_TOKENIZER = "latinWhiteSpaceIncludedTokenizer"
+    USE_CHINESE_TOKENIZER = "chineseTokenizer"
 
-    EXCLUDE_BRACKETS = ("no-brackets", "excludeBracketedText")
-    EXCLUDE_XREFS = ("no-xrefs", "excludeCrossReferences")
-    PSALM_SUPERSCRIPTION_TAG = ("super-tag", "psalmSuperscriptionTag")
-    APOSTROPHE_AS_QUOTE = ("apostrophe-quote", "treatApostropheAsSingleQuote")
-    REGEX_RULES_PATH = ("regex", "regexRulesPath")
-    STOP_WORDS_PATH = ("stop-words", "stopWordsPath")
-    ZW_REMOVAL_PATH = ("zw-removal", "zwRemovalPath")
+    EXCLUDE_BRACKETS = "excludeBracketedText"
+    EXCLUDE_XREFS = "excludeCrossReferences"
+    PSALM_SUPERSCRIPTION_TAG = "psalmSuperscriptionTag"
+    APOSTROPHE_AS_QUOTE = "treatApostropheAsSingleQuote"
+    REGEX_RULES_PATH = "regexRulesPath"
+    STOP_WORDS_PATH = "stopWordsPath"
+    ZW_REMOVAL_PATH = "zwRemovalPath"
 
-    LANGUAGE = ("lang", "language")
-    PROJECT_NAME = ("project", "projectName")
-    OUTPUT_DIR = ("output-dir", "output_dir")
+    LANGUAGE = "language"
+    PROJECT_NAME = "projectName"
+    OUTPUT_DIR = "output_dir"
 
-    METADATA_SOURCE_URL = ("source-url", "metadata_source_url")
-    METADATA_PATH = ("meta-path", "metadata_path")
-    METADATA_KIND = ("meta-kind", "metadata_kind")
-
-
-class ParamHelper:
-
-    @staticmethod
-    def get_cli_name(param_tuple):
-        return param_tuple[0]
-
-    @staticmethod
-    def get_python_name(param_tuple):
-        return param_tuple[1]
-
-    @staticmethod
-    def all_params():
-        return [
-            getattr(Param, attr) for attr in dir(Param)
-            if not attr.startswith('_') and isinstance(getattr(Param, attr), tuple)
-        ]
-
-    @staticmethod
-    def cli_to_python_map():
-        return {
-            param[0]: param[1] for param in ParamHelper.all_params()
-        }
-
-    @staticmethod
-    def python_to_cli_map():
-        return {
-            param[1]: param[0] for param in ParamHelper.all_params()
-        }
+    METADATA_SOURCE_URL = "metadata_source_url"
+    METADATA_PATH = "metadata_path"
+    METADATA_KIND = "metadata_kind"
 
 
 class ParamGroups:
     CORPUS_INPUTS = [
-        Param.USFM_CORPUS_PATH,
-        Param.USX_CORPUS_PATH,
+        Param.USFM_PATH,
+        Param.USX_PATH,
         Param.TSV_PATH,
     ]
 
     TOKENIZERS = [
         Param.USE_LATIN_TOKENIZER,
+        Param.USE_LATIN_WS_TOKENIZER,
         Param.USE_CHINESE_TOKENIZER,
     ]
 
@@ -81,5 +53,6 @@ class ParamGroups:
         Param.EXCLUDE_XREFS,
         Param.APOSTROPHE_AS_QUOTE,
         Param.USE_LATIN_TOKENIZER,
+        Param.USE_LATIN_WS_TOKENIZER,
         Param.USE_CHINESE_TOKENIZER,
     ]
