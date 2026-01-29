@@ -1,5 +1,6 @@
 from .params import ParamHelper, ParamGroups
 from .tsvs import build_tsv_json_parser
+import json
 
 
 def create_tsv(
@@ -31,15 +32,10 @@ def create_tsv(
     metadata_path=None,
     metadata_kind=None
 ):
-    if config_path is not None:
-        _process_from_file(config_path)
-        return
 
-    if config_object is not None:
-        _process_from_object(config_object)
-        return
-
-    config_dict = _build_config_from_params(
+    config_list = _normalize_to_config_list(
+        config_path=config_path,
+        config_object=config_object,
         targetUsfmCorpusPath=targetUsfmCorpusPath,
         targetUsxCorpusPath=targetUsxCorpusPath,
         tsvPath=tsvPath,
@@ -61,29 +57,42 @@ def create_tsv(
         metadata_kind=metadata_kind
     )
 
-    _process_from_object(config_dict)
+    for config_dict in config_list:
+        _validate_config(config_dict)
+
+    build_tsv_json_parser.main(config_list)
+
+def get_config_list_from_file(config_path):
+    with open(config_path) as file:
+        config_list = json.load(file)
+
+    solo_project = next((config_dict for config_dict in config_list if "solo" in config_dict), None)
+    if(solo_project is not None):
+        config_list = [solo_project]
+
+    return config_list
+
+def _normalize_to_config_list(config_path, config_object, **params):
+
+    if config_path is not None:
+        return get_config_list_from_file(config_path)
+
+    if config_object is not None:
+        if isinstance(config_object, list):
+            return config_object
+        else:
+            return [config_object]
+
+    config_dict = {k: v for k, v in params.items() if v is not None}
+    return [config_dict]
 
 
-def _process_from_file(json_path):
-    build_tsv_json_parser.main(json_path)
+def _validate_config(config_dict):
 
-
-def _process_from_object(config):
-    _validate_config(config)
-    build_tsv_json_parser.process_corpus(config)
-
-
-def _build_config_from_params(**kwargs):
-    config = {k: v for k, v in kwargs.items() if v is not None}
-    _validate_config(config)
-    return config
-
-
-def _validate_config(config):
     corpus_inputs = [
         ParamHelper.get_python_name(p) for p in ParamGroups.CORPUS_INPUTS
     ]
-    provided_corpus = [k for k in corpus_inputs if k in config and config[k]]
+    provided_corpus = [k for k in corpus_inputs if k in config_dict and config_dict[k]]
 
     if len(provided_corpus) == 0:
         raise ValueError(
@@ -94,9 +103,9 @@ def _validate_config(config):
             f"Cannot provide multiple corpus inputs. Got: {', '.join(provided_corpus)}"
         )
 
-    has_output_path = config.get('output_path')
-    has_project_name = config.get('projectName')
-    has_language = config.get('language')
+    has_output_path = config_dict.get('output_path')
+    has_project_name = config_dict.get('projectName')
+    has_language = config_dict.get('language')
 
     if not has_output_path:
         if not has_project_name:
@@ -107,7 +116,7 @@ def _validate_config(config):
     tokenizers = [
         ParamHelper.get_python_name(p) for p in ParamGroups.TOKENIZERS
     ]
-    provided_tokenizers = [k for k in tokenizers if config.get(k) is True]
+    provided_tokenizers = [k for k in tokenizers if config_dict.get(k) is True]
 
     if len(provided_tokenizers) > 1:
         raise ValueError(
