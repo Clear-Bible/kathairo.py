@@ -1,197 +1,172 @@
 # kathairo
 
-### Scripture Processing Pipeline: Parse, Tokenize, and Versify
+### Scripture Processing Library: Parse, Tokenize, and Versify
 
 [![PyPI version](https://badge.fury.io/py/kathairo.svg)](https://badge.fury.io/py/kathairo)
-[![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
+[![Python 3.11+](https://img.shields.io/badge/python-3.11+-blue.svg)](https://www.python.org/downloads/)
 
-**kathairo** is a comprehensive text processing pipeline for Scripture that converts USFM and USX formats into structured TSV files. Built on [SIL's machine.py](https://github.com/sillsdev/machine.py), kathairo provides both verse-level and token-level outputs with enhanced support for psalm superscriptions and advanced tokenization.
+**kathairo** is a comprehensive Python library for Scripture text processing that converts USFM and USX formats into structured TSV files. Built on [SIL's machine.py](https://github.com/sillsdev/machine.py), kathairo provides both verse-level and token-level outputs.
 
-## Installation
+## Quick Start
 
 ```bash
 pip install kathairo
 ```
 
-### Requirements
-
-- Python 3.10 or 3.11
-- Dependencies (automatically installed):
-  - `sil-machine==1.0.2`
-  - `spacy>=3.7.5`
-  - `polars>=1.4.0`
-
-**Note**: Kathairo works cross-platform (Windows, macOS, Linux). Use `os.path.join()` for portable paths, though forward slashes generally work on all platforms.
-
-## Quick Start
-
-### Minimal Example
-
-The simplest way to use kathairo:
-
 ```python
-from kathairo.tsvs.build_tsv_json_parser import process_corpus
-
-config = {
-    "projectName": "MyBible",
-    "language": "eng",
-    "targetUsfmCorpusPath": "/path/to/usfm/",
-    "targetVersificationPath": "/path/to/eng.vrs",
-    "latinWhiteSpaceIncludedTokenizer": True
-}
-
-process_corpus(config)
-# Output: output/eng/MyBible/verse/verse_MyBible.tsv
-#         output/eng/MyBible/token/token_MyBible.tsv
-```
-
-### Complete Workflow Example
-
-Here's a realistic workflow from installation to processing:
-
-```python
-# Step 1: Install kathairo
-# pip install kathairo
-
-# Step 2: Import and setup
-import os
-from kathairo.tsvs.build_tsv_json_parser import process_corpus
 import kathairo
 
-# Step 3: Locate built-in versification file
-package_dir = os.path.dirname(kathairo.__file__)
-vrs_path = os.path.join(package_dir, "versification", "eng.vrs")
+# Simple fluent API
+kathairo.from_usfm_corpus("path/to/usfm") \
+    .with_project_name("MyBible") \
+    .with_versification("path/to/versification.vrs") \
+    .with_language("eng") \
+    .use_latin_ws_tokenizer() \
+    .build()
 
-# Step 4: Configure your project
-config = {
-    "projectName": "ESV",
-    "language": "eng",
-    "targetUsfmCorpusPath": "/home/user/bibles/ESV/usfm/",
-    "targetVersificationPath": vrs_path,
-    "latinWhiteSpaceIncludedTokenizer": True,
-    "treatApostropheAsSingleQuote": False,
-    "excludeBracketedText": False,
-    "excludeCrossReferences": True,
-    "psalmSuperscriptionTag": "d"
-}
-
-# Step 5: Process the corpus
-print(f"Processing {config['projectName']}...")
-result = process_corpus(config)
-print("Done!")
-
-# Output files created at:
-# - output/eng/ESV/verse/verse_ESV.tsv
-# - output/eng/ESV/token/token_ESV.tsv
+# Output: output/eng/MyBible/token/token_MyBible.tsv
+#         output/eng/MyBible/verse/verse_MyBible.tsv
 ```
 
-### Processing Multiple Projects in Parallel
+## Table of Contents
 
-Create a JSON configuration file (e.g., `projects_config.json`):
+- [Installation](#installation)
+- [Usage](#usage)
+  - [Fluent Builder API](#fluent-builder-api)
+  - [Function API](#function-api)
+  - [Config File API](#config-file-api)
+- [Output Format](#output-format)
+- [Configuration Options](#configuration-options)
+- [Examples](#examples)
+- [Testing](#testing)
+- [Contributing](#contributing)
+- [API Reference](#api-reference)
 
+## Installation
+
+### Requirements
+
+- Python 3.11 or 3.12
+- Dependencies (automatically installed):
+  - `sil-machine==1.8.4`
+  - `spacy>=3.7.5`
+  - `polars>=1.4.0`
+  - `pandas>=3.0.0`
+
+### Install from PyPI
+
+```bash
+pip install kathairo
+```
+
+### Install for Development
+
+```bash
+git clone https://github.com/Clear-Bible/kathairo.py.git
+cd kathairo.py
+poetry install
+```
+
+## Usage
+
+kathairo offers three APIs to fit your workflow:
+
+### Fluent Builder API
+
+The builder pattern provides method chaining:
+
+```python
+import kathairo
+
+# Start with a corpus source
+kathairo.from_usfm_corpus("resources/eng/ESV/usfm") \
+    .with_project_name("ESV") \
+    .with_versification("resources/eng/versification.vrs") \
+    .with_language("eng") \
+    .use_latin_ws_tokenizer() \
+    .exclude_cross_references() \
+    .build()
+```
+
+**Type Safety:** The builder enforces required parameters at development time. Your IDE won't show `.build()` until you've provided:
+- A corpus source (from\_usfm\_corpus, from\_usx\_corpus, or from\_tsv)
+- A project name (`.with_project_name()`)
+- An output location (`.with_language()` or `.with_output_dir()`)
+
+### Function API
+
+```python
+import kathairo
+
+kathairo.create_tsv(
+    targetUsfmCorpusPath="resources/eng/ESV/usfm",
+    projectName="ESV",
+    targetVersificationPath="resources/eng/versification.vrs",
+    language="eng",
+    latinWhiteSpaceIncludedTokenizer=True,
+    excludeCrossReferences=True
+)
+```
+
+### Config File API
+
+**projects.json:**
 ```json
 [
   {
     "projectName": "ESV",
     "language": "eng",
-    "targetUsfmCorpusPath": "/scripture/ESV/usfm/",
-    "targetVersificationPath": "/versification/eng.vrs",
+    "targetUsfmCorpusPath": "resources/eng/ESV/usfm",
+    "targetVersificationPath": "resources/eng/versification.vrs",
     "latinWhiteSpaceIncludedTokenizer": true,
-    "treatApostropheAsSingleQuote": false,
-    "excludeBracketedText": false,
-    "excludeCrossReferences": true,
-    "stopWordsPath": "/config/english_stopwords.tsv",
-    "zwRemovalPath": "/config/zw_removal.tsv",
-    "psalmSuperscriptionTag": "d"
+    "excludeCrossReferences": true
   },
   {
     "projectName": "RVR1960",
     "language": "spa",
-    "targetUsfmCorpusPath": "/scripture/RVR1960/usfm/",
-    "targetVersificationPath": "/versification/spa.vrs",
-    "latinWhiteSpaceIncludedTokenizer": true,
-    "excludeCrossReferences": true
+    "targetUsfmCorpusPath": "resources/spa/RVR1960/usfm",
+    "targetVersificationPath": "resources/spa/versification.vrs",
+    "latinWhiteSpaceIncludedTokenizer": true
   }
 ]
 ```
 
-Then process all projects:
-
+**Process in parallel:**
 ```python
-from kathairo.tsvs.build_tsv_json_parser import main
+import kathairo
 
-main("projects_config.json")
-```
-
-This processes all projects in parallel using Python's `ProcessPoolExecutor`.
-
-### Configuration Options
-
-| Option                             | Type    | Description                                       |
-| ---------------------------------- | ------- | ------------------------------------------------- |
-| `projectName`                      | string  | Name of your project (used in output file naming) |
-| `language`                         | string  | Language code (e.g., "eng", "spa")                |
-| `targetUsfmCorpusPath`             | string  | Path to USFM files directory                      |
-| `targetUsxCorpusPath`              | string  | Path to USX files directory (alternative to USFM) |
-| `targetVersificationPath`          | string  | Path to versification file (.vrs)                 |
-| `latinTokenizer`                   | boolean | Use standard Latin word tokenizer                 |
-| `latinWhiteSpaceIncludedTokenizer` | boolean | Use Latin tokenizer with whitespace preservation  |
-| `chineseTokenizer`                 | boolean | Use Chinese Bible word tokenizer                  |
-| `treatApostropheAsSingleQuote`     | boolean | Handle apostrophes as single quotes               |
-| `excludeBracketedText`             | boolean | Exclude text within square brackets               |
-| `excludeCrossReferences`           | boolean | Exclude cross-reference text                      |
-| `stopWordsPath`                    | string  | Path to TSV file containing stop words            |
-| `zwRemovalPath`                    | string  | Path to TSV file for zero-width character removal |
-| `regexRulesPath`                   | string  | Path to custom regex rules module                 |
-| `psalmSuperscriptionTag`           | string  | USFM tag for psalm superscriptions (default: "d") |
-| `tsvPath`                          | string  | Path to existing token TSV (for re-versification) |
-| `solo`                             | boolean | If present, only this project will be processed   |
-
-### Required Configuration Fields
-
-At minimum, you must provide:
-
-- `projectName`: Your project identifier
-- `language`: Language code (e.g., "eng", "spa")
-- **ONE** input source: `targetUsfmCorpusPath` OR `targetUsxCorpusPath` OR `tsvPath`
-- `targetVersificationPath`: Path to .vrs file
-- **ONE** tokenizer: `latinTokenizer`, `latinWhiteSpaceIncludedTokenizer`, or `chineseTokenizer`
-
-All other fields are optional and have sensible defaults.
-
-### Choosing a Tokenizer
-
-You must specify **exactly one** tokenizer in your configuration:
-
-- **`latinTokenizer`** - Standard Latin word tokenizer from SIL Machine
-
-  - Use for: Most Latin-script languages (English, Spanish, French, etc.)
-  - Behavior: Standard word boundary detection
-
-- **`latinWhiteSpaceIncludedTokenizer`** - Enhanced Latin tokenizer with whitespace preservation
-
-  - Use for: Latin-script languages where you need precise whitespace tracking
-  - Behavior: Preserves whitespace information for accurate reconstruction
-  - Recommended for most projects
-
-- **`chineseTokenizer`** - Chinese Bible word tokenizer
-  - Use for: Chinese scripture text
-  - Behavior: Specialized Chinese word segmentation
-
-Example:
-
-```python
-# Pick ONE of these:
-"latinTokenizer": True                      # Standard
-"latinWhiteSpaceIncludedTokenizer": True    # Recommended
-"chineseTokenizer": True                    # Chinese only
+kathairo.from_config_file("projects.json").build()
 ```
 
 ## Output Format
 
-### Verse-Level TSV
+### Default Output Structure
 
-Generated at: `output/{language}/{projectName}/verse/verse_{projectName}.tsv`
+```
+output/
+└── {language}/
+    └── {projectName}/
+        ├── token/
+        │   └── token_{projectName}.tsv
+        └── verse/
+            └── verse_{projectName}.tsv
+```
+
+### Custom Output Directory
+
+```python
+kathairo.from_usfm_corpus("path/to/usfm") \
+    .with_project_name("MyBible") \
+    .with_versification("path/to/versification.vrs") \
+    .with_output_dir("custom/output/path") \
+    .use_latin_ws_tokenizer() \
+    .build()
+
+# Output: custom/output/path/token/token_MyBible.tsv
+#         custom/output/path/verse/verse_MyBible.tsv
+```
+
+### Verse-Level TSV
 
 | Column                   | Description                        |
 | ------------------------ | ---------------------------------- |
@@ -203,548 +178,277 @@ Generated at: `output/{language}/{projectName}/verse/verse_{projectName}.tsv`
 
 ### Token-Level TSV
 
-Generated at: `output/{language}/{projectName}/token/token_{projectName}.tsv`
+| Column                   | Description                                      |
+| ------------------------ | ------------------------------------------------ |
+| `id`                     | Token identifier (BBCCCVVVWWW format)            |
+| `source_verse`           | Source versification verse ID                    |
+| `text`                   | Token text                                       |
+| `skip_space_after`       | "y" if no space should follow, empty otherwise   |
+| `exclude`                | "y" if token should be excluded, empty otherwise |
+| `id_range_end`           | End verse for verse ranges                       |
+| `source_verse_range_end` | End verse in source versification                |
+| `required`               | "y" if token contains non-punctuation            |
 
-| Column                   | Description                                                                                                                    |
-| ------------------------ | ------------------------------------------------------------------------------------------------------------------------------ |
-| `id`                     | Token identifier (BBCCCVVVWWW format)                                                                                          |
-| `source_verse`           | Source versification verse ID                                                                                                  |
-| `text`                   | Token text                                                                                                                     |
-| `skip_space_after`       | "y" if no space should follow this token, empty otherwise                                                                      |
-| `exclude`                | "y" if token should be excluded from analysis (footnotes, cross-references based on `excludeCrossReferences`), empty otherwise |
-| `id_range_end`           | End verse for verse ranges                                                                                                     |
-| `source_verse_range_end` | End verse in source versification                                                                                              |
-| `required`               | "y" if token contains non-punctuation, "n" otherwise                                                                           |
-
-### Sample Output
-
-Here's what the actual output looks like for Genesis 1:1-2:
-
-**Verse-Level Sample:**
-
-```tsv
-id          source_verse  text
-01001001    01001001      In the beginning God created the heavens and the earth.
-01001002    01001002      Now the earth was formless and void, and darkness was over the surface of the deep. And the Spirit of God was hovering over the surface of the waters.
-```
-
-**Token-Level Sample:**
-
+**Example Token Output (Genesis 1:1):**
 ```tsv
 id           source_verse  text       skip_space_after  exclude  required
 01001001001  01001001      In                                    y
 01001001002  01001001      the                                   y
 01001001003  01001001      beginning                             y
 01001001004  01001001      God                                   y
-01001001005  01001001      created                               y
-01001001006  01001001      the                                   y
-01001001007  01001001      heavens                               y
-01001001008  01001001      and                                   y
-01001001009  01001001      the                                   y
 01001001010  01001001      earth      y                          y
 01001001011  01001001      .                            y        n
-01001002001  01001002      Now                                   y
-01001002002  01001002      the                                   y
-01001002003  01001002      earth                                 y
-...
 ```
 
-Notice:
+## Configuration Options
 
-- Verse IDs use BBCCCVVV format (01001001 = Genesis 1:1)
-- Token IDs add WWW for word position (01001001010 = Genesis 1:1, word 10)
-- `skip_space_after` is "y" for "earth" before the period
-- `required` is "n" for punctuation like "."
+### Required Parameters
 
-## Usage Examples
+| Parameter                       | Description                                       |
+| ------------------------------- | ------------------------------------------------- |
+| `projectName`                   | Project identifier (used in file naming)          |
+| `targetVersificationPath`       | Path to versification file (.vrs)                 |
+| **One corpus source:**          |                                                   |
+| `targetUsfmCorpusPath`          | Path to USFM files directory                      |
+| `targetUsxCorpusPath`           | Path to USX files directory                       |
+| `tsvPath`                       | Path to existing token TSV (for re-versification) |
+| **One output location:**        |                                                   |
+| `language`                      | Language code (creates output/{language}/{projectName}/) |
+| `output_dir`                    | Custom output directory                           |
+| **One tokenizer:**              |                                                   |
+| `latinTokenizer`                | Standard Latin word tokenizer                     |
+| `latinWhiteSpaceIncludedTokenizer` | Latin tokenizer with whitespace preservation (recommended) |
+| `chineseTokenizer`              | Chinese Bible word tokenizer                      |
 
-### Example 1: Processing USFM Files
+### Optional Parameters
+
+| Parameter                      | Type    | Description                                  |
+| ------------------------------ | ------- | -------------------------------------------- |
+| `treatApostropheAsSingleQuote` | boolean | Handle apostrophes as single quotes          |
+| `excludeBracketedText`         | boolean | Exclude text within square brackets          |
+| `excludeCrossReferences`       | boolean | Exclude cross-reference text                 |
+| `stopWordsPath`                | string  | Path to TSV file containing stop words       |
+| `zwRemovalPath`                | string  | Path to TSV file for zero-width char removal |
+| `regexRulesPath`               | string  | Path to custom regex rules module            |
+| `psalmSuperscriptionTag`       | string  | USFM tag for psalm superscriptions (default: "d") |
+
+## Examples
+
+### Example 1: Basic USFM Processing
 
 ```python
-from kathairo.tsvs.build_tsv_json_parser import process_corpus
-
-config = {
-    "projectName": "ESV",
-    "language": "eng",
-    "targetUsfmCorpusPath": "/data/scripture/ESV/usfm/",
-    "targetVersificationPath": "/data/versification/eng.vrs",
-    "latinWhiteSpaceIncludedTokenizer": True,
-    "excludeCrossReferences": True,
-    "psalmSuperscriptionTag": "d"
-}
-
-process_corpus(config)
-```
-
-### Example 2: Processing USX Files
-
-```python
-config = {
-    "projectName": "NIV",
-    "language": "eng",
-    "targetUsxCorpusPath": "/data/scripture/NIV/usx/",  # Use USX instead of USFM
-    "targetVersificationPath": "/data/versification/eng.vrs",
-    "latinTokenizer": True  # Standard Latin tokenizer
-}
-
-process_corpus(config)
-```
-
-### Example 3: Chinese Scripture with Custom Tokenizer
-
-```python
-config = {
-    "projectName": "CUV",
-    "language": "zho",
-    "targetUsfmCorpusPath": "/data/scripture/CUV/usfm/",
-    "targetVersificationPath": "/data/versification/chinese.vrs",
-    "chineseTokenizer": True,  # Use Chinese-specific tokenizer
-    "excludeBracketedText": True
-}
-
-process_corpus(config)
-```
-
-### Example 4: Re-versification from Existing Token TSV
-
-If you already have a token-level TSV and want to re-versify it:
-
-```python
-config = {
-    "projectName": "ESV_Reversified",
-    "language": "eng",
-    "tsvPath": "/data/output/eng/ESV/token/token_ESV.tsv",  # Use existing TSV
-    "targetVersificationPath": "/data/versification/new_versification.vrs",
-    "latinWhiteSpaceIncludedTokenizer": True,
-    "stopWordsPath": "/data/config/stopwords.tsv",
-    "zwRemovalPath": "/data/config/zw_removal.tsv"
-}
-
-process_corpus(config)
-```
-
-### Example 5: With Stop Words and Zero-Width Character Removal
-
-Create stop words file (`stopwords.tsv`):
-
-```tsv
-stop_words
-\u200b
-\u200c
-\u200d
-```
-
-Create zero-width removal file (`zw_removal.tsv`):
-
-```tsv
-words
-word\u200bwith\u200bzwsp
-another\u200cword
-```
-
-Then use them:
-
-```python
-config = {
-    "projectName": "MyBible",
-    "language": "hin",
-    "targetUsfmCorpusPath": "/data/hindi/usfm/",
-    "targetVersificationPath": "/data/versification/hindi.vrs",
-    "latinWhiteSpaceIncludedTokenizer": True,
-    "stopWordsPath": "/data/config/stopwords.tsv",
-    "zwRemovalPath": "/data/config/zw_removal.tsv"
-}
-
-process_corpus(config)
-```
-
-## Advanced Usage
-
-### Custom Regex Rules
-
-Create a custom Python module (`custom_regex.py`):
-
-```python
-import re
-
-class CustomRegexRules:
-    # Define custom punctuation patterns for word-level punctuation
-    WORD_LEVEL_PUNCT_REGEX = re.compile(
-        r'(?<=[a-zA-Z])[\''](?=[a-zA-Z])|'  # Apostrophes within words
-        r'(?<=[0-9])[,.](?=[0-9])'          # Commas/periods in numbers
-    )
-```
-
-Reference it in your config:
-
-```python
-config = {
-    "projectName": "MyBible",
-    "language": "eng",
-    "targetUsfmCorpusPath": "/data/usfm/",
-    "targetVersificationPath": "/data/versification/eng.vrs",
-    "latinWhiteSpaceIncludedTokenizer": True,
-    "regexRulesPath": "/path/to/custom_regex.py"  # Use custom rules
-}
-
-process_corpus(config)
-```
-
-### Solo Mode for Testing
-
-When working with multiple projects in a JSON config, add `"solo": true` to process only one:
-
-```json
-[
-  {
-    "projectName": "TestProject",
-    "language": "eng",
-    "targetUsfmCorpusPath": "/test/usfm/",
-    "targetVersificationPath": "/test/eng.vrs",
-    "latinTokenizer": true,
-    "solo": true
-  },
-  {
-    "projectName": "OtherProject",
-    "language": "spa",
-    ...
-  }
-]
-```
-
-Only `TestProject` will be processed.
-
-## Required Files and Structure
-
-### Input Files
-
-1. **Scripture Files** - Either USFM or USX format:
-
-   - USFM: Plain text files with USFM markup
-     - Extensions: `.SFM`
-     - Naming: Flexible (e.g., `01-GEN.usfm`, `01GENBSB.SFM`, `GEN.usfm`)
-     - Directory should contain all books you want to process
-   - USX: XML files following USX standard
-     - Directory should contain all books you want to process
-
-2. **Versification File** (`.vrs`) - Defines verse structure:
-
-   ```
-   # Versification  "English"
-   GEN 1:31 2:25 3:24 4:26 5:32 ...
-   EXO 1:22 2:25 3:22 ...
-   ```
-
-   - kathairo includes `eng.vrs` at `src/kathairo/versification/eng.vrs`
-   - Format: `BOOK chapter:lastVerse chapter:lastVerse ...`
-
-3. **Optional: Stop Words TSV**:
-
-   ```tsv
-   stop_words
-   \u200b
-   \u200c
-   \u200d
-   ```
-
-4. **Optional: Zero-Width Removal TSV**:
-   ```tsv
-   words
-   problematic\u200bword
-   another\u200cexample
-   ```
-
-### Output Structure
-
-kathairo automatically creates this directory structure **in your current working directory**:
-
-```
-output/
-└── {language}/
-    └── {projectName}/
-        ├── verse/
-        │   └── verse_{projectName}.tsv
-        └── token/
-            └── token_{projectName}.tsv
-```
-
-**Note**: The `output/` directory is created relative to where you run the script, not relative to the input files.
-
-## Versification Support
-
-kathairo handles complex versification mappings between different Bible versification systems.
-
-### Using Built-in English Versification
-
-```python
-import os
-from kathairo.tsvs.build_tsv_json_parser import process_corpus
-
-# Get the package's built-in versification file
 import kathairo
-package_dir = os.path.dirname(kathairo.__file__)
-vrs_path = os.path.join(package_dir, "versification", "eng.vrs")
 
-config = {
-    "projectName": "MyBible",
-    "language": "eng",
-    "targetUsfmCorpusPath": "/data/usfm/",
-    "targetVersificationPath": vrs_path,  # Use built-in versification
-    "latinWhiteSpaceIncludedTokenizer": True
-}
-
-process_corpus(config)
+kathairo.from_usfm_corpus("resources/eng/ESV/usfm") \
+    .with_project_name("ESV") \
+    .with_versification("resources/eng/versification.vrs") \
+    .with_language("eng") \
+    .use_latin_ws_tokenizer() \
+    .build()
 ```
 
-### Using a Local Versification File
-
-If your versification file is in the same directory as your USFM files:
+### Example 2: Custom Output Directory
 
 ```python
-import os
-from kathairo.tsvs.build_tsv_json_parser import process_corpus
-
-# Get the current script directory
-current_dir = os.path.dirname(os.path.abspath(__file__))
-
-config = {
-    "projectName": "BSB",
-    "language": "eng",
-    "targetUsfmCorpusPath": os.path.join(current_dir, "bsb_usfm"),
-    "targetVersificationPath": os.path.join(current_dir, "bsb_usfm", "versification.vrs"),
-    "latinWhiteSpaceIncludedTokenizer": True,
-    "excludeCrossReferences": True
-}
-
-process_corpus(config)
+kathairo.from_usfm_corpus("path/to/usfm") \
+    .with_project_name("MyBible") \
+    .with_versification("path/to/versification.vrs") \
+    .with_output_dir("~/Documents/bible-data") \
+    .use_latin_ws_tokenizer() \
+    .build()
 ```
 
-### Creating Custom Versification
+### Example 3: USX with Exclusions
 
 ```python
-from kathairo.versification.fix_versification import save_versification
-from machine.scripture import Versification, VerseRef
-
-# Load and modify a versification
-versification = Versification.load("path/to/base_versification.vrs")
-
-# Make modifications (example: adjust Genesis 1:1 mapping)
-versification.mappings.add_mapping(
-    VerseRef("GEN", 1, 1, versification),
-    VerseRef("GEN", 1, 2, versification)
-)
-
-# Save the modified versification
-save_versification(versification)
-# Creates: src/kathairo/versification/output.vrs
+kathairo.from_usx_corpus("resources/eng/NIV/usx") \
+    .with_project_name("NIV") \
+    .with_versification("resources/eng/versification.vrs") \
+    .with_language("eng") \
+    .use_latin_ws_tokenizer() \
+    .exclude_cross_references() \
+    .exclude_bracketed_text() \
+    .build()
 ```
 
-### Re-versifying Existing TSV Output
-
-If you need to apply a different versification to already-processed scripture:
+### Example 4: Chinese Scripture
 
 ```python
-config = {
-    "projectName": "ESV_NewVersification",
-    "language": "eng",
-    "tsvPath": "/output/eng/ESV/token/token_ESV.tsv",  # Existing token TSV
-    "targetVersificationPath": "/path/to/new_versification.vrs",  # New versification
-    "latinWhiteSpaceIncludedTokenizer": True
-}
-
-process_corpus(config)
+kathairo.from_usfm_corpus("resources/zho/CUV/usfm") \
+    .with_project_name("CUV") \
+    .with_versification("resources/zho/versification.vrs") \
+    .with_language("zho") \
+    .use_chinese_tokenizer() \
+    .build()
 ```
 
-## Common Issues and Troubleshooting
+### Example 5: With Stop Words and Custom Rules
 
-### Import Errors
+```python
+kathairo.from_usfm_corpus("resources/hin/IRV/usfm") \
+    .with_project_name("IRVHin") \
+    .with_versification("resources/hin/versification.vrs") \
+    .with_language("hin") \
+    .use_latin_ws_tokenizer() \
+    .with_stop_words("resources/hin/stopwords.tsv") \
+    .with_zw_removal("resources/hin/zw_removal.tsv") \
+    .with_regex_rules("resources/hin/custom_regex.py") \
+    .exclude_cross_references() \
+    .build()
+```
 
-If you get `ModuleNotFoundError: No module named 'kathairo'`:
+### Example 6: Re-versification
+
+```python
+# Re-versify an existing token TSV with a new versification
+kathairo.from_tsv("output/eng/ESV/token/token_ESV.tsv") \
+    .with_project_name("ESV_NewVersification") \
+    .with_versification("resources/eng/new_versification.vrs") \
+    .with_language("eng") \
+    .use_latin_ws_tokenizer() \
+    .build()
+```
+
+### Example 7: Multiple Projects (Function API)
+
+```python
+import kathairo
+
+projects = [
+    {
+        "targetUsfmCorpusPath": "resources/eng/ESV/usfm",
+        "projectName": "ESV",
+        "targetVersificationPath": "resources/eng/versification.vrs",
+        "language": "eng",
+        "latinWhiteSpaceIncludedTokenizer": True
+    },
+    {
+        "targetUsfmCorpusPath": "resources/spa/RVR1960/usfm",
+        "projectName": "RVR1960",
+        "targetVersificationPath": "resources/spa/versification.vrs",
+        "language": "spa",
+        "latinWhiteSpaceIncludedTokenizer": True
+    }
+]
+
+for project in projects:
+    kathairo.create_tsv(config_object=project)
+```
+
+## Testing
+
+### Running Tests
 
 ```bash
-pip install kathairo
-# or
-pip install kathairo --upgrade
+# Run all tests
+poetry run pytest
+
+# Run specific test file
+poetry run pytest tests/test_builder.py
+
+# Run with verbose output
+poetry run pytest -v
+
+# Run with coverage
+poetry run pytest --cov=kathairo
 ```
 
-### Versification File Not Found
+### Test Structure
 
-If you see errors about missing versification files:
-
-```python
-# Use the built-in English versification
-import os
-import kathairo
-package_dir = os.path.dirname(kathairo.__file__)
-vrs_path = os.path.join(package_dir, "versification", "eng.vrs")
-
-config["targetVersificationPath"] = vrs_path
-```
-
-### No Tokenizer Specified
-
-Error: `TypeError` or no tokenizer found
-
-Solution: Add exactly one tokenizer to your config:
-
-```python
-config["latinWhiteSpaceIncludedTokenizer"] = True
-```
-
-### Empty Output Files
-
-If your TSV files are empty:
-
-1. Check that your USFM/USX files are in the correct directory
-2. Verify the files have proper USFM/USX formatting
-3. Ensure the versification file matches your scripture structure
-
-### Monitoring Progress
-
-By default, `process_corpus()` runs quietly with minimal output. To monitor progress:
-
-```python
-print(f"Processing {config['projectName']}...")
-result = process_corpus(config)
-print("Done!")
-print(f"Output files created:")
-print(f"  - output/{config['language']}/{config['projectName']}/verse/verse_{config['projectName']}.tsv")
-print(f"  - output/{config['language']}/{config['projectName']}/token/token_{config['projectName']}.tsv")
-```
-
-For large Bibles (66 books), processing typically takes 5-30 seconds depending on system performance.
-
-### Performance Issues
-
-For large projects:
-
-- Use the JSON config approach with multiple projects to leverage parallel processing
-- Each project is processed in a separate process for better performance
-
-```python
-from kathairo.tsvs.build_tsv_json_parser import main
-main("projects.json")  # Processes all projects in parallel
-```
+- `tests/test_builder.py` - Tests for fluent builder API
+- `tests/test_type_safety.py` - Tests for type-safe builder pattern
+- `tests/test_output_dir.py` - Tests for output_dir functionality
 
 ## API Reference
 
-### Main Functions
-
-#### `process_corpus(config: dict) -> dict`
-
-Process a single scripture project and generate TSV files.
-
-**Parameters:**
-
-- `config` (dict): Configuration dictionary with project settings
-
-**Returns:**
-
-- Dictionary with processing results including:
-  - Success status
-  - Output file paths
-  - Processing statistics (if applicable)
-
-Note: Currently returns minimal information; primarily useful for error checking
-
-**Example:**
+### Builder API
 
 ```python
-from kathairo.tsvs.build_tsv_json_parser import process_corpus
+# Start with a corpus source
+kathairo.from_usfm_corpus(path: str) -> CorpusBuilder
+kathairo.from_usx_corpus(path: str) -> CorpusBuilder
+kathairo.from_tsv(path: str) -> CorpusBuilder
+kathairo.from_config_file(path: str) -> ConfigBuilder
+kathairo.from_config(obj: dict) -> ConfigBuilder
 
-result = process_corpus({
-    "projectName": "MyBible",
-    "language": "eng",
-    "targetUsfmCorpusPath": "/path/to/usfm/",
-    "targetVersificationPath": "/path/to/eng.vrs",
-    "latinWhiteSpaceIncludedTokenizer": True
-})
+# CorpusBuilder methods (requires .with_project_name() next)
+.with_versification(path: str) -> CorpusBuilder
+.use_latin_tokenizer() -> CorpusBuilder
+.use_latin_ws_tokenizer() -> CorpusBuilder
+.use_chinese_tokenizer() -> CorpusBuilder
+.exclude_bracketed_text() -> CorpusBuilder
+.exclude_cross_references() -> CorpusBuilder
+.treat_apostrophe_as_single_quote() -> CorpusBuilder
+.with_psalm_superscription_tag(tag: str) -> CorpusBuilder
+.with_regex_rules(path: str) -> CorpusBuilder
+.with_stop_words(path: str) -> CorpusBuilder
+.with_zw_removal(path: str) -> CorpusBuilder
+.with_metadata_source_url(url: str) -> CorpusBuilder
+.with_metadata_path(path: str) -> CorpusBuilder
+.with_metadata_kind(kind: str) -> CorpusBuilder
+.with_project_name(name: str) -> ProjectBuilder
+
+# ProjectBuilder methods (requires .with_language() or .with_output_dir() next)
+# ... same configuration methods as CorpusBuilder
+.with_language(lang: str) -> CompleteBuilder
+.with_output_dir(path: str) -> CompleteBuilder
+
+# CompleteBuilder methods (can call .build())
+# ... same configuration methods
+.build() -> None
 ```
 
-#### `main(json_path: str) -> None`
-
-Process multiple projects in parallel from a JSON configuration file.
-
-**Parameters:**
-
-- `json_path` (str): Path to JSON configuration file
-
-**Example:**
+### Function API
 
 ```python
-from kathairo.tsvs.build_tsv_json_parser import main
+kathairo.create_tsv(
+    # Config sources (use one)
+    config_path: str = None,
+    config_object: dict = None,
 
-main("projects_config.json")
+    # Direct parameters
+    targetUsfmCorpusPath: str = None,
+    targetUsxCorpusPath: str = None,
+    tsvPath: str = None,
+    targetVersificationPath: str = None,
+    latinTokenizer: bool = False,
+    latinWhiteSpaceIncludedTokenizer: bool = False,
+    chineseTokenizer: bool = False,
+    excludeBracketedText: bool = False,
+    excludeCrossReferences: bool = False,
+    psalmSuperscriptionTag: str = 'd',
+    treatApostropheAsSingleQuote: bool = False,
+    regexRulesPath: str = None,
+    stopWordsPath: str = None,
+    zwRemovalPath: str = None,
+    language: str = None,
+    projectName: str = None,
+    output_dir: str = None,
+    metadata_source_url: str = None,
+    metadata_path: str = None,
+    metadata_kind: str = None
+) -> None
 ```
-
-#### `save_versification(versification: Versification) -> None`
-
-Save a versification object to a .vrs file.
-
-**Parameters:**
-
-- `versification` (Versification): SIL Machine Versification object
-
-**Output:**
-
-- Creates `src/kathairo/versification/output.vrs`
-
-**Example:**
-
-```python
-from kathairo.versification.fix_versification import save_versification
-from machine.scripture import Versification
-
-vrs = Versification.load("input.vrs")
-save_versification(vrs)
-```
-
-### Lower-Level Functions
-
-For advanced usage, you can access lower-level functions:
-
-#### `corpus_to_tsv(targetVersification, sourceVersification, corpus, tokenizer, ...)`
-
-Convert a corpus directly to TSV files.
-
-#### `tokens_to_tsv(targetVersification, sourceVersification, tsvPath, ...)`
-
-Re-versify an existing token TSV file.
-
-## Technical Details
-
-### Enhanced SIL Machine Features
-
-kathairo extends `sil-machine` with:
-
-- **Psalm Superscription Support**: Modified USFM parser handles psalm superscription tags
-- **Improved Tokenizers**: Enhanced Latin tokenizer with whitespace preservation
-- **Versification Mapping**: Automatic verse mapping between source and target versifications
-
-### Text Processing Pipeline
-
-1. **Parsing**: USFM/USX files parsed into structured corpus
-2. **Tokenization**: Text tokenized using selected tokenizer
-3. **Versification**: Verses mapped between source and target versifications
-4. **Filtering**: Optional exclusion of bracketed text, cross-references, stop words
-5. **Output**: Structured TSV files generated for verse and token levels
 
 ## Project Structure
 
 ```
 kathairo/
-├── parsing/           # USFM and USX parsers
-│   ├── usfm/         # USFM parsing with modified handlers
-│   └── usx/          # USX parsing utilities
-├── tokenization/      # Tokenizer implementations
-├── tsvs/             # TSV building and processing
-├── versification/    # Versification utilities
-└── helpers/          # Utility functions
+├── src/kathairo/
+│   ├── parsing/          # USFM and USX parsers
+│   ├── tokenization/     # Tokenizer implementations
+│   ├── tsvs/            # TSV building and processing
+│   ├── versification/   # Versification utilities
+│   ├── helpers/         # Utility functions
+│   ├── params.py        # Parameter definitions (source of truth)
+│   ├── api.py           # Main API (create_tsv function)
+│   └── builder.py       # Fluent builder pattern
+├── tests/               # Test suite
+│   ├── test_builder.py
+│   ├── test_output_dir.py
+│   └── test_type_safety.py
+└── pyproject.toml
 ```
-
-## Contributing
-
-Contributions are welcome! This project processes Scripture text and aims to provide reliable, accurate text processing for Bible translation and analysis workflows.
 
 ## Author
 
@@ -752,13 +456,19 @@ Contributions are welcome! This project processes Scripture text and aims to pro
 
 ## Acknowledgments
 
-Built on [SIL's machine.py](https://github.com/sillsdev/machine.py) - a machine learning and natural language processing library for Scripture.
+- Built on [SIL's machine.py](https://github.com/sillsdev/machine.py) - Machine learning and NLP library for Scripture
+- Type-safe builder pattern inspired by modern API design principles
 
 ---
 
-### Note to self: To update python package
+## For Maintainers
 
-1. `poetry config repositories.pypi https://upload.pypi.org/legacy/`
-2. `$env:PYPI_USERNAME="__token__"`
-3. `$env:PYPI_PASSWORD="<api-token>"`
-4. `poetry publish --build --username $env:PYPI_USERNAME --password $env:PYPI_PASSWORD`
+### Publishing to PyPI
+
+1. Update version in `pyproject.toml`
+2. Run tests: `poetry run pytest`
+3. Build and publish:
+```bash
+poetry config repositories.pypi https://upload.pypi.org/legacy/
+poetry publish --build --username __token__ --password <api-token>
+```
