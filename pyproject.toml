@@ -24,6 +24,8 @@ sil-machine = "1.8.4"
 polars = "^1.4.0"
 pandas = "^3.0.0"
 
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.0.0"
 
 [build-system]
 requires = ["poetry-core"]
