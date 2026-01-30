@@ -207,7 +207,6 @@ id           source_verse  text       skip_space_after  exclude  required
 | Parameter                       | Description                                       |
 | ------------------------------- | ------------------------------------------------- |
 | `projectName`                   | Project identifier (used in file naming)          |
-| `targetVersificationPath`       | Path to versification file (.vrs)                 |
 | **One corpus source:**          |                                                   |
 | `targetUsfmCorpusPath`          | Path to USFM files directory                      |
 | `targetUsxCorpusPath`           | Path to USX files directory                       |
@@ -224,6 +223,7 @@ id           source_verse  text       skip_space_after  exclude  required
 
 | Parameter                      | Type    | Description                                  |
 | ------------------------------ | ------- | -------------------------------------------- |
+| `targetVersificationPath`      | string  | Path to versification file (.vrs). Defaults to English versification if not provided. |
 | `treatApostropheAsSingleQuote` | boolean | Handle apostrophes as single quotes          |
 | `excludeBracketedText`         | boolean | Exclude text within square brackets          |
 | `excludeCrossReferences`       | boolean | Exclude cross-reference text                 |
