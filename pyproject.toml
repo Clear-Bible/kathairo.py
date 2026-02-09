@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "kathairo"
-version = "0.4.5"
+version = "1.0"
 description = "Scripture processing pipeline for converting USFM and USX formats into structured TSV files"
 authors = ["Robertson Brinker <robertsonbrinker@gmail.com>"]
 readme = "README.md"
@@ -24,6 +24,8 @@ sil-machine = "1.8.4"
 polars = "^1.4.0"
 pandas = "^3.0.0"
 
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.0.0"
 
 [build-system]
 requires = ["poetry-core"]
