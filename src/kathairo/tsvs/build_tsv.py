@@ -16,8 +16,8 @@ def corpus_to_tsv(
     corpus:ScriptureTextCorpus,
     tokenizer:WhitespaceTokenizer,
     project_name:str,
-    zwRemovalDf:str,
-    stopWordsDf:str,
+    zwRemovalDf:str = None,
+    stopWordsDf:str = None,
     language:str = None,
     output_dir:str = None,
     excludeBracketedText:bool = False,
@@ -76,8 +76,8 @@ def tokens_to_tsv(
     sourceVersification:Versification,
     tsvPath:str,
     project_name:str,
-    zwRemovalDf:str,
-    stopWordsDf:str,
+    zwRemovalDf:str = None,
+    stopWordsDf:str = None,
     language:str = None,
     output_dir:str = None,
     excludeBracketedText:bool = False,
@@ -156,7 +156,7 @@ def array_to_verse_level_tsv(
             tsv_writer.writerow([row[0], row[1], row[5].replace("  ", " "), row[3], row[4]])
 
 def array_to_token_level_tsv(corpus_array,
-                project_name:str, zwRemovalDf:str, stopWordsDf:str, language:str = None, output_dir:str = None, excludeBracketedText:bool = False,
+                project_name:str, zwRemovalDf:str = None, stopWordsDf:str = None, language:str = None, output_dir:str = None, excludeBracketedText:bool = False,
                 excludeCrossReferences:bool = False, regex_rules_class = None):
 
     zw_removal_df= zwRemovalDf
