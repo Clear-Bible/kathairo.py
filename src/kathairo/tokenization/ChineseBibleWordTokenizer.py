@@ -20,13 +20,12 @@ class ChineseBibleWordTokenizer(MaximalMatchingTokenizer):
         super().__init__(max_gram)
    
         # set Words and overlaps.
-        dataDirectoryFilePath = chineseTokenizerDataDirectoryPath 
+        dataDirectoryFilePath = chineseTokenizerDataDirectoryPath
         if dataDirectoryFilePath is None:
-            #Path(__file__).parent / "Tokenization" / "Data" / "ChineseBibleWordTokenizer"
-            currentWorkingDirectory = os.getcwd()
-            appName = "kathairo"
-            wordsFilePath = os.path.join(currentWorkingDirectory,appName,"Tokenization","Data","ChineseBibleWordTokenizer", self.WORDS_FILE_NAME)
-            combinationsFilePath = os.path.join(currentWorkingDirectory,appName,"Tokenization","Data","ChineseBibleWordTokenizer", self.COMBINATION_CORRECTIONS_FILE_NAME)
+            module_dir = os.path.dirname(__file__)
+            data_dir = os.path.join(module_dir, "Data", "ChineseBibleWordTokenizer")
+            wordsFilePath = os.path.join(data_dir, self.WORDS_FILE_NAME)
+            combinationsFilePath = os.path.join(data_dir, self.COMBINATION_CORRECTIONS_FILE_NAME)
                        
         with open(wordsFilePath, "r", encoding='utf-8') as words_file:
             #lines = words_file.readlines()
