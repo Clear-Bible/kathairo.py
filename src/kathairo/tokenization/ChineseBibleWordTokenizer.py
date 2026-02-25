@@ -2,7 +2,6 @@ from kathairo.tokenization.MaximalMatchingTokenizer import MaximalMatchingTokeni
 import os.path
 import os
 from typing import Optional
-from importlib.resources import files
 
 # <summary>
 # A tokenizer for bible translations (not general Chinese translations, see below).
@@ -19,9 +18,16 @@ class ChineseBibleWordTokenizer(MaximalMatchingTokenizer):
         self.WORDS_FILE_NAME = "words.txt"
         self.COMBINATION_CORRECTIONS_FILE_NAME = "combination_corrections.txt"
         super().__init__(max_gram)
-            
-        words_path = files('kathairo.tokenization.Data.ChineseBibleWordTokenizer') / self.WORDS_FILE_NAME
-        with words_path.open('r', encoding='utf-8') as words_file:
+   
+        # set Words and overlaps.
+        dataDirectoryFilePath = chineseTokenizerDataDirectoryPath
+        if dataDirectoryFilePath is None:
+            module_dir = os.path.dirname(__file__)
+            data_dir = os.path.join(module_dir, "Data", "ChineseBibleWordTokenizer")
+            wordsFilePath = os.path.join(data_dir, self.WORDS_FILE_NAME)
+            combinationsFilePath = os.path.join(data_dir, self.COMBINATION_CORRECTIONS_FILE_NAME)
+                       
+        with open(wordsFilePath, "r", encoding='utf-8') as words_file:
             #lines = words_file.readlines()
             #for line in lines:
             #    if line is not "":
@@ -29,8 +35,7 @@ class ChineseBibleWordTokenizer(MaximalMatchingTokenizer):
                     
             self.Words.update(line.strip() for line in words_file if line.strip())
 
-        corrections_path = files('kathairo.tokenization.Data.ChineseBibleWordTokenizer') / self.COMBINATION_CORRECTIONS_FILE_NAME
-        with corrections_path.open('r', encoding='utf-8') as corrections_file:
+        with open(combinationsFilePath, "r", encoding='utf-8') as corrections_file:
             #lines = corrections_file.readlines()
             #for line in lines:
             #    parts = line.split("\t")

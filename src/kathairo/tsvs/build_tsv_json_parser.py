@@ -1,7 +1,6 @@
 import time
 start = time.time()
 
-import json
 from concurrent.futures import ProcessPoolExecutor, as_completed
 
 from kathairo.tokenization.ChineseBibleWordTokenizer import ChineseBibleWordTokenizer
@@ -17,20 +16,21 @@ from machine.scripture import ORIGINAL_VERSIFICATION, Versification
 from kathairo.helpers.paths import import_module_from_path
 
 from kathairo.tsvs.build_tsv import corpus_to_tsv, tokens_to_tsv
+from kathairo.params import Param
 
-import polars as pl
+import pandas as pd
 
 SOURCE_VERSIFICATION = Versification(name="sourceVersification", base_versification=ORIGINAL_VERSIFICATION)
 
-def create_tokenizer(json_object, regex_rules_class):
-    treat_apostrophe_as_single_quote = json_object.get("treatApostropheAsSingleQuote", False)
-    language = json_object.get("language")
+def create_tokenizer(config_dict, regex_rules_class):
+    treat_apostrophe_as_single_quote = config_dict.get(Param.APOSTROPHE_AS_QUOTE, False)
+    language = config_dict.get(Param.LANGUAGE)
 
-    if json_object.get("chineseTokenizer"):
+    if config_dict.get(Param.USE_CHINESE_TOKENIZER):
         return ChineseBibleWordTokenizer()
-    elif json_object.get("latinTokenizer"):
+    elif config_dict.get(Param.USE_LATIN_TOKENIZER):
         return LatinWordTokenizer(treat_apostrophe_as_single_quote=treat_apostrophe_as_single_quote)
-    elif json_object.get("latinWhiteSpaceIncludedTokenizer"):
+    elif config_dict.get(Param.USE_LATIN_WS_TOKENIZER):
         return LatinWhitespaceIncludedWordTokenizer(
             treat_apostrophe_as_single_quote=treat_apostrophe_as_single_quote,
             language=language,
@@ -38,116 +38,109 @@ def create_tokenizer(json_object, regex_rules_class):
         )
     return None
 
-def create_corpus(json_object, target_versification, psalm_superscription_tag):
-    if "targetUsfmCorpusPath" in json_object:
+def create_corpus(config_dict, target_versification, psalm_superscription_tag):
+    if Param.USFM_PATH in config_dict:
         return UsfmFileTextCorpus(
-                json_object["targetUsfmCorpusPath"],
+                config_dict[Param.USFM_PATH],
             handler=ModifiedTextRowCollector,
             versification=target_versification,
             psalmSuperscriptionTag=psalm_superscription_tag
         )
     return UsxFileTextCorpus(
-        json_object["targetUsxCorpusPath"],
+        config_dict[Param.USX_PATH],
         versification=target_versification
     )
 
-def get_config(json_object):
-    config_dict = {}
+def get_config(config_dict):
+    processed_config = {}
 
     regex_rules_class = DefaultRegexRules()
-    if "regexRulesPath" in json_object:
-        regex_rules_module = import_module_from_path("regex_rules", json_object["regexRulesPath"])
+    if Param.REGEX_RULES_PATH in config_dict:
+        regex_rules_module = import_module_from_path("regex_rules", config_dict[Param.REGEX_RULES_PATH])
         regex_rules_class = getattr(regex_rules_module, "CustomRegexRules", DefaultRegexRules)()
-    config_dict["regexRulesClass"] = regex_rules_class
+    processed_config["regexRulesClass"] = regex_rules_class
 
-    config_dict["tokenizer"] = create_tokenizer(json_object, regex_rules_class)
+    processed_config["tokenizer"] = create_tokenizer(config_dict, regex_rules_class)
 
-    target_versification_path = json_object.get("targetVersificationPath")
-    config_dict["targetVersificationPath"] = target_versification_path
-    config_dict["targetVersification"] = Versification.load(target_versification_path, fallback_name="web")
+    target_versification_path = config_dict.get(Param.VERSIFICATION_PATH)
+    processed_config["targetVersificationPath"] = target_versification_path
+    processed_config["targetVersification"] = Versification.load(target_versification_path, fallback_name="web")
 
-    config_dict["psalmSuperscriptionTag"] = json_object.get("psalmSuperscriptionTag", 'd')
+    processed_config["psalmSuperscriptionTag"] = config_dict.get(Param.PSALM_SUPERSCRIPTION_TAG, 'd')
 
-    config_dict["projectName"] = json_object.get("projectName")
-    if "tsvPath" in json_object:
-        config_dict["tsvPath"] = json_object.get("tsvPath")
-        config_dict["isCorpus"] = False
+    processed_config["projectName"] = config_dict.get(Param.PROJECT_NAME)
+    if Param.TSV_PATH in config_dict:
+        processed_config["tsvPath"] = config_dict.get(Param.TSV_PATH)
+        processed_config["isCorpus"] = False
     else:
-        config_dict["corpus"] = create_corpus(json_object, config_dict["targetVersification"], config_dict["psalmSuperscriptionTag"])
-        config_dict["isCorpus"] = True
-    
-    config_dict["excludeBracketedText"] = json_object.get("excludeBracketedText", False)
-    config_dict["excludeCrossReferences"] = json_object.get("excludeCrossReferences", False)
-    config_dict["language"] = json_object.get("language")
-    
-    zw_removal_path = json_object.get("zwRemovalPath")
-    config_dict["zwRemovalDf"] = pl.read_csv(zw_removal_path, separator='\t', infer_schema_length=0, quote_char=None) if zw_removal_path else None
-    
-    stop_words_path = json_object.get("stopWordsPath")
-    config_dict["stopWordsDf"] = pl.read_csv(stop_words_path, separator='\t', infer_schema_length=0, quote_char=None) if stop_words_path else None
-    
-    return config_dict
+        processed_config["corpus"] = create_corpus(config_dict, processed_config["targetVersification"], processed_config["psalmSuperscriptionTag"])
+        processed_config["isCorpus"] = True
 
-def process_corpus(json_object):
-    
-    config_dict = get_config(json_object)
+    processed_config["excludeBracketedText"] = config_dict.get(Param.EXCLUDE_BRACKETS, False)
+    processed_config["excludeCrossReferences"] = config_dict.get(Param.EXCLUDE_XREFS, False)
+    processed_config["language"] = config_dict.get(Param.LANGUAGE)
+    processed_config["output_dir"] = config_dict.get(Param.OUTPUT_DIR)
 
-    if(config_dict["isCorpus"]):
+    zw_removal_path = config_dict.get(Param.ZW_REMOVAL_PATH)
+    processed_config["zwRemovalDf"] = pd.read_csv(zw_removal_path, sep='\t', dtype=str) if zw_removal_path else None
+
+    stop_words_path = config_dict.get(Param.STOP_WORDS_PATH)
+    processed_config["stopWordsDf"] = pd.read_csv(stop_words_path, sep='\t', dtype=str) if stop_words_path else None
+
+    return processed_config
+
+def process_corpus(config_dict):
+
+    processed_config = get_config(config_dict)
+
+    if(processed_config["isCorpus"]):
         return{
             'corpus_to_tsv': corpus_to_tsv(
-                targetVersification=config_dict["targetVersification"],
+                targetVersification=processed_config["targetVersification"],
                 sourceVersification=SOURCE_VERSIFICATION,
-                corpus=config_dict["corpus"],
-                tokenizer=config_dict["tokenizer"],
-                project_name=config_dict["projectName"],
-                excludeBracketedText=config_dict["excludeBracketedText"],
-                excludeCrossReferences=config_dict["excludeCrossReferences"],
-                language=config_dict["language"],
-                zwRemovalDf=config_dict["zwRemovalDf"],
-                stopWordsDf=config_dict["stopWordsDf"],
-                regex_rules_class=config_dict["regexRulesClass"]
+                corpus=processed_config["corpus"],
+                tokenizer=processed_config["tokenizer"],
+                project_name=processed_config["projectName"],
+                zwRemovalDf=processed_config["zwRemovalDf"],
+                stopWordsDf=processed_config["stopWordsDf"],
+                language=processed_config["language"],
+                output_dir=processed_config["output_dir"],
+                excludeBracketedText=processed_config["excludeBracketedText"],
+                excludeCrossReferences=processed_config["excludeCrossReferences"],
+                regex_rules_class=processed_config["regexRulesClass"]
             )
         }
     else:
         return{
             'tokens_to_tsv': tokens_to_tsv(
-                targetVersification=config_dict["targetVersification"],
+                targetVersification=processed_config["targetVersification"],
                 sourceVersification=SOURCE_VERSIFICATION,
-                tsvPath=config_dict["tsvPath"],
-                project_name=config_dict["projectName"],
-                language=config_dict["language"],
-                zwRemovalDf=config_dict["zwRemovalDf"],
-                stopWordsDf=config_dict["stopWordsDf"],
-                excludeBracketedText=config_dict["excludeBracketedText"],
-                excludeCrossReferences=config_dict["excludeCrossReferences"],
-                regex_rules_class=config_dict["regexRulesClass"]
-            )            
+                tsvPath=processed_config["tsvPath"],
+                project_name=processed_config["projectName"],
+                zwRemovalDf=processed_config["zwRemovalDf"],
+                stopWordsDf=processed_config["stopWordsDf"],
+                language=processed_config["language"],
+                output_dir=processed_config["output_dir"],
+                excludeBracketedText=processed_config["excludeBracketedText"],
+                excludeCrossReferences=processed_config["excludeCrossReferences"],
+                regex_rules_class=processed_config["regexRulesClass"]
+            )
         }
-    
-def get_json_data(json_file):
-    with open(json_file) as file:
-        json_data = json.load(file)
 
-    solo_project = next((obj for obj in json_data if "solo" in obj), None)    
-    if(solo_project is not None):
-        json_data = [solo_project]
-        
-    return json_data
-
-def main(json_path):
-
-    json_data = get_json_data(json_path)
+def main(config_list):
 
     with ProcessPoolExecutor() as executor:
-        
-        futures = {executor.submit(process_corpus, json_object): json_object for json_object in json_data}
+
+        futures = {executor.submit(process_corpus, config_dict): config_dict for config_dict in config_list}
 
         for future in as_completed(futures):
             try:
                 result = future.result()
                 print(f"Elapsed time: {time.time() - start:.2f} seconds")
             except Exception as e:
-                print(f"Task generated an exception: {e}")
+                config_dict = futures[future]
+                project_name = config_dict.get(Param.PROJECT_NAME, 'Unknown')
+                print(f"Task for {project_name} generated an exception: {e}")
 
     print(f"Total elapsed time: {time.time() - start:.2f} seconds")
 
