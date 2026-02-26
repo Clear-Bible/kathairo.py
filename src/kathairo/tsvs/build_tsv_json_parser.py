@@ -1,3 +1,4 @@
+import os
 import time
 start = time.time()
 
@@ -94,7 +95,7 @@ def process_corpus(config_dict):
     processed_config = get_config(config_dict)
 
     if(processed_config["isCorpus"]):
-        return{
+        result = {
             'corpus_to_tsv': corpus_to_tsv(
                 targetVersification=processed_config["targetVersification"],
                 sourceVersification=SOURCE_VERSIFICATION,
@@ -110,6 +111,9 @@ def process_corpus(config_dict):
                 regex_rules_class=processed_config["regexRulesClass"]
             )
         }
+        if config_dict.get(Param.WITH_SECTION_TREES):
+            _write_section_trees(config_dict, processed_config)
+        return result
     else:
         return{
             'tokens_to_tsv': tokens_to_tsv(
@@ -126,6 +130,32 @@ def process_corpus(config_dict):
                 regex_rules_class=processed_config["regexRulesClass"]
             )
         }
+
+
+def _write_section_trees(config_dict: dict, processed_config: dict) -> None:
+    from kathairo.parsing.sections.section_tree_corpus import (
+        build_section_trees_usfm,
+        build_section_trees_usx,
+    )
+
+    output_dir = processed_config["output_dir"]
+    if output_dir is None:
+        output_dir = os.path.join("output", processed_config["language"], processed_config["projectName"])
+
+    project_name = processed_config["projectName"]
+
+    if Param.USFM_PATH in config_dict:
+        build_section_trees_usfm(
+            corpus_path=config_dict[Param.USFM_PATH],
+            project_name=project_name,
+            output_dir=output_dir,
+        )
+    elif Param.USX_PATH in config_dict:
+        build_section_trees_usx(
+            corpus_path=config_dict[Param.USX_PATH],
+            project_name=project_name,
+            output_dir=output_dir,
+        )
 
 def main(config_list):
 

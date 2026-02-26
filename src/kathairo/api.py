@@ -30,7 +30,9 @@ def create_tsv(
 
     metadata_source_url=None,
     metadata_path=None,
-    metadata_kind=None
+    metadata_kind=None,
+
+    withSectionTrees=False
 ):
 
     config_list = _normalize_to_config_list(
@@ -54,7 +56,8 @@ def create_tsv(
         output_dir=output_dir,
         metadata_source_url=metadata_source_url,
         metadata_path=metadata_path,
-        metadata_kind=metadata_kind
+        metadata_kind=metadata_kind,
+        withSectionTrees=withSectionTrees
     )
 
     for config_dict in config_list:

@@ -65,6 +65,10 @@ class CompleteBuilder:
         self._config[Param.METADATA_KIND] = kind
         return self
 
+    def with_section_trees(self) -> 'CompleteBuilder':
+        self._config[Param.WITH_SECTION_TREES] = True
+        return self
+
     def build(self) -> None:
         """Build and execute TSV creation."""
         return create_tsv(config_object=self._config)
@@ -130,6 +134,10 @@ class ProjectBuilder:
 
     def with_metadata_kind(self, kind: str) -> 'ProjectBuilder':
         self._config[Param.METADATA_KIND] = kind
+        return self
+
+    def with_section_trees(self) -> 'ProjectBuilder':
+        self._config[Param.WITH_SECTION_TREES] = True
         return self
 
     def with_output_dir(self, path: str) -> CompleteBuilder:
@@ -203,6 +211,10 @@ class CorpusBuilder:
 
     def with_metadata_kind(self, kind: str) -> 'CorpusBuilder':
         self._config[Param.METADATA_KIND] = kind
+        return self
+
+    def with_section_trees(self) -> 'CorpusBuilder':
+        self._config[Param.WITH_SECTION_TREES] = True
         return self
 
     def with_project_name(self, name: str) -> ProjectBuilder:

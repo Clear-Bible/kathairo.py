@@ -28,6 +28,8 @@ class Param:
     METADATA_PATH = "metadata_path"
     METADATA_KIND = "metadata_kind"
 
+    WITH_SECTION_TREES = "withSectionTrees"
+
 
 class ParamGroups:
     CORPUS_INPUTS = [
