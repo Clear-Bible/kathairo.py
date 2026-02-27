@@ -1,8 +1,8 @@
 [tool.poetry]
 name = "kathairo"
-version = "1.0"
+version = "1.1"
 description = "Scripture processing pipeline for converting USFM and USX formats into structured TSV files"
-authors = ["Robertson Brinker <robertsonbrinker@gmail.com>"]
+authors = ["Robertson Brinker"]
 readme = "README.md"
 homepage = "https://github.com/ClearBible/kathairo.py"
 repository = "https://github.com/ClearBible/kathairo.py"
