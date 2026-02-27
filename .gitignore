@@ -15,3 +15,4 @@ src/kathairo/parsing/usfm/__pycache__/usfm_handlers.cpython-311.pyc
 src/kathairo/parsing/usfm/__pycache__/usfm_file_text_corpus.cpython-311.pyc
 src/kathairo/parsing/usfm/__pycache__/usfm_file_text.cpython-311.pyc
 src/kathairo/helpers/__pycache__/paths.cpython-311.pyc
+/dist
