@@ -466,7 +466,7 @@ kathairo/
 ### Publishing to PyPI
 
 1. Update version in `pyproject.toml`
-2. Run tests: `poetry run pytest`
+2. Run tests: `poetry run pytest tests`
 3. Build and publish:
 ```bash
 poetry config repositories.pypi https://upload.pypi.org/legacy/
