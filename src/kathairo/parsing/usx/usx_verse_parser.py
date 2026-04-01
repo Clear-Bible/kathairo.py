@@ -71,7 +71,7 @@ class ModifiedUsxVerseParser(UsxVerseParser):
                     else:
                         ctxt.verse = verse
             elif e.tag == "char":
-                if e.get("style") in ["rq", "fm"]:
+                if e.get("style") in ["rq", "fr", "fq", "fqa", "fk", "ft", "fl", "fw", "fp", "fv", "fdc", "fm"]:
                     if ctxt.chapter is not None and ctxt.verse is not None:
                         ctxt.add_token("", e)
                 else:
