@@ -49,7 +49,7 @@ class LatinWhitespaceIncludedWordTokenizer(WhitespaceIncludedTokenizer): #uses W
                     inner_punct_str = data[ctxt.inner_word_punct : char_range.end]
                     if (
                         inner_punct_str == "." and self._is_abbreviation(data, ctxt.word_start, ctxt.inner_word_punct)
-                    ) or (inner_punct_str == "'" and not self.treat_apostrophe_as_single_quote):
+                    ) or (inner_punct_str in ["'","ʼ"] and not ctxt.open_single_quote and self._is_possessive(data, ctxt.word_start, ctxt.inner_word_punct)):
                         #range1 = data[ctxt.word_start, char_range.end]
                         yield Range.create(ctxt.word_start, char_range.end)
                     else:
@@ -69,24 +69,26 @@ class LatinWhitespaceIncludedWordTokenizer(WhitespaceIncludedTokenizer): #uses W
         end_index = ctxt.index + 1
 
         if is_punctuation(c) or is_symbol(c) or is_control(c):
-            
+
             while end_index != data_range.end and data[end_index] == c:
                 end_index += 1
             if ctxt.word_start == -1:
-                if c == "'" and not self.treat_apostrophe_as_single_quote:
+                if c in ["'","ʼ"] and not self.treat_apostrophe_as_single_quote:
                     ctxt.word_start = ctxt.index
                 else:
                     match = None
                     for rule in self.regex_rules:
                         match = rule.match(data, ctxt.index)
                     if match is None:
+                        if c == "\u2018":
+                            ctxt.open_single_quote = True
                         #range1 = data[ctxt.index: end_index]
                         token_ranges = (Range.create(ctxt.index, end_index), None)
                     else:
                         ctxt.word_start = ctxt.index
             elif ctxt.inner_word_punct != -1:
                 inner_punct_str = data[ctxt.inner_word_punct : ctxt.index]
-                if inner_punct_str == "'" and not self.treat_apostrophe_as_single_quote:
+                if inner_punct_str in ["'","ʼ"] and not self.treat_apostrophe_as_single_quote:
                     #range1 = data[ctxt.word_start: ctxt.index]
                     token_ranges = (Range.create(ctxt.word_start, ctxt.index), None)
                 else:
@@ -99,35 +101,48 @@ class LatinWhitespaceIncludedWordTokenizer(WhitespaceIncludedTokenizer): #uses W
                 ctxt.word_start = ctxt.index
             else:
                 for rule in self.regex_rules:
-                    substring = data[ctxt.index-1:ctxt.index+2]      
-                    
+                    substring = data[ctxt.index-1:ctxt.index+2]
+
                     match = rule.match(data, ctxt.index)
                     #match = rule.search(substring)
                     if match is not None:
                         ctxt.inner_word_punct = ctxt.index
                         group = match.group()
                         ctxt.index += len(group)
-                    
+
                         if(self.language == "fra"):
                             contraction_token = CONTRACTION_WORD_REGEX.match(data, ctxt.word_start)
                             if(contraction_token is not None):
-                                group = contraction_token.group().replace("’","'")
+                                group = contraction_token.group().replace("’","’")
                                 if(group not in FR_BASE_EXCEPTIONS):
                                     #range1 = data[ctxt.word_start:ctxt.index]
                                     token_ranges = (Range.create(ctxt.word_start, ctxt.index),None)
                                     ctxt.word_start = -1
-                                
+
                         return token_ranges
-                #range1 = data[ctxt.word_start:ctxt.index]
-                #range2 = data[ctxt.index:end_index]
-                token_ranges = (Range.create(ctxt.word_start, ctxt.index), Range.create(ctxt.index, end_index))
-                ctxt.word_start = -1
+                # No regex rule matched — check if this is an apostrophe or closing quote
+                if c in ("\u2019", "\u02BC") and not ctxt.open_single_quote and self._is_possessive(data, ctxt.word_start, ctxt.index):
+                    ctxt.inner_word_punct = ctxt.index
+                else:
+                    if c == "\u2019" and ctxt.open_single_quote:
+                        ctxt.open_single_quote = False
+                    #range1 = data[ctxt.word_start:ctxt.index]
+                    #range2 = data[ctxt.index:end_index]
+                    token_ranges = (Range.create(ctxt.word_start, ctxt.index), Range.create(ctxt.index, end_index))
+                    ctxt.word_start = -1
         elif ctxt.word_start == -1:
             ctxt.word_start = ctxt.index
 
         ctxt.inner_word_punct = -1
         ctxt.index = end_index
         return token_ranges
+
+    def _is_possessive(self, data: str, word_start: int, punct_index: int) -> bool:
+        """Check if a word-final apostrophe is likely possessive rather than a closing quote."""
+        if word_start < 0 or punct_index <= word_start:
+            return False
+        preceding_char = data[punct_index - 1].lower()
+        return preceding_char in ('s', 'z', 'x')
 
     def _is_abbreviation(self, data: str, start: int, end: int) -> bool:
         substr = data[start:end].lower()
@@ -138,3 +153,4 @@ class LatinWhitespaceIncludedWordTokenizer(WhitespaceIncludedTokenizer): #uses W
         index: int = 0
         word_start: int = 0
         inner_word_punct: int = 0
+        open_single_quote: bool = False
