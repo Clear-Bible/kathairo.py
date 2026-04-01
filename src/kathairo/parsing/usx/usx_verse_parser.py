@@ -19,7 +19,7 @@ def _is_numbered_style(base_style: str, style: str) -> bool:
 class ModifiedUsxVerseParser(UsxVerseParser):
     def __init__(self, merge_segments: bool = False) -> None:
         self._merge_segments = merge_segments
-    
+
     def _parse_element(self, elem: etree.Element, ctxt: _ParseContext) -> Iterable[UsxVerse]:
         if elem.text is not None and ctxt.chapter is not None and ctxt.verse is not None:
             ctxt.add_token(elem.text)
@@ -34,16 +34,16 @@ class ModifiedUsxVerseParser(UsxVerseParser):
                 if not _is_verse_para(e):
                     ctxt.is_sentence_start = True
                     continue
-                
+
                 if(e.get("style", "") == "d" and (ctxt.verse != None and ctxt.verse != "0")):
                     continue
-                
+
                 # include superscriptions in text (TODO, limit to just the Psalms)
                 if (e.get("style", "") == "d" and ctxt.chapter != '119'):#or e.get("style", "") == "s"
                     verse = "0"
                     ctxt.verse = verse
                 ###
-                        
+
                 ctxt.parent_element = e
                 for evt in self._parse_element(e, ctxt):
                     yield evt
@@ -71,7 +71,7 @@ class ModifiedUsxVerseParser(UsxVerseParser):
                     else:
                         ctxt.verse = verse
             elif e.tag == "char":
-                if e.get("style") == "rq":
+                if e.get("style") in ["rq", "fm"]:
                     if ctxt.chapter is not None and ctxt.verse is not None:
                         ctxt.add_token("", e)
                 else:
