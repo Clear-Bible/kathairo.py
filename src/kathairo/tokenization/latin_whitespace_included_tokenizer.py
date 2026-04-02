@@ -50,7 +50,13 @@ class LatinWhitespaceIncludedWordTokenizer(WhitespaceIncludedTokenizer): #uses W
                     inner_punct_str = data[ctxt.inner_word_punct : char_range.end]
                     if (
                         inner_punct_str == "." and self._is_abbreviation(data, ctxt.word_start, ctxt.inner_word_punct)
-                    ) or (inner_punct_str in ["'","ʼ"] and not self.open_single_quote and self._is_possessive(data, ctxt.word_start, ctxt.inner_word_punct)):
+                    ) or (
+                        self._is_apostrophe(inner_punct_str)
+                        and (
+                            not self.treat_apostrophe_as_single_quote
+                            or (not self.open_single_quote and self._is_possessive(data, ctxt.word_start, ctxt.inner_word_punct))
+                        )
+                    ):
                         #range1 = data[ctxt.word_start, char_range.end]
                         yield Range.create(ctxt.word_start, char_range.end)
                     else:
@@ -93,7 +99,7 @@ class LatinWhitespaceIncludedWordTokenizer(WhitespaceIncludedTokenizer): #uses W
                 inner_punct_str = data[ctxt.inner_word_punct : ctxt.index]
                 if c == "\u2019" and self.open_single_quote:
                     self.open_single_quote = False
-                if inner_punct_str in ["'","ʼ"] and not self.treat_apostrophe_as_single_quote:
+                if self._is_apostrophe(inner_punct_str) and not self.treat_apostrophe_as_single_quote:
                     #range1 = data[ctxt.word_start: ctxt.index]
                     token_ranges = (Range.create(ctxt.word_start, ctxt.index), None)
                 else:
@@ -118,7 +124,11 @@ class LatinWhitespaceIncludedWordTokenizer(WhitespaceIncludedTokenizer): #uses W
                         if(self.language == "fra"):
                             contraction_token = CONTRACTION_WORD_REGEX.match(data, ctxt.word_start)
                             if(contraction_token is not None):
-                                group = contraction_token.group().replace("’","’")
+                                group = (
+                                    contraction_token.group()
+                                    .replace("\u2019", "'")
+                                    .replace("\u02BC", "'")
+                                )
                                 if(group not in FR_BASE_EXCEPTIONS):
                                     #range1 = data[ctxt.word_start:ctxt.index]
                                     token_ranges = (Range.create(ctxt.word_start, ctxt.index),None)
@@ -148,6 +158,9 @@ class LatinWhitespaceIncludedWordTokenizer(WhitespaceIncludedTokenizer): #uses W
             return False
         preceding_char = data[punct_index - 1].lower()
         return preceding_char in ('s', 'z', 'x')
+
+    def _is_apostrophe(self, text: str) -> bool:
+        return text in ("'", "\u2019", "\u02BC")
 
     def _is_abbreviation(self, data: str, start: int, end: int) -> bool:
         substr = data[start:end].lower()
