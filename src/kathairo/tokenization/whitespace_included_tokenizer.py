@@ -4,6 +4,7 @@ from machine.annotations.range import Range
 from machine.tokenization import StringTokenizer
 
 from machine.tokenization import WhitespaceTokenizer
+from kathairo.helpers import strings
 
 class WhitespaceIncludedTokenizer(StringTokenizer):
     def tokenize_as_ranges(self, data: str, data_range: Optional[Range[int]] = None) -> Iterable[Range[int]]:
@@ -23,7 +24,7 @@ class WhitespaceIncludedTokenizer(StringTokenizer):
             yield Range.create(start_index, data_range.end)
 
     def _is_whitespace(self, c: str) -> bool:
-        return c.isspace() or c == "\u200b" or c == "\ufeff"
+        return c.isspace() or c in strings.stop_words
 
 
 WHITESPACE_TOKENIZER = WhitespaceTokenizer()

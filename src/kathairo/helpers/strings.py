@@ -9,12 +9,13 @@ def contains_number(string):
 
 empty_string = ""
 
-zwsp = "​"#\u200b
-zwj = "‍"#\u200d
-zwnj = "‌"#\u200c
+zwsp = "\u200b"#\u200b
+zwj = "\u200d"#\u200d
+zwnj = "\u200c"#\u200c
 nbsp = "\xa0"
 space = " "
-six_per_em_space = " "#\u2006
+six_per_em_space = "\u2006"#\u2006
+narrow_nbsp = "\u202f"#\u202f
 
 stop_words = [
     space,
@@ -22,16 +23,17 @@ stop_words = [
     zwj,
     zwnj,
     nbsp,
-    six_per_em_space
+    six_per_em_space,
+    narrow_nbsp
 ]
 
 spaces = [
     space,
     nbsp,
-    six_per_em_space
+    six_per_em_space,
+    narrow_nbsp
 ]
 
 invisible_spaces = [
     zwsp
 ]
-
