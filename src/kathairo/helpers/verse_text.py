@@ -14,7 +14,7 @@ def reconstitute(tsv_file_path:Path, project_name:str, language:str):
         
         os.makedirs(os.path.dirname(output_file), exist_ok=True)
         with open(output_file, 'w', newline='', encoding='utf-8') as out_file:
-            tsv_writer = csv.writer(out_file, delimiter='\t', quoting=csv.QUOTE_NONE, quotechar=None)
+            tsv_writer = csv.writer(out_file, delimiter='\t', quoting=csv.QUOTE_NONE, quotechar=None, lineterminator='\n')
 
             tsv_writer.writerows(verses) #OLD WAY
 

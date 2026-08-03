@@ -149,7 +149,7 @@ def array_to_verse_level_tsv(
     os.makedirs(os.path.dirname(outputFileName), exist_ok=True)
     with open(outputFileName, 'w', newline='', encoding='utf-8') as out_file:
 
-        tsv_writer = csv.writer(out_file, delimiter='\t', quoting=csv.QUOTE_NONE, quotechar=None)
+        tsv_writer = csv.writer(out_file, delimiter='\t', quoting=csv.QUOTE_NONE, quotechar=None, lineterminator='\n')
         tsv_writer.writerow(["id", "source_verse", "text", "id_range_end", "source_verse_range_end"])
 
         for row in corpus_array:
@@ -171,7 +171,7 @@ def array_to_token_level_tsv(corpus_array,
         outputFileName = get_file_location("output", language, project_name, "token", "token")
     os.makedirs(os.path.dirname(outputFileName), exist_ok=True)
     with open(outputFileName, 'w', newline='', encoding='utf-8') as out_file:
-        tsv_writer = csv.writer(out_file, delimiter='\t', quoting=csv.QUOTE_NONE, quotechar=None)
+        tsv_writer = csv.writer(out_file, delimiter='\t', quoting=csv.QUOTE_NONE, quotechar=None, lineterminator='\n')
 
         tsv_writer.writerow(["id", "source_verse", "text", "skip_space_after", "exclude", "id_range_end", "source_verse_range_end", "required"])
 

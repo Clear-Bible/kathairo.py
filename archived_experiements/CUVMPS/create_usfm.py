@@ -90,7 +90,7 @@ for row in df.iter_rows(named=True):
     if(previous_book_id != book_id):
         if(book_arr != []):
             with open(output_file_name, 'w', newline='', encoding='utf-8') as out_file:
-                tsv_writer = csv.writer(out_file, delimiter='\t') # quoting=csv.QUOTE_NONE, quotechar=None
+                tsv_writer = csv.writer(out_file, delimiter='\t', lineterminator='\n') # quoting=csv.QUOTE_NONE, quotechar=None
                 tsv_writer.writerows(book_arr)
             
         book_arr = []
@@ -110,7 +110,7 @@ for row in df.iter_rows(named=True):
     previous_book_id = book_id
 
 with open(output_file_name, 'w', newline='', encoding='utf-8') as out_file:
-    tsv_writer = csv.writer(out_file, delimiter='\t') # quoting=csv.QUOTE_NONE, quotechar=None
+    tsv_writer = csv.writer(out_file, delimiter='\t', lineterminator='\n') # quoting=csv.QUOTE_NONE, quotechar=None
     tsv_writer.writerows(book_arr)
 
 #df.select(["text"]).write_csv(output_file_name, separator='\t')
