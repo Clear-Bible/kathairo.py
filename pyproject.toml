@@ -33,3 +33,6 @@ build-backend = "poetry.core.masonry.api"
 
 [tool.poetry.scripts]
 build-tsvs = "kathairo.tsvs.build_tsv_json_parser:main"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
