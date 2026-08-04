@@ -49,7 +49,7 @@ class LatinWhitespaceIncludedWordTokenizer(WhitespaceIncludedTokenizer): #uses W
                     inner_punct_str = data[ctxt.inner_word_punct : char_range.end]
                     if (
                         inner_punct_str == "." and self._is_abbreviation(data, ctxt.word_start, ctxt.inner_word_punct)
-                    ) or (inner_punct_str == "'" and not self.treat_apostrophe_as_single_quote):
+                    ) or (inner_punct_str in ("'", "’") and not self.treat_apostrophe_as_single_quote):
                         #range1 = data[ctxt.word_start, char_range.end]
                         yield Range.create(ctxt.word_start, char_range.end)
                     else:
@@ -86,7 +86,7 @@ class LatinWhitespaceIncludedWordTokenizer(WhitespaceIncludedTokenizer): #uses W
                         ctxt.word_start = ctxt.index
             elif ctxt.inner_word_punct != -1:
                 inner_punct_str = data[ctxt.inner_word_punct : ctxt.index]
-                if inner_punct_str == "'" and not self.treat_apostrophe_as_single_quote:
+                if inner_punct_str in ("'", "’") and not self.treat_apostrophe_as_single_quote:
                     #range1 = data[ctxt.word_start: ctxt.index]
                     token_ranges = (Range.create(ctxt.word_start, ctxt.index), None)
                 else:
