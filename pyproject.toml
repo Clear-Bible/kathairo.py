@@ -20,7 +20,7 @@ classifiers = [
 [tool.poetry.dependencies]
 python = ">=3.11,<3.13"
 spacy = "^3.8.14"
-sil-machine = "1.8.4"
+sil-machine = "1.8.5"
 polars = "^1.43.2"
 pandas = "^3.0.5"
 
