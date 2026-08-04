@@ -1220,14 +1220,14 @@ files = [
 
 [[package]]
 name = "sil-machine"
-version = "1.8.5"
+version = "1.9.0"
 description = "A natural language processing library that is focused on providing tools for resource-poor languages."
 optional = false
 python-versions = "<3.14,>=3.10"
 groups = ["main"]
 files = [
-    {file = "sil_machine-1.8.5-py3-none-any.whl", hash = "sha256:5f5a97c3de9c47d4050de1ca02f9c12ffe0dd8d45fd2327cc1e57bdfe5d46199"},
-    {file = "sil_machine-1.8.5.tar.gz", hash = "sha256:bc21a5a05f0cc743b650f79bbbc03c13040c03ebe08b2c66cb731e90e7c61d3d"},
+    {file = "sil_machine-1.9.0-py3-none-any.whl", hash = "sha256:7d1b12d0a0ce4ba221030b963b827802f9fb78da61a15ec6f657f808fda30a8d"},
+    {file = "sil_machine-1.9.0.tar.gz", hash = "sha256:aeddac369a73913f70792faa46bfbd11183bffb65c8c811a812c921fbc96a32d"},
 ]
 
 [package.dependencies]
@@ -1244,7 +1244,7 @@ urllib3 = "<2"
 huggingface = ["datasets (>=2.4.0,<3.0.0)", "sacremoses (>=0.0.53,<0.0.54)", "transformers (==4.46.2)"]
 jobs = ["clearml[s3] (>=1.13.1,<2.0.0)", "dynaconf (>=3.2.5,<4.0.0)", "eflomal (>=2.0.0,<3.0.0) ; sys_platform == \"linux\"", "json-stream (>=1.3.0,<2.0.0)"]
 sentencepiece = ["sentencepiece (>=0.2.0,<0.3.0)"]
-thot = ["sil-thot (>=3.4.9,<4.0.0)"]
+thot = ["sil-thot (>=3.5.0,<4.0.0)"]
 
 [[package]]
 name = "six"
@@ -1766,4 +1766,4 @@ files = [
 [metadata]
 lock-version = "2.1"
 python-versions = ">=3.11,<3.14"
-content-hash = "8f4df3cdb13d47b3df66bc70f3428ae266f7e95b5f3940e6503aad9c3e40cbcb"
+content-hash = "b6048597c1e275e113b30502bd84650c69e159e9e7882bf0db9d72662e577b92"

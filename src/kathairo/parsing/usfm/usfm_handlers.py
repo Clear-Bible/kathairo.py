@@ -5,7 +5,7 @@ from machine.corpora.text_row import TextRow
 from machine.corpora.usfm_parser_state import UsfmParserState
 from machine.corpora.usfm_token import UsfmTokenType
 from machine.corpora.scripture_ref import ScriptureRef
-from machine.corpora.scripture_ref_usfm_parser_handler import ScriptureTextType
+from machine.corpora import ScriptureTextType
 from machine.utils.string_utils import has_sentence_ending
 
 from machine.corpora.usfm_text_base import UsfmTextBase
