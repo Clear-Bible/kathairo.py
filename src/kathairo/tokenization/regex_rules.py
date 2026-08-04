@@ -17,7 +17,7 @@ class DefaultRegexRules:
     )
 
     POSSESSIVE_RIGHT_SINGLE_QUOTE_REGEX = re.compile(
-        r"(?<!‘\p{L}[\p{L} ]*)(?<=s)’(?!\S)"
+        r"(?:(?<!‘\p{L}[\p{L} ]*)|(?=’[^’‘]*[.?!]’))(?<=s)’(?!\S)"
     )
 
     CONTRACTION_WORD_REGEX = re.compile(
@@ -35,6 +35,9 @@ class DefaultRegexRules:
         ]
         
         return regex_rules
+
+    def get_apostrophe_merge_rules(self):
+        return [self.POSSESSIVE_RIGHT_SINGLE_QUOTE_REGEX]
 
     #NON_JOINING_PUNCT =r"[.،«?!।၊–…{}—《》（）‘’“”;？：；。！，、,\[\]()]"
     NON_JOINING_PUNCT = r"[.،«?!।၊–…{}—《》（）‘’“”;？：；。！，、,\[\]()]"
