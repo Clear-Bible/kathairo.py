@@ -83,6 +83,16 @@ class ModifiedUsxVerseParser(UsxVerseParser):
             elif e.tag == "figure":
                 if ctxt.chapter is not None and ctxt.verse is not None:
                     ctxt.add_token("", e)
+            elif e.tag == "table":
+                for evt in self._parse_element(e, ctxt):
+                    yield evt
+            elif e.tag == "row":
+                for evt in self._parse_element(e, ctxt):
+                    yield evt
+            elif e.tag == "cell":
+                ctxt.parent_element = e
+                for evt in self._parse_element(e, ctxt):
+                    yield evt
 
             if e.tail is not None and ctxt.chapter is not None and ctxt.verse is not None:
                 ctxt.add_token(e.tail)
