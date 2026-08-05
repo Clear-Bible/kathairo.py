@@ -98,7 +98,12 @@ class LatinWhitespaceIncludedWordTokenizer(WhitespaceIncludedTokenizer): #uses W
                         Range.create(ctxt.word_start, ctxt.inner_word_punct),
                         Range.create(ctxt.inner_word_punct, ctxt.index),
                     )
-                ctxt.word_start = ctxt.index
+                # Don't assume this character starts a word; re-process it from the
+                # top so the rules decide, without advancing the index.
+                ctxt.word_start = -1
+                ctxt.inner_word_punct = -1
+                ctxt.keep_together = False
+                return token_ranges
             else:
                 for rule in self.regex_rules:
                     substring = data[ctxt.index-1:ctxt.index+2]      
