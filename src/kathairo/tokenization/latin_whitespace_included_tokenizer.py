@@ -20,6 +20,7 @@ class LatinWhitespaceIncludedWordTokenizer(WhitespaceIncludedTokenizer): #uses W
         self.treat_apostrophe_as_single_quote = treat_apostrophe_as_single_quote
         self.language = language
         self.regex_rules = regex_rules_class.get_regex_rules()
+        self.apostrophe_merge_rules = regex_rules_class.get_apostrophe_merge_rules()
 
     def tokenize_as_ranges(self, data: str, data_range: Optional[Range[int]] = None) -> Iterable[Range[int]]:
         if data_range is None:
@@ -36,6 +37,7 @@ class LatinWhitespaceIncludedWordTokenizer(WhitespaceIncludedTokenizer): #uses W
 
             ctxt.word_start = -1
             ctxt.inner_word_punct = -1
+            ctxt.keep_together = False
 
             while ctxt.index < char_range.end:
                 token_range1, token_range2 = self._process_character(data, data_range, ctxt)
@@ -49,7 +51,7 @@ class LatinWhitespaceIncludedWordTokenizer(WhitespaceIncludedTokenizer): #uses W
                     inner_punct_str = data[ctxt.inner_word_punct : char_range.end]
                     if (
                         inner_punct_str == "." and self._is_abbreviation(data, ctxt.word_start, ctxt.inner_word_punct)
-                    ) or (inner_punct_str in ("'", "’") and not self.treat_apostrophe_as_single_quote):
+                    ) or ctxt.keep_together or (inner_punct_str in ("'", "’") and not self.treat_apostrophe_as_single_quote):
                         #range1 = data[ctxt.word_start, char_range.end]
                         yield Range.create(ctxt.word_start, char_range.end)
                     else:
@@ -86,7 +88,7 @@ class LatinWhitespaceIncludedWordTokenizer(WhitespaceIncludedTokenizer): #uses W
                         ctxt.word_start = ctxt.index
             elif ctxt.inner_word_punct != -1:
                 inner_punct_str = data[ctxt.inner_word_punct : ctxt.index]
-                if inner_punct_str in ("'", "’") and not self.treat_apostrophe_as_single_quote:
+                if ctxt.keep_together or (inner_punct_str in ("'", "’") and not self.treat_apostrophe_as_single_quote):
                     #range1 = data[ctxt.word_start: ctxt.index]
                     token_ranges = (Range.create(ctxt.word_start, ctxt.index), None)
                 else:
@@ -105,6 +107,7 @@ class LatinWhitespaceIncludedWordTokenizer(WhitespaceIncludedTokenizer): #uses W
                     #match = rule.search(substring)
                     if match is not None:
                         ctxt.inner_word_punct = ctxt.index
+                        ctxt.keep_together = rule in self.apostrophe_merge_rules
                         group = match.group()
                         ctxt.index += len(group)
                     
@@ -126,6 +129,7 @@ class LatinWhitespaceIncludedWordTokenizer(WhitespaceIncludedTokenizer): #uses W
             ctxt.word_start = ctxt.index
 
         ctxt.inner_word_punct = -1
+        ctxt.keep_together = False
         ctxt.index = end_index
         return token_ranges
 
@@ -138,3 +142,4 @@ class LatinWhitespaceIncludedWordTokenizer(WhitespaceIncludedTokenizer): #uses W
         index: int = 0
         word_start: int = 0
         inner_word_punct: int = 0
+        keep_together: bool = False
