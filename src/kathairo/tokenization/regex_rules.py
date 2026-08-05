@@ -17,7 +17,7 @@ class DefaultRegexRules:
     )
 
     POSSESSIVE_RIGHT_SINGLE_QUOTE_REGEX = re.compile(
-        r"(?:(?<!‘\p{L}[\p{L} ]*)|(?=’[^’‘]*[.?!]’))(?<=s)’(?!\S)"
+        r"(?:(?<!‘\p{L}[\p{L} ]*)|(?=’[^’‘]*[.?!]’))(?<=s)’(?!\S)(?!\s*[”»])"
     )
 
     CONTRACTION_WORD_REGEX = re.compile(
