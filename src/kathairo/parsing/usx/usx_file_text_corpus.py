@@ -1,22 +1,17 @@
-from pathlib import Path
-from typing import List, Optional
+from typing import Optional
 
 from machine.scripture.verse_ref import Versification
 from machine.utils.typeshed import StrPath
-from machine.corpora.corpora_utils import get_usx_versification
-from machine.corpora.scripture_text_corpus import ScriptureTextCorpus
-from kathairo.parsing.usx.usx_file_text import UsxFileText #use Modified UsxFileText
+from machine.corpora.usx_file_text_corpus import UsxFileTextCorpus as _UsxFileTextCorpus
+from kathairo.parsing.usx.usx_verse_parser import ModifiedUsxVerseParser
 
 
-class UsxFileTextCorpus(ScriptureTextCorpus):
+class UsxFileTextCorpus(_UsxFileTextCorpus):
     def __init__(
         self,
         project_dir: StrPath,
         versification: Optional[Versification] = None,
     ) -> None:
-        project_dir = Path(project_dir)
-        versification = get_usx_versification(project_dir, versification)
-        texts: List[UsxFileText] = []
-        for filename in project_dir.glob("*.usx"):
-            texts.append(UsxFileText(filename, versification))
-        super().__init__(versification, texts)
+        super().__init__(project_dir, versification)
+        for text in self.texts:
+            text._parser = ModifiedUsxVerseParser()

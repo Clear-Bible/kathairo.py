@@ -51,7 +51,11 @@ class LatinWhitespaceIncludedWordTokenizer(WhitespaceIncludedTokenizer): #uses W
                     inner_punct_str = data[ctxt.inner_word_punct : char_range.end]
                     if (
                         inner_punct_str == "." and self._is_abbreviation(data, ctxt.word_start, ctxt.inner_word_punct)
-                    ) or ctxt.keep_together or (inner_punct_str in ("'", "’") and not self.treat_apostrophe_as_single_quote):
+                    ) or ctxt.keep_together or (
+                        inner_punct_str in ("'", "’")
+                        and not self.treat_apostrophe_as_single_quote
+                        and not self._closes_open_quote(ctxt, inner_punct_str)
+                    ):
                         #range1 = data[ctxt.word_start, char_range.end]
                         yield Range.create(ctxt.word_start, char_range.end)
                     else:
@@ -75,20 +79,26 @@ class LatinWhitespaceIncludedWordTokenizer(WhitespaceIncludedTokenizer): #uses W
             while end_index != data_range.end and data[end_index] == c:
                 end_index += 1
             if ctxt.word_start == -1:
-                if c == "'" and not self.treat_apostrophe_as_single_quote:
+                if c == "'" and not self.treat_apostrophe_as_single_quote and self._is_word_initial_apostrophe(data, data_range, ctxt.index):
                     ctxt.word_start = ctxt.index
                 else:
                     match = None
                     for rule in self.regex_rules:
                         match = rule.match(data, ctxt.index)
                     if match is None:
+                        if c == "'":
+                            ctxt.open_quote = True
                         #range1 = data[ctxt.index: end_index]
                         token_ranges = (Range.create(ctxt.index, end_index), None)
                     else:
                         ctxt.word_start = ctxt.index
             elif ctxt.inner_word_punct != -1:
                 inner_punct_str = data[ctxt.inner_word_punct : ctxt.index]
-                if ctxt.keep_together or (inner_punct_str in ("'", "’") and not self.treat_apostrophe_as_single_quote):
+                if ctxt.keep_together or (
+                    inner_punct_str in ("'", "’")
+                    and not self.treat_apostrophe_as_single_quote
+                    and not self._closes_open_quote(ctxt, inner_punct_str)
+                ):
                     #range1 = data[ctxt.word_start: ctxt.index]
                     token_ranges = (Range.create(ctxt.word_start, ctxt.index), None)
                 else:
@@ -98,7 +108,12 @@ class LatinWhitespaceIncludedWordTokenizer(WhitespaceIncludedTokenizer): #uses W
                         Range.create(ctxt.word_start, ctxt.inner_word_punct),
                         Range.create(ctxt.inner_word_punct, ctxt.index),
                     )
-                ctxt.word_start = ctxt.index
+                # Don't assume this character starts a word; re-process it from the
+                # top so the rules decide, without advancing the index.
+                ctxt.word_start = -1
+                ctxt.inner_word_punct = -1
+                ctxt.keep_together = False
+                return token_ranges
             else:
                 for rule in self.regex_rules:
                     substring = data[ctxt.index-1:ctxt.index+2]      
@@ -133,6 +148,17 @@ class LatinWhitespaceIncludedWordTokenizer(WhitespaceIncludedTokenizer): #uses W
         ctxt.index = end_index
         return token_ranges
 
+    def _is_word_initial_apostrophe(self, data: str, data_range: Range[int], index: int) -> bool:
+        # An apostrophe at the head of a whitespace-delimited run is an opening
+        # quote, not part of the word that follows.
+        return index > data_range.start and not data[index - 1].isspace()
+
+    def _closes_open_quote(self, ctxt: LatinWhitespaceIncludedWordTokenizer._TokenizeContext, inner_punct_str: str) -> bool:
+        if inner_punct_str != "'" or not ctxt.open_quote:
+            return False
+        ctxt.open_quote = False
+        return True
+
     def _is_abbreviation(self, data: str, start: int, end: int) -> bool:
         substr = data[start:end].lower()
         return substr in self._abbreviations
@@ -143,3 +169,4 @@ class LatinWhitespaceIncludedWordTokenizer(WhitespaceIncludedTokenizer): #uses W
         word_start: int = 0
         inner_word_punct: int = 0
         keep_together: bool = False
+        open_quote: bool = False
