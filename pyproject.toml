@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "kathairo"
-version = "1.1"
+version = "1.2.0"
 description = "Scripture processing pipeline for converting USFM and USX formats into structured TSV files"
 authors = ["Robertson Brinker"]
 readme = "README.md"
@@ -13,8 +13,6 @@ classifiers = [
     "Intended Audience :: Religion",
     "Topic :: Text Processing :: Linguistic",
     "Topic :: Religion",
-    "Programming Language :: Python :: 3.10",
-    "Programming Language :: Python :: 3.11",
 ]
 
 [tool.poetry.dependencies]
