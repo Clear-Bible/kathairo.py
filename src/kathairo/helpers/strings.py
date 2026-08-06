@@ -16,19 +16,26 @@ nbsp = "\xa0"
 space = " "
 six_per_em_space = " "#\u2006
 
+thin_space = " "
+narrow_no_break_space = " "
+
 stop_words = [
     space,
     zwsp,
     zwj,
     zwnj,
     nbsp,
-    six_per_em_space
+    six_per_em_space,
+    thin_space,
+    narrow_no_break_space
 ]
 
 spaces = [
     space,
     nbsp,
-    six_per_em_space
+    six_per_em_space,
+    thin_space,
+    narrow_no_break_space
 ]
 
 invisible_spaces = [

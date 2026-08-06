@@ -16,6 +16,10 @@ class DefaultRegexRules:
         r"(?<=\p{L})’(?=\p{L})"
     )
 
+    POSSESSIVE_RIGHT_SINGLE_QUOTE_REGEX = re.compile(
+        r"(?:(?<!‘\p{L}[\p{L} ]*)|(?=’[^’‘]*[.?!]’))(?<=s)’(?!\S)(?!\s*[”»])"
+    )
+
     CONTRACTION_WORD_REGEX = re.compile(
         r"\b\w+(?:[\'\w\’]+)?\b"
     )
@@ -25,11 +29,15 @@ class DefaultRegexRules:
             self.INNER_WORD_PUNCT_REGEX,
             self.NUMBER_COMMA_REGEX,
             self.NUMBER_PERIOD_REGEX,
+            self.POSSESSIVE_RIGHT_SINGLE_QUOTE_REGEX,
             self.RIGHT_SINGLE_QUOTE_AS_APOSTROPHE_REGEX,
             #CONTRACTION_WORD_REGEX
         ]
         
         return regex_rules
+
+    def get_apostrophe_merge_rules(self):
+        return [self.POSSESSIVE_RIGHT_SINGLE_QUOTE_REGEX]
 
     #NON_JOINING_PUNCT =r"[.،«?!।၊–…{}—《》（）‘’“”;？：；。！，、,\[\]()]"
     NON_JOINING_PUNCT = r"[.،«?!।၊–…{}—《》（）‘’“”;？：；。！，、,\[\]()]"

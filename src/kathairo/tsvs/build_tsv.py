@@ -29,7 +29,7 @@ def corpus_to_tsv(
 
     #TODO try to make these parallel sometime
     array_to_token_level_tsv(corpus_array, project_name, zwRemovalDf, stopWordsDf, language, output_dir, excludeBracketedText, excludeCrossReferences, regex_rules_class)
-    array_to_verse_level_tsv(corpus_array, project_name, language, output_dir)
+    array_to_verse_level_tsv(corpus_array, project_name, language, output_dir, stopWordsDf)
 
 def corpus_to_array(targetVersification:Versification, sourceVersification:Versification, corpus:ScriptureTextCorpus, tokenizer:WhitespaceTokenizer):
 
@@ -87,7 +87,7 @@ def tokens_to_tsv(
     corpus_array = tokens_to_array(tsvPath, targetVersification, sourceVersification)
 
     #TODO try to make these parallel sometime
-    array_to_verse_level_tsv(corpus_array, project_name, language, output_dir)
+    array_to_verse_level_tsv(corpus_array, project_name, language, output_dir, stopWordsDf)
     array_to_token_level_tsv(corpus_array, project_name, zwRemovalDf, stopWordsDf, language, output_dir, excludeBracketedText, excludeCrossReferences, regex_rules_class)
 
 def tokens_to_array(tsvPath:str, targetVersification:Versification, sourceVersification:Versification,):
@@ -140,7 +140,8 @@ def array_to_verse_level_tsv(
     corpus_array,
     project_name: str,
     language: str = None,
-    output_dir: str = None
+    output_dir: str = None,
+    stopWordsDf = None
 ):
     if output_dir:
         outputFileName = os.path.join(output_dir, "verse", f"verse_{project_name}.tsv")
@@ -149,11 +150,14 @@ def array_to_verse_level_tsv(
     os.makedirs(os.path.dirname(outputFileName), exist_ok=True)
     with open(outputFileName, 'w', newline='', encoding='utf-8') as out_file:
 
-        tsv_writer = csv.writer(out_file, delimiter='\t', quoting=csv.QUOTE_NONE, quotechar=None)
+        tsv_writer = csv.writer(out_file, delimiter='\t', quoting=csv.QUOTE_NONE, quotechar=None, lineterminator='\n')
         tsv_writer.writerow(["id", "source_verse", "text", "id_range_end", "source_verse_range_end"])
 
+        stop_words = get_stop_words(stopWordsDf, "verse")
+
         for row in corpus_array:
-            tsv_writer.writerow([row[0], row[1], row[5].replace("  ", " "), row[3], row[4]])
+            verse_text = clean_verse_text(row[5], stop_words)
+            tsv_writer.writerow([row[0], row[1], verse_text, row[3], row[4]])
 
 def array_to_token_level_tsv(corpus_array,
                 project_name:str, zwRemovalDf:str = None, stopWordsDf:str = None, language:str = None, output_dir:str = None, excludeBracketedText:bool = False,
@@ -161,7 +165,7 @@ def array_to_token_level_tsv(corpus_array,
 
     zw_removal_df= zwRemovalDf
 
-    stop_words_df=stopWordsDf
+    stop_words = get_stop_words(stopWordsDf, "token")
 
     WORD_LEVEL_PUNCT_REGEX = regex_rules_class.WORD_LEVEL_PUNCT_REGEX
 
@@ -171,7 +175,7 @@ def array_to_token_level_tsv(corpus_array,
         outputFileName = get_file_location("output", language, project_name, "token", "token")
     os.makedirs(os.path.dirname(outputFileName), exist_ok=True)
     with open(outputFileName, 'w', newline='', encoding='utf-8') as out_file:
-        tsv_writer = csv.writer(out_file, delimiter='\t', quoting=csv.QUOTE_NONE, quotechar=None)
+        tsv_writer = csv.writer(out_file, delimiter='\t', quoting=csv.QUOTE_NONE, quotechar=None, lineterminator='\n')
 
         tsv_writer.writerow(["id", "source_verse", "text", "skip_space_after", "exclude", "id_range_end", "source_verse_range_end", "required"])
 
@@ -226,7 +230,7 @@ def array_to_token_level_tsv(corpus_array,
                 #Skip Space After
                 skip_space_after = "y"
 
-                if(is_stop_word(stop_words_df, token)):
+                if(is_stop_word(stop_words, token)):
                     continue
                 elif((next_token in strings.spaces) or (next_token in strings.invisible_spaces and next_next_token in strings.spaces)):
                     skip_space_after = ""
@@ -241,7 +245,7 @@ def array_to_token_level_tsv(corpus_array,
                 if isinstance(token, str) and len(token) > 0 and all(in_brackets or is_unicode_punctuation(char) for char in token):
                     exclude = "y"
 
-                    if is_token_word_level_punct(stop_words_df, WORD_LEVEL_PUNCT_REGEX, previous_skip_space_after, token, previous_previous_token, previous_token, next_token, next_next_token, skip_space_after):
+                    if is_token_word_level_punct(stop_words, WORD_LEVEL_PUNCT_REGEX, previous_skip_space_after, token, previous_previous_token, previous_token, next_token, next_next_token, skip_space_after):
                         exclude = ""
 
                 if(excludeBracketedText and '[' in token):
@@ -300,24 +304,40 @@ def get_surrounding_tokens(token_array, index):
 
     return previous_previous_token, previous_token, next_token, next_next_token
 
-def is_stop_word(stop_words_df, token):
-    return token in strings.stop_words or (stop_words_df is not None and token in stop_words_df["stop_words"].values)
+def get_stop_words(stop_words_df, scope):
+    if stop_words_df is None:
+        return []
+
+    if "scope" not in stop_words_df.columns:
+        return list(stop_words_df["stop_words"].values) if scope == "token" else []
+    
+    scopes = stop_words_df["scope"].fillna("token")
+    
+    return list(stop_words_df["stop_words"][scopes.isin([scope, "both"])].values)
+
+def clean_verse_text(text, stop_words):
+    for stop_word in stop_words:
+        text = text.replace(stop_word, strings.empty_string)
+    return text.replace("  ", " ").strip()
+
+def is_stop_word(stop_words, token):
+    return token in strings.stop_words or token in stop_words
 
 def remove_zw_characters(zw_removal_df, token):
     if(zw_removal_df is not None and token in zw_removal_df["words"].values):
         token = token.replace(strings.zwsp, strings.empty_string).replace(strings.zwj, strings.empty_string).replace(strings.zwnj, strings.empty_string)
     return token
 
-def is_token_word_level_punct(stop_words_df, WORD_LEVEL_PUNCT_REGEX, previous_skip_space_after, token, previous_previous_token, previous_token, next_token, next_next_token, skip_space_after):
+def is_token_word_level_punct(stop_words, WORD_LEVEL_PUNCT_REGEX, previous_skip_space_after, token, previous_previous_token, previous_token, next_token, next_next_token, skip_space_after):
     next_substring_token = (
         strings.space + next_token if skip_space_after == ""
-        else next_next_token if is_stop_word(stop_words_df, next_token)
+        else next_next_token if is_stop_word(stop_words, next_token)
         else next_token
     )
 
     previous_substring_token = (
         previous_token + strings.space if previous_skip_space_after == ""
-        else previous_previous_token if is_stop_word(stop_words_df, previous_token)
+        else previous_previous_token if is_stop_word(stop_words, previous_token)
         else previous_token
     )
 
